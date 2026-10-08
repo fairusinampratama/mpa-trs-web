@@ -1,0 +1,35 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    name: Validate deployment foundation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Validate committed source and Python syntax
+        env:
+          REVISION: ${{ github.sha }}
+        run: |
+          python3 -m py_compile scripts/deployment/release.py tests/deployment/test_release.py
+          python3 scripts/deployment/release.py check --revision "$REVISION"
+      - name: Test archive security, integrity and reproducibility
+        run: python3 -m unittest discover -s tests/deployment -v
+      - name: Build and verify both static probes
+        env:
+          REVISION: ${{ github.sha }}
+        run: |
+          for variant in A B; do
+            python3 scripts/deployment/release.py package --revision "$REVISION" --variant "$variant" --archive "dist/release-$REVISION-$variant.zip"
+            python3 scripts/deployment/release.py verify --revision "$REVISION" --variant "$variant" --archive "dist/release-$REVISION-$variant.zip"
+          done
