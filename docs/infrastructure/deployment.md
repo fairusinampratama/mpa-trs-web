@@ -12,14 +12,14 @@ The validator rejects duplicate names, traversal/absolute/Windows/control paths,
 
 ## Approved private layout
 
-Not created until backup gate passes:
+Private namespace created after the backup gate passed; actual verified paths are recorded in phase3-implementation.md:
 
 - /home/mapp5848/mpa-trs/incoming: private archives/checksums
 - /home/mapp5848/mpa-trs/preview/releases/<sha>-<variant>-<run>: unique extraction target
 - /home/mapp5848/mpa-trs/preview/shared: private activation/deployment records
 - /home/mapp5848/mpa-trs/backups: private project backup records
 
-Preferred preview root: /home/mapp5848/mpa-trs-preview-public, outside public_html. Approval and server acceptance required. Fallback: approved public_html/mpa-trs-preview-public, containing public files only. That fallback must also deny unauthenticated main-domain-path access. No production namespace or app is needed for this probe.
+The cPanel creation form exposes a forced /home/mapp5848/public_html/ prefix. An outside-public_html root is not available through this form; no traversal bypass was attempted. Fallback: approved public_html/mpa-trs-preview-public, containing public files only. That fallback must also deny unauthenticated main-domain-path access. No production namespace or app is needed for this probe.
 
 ## Transport verification runbook
 
@@ -41,3 +41,7 @@ Prove A -> B -> A, retaining both releases. At each transition verify visible re
 ## Workflow controls
 
 Feature branch -> PR -> CI -> reviewed merge. Main CI and manual packaging repeat tests. Actions permissions are contents:read; no deployment secrets, production job or privileged PR events. Pinned action revisions. Repository protection/enforcement must be verified separately; documented conventions alone do not enforce approvals.
+
+## Verified File Manager path handling
+
+Use a leading slash in the location box: `/mpa-trs/incoming`. Omitting it produced the invalid upload destination `/home/mapp5848mpa-trs/incoming` and AJAX errors. Before choosing a file, require the upload heading to show the complete intended `/home/mapp5848/mpa-trs/incoming` path. Overwrite must remain unchecked. Extraction accepts home-relative `/mpa-trs/preview/releases/<unique-id>` and creates a missing target. Read actual extraction results, close the report, then inspect the directory. ZIP compression and read-only download can verify extracted bytes locally; compression metadata need not match the original ZIP, but every file byte must.
