@@ -1,0 +1,46 @@
+name: Package release
+run-name: Static release ${{ inputs.variant }} from ${{ github.sha }}
+on:
+  workflow_dispatch:
+    inputs:
+      variant:
+        description: Harmless static probe variant
+        type: choice
+        options: [A, B]
+        default: A
+        required: true
+permissions:
+  contents: read
+jobs:
+  package:
+    name: Test and package exact commit
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Validate and test
+        env:
+          REVISION: ${{ github.sha }}
+        run: |
+          python3 -m py_compile scripts/deployment/release.py tests/deployment/test_release.py
+          python3 scripts/deployment/release.py check --revision "$REVISION"
+          python3 -m unittest discover -s tests/deployment -v
+      - name: Build and verify release
+        env:
+          REVISION: ${{ github.sha }}
+          VARIANT: ${{ inputs.variant }}
+        run: |
+          python3 scripts/deployment/release.py package --revision "$REVISION" --variant "$VARIANT" --archive "dist/release-$REVISION-$VARIANT.zip"
+          python3 scripts/deployment/release.py verify --revision "$REVISION" --variant "$VARIANT" --archive "dist/release-$REVISION-$VARIANT.zip"
+          cd dist
+          sha256sum --check *.sha256
+      - name: Retain tested ZIP and its external checksum
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: release-${{ github.sha }}-${{ inputs.variant }}
+          path: dist/*
+          retention-days: 30
+          if-no-files-found: error
+          compression-level: 0
