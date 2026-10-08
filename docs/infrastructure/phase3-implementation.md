@@ -15,7 +15,7 @@ Private repository: https://github.com/fairusinampratama/mpa-trs-web ; default b
 
 No failed CI runs observed. Twelve adversarial packaging/integrity tests also pass locally. PR/main CI validates committed structure and forbidden content, compiles scripts, tests traversal/duplicate/symlink/oversize/tamper defenses, and packages/verifies A/B. Manual workflow repeats tests, records exact event SHA and uploads ZIP/checksum with 30-day retention. No deployment secrets or production job.
 
-Rulesets API returned 403: upgrade to GitHub Pro or make repository public. Repository stays private; no upgrade purchased. Branch protection/required approval enforcement is not active or claimed. Feature branch/PR/checks currently constitute an operational convention. Original pinned v4 action runs succeeded but emitted Node 20 deprecation warnings. Evidence branch updates pins to official v6 commits. PR #2 CI run 37822357555 succeeded on 1c6bf4fee8d0e2d5c5cbf0346eff6be936793a24. The manual workflow upload step with the new v6 pin has not yet been dispatched; the documented A/B artifacts came from the successful original workflow.
+Rulesets API returned 403: upgrade to GitHub Pro or make repository public. Repository stays private; no upgrade purchased. Branches API confirmed main protected=false; required approval enforcement is not active. Feature branch/PR/checks currently constitute an operational convention. Original pinned v4 action runs succeeded but emitted Node 20 deprecation warnings. Evidence branch updates pins to official v6 commits. PR #2 CI run 37822357555 succeeded on 1c6bf4fee8d0e2d5c5cbf0346eff6be936793a24. PR #2 final CI 37822568448 and merged-main CI 37822650472 also succeeded. Updated manual packaging run 37822760936 succeeded on exact main SHA 7b765181538a4f65e7d5ced2d77bd0fc56ddfb65, including artifact upload with the v6 pin. The transported A/B artifacts remain identified by the earlier f980c20 source; no replacement hosting upload was performed.
 
 ## Release identity
 
@@ -41,6 +41,7 @@ Only private namespace /home/mapp5848/mpa-trs was written:
 - incoming/release-f980c20ecc521e5cd824e456691e0c1cefe209b2-A.zip
 - incoming/release-f980c20ecc521e5cd824e456691e0c1cefe209b2-B.zip
 - incoming/roundtrip-A-37818854929.zip and roundtrip-B-37819213341.zip
+- preview/shared (verified existing directory; no activation record yet)
 - preview/releases/f980c20-A-37818854929/{REVISION,manifest.json,SHA256SUMS,public/}
 - preview/releases/f980c20-B-37819213341/{REVISION,manifest.json,SHA256SUMS,public/}
 
@@ -64,7 +65,7 @@ Activation mechanism remains unselected. Inspect separate preview root managemen
 
 ## Existing route regression checks after private writes
 
-Cloud browser verified main domain still shows Rumahweb welcome page; SLiMS catalog loads populated book links, search request for gunung returned valid zero-result page, and Bromo Tengger Semeru National Park detail (id=48) loads; E-Letter redirects to its normal login with username/password form. No admin writes, login attempts or existing DB changes. These are route smoke checks, not complete application health guarantees. Repeat after every preview activation transition.
+Cloud browser verified main domain still shows Rumahweb welcome page; SLiMS catalog loads populated book links, search request for gunung returned valid zero-result page and Bromo returned one matching book, and Bromo Tengger Semeru National Park detail (id=48) loads; E-Letter redirects to its normal login with username/password form. No admin writes, login attempts or existing DB changes. These are route smoke checks, not complete application health guarantees. Repeat after every preview activation transition.
 
 ## Remaining work
 
