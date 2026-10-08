@@ -15,3 +15,5 @@ Read docs/infrastructure/phase3-implementation.md first, then deployment.md, rec
 - Do not assume symlinks, atomic renames, host CLI execution or zero downtime. Select activation only after proving it on preview. Keep both releases; prove A -> B -> A and verify existing routes after each transition.
 - Credentials must use secure user entry. Never reveal or read sign-in values through UI automation. Preserve backup keys separately from encrypted archives.
 - Code rollback is not DB restoration. No migrations or preview database in the static probe phase.
+
+Current verified source release: f980c20ecc521e5cd824e456691e0c1cefe209b2. CI and manual A/B packaging succeeded. Private uploads and A/B extraction integrity succeeded. Domain/DNS approval is still pending; no preview activation or rollback has been proved. Use leading-slash File Manager home-relative paths and verify the full upload heading. See phase3-implementation.md before resuming. Recovery ciphertext is in private Drive; recovery key is separately preserved and must never be committed or placed with the backup.
