@@ -15,7 +15,7 @@ Private repository: https://github.com/fairusinampratama/mpa-trs-web ; default b
 
 No failed CI runs observed. Twelve adversarial packaging/integrity tests also pass locally. PR/main CI validates committed structure and forbidden content, compiles scripts, tests traversal/duplicate/symlink/oversize/tamper defenses, and packages/verifies A/B. Manual workflow repeats tests, records exact event SHA and uploads ZIP/checksum with 30-day retention. No deployment secrets or production job.
 
-Rulesets API returned 403: upgrade to GitHub Pro or make repository public. Repository stays private; no upgrade purchased. Branch protection/required approval enforcement is not active or claimed. Feature branch/PR/checks currently constitute an operational convention. Original pinned v4 action runs succeeded but emitted Node 20 deprecation warnings. Evidence branch updates pins to official v6 commits; its actual checks must be verified before merge.
+Rulesets API returned 403: upgrade to GitHub Pro or make repository public. Repository stays private; no upgrade purchased. Branch protection/required approval enforcement is not active or claimed. Feature branch/PR/checks currently constitute an operational convention. Original pinned v4 action runs succeeded but emitted Node 20 deprecation warnings. Evidence branch updates pins to official v6 commits. PR #2 CI run 37822357555 succeeded on 1c6bf4fee8d0e2d5c5cbf0346eff6be936793a24. The manual workflow upload step with the new v6 pin has not yet been dispatched; the documented A/B artifacts came from the successful original workflow.
 
 ## Release identity
 
