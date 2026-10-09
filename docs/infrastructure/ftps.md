@@ -79,3 +79,19 @@ TLS evidence artifact 11597348829 has finite 14-day retention; its Actions wrapp
 The transport test job passed all 33 Python tests. Standard CI run 37889253810 also passed deployment validation and Laravel PHP 8.2/8.3 jobs. Work additionally validated the real previously downloaded source artifact (37884284506, fcef4f76) with the new trusted-wrapper/approved-inner-digest/run-identity helper. That validates local artifact handling, not an authenticated FTP transfer or the new helper's full Actions API download path.
 
 No failed GitHub run observed. No hosting credentials/secrets created, and no FTP login, server files, PHP settings, applications, DNS or databases changed. Permanent preview deferred. Production FTPS deployment and rollback are still proposals. Follow-up documentation commits require their final CI to pass before review; no merges authorized.
+
+## Approved private account setup — 9 October 2026
+
+The user explicitly approved only mpatrs_probe@mapalatursina.my.id, jailed to /home/mapp5848/mpa-trs/ftps-probe, required probe secrets, and one private verified-artifact roundtrip. Approval excludes merging PR #4/#5, production credentials, activation, rollback, existing applications/DBs, DNS/PHP/security changes.
+
+Before hosting changes, owner-only encrypted full-backup parts and encrypted post-repair SLiMS configuration were accessible in the existing authorized Drive destination, and the separate recovery key remained accessible. Recorded archive/checksums and prior authenticated-decryption evidence remain in recovery.md; this check did not repeat a restore.
+
+The user completed new-password entry and account submission through manual browser handoff; Work did not read or retain the password. cPanel now lists the exact approved FTP username, 256 MB quota, and (expanded path control) /home/mapp5848/mpa-trs/ftps-probe. This confirms configuration, not effective FTP confinement. cPanel created the dedicated directory; File Manager shows .ftpquota (0600). Work created only .mpa-trs-ftps-probe-root (0644) in that private root, with mpa-trs-ftps-probe:v1 followed by LF. After saving and reopening from the server, the editor value exactly matched the required 22-character identity; File Manager reported 22 bytes. No executable file or release artifact was uploaded.
+
+A cPanel download of the sentinel returned a browser path that did not exist in either shared filesystem; therefore no binary download/checksum claim is made from that attempt. The authenticated FTPS probe must still read and match the sentinel before any upload.
+
+Secret-access review: main is unprotected. Repository writers can change workflows to access repository secrets; the main-only condition and typed acknowledgement are conventions, not enforced human approval. Keep the credential restricted to this private probe, provision only immediately before the approved run, and retire the account/secrets afterward (account deletion must preserve files). No GitHub secrets have been provisioned and no FTP authentication/data connection/upload/readback has been performed.
+
+Required separate merge sequence: obtain explicit approval to merge PR #4 into main; retarget PR #5 to main; verify its focused diff and successful CI against main; then merge PR #5 after that approval. Do not bypass the current main-only authenticated workflow or infer merge approval from account-setup completion. Both PRs remain unmerged at this checkpoint. After merges and secure secret provisioning, run the exact previously verified artifact once; test root/parent/application path denial and protected passive data first, stopping on any failure.
+
+Pending proof: actual jail enforcement, encrypted passive data, approved artifact transfer/readback digest, and receipt. Production update/activation/rollback remain untested and outside this approval.
