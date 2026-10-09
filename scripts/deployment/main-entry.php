@@ -12,7 +12,11 @@ if (!preg_match('/\A[a-f0-9]{40}\z/D', $revision)) {
     exit('Website temporarily unavailable.');
 }
 $release = $base.'/releases/'.$revision.'/application';
-if (realpath($release) !== $release || !is_file($release.'/vendor/autoload.php') || !is_file($base.'/shared/.env')) {
+$completion = $base.'/releases/'.$revision.'/COMPLETE.json';
+$completed = is_file($completion) && filesize($completion) <= 512
+    ? json_decode(file_get_contents($completion), true) : null;
+if (realpath($release) !== $release || !is_file($release.'/vendor/autoload.php') || !is_file($base.'/shared/.env')
+    || !is_array($completed) || ($completed['revision'] ?? null) !== $revision) {
     http_response_code(503);
     exit('Website temporarily unavailable.');
 }
