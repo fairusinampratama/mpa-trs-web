@@ -20,3 +20,5 @@ Historical verified probe source release: f980c20ecc521e5cd824e456691e0c1cefe209
 
 
 Stage 1 production-ready merge requires explicit user approval. Do not merge PRs automatically. Production entrypoint and .htaccess need fresh scoped backup and routing inspection before any approved change. No live database is needed for the landing page. Record real CI/package and host results in stage1-implementation.md.
+
+FTPS alternative: read docs/infrastructure/ftps.md. Current cPanel workflow remains intact. Only credential-free runner TLS discovery is authorized without further hosting approval. Dedicated FTP credentials, repository secrets and any server file writes require exact user approval; use secure credential entry. Never use the primary FTP/cPanel account, plaintext FTP, disabled certificate checks, cross-jail symlinks, recursive mirror/delete or server commands. This preparation is probe-only and cannot activate production. Do not merge transport or Stage 1 PRs without approval.
