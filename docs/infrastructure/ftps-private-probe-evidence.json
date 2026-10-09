@@ -1,0 +1,21 @@
+{
+  "activation": false,
+  "archive_bytes": 26558197,
+  "archive_sha256": "f0da119bbbffc8330fa117409dcca99c9fda9d3964b0022a1ec184fc75294081",
+  "certificate_dns_names": [
+    "tokala.iixcp.rumahweb.net"
+  ],
+  "certificate_expires": "Jan  4 07:42:39 2027 GMT",
+  "certificate_sha256": "bdac3f535b4ef58d8bd06b955def42a5729e4e411f2915ed669e5a1806ebc9ac",
+  "certificate_verified": true,
+  "cipher": "TLS_AES_256_GCM_SHA384",
+  "host": "tokala.iixcp.rumahweb.net",
+  "mode": "explicit-ftps",
+  "port": 21,
+  "protected_data_roundtrip_verified": true,
+  "remote_relative_directory": "probes/fcef4f76f77e30d383bd59c33af84292392d550f-37893378939-1",
+  "source_commit": "fcef4f76f77e30d383bd59c33af84292392d550f",
+  "source_run": "37884284506",
+  "success": true,
+  "tls_version": "TLSv1.3"
+}

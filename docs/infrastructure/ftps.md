@@ -1,6 +1,6 @@
 # FTPS transport investigation and safe preparation
 
-9 October 2026. Status: repository preparation; authenticated account scope, data transfer and production activation are NOT verified. Current cPanel transport remains the working fallback. Stage 1 remains application foundation and first live deployment; no permanent preview domain.
+9 October 2026. Current status: private authenticated FTPS artifact roundtrip verified; production activation and rollback remain unverified. See the final verification checkpoint below. Earlier dated checkpoints are preserved as historical evidence. Current cPanel transport remains the working fallback. Stage 1 remains application foundation and first live deployment; no permanent preview domain.
 
 ## Confirmed evidence and limits
 
@@ -95,3 +95,31 @@ Secret-access review: main is unprotected. Repository writers can change workflo
 Required separate merge sequence: obtain explicit approval to merge PR #4 into main; retarget PR #5 to main; verify its focused diff and successful CI against main; then merge PR #5 after that approval. Do not bypass the current main-only authenticated workflow or infer merge approval from account-setup completion. Both PRs remain unmerged at this checkpoint. After merges and secure secret provisioning, run the exact previously verified artifact once; test root/parent/application path denial and protected passive data first, stopping on any failure.
 
 Pending proof: actual jail enforcement, encrypted passive data, approved artifact transfer/readback digest, and receipt. Production update/activation/rollback remain untested and outside this approval.
+
+
+## Verified private roundtrip — 9 October 2026, 13:25 WIB
+
+This checkpoint supersedes earlier pending/unmerged statements. The user separately approved merging PR #4 and #5. PR #4 merged as 1fbfe75f7eee49ad75fdc152bdabd8e61c54a9a5; PR #5 was retargeted to main, reviewed with successful checks, and merged as 11d1862dbfe827377f9119465da2966f392d2bc1. Main CI run 37891886016 succeeded. Only the two required probe repository secrets were provisioned through secure handling; their values are not recorded here.
+
+Exactly one authenticated probe ran:
+https://github.com/fairusinampratama/mpa-trs-web/actions/runs/37893378939
+Job 113699099263, attempt 1, completed successfully at 2026-10-09T06:25:27Z. All 33 deployment tests passed and the helper fetched and verified the exact successful source artifact before connecting.
+
+- Source run: 37884284506.
+- Source commit: fcef4f76f77e30d383bd59c33af84292392d550f.
+- Inner release ZIP: 26,558,197 bytes.
+- Inner ZIP SHA-256: f0da119bbbffc8330fa117409dcca99c9fda9d3964b0022a1ec184fc75294081.
+- Explicit FTPS port 21, verified CA and hostname, TLSv1.3 / TLS_AES_256_GCM_SHA384.
+- Protected passive data worked with TLS session reuse; no plaintext or certificate-validation fallback.
+- Before writes, the script required PWD '/', parent traversal to remain '/', denied CWD to /public_html, /eletter and /home/mapp5848, matched the exact private sentinel and accepted only the expected root inventory. This demonstrates the tested FTP boundaries; it does not prove OS/PHP isolation or exhaust every possible escape.
+- Upload and protected download of release.zip matched the approved size and digest; receipt.json was uploaded and read back identically.
+- Retained server location: /home/mapp5848/mpa-trs/ftps-probe/probes/fcef4f76f77e30d383bd59c33af84292392d550f-37893378939-1/.
+- No archive extraction, application activation, rename/rollback, production-file mutation, existing-app mutation or database operation was performed.
+
+The non-secret JSON report is preserved in ftps-private-probe-evidence.json, transcribed from the successful job output. Actions evidence artifact 11599392462 (ftps-private-probe-37893378939-1) has 14-day retention; wrapper SHA-256 e1ed24f370eb3e5793aeb49970df8998363bf6c8fe631e12859a60596a8dce4a. Work's browser interaction was interrupted while the independent Actions job continued; this did not fail the transfer. No second dispatch or retry was performed.
+
+What remains unproven: full Laravel individual-file upload performance, required runtime permissions, release-selector replacement behavior, actual main-domain activation, health checks and production rollback. FTPS cannot extract the uploaded ZIP or execute server commands. Current cPanel production fallback remains intact. Existing websites were not re-tested in this probe, so no new live smoke-test claim is made.
+
+Recommendation: retire the probe FTP account and both probe secrets after evidence review, preserving the private probe files. Retirement has not been performed and needs separately scoped authorization. Repository writers can access repository secrets by changing workflows because branch protection is not enforced; the current credential remains private-probe scoped only. Do not reuse it as a production credential.
+
+Do not rerun this one-shot approved probe automatically after a Work interruption. First inspect run 37893378939 and this recorded evidence. Production setup, credentials and activation still require separate approval.
