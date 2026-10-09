@@ -52,3 +52,17 @@ One supervised cPanel bootstrap must establish owner-writable shared storage (se
 Initial recovery restores only backed-up main entry/routing originals (or removes only a newly approved .htaccess if originally absent) with the approved welcome precedence. Application rollback selects retained verified A after checking A runtime/CSS, and verifies live responses. Code rollback is never database restoration. A failed non-atomic marker write can cause transient 503; no zero-downtime claim. The proposed main entrypoint now also requires a bounded COMPLETE.json matching the selected SHA; the Work/CI HTTP rehearsal checks missing completion fails closed. This does not replace full pre-activation remote file/asset integrity verification.
 
 No hosting upgrade, new domain, paid service, database or permanent preview. Additional hosting cost: zero; Actions consumption is subject to the existing account's allowance and no paid overage is authorized.
+
+## Verified feature and host-read evidence
+
+PR #7: https://github.com/fairusinampratama/mpa-trs-web/pull/7 . Implementation head b76876e6ca5944feb2365d0347798004f658962d. CI run 37895631691 succeeded: deployment foundation, Laravel PHP 8.2 and PHP 8.3; the PHP 8.2 job exercised the production package with completion-gate failure and recovery. FTPS preparation run 37895631698 also succeeded (41 deployment tests and credential-free TLS discovery). No authenticated new hosting rehearsal has run.
+
+Read-only CloudLinux selector: all three domains use alt-php82. Enabled required modules include ctype, curl, dom, fileinfo, filter, hash, mbstring, openssl, pcre, PDO, session, tokenizer and XML. Options show display_errors off, log_errors on, memory_limit 256M, max_execution_time 30, and an empty open_basedir field. This is account configuration evidence; actual MPA-TRS filesystem/web runtime access must still be verified after approved bootstrap. No setting was changed.
+
+Exact private rehearsal inputs (do not substitute untested builds):
+- A source run 37884284506; SHA fcef4f76f77e30d383bd59c33af84292392d550f; inner SHA-256 f0da119bbbffc8330fa117409dcca99c9fda9d3964b0022a1ec184fc75294081.
+- B source run 37895631691; SHA b76876e6ca5944feb2365d0347798004f658962d; inner SHA-256 29a2dc8d50041ffc7601700e0a13298ab9d47d35d89ca6319f0106002b6e84fd.
+- B artifact 11599169823, wrapper SHA-256 a25bd8777aba064d80570926dbb27e6476dd2c2f18a941a1496ef6ec23e36b64; wrapper and inner digests, strict manifest and production inventory verified locally. Inner size 26,558,197 bytes. Both artifacts expire 23 October; revalidate availability immediately before approved dispatch.
+- The direct short-lived artifact URL returned 403 in Work. Supported file materialization succeeded and the resulting local bytes matched the trusted wrapper digest. No bypass, host write or additional FTP transfer was needed.
+
+Only the next private rehearsal and PR merges are being proposed now. Production approval cannot be concrete until the real FTP replacement/performance result is known. Keep current probe credentials until this scoped decision; do not retire or repurpose them automatically.
