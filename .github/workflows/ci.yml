@@ -33,3 +33,57 @@ jobs:
             python3 scripts/deployment/release.py package --revision "$REVISION" --variant "$variant" --archive "dist/release-$REVISION-$variant.zip"
             python3 scripts/deployment/release.py verify --revision "$REVISION" --variant "$variant" --archive "dist/release-$REVISION-$variant.zip"
           done
+
+
+  application:
+    name: Laravel PHP ${{ matrix.php }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        php: ['8.2', '8.3']
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: ctype, curl, dom, fileinfo, mbstring, pdo, pdo_sqlite, tokenizer, xml
+          coverage: none
+          tools: composer:v2
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: application/package-lock.json
+      - name: Test and build from dependency locks
+        working-directory: application
+        run: |
+          cp .env.example .env
+          composer validate --strict
+          composer install --no-interaction --prefer-dist
+          npm ci
+          npm run build
+          php artisan test
+      - name: Build tested production-only artifact
+        if: matrix.php == '8.2'
+        env:
+          REVISION: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          cd application
+          composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+          composer check-platform-reqs --no-dev
+          cd ..
+          python3 scripts/deployment/application_release.py package --revision "$REVISION" --run "$GITHUB_RUN_ID" --archive "dist/application-$REVISION.zip"
+          python3 scripts/deployment/application_release.py verify --revision "$REVISION" --archive "dist/application-$REVISION.zip"
+          python3 scripts/deployment/rehearse_application.py --revision "$REVISION" --archive "dist/application-$REVISION.zip"
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        if: matrix.php == '8.2'
+        with:
+          name: application-${{ github.event.pull_request.head.sha || github.sha }}
+          path: dist/application-*
+          retention-days: 14
+          compression-level: 0
+          if-no-files-found: error

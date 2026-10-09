@@ -1,3 +1,5 @@
+> Current policy: Stage 1 uses Laravel 12 and supervised main-domain deployment. Permanent preview is deferred. See [Stage 1 implementation](stage1-implementation.md). The static probe procedures below preserve historical infrastructure evidence.
+
 # Supervised deployment
 
 ## Artifact contract
@@ -45,3 +47,4 @@ Feature branch -> PR -> CI -> reviewed merge. Main CI and manual packaging repea
 ## Verified File Manager path handling
 
 Use a leading slash in the location box: `/mpa-trs/incoming`. Omitting it produced the invalid upload destination `/home/mapp5848mpa-trs/incoming` and AJAX errors. Before choosing a file, require the upload heading to show the complete intended `/home/mapp5848/mpa-trs/incoming` path. Overwrite must remain unchecked. Extraction accepts home-relative `/mpa-trs/preview/releases/<unique-id>` and creates a missing target. Read actual extraction results, close the report, then inspect the directory. ZIP compression and read-only download can verify extracted bytes locally; compression metadata need not match the original ZIP, but every file byte must.
+

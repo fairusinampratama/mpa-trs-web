@@ -72,3 +72,4 @@ Cloud browser verified main domain still shows Rumahweb welcome page; SLiMS cata
 Obtain domain/root/DNS approval, configure free HTTPS and auth, prove denial on all access paths, choose and test activation, execute A -> B -> A, verify desktop/mobile rendering, CSS/revision, console and private exposure, repeat existing route checks, update evidence. No production deployment authorized. Before real application design, choose stack separately.
 
 Compared with TinggalJalan: same commit-identified tested artifact, isolated preview, backup gate and explicit promotion/rollback principles. Rumahweb uses verified supervised File Manager transport. No Hostinger SSH, PHP 8.4 assumption, host Composer/Artisan/migration, symlink replacement or unattended production deployment.
+

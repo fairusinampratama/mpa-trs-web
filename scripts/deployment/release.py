@@ -20,7 +20,7 @@ REQUIRED = {'README.md', 'AGENTS.md', '.gitignore', '.github/workflows/ci.yml',
             'deployment-probe/probe.css', 'deployment-probe/robots.txt',
             'deployment-probe/.htaccess', 'docs/infrastructure/hosting-baseline.md',
             'docs/infrastructure/deployment.md', 'docs/infrastructure/recovery.md'}
-ROOTS = {'docs', 'scripts', 'tests', 'deployment-probe', '.github'}
+ROOTS = {'docs', 'scripts', 'tests', 'deployment-probe', '.github', 'application'}
 BANNED_PARTS = {'node_modules', 'vendor', 'uploads', 'backups', '__pycache__', '.git', 'storage'}
 BANNED_SUFFIXES = ('.sql', '.sql.gz', '.zip', '.tar', '.gz', '.pem', '.key', '.p12', '.log', '.pyc')
 SECRET = re.compile(rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{30,}|AKIA[0-9A-Z]{16}')
@@ -60,7 +60,7 @@ def source(root, revision):
         parts = name.split('/')
         if name not in {'README.md', 'AGENTS.md', '.gitignore'} and parts[0] not in ROOTS:
             raise ValueError('Unapproved tracked path: ' + name)
-        if any(p in BANNED_PARTS or p.startswith('.env') for p in parts) or name.lower().endswith(BANNED_SUFFIXES):
+        if (any(p in BANNED_PARTS - {'storage'} or (p.startswith('.env') and name != 'application/.env.example') for p in parts) or ('storage' in parts and not name.endswith('/.gitignore')) or name.lower().endswith(BANNED_SUFFIXES)):
             raise ValueError('Forbidden tracked file: ' + name)
         data = git(root, 'cat-file', 'blob', blob)
         if len(data) > MAX_FILE or SECRET.search(data):
@@ -194,3 +194,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
