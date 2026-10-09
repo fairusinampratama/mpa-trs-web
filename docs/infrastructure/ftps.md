@@ -59,4 +59,23 @@ Standard FTPS transfers files and supports directory/file operations subject to 
 
 ## Remaining blockers
 
-Actual runner TLS evidence; account-specific FTP availability and directory jail; approved secure credential creation/provisioning; passive TLS data path and roundtrip; remote directory/permission/rename behavior; one-time approved production bootstrap; measured full-runtime upload; tested production activation/rollback. All current cPanel and Stage 1 paths remain intact until these pass.
+ account-specific FTP availability and directory jail; approved secure credential creation/provisioning; passive TLS data path and roundtrip; remote directory/permission/rename behavior; one-time approved production bootstrap; measured full-runtime upload; tested production activation/rollback. All current cPanel and Stage 1 paths remain intact until these pass.
+
+## Actual Actions/TLS evidence
+
+Feature head f54c09b836fd59865e56ba9fb562d31a7290d524, PR #5: https://github.com/fairusinampratama/mpa-trs-web/pull/5 . Base is the unmerged Stage 1 application branch; 7 focused files changed, no production workflow replaced.
+
+FTPS preparation run 37889253854 succeeded on 9 October 2026. The credential-free TLS job (113686202030) ran on a standard Ubuntu 24.04 GitHub-hosted Azure westus3 runner and verified:
+
+- explicit AUTH TLS at tokala.iixcp.rumahweb.net:21;
+- TLSv1.3 with TLS_AES_256_GCM_SHA384;
+- trusted system-CA chain and exact hostname validation;
+- certificate DNS name tokala.iixcp.rumahweb.net, expires 4 January 2027 07:42:39 UTC;
+- certificate SHA-256 bdac3f535b4ef58d8bd06b955def42a5729e4e411f2915ed669e5a1806ebc9ac;
+- authenticated=false: no USER/PASS, anonymous login, passive transfer or file mutation.
+
+TLS evidence artifact 11597348829 has finite 14-day retention; its Actions wrapper SHA-256 is cb0f9030ca75e8896847d4442d5a087075b5a9db1e00d3365458bb51037f31ad. Control TLS is CONFIRMED on the actual account's known hosting server. Current account-specific FTP enablement, credential jail and TLS data path remain NOT VERIFIED.
+
+The transport test job passed all 33 Python tests. Standard CI run 37889253810 also passed deployment validation and Laravel PHP 8.2/8.3 jobs. Work additionally validated the real previously downloaded source artifact (37884284506, fcef4f76) with the new trusted-wrapper/approved-inner-digest/run-identity helper. That validates local artifact handling, not an authenticated FTP transfer or the new helper's full Actions API download path.
+
+No failed GitHub run observed. No hosting credentials/secrets created, and no FTP login, server files, PHP settings, applications, DNS or databases changed. Permanent preview deferred. Production FTPS deployment and rollback are still proposals. Follow-up documentation commits require their final CI to pass before review; no merges authorized.
