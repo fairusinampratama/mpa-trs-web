@@ -22,6 +22,8 @@ def rehearse(archive, revision):
         shared.mkdir(parents=True); public.mkdir()
         with zipfile.ZipFile(archive) as z:
             z.extractall(release)  # Only after bounded path/type/integrity validation above.
+        completion = release/'COMPLETE.json'
+        completion.write_text(json.dumps({'revision': revision})+'\n')
         shutil.copytree(release/'application/public/mpa-trs-assets', public/'mpa-trs-assets')
         for manifest in (public/'mpa-trs-assets').glob('*/manifest.json'): manifest.unlink()
         for path in ['framework/cache/data', 'framework/sessions', 'framework/views', 'logs']:
@@ -54,6 +56,9 @@ def rehearse(archive, revision):
             assert css and request(css.group(2).decode())[0] == 200, 'Versioned CSS failed'
             for path in ['/.env', '/composer.json', '/manifest.json', '/vendor/autoload.php']:
                 assert request(path)[0] == 404, 'Private path exposed'
+            completion.unlink()
+            assert request('/')[0] == 503, 'Incomplete release did not fail closed'
+            completion.write_text(json.dumps({'revision': revision})+'\n')
             marker.write_text('../escape\n')
             assert request('/')[0] == 503, 'Invalid marker did not fail closed'
             marker.write_text(revision+'\n')

@@ -63,3 +63,7 @@ Public change candidates are index.php, a narrowly merged .htaccess fragment, an
 Initial recovery restores only the exact privately backed-up main files/precedence changes; release recovery restores the previous validated SHA marker and retained CSS namespace. Maintenance may be needed during non-atomic File Manager edits. No atomicity or zero-downtime claim. A missing/invalid marker fails closed with 503; restoration succeeded in Work/CI. Live application update and rollback remain untested and require the separate production approval scope.
 
 Before requesting deployment approval, present the current host inventory, exact merged routing diff, exact entry/welcome changes, successful release SHA/digest, retained original-file checksums and reversal steps. Authentication blocks making this proposal final. Stage 1 remains incomplete, with no production file modification or merge.
+
+## Continuation checkpoint — 9 October 2026
+
+Earlier unmerged/authentication-blocked statements above are historical. PR #4 and #5 are now merged with separate approval; main 11d1862dbfe827377f9119465da2966f392d2bc1. Private FTPS run 37893378939 succeeded, preserved in unmerged PR #6. Current cPanel session supported read-only main-root inspection: index.php is the provider welcome, no main .htaccess/index.html appeared, existing nested application directories remain. No production file changed. Next tooling and exact private approval scope are in release-activation.md; hosting file/rename rehearsal still needs separate approval. Stage 1 remains incomplete.
