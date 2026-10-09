@@ -14,5 +14,13 @@ node_modules/
 vendor/
 uploads/
 backups/
-storage/
+application/storage/**
+!application/storage/**/
+!application/storage/**/.gitignore
 dist/
+
+
+!application/.env.example
+application/.phpunit.cache/
+application/public/build/
+application/public/hot

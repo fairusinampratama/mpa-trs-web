@@ -47,3 +47,4 @@ gzip -t full-backup.tar.gz
 ```
 
 Require both recorded digests before any restoration. Decrypt SLiMS config similarly using its .cms file. Keep decrypted bytes private; do not extract over production. Ciphertext is integrity-protected, but SHA-256 values and exact file identities should be retained independently too. Full-account restore still requires separately approved provider-assisted handling; encryption verification is not a restore rehearsal.
+

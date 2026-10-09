@@ -1,0 +1,11 @@
+# Merge only after reading and backing up the existing main .htaccess.
+# These conditions limit the new front-controller rule to the main host.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?mapalatursina\.my\.id$ [NC]
+RewriteRule ^(?:slims\.mapalatursina\.my\.id|eletter\.mapalatursina\.my\.id|storage|cgi-bin|\.well-known)(?:/|$) - [L]
+RewriteCond %{HTTP_HOST} ^(www\.)?mapalatursina\.my\.id$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+</IfModule>

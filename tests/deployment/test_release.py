@@ -19,7 +19,7 @@ class ReleaseTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.base = Path(self.temp.name)
         self.repo = self.base / 'repo'
-        shutil.copytree(ROOT, self.repo, ignore=shutil.ignore_patterns('.git', '__pycache__', 'dist'))
+        shutil.copytree(ROOT, self.repo, ignore=shutil.ignore_patterns('.git', '__pycache__', 'dist', 'vendor', 'node_modules', '.phpunit.cache', '.env', 'build'))
         self.git('init', '-b', 'main')
         self.git('config', 'user.name', 'Deployment tests')
         self.git('config', 'user.email', 'tests@example.invalid')
@@ -130,3 +130,4 @@ class ReleaseTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

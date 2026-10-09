@@ -1,8 +1,8 @@
 # MPA-TRS operating rules
 
-Read docs/infrastructure/phase3-implementation.md first, then deployment.md, recovery.md and hosting-baseline.md. These files replace dependence on chat history. Distinguish observed results from proposals; update evidence after each completed operation.
+Read docs/infrastructure/stage1-implementation.md first, then phase3-implementation.md, then deployment.md, recovery.md and hosting-baseline.md. These files replace dependence on chat history. Distinguish observed results from proposals; update evidence after each completed operation.
 
-- This repository is framework-neutral. Do not initialize Laravel or assume an application exists.
+- Latest Stage 1 instructions authorize Laravel 12 in application/. Permanent hosting preview is deferred. Preserve historical Phase 3 evidence and static probes. No organizational features, visual redesign or CRUD yet.
 - Work in a feature branch and PR. Run meaningful deployment tests. Verify actual Actions results before describing CI as successful. Do not claim branch protection unless account settings were verified.
 - GitHub is source of truth. Build/test in Actions. Use exact Git SHA, variant, archive digest and manifest; deploy the same tested bytes.
 - Never commit credentials, keys, .env files, SQL, account archives, uploads or runtime storage. Name/signature checks are defense in depth, not a universal secret detector. Review changes for sensitive content.
@@ -11,9 +11,12 @@ Read docs/infrastructure/phase3-implementation.md first, then deployment.md, rec
 - Authorized private probe namespace: /home/mapp5848/mpa-trs. No writes in existing application trees.
 - Domain/DNS/document-root changes require exact action-time user approval. Production routing, real application deployment, existing app/DB changes, irreversible operations and paid add-ons require approval; do not purchase upgrades.
 - cPanel HTTPS browser is operational interface. Work SSH is network-blocked and API tokens disabled. Do not retry SSH without new support evidence. No HTTP shell, generic deployment endpoint, cron executor or other bypass.
-- Preview must have HTTPS, authentication and noindex. robots.txt is not access control. Keep metadata/archives/configuration outside served public roots. Verify main-domain alternate paths if using a nested preview root.
-- Do not assume symlinks, atomic renames, host CLI execution or zero downtime. Select activation only after proving it on preview. Keep both releases; prove A -> B -> A and verify existing routes after each transition.
+- Stage 1 testing happens in Work and GitHub Actions. No permanent preview domain. Keep private source, secrets, metadata, archives and storage outside served roots; publish only explicitly approved entrypoint and versioned compiled assets.
+- Do not assume symlinks, atomic renames, host CLI execution or zero downtime. Rehearse release selector/update/recovery privately; actual production activation and rollback need approval and verification.
 - Credentials must use secure user entry. Never reveal or read sign-in values through UI automation. Preserve backup keys separately from encrypted archives.
 - Code rollback is not DB restoration. No migrations or preview database in the static probe phase.
 
-Current verified source release: f980c20ecc521e5cd824e456691e0c1cefe209b2. CI and manual A/B packaging succeeded. Private uploads and A/B extraction integrity succeeded. Domain/DNS approval is still pending; no preview activation or rollback has been proved. Use leading-slash File Manager home-relative paths and verify the full upload heading. See phase3-implementation.md before resuming. Recovery ciphertext is in private Drive; recovery key is separately preserved and must never be committed or placed with the backup.
+Historical verified probe source release: f980c20ecc521e5cd824e456691e0c1cefe209b2. CI and manual A/B packaging succeeded. Private uploads and A/B extraction integrity succeeded. Historical preview activation and rollback were never proved; that permanent-preview work is now deferred. Use leading-slash File Manager home-relative paths and verify the full upload heading. See phase3-implementation.md before resuming. Recovery ciphertext is in private Drive; recovery key is separately preserved and must never be committed or placed with the backup.
+
+
+Stage 1 production-ready merge requires explicit user approval. Do not merge PRs automatically. Production entrypoint and .htaccess need fresh scoped backup and routing inspection before any approved change. No live database is needed for the landing page. Record real CI/package and host results in stage1-implementation.md.
