@@ -13,6 +13,12 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           persist-credentials: false
+      - name: Validate source and deployment tooling
+        env:
+          REVISION: ${{ github.sha }}
+        run: |
+          python3 scripts/deployment/release.py check --revision "$REVISION"
+          python3 -m unittest discover -s tests/deployment -v
       - uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962
         with:
           php-version: 8.2

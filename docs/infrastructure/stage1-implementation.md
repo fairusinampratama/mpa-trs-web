@@ -8,7 +8,7 @@ Laravel 12, Blade, Tailwind 4 and Vite in `application/`. Official Laravel 12 sk
 
 Routes: `/` server-rendered MAPALA TURSINA under-development page; `/health` exposes only status and release SHA. Debug disabled. File sessions/cache, synchronous queue, log mailer, no outbound integrations. SQLite :memory: is an unused framework default; no database file or live DB object is created. Before future CRUD, create a separate approved MySQL database/user and design migrations in the later project stages.
 
-Development: PHP 8.2+ with required Laravel extensions, Composer 2, Node 22. From application: copy .env.example to a private .env, composer install, php artisan key:generate, npm ci, npm run build, php artisan test, php artisan serve. Do not commit .env. Work's initial PHP was absent; signed Ubuntu PHP 8.3 CLI modules were extracted into an isolated workspace runtime. Local tests passed: 4 Laravel tests / 12 assertions, 20 Python deployment tests, compiled Tailwind build, actual PHP HTTP landing/CSS/health and 404 checks. GitHub PHP 8.2 checks are authoritative for target compatibility and remain to be recorded after actual execution.
+Development: PHP 8.2+ with required Laravel extensions, Composer 2, Node 22. From application: copy .env.example to a private .env, composer install, php artisan key:generate, npm ci, npm run build, php artisan test, php artisan serve. Do not commit .env. Work's initial PHP was absent; signed Ubuntu PHP 8.3 CLI modules were extracted into an isolated workspace runtime. Local tests passed: 4 Laravel tests / 12 assertions, 20 Python deployment tests, compiled Tailwind build, actual PHP HTTP landing/CSS/health and 404 checks. Actual GitHub PHP 8.2 and PHP 8.3 jobs both passed; see verified run evidence below.
 
 ## CI and release contract
 
@@ -39,3 +39,27 @@ Rollback to a known application release: restore the previous SHA marker after c
 Stage 1 is incomplete until main HTTPS serves the tested application, private-file denial and production settings are verified, update/recovery succeeds, existing SLiMS catalog/search/detail and E-Letter login pass, and actual evidence is documented. Stage 2 organizational requirements/design, Stage 3 visual prototype, Stage 4 CRUD and Stage 5 admin handoff/maintenance remain out of scope.
 
 Packaged runtime rehearsal in Work passed using production-only vendor: actual PHP HTTP landing page, exact health revision, namespaced CSS, private URL 404 denial, invalid selector 503, and recovery to the retained release. This is not a host deployment/update/rollback proof. The same rehearsal runs in CI. Manual package-application.yml repeats locked build/tests/production packaging; its first Actions execution is pending.
+
+## Verified GitHub evidence — 9 October 2026
+
+PR: https://github.com/fairusinampratama/mpa-trs-web/pull/4, branch stage1/application-foundation, not merged. Based on latest main 53c10728e7042b88b5ada047ad2d71e78eb46540. Historical Phase 3 evidence unchanged.
+
+Candidate commit fcef4f76f77e30d383bd59c33af84292392d550f: CI run 37884284506 passed all three jobs: deployment foundation, Laravel PHP 8.2, Laravel PHP 8.3. PHP 8.2 log confirms four Laravel tests / twelve assertions, successful production dependency/platform checks and packaged HTTP/recovery rehearsal. Twenty Python deployment tests pass. No failed Stage 1 run observed at this point.
+
+Artifact 11596305100, application-fcef4f76f77e30d383bd59c33af84292392d550f, 26,558,764 bytes, expires 23 October 2026. Trusted Actions wrapper SHA-256 f14d957c0c959dd2b8460b5da49923c6449637d5d09d1102e2aa96d2105fd2da. Downloaded to Work and verified. Inner ZIP SHA-256 f0da119bbbffc8330fa117409dcca99c9fda9d3964b0022a1ec184fc75294081 matched its external checksum; strict manifest/inventory validation passed. The exact downloaded PHP 8.2-built artifact passed Work's actual HTTP/CSS/revision/private-denial/invalid-marker/recovery rehearsal under PHP 8.3. This artifact has not been uploaded to Rumahweb. Later commits require their own successful artifact; do not relabel this one.
+
+A documentation/workflow follow-up adds source/deployment tests to the manual application packaging workflow. Its subsequent CI must be verified before approval; manual dispatch remains unexecuted until that workflow is available on main. No merge authorized.
+
+## Current operational blocker
+
+The previous cPanel browser session expired. Canonical hosting page redirects to Rumahweb sign-in. Secure reauthentication was interrupted; a fresh post-interruption navigation still shows login. No new hosting writes occurred. Do not retry automatically after cancellation. Live PHP extension/open_basedir/resource checks, exact current main entry/routing inspection, refreshed scoped backup and host rehearsal remain blocked by authentication. Cloud browser also rejects local file URLs; no browser screenshot or mobile verification of the candidate is claimed.
+
+## Production change review — pending exact host inspection
+
+Only these new private paths are proposed: production/releases/<approved-artifact-SHA>/application, production/shared/.env, production/shared/storage, production/shared/active-release, and a timestamped production/rollback-originals directory, all beneath /home/mapp5848/mpa-trs. Re-check the encrypted backup and separate key before any host write.
+
+Public change candidates are index.php, a narrowly merged .htaccess fragment, and mpa-trs-assets/<approved-SHA>/assets/*.css beneath public_html. Never publish build manifests, source/config/vendor/storage/archive/checksum files. scripts/deployment/main-entry.php is the proposed entrypoint; main-routing.fragment is a template, not an approved replacement. Existing welcome filename/DirectoryIndex precedence and provider rules are still unknown. If welcome index.html takes precedence, determine the smallest scoped adjustment after inspection; do not guess, delete it, or change nested application routing.
+
+Initial recovery restores only the exact privately backed-up main files/precedence changes; release recovery restores the previous validated SHA marker and retained CSS namespace. Maintenance may be needed during non-atomic File Manager edits. No atomicity or zero-downtime claim. A missing/invalid marker fails closed with 503; restoration succeeded in Work/CI. Live application update and rollback remain untested and require the separate production approval scope.
+
+Before requesting deployment approval, present the current host inventory, exact merged routing diff, exact entry/welcome changes, successful release SHA/digest, retained original-file checksums and reversal steps. Authentication blocks making this proposal final. Stage 1 remains incomplete, with no production file modification or merge.
