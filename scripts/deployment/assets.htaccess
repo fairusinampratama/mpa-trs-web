@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(?![A-Za-z0-9_.-]+\.css$).+">
+Require all denied
+</FilesMatch>
