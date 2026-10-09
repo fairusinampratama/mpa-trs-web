@@ -1,0 +1,38 @@
+name: FTPS preparation checks
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/ftps-*.yml'
+      - 'scripts/deployment/ftps_transport.py'
+      - 'scripts/deployment/fetch_application_artifact.py'
+      - 'tests/deployment/test_ftps.py'
+      - 'docs/infrastructure/ftps.md'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tests/deployment -v
+  tls-discovery:
+    name: Credential-free Rumahweb TLS discovery
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Verify explicit FTPS control certificate without login or writes
+        run: python3 scripts/deployment/ftps_transport.py tls --report evidence/ftps-tls.json
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        if: always()
+        with:
+          name: ftps-tls-${{ github.run_id }}
+          path: evidence/ftps-tls.json
+          retention-days: 14
+          if-no-files-found: error
