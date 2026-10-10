@@ -1,3 +1,5 @@
+> Current operational decision (10 October 2026): supervised ZIP delivery is authoritative; read supervised-zip-deployment.md. Historical full-file/preview proposals below are retained evidence and are superseded. PRs #8/#9 remain unmerged; no new large FTPS experiment. Stage 1 remains incomplete.
+
 # Stage 1 implementation
 
 Status: in progress, not deployed. Latest user direction on 9 October 2026 supersedes the Phase 3 framework-neutral and permanent-preview requirements. Keep historical evidence intact. No permanent preview domain will be created.
@@ -67,3 +69,4 @@ Before requesting deployment approval, present the current host inventory, exact
 ## Continuation checkpoint — 9 October 2026
 
 Earlier unmerged/authentication-blocked statements above are historical. PR #4 and #5 are now merged with separate approval; main 11d1862dbfe827377f9119465da2966f392d2bc1. Private FTPS run 37893378939 succeeded, preserved in unmerged PR #6. Current cPanel session supported read-only main-root inspection: index.php is the provider welcome, no main .htaccess/index.html appeared, existing nested application directories remain. No production file changed. Next tooling and exact private approval scope are in release-activation.md; hosting file/rename rehearsal still needs separate approval. Stage 1 remains incomplete.
+

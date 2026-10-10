@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "success": false,
+  "workflow_run": 38026277613,
+  "job_id": 114137684366,
+  "attempt": 1,
+  "workflow_sha": "c235f71cd69ac7f86e3c20eaadc0797811e481f4",
+  "head_branch": "stage1/private-parallel-sample",
+  "created_at": "2026-10-10T05:04:47Z",
+  "updated_at": "2026-10-10T05:18:50Z",
+  "duration_seconds": 843,
+  "conclusion": "failure",
+  "deployment_tests_passed": 51,
+  "artifact_fetches_verified": true,
+  "error_type": "TimeoutError",
+  "error_log_timestamp": "2026-10-10T05:18:46.3565119Z",
+  "socket_timeout_seconds": 30,
+  "workflow_timeout_minutes": 180,
+  "failed_operation_known": false,
+  "failed_phase_known": false,
+  "full_release_verified": false,
+  "private_selector_sequence_verified": false,
+  "production_activation": false,
+  "web_runtime_verified": false,
+  "atomicity_verified": false,
+  "retry_performed": false,
+  "remote_relative_directory": "probes/full-parallel-38026277613-1",
+  "evidence_artifact": {
+    "id": 11659469863,
+    "name": "private-parallel-full-38026277613-1",
+    "size_in_bytes": 225,
+    "url": "https://api.github.com/repos/fairusinampratama/mpa-trs-web/actions/artifacts/11659469863",
+    "archive_download_url": "https://api.github.com/repos/fairusinampratama/mpa-trs-web/actions/artifacts/11659469863/zip",
+    "expired": false,
+    "created_at": "2026-10-10T05:18:47Z",
+    "expires_at": "2026-10-24T05:18:46Z",
+    "updated_at": "2026-10-10T05:18:47Z",
+    "digest": "sha256:2142b056be11fdbdf13aa4c73efd3caa7aaf0c9c850291b291068b16d3fca968",
+    "workflow_run": {
+      "id": 38026277613,
+      "repository_id": 1410717423,
+      "head_repository_id": 1410717423,
+      "head_branch": "stage1/private-parallel-sample",
+      "head_sha": "c235f71cd69ac7f86e3c20eaadc0797811e481f4"
+    }
+  },
+  "limitations": [
+    "Failure report contains no operation, phase, worker or file counts.",
+    "The socket timeout cause is unresolved; no TLS rejection or concurrency limit is inferred.",
+    "Any partial private files must not be selected, resumed or promoted.",
+    "Earlier successful archive and sample evidence remains valid."
+  ]
+}

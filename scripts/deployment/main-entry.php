@@ -13,10 +13,11 @@ if (!preg_match('/\A[a-f0-9]{40}\z/D', $revision)) {
 }
 $release = $base.'/releases/'.$revision.'/application';
 $completion = $base.'/releases/'.$revision.'/COMPLETE.json';
-$completed = is_file($completion) && filesize($completion) <= 512
+$completed = is_file($completion) && filesize($completion) <= 4096
     ? json_decode(file_get_contents($completion), true) : null;
 if (realpath($release) !== $release || !is_file($release.'/vendor/autoload.php') || !is_file($base.'/shared/.env')
-    || !is_array($completed) || ($completed['revision'] ?? null) !== $revision) {
+    || !is_array($completed) || ($completed['revision'] ?? null) !== $revision
+    || ($completed['extraction_verified'] ?? false) !== true || ($completed['assets_verified'] ?? false) !== true) {
     http_response_code(503);
     exit('Website temporarily unavailable.');
 }
@@ -25,3 +26,4 @@ $app = require $release.'/bootstrap/app.php';
 $app->useEnvironmentPath($base.'/shared');
 $app->useStoragePath($base.'/shared/storage');
 $app->handleRequest(Request::capture());
+

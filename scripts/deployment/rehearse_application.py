@@ -14,7 +14,7 @@ import zipfile
 from application_release import verify
 
 
-def rehearse(archive, revision):
+def rehearse(archive, revision, archive_b=None, revision_b=None):
     verify(archive, revision)
     with tempfile.TemporaryDirectory(prefix='mpa-trs-runtime-') as tmp:
         root = Path(tmp); private = root/'private'; shared = private/'shared'; public = root/'public'
@@ -23,8 +23,14 @@ def rehearse(archive, revision):
         with zipfile.ZipFile(archive) as z:
             z.extractall(release)  # Only after bounded path/type/integrity validation above.
         completion = release/'COMPLETE.json'
-        completion.write_text(json.dumps({'revision': revision})+'\n')
+        completion.write_text(json.dumps({'revision': revision, 'extraction_verified': True, 'assets_verified': True})+'\n')
         shutil.copytree(release/'application/public/mpa-trs-assets', public/'mpa-trs-assets')
+        if archive_b:
+            verify(archive_b, revision_b)
+            other=private/'releases'/revision_b
+            with zipfile.ZipFile(archive_b) as z: z.extractall(other)
+            (other/'COMPLETE.json').write_text(json.dumps({'revision':revision_b,'extraction_verified':True,'assets_verified':True})+'\n')
+            shutil.copytree(other/'application/public/mpa-trs-assets'/revision_b, public/'mpa-trs-assets'/revision_b)
         for manifest in (public/'mpa-trs-assets').glob('*/manifest.json'): manifest.unlink()
         for path in ['framework/cache/data', 'framework/sessions', 'framework/views', 'logs']:
             (shared/'storage'/path).mkdir(parents=True)
@@ -58,11 +64,27 @@ def rehearse(archive, revision):
                 assert request(path)[0] == 404, 'Private path exposed'
             completion.unlink()
             assert request('/')[0] == 503, 'Incomplete release did not fail closed'
-            completion.write_text(json.dumps({'revision': revision})+'\n')
+            completion.write_text(json.dumps({'revision': revision, 'extraction_verified': True, 'assets_verified': True})+'\n')
+            for flag in ('extraction_verified','assets_verified'):
+                invalid={'revision':revision,'extraction_verified':True,'assets_verified':True};invalid[flag]=False
+                completion.write_text(json.dumps(invalid)+'\n')
+                assert request('/')[0]==503, 'Unverified release did not fail closed'
+            completion.write_text(json.dumps({'revision':revision,'extraction_verified':True,'assets_verified':True})+'\n')
             marker.write_text('../escape\n')
             assert request('/')[0] == 503, 'Invalid marker did not fail closed'
             marker.write_text(revision+'\n')
             assert request('/health')[0] == 200, 'Marker recovery failed'
+            if archive_b:
+                for selected in (revision, revision_b, revision):
+                    marker.write_text(selected+'\n')
+                    code, page=request('/')
+                    assert code==200 and b'MAPALA TURSINA' in page
+                    assert request('/health')==(200,json.dumps({'status':'ok','revision':selected},separators=(',',':')).encode())
+                    links=re.findall(rb'href="(?:http://[^" ]+)?(/mpa-trs-assets/[^" ]+\.css)"',page)
+                    assert len(links)==1 and ('/mpa-trs-assets/'+selected+'/').encode() in links[0], 'Mixed release CSS'
+                    with zipfile.ZipFile(archive if selected==revision else archive_b) as z:
+                        assert request(links[0].decode())==(200,z.read('application/public'+links[0].decode())), 'CSS byte mismatch'
+                print('Real packaged Laravel release A -> B -> A health/HTML/CSS passed.')
             assert request(css.group(2).decode())[0] == 200, 'Assets lost during recovery'
         finally:
             server.terminate(); server.wait(timeout=5)
@@ -71,4 +93,6 @@ def rehearse(archive, revision):
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--archive', required=True); parser.add_argument('--revision', required=True)
-    args=parser.parse_args(); rehearse(args.archive, args.revision)
+    parser.add_argument('--archive-b'); parser.add_argument('--revision-b')
+    args=parser.parse_args(); rehearse(args.archive, args.revision, args.archive_b, args.revision_b)
+
