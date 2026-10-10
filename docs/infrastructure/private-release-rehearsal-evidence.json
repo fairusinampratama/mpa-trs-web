@@ -1,0 +1,22 @@
+{
+  "atomicity_verified": false,
+  "attempt": 1,
+  "cancellation_timestamp": "2026-10-09T07:20:20.1335435Z",
+  "completion_receipt_available": false,
+  "conclusion": "cancelled",
+  "evidence_url": "https://github.com/fairusinampratama/mpa-trs-web/actions/runs/37896573464/job/113709176400",
+  "files_per_artifact": 5555,
+  "full_release_verified": false,
+  "job_id": 113709176400,
+  "production_activation": false,
+  "reason": "Cancelled after observed serial per-file upload/readback performance projected beyond workflow timeout. Files retained; selector stage never reached.",
+  "remote_relative_directory": "probes/release-rehearsal-37896573464-1",
+  "rename_over_existing_verified": false,
+  "run_id": 37896573464,
+  "sample_elapsed_seconds": 786.969,
+  "sample_log_timestamp": "2026-10-09T07:14:02.8659450Z",
+  "sample_verified_files": 250,
+  "source_main": "51ed3fdfdc1001073dbd7ea085049acbe461ddbd",
+  "success": false
+}
+

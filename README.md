@@ -1,13 +1,17 @@
 # MPA-TRS Web
 
-Laravel 12 / Blade / Tailwind application foundation for MAPALA TURSINA, in `application/`. GitHub is the source of truth; GitHub Actions tests and builds commit-identified artifacts; Rumahweb receives supervised releases. Stage 1 is not deployed yet.
+Minimal Laravel 12 / Blade / Tailwind application in `application/`, compatible with PHP 8.2. Stage 1 is the first real deployment at https://mapalatursina.my.id with verified update/recovery while preserving SLiMS and E-Letter. It is not deployed yet.
+
+GitHub is the source of truth. CI tests Laravel on PHP 8.2/8.3, builds production dependencies/assets from lock files, validates SHA-identified release ZIPs and runs real packaged Laravel A → B → A HTTP/CSS/recovery checks in private runner paths.
+
+Production delivery uses one encrypted FTPS ZIP upload, then one supervised cPanel File Manager extraction/recompression and CSS copy session per new release. Actions compares every extracted file against the trusted artifact before publishing a completion marker. Activation/rollback changes only a fixed private SHA selector, with critical-file/CSS and live revision checks. No file-by-file vendor deployment, remote commands, permanent preview or automatic production deployment.
+
+Read [operational runbook](docs/infrastructure/supervised-zip-deployment.md), [Stage 1 evidence](docs/infrastructure/stage1-implementation.md), [recovery](docs/infrastructure/recovery.md) and [historical Phase 3](docs/infrastructure/phase3-implementation.md). PRs #8/#9 are unfinished historical preparations/evidence, not production deployment solutions. Merges and production changes require explicit approval; branch protection is not enforced.
 
 ## Development
 
-PHP 8.2+ with Laravel extensions, Composer 2, Node 22 and Python 3.12+. In `application/`: copy `.env.example` to private `.env`, run `composer install`, `php artisan key:generate`, `npm ci`, `npm run build`, `php artisan test` and `php artisan serve`. No database or migration is needed. Do not commit environment values, runtime storage or uploads.
+PHP 8.2+, Composer 2, Node 22 and Python 3.12+. In `application/`: copy `.env.example` to private `.env`, `composer install`, `php artisan key:generate`, `npm ci`, `npm run build`, `php artisan test`, `php artisan serve`. The landing page requires no database or migration. Never commit credentials, environment values, runtime storage, uploads or account backups.
 
-At repository root: `python3 -m unittest discover -s tests/deployment -v`. Existing static probe scripts remain historical tested transport evidence. CI also tests Laravel on PHP 8.2/8.3 and builds production-only SHA-identified application ZIPs; it cannot deploy hosting.
+At repository root: `python3 -m unittest discover -s tests/deployment -v`. `rehearse_pair.py` builds the exact Git parent as a second real Laravel release; it needs PHP/Composer/Node and Git parent history. GitHub Actions provides this runtime. Current Work scratch lacks PHP/Composer, so do not describe Python fixtures as a Laravel runtime test.
 
-Read [Stage 1 implementation](docs/infrastructure/stage1-implementation.md), [historical Phase 3 evidence](docs/infrastructure/phase3-implementation.md), [deployment](docs/infrastructure/deployment.md) and [recovery](docs/infrastructure/recovery.md). A permanent preview domain is deferred. Production-ready merge and live activation require explicit user approval. Preserve SLiMS, E-Letter, shared PHP and existing databases.
-
-The authenticated private FTPS archive roundtrip is proven (run 37893378939). [Release activation preparation](docs/infrastructure/release-activation.md) adds a separately approved private file-by-file transfer and selector rehearsal. It is not a production deployment workflow, and no live application is activated yet.
+No new hosting purchase or paid add-on is required. Routine new releases still require one supervised cPanel session for extraction and CSS publication; retained-release rollback is designed to use FTPS only, pending live proof. Stage 1 is complete only after real main-domain launch, update/recovery and existing-site checks succeed.

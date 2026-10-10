@@ -1,3 +1,5 @@
+> Current operational decision (10 October 2026): supervised ZIP delivery is authoritative; read supervised-zip-deployment.md. Historical full-file/preview proposals below are retained evidence and are superseded. PRs #8/#9 remain unmerged; no new large FTPS experiment. Stage 1 remains incomplete.
+
 # FTPS transport investigation and safe preparation
 
 9 October 2026. Current status: private authenticated FTPS artifact roundtrip verified; production activation and rollback remain unverified. See the final verification checkpoint below. Earlier dated checkpoints are preserved as historical evidence. Current cPanel transport remains the working fallback. Stage 1 remains application foundation and first live deployment; no permanent preview domain.
@@ -123,3 +125,4 @@ What remains unproven: full Laravel individual-file upload performance, required
 Recommendation: retire the probe FTP account and both probe secrets after evidence review, preserving the private probe files. Retirement has not been performed and needs separately scoped authorization. Repository writers can access repository secrets by changing workflows because branch protection is not enforced; the current credential remains private-probe scoped only. Do not reuse it as a production credential.
 
 Do not rerun this one-shot approved probe automatically after a Work interruption. First inspect run 37893378939 and this recorded evidence. Production setup, credentials and activation still require separate approval.
+

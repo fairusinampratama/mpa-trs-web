@@ -123,4 +123,5 @@ if __name__ == '__main__':
     a = p.parse_args()
     if a.action == 'package': package(a.root, a.revision, a.archive, a.run)
     else: verify(a.archive, a.revision)
-    print('Verified Laravel release ' + a.revision)
+    print(json.dumps({'revision':a.revision,'archive_sha256':digest(Path(a.archive).read_bytes()),'archive_bytes':Path(a.archive).stat().st_size,'verified':True},sort_keys=True))
+

@@ -1,3 +1,5 @@
+> Current operational decision (10 October 2026): supervised ZIP delivery is authoritative; read supervised-zip-deployment.md. Historical full-file/preview proposals below are retained evidence and are superseded. PRs #8/#9 remain unmerged; no new large FTPS experiment. Stage 1 remains incomplete.
+
 # Stage 1 release activation preparation
 
 9 October 2026. Prepared and locally tested; hosting rehearsal not authorized or executed. Stage 1 remains incomplete. Preserve historical Phase 3 evidence and existing cPanel fallback.
@@ -66,3 +68,4 @@ Exact private rehearsal inputs (do not substitute untested builds):
 - The direct short-lived artifact URL returned 403 in Work. Supported file materialization succeeded and the resulting local bytes matched the trusted wrapper digest. No bypass, host write or additional FTP transfer was needed.
 
 Only the next private rehearsal and PR merges are being proposed now. Production approval cannot be concrete until the real FTP replacement/performance result is known. Keep current probe credentials until this scoped decision; do not retire or repurpose them automatically.
+
