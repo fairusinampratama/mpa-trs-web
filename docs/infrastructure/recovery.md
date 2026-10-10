@@ -14,7 +14,7 @@ Before hosting changes require: encrypted durable off-host backup in a verified 
 
 Current user-selected destination: private Google Drive folder `MPA-TRS encrypted recovery backups`. See phase3-implementation.md for actual transfer/encryption evidence. Do not place the recovery key in that folder or account archives in GitHub/public roots.
 
-Full cPanel-account restore may require Rumahweb support. File/database restore is separate and requires approval; do not rehearse over production. Probe rollback retains A/B archives and extracted releases and reverses only preview activation. No existing database restore or migration is part of this phase. Production approval remains explicit human approval outside unattended Actions.
+Full cPanel-account restore may require Rumahweb support. File/database restore is separate and requires approval; do not rehearse over production. Current production code rollback retains A/B archives/runtime/CSS and reverses only the private release selector; see stage1-live-deployment.md. Earlier static preview experiments remain historical. No existing database restore or migration is part of this phase. Production approval remains explicit human approval outside unattended Actions.
 
 ## Verified encrypted off-host preservation (8 October 2026)
 
@@ -48,3 +48,7 @@ gzip -t full-backup.tar.gz
 
 Require both recorded digests before any restoration. Decrypt SLiMS config similarly using its .cms file. Keep decrypted bytes private; do not extract over production. Ciphertext is integrity-protected, but SHA-256 values and exact file identities should be retained independently too. Full-account restore still requires separately approved provider-assisted handling; encryption verification is not a restore rehearsal.
 
+
+## Production launch recovery — 10 October 2026
+
+Live code rollback B → A succeeded in Actions run 38045615888. Current original welcome backup and exact restoration scope, plus the separately encrypted production environment backup, are recorded in [stage1-live-deployment.md](stage1-live-deployment.md). Environment ciphertext SHA-256: `e094b4723f363ac851392101b6f1a4c95874a55fbc34ec28d5cbddb6461e0030`, 1,069 bytes, Drive file `1SHUOjUL9Dkj-r6rxmAZVaI3vyZvLLwdu`. Stored ciphertext digest and authenticated decryption were verified, owner-only access preserved, and the existing recovery key remained separate. Decrypt using the same CMS command, output to a private temporary environment file, validate it locally, then restore only shared/.env under separate recovery approval with mode 0600. Never display the key/environment or restore a whole account for a code-only rollback. A/B source Actions artifacts expire 24 October 2026; current automated rollback requires their availability. Full account/database restoration and original-welcome recovery were not rehearsed over production.

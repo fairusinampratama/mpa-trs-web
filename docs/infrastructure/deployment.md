@@ -1,3 +1,5 @@
+> Current live procedure: read [stage1-live-deployment.md](stage1-live-deployment.md) first. Laravel launch and A → B → A succeeded; the static preview/full-file instructions below are historical evidence, not current operational requirements.
+
 > Current operational decision (10 October 2026): supervised ZIP delivery is authoritative; read supervised-zip-deployment.md. Historical full-file/preview proposals below are retained evidence and are superseded. PRs #8/#9 remain unmerged; no new large FTPS experiment. Stage 1 remains incomplete.
 
 > Current policy: Stage 1 uses Laravel 12 and supervised main-domain deployment. Permanent preview is deferred. See [Stage 1 implementation](stage1-implementation.md). The static probe procedures below preserve historical infrastructure evidence.

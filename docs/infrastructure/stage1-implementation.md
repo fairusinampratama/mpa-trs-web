@@ -1,3 +1,5 @@
+> Authoritative live checkpoint (10 October 2026): Laravel 12.69.3 is deployed; live A → B → A and existing-site regressions passed. Read [live evidence](stage1-live-deployment.md). Mobile rendering and final evidence PR review remain outstanding. All earlier prepared/authentication-blocked/not-deployed statements below are preserved historical checkpoints.
+
 > Current operational decision (10 October 2026): supervised ZIP delivery is authoritative; read supervised-zip-deployment.md. Historical full-file/preview proposals below are retained evidence and are superseded. PRs #8/#9 remain unmerged; no new large FTPS experiment. Stage 1 remains incomplete.
 
 # Stage 1 implementation

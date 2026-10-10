@@ -1,6 +1,6 @@
 # Stage 1 — supervised ZIP delivery
 
-10 October 2026. Authoritative replacement for the proposed full-file production transport. Prepared, not deployed. PRs #8/#9 are reviewed but are not merged or production-ready. No further large-scale FTPS experiment is authorized or needed for this path. Historical evidence remains in phase3-implementation.md, ftps-private-probe-evidence.json, private-parallel-sample-evidence.json, private-release-rehearsal-evidence.json and private-full-parallel-evidence.json. Stage 1 remains incomplete until live Laravel plus real A → B → A and existing-site regression checks pass.
+10 October 2026. Authoritative replacement for the proposed full-file production transport. Live launch and real A → B → A succeeded; read [authoritative live evidence](stage1-live-deployment.md) first. Earlier prepared/unproven checkpoints below are historical and do not override that record. PRs #8/#9 are reviewed but are not merged or production-ready. No further large-scale FTPS experiment is authorized or needed for this path. Historical evidence remains in phase3-implementation.md, ftps-private-probe-evidence.json, private-parallel-sample-evidence.json, private-release-rehearsal-evidence.json and private-full-parallel-evidence.json. Core live criteria passed; mobile verification and final evidence PR review remain outstanding.
 
 ## Implemented delivery
 
@@ -8,7 +8,7 @@ Actions builds locked Composer production dependencies and Tailwind CSS, verifie
 
 The main-only manually triggered supervised-release.yml exposes four distinct actions: upload, verify-extracted, activate and rollback. Each requires exact successful source run, SHA, trusted inner ZIP digest, expected prior selector and APPROVED_SUPERVISED_ZIP_OPERATION following explicit operator approval. Concurrency prevents overlapping deployment jobs; it is not enforced human approval. Branch protection is not enforced, so repository writers can modify workflows and access secrets. No automatic push deployment or automatic rollback.
 
-Only one new private FTP account is proposed: mpatrs_runtime@mapalatursina.my.id, jailed to /home/mapp5848/mpa-trs/production. Only MPA_TRS_FTPS_RUNTIME_USER/PASSWORD secrets are needed. TLS certificate/hostname verification and PROT P stay enabled; parent/existing-app denial and a fixed root sentinel are checked before writes. Never reuse probe or primary credentials. This root includes private MPA-TRS environment/storage; workflow writers remain trusted. No public-assets FTP account is needed because File Manager publishes the single versioned CSS directory during extraction.
+One dedicated private FTP account is provisioned and verified: mpatrs_runtime@mapalatursina.my.id, jailed to /home/mapp5848/mpa-trs/production. Only MPA_TRS_FTPS_RUNTIME_USER/PASSWORD secrets are needed. TLS certificate/hostname verification and PROT P stay enabled; parent/existing-app denial and a fixed root sentinel are checked before writes. Never reuse probe or primary credentials. This root includes private MPA-TRS environment/storage; workflow writers remain trusted. No public-assets FTP account is needed because File Manager publishes the single versioned CSS directory during extraction.
 
 ## Exact layout and changes requiring approval
 
@@ -95,3 +95,7 @@ No upload was retried automatically. Before the approved launch resumes after se
 
 Production index.php/.htaccess, public assets, environment, existing applications, databases and PHP settings remain unchanged. No Laravel release has been uploaded, extracted, completed or activated on hosting. Full extraction/recompression, public CSS verification, runtime compatibility and live A → B → A remain pending; Stage 1 is incomplete.
 
+
+## Current live checkpoint
+
+Read [stage1-live-deployment.md](stage1-live-deployment.md) and its JSON evidence for actual successful upload/verification/activation/rollback runs, current A SHA, scoped original-file recovery and encrypted production-environment backup. Historical “unchanged/not activated/pending” statements above describe earlier checkpoints only. Do not repeat completed experiments or deploy unmerged PRs #8/#9.

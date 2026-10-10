@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-10",
+  "production_url": "https://mapalatursina.my.id/",
+  "laravel_version": "12.69.3",
+  "effective_php_baseline": "8.2",
+  "tooling_commit": "dccfb96e270955bae6b247f306085425f36d98d3",
+  "merged_prs": [
+    10,
+    11
+  ],
+  "active_revision": "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+  "release_cycle": [
+    "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+    "7bc714cc0ac0de59e4b0e6f7cf900dcb334c1d86",
+    "623bb0a024c3a72454a1f9edaa935c0b1c0e095c"
+  ],
+  "releases": {
+    "A": {
+      "revision": "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+      "source_run": 38030588835,
+      "archive_sha256": "dd322dc8a3e445f528a0232a8320843028eeda8cd851b2ad49e85863d91fc9d5",
+      "zip_bytes": 26558197,
+      "upload_run": 38043932989,
+      "verification_run": 38045073075,
+      "verified_files": 5555,
+      "verified_bytes": 25335627,
+      "snapshot_sha256": "1c75c3135d38327cdae3f569340fb78149778d3c8c593db6d35626f9d5065b61"
+    },
+    "B": {
+      "revision": "7bc714cc0ac0de59e4b0e6f7cf900dcb334c1d86",
+      "source_run": 38030771303,
+      "archive_sha256": "77de62a139fd7bb29fc2a98d696eb34adacfd5ff4c807d6844559e2ac5aa2f38",
+      "zip_bytes": 26558197,
+      "upload_run": 38044055031,
+      "verification_run": 38045147317,
+      "verified_files": 5555,
+      "verified_bytes": 25335627,
+      "snapshot_sha256": "a174fa9888e4ca5969cc69a2e9f6676147b66e37be9e8fa77af5937943f08d43"
+    }
+  },
+  "transitions": [
+    {
+      "action": "activate",
+      "previous": "NONE",
+      "revision": "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+      "run": 38045291742,
+      "job": 114193481008,
+      "success": true
+    },
+    {
+      "action": "activate",
+      "previous": "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+      "revision": "7bc714cc0ac0de59e4b0e6f7cf900dcb334c1d86",
+      "run": 38045464798,
+      "job": 114193980505,
+      "success": true
+    },
+    {
+      "action": "rollback",
+      "previous": "7bc714cc0ac0de59e4b0e6f7cf900dcb334c1d86",
+      "revision": "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+      "run": 38045615888,
+      "job": 114194424031,
+      "success": true
+    }
+  ],
+  "automated_checks": {
+    "deployment_tests": 59,
+    "https": true,
+    "health_revision": true,
+    "html": true,
+    "exact_css": true,
+    "no_mixed_asset_urls": true,
+    "private_url_denial": true,
+    "ftps_tls_ca_hostname_validation": true,
+    "encrypted_data": true,
+    "full_extracted_byte_comparison": true,
+    "env_mode": "0600",
+    "atomicity_verified": false,
+    "zero_downtime_verified": false,
+    "database_rollback_tested": false
+  },
+  "browser_checks": {
+    "desktop_rendering": true,
+    "desktop_viewport": [
+      1363,
+      936
+    ],
+    "revision_from_css_urls": true,
+    "horizontal_overflow": false,
+    "mobile_rendering": false,
+    "mobile_limitation": "Available cloud browser APIs expose no viewport resizing; attempted standard DevTools shortcuts did not change the viewport. No mobile claim.",
+    "application_console_errors_observed": false,
+    "extension_console_error_excluded": true,
+    "slims_catalog": true,
+    "slims_search_keyword": "Bromo",
+    "slims_search_results": 1,
+    "slims_book_detail_id": 48,
+    "eletter_login": true,
+    "nested_main_domain_slims_detail": true,
+    "nested_main_domain_eletter_login": true,
+    "slims_admin_writes_tested": false,
+    "eletter_authenticated_actions_tested": false
+  },
+  "original_main": {
+    "bytes": 10929,
+    "sha256": "93a2fb8bbf8ce6dea77c06407907ed9ad32c759f3a7eae124b4c6f3476ab048f",
+    "originalHtaccessAbsent": true,
+    "originalIndexHtmlAbsent": true,
+    "backupCopied": true,
+    "backupByteIdentical": true,
+    "backupDirectory": "/home/mapp5848/mpa-trs/production/rollback-originals/20261010-launch"
+  },
+  "environment_backup": {
+    "fileId": "1SHUOjUL9Dkj-r6rxmAZVaI3vyZvLLwdu",
+    "ciphertextBytes": 1069,
+    "ciphertextSha256": "e094b4723f363ac851392101b6f1a4c95874a55fbc34ec28d5cbddb6461e0030",
+    "ownerOnly": true,
+    "storedCiphertextVerified": true,
+    "decryptedEnvMatched": true,
+    "keySeparate": true
+  },
+  "limitations": [
+    "One supervised cPanel extraction/recompression/CSS publication session per new release.",
+    "FTPS activation/retained-release rollback proven without cPanel login.",
+    "Actions source artifacts expire 24 October 2026; existing Actions rollback requires a retained downloadable trusted source artifact. Do not assume host retention extends Actions retention.",
+    "Rollback checks critical retained files and CSS, relying on prior full-tree verification.",
+    "Current A/B are distinct source revisions with identical landing content; versioned asset paths differ.",
+    "Mobile rendering unverified; final evidence PR requires separate merge approval."
+  ],
+  "additional_infrastructure_cost": {
+    "monthly": 0,
+    "annual": 0,
+    "paid_actions_overage_authorized": false
+  }
+}
