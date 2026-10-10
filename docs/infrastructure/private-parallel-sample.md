@@ -1,0 +1,11 @@
+# Approved private sample — 10 October 2026
+
+User separately approved 64 artifact files, at most four verified FTPS sessions, checksum readback, and a harmless A → B → A text selector in a new ftps-probe/probes/concurrency-selector-<run>-<attempt>/ directory. Files retained; no production changes or merges authorized. PR #8 remains unmerged.
+
+This branch modifies the existing registered manual workflow only on stage1/private-parallel-sample. GitHub can dispatch its branch revision without merging. Both workflow and script restrict that exact branch and typed acknowledgement. The acknowledgement is not branch protection: repository writers can still alter code and access existing repository secrets. Only existing private probe secrets are used, not new credentials or production secrets.
+
+Pinned source: run 37895631691, b76876e6ca5944feb2365d0347798004f658962d, inner ZIP SHA-256 29a2dc8d50041ffc7601700e0a13298ab9d47d35d89ca6319f0106002b6e84fd. Strict archive/manifest validation precedes networking. Select exactly 64 evenly spaced sorted vendor PHP entries, total capped at 8 MiB, store exact bytes under files/sample-000.php through sample-063.php. This samples small-file throughput; it does not measure full-tree directory creation or demonstrate a complete release.
+
+All four sessions validate certificates, encrypted data channels, jail boundaries and sentinel before the first write. The setup session becomes one of the four worker sessions, avoiding a fifth concurrent connection. Each worker handles 16 distinct files, readback SHA-256 verifies every file. On a worker failure, sibling loops stop; partials are retained. After all sample files pass, replace only sample-selector with fixed A/B/A bytes using FTP rename, no delete fallback. Record observed modes without inferring PHP owner compatibility, timing, TLS and source-path mapping in a private receipt and 14-day Actions artifact. No COMPLETE.json or production-ready selector is created.
+
+Results pending; six focused local safety tests passed. Full repository CI must pass before dispatch. No hosting write has occurred in this continuation. Existing encrypted backups and separately retained key are checked before dispatch; previous authenticated decryption/checksum evidence remains in recovery.md. The earlier ZIP proof is not repeated, and the cancelled serial run is not retried.
