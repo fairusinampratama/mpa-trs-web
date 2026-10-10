@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "project": "mpa-trs-web",
+  "state": "prepared-not-deployed",
+  "source_commit": "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+  "ci_run": 38030588835,
+  "php82_job": 114150506417,
+  "ci_conclusion": "success",
+  "deployment_tests": 55,
+  "laravel_version": "12.69.3",
+  "laravel_tests": 4,
+  "laravel_assertions": 12,
+  "real_runner_pair_verified": true,
+  "pair_parent_commit": "21347df82a8a455834588371cedf9d1b5c9a51d9",
+  "http_health_html_css_A_B_A": true,
+  "private_denial_and_fail_closed_recovery": true,
+  "artifact_id": 11661379400,
+  "artifact_expires": "2026-10-24T06:21:07Z",
+  "wrapper_sha256": "4b6be8b2ad4617f2a0fdb0057618189f27627024f7583ed5d3aaf6fd5bedfe73",
+  "inner_sha256": "dd322dc8a3e445f528a0232a8320843028eeda8cd851b2ad49e85863d91fc9d5",
+  "inner_bytes": 26558197,
+  "hosting_writes": false,
+  "production_verified": false,
+  "first_ci": {
+    "run": 38030490548,
+    "conclusion": "failure",
+    "cause": "HTTP harness counted the CSS preload and stylesheet href twice; fixed to verify unique URLs without permitting mixed revisions."
+  }
+}
