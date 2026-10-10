@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import stat
 import sys
+import tempfile
 import unittest
 from unittest.mock import patch
 import zipfile
@@ -68,6 +69,37 @@ class SupervisedZipTests(unittest.TestCase):
         with self.assertRaises(ValueError):s.activate(ftp,self.expected,self.sha,'d'*64,'b'*40,'123')
     def test_probe_credentials_not_accepted(self):
         with patch.dict('os.environ',{'MPA_TRS_FTPS_RUNTIME_USER':'mpatrs_probe@mapalatursina.my.id','MPA_TRS_FTPS_RUNTIME_PASSWORD':'dummy'},clear=True),self.assertRaises(ValueError):s.connect()
+    def test_private_archive_upload_roundtrip_without_relaxing_payload_policy(self):
+        data=self.snapshot(self.good())
+        with tempfile.TemporaryDirectory() as directory:
+            archive=Path(directory)/'application.zip';archive.write_bytes(data)
+            ftp=MemoryFTP()
+            result=s.upload(ftp,archive,self.expected,self.sha)
+        destination='incoming/'+self.sha
+        self.assertEqual(ftp.files[destination+'/application.zip'],data)
+        self.assertEqual(ftp.files[destination+'/archive.sha256'],(hashlib.sha256(data).hexdigest()+'\n').encode())
+        self.assertTrue(result['zip_upload_readback_verified'])
+        self.assertFalse(result['activation']);self.assertFalse(ftp.renames)
+        with self.assertRaises(ValueError):s.release.safe(destination+'/application.zip')
+    def test_corrupt_archive_readback_never_writes_checksum_or_activates(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive=Path(directory)/'application.zip';archive.write_bytes(self.snapshot(self.good()))
+            ftp=MemoryFTP();ftp.corrupt=True
+            with self.assertRaises(ValueError):s.upload(ftp,archive,self.expected,self.sha)
+        self.assertNotIn('incoming/'+self.sha+'/archive.sha256',ftp.files)
+        self.assertFalse(ftp.renames)
+    def test_existing_archive_namespace_is_not_overwritten(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive=Path(directory)/'application.zip';archive.write_bytes(b'archive')
+            ftp=MemoryFTP();ftp.directories.add('incoming/'+self.sha)
+            before=dict(ftp.files)
+            with self.assertRaises(ftplib.error_perm):s.upload(ftp,archive,self.expected,self.sha)
+        self.assertEqual(ftp.files,before)
+    def test_invalid_archive_destination_rejected_before_any_ftp_operation(self):
+        ftp=MemoryFTP();before=dict(ftp.files)
+        for revision in ('../public_html','a'*39,'A'*40,'a'*40+'/escape'):
+            with self.assertRaises(ValueError):s.upload(ftp,'absent.zip',self.expected,revision)
+        self.assertFalse(ftp.directories);self.assertEqual(ftp.files,before)
     def test_failed_extraction_comparison_never_publishes_completion(self):
         ftp=MemoryFTP();ftp.files['verification/'+self.sha+'.zip']=self.snapshot(self.good()[:-1])
         with self.assertRaises(ValueError):s.ready(ftp,self.expected,self.sha,'c'*64,'123')
@@ -86,3 +118,4 @@ class SupervisedZipTests(unittest.TestCase):
         self.assertFalse(any(n.endswith('COMPLETE.json') for n in ftp.files))
 
 if __name__=='__main__':unittest.main()
+

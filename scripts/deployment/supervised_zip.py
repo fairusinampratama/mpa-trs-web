@@ -147,9 +147,17 @@ def verify_critical(ftp, expected, revision):
 
 
 def upload(ftp, archive, expected, revision):
-    ftp.mkd('incoming/'+revision)  # Existing/partial namespaces are never overwritten.
+    if not tls.SHA.fullmatch(revision):
+        raise ValueError('Invalid archive destination identity')
     data=Path(archive).read_bytes()
-    put_verified(ftp,'incoming/'+revision+'/application.zip',data)
+    ftp.mkd('incoming/'+revision)  # Existing/partial namespaces are never overwritten.
+    # The verified transport envelope is a ZIP; payload file validation correctly
+    # forbids nested archives and must not be relaxed for this private transfer.
+    destination='incoming/'+revision+'/application.zip'
+    ftp.storbinary('STOR '+destination,io.BytesIO(data))
+    size,digest=tls.read_digest(ftp,destination,len(data))
+    if size != len(data) or digest != hashlib.sha256(data).hexdigest():
+        raise ValueError('Uploaded archive integrity mismatch')
     put_verified(ftp,'incoming/'+revision+'/archive.sha256',(hashlib.sha256(data).hexdigest()+'\n').encode())
     return {'zip_bytes':len(data), 'zip_upload_readback_verified':True, 'activation':False}
 
@@ -217,3 +225,4 @@ def main():
     print(json.dumps(result,sort_keys=True));raise SystemExit(0 if result['success'] else 1)
 
 if __name__=='__main__': main()
+
