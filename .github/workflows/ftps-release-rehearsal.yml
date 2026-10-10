@@ -1,9 +1,15 @@
-name: Approved private parallel sample (manual branch only)
+name: Private FTPS verification (manual branch only)
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: Full requires separate explicit approval beyond the completed sample
+        required: true
+        type: choice
+        default: sample
+        options: [sample, full]
       approval:
-        description: Approved 64-file sample only; enter PRIVATE_PARALLEL_SAMPLE
+        description: Enter PRIVATE_PARALLEL_SAMPLE or separately approved PRIVATE_FULL_PARALLEL_REHEARSAL
         required: true
         type: string
 permissions:
@@ -14,9 +20,9 @@ concurrency:
   cancel-in-progress: false
 jobs:
   sample:
-    if: github.ref == 'refs/heads/stage1/private-parallel-sample' && inputs.approval == 'PRIVATE_PARALLEL_SAMPLE'
+    if: github.ref == 'refs/heads/stage1/private-parallel-sample' && ((inputs.mode == 'sample' && inputs.approval == 'PRIVATE_PARALLEL_SAMPLE') || (inputs.mode == 'full' && inputs.approval == 'PRIVATE_FULL_PARALLEL_REHEARSAL'))
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: ${{ inputs.mode == 'full' && 180 || 15 }}
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
@@ -26,15 +32,26 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/deployment/fetch_application_artifact.py --run 37895631691 --revision b76876e6ca5944feb2365d0347798004f658962d --digest 29a2dc8d50041ffc7601700e0a13298ab9d47d35d89ca6319f0106002b6e84fd --destination incoming
-      - name: Approved 64-file sample and harmless selector cycle
+      - name: Fetch fixed artifact A for separately approved full rehearsal
+        if: inputs.mode == 'full'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/deployment/fetch_application_artifact.py --run 37884284506 --revision fcef4f76f77e30d383bd59c33af84292392d550f --digest f0da119bbbffc8330fa117409dcca99c9fda9d3964b0022a1ec184fc75294081 --destination incoming-a
+      - name: Execute only the specifically approved private mode
         env:
           MPA_TRS_FTPS_PROBE_USER: ${{ secrets.MPA_TRS_FTPS_PROBE_USER }}
           MPA_TRS_FTPS_PROBE_PASSWORD: ${{ secrets.MPA_TRS_FTPS_PROBE_PASSWORD }}
           MPA_TRS_PRIVATE_APPROVAL: ${{ inputs.approval }}
-        run: python3 scripts/deployment/ftps_parallel_sample.py --archive incoming/application-b76876e6ca5944feb2365d0347798004f658962d.zip --run-id "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" --report evidence/parallel-sample.json
+          MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$MODE" = "sample" ]; then
+            python3 scripts/deployment/ftps_parallel_sample.py --archive incoming/application-b76876e6ca5944feb2365d0347798004f658962d.zip --run-id "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" --report evidence/parallel-sample.json
+          else
+            python3 scripts/deployment/ftps_full_parallel_rehearsal.py --archive-a incoming-a/application-fcef4f76f77e30d383bd59c33af84292392d550f.zip --archive-b incoming/application-b76876e6ca5944feb2365d0347798004f658962d.zip --run-id "$GITHUB_RUN_ID" --attempt "$GITHUB_RUN_ATTEMPT" --report evidence/full-parallel.json
+          fi
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
         if: always()
         with:
-          name: private-parallel-sample-${{ github.run_id }}-${{ github.run_attempt }}
-          path: evidence/parallel-sample.json
+          name: private-parallel-${{ inputs.mode }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: evidence/*.json
           retention-days: 14

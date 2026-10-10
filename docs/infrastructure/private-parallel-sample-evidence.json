@@ -1,0 +1,558 @@
+{
+  "archive_sha256": "29a2dc8d50041ffc7601700e0a13298ab9d47d35d89ca6319f0106002b6e84fd",
+  "atomicity_verified": false,
+  "attempt": "1",
+  "connections": 4,
+  "files": [
+    {
+      "bytes": 748,
+      "remote": "files/sample-000.php",
+      "sha256": "805fcf9bf971a595839d187360f9e1081e7db67b5d860e7e74701a813fd5b621",
+      "source": "application/vendor/autoload.php"
+    },
+    {
+      "bytes": 790,
+      "remote": "files/sample-001.php",
+      "sha256": "68d176d1dff1c5d33b5288e7d01ccead9bfbf953f15931a715f38ed96b145935",
+      "source": "application/vendor/doctrine/inflector/src/Rules/Transformation.php"
+    },
+    {
+      "bytes": 786,
+      "remote": "files/sample-002.php",
+      "sha256": "92d92ef8258c0a50511be6f54b523588e19271f60c872447fbf38e5e28b122a0",
+      "source": "application/vendor/egulias/email-validator/src/Validation/EmailValidation.php"
+    },
+    {
+      "bytes": 160,
+      "remote": "files/sample-003.php",
+      "sha256": "188619ae14fd7457f450a02fba9f4ab58ef3fd2eccf90ee5e0d39b2b6078480a",
+      "source": "application/vendor/guzzlehttp/guzzle/src/functions_include.php"
+    },
+    {
+      "bytes": 442,
+      "remote": "files/sample-004.php",
+      "sha256": "cfda5df6ac169825113b24fb62cf69eb7a140909817e3973876038228a2af573",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Auth/Events/CurrentDeviceLogout.php"
+    },
+    {
+      "bytes": 1034,
+      "remote": "files/sample-005.php",
+      "sha256": "0efc4e0e08ea1b33bfec7d1574d9af62969cb4d6ef373b080fcf5cbfcb2938ca",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Cache/Console/CacheTableCommand.php"
+    },
+    {
+      "bytes": 9322,
+      "remote": "files/sample-006.php",
+      "sha256": "6bedfb55d8f7db3e278de8f89d9b886a8c394a43b226212070f3a4a7e77e56c1",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Console/Concerns/ConfiguresPrompts.php"
+    },
+    {
+      "bytes": 792,
+      "remote": "files/sample-007.php",
+      "sha256": "2ac63a130e08b70122369946b39a0891d0c949cb0af5f2cd1df1451e32f46e9c",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Container/Attributes/Database.php"
+    },
+    {
+      "bytes": 279,
+      "remote": "files/sample-008.php",
+      "sha256": "e0281bd9e4539eec6c68d562c748127f11f4941cbf278544a8b75647443e6955",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Contracts/Filesystem/Factory.php"
+    },
+    {
+      "bytes": 541,
+      "remote": "files/sample-009.php",
+      "sha256": "7af9b021427bde9d3709087b6f8640d1332022bd90e7fb2676933bf6fb846b6c",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Contracts/View/View.php"
+    },
+    {
+      "bytes": 2854,
+      "remote": "files/sample-010.php",
+      "sha256": "69e8786d4fe06a991a0ec36b9bbc831f447aa84671001e4975fe05592ccb17d6",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Casts/AsEnumArrayObject.php"
+    },
+    {
+      "bytes": 103,
+      "remote": "files/sample-011.php",
+      "sha256": "4e906f032cb07ff4172df86cae75ed3858a3cbdb6621da6a20d5d74e904b5efb",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Database/Events/MigrationsEnded.php"
+    },
+    {
+      "bytes": 2145,
+      "remote": "files/sample-012.php",
+      "sha256": "208096ec3803ca90981bcf717e1c3413229369fe9fd1b78eebd0bf15d8fb74ea",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php"
+    },
+    {
+      "bytes": 2979,
+      "remote": "files/sample-013.php",
+      "sha256": "950ade3507d371cb2c8e773beab1361f489dee316cc2fef0fc5c9da4ecb98fa4",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Foundation/Console/ExceptionMakeCommand.php"
+    },
+    {
+      "bytes": 2096,
+      "remote": "files/sample-014.php",
+      "sha256": "50ba3856b67ad9fa1769ea2d3fa38c6a01a35cc578bc0443661d3c8a8a0a90aa",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php"
+    },
+    {
+      "bytes": 296,
+      "remote": "files/sample-015.php",
+      "sha256": "97d5169bee744a43d5509f5276276c2e3e0f26caa68e5f679d171eda486c0d5e",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Foundation/resources/exceptions/renderer/components/icons/info.blade.php"
+    },
+    {
+      "bytes": 6219,
+      "remote": "files/sample-016.php",
+      "sha256": "d9fa20b556d3c637d365c5ef774ad739d4042ac1ea5ce2e1895527d410a3009e",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Http/Resources/JsonApi/JsonApiResource.php"
+    },
+    {
+      "bytes": 9384,
+      "remote": "files/sample-017.php",
+      "sha256": "bec28f8c16a69f95ed58903bcf9c33150dca1c93d9c82e77705028b750c685b0",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Notifications/Channels/MailChannel.php"
+    },
+    {
+      "bytes": 5676,
+      "remote": "files/sample-018.php",
+      "sha256": "28cfffe04025bf530c8df5d3e8d9bb2b95e2aa0137c704a0019cdb37d4181f9c",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Queue/Console/MonitorCommand.php"
+    },
+    {
+      "bytes": 939,
+      "remote": "files/sample-019.php",
+      "sha256": "234f82dae5e725011a5026bd842cb72cfa46053feb1c5258d64cb712101ecfe8",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Redis/Connections/PredisClusterConnection.php"
+    },
+    {
+      "bytes": 1752,
+      "remote": "files/sample-020.php",
+      "sha256": "75cd78daff05208413fe4d6fc7a678888010181dc44226e908c777966663a6fa",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Session/EncryptedStore.php"
+    },
+    {
+      "bytes": 1905,
+      "remote": "files/sample-021.php",
+      "sha256": "61683d6fd67b1415ce1ffade9a9aa845508bd1cf033e034ae4ec6ee75595392f",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Support/Once.php"
+    },
+    {
+      "bytes": 2424,
+      "remote": "files/sample-022.php",
+      "sha256": "abe02e76a97ff79c5a50f7f4b84d83818ff7263c5597c2d9660cb021b4d05f8e",
+      "source": "application/vendor/laravel/framework/src/Illuminate/Validation/ConditionalRules.php"
+    },
+    {
+      "bytes": 362,
+      "remote": "files/sample-023.php",
+      "sha256": "422e5fc1838cb255269e2e90203a5968d478f30880434d67897507e954544b5a",
+      "source": "application/vendor/laravel/framework/src/Illuminate/View/Engines/Engine.php"
+    },
+    {
+      "bytes": 4757,
+      "remote": "files/sample-024.php",
+      "sha256": "9710f9093c6f19b6c5bdb7f606696123ddb8e0fde0736d34056b413766ee80ab",
+      "source": "application/vendor/laravel/prompts/src/Themes/Default/MultiSelectPromptRenderer.php"
+    },
+    {
+      "bytes": 1336,
+      "remote": "files/sample-025.php",
+      "sha256": "72612f394585d6d7a7fe75e5e5d9745fb6bf490d8e4fd7419da2a1f2030a6334",
+      "source": "application/vendor/league/commonmark/src/Extension/CommonMark/Node/Block/ListBlock.php"
+    },
+    {
+      "bytes": 2834,
+      "remote": "files/sample-026.php",
+      "sha256": "416ccc4e978fd0ade927002e04d12ceeb3e44c927ab1e05ec052b4de1cacf813",
+      "source": "application/vendor/league/commonmark/src/Extension/Footnote/Event/NumberFootnotesListener.php"
+    },
+    {
+      "bytes": 1207,
+      "remote": "files/sample-027.php",
+      "sha256": "40856b6d84d51215a4ffc095ca0507f590adc8b1485f37847f9d48c7030d6fdf",
+      "source": "application/vendor/league/commonmark/src/Extension/TableOfContents/TableOfContentsReferenceRenderer.php"
+    },
+    {
+      "bytes": 3476,
+      "remote": "files/sample-028.php",
+      "sha256": "f2c23acf53478e32cbb17cb84130792fd855f5da3ec7181cfd6b6f57fc3510ab",
+      "source": "application/vendor/league/commonmark/src/Util/ArrayCollection.php"
+    },
+    {
+      "bytes": 377,
+      "remote": "files/sample-029.php",
+      "sha256": "8cf94bec3624bb32fde837020db402212617757214d3cd427b9f94648225a08a",
+      "source": "application/vendor/league/flysystem/src/UrlGeneration/TemporaryUrlGenerator.php"
+    },
+    {
+      "bytes": 2078,
+      "remote": "files/sample-030.php",
+      "sha256": "e5fe3b2257732c2bdd08a31cb1dbc21211600152c6ce802d14657e2df053f38b",
+      "source": "application/vendor/monolog/monolog/src/Monolog/Formatter/FluentdFormatter.php"
+    },
+    {
+      "bytes": 12175,
+      "remote": "files/sample-031.php",
+      "sha256": "e725e900b051c0926ebd68cd7c07cd6d53abd2583f09db24ac23bd271ce634d1",
+      "source": "application/vendor/monolog/monolog/src/Monolog/Handler/SocketHandler.php"
+    },
+    {
+      "bytes": 1081,
+      "remote": "files/sample-032.php",
+      "sha256": "a5075aa24642c8c4dc9d17047048c512ea8a1338348a9c01b8468c6e6e8aa7b9",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Exceptions/PeriodFilterSafetyException.php"
+    },
+    {
+      "bytes": 335,
+      "remote": "files/sample-033.php",
+      "sha256": "74540d124b1752323b3bb0c1aa036e88d82fb0d00bdc76c758e79b8d2cf0b1a2",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/ber.php"
+    },
+    {
+      "bytes": 472,
+      "remote": "files/sample-034.php",
+      "sha256": "ffbab3edf6b43724c6dff6c2aa477da70444025773cfde61a1e7387bdba1ef4b",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/ee_TG.php"
+    },
+    {
+      "bytes": 267,
+      "remote": "files/sample-035.php",
+      "sha256": "aa3c6bed10d395b9c48030c9c845146ddafb109870d4341bd505675f727e1591",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/en_PW.php"
+    },
+    {
+      "bytes": 267,
+      "remote": "files/sample-036.php",
+      "sha256": "0a208833f22cf3c9042d7350283ac3aa025d28dbbd706ec84ee5965c79e671fb",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/fo_FO.php"
+    },
+    {
+      "bytes": 3175,
+      "remote": "files/sample-037.php",
+      "sha256": "f7f2ae40cb07e63a81df716685524d4896c0d7b40d84bcc42bb62500a6209563",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/he.php"
+    },
+    {
+      "bytes": 1208,
+      "remote": "files/sample-038.php",
+      "sha256": "9b9270f7a723bee9b0bd7c864f959cb707132aad4f3a5b278b735413964325d0",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/lag.php"
+    },
+    {
+      "bytes": 1056,
+      "remote": "files/sample-039.php",
+      "sha256": "345780ac1e4f20c21da3d5f64429b1090a6b8d19390ee915a575f5c8ed7651a0",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/nds_NL.php"
+    },
+    {
+      "bytes": 267,
+      "remote": "files/sample-040.php",
+      "sha256": "94b4ccb54223a0831659bc06acfb2b33f511f47e2531b1a4a9f9f2b9d6a2b0e5",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/ru_RU.php"
+    },
+    {
+      "bytes": 335,
+      "remote": "files/sample-041.php",
+      "sha256": "f338787e54d0a9d3ffe83e88c9ce55e03635f985fe6ffddd539e9f425cc913e3",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/szl.php"
+    },
+    {
+      "bytes": 334,
+      "remote": "files/sample-042.php",
+      "sha256": "45f93469ccf7714e57bffa4bb714e29c355b588b22972ab79d5b6cf78d2134da",
+      "source": "application/vendor/nesbot/carbon/src/Carbon/Lang/xh.php"
+    },
+    {
+      "bytes": 4152,
+      "remote": "files/sample-043.php",
+      "sha256": "24d11ccc3eb01cff97bb55c44237ca0cebaff9cf5e1740715c5d35a4a3ec9af6",
+      "source": "application/vendor/nette/schema/src/Schema/Elements/Base.php"
+    },
+    {
+      "bytes": 1581,
+      "remote": "files/sample-044.php",
+      "sha256": "11d6fe4993ba33b03f2f64733f8065f3eaaa8088ba2b3709e52ea1d65c5e89de",
+      "source": "application/vendor/nunomaduro/termwind/src/ValueObjects/Style.php"
+    },
+    {
+      "bytes": 3197,
+      "remote": "files/sample-045.php",
+      "sha256": "8429c18e27bb5770cd3a85d2b4af9a1aa37d744ee64d98872611898895d6ab2e",
+      "source": "application/vendor/ramsey/uuid/src/Codec/StringCodec.php"
+    },
+    {
+      "bytes": 643,
+      "remote": "files/sample-046.php",
+      "sha256": "95e6c8045ccd4dd0da91d669da470e20d39f3f8da1e6dacea6ff7b2d8364aa6c",
+      "source": "application/vendor/ramsey/uuid/src/Rfc4122/UuidInterface.php"
+    },
+    {
+      "bytes": 1460,
+      "remote": "files/sample-047.php",
+      "sha256": "e414afc5ce7f7fcb3afe70567c2a643f187718efee784f8c8b67aa504b78c04b",
+      "source": "application/vendor/symfony/console/Event/ConsoleErrorEvent.php"
+    },
+    {
+      "bytes": 6771,
+      "remote": "files/sample-048.php",
+      "sha256": "11494cd7a42b0e608788619a3569bd7f53bcd61155d91fd3215f4058706a94b5",
+      "source": "application/vendor/symfony/console/Terminal.php"
+    },
+    {
+      "bytes": 819,
+      "remote": "files/sample-049.php",
+      "sha256": "7e8a0ed53e476093df9a986aa0d7252a20d226c820f850cbcf833cf4df2765b9",
+      "source": "application/vendor/symfony/error-handler/Resources/views/error.html.php"
+    },
+    {
+      "bytes": 5385,
+      "remote": "files/sample-050.php",
+      "sha256": "9175bf975a0601a6a3eeab4bc0d5f87aaf3778fe89f02e4a63981e0ca76c3229",
+      "source": "application/vendor/symfony/http-foundation/InputBag.php"
+    },
+    {
+      "bytes": 3865,
+      "remote": "files/sample-051.php",
+      "sha256": "4f995e482d5d133cb60de0795231c518f129772c08e01a437858ede4729b1a9d",
+      "source": "application/vendor/symfony/http-kernel/Attribute/Cache.php"
+    },
+    {
+      "bytes": 453,
+      "remote": "files/sample-052.php",
+      "sha256": "cf517add83095cdd80d8d0cafd4bf5b91fdc6354dba6958b9be4cbc4053a6c11",
+      "source": "application/vendor/symfony/http-kernel/Event/FinishRequestEvent.php"
+    },
+    {
+      "bytes": 742,
+      "remote": "files/sample-053.php",
+      "sha256": "d634f39b9780abe42d3881ad24720af722ce390a7ec2181fc9262e9773302115",
+      "source": "application/vendor/symfony/http-kernel/Profiler/ProfilerStateChecker.php"
+    },
+    {
+      "bytes": 15783,
+      "remote": "files/sample-054.php",
+      "sha256": "928da04be4b60be899b26e212fb3c7af6effdba8e4c30110df9469bd21fe9f58",
+      "source": "application/vendor/symfony/mime/Email.php"
+    },
+    {
+      "bytes": 11745,
+      "remote": "files/sample-055.php",
+      "sha256": "6ac464fc24012207cd73ef50c1390c9fb7aca742c186b91efdd3992092cfcda0",
+      "source": "application/vendor/symfony/polyfill-intl-normalizer/Normalizer.php"
+    },
+    {
+      "bytes": 2474,
+      "remote": "files/sample-056.php",
+      "sha256": "4697ea736892b5fe645f5ab1233feca27237021939bb54e5b94a1045932da12c",
+      "source": "application/vendor/symfony/process/PhpExecutableFinder.php"
+    },
+    {
+      "bytes": 11487,
+      "remote": "files/sample-057.php",
+      "sha256": "f70a081eb563db1d2b7fff05618a3f0582a3fee8712930d614bcef408136a9a7",
+      "source": "application/vendor/symfony/routing/Router.php"
+    },
+    {
+      "bytes": 1683,
+      "remote": "files/sample-058.php",
+      "sha256": "53f9f1fa3ae7912fa6cb3a9756eba73a3cc9976c30638ec153ce226d7a69e113",
+      "source": "application/vendor/symfony/translation/Extractor/AbstractFileExtractor.php"
+    },
+    {
+      "bytes": 7356,
+      "remote": "files/sample-059.php",
+      "sha256": "b7e25b26020edd8943033ed9a20302eec916361e067635aa592525b7889f780b",
+      "source": "application/vendor/symfony/uid/Uuid.php"
+    },
+    {
+      "bytes": 4331,
+      "remote": "files/sample-060.php",
+      "sha256": "0dec63e5f61f79d000d1f5a98c487d7ceee369de0a27fad20970ea2bda731025",
+      "source": "application/vendor/symfony/var-dumper/VarDumper.php"
+    },
+    {
+      "bytes": 1485,
+      "remote": "files/sample-061.php",
+      "sha256": "1fc4ea01b9d139d55b536350cdc138c5a25719712c8fd39c1933b4534ad09c3d",
+      "source": "application/vendor/voku/portable-ascii/src/voku/helper/data/x020.php"
+    },
+    {
+      "bytes": 2087,
+      "remote": "files/sample-062.php",
+      "sha256": "95d3069c314dea1b945e97f55130ebe6d1568ca9034dd6bdd6ee750e8c2379a4",
+      "source": "application/vendor/voku/portable-ascii/src/voku/helper/data/x08b.php"
+    },
+    {
+      "bytes": 845,
+      "remote": "files/sample-063.php",
+      "sha256": "b940d5b391972e4e70182c617f6da1d02f6ac85be83f2fb52202a5c579e65ed3",
+      "source": "application/vendor/voku/portable-ascii/src/voku/helper/data/x1f1.php"
+    }
+  ],
+  "full_release_verified": false,
+  "observed_modes": {
+    ".": "0755",
+    "..": "0755",
+    "sample-000.php": "0644",
+    "sample-001.php": "0644",
+    "sample-002.php": "0644",
+    "sample-003.php": "0644",
+    "sample-004.php": "0644",
+    "sample-005.php": "0644",
+    "sample-006.php": "0644",
+    "sample-007.php": "0644",
+    "sample-008.php": "0644",
+    "sample-009.php": "0644",
+    "sample-010.php": "0644",
+    "sample-011.php": "0644",
+    "sample-012.php": "0644",
+    "sample-013.php": "0644",
+    "sample-014.php": "0644",
+    "sample-015.php": "0644",
+    "sample-016.php": "0644",
+    "sample-017.php": "0644",
+    "sample-018.php": "0644",
+    "sample-019.php": "0644",
+    "sample-020.php": "0644",
+    "sample-021.php": "0644",
+    "sample-022.php": "0644",
+    "sample-023.php": "0644",
+    "sample-024.php": "0644",
+    "sample-025.php": "0644",
+    "sample-026.php": "0644",
+    "sample-027.php": "0644",
+    "sample-028.php": "0644",
+    "sample-029.php": "0644",
+    "sample-030.php": "0644",
+    "sample-031.php": "0644",
+    "sample-032.php": "0644",
+    "sample-033.php": "0644",
+    "sample-034.php": "0644",
+    "sample-035.php": "0644",
+    "sample-036.php": "0644",
+    "sample-037.php": "0644",
+    "sample-038.php": "0644",
+    "sample-039.php": "0644",
+    "sample-040.php": "0644",
+    "sample-041.php": "0644",
+    "sample-042.php": "0644",
+    "sample-043.php": "0644",
+    "sample-044.php": "0644",
+    "sample-045.php": "0644",
+    "sample-046.php": "0644",
+    "sample-047.php": "0644",
+    "sample-048.php": "0644",
+    "sample-049.php": "0644",
+    "sample-050.php": "0644",
+    "sample-051.php": "0644",
+    "sample-052.php": "0644",
+    "sample-053.php": "0644",
+    "sample-054.php": "0644",
+    "sample-055.php": "0644",
+    "sample-056.php": "0644",
+    "sample-057.php": "0644",
+    "sample-058.php": "0644",
+    "sample-059.php": "0644",
+    "sample-060.php": "0644",
+    "sample-061.php": "0644",
+    "sample-062.php": "0644",
+    "sample-063.php": "0644"
+  },
+  "production_activation": false,
+  "remote_relative_directory": "probes/concurrency-selector-38025136218-1",
+  "rename_over_existing_verified": true,
+  "run_id": "38025136218",
+  "sample_bytes": 179409,
+  "sample_only": true,
+  "selector_sequence": [
+    "A",
+    "B",
+    "A"
+  ],
+  "source_commit": "b76876e6ca5944feb2365d0347798004f658962d",
+  "source_run": "37895631691",
+  "success": true,
+  "tls": [
+    {
+      "certificate_dns_names": [
+        "tokala.iixcp.rumahweb.net"
+      ],
+      "certificate_expires": "Jan  4 07:42:39 2027 GMT",
+      "certificate_sha256": "bdac3f535b4ef58d8bd06b955def42a5729e4e411f2915ed669e5a1806ebc9ac",
+      "certificate_verified": true,
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "host": "tokala.iixcp.rumahweb.net",
+      "mode": "explicit-ftps",
+      "port": 21,
+      "tls_version": "TLSv1.3"
+    },
+    {
+      "certificate_dns_names": [
+        "tokala.iixcp.rumahweb.net"
+      ],
+      "certificate_expires": "Jan  4 07:42:39 2027 GMT",
+      "certificate_sha256": "bdac3f535b4ef58d8bd06b955def42a5729e4e411f2915ed669e5a1806ebc9ac",
+      "certificate_verified": true,
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "host": "tokala.iixcp.rumahweb.net",
+      "mode": "explicit-ftps",
+      "port": 21,
+      "tls_version": "TLSv1.3"
+    },
+    {
+      "certificate_dns_names": [
+        "tokala.iixcp.rumahweb.net"
+      ],
+      "certificate_expires": "Jan  4 07:42:39 2027 GMT",
+      "certificate_sha256": "bdac3f535b4ef58d8bd06b955def42a5729e4e411f2915ed669e5a1806ebc9ac",
+      "certificate_verified": true,
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "host": "tokala.iixcp.rumahweb.net",
+      "mode": "explicit-ftps",
+      "port": 21,
+      "tls_version": "TLSv1.3"
+    },
+    {
+      "certificate_dns_names": [
+        "tokala.iixcp.rumahweb.net"
+      ],
+      "certificate_expires": "Jan  4 07:42:39 2027 GMT",
+      "certificate_sha256": "bdac3f535b4ef58d8bd06b955def42a5729e4e411f2915ed669e5a1806ebc9ac",
+      "certificate_verified": true,
+      "cipher": "TLS_AES_256_GCM_SHA384",
+      "host": "tokala.iixcp.rumahweb.net",
+      "mode": "explicit-ftps",
+      "port": 21,
+      "tls_version": "TLSv1.3"
+    }
+  ],
+  "total_seconds": 83.628,
+  "transfer_seconds": 41.803,
+  "verified_files": 64,
+  "workers": [
+    {
+      "seconds": 41.159,
+      "verified_files": 16
+    },
+    {
+      "seconds": 41.802,
+      "verified_files": 16
+    },
+    {
+      "seconds": 41.232,
+      "verified_files": 16
+    },
+    {
+      "seconds": 41.669,
+      "verified_files": 16
+    }
+  ],
+  "workflow_commit": "25c6dfa3ca2de8a293331b54b0d40faf709ad3a6",
+  "job_id": 114134279210,
+  "conclusion": "success",
+  "actions_artifact": {
+    "id": 11659863583,
+    "wrapper_sha256": "2c94917b0208891d181f8179da9a9fadbab237a52e789354dad3ec372cc527de",
+    "retention_days": 14
+  }
+}
