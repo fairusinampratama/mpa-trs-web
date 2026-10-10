@@ -80,7 +80,7 @@ def rehearse(archive, revision, archive_b=None, revision_b=None):
                     code, page=request('/')
                     assert code==200 and b'MAPALA TURSINA' in page
                     assert request('/health')==(200,json.dumps({'status':'ok','revision':selected},separators=(',',':')).encode())
-                    links=re.findall(rb'href="(?:http://[^" ]+)?(/mpa-trs-assets/[^" ]+\.css)"',page)
+                    links=sorted(set(re.findall(rb'href="(?:http://[^" ]+)?(/mpa-trs-assets/[^" ]+\.css)"',page)))
                     assert len(links)==1 and ('/mpa-trs-assets/'+selected+'/').encode() in links[0], 'Mixed release CSS'
                     with zipfile.ZipFile(archive if selected==revision else archive_b) as z:
                         assert request(links[0].decode())==(200,z.read('application/public'+links[0].decode())), 'CSS byte mismatch'
