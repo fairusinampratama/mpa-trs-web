@@ -67,3 +67,8 @@ Before requesting deployment approval, present the current host inventory, exact
 ## Continuation checkpoint — 9 October 2026
 
 Earlier unmerged/authentication-blocked statements above are historical. PR #4 and #5 are now merged with separate approval; main 11d1862dbfe827377f9119465da2966f392d2bc1. Private FTPS run 37893378939 succeeded, preserved in unmerged PR #6. Current cPanel session supported read-only main-root inspection: index.php is the provider welcome, no main .htaccess/index.html appeared, existing nested application directories remain. No production file changed. Next tooling and exact private approval scope are in release-activation.md; hosting file/rename rehearsal still needs separate approval. Stage 1 remains incomplete.
+
+# 10 October full private FTPS checkpoint
+
+The separately approved full parallel rehearsal run 38026277613 / job 114137684366 failed with TimeoutError after 14m 3s. All 51 deployment tests and both pinned artifact checks passed; no complete-release or private A/B/A success was recorded. See private-parallel-sample.md and private-full-parallel-evidence.json for exact identity, artifact and limitations. This supersedes any in-progress checkpoint for that run. No retry, merge or production change occurred. The earlier verified ZIP/sample successes remain valid, but full FTPS Laravel delivery remains blocked pending diagnosed evidence. Stage 1 remains incomplete.
+
