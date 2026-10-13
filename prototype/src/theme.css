@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #f5f3ec;
+  --color-surface: #fffef9;
+  --color-ink: #20372e;
+  --color-muted: #5d6d63;
+  --color-line: #d6ddd2;
+  --color-forest: #234838;
+  --color-leaf: #c8dc9b;
+  --color-gold: #d9b76a;
+  --color-river: #325e70;
+  --color-danger: #993f35;
+  --color-success: #2e6247;
+  --font-sans: 'Segoe UI', Arial, sans-serif;
+  --font-editorial: Georgia, 'Times New Roman', serif;
+  --radius-control: 0.25rem;
+  --radius-card: 0.5rem;
+  --text-display: clamp(2.25rem, 5vw, 4.5rem);
+  --text-display--line-height: 1.06;
+  --text-heading: clamp(1.8rem, 3vw, 2.7rem);
+  --text-heading--line-height: 1.15;
+  --container-page: 76rem;
+}
+
+@layer base {
+  html { color-scheme: light; }
+  body { @apply m-0 bg-paper text-ink font-sans; }
+  button, input, select, textarea { font: inherit; }
+  button:not(:disabled), a { cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--color-river); outline-offset: 4px; }
+  ::selection { background: var(--color-leaf); color: var(--color-forest); }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } }
+}
+
+@layer components {
+  .page-container { @apply mx-auto w-full max-w-page px-5 sm:px-8; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-widest; }
+  .editorial-heading { @apply font-editorial font-normal; }
+  .section-title { @apply font-editorial text-heading; }
+  .reading-copy { @apply max-w-prose leading-relaxed text-muted; }
+  .button { @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-control border px-5 py-2.5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50; }
+  .button-primary { @apply border-forest bg-forest text-surface hover:bg-ink; }
+  .button-secondary { @apply border-line bg-surface text-ink hover:border-forest; }
+  .button-quiet { @apply border-transparent text-forest hover:bg-leaf/30; }
+  .field { @apply min-h-11 w-full rounded-control border border-line bg-surface px-3 py-2 text-base; }
+  .panel { @apply rounded-card border border-line bg-surface p-6; }
+  .lab-link { @apply inline-flex min-h-11 items-center border-b-2 border-transparent text-sm text-muted hover:text-forest; }
+  .lab-link[aria-current=page] { @apply border-forest font-semibold text-forest; }
+}

@@ -1,5 +1,18 @@
 # MPA-TRS operating rules
 
+## Stage 3 approved scope — 13 October 2026
+
+Owner approved A2 v1.0, Stage 3 Plan v2 and Technical Delivery Amendment T1 on 13 October 2026. Read `docs/stage3/approval-record.md`, `docs/stage3/design-system.md`, `docs/stage3/checkpoint-01.md` and `prototype/README.md` for current frontend work. These narrowly supersede historical no-Stage-2/framework-change statements below for the isolated Stage 3 prototype only; production restrictions remain.
+
+- Work on `stage3/interactive-prototype`; standalone React/TypeScript/Vite/Tailwind 4 in `prototype/`; records in `docs/stage3/`. Commits/pushes/draft PR are authorized. Main merges and Stage 4 require separate approval.
+- Preserve `application/`, production workflows/scripts, Rumahweb/SLiMS/E-Letter and databases. No hosting, permanent preview or paid resource changes. No production deployment.
+- Reuse matching components and centralized tokens. Equivalent buttons/cards share styling. New tokens/layout variants require a documented reason. Inspect all affected pages after shared changes.
+- UI laboratory shares component source with page examples. Fixtures are source-verified or clearly synthetic; no real Buku Induk data, private originals or unresolved-rights images in source/public bundles.
+- Preserve P1–P7 and owner review checkpoints. Verify real browser rendering/interactions, report exact viewport method and limitations. Do not equate build success with browser validation.
+- First technical loop precedes full website development; owner visual-direction selection precedes whole-site refinement. Map remains deferred. Backend/CRUD/auth/Filament/editorial persistence remain simulated only.
+
+## Preserved Stage 1 operating rules
+
 Read docs/infrastructure/stage1-live-deployment.md first, then supervised-zip-deployment.md, stage1-implementation.md, recovery.md and hosting-baseline.md. Historical Phase 3/static-probe and FTPS evidence must be preserved. Current objective is Stage 1: real Laravel 12 at https://mapalatursina.my.id plus verified live update/rollback and unaffected SLiMS/E-Letter. The main domain now runs Laravel 12.69.3; live A → B → A passed on 10 October 2026. Active SHA is 623bb0a024c3a72454a1f9edaa935c0b1c0e095c. Final handover/mobile verification and this evidence PR review remain outstanding; do not claim every requested check passed.
 
 - Use a focused feature branch → PR → actual CI → explicit approval before merge. Branch protection is not enforced; typed workflow acknowledgement is an operator convention, not security-enforced review. GitHub remains source of truth.
@@ -19,3 +32,4 @@ Read docs/infrastructure/stage1-live-deployment.md first, then supervised-zip-de
 - Retiring temporary probe credentials/resources needs separate approval. Additional paid infrastructure cost is zero; no paid Actions overage is authorized.
 
 - Read stage1-live-deployment-evidence.json for exact live runs/digests and original routing backup. A/B artifacts expire 24 October 2026; current Actions rollback depends on source artifact availability. Do not claim post-expiry automated rollback or mobile rendering is verified. Never merge this evidence PR without separate approval.
+
