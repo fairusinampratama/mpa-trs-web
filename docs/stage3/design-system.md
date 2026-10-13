@@ -10,7 +10,7 @@ No stock photography or invented official logo is used in this first laboratory.
 
 ## Architecture and agent conventions
 
-- Theme lives in `prototype/src/theme.css`, using Tailwind 4 `@theme` tokens. Equivalent controls use shared components.
+- Theme lives in `docs/stage3/prototype/src/theme.css`, using Tailwind 4 `@theme` tokens. Equivalent controls use shared components.
 - Reuse components that match the purpose. Change shared styles centrally and inspect every affected route.
 - Use semantic surface/ink/brand/state tokens. Introduce no new color, spacing or type variant without documenting its purpose.
 - Buttons: solid primary, outlined secondary, quiet text. Minimum control height 44px; visible keyboard focus, disabled and busy states.

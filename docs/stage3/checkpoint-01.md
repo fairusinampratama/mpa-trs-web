@@ -37,3 +37,7 @@ Source and decisions are preserved on `stage3/interactive-prototype`, with a dra
 ## Next within approved scope
 
 Confirm owner can inspect/interact. Then P1 compact authentic fixture/rights packet; P2 two meaningful navigation candidates tested with comparable content; P3 working visual directions for owner selection. Continue connected Beranda/TE/expedition/intake bundle only within the selected direction. This first loop has not selected institutional styling, final navigation or made usability claims from real participants.
+
+## CI integration correction
+
+Initial CI run 38378718616 failed the unchanged source-root guard with `Unapproved tracked path: prototype/.gitignore`; Laravel PHP 8.2 and 8.3 jobs passed. Source moved into the existing allowed `docs/stage3/prototype/` namespace. Deployment guards/workflows are unchanged. A subsequent actual CI result must be recorded; the failed run is preserved as failure evidence.
