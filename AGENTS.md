@@ -4,6 +4,8 @@
 
 Owner approved A2 v1.0, Stage 3 Plan v2 and Technical Delivery Amendment T1 on 13 October 2026. Read `docs/stage3/approval-record.md`, `docs/stage3/design-system.md`, `docs/stage3/checkpoint-01.md` and `docs/stage3/prototype/README.md` for current frontend work. These narrowly supersede historical no-Stage-2/framework-change statements below for the isolated Stage 3 prototype only; production restrictions remain.
 
+Latest Stage 3 checkpoint: read `docs/stage3/checkpoint-02.md`, `fixture-ledger.md` and `navigation-comparison.md`. Connected Beranda/TE/expedition/editorial simulation, two navigation alternatives and Catatan Lapangan/Ruang Tursina visual directions are ready for owner review. No visual direction or final navigation is approved yet. Do not expand whole-site refinement before the owner's P3 direction selection. Source-safe text/synthetic data only; selected original photographs are references with rights unresolved and remain outside the prototype.
+
 - Work on `stage3/interactive-prototype`; standalone React/TypeScript/Vite/Tailwind 4 in `docs/stage3/prototype/`; records in `docs/stage3/`. Commits/pushes/draft PR are authorized. Main merges and Stage 4 require separate approval.
 - Preserve `application/`, production workflows/scripts, Rumahweb/SLiMS/E-Letter and databases. No hosting, permanent preview or paid resource changes. No production deployment.
 - Reuse matching components and centralized tokens. Equivalent buttons/cards share styling. New tokens/layout variants require a documented reason. Inspect all affected pages after shared changes.

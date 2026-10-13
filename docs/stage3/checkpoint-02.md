@@ -29,6 +29,8 @@ Initial simple inline card-title hit area was not reliable for a center click on
 
 ## Review decision
 
+Versioned tested source: `c76f6af67b594c7c18638e6cd57969c0d88925a9`. Actual CI run **38392120873** passed all three jobs (Validate deployment foundation, Laravel PHP 8.2, Laravel PHP 8.3). These are existing Stage 1 checks; React build and cloud-browser checks are separate evidence above. Remote source readback succeeded. Compare against prior checkpoint showed changes only under `docs/stage3/`; no production file changes. Shared UI-lab cards were additionally inspected at 390px with no overflow after the card changes. Draft PR #13 remains open/unmerged.
+
 Choose **Catatan Lapangan** or **Ruang Tursina** (or specify a precise combination) before refining the complete website. Navigation A/B is separately testable using tasks in navigation-comparison.md. Recommendations are hypotheses; no final choice has been made for the owner.
 
 After direction selection, refine the connected first bundle, then expand systematic P4/P5 coverage while preserving approved choices. Image-led refinement depends on exact official-logo/photo credit/permission confirmation. Stage 4 remains separately unauthorized.
