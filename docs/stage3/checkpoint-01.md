@@ -41,3 +41,5 @@ Confirm owner can inspect/interact. Then P1 compact authentic fixture/rights pac
 ## CI integration correction
 
 Initial CI run 38378718616 failed the unchanged source-root guard with `Unapproved tracked path: prototype/.gitignore`; Laravel PHP 8.2 and 8.3 jobs passed. Source moved into the existing allowed `docs/stage3/prototype/` namespace. Deployment guards/workflows are unchanged. A subsequent actual CI result must be recorded; the failed run is preserved as failure evidence.
+
+Corrected source commit `fa7c698c61c96eaec4886d2d8448cd123ea43bd8` passed actual CI run **38379126958**: deployment foundation validation and Laravel PHP 8.2/8.3 jobs all succeeded. This is unchanged Stage 1 CI coverage, not a prototype browser suite. Prototype build and cloud-browser checks are separate evidence above. Draft PR: https://github.com/fairusinampratama/mpa-trs-web/pull/13 . Source file readbacks succeeded; no merge occurred.
