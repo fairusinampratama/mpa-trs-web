@@ -10,6 +10,8 @@ In this managed Work environment, the available supervisor owns the preview: `si
 
 ## Inspect
 
+- `/` or `#/review`: connected first substantive review bundle. Use top selectors for Catatan Lapangan/Ruang Tursina and navigation A/B. Canonical TE11/article links, basic TE12, representative PD/works/history/member routes and local organizer/editor/publisher walkthrough. Direction is pending owner selection.
+
 - `/ui-lab`: theme, typography, shared controls, activity cards, lifecycle labels, filter/empty/reset, linked synthetic rich/basic records and local submission simulation.
 - `/responsive-review.html`: development-only iframe viewport harness, 320/390/768px. Verify inner document `innerWidth`, client/scroll widths and actual breakpoint behavior. This is CSS reflow testing, not touch-device emulation or a Stage 1 mobile check.
 - All record navigation is currently hash-based and local. Final public navigation is not selected. Vite HTML fallback serves the lab at `/ui-lab`.

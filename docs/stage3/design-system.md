@@ -25,3 +25,11 @@ No stock photography or invented official logo is used in this first laboratory.
 ## Decision ledger
 
 13 October: approved delivery scope recorded separately. First UI-lab foundation uses synthetic activity/state fixtures; formal visual selection is pending P3 review. No complete website/navigation selection is implied.
+
+## P3 working comparison
+
+`SitePrototype` provides two named directions on the same content/routes. Catatan Lapangan preserves paper/forest/serif. Ruang Tursina overrides semantic colors and editorial font centrally on `.site-shell[data-direction=signal]`, with deliberately stronger title weights and a leaf strip on the expedition cover. No isolated page color patches. Both use shared Button/StatusLabel/ActivityCard and common PageTitle/PublicationList/NavItems patterns.
+
+Typographic covers use 16:9 on rich catalogue cards and a deliberately taller featured home cover. They are labelled as typographic, not photographs. Actual eventual photograph crops retain their separate source/rights review and 4:3/16:9 rules. Sparse basic records omit covers entirely; no forced empty media section.
+
+Card/publication title anchors use block hit areas so multiline text remains reliably clickable. Public skip link added. Review controls are development chrome, not proposed production navigation. Directions remain **pending owner selection**; approval of the technical loop or encouragement did not approve a final visual direction.

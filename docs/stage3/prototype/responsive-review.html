@@ -21,18 +21,20 @@
 </head>
 <body>
   <header>
-    <h1>Pemeriksaan viewport · UI laboratory</h1>
+    <h1>Pemeriksaan viewport · Tursina prototype</h1>
     <p>Dokumen di dalam frame memiliki viewport tersendiri. Ini menguji reflow CSS, bukan emulasi perangkat sentuh.</p>
     <nav aria-label="Pilihan lebar viewport">
       <button type="button" data-width="320" aria-pressed="false">320px</button>
       <button type="button" data-width="390" aria-pressed="true">390px</button>
       <button type="button" data-width="768" aria-pressed="false">768px</button>
+      <label>Halaman <select id="review-page"><option value="/">Website</option><option value="/ui-lab">UI laboratory</option></select></label>
       <a href="/ui-lab">Kembali ke desktop</a>
     </nav>
   </header>
-  <main><iframe id="review-frame" title="Tursina UI laboratory — viewport mobile" src="/ui-lab"></iframe></main>
+  <main><iframe id="review-frame" title="Tursina prototype — viewport mobile" src="/"></iframe></main>
   <script>
     const frame = document.getElementById('review-frame');
+    document.getElementById('review-page').addEventListener('change', event => { frame.src = event.target.value; });
     document.querySelectorAll('[data-width]').forEach(button => button.addEventListener('click', () => {
       frame.style.width = button.dataset.width + 'px';
       document.querySelectorAll('[data-width]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));

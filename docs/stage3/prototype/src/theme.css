@@ -21,6 +21,8 @@
   --text-heading: clamp(1.8rem, 3vw, 2.7rem);
   --text-heading--line-height: 1.15;
   --container-page: 76rem;
+  --text-edition: clamp(7rem, 14vw, 12rem);
+  --text-edition--line-height: 0.9;
 }
 
 @layer base {
@@ -47,4 +49,48 @@
   .panel { @apply rounded-card border border-line bg-surface p-6; }
   .lab-link { @apply inline-flex min-h-11 items-center border-b-2 border-transparent text-sm text-muted hover:text-forest; }
   .lab-link[aria-current=page] { @apply border-forest font-semibold text-forest; }
+  .site-title { @apply font-editorial font-normal; }
+  .site-nav-link { @apply inline-flex min-h-11 items-center gap-3 text-sm font-medium text-forest hover:underline; }
+  .home-hero { @apply grid gap-10 md:grid-cols-[1.4fr_1fr]; }
+  .hero-copy { @apply self-center; }
+  .expedition-cover { @apply relative flex min-h-96 flex-col justify-between overflow-hidden bg-forest p-8 text-surface md:p-10; }
+  .activity-cover { @apply flex aspect-video items-end justify-between bg-forest p-6 text-surface; }
+  .edition-number { @apply py-6 font-editorial text-edition text-leaf/35; }
+  .editorial-note { @apply border-l-2 border-gold bg-surface p-6; }
+  .review-bar { @apply border-b border-line bg-surface text-muted; }
+  .review-bar select { @apply min-h-11 max-w-full rounded-control border border-line bg-paper px-3 text-sm text-ink; }
+  .institutional-wordmark { @apply min-w-0; }
+  .site-menu { @apply relative; }
+  .site-menu summary { @apply flex min-h-11 cursor-pointer items-center gap-2 text-sm font-medium text-forest; list-style:none; }
+  .site-menu summary::-webkit-details-marker { display:none; }
+  .menu-popover { @apply relative z-10 flex min-w-52 flex-col border border-line bg-surface p-3 lg:absolute lg:top-full; }
+  .menu-popover a { @apply flex min-h-11 items-center rounded-control px-3 py-2 text-sm text-forest hover:bg-paper; }
+  .journey-list { @apply space-y-8 border-l border-line pl-6; }
+  .journey-list h3 { @apply mt-3 font-editorial text-2xl; }
+  .journey-list li>p:last-child { @apply mt-3 max-w-prose text-sm leading-relaxed text-muted; }
+}
+
+/* P3 comparison variants: shared semantic tokens and components; not approved
+   brand specifications. Signal's hierarchy is an intentional editorial variant. */
+.site-shell[data-direction='signal'] {
+  --color-paper: #f0f3ee;
+  --color-surface: #fcfdf8;
+  --color-ink: #173542;
+  --color-muted: #52676c;
+  --color-line: #cbd7d3;
+  --color-forest: #173f50;
+  --color-leaf: #d7e9ab;
+  --color-gold: #c3a356;
+  --color-river: #397557;
+  --font-editorial: 'Segoe UI', Arial, sans-serif;
+}
+.site-shell[data-direction='signal'] .site-title { font-weight:700; letter-spacing:-0.04em; }
+.site-shell[data-direction='signal'] .section-title,
+.site-shell[data-direction='signal'] .card-heading { font-weight:600; letter-spacing:-0.025em; }
+.site-shell[data-direction='signal'] .expedition-cover { border-top:8px solid var(--color-leaf); }
+.site-shell[data-direction='signal'] .edition-number { font-weight:700; letter-spacing:-0.08em; }
+.site-shell[data-direction='signal'] .home-hero { align-items:stretch; }
+@media (max-width:639px) {
+  .review-bar select { font-size:16px; }
+  .institutional-wordmark>span:last-child { font-size:0.95rem; letter-spacing:0.08em; }
 }
