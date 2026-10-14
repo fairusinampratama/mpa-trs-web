@@ -35,3 +35,7 @@ Read docs/infrastructure/stage1-live-deployment.md first, then supervised-zip-de
 
 - Read stage1-live-deployment-evidence.json for exact live runs/digests and original routing backup. A/B artifacts expire 24 October 2026; current Actions rollback depends on source artifact availability. Do not claim post-expiry automated rollback or mobile rendering is verified. Never merge this evidence PR without separate approval.
 
+
+## Public preview preparation — 14 October 2026
+
+Owner authorized read-only public-release audit and reviewable Stage 3 branch changes. Read `docs/stage3/public-release-audit.md` and `docs/stage3/publishing/README.md`. Recommendation C/Option B: preserve private source, propose public compiled-only `mpa-trs-preview`. `publishing/stage3-preview.yml.example` is inert. No public repository, credential, visibility change or publishing approval yet. Do not activate/move the workflow or enable Pages before explicit approval. Preserve existing Stage 1 workflow bytes. Static Pages links use `#/ui-lab` and a built `responsive-review.html` entry; only verified dist bytes may cross repositories. Direction/navigation remain unapproved.

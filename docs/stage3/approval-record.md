@@ -13,3 +13,5 @@ Governing baseline: R5 as amended by A1/A2; owner Decision Register OD-01–13; 
 Foundation inspected at main `ed13b2197d7908e93776cf66dce7eeb8b4b2df1f`; live Laravel A/B/A is recorded evidence, not repeated. PR #12 is merged. Stage 1 mobile verification, artifact expiry 24 October and temporary-resource retirement are separate follow-ups.
 
 Technical path adjustment: initial top-level prototype directory was rejected by the unchanged Stage 1 source allowlist. The implementation is placed in `docs/stage3/prototype/` on the same approved branch. This is an engineering accommodation; no new root is allowlisted and no production/deployment file is changed. The original T1 proposal remains preserved.
+
+14 October: attached public-preview request authorizes security audit, documentation and reviewable changes on the existing Stage 3 branch. External publishing/new public repository/visibility/history/production security changes remain subject to a specific owner checkpoint. No public-preview approval inferred.

@@ -23,3 +23,5 @@ Theme: `src/theme.css`; components: `src/components/`; synthetic fixtures: `src/
 Build/type check passed. Cloud browser rendering/interactions are recorded in checkpoint-01. The cloud browser exposes no viewport sizing; a separate document viewport was used instead. Automated CLI Playwright was not run: no installed Chromium binary was found in this execution container. Supported Playwright locators in the cloud browser were used for interactions and DOM measurements.
 
 Owner review is through this conversation's Cloud Browser when surfaced. `terminal.local` is not a public link. No external reviewer access has been provisioned. No compliance/security/performance guarantee from this foundation prototype.
+
+Public-preview preparation (14 October): see `../public-release-audit.md` and `../publishing/README.md`. Hash UI-lab URL works in static output; responsive-review.html is now an explicit second Vite input. PREVIEW_BASE controls project-site base; VITE_SOURCE_COMMIT supplies visible/version.json release identity. publicDir copying and sourcemaps are disabled. Inert publishing workflow awaits specific authorization; no live HTTPS preview exists yet.

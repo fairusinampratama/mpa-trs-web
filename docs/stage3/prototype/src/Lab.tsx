@@ -55,7 +55,7 @@ export function Lab() {
       </section>}
       <div aria-live="polite" className="page-container pb-6 text-sm text-success">{feedback}</div>
     </>}
-    </main><footer className="border-t border-line"><div className="page-container flex flex-wrap items-center justify-between gap-4 py-8 text-xs text-muted"><span>MAPALA TURSINA · Stage 3 / UI laboratory</span><a href="#/review" className="lab-link">Bandingkan website ↗</a><a href="/responsive-review.html" className="lab-link">Periksa viewport mobile ↗</a><span>Fondasi teknis · arah visual belum disetujui</span></div></footer>
+    </main><footer className="border-t border-line"><div className="page-container flex flex-wrap items-center justify-between gap-4 py-8 text-xs text-muted"><span>MAPALA TURSINA · Stage 3 / UI laboratory</span><a href="#/review" className="lab-link">Bandingkan website ↗</a><a href="./responsive-review.html" className="lab-link">Periksa viewport mobile ↗</a><span>Fondasi teknis · arah visual belum disetujui</span></div></footer>
   </div>;
 }
 

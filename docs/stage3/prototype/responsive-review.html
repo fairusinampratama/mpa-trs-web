@@ -27,11 +27,11 @@
       <button type="button" data-width="320" aria-pressed="false">320px</button>
       <button type="button" data-width="390" aria-pressed="true">390px</button>
       <button type="button" data-width="768" aria-pressed="false">768px</button>
-      <label>Halaman <select id="review-page"><option value="/">Website</option><option value="/ui-lab">UI laboratory</option></select></label>
-      <a href="/ui-lab">Kembali ke desktop</a>
+      <label>Halaman <select id="review-page"><option value="./#/review">Website</option><option value="./#/ui-lab">UI laboratory</option></select></label>
+      <a href="./#/review">Kembali ke desktop</a>
     </nav>
   </header>
-  <main><iframe id="review-frame" title="Tursina prototype — viewport mobile" src="/"></iframe></main>
+  <main><iframe id="review-frame" title="Tursina prototype — viewport mobile" src="./#/review"></iframe></main>
   <script>
     const frame = document.getElementById('review-frame');
     document.getElementById('review-page').addEventListener('change', event => { frame.src = event.target.value; });

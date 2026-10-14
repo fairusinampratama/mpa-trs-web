@@ -1,0 +1,71 @@
+# INERT: install as .github/workflows/stage3-preview.yml only after owner approval.
+name: Stage 3 static preview
+on:
+  push:
+    branches: [stage3/interactive-prototype]
+    paths: ['docs/stage3/prototype/**', '.github/workflows/stage3-preview.yml']
+permissions:
+  contents: read
+concurrency:
+  group: stage3-preview
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/stage3/interactive-prototype' && vars.STAGE3_PAGES_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: docs/stage3/prototype
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: docs/stage3/prototype/package-lock.json
+      - run: npm ci
+      - run: python3 -m unittest discover -s tools -p 'test_*.py' -v
+      - run: npm run build
+        env:
+          PREVIEW_BASE: /mpa-trs-preview/
+          VITE_SOURCE_COMMIT: ${{ github.sha }}
+      - run: python3 tools/verify_preview.py dist "$SOURCE_COMMIT"
+        env:
+          SOURCE_COMMIT: ${{ github.sha }}
+      - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: stage3-static-${{ github.sha }}
+          path: docs/stage3/prototype/dist/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7
+  publish:
+    needs: build
+    if: github.ref == 'refs/heads/stage3/interactive-prototype' && vars.STAGE3_PAGES_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: docs/stage3/prototype
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+          sparse-checkout: docs/stage3/prototype/tools
+      - uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53
+        with:
+          name: stage3-static-${{ github.sha }}
+          path: docs/stage3/prototype/dist/
+      - name: Publish verified static bytes
+        run: python3 tools/publish_preview.py
+        env:
+          SOURCE_COMMIT: ${{ github.sha }}
+          PREVIEW_TARGET: fairusinampratama/mpa-trs-preview
+          PREVIEW_PUBLISH_TOKEN: ${{ secrets.STAGE3_PREVIEW_PUBLISH_TOKEN }}
+      - name: Confirm Pages serves exact source version
+        run: python3 tools/verify_live_preview.py "$SOURCE_COMMIT"
+        env:
+          SOURCE_COMMIT: ${{ github.sha }}
