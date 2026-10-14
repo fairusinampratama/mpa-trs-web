@@ -287,3 +287,4 @@ button,a,input,select,textarea {transition:background-color 140ms,color 140ms,bo
 .ds-affiliation:before {position:absolute;top:-12px;margin:0;}
 .button {justify-content:flex-start;}
 .ds-menu-toggle {justify-content:center;}
+.ds-media-fallback>p.ds-content-title {margin-top:12px;}
