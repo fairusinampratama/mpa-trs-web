@@ -1,4 +1,5 @@
 """Fail closed on unexpected public-preview output. No files copied from parent docs."""
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -6,6 +7,12 @@ import sys
 
 REQUIRED = {'index.html', 'responsive-review.html', 'version.json', '.nojekyll'}
 ASSET = re.compile(r'assets/[A-Za-z0-9_-]+\.(?:js|css)')
+FONT = re.compile(r'assets/source-(?:sans-3|serif-4)-latin-[A-Za-z0-9_-]+\.woff2')
+# Only the two exact approved official font builds, never arbitrary binary/media.
+APPROVED_FONT_SHA256 = {
+    '19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5',
+    '382475f38242c52d42a3e5ff8dc69b5d73f10d0d21e4550b5fe232984688779a',
+}
 PRIVATE = re.compile(r'/home/|mapp5848|tokala\.iixcp|drive\.google\.com|docs/infrastructure|BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY|github_pat_|ghp_[A-Za-z0-9]{30}|AIza[0-9A-Za-z_-]{30}|\b(?:AKIA|ASIA)[A-Z0-9]{16}')
 
 def verify(directory, commit):
@@ -19,11 +26,16 @@ def verify(directory, commit):
         if path.is_dir():
             continue
         relative = path.relative_to(root).as_posix()
-        if relative not in REQUIRED and not ASSET.fullmatch(relative):
+        if relative not in REQUIRED and not ASSET.fullmatch(relative) and not FONT.fullmatch(relative):
             raise ValueError('Unexpected public file: ' + relative)
         data = path.read_bytes()
         if len(data) > 2_000_000:
             raise ValueError('Oversize public file')
+        if FONT.fullmatch(relative):
+            if data[:4] != b'wOF2' or hashlib.sha256(data).hexdigest() not in APPROVED_FONT_SHA256:
+                raise ValueError('Unapproved web font: ' + relative)
+            files[relative] = data
+            continue
         text = data.decode('utf-8')
         if '/mpa-trs-preview/' in text:
             raise ValueError('Obsolete preview base in ' + relative)

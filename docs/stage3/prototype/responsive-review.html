@@ -27,8 +27,8 @@
       <button type="button" data-width="320" aria-pressed="false">320px</button>
       <button type="button" data-width="390" aria-pressed="true">390px</button>
       <button type="button" data-width="768" aria-pressed="false">768px</button>
-      <label>Halaman <select id="review-page"><option value="./#/review">Website</option><option value="./#/ui-lab">UI laboratory</option></select></label>
-      <a href="./#/review">Kembali ke desktop</a>
+      <label>Halaman <select id="review-page"><option value="./#/">Website</option><option value="./#/ui-lab">UI laboratory</option></select></label>
+      <a href="./#/">Kembali ke desktop</a>
     </nav>
   </header>
   <main><iframe id="review-frame" title="Tursina prototype — viewport mobile" src="about:blank"></iframe></main>
@@ -39,7 +39,7 @@
       target.searchParams.set('review', Date.now().toString());
       frame.src = target.href;
     }
-    openPreview('./#/review');
+    openPreview('./#/');
     document.getElementById('review-page').addEventListener('change', event => { openPreview(event.target.value); });
     document.querySelectorAll('[data-width]').forEach(button => button.addEventListener('click', () => {
       frame.style.width = button.dataset.width + 'px';

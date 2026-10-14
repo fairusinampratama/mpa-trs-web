@@ -3,31 +3,12 @@ import { ActivityCard } from './components/ActivityCard';
 import { Button } from './components/Button';
 import { StatusLabel } from './components/StatusLabel';
 import { archivalActivities, expeditionRecords, pdRecords, publicWorks, standalone, syntheticMembers } from './content';
+import { Homepage } from './Homepage';
+import { InstitutionalHeader, InstitutionalFooter, DevelopmentReviewShell } from './components/InstitutionalShell';
 import { ArchiveHome, ArchivePDBrowse, ArchivePDDetail, ArchiveTE11 } from './ArchiveDesigns';
 
 type Direction = 'fieldnotes' | 'signal';
 type NavChoice = 'grouped' | 'direct';
-type Destination = { label:string; href?:string; children?:Destination[] };
-const navA: Destination[] = [
-  {label:'Tentang',href:'#/about'},
-  {label:'Kegiatan',children:[{label:'Tursina Explore',href:'#/program/te'},{label:'Pemantapan Divisi',href:'#/program/pd'},{label:'Kegiatan lainnya',href:'#/activities'}]},
-  {label:'Karya & Pengetahuan',children:[{label:'Artikel & pengumuman',href:'#/publications'},{label:'Materi belajar',href:'#/knowledge'}]},
-  {label:'Jejak Tursina',href:'#/jejak'},
-  {label:'Buku Induk',href:'#/members'},
-];
-const navB: Destination[] = [
-  {label:'Tursina Explore',href:'#/program/te'},
-  {label:'Pendidikan',children:[{label:'Pemantapan Divisi',href:'#/program/pd'},{label:'Kenali lima divisi',href:'#/about'}]},
-  {label:'Kegiatan',href:'#/activities'},
-  {label:'Publikasi',children:[{label:'Artikel & pengumuman',href:'#/publications'},{label:'Materi belajar',href:'#/knowledge'}]},
-  {label:'Jejak Tursina',href:'#/jejak'},
-  {label:'Buku Induk',href:'#/members'},
-];
-
-function NavItems({items,onNavigate}:{items:Destination[];onNavigate:()=>void}) {
-  return <>{items.map(item=>item.children ? <details key={item.label} className="site-menu"><summary>{item.label} <span aria-hidden="true">⌄</span></summary><div className="menu-popover">{item.children.map(child=><a key={child.label} href={child.href} onClick={onNavigate}>{child.label}</a>)}</div></details> : <a className="site-nav-link" key={item.label} href={item.href} onClick={onNavigate}>{item.label}</a>)}</>;
-}
-
 function PageTitle({eyebrow,title,description}:{eyebrow:string;title:string;description?:string}) {
   return <header className="page-container pb-8 pt-12 md:pt-16"><p className="eyebrow text-muted">{eyebrow}</p><h1 className="site-title mt-4 text-display">{title}</h1>{description&&<p className="reading-copy mt-6 text-lg">{description}</p>}</header>;
 }
@@ -35,18 +16,6 @@ function PageTitle({eyebrow,title,description}:{eyebrow:string;title:string;desc
 function PublicationList({teOnly=false,knowledgeOnly=false}:{teOnly?:boolean;knowledgeOnly?:boolean}) {
   const works=publicWorks.filter(w=>(!teOnly||w.related==='te11')&&(!knowledgeOnly||w.type==='Materi belajar'));
   return <div className="divide-y divide-line border-y border-line">{works.map(w=><article key={w.id} className="grid gap-3 py-6 md:grid-cols-[9rem_1fr_auto]"><p className="eyebrow text-muted">{w.type}</p><div><h3 className="card-heading font-editorial text-2xl"><a href={`#/publication/${w.id}`} className="block hover:underline">{w.title}</a></h3><p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{w.summary}</p><p className="mt-3 text-xs text-muted">{w.date} · {w.source}</p></div><a href={`#/publication/${w.id}`} className="site-nav-link">Buka catatan <span aria-hidden="true">↗</span></a></article>)}</div>;
-}
-
-function Home() {
-  return <>
-    <section className="page-container py-12 md:py-16"><div className="home-hero"><div className="hero-copy"><p className="eyebrow text-muted">Mahasiswa Pencinta Alam · Sejak 1995</p><h1 className="site-title mt-6 text-display">Bertumbuh di alam.<br/><span className="text-muted">Berarti bersama.</span></h1><p className="reading-copy mt-6 text-lg">Rumah bagi perjalanan, pembelajaran, dan karya MAPALA Tursina—dirawat agar pengalaman satu generasi tetap berguna bagi generasi berikutnya.</p><div className="mt-8 flex flex-wrap gap-3"><a className="button button-primary" href="#/program/te">Jelajahi Tursina Explore <span aria-hidden="true">→</span></a><a className="button button-secondary" href="#/about">Kenali Tursina</a></div></div>
-      <a href="#/expedition/te11" className="expedition-cover"><div className="flex items-center justify-between gap-4"><span className="eyebrow text-leaf">Dalam arsip / ekspedisi</span><span className="text-xs text-leaf">2024</span></div><p className="edition-number" aria-hidden="true">11</p><div className="relative"><p className="eyebrow text-leaf">Tursina Explore #11</p><h2 className="mt-3 font-editorial text-4xl">Bukit Raya</h2><p className="mt-4 max-w-xs text-sm leading-relaxed text-leaf">Menyusuri perjalanan. Membaca pengalaman. Menemukan pengetahuan.</p><span className="mt-6 inline-flex min-h-11 items-center gap-6 text-sm font-semibold">Baca cerita ekspedisi <span aria-hidden="true">↗</span></span></div></a>
-    </div><p className="mt-4 text-xs text-muted">Judul pembuka merupakan usulan copy. Foto asli dan logo resmi menunggu konfirmasi izin; bidang tipografis bukan foto ekspedisi.</p></section>
-    <section className="border-y border-line"><div className="page-container grid gap-8 py-8 md:grid-cols-3"><div><p className="eyebrow text-muted">Lima divisi</p><p className="mt-3 font-editorial text-2xl">Banyak cara belajar.</p><a className="site-nav-link mt-2" href="#/program/pd">Pendidikan & Pemantapan Divisi →</a></div><div><p className="eyebrow text-muted">Kekeluargaan</p><p className="mt-3 font-editorial text-2xl">Lintas generasi.</p><a className="site-nav-link mt-2" href="#/jejak">Temukan Jejak Tursina →</a></div><div><p className="eyebrow text-muted">Karya & pengetahuan</p><p className="mt-3 font-editorial text-2xl">Pengalaman diteruskan.</p><a className="site-nav-link mt-2" href="#/knowledge">Buka materi belajar →</a></div></div></section>
-    <section className="page-container py-12"><div className="flex flex-wrap items-end justify-between gap-4"><div><p className="eyebrow text-muted">Program / edisi</p><h2 className="section-title mt-3">Setiap perjalanan punya cerita.</h2></div><a className="site-nav-link" href="#/program/te">Semua contoh edisi ↗</a></div><div className="mt-8 grid gap-6 md:grid-cols-2">{expeditionRecords.map(a=><ActivityCard key={a.id} activity={a}/>)}</div></section>
-    <section className="page-container pb-12"><div className="mb-8 flex flex-wrap items-end justify-between gap-4"><div><p className="eyebrow text-muted">Dari meja redaksi</p><h2 className="section-title mt-3">Kabar, karya, dan pembelajaran.</h2></div><a className="site-nav-link" href="#/publications">Lihat publikasi ↗</a></div><PublicationList/></section>
-    <section className="bg-forest text-surface"><div className="page-container grid gap-8 py-12 md:grid-cols-[1.5fr_1fr]"><div><p className="eyebrow text-leaf">Jejak Tursina</p><h2 className="mt-4 font-editorial text-heading">Yang diwariskan bukan hanya nama.</h2></div><div><p className="text-sm leading-relaxed text-leaf">Dari pendidikan, ekspedisi, hingga pertemuan lintas generasi: sebuah kisah institusi yang terus ditulis oleh kerja bersama.</p><a href="#/jejak" className="mt-6 inline-flex min-h-11 items-center gap-8 text-sm font-semibold">Baca Jejak Tursina <span aria-hidden="true">→</span></a></div></div></section>
-  </>;
 }
 
 function TEProgram() {
@@ -91,13 +60,14 @@ function Submission() {
 function Missing(){return <><PageTitle eyebrow="Navigasi" title="Catatan belum tersedia."/><div className="page-container pb-12"><a className="button button-secondary" href="#/review">Kembali ke Beranda</a></div></>;}
 
 export function SitePrototype({route}:{route:string}) {
-  const [direction,setDirection]=useState<Direction>('fieldnotes');const [navigation,setNavigation]=useState<NavChoice>('grouped');const [menu,setMenu]=useState(false);
-  useEffect(()=>{setMenu(false);document.querySelectorAll('details.site-menu').forEach(d=>d.removeAttribute('open'));window.scrollTo(0,0);},[route]);
+  const [direction,setDirection]=useState<Direction>('fieldnotes');const [navigation,setNavigation]=useState<NavChoice>('grouped');
+  useEffect(()=>{document.querySelectorAll('details.site-menu').forEach(d=>d.removeAttribute('open'));window.scrollTo(0,0);},[route]);
   const parts=route.split('/').filter(Boolean);
   const activity=[...pdRecords,...archivalActivities,standalone].find(a=>a.id===parts[1]);
   const work=publicWorks.find(w=>w.id===parts[1]);
   let page;
-  if(route==='/review'||route==='/')page=<ArchiveHome direction={direction}/>;
+  if(route==='/review'||route==='/')page=<Homepage/>;
+  else if(route==='/legacy')page=<ArchiveHome direction={direction}/>;
   else if(route==='/program/te')page=<TEProgram/>;
   else if(parts[0]==='expedition'&&parts[1]==='te11')page=<ArchiveTE11 direction={direction}/>;
   else if(parts[0]==='expedition')page=<ExpeditionDetail id={parts[1]}/>;
@@ -113,13 +83,12 @@ export function SitePrototype({route}:{route:string}) {
   else if(parts[0]==='activity'&&activity)page=<><PageTitle eyebrow={`${activity.program??'Kegiatan mandiri'} / ${activity.evidenceLabel}`} title={activity.title} description={activity.summary}/><section className="page-container pb-12"><StatusLabel state={activity.state}/><p className="mt-5 text-sm text-muted">{[activity.location,activity.date].filter(Boolean).join(' · ')}</p><div className="editorial-note mt-8"><h2 className="font-semibold">Catatan dasar tetap berguna.</h2><p className="reading-copy mt-3 text-sm">Tujuan teknis, rute, hasil, dan karya tidak ditambahkan ketika sumbernya belum memadai. Tidak ada laporan kosong atau hasil rekaan.</p></div><a className="site-nav-link mt-5" href={activity.program?'#/program/pd':'#/activities'}>← Kembali ke daftar</a></section></>;
   else page=<Missing/>;
 
-  return <div className="site-shell bg-paper text-ink" data-direction={direction}>
-    <a href="#public-content" onClick={event=>{event.preventDefault();document.getElementById('public-content')?.focus();}} className="sr-only focus:not-sr-only focus:absolute focus:z-20 focus:bg-surface focus:p-4">Langsung ke isi website</a>
-    <div className="review-bar"><div className="page-container flex flex-wrap items-center gap-x-6 gap-y-3 py-3"><span className="eyebrow">Review Stage 3</span><label className="flex flex-wrap items-center gap-2 text-xs">Arah visual<select aria-label="Arah visual" value={direction} onChange={e=>setDirection(e.target.value as Direction)}><option value="fieldnotes">A · Jurnal Ekspedisi</option><option value="signal">B · Atlas Tursina</option></select></label><label className="flex flex-wrap items-center gap-2 text-xs">Navigasi<select aria-label="Alternatif navigasi" value={navigation} onChange={e=>{setNavigation(e.target.value as NavChoice);setMenu(false);}}><option value="grouped">A · Kelompok konten</option><option value="direct">B · Program langsung</option></select></label><a href="#/ui-lab" className="ml-auto inline-flex min-h-11 items-center text-xs underline">UI lab</a></div></div>
-    <div className="page-container flex items-center justify-between gap-4 border-b border-line py-6"><a href="#/review" className="institutional-wordmark"><span className="eyebrow text-muted">UIN Malang</span><span className="block text-xl font-bold tracking-widest">MAPALA TURSINA</span></a><Button variant="secondary" aria-expanded={menu} aria-controls="site-mobile-nav" onClick={()=>setMenu(!menu)}><span className="lg:hidden">Menu</span><span className="hidden lg:inline">Jalur editorial</span></Button></div>
-    <div className="page-container hidden gap-5 border-b border-line py-1 lg:flex" role="navigation" aria-label="Navigasi publik"><NavItems items={navigation==='grouped'?navA:navB} onNavigate={()=>setMenu(false)}/></div>
-    {menu&&<nav id="site-mobile-nav" aria-label="Menu tambahan" className="page-container flex flex-col gap-2 border-b border-line py-4"><div className="flex flex-col gap-1 lg:hidden"><NavItems items={navigation==='grouped'?navA:navB} onNavigate={()=>setMenu(false)}/></div><a className="site-nav-link" href="#/submission" onClick={()=>setMenu(false)}>Organizer → editor (simulasi)</a></nav>}
-    <main id="public-content" tabIndex={-1}>{page}</main>
-    <footer className="border-t border-line"><div className="page-container grid gap-6 py-10 sm:grid-cols-2"><div><p className="font-semibold">MAPALA TURSINA</p><p className="mt-3 text-sm text-muted">Pengalaman dijaga. Pengetahuan diteruskan.</p></div><div className="flex flex-wrap gap-x-6 gap-y-2 sm:justify-end"><a className="site-nav-link" href="#/about">Tentang</a><a className="site-nav-link" href="#/members">Buku Induk</a><a className="site-nav-link" href="#/submission">Jalur editorial</a><a className="site-nav-link" href="./responsive-review.html">Periksa mobile</a></div><p className="text-xs text-muted sm:col-span-2">Prototipe pengembangan · bukan website resmi · data anggota dan pengumuman contoh sintetis · hak foto/isi asli belum disahkan.</p></div></footer>
+  const reviewing=route==='/review'||route==='/legacy';
+  return <div className="ds-site">
+    <a href="#public-content" className="ds-skip" onClick={event=>{event.preventDefault();document.getElementById('public-content')?.focus();}}>Langsung ke isi website</a>
+    {reviewing&&<DevelopmentReviewShell><label>Navigasi <select aria-label="Alternatif navigasi" value={navigation} onChange={e=>setNavigation(e.target.value as NavChoice)}><option value="grouped">A · Kelompok konten</option><option value="direct">B · Program langsung</option></select></label>{route==='/legacy'&&<label>Arah historis <select aria-label="Arah visual" value={direction} onChange={e=>setDirection(e.target.value as Direction)}><option value="fieldnotes">A · Jurnal Ekspedisi</option><option value="signal">B · Atlas Tursina</option></select></label>}</DevelopmentReviewShell>}
+    <InstitutionalHeader route={route} navigation={reviewing?navigation:'grouped'}/>
+    <main id="public-content" tabIndex={-1}>{route==='/'||route==='/review'?page:<div className="site-shell bg-paper text-ink" data-direction={direction}>{page}</div>}</main>
+    <InstitutionalFooter/>
   </div>;
 }

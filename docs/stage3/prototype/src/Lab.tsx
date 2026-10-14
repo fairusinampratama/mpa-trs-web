@@ -2,10 +2,12 @@ import { useEffect, useState, type FormEvent, type KeyboardEvent } from 'react';
 import { Button } from './components/Button';
 import { ActivityCard } from './components/ActivityCard';
 import { StatusLabel, type ActivityState } from './components/StatusLabel';
+import { ProgrammeEntry, ActivityPreview, PublicationPreview, DocumentaryMedia } from './components/Foundation';
+import { pdRecords, publicWorks } from './content';
 import { activities } from './fixtures';
 
 const sections = [{ id: 'foundation', label: 'Fondasi' }, { id: 'components', label: 'Komponen' }, { id: 'states', label: 'Status & formulir' }];
-const colors = [{ name: 'Forest', token: 'forest' }, { name: 'Leaf', token: 'leaf' }, { name: 'Gold', token: 'gold' }, { name: 'River', token: 'river' }, { name: 'Paper', token: 'paper' }];
+const colors = [{ name: 'Primary', token: 'primary' }, { name: 'Ink', token: 'ink' }, { name: 'Gold / graphic only', token: 'gold' }, { name: 'Blue', token: 'blue' }, { name: 'Page', token: 'page' }];
 
 export function Lab() {
   const [route, setRoute] = useState(location.hash.slice(1) || '/ui-lab');
@@ -28,17 +30,19 @@ export function Lab() {
     <a href="#main-content" onClick={e => { e.preventDefault(); document.getElementById('main-content')?.focus(); }} className="sr-only focus:not-sr-only focus:absolute focus:z-20 focus:bg-surface focus:p-4">Langsung ke isi</a>
     <div className="bg-forest text-surface"><div className="page-container flex flex-wrap items-center justify-between gap-2 py-2 text-xs"><span>STAGE 3 · LINGKUNGAN REVIEW</span><span className="text-leaf">Konten sintetis · bukan situs produksi</span></div></div>
     <header className="border-b border-line bg-paper"><div className="page-container flex items-center justify-between gap-4 py-6">
-      <a href="#/ui-lab" className="flex min-w-0 items-center gap-3 sm:gap-4" aria-label="MAPALA Tursina — UI laboratory"><span aria-hidden="true" className="border-l-2 border-forest pl-3 text-3xl font-editorial">T.</span><span><span className="block text-sm font-bold tracking-wider sm:text-base sm:tracking-widest">MAPALA TURSINA</span><span className="mt-1 block text-xs text-muted">UIN Maulana Malik Ibrahim Malang</span></span></a>
+      <a href="#/ui-lab" className="flex min-w-0 items-center gap-3 sm:gap-4" aria-label="MAPALA Tursina — UI laboratory"><span><span className="block text-sm font-bold tracking-wider sm:text-base sm:tracking-widest">MAPALA TURSINA</span><span className="mt-1 block text-xs text-muted">UIN Maulana Malik Ibrahim Malang</span></span></a>
       <nav aria-label="Navigasi laboratorium" className="hidden items-center gap-6 md:flex"><a className="lab-link" aria-current={record ? undefined : 'page'} href="#/ui-lab">Laboratorium UI</a><a className="lab-link" href="#/ui-lab/record/field-notes">Contoh catatan</a><span className="rounded-control border border-line px-3 py-2 text-xs text-muted">Draft desain · 0.1</span></nav>
       <div className="md:hidden"><Button variant="secondary" onClick={() => setMenu(!menu)} aria-expanded={menu} aria-controls="mobile-nav">Menu</Button></div>
     </div>{menu && <nav id="mobile-nav" aria-label="Navigasi mobile" className="page-container flex flex-col gap-2 pb-5 md:hidden"><a className="lab-link" href="#/ui-lab">Laboratorium UI</a><a className="lab-link" href="#/ui-lab/record/field-notes">Contoh catatan</a></nav>}</header>
     <main id="main-content" tabIndex={-1}>
+    {!record&&route==='/ui-lab'&&<section className="ds-site ds-lab-specimens"><div className="ds-container"><div><p className="ds-label">Step 5A / fondasi bersama</p><h2 className="ds-section-title">Pola beranda yang dapat dipakai kembali.</h2><a className="ds-link" href="#/">Buka beranda</a></div><div className="ds-lab-patterns"><ProgrammeEntry index="01" title="Tursina Explore" description="Identitas program dan edisi terpisah." href="#/program/te" action="Lihat edisi"/><ActivityPreview activity={pdRecords.find(a=>a.id==='gh29')!}/><PublicationPreview title={publicWorks[0].title} type="Artikel" date={publicWorks[0].date} related="TE11" summary="Metadata karya; isi asli tetap terlindungi." href="#/publication/sacred-gatekeeper" action="Buka artikel"/></div><DocumentaryMedia role="gh" fallbackTitle="Peta dan kompas" fallback="Contoh komponen tanpa media publik yang telah diizinkan."/></div></section>}
+
     {record ? <div className="page-container py-12"><a href="#/ui-lab" className="lab-link">← Kembali ke laboratorium</a><div className="mt-8 max-w-3xl"><p className="eyebrow text-muted">Uji komponen · contoh sintetis</p><h1 className="editorial-heading mt-4 text-display">{record.title}</h1><div className="mt-6"><StatusLabel state={record.state}/></div><p className="reading-copy mt-6 text-lg">{record.summary}</p>{record.depth === 'rich' && <section className="mt-10 border-t border-line pt-8"><h2 className="section-title">Pengetahuan yang diteruskan</h2><p className="reading-copy mt-4">Bagian ini menguji ritme membaca dan hubungan kegiatan dengan pengetahuan. Narasi lapangan yang sebenarnya akan disusun dari sumber terverifikasi pada P1.</p></section>}<div className="panel mt-10"><h2 className="text-sm font-semibold">Dokumentasi belum dipilih</h2><p className="mt-2 text-sm text-muted">Foto dan sumber asli tidak ditampilkan. Pemilihan aset mengikuti pemeriksaan fakta, kredit, dan izin.</p></div></div></div>
     : route !== '/ui-lab' ? <div className="page-container py-16"><h1 className="section-title">Contoh tidak tersedia</h1><a href="#/ui-lab" className="lab-link">Kembali ke laboratorium</a></div>
     : <>
       <section className="page-container grid gap-8 py-12 md:grid-cols-[1.7fr_1fr] md:py-16">
         <div><p className="eyebrow text-muted">Laboratorium antarmuka / fondasi</p><h1 className="editorial-heading mt-5 text-display">Jejak yang dijaga.<br/><span className="text-muted">Pengetahuan yang hidup.</span></h1><p className="reading-copy mt-6 max-w-xl">Ruang untuk menguji bahasa visual, komponen, dan pengalaman membaca Tursina. Satu fondasi yang dipakai bersama, dari catatan singkat hingga cerita ekspedisi.</p></div>
-        <aside className="self-end border-l-2 border-gold pl-6"><p className="eyebrow text-forest">Checkpoint pertama</p><p className="mt-3 font-editorial text-2xl">Lihat. Coba. Perbaiki.</p><p className="mt-3 text-sm leading-relaxed text-muted">Warna dan tipografi masih usulan. Pilihan arah visual akan dibandingkan setelah alur review ini terbukti.</p><a href="#/ui-lab/record/field-notes" className="lab-link mt-4 font-semibold">Coba catatan kegiatan <span aria-hidden="true" className="ml-3">↗</span></a></aside>
+        <aside className="self-end border-l-2 border-gold pl-6"><p className="eyebrow text-forest">Fondasi disetujui / Step 4</p><p className="mt-3 font-editorial text-2xl">Lihat. Coba. Perbaiki.</p><p className="mt-3 text-sm leading-relaxed text-muted">Fondasi visual Step 4 diterapkan pada beranda. Contoh berikut memakai komponen sumber yang sama; halaman pendukung menunggu Step 5B.</p><a href="#/ui-lab/record/field-notes" className="lab-link mt-4 font-semibold">Coba catatan kegiatan <span aria-hidden="true" className="ml-3">↗</span></a></aside>
       </section>
       <div className="border-y border-line"><div className="page-container flex flex-wrap gap-6" role="tablist" aria-label="Bagian UI laboratory">{sections.map((s, index) => <button key={s.id} id={`tab-${s.id}`} role="tab" tabIndex={active === s.id ? 0 : -1} aria-selected={active === s.id} aria-controls={`panel-${s.id}`} onKeyDown={event => tabKey(event, index)} onClick={() => setActive(s.id)} className="lab-link" aria-current={active === s.id ? 'page' : undefined}>{s.label}</button>)}</div></div>
       {active === 'foundation' && <section id="panel-foundation" role="tabpanel" aria-labelledby="tab-foundation" className="page-container py-12">
@@ -55,7 +59,7 @@ export function Lab() {
       </section>}
       <div aria-live="polite" className="page-container pb-6 text-sm text-success">{feedback}</div>
     </>}
-    </main><footer className="border-t border-line"><div className="page-container flex flex-wrap items-center justify-between gap-4 py-8 text-xs text-muted"><span>MAPALA TURSINA · Stage 3 / UI laboratory</span><a href="#/review" className="lab-link">Bandingkan website ↗</a><a href="./responsive-review.html" className="lab-link">Periksa viewport mobile ↗</a><span>Fondasi teknis · arah visual belum disetujui</span></div></footer>
+    </main><footer className="border-t border-line"><div className="page-container flex flex-wrap items-center justify-between gap-4 py-8 text-xs text-muted"><span>MAPALA TURSINA · Stage 3 / UI laboratory</span><a href="#/review" className="lab-link">Bandingkan website ↗</a><a href="./responsive-review.html" className="lab-link">Periksa viewport mobile ↗</a><span>Step 4 disetujui · implementasi Step 5A dalam review</span></div></footer>
   </div>;
 }
 

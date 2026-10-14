@@ -32,3 +32,17 @@ class PreviewBoundaryTests(unittest.TestCase):
     def test_rejects_obsolete_preview_base(self):
         (self.root/'index.html').write_text('<script src="/mpa-trs-preview/assets/app.js"></script>')
         with self.assertRaises(ValueError): verify(self.root,SHA)
+
+    def test_accepts_exact_approved_font(self):
+        data = (Path(__file__).parent.parent/'src/fonts/source-sans-3-latin.woff2').read_bytes()
+        (self.root/'assets/source-sans-3-latin-test.woff2').write_bytes(data)
+        self.assertEqual(len(verify(self.root,SHA)),6)
+    def test_rejects_substituted_font_binary(self):
+        (self.root/'assets/source-sans-3-latin-test.woff2').write_bytes(b'wOF2private')
+        with self.assertRaises(ValueError): verify(self.root,SHA)
+    def test_rejects_held_media(self):
+        (self.root/'assets/photo-test.jpg').write_bytes(b'private image')
+        with self.assertRaises(ValueError): verify(self.root,SHA)
+    def test_rejects_sourcemap(self):
+        (self.root/'assets/app-hash.js.map').write_text('{}')
+        with self.assertRaises(ValueError): verify(self.root,SHA)
