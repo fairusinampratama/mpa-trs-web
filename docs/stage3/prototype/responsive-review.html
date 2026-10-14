@@ -31,10 +31,16 @@
       <a href="./#/review">Kembali ke desktop</a>
     </nav>
   </header>
-  <main><iframe id="review-frame" title="Tursina prototype — viewport mobile" src="./#/review"></iframe></main>
+  <main><iframe id="review-frame" title="Tursina prototype — viewport mobile" src="about:blank"></iframe></main>
   <script>
     const frame = document.getElementById('review-frame');
-    document.getElementById('review-page').addEventListener('change', event => { frame.src = event.target.value; });
+    function openPreview(value) {
+      const target = new URL(value, location.href);
+      target.searchParams.set('review', Date.now().toString());
+      frame.src = target.href;
+    }
+    openPreview('./#/review');
+    document.getElementById('review-page').addEventListener('change', event => { openPreview(event.target.value); });
     document.querySelectorAll('[data-width]').forEach(button => button.addEventListener('click', () => {
       frame.style.width = button.dataset.width + 'px';
       document.querySelectorAll('[data-width]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
