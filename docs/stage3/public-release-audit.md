@@ -1,3 +1,5 @@
+> Historical precautionary assessment. Superseded by explicit owner authorization for one PUBLIC repository + native Pages on 14 October 2026. Non-secret documentation/history disclosure accepted. See approval-record.md, publishing/README.md and checkpoint-04.md for bounded final preflight and actual verified release. Original assessment below is preserved.
+
 # Public-release assessment — 14 October 2026
 
 Conclusion **C: keep the existing repository private; use a separate public artifact repository for the Stage 3 preview.** No visibility, Pages, credential, history, branch deletion or production changes were performed.
