@@ -2,7 +2,7 @@
 
 14 October 2026 · private owner review required · no implementation
 
-The owner accepted Step 1 as the working research foundation and explicitly authorized Step 2 only. This does not approve a visual theme, public photograph use or homepage implementation. The approved information architecture and five-second communication requirements remain.
+The owner accepted Step 1 as the working research foundation and explicitly authorized Step 2 only. This does not approve a visual theme, public photograph use or homepage implementation. The approved information architecture and five-second communication requirements remain. The later [owner publication-authority clarification](publication-authority-decision.md) is governing: the owner is the designated institutional decision-maker within the confirmed authority, with no additional institutional representative required by default.
 
 ## Institutional evidence
 
@@ -25,10 +25,10 @@ Six primary originals were freshly downloaded; four added divisional samples wer
 | 13 | Kawi collective identity and institutional continuity |
 | 16 | BATAFIA collective field education |
 
-All 23 photographs and the recovered identity artwork remain **HOLD** for public website use. Source access, ownership, institutional publication authority, participant/privacy basis, attribution and permission for a specific role/crop are separate fields. Creator credits and publication authority were not established. The owner must not be presumed to own copyright simply because access was supplied.
+All 23 photographs and the recovered identity artwork remain **HOLD** for public website use. Source access, ownership, institutional publication authority, participant/privacy basis, attribution and permission for a specific role/crop are separate fields. Institutional decision-making authority is now confirmed by the owner; creator ownership/licences, credits, applicable participant/privacy conditions and final asset approval remain separate. All 23 photographs currently require specific additional permission or verification. Archive access and institutional authority do not themselves establish photographic copyright.
 
 ## Review and next boundary
 
-Inspect the private numbered images; confirm the canonical emblem and existing master, then resolve the six primary assets individually with the responsible rights holder/institutional editor. Record caption, credit, permitted role/crops and restrictions; defer any image whose authority or subject basis cannot be established. Selection is not clearance.
+Inspect the private numbered images; confirm the canonical emblem and existing master, then resolve the six primary assets with the owner as institutional decision-maker; involve a specific third-party rights holder only where that asset requires additional rights permission. Record caption, credit, permitted role/crops and restrictions; defer any image whose authority or subject basis cannot be established. Selection is not clearance.
 
 These materials can inform Step 3 after separate authorization. No concepts, wireframes, React changes, design-token changes, public media upload, Pages deployment, production modification or main merge is part of Step 2. The prototype continues serving its existing frontend. The exact private register remains outside GitHub.
