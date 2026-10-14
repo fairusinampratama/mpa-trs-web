@@ -1,3 +1,4 @@
+# SUPERSEDED HISTORICAL OPTION B — NEVER ACTIVATE. Native stage3-pages.yml is authoritative.
 # INERT: install as .github/workflows/stage3-preview.yml only after owner approval.
 name: Stage 3 static preview
 on:

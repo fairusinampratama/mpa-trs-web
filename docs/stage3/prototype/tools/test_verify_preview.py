@@ -28,3 +28,7 @@ class PreviewBoundaryTests(unittest.TestCase):
     def test_rejects_root_asset_path(self):
         (self.root/'index.html').write_text('<script src="/assets/app.js"></script>')
         with self.assertRaises(ValueError): verify(self.root,SHA)
+
+    def test_rejects_obsolete_preview_base(self):
+        (self.root/'index.html').write_text('<script src="/mpa-trs-preview/assets/app.js"></script>')
+        with self.assertRaises(ValueError): verify(self.root,SHA)

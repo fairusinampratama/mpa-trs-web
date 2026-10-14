@@ -24,4 +24,6 @@ Build/type check passed. Cloud browser rendering/interactions are recorded in ch
 
 Owner review is through this conversation's Cloud Browser when surfaced. `terminal.local` is not a public link. No external reviewer access has been provisioned. No compliance/security/performance guarantee from this foundation prototype.
 
-Public-preview preparation (14 October): see `../public-release-audit.md` and `../publishing/README.md`. Hash UI-lab URL works in static output; responsive-review.html is now an explicit second Vite input. PREVIEW_BASE controls project-site base; VITE_SOURCE_COMMIT supplies visible/version.json release identity. publicDir copying and sourcemaps are disabled. Inert publishing workflow awaits specific authorization; no live HTTPS preview exists yet.
+Historical public-preview preparation (14 October, superseded by native Pages): see `../public-release-audit.md` and `../publishing/README.md`. Hash UI-lab URL works in static output; responsive-review.html is now an explicit second Vite input. PREVIEW_BASE controls project-site base; VITE_SOURCE_COMMIT supplies visible/version.json release identity. publicDir copying and sourcemaps are disabled. Inert publishing workflow awaits specific authorization; no live HTTPS preview exists yet.
+
+Active publishing: `.github/workflows/stage3-pages.yml`, exact source branch Stage3, GitHub Actions Pages, base `/mpa-trs-web/`. Read `../publishing/README.md`. Owner authorized public source and safe frontend publication; cross-repo publisher refuses execution. No PAT or second repository.

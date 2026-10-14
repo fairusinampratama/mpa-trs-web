@@ -10,6 +10,7 @@ TARGET = 'fairusinampratama/mpa-trs-preview'
 BRANCH = 'main'
 
 def publish():
+    raise RuntimeError("Superseded: use stage3-pages.yml native GitHub Pages; cross-repository publishing is disabled")
     if os.environ.get('PREVIEW_TARGET') != TARGET:
         raise ValueError('Exact preview repository required')
     commit = os.environ['SOURCE_COMMIT']

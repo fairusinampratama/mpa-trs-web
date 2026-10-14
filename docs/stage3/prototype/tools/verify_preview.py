@@ -25,6 +25,8 @@ def verify(directory, commit):
         if len(data) > 2_000_000:
             raise ValueError('Oversize public file')
         text = data.decode('utf-8')
+        if '/mpa-trs-preview/' in text:
+            raise ValueError('Obsolete preview base in ' + relative)
         if PRIVATE.search(text):
             raise ValueError('Private-content pattern in ' + relative)
         files[relative] = data
