@@ -40,3 +40,7 @@ Browser coverage:1366/1024/768/390/320,18 canonical routes, menu keyboard/Escape
 [Visual fidelity and decisions](fidelity-and-handoff.md) records deliberate differences and remaining Step5B work. Deployment identity and verified evidence are appended after actual Pages execution, not inferred from a build.
 
 Local browser record: [results](evidence/local-browser-results.json), [desktop](evidence/public-homepage-1366.png), [390px](evidence/public-homepage-390.png). Screenshots contain only public-safe fallbacks. Private image-bearing comparison is delivered separately. All59 existing foundation Python tests also passed.
+
+## Completed public deployment
+
+[Deployment and live evidence](deployment-and-verification.md): sourceec722f3a3b85ad977b5714a788b7c08f0dbe8c68, successful Pages38581615033 and CI38581625431, live routes/viewports and exact asset-byte matching. Step5A is delivered for owner review; no Step5B authorization inferred.

@@ -1,0 +1,56 @@
+{
+  "source": "ec722f3a3b85ad977b5714a788b7c08f0dbe8c68",
+  "url": "https://fairusinampratama.github.io/mpa-trs-web/",
+  "files": [
+    {
+      "path": "version.json",
+      "status": 200,
+      "bytes": 100,
+      "sha256": "ab80b6f495645ae515ce55ebbd2984bc9c11ed1b95966c4253e2d7a8d2985179",
+      "matchesLocal": true
+    },
+    {
+      "path": "responsive-review.html",
+      "status": 200,
+      "bytes": 2725,
+      "sha256": "b41367b68b666844aae355ba6b0f19019f23ef40a6fbee356b387c7cd729d123",
+      "matchesLocal": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 613,
+      "sha256": "0ec5d112c449ced57dab6c3a882cc95be293b4f2b7578768167596bdbd5add32",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/main-DrJ7lYLl.js",
+      "status": 200,
+      "bytes": 299604,
+      "sha256": "9f29acecaaa6e6df328f784a47a19cb9616e38fb0a2779287868f207ebd4b58f",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/main-DJO6zj2D.css",
+      "status": 200,
+      "bytes": 68193,
+      "sha256": "10a31a9a3f67bcf4ea7a8fc3f5db2e421672644898b19f9ff25186bbfc8c3ed6",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/source-serif-4-latin-DMe4EKeb.woff2",
+      "status": 200,
+      "bytes": 50936,
+      "sha256": "382475f38242c52d42a3e5ff8dc69b5d73f10d0d21e4550b5fe232984688779a",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/source-sans-3-latin-Bo_j9asI.woff2",
+      "status": 200,
+      "bytes": 28872,
+      "sha256": "19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5",
+      "matchesLocal": true
+    }
+  ],
+  "nojekyll": "artifact configuration file; not an HTTP entry"
+}
