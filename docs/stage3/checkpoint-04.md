@@ -11,3 +11,13 @@ Owner authentication was required by GitHub before visibility change; secure own
 Native workflow builds with Node24/npm ci, eight boundary tests, Vite base mpa-trs-web and exactSHA; six-file static validation; pinned official configure/upload/deploy Pages Actions; Pages/OIDC writes only deployment job; read-only HTTPS verification. Old cross-repo tool disabled; historical template retained inert. No source-root validator adjustment required.
 
 Local TypeScript/Vite build and all eight tests passed; no obsolete base in artifact. Live deployment/run/browser/update evidence will be added after actual verification. Do not claim task complete from this preparation record.
+
+## Initial live release verified
+
+Source `43af3ccb31a0f0fb4022b6544d9217b88700bfbc`; native Pages run38503071511 completed successfully (build115654268847, deploy115654348980, verify115654417413). Deployment ID is the source SHA; page_url output is https://fairusinampratama.github.io/mpa-trs-web/. Source CI38503074931 also passed. Pages artifact11866508630, wrapper digest06e9f2263530fbbb58c596fd35439a65a99e13f6950fedc0347d6beb30c7f490. Actual artifact tar contains five regular files (two HTML, generated CSS/JS, version.json); upload-pages-artifact omits dotfiles including .nojekyll, which native Actions Pages does not require. All served payload bytes match local dist. No links, reports, docs, originals, member records or maps in tar.
+
+Real cloud-browser HTTPS checks: homepage and both theme/navigation selectors; direct TE catalogue→TE11→related article→canonical return, TE11 reload; A dropdown via Enter, B direct TE link; PD filter empty/reset, Jejak, synthetic DEMO.003 search; organizer→canonical selection→publisher both-checkbox gate→local preview; UI-lab ArrowRight selected/focused shared component tab; skip-link Enter focused main without changing route. Supporting pages contain source-safe text/synthetic fixtures only.
+
+Responsive homepage in BOTH themes: viewport320 client/scroll305/305, 390:375/375, 768:753/753. Desktop1363:1348/1348. Mobile B Menu→Pendidikan→PD works at390 with375/375; UI-lab320 with305/305. Separate iframe documents test CSS reflow, not touch/physical devices. Live screenshot evidence retained. Sampled console errors belong to Chrome extension metadata; no application-origin error observed. No full accessibility certification claimed.
+
+Harmless second update adds “desain belum final” to the common development banner, selecting no direction and changing no requirement. Final second run/version and post-update checks to be recorded after actual deployment.

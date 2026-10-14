@@ -4,7 +4,7 @@ Owner explicitly authorized the existing repository Private→Public and native 
 
 Repository: `fairusinampratama/mpa-trs-web` (public, default branch main). Source branch: `stage3/interactive-prototype`; PR13 stays draft/unmerged. Build root: `docs/stage3/prototype/`. Active workflow: `.github/workflows/stage3-pages.yml`. GitHub Pages setting: **GitHub Actions**. No custom domain; default HTTPS enforced. `github-pages` environment allows exactly the branch `stage3/interactive-prototype` (not main/tags) and contains no secrets.
 
-Expected HTTPS address until first deployment is verified: `https://fairusinampratama.github.io/mpa-trs-web/`. Supported entries: homepage, `#/ui-lab`, `#/program/te`, `#/expedition/te11`, and `responsive-review.html`. Internal original `/ui-lab` is not a supported clean static route. Hash deep links/reloads need no catch-all rewrite. The responsive HTML is a separate explicit Vite input and uses relative iframe links.
+Verified HTTPS address: `https://fairusinampratama.github.io/mpa-trs-web/`. Supported entries: homepage, `#/ui-lab`, `#/program/te`, `#/expedition/te11`, and `responsive-review.html`. Internal original `/ui-lab` is not a supported clean static route. Hash deep links/reloads need no catch-all rewrite. The responsive HTML is a separate explicit Vite input and uses relative iframe links.
 
 ## Workflow and isolation
 
@@ -26,3 +26,5 @@ Reverse a broken preview by a normal source revert on this branch, then push. Th
 In a new Work session, fetch branch head/PR13 and read AGENTS, approvals, design-system, fixture ledger, latest checkpoint and this runbook. Use retained source, not scratch/cloud-server persistence. Verify served version before further design review. No additional hosting account, credential renewal or preview setup is required after successful native activation.
 
 Limitations: public review site has no access control; noindex is advisory. Forms/editorial publishing are browser-local simulation. Theme/navigation reset on reload and remain unapproved alternatives. CSS review frame is document reflow, not physical-device/touch testing. Media needs rights clearance. Stage1 artifact expiry/mobile follow-ups are separate. No Stage4 or production deployment authorization.
+
+First native deployment succeeded: source43af3ccb31a0f0fb4022b6544d9217b88700bfbc, Actions38503071511, deploy job115654348980, Pages deployment ID43af3ccb31a0f0fb4022b6544d9217b88700bfbc. Build/deploy/HTTPS verification all passed. Browser journeys and 320/390/768 document viewports checked against public HTTPS. A second push adds only “desain belum final” to the common development banner to prove updates; see checkpoint04 for final source/run.
