@@ -1,6 +1,6 @@
 # MPA-TRS Stage 3 prototype
 
-Isolated frontend: React 19.3.0, TypeScript 7.0.2, Vite 8.3.4 and Tailwind CSS 4.3.3. Locked dependencies; no Laravel backend or hosting dependency. Source branch: `stage3/interactive-prototype` in the existing private repository. No merge/deployment is authorized.
+Isolated frontend: React 19.3.0, TypeScript 7.0.2, Vite 8.3.4 and Tailwind CSS 4.3.3. Locked dependencies; no Laravel backend or hosting dependency. Source branch: `stage3/interactive-prototype` in the existing public repository. Native GitHub Pages deployment from this branch is authorized; merge to `main` and production deployment are not.
 
 ## Resume
 
@@ -10,13 +10,13 @@ In this managed Work environment, the available supervisor owns the preview: `si
 
 ## Inspect
 
-- `/` or `#/review`: connected first substantive review bundle. Use top selectors for Catatan Lapangan/Ruang Tursina and navigation A/B. Canonical TE11/article links, basic TE12, representative PD/works/history/member routes and local organizer/editor/publisher walkthrough. Direction is pending owner selection.
+- `/` or `#/review`: connected archive-driven review bundle. Use top selectors for Jurnal Ekspedisi/Atlas Tursina and navigation A/B. Beranda, canonical TE11 and PD XXIX use verified public-safe records and rights-held media compositions; supporting routes and local organizer/editor/publisher walkthrough remain connected. Direction is pending owner selection.
 
 - `/ui-lab`: theme, typography, shared controls, activity cards, lifecycle labels, filter/empty/reset, linked synthetic rich/basic records and local submission simulation.
 - `/responsive-review.html`: development-only iframe viewport harness, 320/390/768px. Verify inner document `innerWidth`, client/scroll widths and actual breakpoint behavior. This is CSS reflow testing, not touch-device emulation or a Stage 1 mobile check.
 - All record navigation is currently hash-based and local. Final public navigation is not selected. Vite HTML fallback serves the lab at `/ui-lab`.
 
-Theme: `src/theme.css`; components: `src/components/`; synthetic fixtures: `src/fixtures.ts`. No photo selected and no official logo recreated. Proposed headings are test copy, not a verified institutional motto.
+Theme: `src/theme.css`; components: `src/components/`; source-backed public records: `src/content.ts`; archive layouts: `src/ArchiveDesigns.tsx`; state demonstrations: `src/fixtures.ts`. No rights-unresolved photograph is bundled and no official logo is recreated. Media plates are composition previews, not claims of publication clearance.
 
 ## Verification and review limitations
 

@@ -1,0 +1,39 @@
+# Stage 3 checkpoint 05 — archive-driven content and identity
+
+Date: 14 October 2026  
+Status: implementation prepared for owner visual review; no final direction or photograph approved
+
+## Implemented
+
+- Preserved the approved routes, record relationships, navigation A/B and editorial simulation.
+- Replaced the representative PD comparison with documented PD XXIX Gunung Hutan, Rock Climbing, ORAD, Lingkungan Hidup and Caving records.
+- Expanded TE11 with a report-backed journey sequence, field milestone, output limitation and explicit province conflict.
+- Added bounded real records for TE12, Kawi XXIX and BATAFIA XXX without inventing missing outcomes.
+- Built two distinct treatments over the same information architecture:
+  - **Jurnal Ekspedisi** — long-form documentary chronology, large captioned media positions and serif reading rhythm.
+  - **Atlas Tursina** — indexed institutional dossier, compact fact density, source state and sans grid rhythm.
+- Applied both treatments to Beranda, TE11 and the PD catalogue/detail family. Rights-held photographs are represented by labelled composition plates, never embedded originals.
+
+## Source and photography work
+
+Priority collections were enumerated and sampled from authenticated originals: TE11 (24 of 160 photographs), PD XXIX Gunung Hutan (18 of 27), PD XXIX Rock Climbing (20 of 108), Kawi XXIX departure/welcoming (24 samples) and BATAFIA XXX field activity (20 of 100). Every candidate was visually inspected; filenames alone were not used to identify content.
+
+Private contact sheets and the exact source/credit/permission ledger are delivered outside the public repository. The recommended minimal clearance set contains five compositions: TE11 Puncak Kakam group, TE11 pitcher-plant field evidence, PD Gunung Hutan map/compass practice, PD Rock Climbing action/belay scale and BATAFIA rain/mist field movement. All remain `HOLD` until the owner resolves publication authority and known credit.
+
+## Public boundary
+
+No archive original, private contact sheet, exact private media locator, real Buku Induk record, participant roster or personal/medical/financial detail is in GitHub or the Pages bundle. Public copy is paraphrased and deliberately retains source conflicts. Access to Drive is not treated as permission to publish.
+
+## Verification record
+
+- `npm run build`: passed locally with TypeScript and Vite production build.
+- Eight static prototype boundary tests: passed locally.
+- Real GitHub Pages browser screenshots, viewport results, deployed SHA and workflow run are added after safe publication; build success alone is not recorded as browser validation.
+
+## Owner decisions requested
+
+1. Choose which of the five shortlisted photograph compositions may proceed to credit/consent clearance; approval of a layout is not approval of an image.
+2. Supply known photographer/creator credits or designate an institutional authority able to confirm them.
+3. Compare Jurnal Ekspedisi and Atlas Tursina on Beranda, TE11 and PD; a final direction is not selected by this checkpoint.
+
+Production Laravel/Rumahweb, SLiMS, E-Letter, DNS, databases and Stage 1 workflows are unchanged. PR #13 remains unmerged.

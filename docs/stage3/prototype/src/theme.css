@@ -68,6 +68,138 @@
   .journey-list { @apply space-y-8 border-l border-line pl-6; }
   .journey-list h3 { @apply mt-3 font-editorial text-2xl; }
   .journey-list li>p:last-child { @apply mt-3 max-w-prose text-sm leading-relaxed text-muted; }
+
+  /* Archive-driven P3 directions. Media plates reserve real compositions while
+     source photographs remain private pending explicit publication clearance. */
+  .media-plate { @apply m-0; }
+  .media-plate-stage { @apply relative flex min-h-80 flex-col justify-between overflow-hidden border border-forest bg-forest p-6 text-surface; }
+  .media-plate-stage>span { @apply font-editorial text-7xl text-leaf/50; }
+  .media-plate-stage>p { @apply max-w-xs text-xs font-semibold uppercase leading-relaxed tracking-widest text-leaf; }
+  .media-plate figcaption { @apply grid gap-2 border-x border-b border-line bg-surface p-4 text-sm; }
+  .media-plate figcaption span { @apply text-xs leading-relaxed text-muted; }
+  .media-plate-portrait .media-plate-stage { @apply min-h-[32rem]; }
+  .media-plate-detail .media-plate-stage { @apply min-h-64 bg-ink; }
+  .source-flag { @apply mt-6 inline-flex border border-line bg-surface px-3 py-2 text-xs font-semibold text-muted; }
+  .archive-actions { @apply mt-8 flex flex-wrap items-center gap-4; }
+  .archive-doc-hero { @apply grid gap-8 py-10 md:grid-cols-[1.1fr_0.9fr] md:py-16; }
+  .archive-doc-intro { @apply self-center md:pl-6; }
+  .archive-doc-intro h1 { @apply mt-5 font-editorial text-[clamp(3rem,7vw,6.6rem)] leading-[0.9] tracking-[-0.04em]; }
+  .archive-doc-intro>p:not(.eyebrow) { @apply mt-7 max-w-lg text-lg leading-relaxed text-muted; }
+  .archive-fact-strip { @apply mt-10 grid grid-cols-3 border-y border-line py-5; }
+  .archive-fact-strip div { @apply border-r border-line px-3 first:pl-0 last:border-0; }
+  .archive-fact-strip dt { @apply text-sm font-bold; }
+  .archive-fact-strip dd { @apply mt-1 text-xs text-muted; }
+  .archive-ledger { @apply grid gap-10 border-t border-line py-14 lg:grid-cols-[0.75fr_1.25fr]; }
+  .archive-section-lead h2 { @apply mt-4 max-w-md font-editorial text-heading; }
+  .archive-section-lead>p:last-child { @apply mt-5 max-w-md text-sm leading-relaxed text-muted; }
+  .archive-ledger-list { @apply border-t border-line; }
+  .archive-ledger-list li { @apply grid grid-cols-[2.5rem_1fr] gap-4 border-b border-line py-5; }
+  .archive-ledger-list li>span { @apply font-editorial text-2xl text-muted; }
+  .archive-ledger-list li div>p:last-child { @apply mt-2 max-w-2xl text-sm leading-relaxed text-muted; }
+  .archive-feature-pair { @apply grid items-center gap-10 border-t border-line py-14 md:grid-cols-[0.75fr_1.25fr]; }
+  .archive-feature-pair h2 { @apply mt-4 max-w-xl font-editorial text-heading; }
+  .archive-feature-pair>div>p:not(.eyebrow) { @apply mt-5 max-w-xl leading-relaxed text-muted; }
+
+  .atlas-hero { @apply grid gap-8 border-b-2 border-ink py-10 md:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr]; }
+  .atlas-kicker { @apply col-span-full flex flex-wrap justify-between gap-3 border-y border-ink py-3 text-xs font-bold tracking-widest; }
+  .atlas-title { @apply lg:col-span-2; }
+  .atlas-title h1 { @apply mt-5 text-[clamp(3.2rem,8vw,7.8rem)] font-black uppercase leading-[0.82] tracking-[-0.07em]; }
+  .atlas-opening { @apply flex flex-col items-start justify-end border-l-4 border-gold pl-6; }
+  .atlas-opening p { @apply max-w-sm text-lg font-semibold leading-snug; }
+  .atlas-opening .button { @apply mt-7; }
+  .atlas-hero>.media-plate { @apply lg:col-start-3; }
+  .atlas-index { @apply grid gap-10 py-14 lg:grid-cols-[0.7fr_1.3fr]; }
+  .atlas-index header h2 { @apply mt-4 text-4xl font-black uppercase tracking-tight; }
+  .atlas-index-table { @apply border-t-2 border-ink; }
+  .atlas-index-table a { @apply grid min-h-24 grid-cols-[2.5rem_1fr] gap-3 border-b border-ink py-4 text-ink hover:bg-leaf/20 sm:grid-cols-[2.5rem_1.2fr_0.9fr_0.8fr]; }
+  .atlas-index-table a>span { @apply text-xl font-black; }
+  .atlas-index-table strong { @apply text-base; }
+  .atlas-index-table small,.atlas-index-table em { @apply text-xs not-italic leading-relaxed text-muted; }
+  .atlas-principles { @apply grid border-y-2 border-ink sm:grid-cols-2 lg:grid-cols-4; }
+  .atlas-principles>div { @apply border-b border-ink p-6 sm:border-r lg:border-b-0; }
+  .atlas-principles span { @apply text-xs font-black; }
+  .atlas-principles h3 { @apply mt-6 text-xl font-black uppercase; }
+  .atlas-principles p { @apply mt-3 text-sm leading-relaxed text-muted; }
+
+  .doc-story-head { @apply py-12 md:py-20; }
+  .doc-story-head>.eyebrow { @apply mt-10; }
+  .doc-story-head h1 { @apply mt-5 max-w-5xl font-editorial text-[clamp(3rem,7vw,6.8rem)] leading-[0.9] tracking-[-0.04em]; }
+  .doc-deck { @apply mt-8 max-w-3xl text-xl leading-relaxed text-muted; }
+  .doc-photo-sequence { @apply space-y-8 pb-16; }
+  .doc-photo-sequence>.media-plate .media-plate-stage { @apply min-h-[28rem] md:min-h-[38rem]; }
+  .doc-photo-pair { @apply grid gap-8 md:grid-cols-[1.3fr_0.7fr]; }
+  .doc-log { @apply grid gap-10 border-y border-line py-14 lg:grid-cols-[0.55fr_1.45fr]; }
+  .doc-log header h2 { @apply mt-4 font-editorial text-heading; }
+  .doc-log ol { @apply border-t border-line; }
+  .doc-log li { @apply grid gap-2 border-b border-line py-5 sm:grid-cols-[7rem_1fr_1.4fr]; }
+  .doc-log time { @apply text-xs font-semibold; }
+  .doc-log h3 { @apply font-editorial text-xl; }
+  .doc-log li p { @apply text-sm leading-relaxed text-muted; }
+  .doc-outcomes { @apply grid gap-10 py-16 lg:grid-cols-[1.2fr_0.8fr]; }
+  .doc-outcomes h2 { @apply mt-4 max-w-2xl font-editorial text-heading; }
+  .doc-outcomes>div>p:last-child { @apply mt-5 max-w-2xl leading-relaxed text-muted; }
+  .doc-outcomes aside { @apply border-l-2 border-gold bg-surface p-6; }
+  .doc-outcomes aside h3 { @apply font-semibold; }
+  .doc-outcomes ul { @apply mt-4 list-disc space-y-3 pl-5 text-sm leading-relaxed text-muted; }
+  .doc-related { @apply border-t border-line pb-16 pt-10; }
+  .doc-related>a { @apply grid gap-2 border-b border-line py-5 text-ink md:grid-cols-[8rem_1fr_18rem]; }
+  .doc-related>a span,.doc-related>a small { @apply text-xs text-muted; }
+
+  .dossier-head { @apply grid gap-10 border-b-2 border-ink py-12 lg:grid-cols-[1fr_1fr]; }
+  .dossier-head .eyebrow { @apply mt-10; }
+  .dossier-head h1 { @apply mt-4 text-[clamp(4rem,10vw,9rem)] font-black uppercase leading-none tracking-[-0.08em]; }
+  .dossier-head dl { @apply grid self-end border-t-2 border-ink sm:grid-cols-2; }
+  .dossier-head dl div { @apply border-b border-r border-ink p-4; }
+  .dossier-head dt { @apply text-xs font-bold uppercase tracking-widest; }
+  .dossier-head dd { @apply mt-2 text-sm; }
+  .dossier-grid { @apply grid gap-8 py-12 md:grid-cols-2; }
+  .dossier-grid article { @apply border-t-4 border-ink pt-5; }
+  .dossier-grid article h2 { @apply mt-4 text-3xl font-black uppercase leading-tight; }
+  .dossier-grid article>p:last-child { @apply mt-5 max-w-xl leading-relaxed text-muted; }
+  .dossier-route ol { @apply mt-6; }
+  .dossier-route li { @apply flex justify-between gap-4 border-b border-line py-3 text-sm; }
+  .dossier-route li span { @apply text-muted; }
+  .dossier-status { @apply grid border-y-2 border-ink sm:grid-cols-2 lg:grid-cols-4; }
+  .dossier-status>div { @apply border-b border-r border-ink p-5 lg:border-b-0; }
+  .dossier-status span { @apply text-xs font-bold uppercase tracking-widest; }
+  .dossier-status strong { @apply mt-4 block text-sm leading-relaxed; }
+
+  .pd-archive-head { @apply grid gap-6 border-b-2 border-ink py-12 md:grid-cols-[1fr_1fr]; }
+  .pd-archive-head h1 { @apply text-[clamp(3rem,7vw,6rem)] font-editorial leading-none; }
+  .pd-archive-head>p:last-child { @apply max-w-xl self-end text-lg leading-relaxed text-muted; }
+  .pd-filter { @apply flex flex-wrap gap-4 py-6; }
+  .pd-filter label { @apply text-xs font-bold uppercase tracking-widest; }
+  .pd-filter select { @apply ml-3 min-h-11 border border-line bg-surface px-3 text-base normal-case tracking-normal; }
+  .pd-documentary { @apply pb-16; }
+  .pd-feature { @apply grid items-center gap-10 py-8 md:grid-cols-[0.8fr_1.2fr]; }
+  .pd-feature h2 { @apply mt-4 max-w-xl font-editorial text-heading; }
+  .pd-feature>div>p:not(.eyebrow) { @apply mt-5 max-w-xl leading-relaxed text-muted; }
+  .pd-feature .button { @apply mt-7; }
+  .pd-card-grid { @apply mt-8 grid gap-6 md:grid-cols-2; }
+  .pd-atlas-list { @apply border-t-2 border-ink pb-16; }
+  .pd-atlas-list>a { @apply grid gap-5 border-b border-ink py-6 text-ink hover:bg-leaf/20 md:grid-cols-[3rem_1.2fr_0.8fr]; }
+  .pd-atlas-list>a>span { @apply text-2xl font-black; }
+  .pd-atlas-list h2 { @apply mt-2 text-2xl font-black uppercase; }
+  .pd-atlas-list div>p:last-child { @apply mt-3 max-w-2xl text-sm leading-relaxed text-muted; }
+  .pd-atlas-list dl { @apply grid grid-cols-[5rem_1fr] gap-x-3 gap-y-2 text-xs; }
+  .pd-atlas-list dt { @apply font-bold uppercase; }
+  .pd-atlas-list dd { @apply text-muted; }
+  .pd-detail-head { @apply py-12 md:py-16; }
+  .pd-detail-head>.eyebrow { @apply mt-10; }
+  .pd-detail-head h1 { @apply mt-4 max-w-5xl font-editorial text-[clamp(3rem,7vw,6rem)] leading-[0.95]; }
+  .pd-detail-head>p { @apply mt-6 max-w-3xl text-lg leading-relaxed text-muted; }
+  .pd-detail-head>div { @apply mt-8 flex flex-wrap items-center gap-5 text-sm text-muted; }
+  .pd-detail-head.is-atlas { @apply border-b-2 border-ink; }
+  .pd-detail-head.is-atlas h1 { @apply font-sans font-black uppercase tracking-[-0.06em]; }
+  .pd-detail-grid { @apply grid gap-10 pb-14 md:grid-cols-[0.8fr_1.2fr]; }
+  .pd-detail-grid article { @apply self-center; }
+  .pd-detail-grid h2 { @apply mt-4 font-editorial text-heading; }
+  .pd-detail-grid ul { @apply mt-6 list-decimal space-y-4 border-y border-line py-5 pl-8 text-sm; }
+  .source-note { @apply mt-6 text-xs leading-relaxed text-muted; }
+  .pd-evidence-band { @apply grid border-y border-line sm:grid-cols-3; }
+  .pd-evidence-band>div { @apply border-b border-line p-6 sm:border-b-0 sm:border-r; }
+  .pd-evidence-band span { @apply text-xs font-bold uppercase tracking-widest; }
+  .pd-evidence-band p { @apply mt-3 text-sm leading-relaxed text-muted; }
 }
 
 /* P3 comparison variants: shared semantic tokens and components; not approved
@@ -90,7 +222,21 @@
 .site-shell[data-direction='signal'] .expedition-cover { border-top:8px solid var(--color-leaf); }
 .site-shell[data-direction='signal'] .edition-number { font-weight:700; letter-spacing:-0.08em; }
 .site-shell[data-direction='signal'] .home-hero { align-items:stretch; }
+.site-shell[data-direction='fieldnotes'] .media-plate-stage { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-leaf) 35%, transparent); }
+.site-shell[data-direction='fieldnotes'] .media-plate-stage>span { font-style:italic; }
+.site-shell[data-direction='signal'] .media-plate-stage { @apply bg-surface text-ink; border-width:2px; }
+.site-shell[data-direction='signal'] .media-plate-stage>span { @apply font-sans font-black text-ink; letter-spacing:-0.08em; }
+.site-shell[data-direction='signal'] .media-plate-stage>p { @apply text-muted; }
+.site-shell[data-direction='signal'] .media-plate figcaption { border-color:var(--color-ink); }
+.site-shell[data-direction='signal'] .dossier-grid article h2,
+.site-shell[data-direction='signal'] .pd-detail-grid h2 { @apply font-sans font-black uppercase; }
 @media (max-width:639px) {
   .review-bar select { font-size:16px; }
   .institutional-wordmark>span:last-child { font-size:0.95rem; letter-spacing:0.08em; }
+  .archive-fact-strip { @apply grid-cols-1 gap-3; }
+  .archive-fact-strip div { @apply border-b border-r-0 pb-3 last:border-b-0 last:pb-0; }
+  .atlas-title h1 { line-height:0.9; }
+  .doc-log li { @apply gap-1; }
+  .pd-filter label { @apply w-full; }
+  .pd-filter select { @apply ml-0 mt-2 w-full; }
 }
