@@ -1,8 +1,12 @@
 # Recovery Step 3 — homepage UX and wireframes
 
-14 October 2026 · owner explicitly authorized Step 3 only · composition review pending
+14 October 2026 · owner approved Alternative A with selected B field-education strengths
 
 The owner accepted Steps 1–2 as working research inputs. Existing information architecture/content relationships remain useful; prior visual treatments remain rejected as final designs. This step produces private image-bearing wireframes and public-safe specifications, not React, Tailwind, theme or UI-lab changes. Step 4/5 and implementation require separate authorization.
+
+## Subsequent owner approval
+
+Owner formally approved A — Institutional Discovery, incorporating B’s concrete field-education presentation within A’s sequence. The comparison below is preserved as historical reasoning; the current governing record is `../step-04/README.md` and the Stage 3 approval record. No photo publication or React implementation is inferred.
 
 ## Brief and recommendation
 
