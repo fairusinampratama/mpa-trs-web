@@ -1,7 +1,7 @@
 # Stage 3 checkpoint 05 — archive-driven content and identity
 
 Date: 14 October 2026  
-Status: implementation prepared for owner visual review; no final direction or photograph approved
+Status: safe text/layout increment deployed and browser-reviewed; no final direction or photograph approved
 
 ## Implemented
 
@@ -28,7 +28,12 @@ No archive original, private contact sheet, exact private media locator, real Bu
 
 - `npm run build`: passed locally with TypeScript and Vite production build.
 - Eight static prototype boundary tests: passed locally.
-- Real GitHub Pages browser screenshots, viewport results, deployed SHA and workflow run are added after safe publication; build success alone is not recorded as browser validation.
+- Initial archive increment: `12d827e3f1627d0f23af4cff23648564a109493d`, Pages run `38525666836`, successful. Browser readback showed version `12d827e`.
+- Both directions reviewed on Beranda, TE11 and PD XXIX RC detail at desktop 1363px. Navigation B menu, PD filter and canonical detail journey worked.
+- CSS document viewport harness measured 320/390/768px frames (305/375/753px content width after scrollbar), with equal client/scroll width for both directions on Beranda, TE11, PD browse and RC detail. This is not physical-device/touch testing.
+- Console errors observed were browser-extension metadata messages, not application-origin errors.
+- General CI initially failed in a temporary-directory teardown (`Directory not empty: objects`); the same job passed on targeted attempt 2. No production validator/test/workflow was modified.
+- Browser screenshots are retained as checkpoint evidence. A bounded follow-up reduces the Atlas heading scale and restores TE11 related-publication links in the dossier treatment.
 
 ## Owner decisions requested
 

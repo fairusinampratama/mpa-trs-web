@@ -103,7 +103,7 @@
   .atlas-hero { @apply grid gap-8 border-b-2 border-ink py-10 md:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_1fr]; }
   .atlas-kicker { @apply col-span-full flex flex-wrap justify-between gap-3 border-y border-ink py-3 text-xs font-bold tracking-widest; }
   .atlas-title { @apply lg:col-span-2; }
-  .atlas-title h1 { @apply mt-5 text-[clamp(3.2rem,8vw,7.8rem)] font-black uppercase leading-[0.82] tracking-[-0.07em]; }
+  .atlas-title h1 { @apply mt-5 text-[clamp(2.7rem,5.3vw,5rem)] font-black uppercase leading-[0.95] tracking-[-0.055em]; }
   .atlas-opening { @apply flex flex-col items-start justify-end border-l-4 border-gold pl-6; }
   .atlas-opening p { @apply max-w-sm text-lg font-semibold leading-snug; }
   .atlas-opening .button { @apply mt-7; }

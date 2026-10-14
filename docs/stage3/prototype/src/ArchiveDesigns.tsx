@@ -59,7 +59,8 @@ function TE11Atlas(){return <>
   <section className="page-container dossier-status"><div><span>Rencana awal</span><strong>Dokumenter + kajian lingkungan dan budaya</strong></div><div><span>Perubahan</span><strong>Tim dan target keluaran disederhanakan</strong></div><div><span>Ditemukan</span><strong>Draft LPJ, artikel, arsip foto, rencana penyuntingan</strong></div><div><span>Belum dipastikan</span><strong>Film final, verifikasi klaim karbon, izin media</strong></div></section>
   </>}
 
-export function ArchiveTE11({direction}:{direction:ArchiveDirection}) {return direction==='fieldnotes'?<TE11Documentary/>:<TE11Atlas/>;}
+function DossierRelated(){return <section className="page-container doc-related"><p className="eyebrow">Hubungan karya / batas sumber</p><p className="source-note">Laporan berbeda dalam penamaan provinsi. Wilayah publik tetap Kalimantan sampai direkonsiliasi; angka karbon dan film final belum diverifikasi.</p>{publicWorks.filter(w=>w.related==='te11').map(w=><a key={w.id} href={`#/publication/${w.id}`}><span>{w.type}</span><strong>{w.title}</strong><small>{w.date} · {w.source}</small></a>)}</section>}
+export function ArchiveTE11({direction}:{direction:ArchiveDirection}) {return direction==='fieldnotes'?<TE11Documentary/>:<><TE11Atlas/><DossierRelated/></>;}
 
 export function ArchivePDBrowse({direction}:{direction:ArchiveDirection}){
   const [division,setDivision]=useState('all');
