@@ -34,6 +34,9 @@ No archive original, private contact sheet, exact private media locator, real Bu
 - Console errors observed were browser-extension metadata messages, not application-origin errors.
 - General CI initially failed in a temporary-directory teardown (`Directory not empty: objects`); the same job passed on targeted attempt 2. No production validator/test/workflow was modified.
 - Browser screenshots are retained as checkpoint evidence. A bounded follow-up reduces the Atlas heading scale and restores TE11 related-publication links in the dossier treatment.
+- Follow-up source `91dd575f5cd1185e8fe3324fe9fd8903d3df6597`: Pages run `38527163563` and CI run `38527167680` succeeded. Browser showed `91dd575`; related-publication → canonical TE11 return, refresh, UI-lab component tab and organizer/editor/publisher simulation were verified on that release. Keyboard Tab reached the navigation selector with a visible solid focus outline.
+- `tools/verify_live_preview.py 91dd575f5cd1185e8fe3324fe9fd8903d3df6597` independently verified HTTPS entries, JavaScript/CSS assets and exact version metadata. Browser JSON navigation was blocked by the browser client; the independent HTTP readback succeeded.
+- Screenshot evidence: `evidence/archive-home-journal.jpg`, `archive-home-atlas-final.jpg`, `archive-te11-journal.jpg`, `archive-te11-atlas.jpg`, `archive-pd-journal.jpg`, `archive-pd-atlas.jpg`, `archive-responsive-320.jpg`. Initial screenshots show `12d827e`; the refined Atlas screenshot shows `91dd575`.
 
 ## Owner decisions requested
 
