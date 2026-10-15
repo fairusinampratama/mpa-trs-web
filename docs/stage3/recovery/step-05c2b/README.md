@@ -18,3 +18,7 @@ See audit.md for baseline gaps, verification.md for actual gates, and deployment
 Existing display types/providers and content.ts/institutional-data.ts remain derived compatibility adapters for established component anatomy, UI laboratory, historical demonstrations and earlier fixture tests. They contain no independently authored institutional records. Principal public defaults and new integration fixtures derive from the same canonical input.
 
 Stop after owner acceptance of this checkpoint. Step6 aesthetic/usability evaluation and Stage4 persistence/admin engineering remain separately authorized.
+
+## Verified deployed release
+
+See [deployment evidence](deployment.md) for the exact source, successful Pages/CI runs, byte-identity readback and real hosted-browser results. Application source: `874c16cfc4980ad7546ecea6ef65114c4d741a76`. Awaiting owner acceptance.
