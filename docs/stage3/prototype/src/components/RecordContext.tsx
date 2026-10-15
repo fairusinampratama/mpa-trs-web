@@ -1,0 +1,6 @@
+import {useContentReadModel} from '../ContentReadModel';
+import {visibleRelations} from '../domain/read';
+import {EvidenceDisclosure,TextLink,SectionHeading} from './Foundation';
+import {RecordDate} from './RecordDate';
+export {RecordDate,DateEvidence} from './RecordDate';
+export function RelatedRecords({id}:{id:string}){const{registry}=useContentReadModel();const links=visibleRelations(registry,id);if(!links.length)return null;return <section className="ds-container ds-section te-related" id={`${id}-works`} tabIndex={-1} data-related-records={id}><SectionHeading label="Catatan yang terhubung" title="Telusuri hubungan catatan."/><div className="ds-publications">{links.map(({edge,record,href,label})=><article className="ds-publication" key={edge.id}><p className="ds-label">{label}</p><h3 className="ds-content-title"><a href={href}>{record.title}</a></h3><p className="ds-metadata"><RecordDate id={record.id}/></p><p>{record.summary}</p><TextLink href={href}>{'availability'in record?(record.kind==='article'?'Buka artikel':'Lihat batas catatan'):'Buka catatan'}</TextLink></article>)}</div><EvidenceDisclosure summary="Makna hubungan catatan"><p>Hubungan menunjukkan konteks yang didukung sumber. Pemberangkatan bersama tidak menyamakan kegiatan; standar belajar bukan bukti pencapaian peserta.</p></EvidenceDisclosure></section>;}

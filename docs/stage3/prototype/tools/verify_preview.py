@@ -79,7 +79,7 @@ def verify(directory, commit, media_manifest=None):
         text = data.decode('utf-8')
         if '/mpa-trs-preview/' in text:
             raise ValueError('Obsolete preview base in ' + relative)
-        if re.search(r'data-proof-(?:te|pd|work|history|member)|contract-activity|restricted-work-proof|pd-no-cohort-proof|PRIVATE QA CREDIT', text):
+        if re.search(r'integration-(?:independent|multi|undated|approx)|data-proof-(?:te|pd|work|history|member)|contract-activity|restricted-work-proof|pd-no-cohort-proof|PRIVATE QA CREDIT', text):
             raise ValueError('Test-only record in public payload')
         if PRIVATE.search(text):
             raise ValueError('Private-content pattern in ' + relative)

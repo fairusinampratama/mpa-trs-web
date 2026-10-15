@@ -101,9 +101,18 @@ export function validateDatedClaim(
     );
   }
 }
+export function placementRoleMatches(use:MediaUse){
+ const roles:Record<MediaPlacement,MediaUse['role'][]>={
+  'home-opening':['kawi'],'home-expedition':['expedition'],'te-catalogue-feature':['expedition'],
+  'expedition-lead':['expedition'],'expedition-ecology':['expedition-ecology'],
+  'home-education-gh':['gh'],'home-education-rc':['rc'],'activity-documentary':['gh','rc','kawi','batafia'],
+ };
+ return !!use.placement&&!!roles[use.placement]?.includes(use.role);
+}
 export function mediaPublishable(asset: MediaAsset, use: MediaUse) {
   return (
     asset.id === use.assetId &&
+    placementRoleMatches(use) &&
     asset.rights === "permission-verified" &&
     asset.privacy === "cleared" &&
     asset.credit === "verified" &&
@@ -143,7 +152,7 @@ export function relatedWorks(r: InstitutionalRegistry, activityId: string) {
       .filter((e) => e.kind === "work-activity" && e.toId === activityId)
       .map((e) => e.fromId),
   );
-  return r.works.filter((w) => ids.has(w.id));
+  return r.activities.some(a=>a.id===activityId&&a.publication.website==='preview')?r.works.filter(w=>ids.has(w.id)&&w.publication.website==='preview'):[];
 }
 export function relatedActivities(r: InstitutionalRegistry, workId: string) {
   const ids = new Set(
@@ -151,7 +160,7 @@ export function relatedActivities(r: InstitutionalRegistry, workId: string) {
       .filter((e) => e.kind === "work-activity" && e.fromId === workId)
       .map((e) => e.toId),
   );
-  return r.activities.filter((a) => ids.has(a.id));
+  return r.works.some(w=>w.id===workId&&w.publication.website==='preview')?r.activities.filter(a=>ids.has(a.id)&&a.publication.website==='preview'):[];
 }
 // Custody originals, body manuscripts and personal records have no slot in this public-safe registry.
 export function assertPublicSafe(value: unknown) {
@@ -475,7 +484,7 @@ export function qualityReport(r: InstitutionalRegistry): Diagnostic[] {
         message: issue.explanation,
       });
   for (const use of r.mediaUses)
-    if (!resolvePublicMedia(r, use.recordId).some((m) => m.id === use.assetId))
+    if (!resolvePublicMedia(r, use.recordId).some((m) => m.useId === use.id))
       out.push({
         level: "restriction",
         recordId: use.recordId,

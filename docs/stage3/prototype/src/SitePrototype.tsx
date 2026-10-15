@@ -34,12 +34,12 @@ export function SitePrototype({route: routeValue}:{route:string}) {
   else if(parts[0]==='expedition')page=<ExpeditionDetail id={parts[1]}/>;
   else if(route==='/program/pd')page=<PDCatalogue params={params}/>;
   else if(route==='/members')page=<SyntheticMembers/>;
-  else if(route==='/jejak')page=<InstitutionalHistory/>;
+  else if(route==='/jejak')page=<InstitutionalHistory params={params}/>;
   else if(route==='/about')page=<InstitutionalAbout/>;
   else if(route==='/submission')page=<Submission/>;
-  else if(route==='/publications'||route==='/knowledge')page=<WorksCatalogue key={route} knowledge={route==='/knowledge'}/>;
-  else if(parts[0]==='publication')page=<PublicationDetail key={parts[1]} id={parts[1]}/>;
-  else if(route==='/activities')page=<ActivitiesCatalogue/>;
+  else if(route==='/publications'||route==='/knowledge')page=<WorksCatalogue key={route} knowledge={route==='/knowledge'} params={params}/>;
+  else if(parts[0]==='publication')page=<PublicationDetail key={parts[1]} id={parts[1]} params={params}/>;
+  else if(route==='/activities')page=<ActivitiesCatalogue params={params}/>;
   else if(parts[0]==='activity')page=<ActivityDetail id={parts[1]} params={params}/>;
   else page=<Missing/>;
 

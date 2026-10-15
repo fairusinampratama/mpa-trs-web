@@ -66,3 +66,7 @@ Owner subsequently answers that existing participant permission covers the revie
 ## 15 October 2026 — exact photography credit supplied
 
 Owner supplied the exact shared line **Foto: Dokumentasi HUMED MAPALA Tursina** in the project conversation. This completes the attribution input for the six previously approved photographs and eleven C2A use IDs. Record evidence is `owner-exact-shared-credit-2026-10-15`. Existing owner rights-holder attestation and participant-use confirmation remain the basis; no new blanket authority or additional assets are inferred. Step5C-2A implementation and publication are authorized within those exact uses; acceptance of the resulting frontend remains a separate owner review.
+
+## 15 October 2026 — Step5C-2A accepted; Step5C-2B authorized
+
+Owner accepts six photographs, eleven placements, seventeen derivatives and exact HUMED credit, and the canonical Step5C-1 baseline. Authorizes only whole-site canonical read-model/relationship/date/discovery integration, isolated React record-addition/withdrawal proofs, QA, existing Pages publishing and draft PR13 housekeeping. Approved UX, tokens, record identities and media permissions remain. No Step6, Stage4/backend, production action or PR13 merge. Stop for owner acceptance.

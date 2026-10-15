@@ -1,3 +1,4 @@
+import {RecordDate} from './RecordDate';
 import { createContext, useContext, useState, type ReactNode } from 'react';
 import type { ActivityFixture } from './ActivityCard';
 import { canonicalRegistry } from '../domain/index.ts';
@@ -18,7 +19,7 @@ export function useDocumentaryAsset(role: MediaRole, recordId?: string, placemen
   // legacy page or another activity must never inherit a global role approval.
   if (!recordId || !placement) return undefined;
   const media = resolvePublicMedia(registry, recordId, placement)[0];
-  if (!media) return undefined;
+  if (!media || !(media.role===role || (role==='identity'&&media.role==='kawi'))) return undefined;
   const base = import.meta.env.BASE_URL;
   const url = (path: string) => base + path.slice(1);
   const derivatives = [...media.derivatives].sort((a,b) => a.width-b.width);
@@ -49,7 +50,7 @@ export function ProgrammeEntry({ index, title, description, href, action }: { in
   return <article className="ds-programme"><span className="ds-label ds-index" aria-hidden="true">{index}</span><div><h3 className="ds-content-title"><a href={href}>{title}</a></h3><p>{description}</p><TextLink href={href}>{action}</TextLink></div></article>;
 }
 export function ActivityMetadata({ activity, inline = false }: { activity: ActivityFixture; inline?: boolean }) {
-  return <div className={`ds-activity-metadata${inline ? ' ds-metadata-inline' : ''}`}>{activity.date && <p>{activity.date}</p>}<p className="ds-label">{activity.state === 'historical' ? 'Historis' : activity.state === 'planned' ? 'Direncanakan' : activity.state === 'ongoing' ? 'Berlangsung' : 'Status belum diketahui'}</p></div>;
+  return <div className={`ds-activity-metadata${inline ? ' ds-metadata-inline' : ''}`}><p><RecordDate id={activity.id} fallback={activity.date}/></p><p className="ds-label">{activity.state === 'historical' ? 'Historis' : activity.state === 'planned' ? 'Direncanakan' : activity.state === 'ongoing' ? 'Berlangsung' : 'Status belum diketahui'}</p></div>;
 }
 export function ActivityPreview({ activity, title, summary }: { activity: ActivityFixture; title?: string; summary?: string }) {
   return <article className="ds-activity"><ActivityMetadata activity={activity}/><h3 className="ds-activity-title"><a href={activity.href}>{title || activity.title}</a></h3>{activity.location && <p className="ds-place">{activity.location}</p>}<p>{summary || activity.summary}</p></article>;

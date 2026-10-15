@@ -227,7 +227,7 @@ test("09 sourced history additions sort by date, unknown dates last", () => {
   r.history.push({ ...h, id: "undated-history", dates: unknown() });
   assert.equal(historicalOrder(r).at(-1).id, "undated-history");
   assert(
-    !projectPreview(r).historyInputs.some((h) => h.id === "undated-history"),
+    projectPreview(r).historyInputs.some((h) => h.id === "undated-history" && h.when === undefined),
   );
   assert(qualityReport(r).some((d) => d.recordId === "undated-history"));
 });

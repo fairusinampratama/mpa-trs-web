@@ -96,7 +96,7 @@ export function projectPreview(input: InstitutionalRegistry) {
     program: r.programmes.find((p) => p.id === a.programId)?.name,
     division: a.divisionIds?.[0],
     cohort: a.cohortIds?.[0],
-    date: a.when?.label,
+    date: r.activities.find(x=>x.id===a.id)!.dates.presentation.label,
     evidenceLabel: a.sourceUses
       .map((u) => sources.find((s) => s.id === u.sourceId)!.label)
       .join(" + "),
@@ -110,9 +110,7 @@ export function projectPreview(input: InstitutionalRegistry) {
       summary: a.summary,
       state: a.state,
       depth: a.depth,
-      date: a.dates.presentation.assertionId
-        ? a.dates.presentation.label
-        : undefined,
+      date: a.dates.presentation.label,
       location: a.places.presentation,
       program: r.programmes.find((p) => p.id === a.programId)?.name,
       edition: r.editions.find((e) => e.id === a.editionId)?.label,
@@ -156,7 +154,7 @@ export function projectPreview(input: InstitutionalRegistry) {
   const publicWorks: PublicationRecord[] = publicationInputs.map((w) => ({
     ...w,
     type: w.typeLabel ?? workKinds[w.kind],
-    date: w.when?.label,
+    date: r.works.find(x=>x.id===w.id)!.dates.presentation.label,
     author:
       w.contributors
         ?.filter((c) => c.role === "Penulis")
@@ -171,8 +169,7 @@ export function projectPreview(input: InstitutionalRegistry) {
   // Undated history remains canonical and diagnosed, never given a fake date to satisfy old ordering.
   const historyInputs: HistoryEntry[] = historicalOrder(r).flatMap((h) => {
     const when = selectedDate(h.dates);
-    return when
-      ? [
+    return [
           {
             id: h.id,
             title: h.title,
@@ -191,8 +188,7 @@ export function projectPreview(input: InstitutionalRegistry) {
             editorial: h.editorial,
             periodLabel: h.periodLabel,
           },
-        ]
-      : [];
+        ];
   });
   const activityMedia: ActivityMedia[] = r.mediaUses
     .filter((u) => !["expedition", "expedition-ecology"].includes(u.role) && (!u.placement || u.placement === "activity-documentary"))

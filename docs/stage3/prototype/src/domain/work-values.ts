@@ -78,7 +78,7 @@ export type PublicationRecord = PublicationInput & {
 export type HistoryEntry = {
   id: string;
   title: string;
-  when: RecordDate;
+  when?: RecordDate;
   kind: "founding" | "education" | "knowledge" | "continuity";
   summary: string;
   sourceUses: SourceUse[];

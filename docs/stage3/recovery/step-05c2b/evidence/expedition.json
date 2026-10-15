@@ -1,0 +1,238 @@
+{
+  "browser": "153.0.8010.0",
+  "metrics": [
+    {
+      "route": "/program/te",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "h1": "Tursina Explore",
+      "h1Bottom": 271.5,
+      "images": 1,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "h1": "Bukit Raya",
+      "h1Bottom": 271.5,
+      "images": 2,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te12",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "h1": "Trunyan",
+      "h1Bottom": 271.5,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "h1": "The Sacred Gatekeeper",
+      "h1Bottom": 332,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/program/te",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": "Tursina Explore",
+      "h1Bottom": 251.5,
+      "images": 1,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": "Bukit Raya",
+      "h1Bottom": 251.5,
+      "images": 2,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te12",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": "Trunyan",
+      "h1Bottom": 251.5,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": "The Sacred Gatekeeper",
+      "h1Bottom": 312,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/program/te",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": "Tursina Explore",
+      "h1Bottom": 221.90625,
+      "images": 1,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": "Bukit Raya",
+      "h1Bottom": 221.90625,
+      "images": 2,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te12",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": "Trunyan",
+      "h1Bottom": 221.90625,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": "The Sacred Gatekeeper",
+      "h1Bottom": 260.8125,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/program/te",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Tursina Explore",
+      "h1Bottom": 221.90625,
+      "images": 1,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Bukit Raya",
+      "h1Bottom": 221.90625,
+      "images": 2,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te12",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "Trunyan",
+      "h1Bottom": 221.90625,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": "The Sacred Gatekeeper",
+      "h1Bottom": 260.8125,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/program/te",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Tursina Explore",
+      "h1Bottom": 217.59375,
+      "images": 1,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Bukit Raya",
+      "h1Bottom": 261.59375,
+      "images": 2,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/expedition/te12",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "Trunyan",
+      "h1Bottom": 261.59375,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": "The Sacred Gatekeeper",
+      "h1Bottom": 296.1875,
+      "images": 0,
+      "reviewControls": false,
+      "headingFont": "\"Source Serif 4\", Georgia, serif",
+      "source": "e4b1e54"
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "checks": [
+    "20 viewport/page combinations",
+    "five complete homepage → catalogue → TE11 → article → TE11 journeys",
+    "sparse TE12 without empty sections",
+    "all canonical routes reload",
+    "native source disclosure Enter/Space",
+    "chapter focus including works/source section",
+    "visible keyboard focus",
+    "responsive review four destinations",
+    "only cleared contextual photographs; no review controls"
+  ]
+}
