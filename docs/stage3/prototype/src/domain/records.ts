@@ -1,7 +1,7 @@
 import type {InstitutionalRegistry} from './contract.ts';
 // Canonical public-safe editorial records. No private originals or custody locators.
 export const institutionalContent = {
-  "version": "5c2a.1",
+  "version": "5c2a.2",
   "programmes": [
     {
       "id": "pd",
@@ -4300,7 +4300,7 @@ export const institutionalContent = {
       "context": "Arsip foto memperlihatkan praktik peta-kompas dalam pendidikan Gunung Hutan XXIX.",
       "rights": "permission-verified",
       "privacy": "cleared",
-      "credit": "unverified",
+      "credit": "verified",
       "sourceUses": [
         {
           "sourceId": "humed-gh29",
@@ -4334,7 +4334,9 @@ export const institutionalContent = {
           "sha256": "0f94439c57af00882bf57febb8321930837b4516f981ee420fbd8ed408b68882"
         }
       ],
-      "publicPath": "/media/pd-gh-map-480.webp"
+      "publicPath": "/media/pd-gh-map-480.webp",
+      "creditText": "Foto: Dokumentasi HUMED MAPALA Tursina",
+      "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     },
     {
       "id": "pd-rc-team",
@@ -4342,7 +4344,7 @@ export const institutionalContent = {
       "context": "Arsip foto memperlihatkan pemanjat dan tim di dasar tebing dalam pendidikan Panjat Tebing XXIX.",
       "rights": "permission-verified",
       "privacy": "cleared",
-      "credit": "unverified",
+      "credit": "verified",
       "sourceUses": [
         {
           "sourceId": "humed-rc29",
@@ -4369,7 +4371,9 @@ export const institutionalContent = {
           "sha256": "8b9d21ac68667db26b58be67ca219b31809ebf7ad7607a09541e367b2f5d4b6e"
         }
       ],
-      "publicPath": "/media/pd-rc-team-640.webp"
+      "publicPath": "/media/pd-rc-team-640.webp",
+      "creditText": "Foto: Dokumentasi HUMED MAPALA Tursina",
+      "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     },
     {
       "id": "kawi-collective",
@@ -4377,7 +4381,7 @@ export const institutionalContent = {
       "context": "Dokumentasi kolektif Kawi XXIX; tidak menjadi dasar penetapan status individu.",
       "rights": "permission-verified",
       "privacy": "cleared",
-      "credit": "unverified",
+      "credit": "verified",
       "sourceUses": [
         {
           "sourceId": "humed-kawi-review",
@@ -4411,7 +4415,9 @@ export const institutionalContent = {
           "sha256": "2fc7f882b2a34d6e49ac7a8910184834810fd79f9ff61b93171e8623ed91d949"
         }
       ],
-      "publicPath": "/media/kawi-collective-720.webp"
+      "publicPath": "/media/kawi-collective-720.webp",
+      "creditText": "Foto: Dokumentasi HUMED MAPALA Tursina",
+      "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     },
     {
       "id": "batafia-field",
@@ -4419,7 +4425,7 @@ export const institutionalContent = {
       "context": "Dokumentasi BATAFIA XXX memperlihatkan kegiatan bersama di medan terbuka.",
       "rights": "permission-verified",
       "privacy": "cleared",
-      "credit": "unverified",
+      "credit": "verified",
       "sourceUses": [
         {
           "sourceId": "humed-batafia-review",
@@ -4453,15 +4459,17 @@ export const institutionalContent = {
           "sha256": "fe4d0ff1da657db0a431c18d04d36ea25fbf1df9331a1a51c08887f371d50b4d"
         }
       ],
-      "publicPath": "/media/batafia-field-960.webp"
+      "publicPath": "/media/batafia-field-960.webp",
+      "creditText": "Foto: Dokumentasi HUMED MAPALA Tursina",
+      "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     },
     {
       "id": "te11-documentary",
       "title": "Dokumentasi ekspedisi TE11",
-      "context": "Arsip foto ditinjau privat; penggunaan tertentu disetujui; teks kredit masih menunggu konfirmasi.",
+      "context": "Arsip foto ditinjau privat; penggunaan tertentu disetujui; kredit publikasi telah dikonfirmasi pemilik proyek.",
       "rights": "permission-verified",
       "privacy": "cleared",
-      "credit": "unverified",
+      "credit": "verified",
       "sourceUses": [
         {
           "sourceId": "humed-te11-review",
@@ -4495,7 +4503,9 @@ export const institutionalContent = {
           "sha256": "658c8377cf8f5587c09ce54b5608fb021e157f9a01a168884c9d2be3956fb30f"
         }
       ],
-      "publicPath": "/media/te11-documentary-960.webp"
+      "publicPath": "/media/te11-documentary-960.webp",
+      "creditText": "Foto: Dokumentasi HUMED MAPALA Tursina",
+      "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     },
     {
       "id": "te11-ecology",
@@ -4509,7 +4519,7 @@ export const institutionalContent = {
       ],
       "rights": "permission-verified",
       "privacy": "cleared",
-      "credit": "unverified",
+      "credit": "verified",
       "permissionEvidence": "owner-photo-permission-2026-10-15",
       "privacyEvidence": "visual-review-no-people-2026-10-15",
       "alt": "Tumbuhan berkantung di antara daun dan vegetasi lantai hutan dalam dokumentasi TE11.",
@@ -4537,7 +4547,9 @@ export const institutionalContent = {
           "sha256": "c7eee43c035f88d7ce82bbc67b432064684e1b799f253888a349abf396db164b"
         }
       ],
-      "publicPath": "/media/te11-ecology-960.webp"
+      "publicPath": "/media/te11-ecology-960.webp",
+      "creditText": "Foto: Dokumentasi HUMED MAPALA Tursina",
+      "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     }
   ],
   "mediaUses": [
@@ -4554,7 +4566,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4570,7 +4582,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4586,7 +4598,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4602,7 +4614,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4618,7 +4630,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4634,7 +4646,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1254px) 914px, (min-width: 1024px) calc(100vw - 340px), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4650,7 +4662,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4666,7 +4678,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1200px) 225px, (max-width: 359px) 113px, 137px",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4682,7 +4694,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4698,7 +4710,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1200px) 300px, (max-width: 359px) 150px, 182px",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     },
     {
@@ -4714,7 +4726,7 @@ export const institutionalContent = {
       },
       "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
       "institutionalUse": "approved",
-      "clearance": "hold",
+      "clearance": "cleared",
       "purpose": "public-website"
     }
   ],

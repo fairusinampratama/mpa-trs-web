@@ -18,7 +18,7 @@ test('added records drive catalogue cohorts, selection and generic canonical URL
 });
 test('independent records have no fabricated programme and source states stay independent',()=>{
  for(const r of archivalActivities){assert.equal(r.programId,undefined);assert.equal(r.program,undefined);assert.equal(r.state,'historical');assert.equal(r.editorial.readiness,'review-draft');}
- assert(activityReferences.media.every(m=>m.clearance==='hold'));
+ assert(activityReferences.media.every(m=>m.clearance==='cleared'&&m.creatorVerified));
  assert.equal(activityRecords.find(r=>r.id==='gh26').when.precision,'day-range');
 });
 test('supported/invalid deep-link filters normalize and round trip',()=>{

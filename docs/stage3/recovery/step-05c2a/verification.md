@@ -1,3 +1,11 @@
+# Verification — approved-credit public candidate
+
+Owner supplied the exact credit; the canonical manifest now includes only the seventeen approved derivatives. Current local results: TypeScript/Vite build and strict artifact validation PASS (25 output files); 25 Python tests PASS, including 6 activity, 7 institutional, 25 domain and 7 media contract cases through wrappers. Real canonical WebPs are validated in an added artifact test. No assertion was removed to admit arbitrary images.
+
+Actual Chromium checks: photo suite PASS (35 layouts, 30 unauthorized-context checks, controlled failed/delayed image tests); homepage PASS (five widths,18 routes,10 interactions); TE PASS (20 layouts,five journeys); institutional PASS (60 layouts). Activity PASS (160 layouts, all division/cohort filters, rich/sparse records and two journeys at five widths). Hosted checks are recorded separately in deployment.md. All use CSS viewports, not physical devices.
+
+## Earlier credit-pending evidence (historical)
+
 # Verification — credit-pending implementation
 
 Candidate code is tested before source publication. Private actual-photo tests use an explicit private-only credit marker; public build continues to omit all photos. Do not conflate these builds or claim the private credit is agreed.

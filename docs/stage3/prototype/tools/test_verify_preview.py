@@ -3,7 +3,11 @@ import tempfile
 import unittest
 import hashlib
 import struct
-from verify_preview import verify, webp_dimensions
+from verify_preview import verify as canonical_verify, webp_dimensions, approved_media
+# Unit payloads are deliberately synthetic and have an explicit fixture allowlist.
+# The real canonical allowlist is exercised separately below and by the build CLI.
+def verify(directory, commit, media_manifest=None):
+    return canonical_verify(directory, commit, {} if media_manifest is None else media_manifest)
 SHA = 'a' * 40
 class PreviewBoundaryTests(unittest.TestCase):
     def setUp(self):
@@ -13,6 +17,14 @@ class PreviewBoundaryTests(unittest.TestCase):
         for name, text in {'index.html':'<html></html>', 'responsive-review.html':'./#/ui-lab', '.nojekyll':'', 'version.json':'{"stage":3,"prototype":true,"sourceCommit":"'+SHA+'"}', 'assets/app-hash.js':'console.log("synthetic")'}.items(): (self.root/name).write_text(text)
     def tearDown(self): self.tmp.cleanup()
     def test_accepts_static_payload(self): self.assertEqual(len(verify(self.root,SHA)),5)
+    def test_all_canonical_approved_derivatives_match_source_bytes(self):
+        import shutil
+        manifest = approved_media()
+        self.assertEqual(len(manifest),17)
+        for relative in manifest:
+            target=self.root/relative;target.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(Path(__file__).parent.parent/'src'/relative,target)
+        self.assertEqual(len(canonical_verify(self.root,SHA)),22)
     def test_rejects_private_document(self):
         (self.root/'recovery.md').write_text('private')
         with self.assertRaises(ValueError): verify(self.root,SHA)

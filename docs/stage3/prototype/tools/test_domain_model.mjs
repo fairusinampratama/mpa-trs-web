@@ -320,8 +320,11 @@ test("13 synthetic members isolated, real/private records rejected", () => {
   }
 });
 test("14 HOLD media cannot be cleared by relations, metadata or incomplete approval", () => {
-  assert.deepEqual(projectPreview(base).safeMedia, []);
-  const r = copy(),
+  const r = copy();
+  for(const use of r.mediaUses) use.clearance='hold';
+  for(const asset of r.media) asset.credit='unverified';
+  assert.deepEqual(projectPreview(r).safeMedia, []);
+  const
     u = r.mediaUses[0],
     a = r.media.find((a) => a.id === u.assetId);
   a.publicPath = "/media/test-approved.webp";

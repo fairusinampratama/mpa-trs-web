@@ -9,11 +9,13 @@ const fixture = () => {
   for (const u of r.mediaUses) u.clearance='cleared';
   return validateRegistry(r);
 };
-test('real attested rights and approved uses do not bypass the missing shared credit', () => {
+test('exact owner credit and only the six attested assets/eleven uses are released', () => {
   assert.equal(base.media.length,6); assert.equal(base.mediaUses.length,11);
-  assert(base.media.every(a=>a.rights==='permission-verified'&&a.privacy==='cleared'&&a.credit==='unverified'&&!a.creditText));
+  assert(base.media.every(a=>a.rights==='permission-verified'&&a.privacy==='cleared'&&a.credit==='verified'&&a.creditText==='Foto: Dokumentasi HUMED MAPALA Tursina'));
   assert(base.mediaUses.every(u=>u.institutionalUse==='approved'&&u.approval.evidence==='owner-photo-permission-2026-10-15'));
-  assert.deepEqual(publicMediaManifest(base),{});
+  assert.equal(Object.keys(publicMediaManifest(base)).length,17);
+  const pending=structuredClone(base); for(const a of pending.media){a.credit='unverified';delete a.creditText;} for(const u of pending.mediaUses)u.clearance='hold';
+  assert.deepEqual(publicMediaManifest(pending),{});
 });
 test('complete synthetic clearance resolves only the exact record and placement', () => {
   const r=fixture();

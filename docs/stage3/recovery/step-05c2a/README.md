@@ -2,13 +2,13 @@
 
 15 October 2026. Step5C-1 accepted. This checkpoint covers only six reviewed photographs and eleven explicitly approved placements; no Step5C-2B, Step6, backend, production action or PR13 merge.
 
-## Owner decisions and remaining gate
+## Owner decisions and release scope
 
 The owner personally attests existing photographer/authorized-rights-holder permission for public institutional website display, all eleven named placements, reviewed resizing/cropping/WebP derivatives, and public GitHub/Pages derivative distribution. This firsthand attestation supersedes the earlier missing-document assessment; a missing formal licence file is not treated as evidence that permission never existed. Permission evidence is retained privately under `owner-photo-permission-2026-10-15`.
 
 The owner additionally selected **Existing permission covers uses** for the participant/privacy question and **One shared credit** for attribution. Contextual institutional documentation and the reviewed non-sensitive frames are the assessed scope; no identities, ages, individual membership statuses or technical certifications are inferred. Asset03 has no visible people. No new universal written-consent requirement or further institutional representative is imposed.
 
-**Exact shared credit wording has not been supplied.** It is not waived or replaced by a fictitious institutional credit. All six public media records therefore remain HOLD on credit alone, while the eleven institutional uses are approved and rights/privacy conditions are recorded as resolved through the stated evidence. The private register is updated in place; originals, correspondence and private evidence locators stay outside Git.
+**Exact shared credit supplied by the owner: Foto: Dokumentasi HUMED MAPALA Tursina.** Evidence: `owner-exact-shared-credit-2026-10-15`, supplied directly in the project conversation. All six records and eleven uses are now cleared under the existing asset-specific rights, privacy and usage decisions. No other asset or use inherits this clearance. The private register is updated in place; originals, correspondence and private evidence locators stay outside Git.
 
 | Asset | Canonical ID | Approved decision IDs |
 | --- | --- | --- |
@@ -27,7 +27,7 @@ The owner additionally selected **Existing permission covers uses** for the part
 - One derived public-media manifest feeds build and static verification. Vite reads only manifest-authorized image paths and verifies bytes/hash before emission. The output validator rejects unknown paths, tampering, dimensions mismatch, missing approved derivatives, malformed WebP or embedded metadata/animation. No arbitrary image-extension allowance or public-directory copying is enabled.
 - Shared theme, CSS/token source, accepted section sequence, canonical routes and deployment workflows are preserved.
 
-## Private implementation proof
+## Earlier private implementation proof (historical)
 
 Seventeen optimized WebP derivatives, 1,778,340 bytes in total, are prepared privately from the six hash-matched originals. Maximum width1440, except collective1200, GH720 and RC640. Full native frames retain people/banner/flag, map/compass and ground belay team. GPS/EXIF/XMP/IPTC are removed. Original archival JPEGs are not copied to the application.
 
@@ -35,8 +35,10 @@ Private test scaffolding clones the registry only in an entry outside the reposi
 
 Verified 35 actual-photo layouts across homepage, catalogue, TE11, GH29, RC29, Kawi29 and BATAFIA30 at1366/1024/768/390/320 CSS widths. Thirty unrelated sparse/history/lab checks show no unapproved image. Also checked actual responsive image decoding, full-frame containment, alt/captions, loading priority, reserved hero geometry before/after delayed image load, failed-image fallback and refresh. No physical-device/touch, screen-reader certification or field Core Web Vitals claim.
 
-## Publishing status and next action
+## Public photography release
 
-Public-source integration is prepared with no approved image bytes. The public build manifest remains empty while exact credit is pending. No photograph is claimed published. Once the owner supplies the already-agreed shared wording, record that exact text/evidence, mark only these uses cleared, copy only their exact WebP derivatives, run all gates, deploy through unchanged native Pages and verify source plus each served photo. Do not add a new hosting pipeline or new approval round for already confirmed copyright/participant scope.
+The exact shared credit resolves the final gate. The canonical public manifest now admits seventeen metadata-stripped WebPs (1,778,340 bytes) for these six photographs and eleven uses only. Every derivative has recorded dimensions, bytes and SHA256. Original JPEGs, private PDFs, other HOLD photographs and unconfirmed emblems remain excluded. Current publication evidence is recorded in deployment.md; preparation-only evidence there is explicitly historical.
 
-Step5C-2A remains in progress at this one concrete input. Stop after its eventual public implementation review; no automatic Step5C-2B.
+The actual public build is checked at 1366/1024/768/390/320 CSS pixels, including all seven photographic routes, unrelated-context exclusion, captions/credit, image loading and fallback. Existing homepage, TE, activity and institutional regression suites remain required. CSS viewport testing is not physical-device or touch testing.
+
+After verified Pages publication, stop for owner implementation review. No Step5C-2B, Step6 or Stage4 is authorized.
