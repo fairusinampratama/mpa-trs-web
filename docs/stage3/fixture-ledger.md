@@ -35,3 +35,11 @@ Accessible Drive files are references, not publication authorization. No unresol
 ## Coverage and unknowns
 
 No current/latest TE fact established. No current recruitment/governance/contact fact established. No completed-film verification. No real-data disclosure authorization. TE11 province wording, BATAFIA forum date and Gunung Lawu regency remain unresolved. Institutional roles/channel still need designation before go-live. Source-verified text summaries are review drafts, not approved institutional public copy.
+
+## Step 5B-1 recheck — 15 October 2026
+
+- Draft LPJ TE11 was reopened in full readable form. §1.1 supports programme context; §2.2 supports the canonical 20 November–6 December 2024 dates and regional uncertainty; §3.1–3.2 support the six-stage journey, transport sequence, Rantau Malam, reported Puncak Kakam milestone on 29 November around 13:50, and the overnight return-date ambiguity; §4.1 supports the bounded evaluation of transport planning and reduced film target. Public text is a new factual paraphrase, not a report reproduction.
+- The readable exported article's first page establishes the existing short title *The Sacred Gatekeeper*, byline Fairus In’am Pratama, and 21 September 2025 date. This is author attribution from the work, not a participant import. The full manuscript, photographs, cultural testimony, and original file remain withheld. Public article page contains verified metadata and clearly identified editorial context only.
+- TE12 retains the established LPJ Pengurus 2025 basic record: 26 September–5 October 2025, Desa Trunyan / Bangli / Bali and social-cultural exploration. No new outcome, participant or itinerary is inferred.
+- Province and 6/7 December conflicts remain visible. No latest/current expedition, carbon-neutrality, completed-film, approved-report or complete-catalogue claim is made.
+- Private media candidates 01, 04 and 03 support the team opening, forest passage and vegetation detail. All remain HOLD. Exact source locators and the image-bearing comparison are outside the public repository.

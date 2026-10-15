@@ -35,3 +35,8 @@ Owner authorizes Step 4 visual foundations/component specifications and private 
 ## Recovery Step 4 approval and Step 5A authorization — 14 October 2026
 
 Owner explicitly approves Step 4 structure, component architecture, typography, colors, photographic approach and overall visual direction as the implementation baseline, with refinements expected after browser review. Authorizes Step 5A homepage/component foundation, responsive/browser verification, UI-lab alignment, source commits and public-safe native Pages deployment only. Approved A sequence and B documentary field-learning strength stay intact. Supporting-page redesign/whole-site integration/final usability testing, Step 5B/5C/6, Stage 4 backend and PR13 merge remain unauthorized. Media publication authority remains asset-specific; this approval clears no HOLD photo or uncertain emblem master. Private actual-photo implementation review is authorized; public artifacts exclude those media. Step 5A ends at owner review.
+
+
+## Step5A acceptance and Step5B-1 authorization —15 October2026
+
+Owner accepts Step5A hierarchy, visual structure, typography/tokens, component architecture and responsive approach as the foundation, with further refinement allowed after supporting experiences. Authorizes only TE catalogue→TE11→related publication→canonical return, bounded reuse/extensions, tests, safe Pages deployment, private comparisons and records. No new IA or broad redesign. Step5B-2/5B-3/5C/6, Stage4 backend, PR13 merge, production actions and HOLD-photo publication remain unauthorized. Stop after Step5B-1 for owner acceptance.

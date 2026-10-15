@@ -23,3 +23,7 @@ Status: Stage 3 working registry, 14 October 2026. This file records claims safe
 - A sparse source produces a sparse page. Missing facts are not completed from filenames or visual inference.
 - “Current”, “latest”, participant identity and public contact claims require a designated source and recency check.
 - Photo access is recorded separately from photo publication permission. Every published image must have a resolved creator/credit, subject/privacy review, crop and explicit permission status.
+
+## Step 5B-1 editorial projection — 15 October 2026
+
+The TE catalogue distinguishes the rich TE11 record from sparse TE12. TE11's six public journey stages and source/conflict disclosures were rechecked against the report itself (§§1.1,2.2,3.1–3.2,4.1). The Sacred Gatekeeper's original export confirms Fairus In’am Pratama as its byline; its publication date remains 21 September 2025. The publication route remains independent and links back to TE11. Full text and all archival photographs remain withheld pending their own publication review. No canonical IDs or recorded dates changed. See recovery/step-05b1/ for implementation evidence.
