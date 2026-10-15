@@ -9,6 +9,8 @@
 - Private local same-App render: catalogue/TE11 at all5 widths,3 actual reviewed photo derivatives, native full-frame rendering and image-load failure handling checked. Leading failure retains textual context; optional failures omit plates. Photos and image-bearing results are not public evidence.
 - Preserved59 deployment-foundation unit tests pass. No production workflow, application or release-script change was needed. These local mocked transport tests do not constitute a production hosting exercise.
 
+The controlled first-screen comparison against a fresh accepted-parent build is pixel-identical at all5 widths; see evidence/homepage-regression.json. Live evidence and deployment identity are in deployment.md.
+
 ## Fidelity and decisions
 
 Step4 supplies the visual language and component responsibilities; it did not specify a final expedition-detail board. This is an extension of accepted Step5A, not a claim of pixel identity to a nonexistent approved TE11 design. Approved SourceSerif4/SourceSans3, warm paper, institutional green/blue,46/44px controls, containers,56/88 section rhythm and restrained separators are reused. The6-stage chronology is intentionally a dated ledger rather than an interchangeable card grid.

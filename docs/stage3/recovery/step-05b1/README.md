@@ -19,7 +19,7 @@ Owner instruction, 15 October 2026: Step5A accepted as the structural/component 
 - [Sparse TE12](https://fairusinampratama.github.io/mpa-trs-web/#/expedition/te12)
 - [Responsive review](https://fairusinampratama.github.io/mpa-trs-web/responsive-review.html)
 
-Deployment identity and live browser verification are recorded separately after publishing; source existence/build success are not deployment evidence.
+Deployment is verified at source `72e90d75d234dc634fd43a513666b2c1f3b20bc6`. See [deployment.md](deployment.md) for the successful run, exact served-byte comparison and live browser checks. The branch tip may contain a later documentation-only evidence commit.
 
 ## Content and publication safety
 

@@ -1,0 +1,193 @@
+{
+  "runs": [
+    {
+      "id": 38671024594,
+      "name": "CI",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38671024594",
+      "head_sha": "72e90d75d234dc634fd43a513666b2c1f3b20bc6"
+    },
+    {
+      "id": 38671019984,
+      "name": "Stage 3 preview from 72e90d75d234dc634fd43a513666b2c1f3b20bc6",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38671019984",
+      "head_sha": "72e90d75d234dc634fd43a513666b2c1f3b20bc6"
+    }
+  ],
+  "pagesJobs": {
+    "jobs": [
+      {
+        "id": 116213917088,
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 38671019984,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Run actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Install locked dependencies",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          },
+          {
+            "name": "Test public payload boundary",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5
+          },
+          {
+            "name": "Build exact source revision",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Verify only safe compiled frontend output",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          },
+          {
+            "name": "Upload validated Pages artifact",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8
+          },
+          {
+            "name": "Post Run actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 15
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 16
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 17
+          }
+        ]
+      },
+      {
+        "id": 116213980001,
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 38671019984,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Read native Pages configuration",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Deploy validated artifact",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4
+          }
+        ]
+      },
+      {
+        "id": 116214038196,
+        "name": "verify",
+        "status": "completed",
+        "conclusion": "success",
+        "run_id": 38671019984,
+        "logs_url": null,
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1
+          },
+          {
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2
+          },
+          {
+            "name": "Verify published HTTPS entries, assets and source identity",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3
+          },
+          {
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 6
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7
+          }
+        ]
+      }
+    ]
+  },
+  "sourceCI": [
+    {
+      "id": 116213932170,
+      "name": "Laravel PHP 8.2",
+      "conclusion": "success"
+    },
+    {
+      "id": 116213932359,
+      "name": "Validate deployment foundation",
+      "conclusion": "success"
+    },
+    {
+      "id": 116213932584,
+      "name": "Laravel PHP 8.3",
+      "conclusion": "success"
+    }
+  ],
+  "artifactId": 11943877635,
+  "deploymentId": "72e90d75d234dc634fd43a513666b2c1f3b20bc6"
+}
