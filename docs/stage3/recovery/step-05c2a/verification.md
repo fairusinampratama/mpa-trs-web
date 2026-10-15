@@ -21,3 +21,7 @@ Candidate code is tested before source publication. Private actual-photo tests u
 A responsive-sizes review identified overfetch at1024: explicit sizes now follow the actual approved grid, rather than treating a half-width hero as full viewport. This changes request selection, not layout. Subsequent measurements belong to the private result record.
 
 Private image-bearing screenshots, derivative files, exact source locators and the updated permission register remain in the owner review materials. Hosted source/run details are appended after independent readback; photo deployment is pending exact shared credit.
+
+## Hosted release result
+
+Pages38754113796 and CI38754127273 succeeded for b2fb34ff300fb41692dd2fe927b7688281ce24b5. Independent24-file HTTPS readback (17 WebPs) matched exactly. Cloud Chrome confirmed live photographs, actual credit and source footer;35 hosted CSS layouts passed count/credit/overflow checks. Immediate lazy-load samples are retained honestly; complete scrolled decoding, reservation and forced-failure checks belong to the local suite. The CLI Chromium cannot directly reach the public host (ERR_EMPTY_RESPONSE), so hosted inspection used cloud Chrome. Cloud browser tooling emitted unrelated Statsig/oaistatsig telemetry errors; these are not application or Pages errors. No app runtime error was seen in the local suites.
