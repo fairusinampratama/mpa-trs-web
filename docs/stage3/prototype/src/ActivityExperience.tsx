@@ -2,7 +2,8 @@ import { useContext, useEffect } from 'react';
 import { useActivityRecords } from './ActivityContent';
 import { activityMedia, activitySources, divisionDefinitions, programmeDefinitions, publicWorks } from './content';
 import { cohortOptions, filterPDRecords, pdQuery, readPDFilters, type ActivityFilters, type ActivityRecord } from './activity-model';
-import { ActivityMetadata, ActivityPreview, Breadcrumbs, MediaContext, DocumentaryMedia, EvidenceDisclosure, ProgrammeEntry, PublicationPreview, SectionHeading, TextLink } from './components/Foundation';
+import { ActivityMetadata, ActivityPreview, Breadcrumbs, MediaContext, CanonicalMediaContext, DocumentaryMedia, EvidenceDisclosure, ProgrammeEntry, PublicationPreview, SectionHeading, TextLink } from './components/Foundation';
+import { resolvePublicMedia } from './domain/validate.ts';
 import { Button } from './components/Button';
 
 const kindLabels = {
@@ -93,13 +94,15 @@ function Classification({ record }: { record: ActivityRecord }) {
 export function ActivityDetail({ id, params }: { id: string; params: URLSearchParams }) {
   const records = useActivityRecords();
   const reviewMedia = useContext(MediaContext);
+  const mediaRegistry = useContext(CanonicalMediaContext);
   const record = records.find(r => r.id === id);
   if (!record) return <div className="ds-container activity-page-head"><h1 className="ds-display">Catatan belum tersedia.</h1><TextLink href="#/activities">Kembali ke kegiatan</TextLink></div>;
   const filters = readPDFilters(params, records.filter(r => r.programId === 'pd'), divisionDefinitions);
   const back = catalogueHref(record, filters);
   const programme = programmeDefinitions.find(p => p.id === record.programId);
   const media = activityMedia.filter(m => record.mediaIds?.includes(m.id));
-  const displayedMedia = media.filter(m => record.depth === 'rich' || reviewMedia[m.role]);
+  const cleared = resolvePublicMedia(mediaRegistry, record.id, 'activity-documentary');
+  const displayedMedia = media.filter(m => record.depth === 'rich' || reviewMedia[m.role] || cleared.some(a=>a.id===m.id));
   const related = records.filter(r => r.id !== record.id && (record.relatedActivityIds?.includes(r.id) || (record.programId === 'pd' && r.programId === 'pd' && r.divisionIds?.some(d => record.divisionIds?.includes(d)))));
   const works = publicWorks.filter(w => record.relatedPublicationIds?.includes(w.id));
   const synthetic = record.editorial.verification === 'synthetic';
@@ -116,7 +119,7 @@ export function ActivityDetail({ id, params }: { id: string; params: URLSearchPa
     {!!record.uncertainties?.length && <section className="ds-container ds-section activity-notes" aria-label="Batas dan ketepatan catatan">{record.uncertainties.map(note => <div key={note.title}><h2 className="ds-content-title">{note.title}</h2><p>{note.explanation}</p></div>)}</section>}
     {(!!record.chapters?.length || displayedMedia.length > 0) && <div className={`ds-container ds-section activity-documentary${displayedMedia.length ? ' activity-with-media' : ''}`}>
       <div>{record.chapters?.map(chapter => <section className="activity-chapter" key={chapter.id}><h2 className="ds-section-title">{chapter.title}</h2><div className="ds-reading">{chapter.paragraphs.map(p => <p key={p}>{p}</p>)}</div></section>)}</div>
-      {displayedMedia.length > 0 && <aside className="activity-media">{displayedMedia.map(m => <DocumentaryMedia key={m.id} role={m.role} omitWhenUnavailable={record.depth === 'basic'} fallbackTitle={m.title} fallback={m.context} />)}</aside>}
+      {displayedMedia.length > 0 && <aside className="activity-media">{displayedMedia.map(m => <DocumentaryMedia key={m.id} role={m.role} recordId={record.id} placement="activity-documentary" omitWhenUnavailable={record.depth === 'basic'} fallbackTitle={m.title} fallback={m.context} />)}</aside>}
     </div>}
     {record.learning && <section className="activity-learning ds-section"><div className="ds-container"><SectionHeading label="Ruang belajar / dokumen historis" title={record.learning.title} description={record.learning.context} /><ul>{record.learning.items.map(item => <li key={item}>{item}</li>)}</ul></div></section>}
     {works.length > 0 && <section className="ds-container ds-section"><SectionHeading label="Publikasi terkait" title="Karya dari catatan ini" /><div className="ds-publications">{works.map(w => <PublicationPreview key={w.id} title={w.title} type={w.type} date={w.date} summary={w.summary} related={record.title} href={`#/publication/${w.id}`} action="Buka karya" />)}</div></section>}

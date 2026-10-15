@@ -4,6 +4,7 @@ import type {
   DateValue,
   MediaAsset,
   MediaUse,
+  MediaPlacement,
   Relationship,
 } from "./contract.ts";
 import type { EvidenceUse } from "./contract.ts";
@@ -102,21 +103,37 @@ export function validateDatedClaim(
 }
 export function mediaPublishable(asset: MediaAsset, use: MediaUse) {
   return (
+    asset.id === use.assetId &&
     asset.rights === "permission-verified" &&
     asset.privacy === "cleared" &&
     asset.credit === "verified" &&
+    !!asset.creditText?.trim() &&
+    !!asset.creditEvidence?.trim() &&
+    !!asset.permissionEvidence?.trim() &&
+    !!asset.privacyEvidence?.trim() &&
+    !!asset.alt?.trim() &&
+    !!asset.caption?.trim() &&
+    !!use.placement &&
+    !!use.approval?.evidence?.trim() &&
+    !!use.approval?.decisionId?.trim() &&
+    !!use.approval?.recordedOn &&
     use.institutionalUse === "approved" &&
     use.clearance === "cleared" &&
-    !!asset.publicPath
+    !!asset.publicPath &&
+    !!asset.derivatives?.length &&
+    asset.derivatives.some(d => d.path === asset.publicPath)
   );
 }
-export function resolvePublicMedia(r: InstitutionalRegistry, recordId: string) {
+export function resolvePublicMedia(r: InstitutionalRegistry, recordId: string, placement?: MediaPlacement) {
+  const context = [...r.activities, ...r.works, ...r.history].find(x => x.id === recordId);
+  if (!context || context.publication.website !== "preview") return [];
   return r.mediaUses
-    .filter((u) => u.recordId === recordId)
+    .filter((u) => u.recordId === recordId && (!placement || u.placement === placement))
     .flatMap((u) => {
       const a = r.media.find((a) => a.id === u.assetId);
       return a && mediaPublishable(a, u)
-        ? [{ id: a.id, role: u.role, path: a.publicPath!, title: a.title }]
+        ? [{ id: a.id, useId: u.id, placement: u.placement!, role: u.role, path: a.publicPath!, title: a.title,
+            alt: a.alt!, caption: a.caption!, credit: a.creditText!, derivatives: a.derivatives!, sizes: u.sizes }]
         : [];
     });
 }
@@ -364,7 +381,15 @@ export function validateRegistry(r: InstitutionalRegistry) {
         /^\/media\/[a-z0-9-]+\.(webp|avif|jpg)$/.test(m.publicPath),
         "Unsafe media path",
       );
+    const widths = new Set<number>();
+    for (const d of m.derivatives ?? []) {
+      demand(/^\/media\/[a-z0-9-]+\.webp$/.test(d.path), "Unsafe derivative path");
+      demand(Number.isInteger(d.width) && d.width > 0 && d.width <= 1600 && Number.isInteger(d.height) && d.height > 0 && d.height <= 2200, "Invalid derivative dimensions");
+      demand(!widths.has(d.width), "Duplicate derivative width"); widths.add(d.width);
+      demand(Number.isInteger(d.bytes) && d.bytes > 0 && d.bytes <= 600000 && /^[a-f0-9]{64}$/.test(d.sha256), "Invalid derivative identity");
+    }
   }
+  const placements = new Set<string>();
   for (const use of r.mediaUses) {
     reference("media", use.assetId);
     demand(
@@ -374,6 +399,12 @@ export function validateRegistry(r: InstitutionalRegistry) {
       "Broken media context",
     );
     const a = r.media.find((a) => a.id === use.assetId)!;
+    if (use.approval) demand(realDay(use.approval.recordedOn) && !!use.approval.evidence.trim() && /^C2A-\d{2}-[A-Z0-9]+$/.test(use.approval.decisionId), "Invalid media approval evidence");
+    if (use.placement) {
+      demand(["home-opening", "home-expedition", "te-catalogue-feature", "expedition-lead", "expedition-ecology", "home-education-gh", "home-education-rc", "activity-documentary"].includes(use.placement), "Unknown media placement");
+      const key = use.recordId + ":" + use.placement;
+      demand(!placements.has(key), "Ambiguous media placement"); placements.add(key);
+    }
     if (use.clearance === "cleared")
       demand(mediaPublishable(a, use), "Incomplete media clearance");
   }

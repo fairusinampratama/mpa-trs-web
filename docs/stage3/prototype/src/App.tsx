@@ -5,10 +5,12 @@ import { SitePrototype } from './SitePrototype';
 import {InstitutionalContentProvider,institutionalRegistry,type InstitutionalRegistry} from './InstitutionalContent';
 import { ActivityContentProvider } from './ActivityContent';
 import type { ActivityRecord } from './activity-model';
-import { MediaContext, type ReviewMedia } from './components/Foundation';
+import { MediaContext, CanonicalMediaContext, type ReviewMedia } from './components/Foundation';
+import { canonicalRegistry } from './domain/index.ts';
+import type { InstitutionalRegistry as CanonicalRegistry } from './domain/contract.ts';
 import './theme.css';
 
-export function App({ reviewMedia = {}, activities, institution }: { reviewMedia?: ReviewMedia; activities?: readonly ActivityRecord[]; institution?: InstitutionalRegistry }) {
+export function App({ reviewMedia = {}, activities, institution, mediaRegistry = canonicalRegistry }: { reviewMedia?: ReviewMedia; activities?: readonly ActivityRecord[]; institution?: InstitutionalRegistry; mediaRegistry?: CanonicalRegistry }) {
   const [route, setRoute] = useState(location.hash.slice(1) || '/');
   const path = route.split('?')[0];
   useEffect(() => {
@@ -31,8 +33,8 @@ export function App({ reviewMedia = {}, activities, institution }: { reviewMedia
     document.title = title ? `${title} — MAPALA Tursina` : path.startsWith('/ui-lab') ? 'Tursina — Laboratorium Antarmuka' : 'MAPALA Tursina — Prototipe Stage 3';
   }, [path, activities, institution]);
   return <ActivityContentProvider records={activities}>
-    <InstitutionalContentProvider records={institution}><MediaContext.Provider value={reviewMedia}>
+    <InstitutionalContentProvider records={institution}><CanonicalMediaContext.Provider value={mediaRegistry}><MediaContext.Provider value={reviewMedia}>
       {path.startsWith('/ui-lab') ? <Lab /> : <SitePrototype route={route} />}
-    </MediaContext.Provider></InstitutionalContentProvider>
+    </MediaContext.Provider></CanonicalMediaContext.Provider></InstitutionalContentProvider>
   </ActivityContentProvider>;
 }

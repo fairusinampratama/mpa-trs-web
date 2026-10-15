@@ -1,7 +1,7 @@
 import type {InstitutionalRegistry} from './contract.ts';
 // Canonical public-safe editorial records. No private originals or custody locators.
 export const institutionalContent = {
-  "version": "5c1.1",
+  "version": "5c2a.1",
   "programmes": [
     {
       "id": "pd",
@@ -4298,107 +4298,278 @@ export const institutionalContent = {
       "id": "pd-gh-map",
       "title": "Peta dan kompas di lapangan",
       "context": "Arsip foto memperlihatkan praktik peta-kompas dalam pendidikan Gunung Hutan XXIX.",
-      "rights": "unverified",
-      "privacy": "unreviewed",
+      "rights": "permission-verified",
+      "privacy": "cleared",
       "credit": "unverified",
       "sourceUses": [
         {
           "sourceId": "humed-gh29",
           "locator": "Shortlist Step2 / usage role only; original and detailed rights register private"
         }
-      ]
+      ],
+      "permissionEvidence": "owner-photo-permission-2026-10-15",
+      "privacyEvidence": "owner-participant-permission-2026-10-15",
+      "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+      "caption": "Peserta membaca peta dan menggunakan kompas di lapangan terbuka.",
+      "derivatives": [
+        {
+          "path": "/media/pd-gh-map-240.webp",
+          "width": 240,
+          "height": 427,
+          "bytes": 21912,
+          "sha256": "434b6bf6803dfc2b1f6e180780d7b2b806d30c09c5e6291c6f282c8709cd0e33"
+        },
+        {
+          "path": "/media/pd-gh-map-480.webp",
+          "width": 480,
+          "height": 853,
+          "bytes": 83336,
+          "sha256": "5929631200faa9dd01c293f0e3e50de4520c1949cedd2ccdf267d7d1a5f8e826"
+        },
+        {
+          "path": "/media/pd-gh-map-720.webp",
+          "width": 720,
+          "height": 1280,
+          "bytes": 177630,
+          "sha256": "0f94439c57af00882bf57febb8321930837b4516f981ee420fbd8ed408b68882"
+        }
+      ],
+      "publicPath": "/media/pd-gh-map-480.webp"
     },
     {
       "id": "pd-rc-team",
       "title": "Pemanjatan dan kerja tim",
       "context": "Arsip foto memperlihatkan pemanjat dan tim di dasar tebing dalam pendidikan Panjat Tebing XXIX.",
-      "rights": "unverified",
-      "privacy": "unreviewed",
+      "rights": "permission-verified",
+      "privacy": "cleared",
       "credit": "unverified",
       "sourceUses": [
         {
           "sourceId": "humed-rc29",
           "locator": "Shortlist Step2 / usage role only; original and detailed rights register private"
         }
-      ]
+      ],
+      "permissionEvidence": "owner-photo-permission-2026-10-15",
+      "privacyEvidence": "owner-participant-permission-2026-10-15",
+      "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+      "caption": "Pemanjat berada di dinding batu sementara tim berjaga di bawah.",
+      "derivatives": [
+        {
+          "path": "/media/pd-rc-team-320.webp",
+          "width": 320,
+          "height": 427,
+          "bytes": 49912,
+          "sha256": "010ecf90742ea6f14fd5bffc421d967b933a8bfcf516d37f58d9de0253282d42"
+        },
+        {
+          "path": "/media/pd-rc-team-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 203984,
+          "sha256": "8b9d21ac68667db26b58be67ca219b31809ebf7ad7607a09541e367b2f5d4b6e"
+        }
+      ],
+      "publicPath": "/media/pd-rc-team-640.webp"
     },
     {
       "id": "kawi-collective",
       "title": "Kebersamaan Tursina",
       "context": "Dokumentasi kolektif Kawi XXIX; tidak menjadi dasar penetapan status individu.",
-      "rights": "unverified",
-      "privacy": "unreviewed",
+      "rights": "permission-verified",
+      "privacy": "cleared",
       "credit": "unverified",
       "sourceUses": [
         {
           "sourceId": "humed-kawi-review",
           "locator": "Shortlist Step2 / usage role only; original and detailed rights register private"
         }
-      ]
+      ],
+      "permissionEvidence": "owner-photo-permission-2026-10-15",
+      "privacyEvidence": "owner-participant-permission-2026-10-15",
+      "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+      "caption": "Kelompok Tursina berfoto bersama di area kampus dalam arsip pemberangkatan Kawi XXIX.",
+      "derivatives": [
+        {
+          "path": "/media/kawi-collective-360.webp",
+          "width": 360,
+          "height": 270,
+          "bytes": 19286,
+          "sha256": "9aba072c493b38955c2d5157c199d514b14ce198d3b1d86634edab68e81a2716"
+        },
+        {
+          "path": "/media/kawi-collective-720.webp",
+          "width": 720,
+          "height": 540,
+          "bytes": 53296,
+          "sha256": "b6b25c4c4dcd0d0252d02cd0276ed9c78fa0037dbc1523c790b6b014a7b143b4"
+        },
+        {
+          "path": "/media/kawi-collective-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 103960,
+          "sha256": "2fc7f882b2a34d6e49ac7a8910184834810fd79f9ff61b93171e8623ed91d949"
+        }
+      ],
+      "publicPath": "/media/kawi-collective-720.webp"
     },
     {
       "id": "batafia-field",
       "title": "Pendidikan dasar di lapangan",
       "context": "Dokumentasi BATAFIA XXX memperlihatkan kegiatan bersama di medan terbuka.",
-      "rights": "unverified",
-      "privacy": "unreviewed",
+      "rights": "permission-verified",
+      "privacy": "cleared",
       "credit": "unverified",
       "sourceUses": [
         {
           "sourceId": "humed-batafia-review",
           "locator": "Shortlist Step2 / usage role only; original and detailed rights register private"
         }
-      ]
+      ],
+      "permissionEvidence": "owner-photo-permission-2026-10-15",
+      "privacyEvidence": "owner-participant-permission-2026-10-15",
+      "alt": "Kelompok peserta berponco membawa perlengkapan di jalur berkabut dalam dokumentasi BATAFIA XXX.",
+      "caption": "Peserta memakai ponco dan membawa perlengkapan di jalur dengan jarak pandang rendah.",
+      "derivatives": [
+        {
+          "path": "/media/batafia-field-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 19988,
+          "sha256": "268cdf84d2e2557cad53299f7ca30540c8e1499c2adb192b9af108a7e5f5ae67"
+        },
+        {
+          "path": "/media/batafia-field-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 56032,
+          "sha256": "b769c1e03f1818667a5df837ba2b6ffd4884792ea0ad174f507ee739d7ca5437"
+        },
+        {
+          "path": "/media/batafia-field-1440.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 98414,
+          "sha256": "fe4d0ff1da657db0a431c18d04d36ea25fbf1df9331a1a51c08887f371d50b4d"
+        }
+      ],
+      "publicPath": "/media/batafia-field-960.webp"
     },
     {
       "id": "te11-documentary",
       "title": "Dokumentasi ekspedisi TE11",
-      "context": "Arsip foto ditinjau privat; publikasi belum disetujui per aset.",
-      "rights": "unverified",
-      "privacy": "unreviewed",
+      "context": "Arsip foto ditinjau privat; penggunaan tertentu disetujui; teks kredit masih menunggu konfirmasi.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
       "credit": "unverified",
       "sourceUses": [
         {
           "sourceId": "humed-te11-review",
           "locator": "Shortlist Step2 / usage role only; original and detailed rights register private"
         }
-      ]
+      ],
+      "permissionEvidence": "owner-photo-permission-2026-10-15",
+      "privacyEvidence": "owner-participant-permission-2026-10-15",
+      "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+      "caption": "Empat peserta TE11 berfoto bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+      "derivatives": [
+        {
+          "path": "/media/te11-documentary-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 44390,
+          "sha256": "3bc6ce1b62ccb7a0b532cc7e9b4efcafe6baa4b8b5db5f07ecb85d7312ada016"
+        },
+        {
+          "path": "/media/te11-documentary-960.webp",
+          "width": 960,
+          "height": 541,
+          "bytes": 173258,
+          "sha256": "36ba9de44d01c0ddc705805b6f94144f262843fde50696063432b0c293480fe4"
+        },
+        {
+          "path": "/media/te11-documentary-1440.webp",
+          "width": 1440,
+          "height": 811,
+          "bytes": 379118,
+          "sha256": "658c8377cf8f5587c09ce54b5608fb021e157f9a01a168884c9d2be3956fb30f"
+        }
+      ],
+      "publicPath": "/media/te11-documentary-960.webp"
+    },
+    {
+      "id": "te11-ecology",
+      "title": "Dokumentasi ekologis TE11",
+      "context": "Detail tumbuhan dari dokumentasi TE11; spesies tidak ditetapkan.",
+      "sourceUses": [
+        {
+          "sourceId": "humed-te11-review",
+          "locator": "Step2 asset03; private provenance and rights register retained separately"
+        }
+      ],
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "unverified",
+      "permissionEvidence": "owner-photo-permission-2026-10-15",
+      "privacyEvidence": "visual-review-no-people-2026-10-15",
+      "alt": "Tumbuhan berkantung di antara daun dan vegetasi lantai hutan dalam dokumentasi TE11.",
+      "caption": "Tumbuhan berkantung di lantai hutan dalam dokumentasi TE11.",
+      "derivatives": [
+        {
+          "path": "/media/te11-ecology-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 38176,
+          "sha256": "c50c84c556130f8cd9d896567169438980ae2020ff03fca303f2875419d09232"
+        },
+        {
+          "path": "/media/te11-ecology-960.webp",
+          "width": 960,
+          "height": 541,
+          "bytes": 104464,
+          "sha256": "167aa6bbd4a8a7059d1aa0ea00e4ef41383899b5091a72e2ca4b4fe24487ad19"
+        },
+        {
+          "path": "/media/te11-ecology-1280.webp",
+          "width": 1280,
+          "height": 721,
+          "bytes": 151184,
+          "sha256": "c7eee43c035f88d7ce82bbc67b432064684e1b799f253888a349abf396db164b"
+        }
+      ],
+      "publicPath": "/media/te11-ecology-960.webp"
     }
   ],
   "mediaUses": [
-    {
-      "id": "pd-gh-map-usage",
-      "assetId": "pd-gh-map",
-      "recordId": "gh29",
-      "role": "gh",
-      "institutionalUse": "pending",
-      "clearance": "hold",
-      "purpose": "public-website"
-    },
-    {
-      "id": "pd-rc-team-usage",
-      "assetId": "pd-rc-team",
-      "recordId": "rc29",
-      "role": "rc",
-      "institutionalUse": "pending",
-      "clearance": "hold",
-      "purpose": "public-website"
-    },
     {
       "id": "kawi-collective-usage",
       "assetId": "kawi-collective",
       "recordId": "kawi29",
       "role": "kawi",
-      "institutionalUse": "pending",
+      "placement": "activity-documentary",
+      "approval": {
+        "decisionId": "C2A-13-KAWI",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+      "institutionalUse": "approved",
       "clearance": "hold",
       "purpose": "public-website"
     },
     {
-      "id": "batafia-field-usage",
-      "assetId": "batafia-field",
-      "recordId": "batafia30",
-      "role": "batafia",
-      "institutionalUse": "pending",
+      "id": "kawi-home-opening",
+      "assetId": "kawi-collective",
+      "recordId": "kawi29",
+      "role": "kawi",
+      "placement": "home-opening",
+      "approval": {
+        "decisionId": "C2A-13-HOME",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+      "institutionalUse": "approved",
       "clearance": "hold",
       "purpose": "public-website"
     },
@@ -4407,7 +4578,142 @@ export const institutionalContent = {
       "assetId": "te11-documentary",
       "recordId": "te11",
       "role": "expedition",
-      "institutionalUse": "pending",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-01-TE11",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te11-home-feature",
+      "assetId": "te11-documentary",
+      "recordId": "te11",
+      "role": "expedition",
+      "placement": "home-expedition",
+      "approval": {
+        "decisionId": "C2A-01-HOME",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te11-catalogue-feature",
+      "assetId": "te11-documentary",
+      "recordId": "te11",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-01-CAT",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te11-ecology-usage",
+      "assetId": "te11-ecology",
+      "recordId": "te11",
+      "role": "expedition-ecology",
+      "placement": "expedition-ecology",
+      "approval": {
+        "decisionId": "C2A-03-ECO",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1254px) 914px, (min-width: 1024px) calc(100vw - 340px), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-gh-map-usage",
+      "assetId": "pd-gh-map",
+      "recordId": "gh29",
+      "role": "gh",
+      "placement": "activity-documentary",
+      "approval": {
+        "decisionId": "C2A-07-GH",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-gh-home-education",
+      "assetId": "pd-gh-map",
+      "recordId": "gh29",
+      "role": "gh",
+      "placement": "home-education-gh",
+      "approval": {
+        "decisionId": "C2A-07-HOME",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1200px) 225px, (max-width: 359px) 113px, 137px",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-rc-team-usage",
+      "assetId": "pd-rc-team",
+      "recordId": "rc29",
+      "role": "rc",
+      "placement": "activity-documentary",
+      "approval": {
+        "decisionId": "C2A-10-RC",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-rc-home-education",
+      "assetId": "pd-rc-team",
+      "recordId": "rc29",
+      "role": "rc",
+      "placement": "home-education-rc",
+      "approval": {
+        "decisionId": "C2A-10-HOME",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1200px) 300px, (max-width: 359px) 150px, 182px",
+      "institutionalUse": "approved",
+      "clearance": "hold",
+      "purpose": "public-website"
+    },
+    {
+      "id": "batafia-field-usage",
+      "assetId": "batafia-field",
+      "recordId": "batafia30",
+      "role": "batafia",
+      "placement": "activity-documentary",
+      "approval": {
+        "decisionId": "C2A-16-BAT",
+        "recordedOn": "2026-10-15",
+        "evidence": "owner-photo-permission-2026-10-15"
+      },
+      "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+      "institutionalUse": "approved",
       "clearance": "hold",
       "purpose": "public-website"
     }

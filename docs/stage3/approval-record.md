@@ -55,3 +55,10 @@ Owner accepts PD/five fields/activity records/generic renderer/filtering. Author
 ## 15 October2026 — Step5B-3 accepted; Step5C-1 authorized
 
 Owner accepts all principal supporting public experiences as the structural implementation baseline. Authorizes only institutional-model audit/consolidation, one canonical typed contract, bounded real-source population, integrity/date/uncertainty/publication validation, data-only proofs, backend-readiness proposal and necessary compatibility work. Existing Pages may publish safe data changes through its unchanged workflow. Preserve all accepted UX/routes/design tokens. No comprehensive consumer migration (Step5C-2), Step6, Stage4, database/API/Filament/authentication, real members, restricted originals/HOLD imagery, production modifications or PR13 merge. End with populated contract owner review; acceptance is not inferred from passing tests.
+
+
+## 15 October2026 — Step5C-1 accepted; Step5C-2A approved uses and rights attestation
+
+Owner accepts the canonical contract/population baseline and authorizes authentic photography integration only. Owner personally confirms pre-existing photographer/authorized-rights-holder permission covering assets13/01/03/07/10/16 and exact use IDs C2A-13-HOME/KAWI, C2A-01-HOME/CAT/TE11, C2A-03-ECO, C2A-07-HOME/GH, C2A-10-HOME/RC, C2A-16-BAT; public website, reviewed resizing/cropping/WebP, public GitHub/Pages derivative distribution. Firsthand owner attestation is recorded privately; no formal-licence-document demand or new representative is required.
+
+Owner subsequently answers that existing participant permission covers the reviewed uses and that one shared credit applies. Exact agreed wording is absent and remains a concrete publication gate, not an attribution waiver. Prepare canonical integration/tests/private rendering; do not publicly publish any photo until that wording is recorded and all asset/use guards pass. No new image/placement is authorized. Preserve native Pages, approved layout/tokens/routes and production isolation. No Step5C-2B/6/Stage4/backend or PR13 merge.

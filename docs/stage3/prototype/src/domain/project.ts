@@ -195,7 +195,7 @@ export function projectPreview(input: InstitutionalRegistry) {
       : [];
   });
   const activityMedia: ActivityMedia[] = r.mediaUses
-    .filter((u) => u.role !== "expedition")
+    .filter((u) => !["expedition", "expedition-ecology"].includes(u.role) && (!u.placement || u.placement === "activity-documentary"))
     .map((u) => {
       const a = r.media.find((a) => a.id === u.assetId)!;
       return {
@@ -204,7 +204,7 @@ export function projectPreview(input: InstitutionalRegistry) {
         role: u.role as ActivityMedia["role"],
         title: a.title,
         context: a.context,
-        clearance: resolvePublicMedia(r, u.recordId).some((m) => m.id === a.id)
+        clearance: resolvePublicMedia(r, u.recordId, u.placement).some((m) => m.id === a.id)
           ? "cleared"
           : "hold",
         creatorVerified: a.rights === "permission-verified",

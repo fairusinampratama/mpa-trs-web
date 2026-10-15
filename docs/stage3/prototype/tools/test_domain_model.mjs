@@ -332,6 +332,9 @@ test("14 HOLD media cannot be cleared by relations, metadata or incomplete appro
   a.rights = "permission-verified";
   a.privacy = "cleared";
   a.credit = "verified";
+  a.creditText = "Synthetic test attribution";
+  a.creditEvidence = "isolated-test-evidence";
+  a.publicPath = a.derivatives[0].path;
   validateRegistry(r);
   assert.equal(resolvePublicMedia(r, u.recordId).length, 1);
   u.clearance = "withdrawn";

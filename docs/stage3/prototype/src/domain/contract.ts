@@ -138,6 +138,17 @@ export type Relationship = {
     | "shared-departure";
   sourceUses: EvidenceUse[];
 };
+export type MediaDerivative = {
+  path: string;
+  width: number;
+  height: number;
+  bytes: number;
+  sha256: string;
+};
+export type MediaPlacement =
+  | "home-opening" | "home-expedition" | "te-catalogue-feature"
+  | "expedition-lead" | "expedition-ecology"
+  | "home-education-gh" | "home-education-rc" | "activity-documentary";
 export type MediaAsset = {
   sourceUses: EvidenceUse[];
   id: string;
@@ -146,13 +157,23 @@ export type MediaAsset = {
   rights: "unverified" | "permission-verified";
   privacy: "unreviewed" | "cleared";
   credit: "unverified" | "verified";
+  permissionEvidence?: string;
+  privacyEvidence?: string;
+  creditEvidence?: string;
+  creditText?: string;
+  alt?: string;
+  caption?: string;
+  derivatives?: MediaDerivative[];
   publicPath?: string;
 };
 export type MediaUse = {
   id: string;
   assetId: string;
   recordId: string;
-  role: "gh" | "rc" | "kawi" | "batafia" | "expedition";
+  role: "gh" | "rc" | "kawi" | "batafia" | "expedition" | "expedition-ecology";
+  placement?: MediaPlacement;
+  approval?: { decisionId: string; recordedOn: string; evidence: string };
+  sizes?: string;
   institutionalUse: "pending" | "approved";
   clearance: "hold" | "cleared" | "withdrawn";
   purpose: "public-website";
