@@ -1,24 +1,9 @@
-import type {SourceDefinition,SourceUse} from './activity-model.ts';
-export type RecordDate={label:string;precision:'day'|'day-range'|'month'|'year';start:string;end?:string};
-export type Projection={verification:'source-checked'|'prior-review'|'synthetic';readiness:'review-draft';website:'prototype'};
-export type WorkKind='article'|'resource'|'context'|'announcement';
-export const workKinds:Record<WorkKind,string>={article:'Artikel',resource:'Materi belajar',context:'Catatan sumber',announcement:'Pengumuman'};
-export type PublicationInput={
- id:string;title:string;kind:WorkKind;typeLabel?:string;summary:string;intro?:string;language?:string;
- contributors?:{name:string;role:'Penulis'|'Kontributor'}[];when?:RecordDate;
- relatedActivityIds?:string[];relatedProgrammeIds?:string[];sourceUses:SourceUse[];evidence:string[];editorial:Projection;
- originalState:'published-as-exported'|'identified-resource'|'source-context'|'synthetic-example';
- availability:{state:'metadata-only'|'restricted'|'summary-only'|'demonstration';title:string;explanation:string};
- sections?:{id:string;label?:string;title:string;paragraphs:string[]}[];
- resource?:{format:string;pages?:number;bytes?:number;topics?:string[]};
- announcement?:{audience?:string;effective?:RecordDate;expiresOn?:string};uncertainties?:string[];
-};
-export type PublicationRecord=PublicationInput&{type:string;date?:string;author?:string;source:string;related?:string;href:string};
-export type HistoryEntry={id:string;title:string;when:RecordDate;kind:'founding'|'education'|'knowledge'|'continuity';summary:string;sourceUses:SourceUse[];relatedActivityIds?:string[];relatedPublicationIds?:string[];relatedProgrammeIds?:string[];uncertainties:string[];editorial:Projection;periodLabel?:string};
-export type InformationBlock={id:string;title:string;paragraphs:string[];sourceUses:SourceUse[]};
-export type InstitutionalInformation={name:string;shortName:string;affiliation:string;intro:string;motto:string;blocks:InformationBlock[];identityNotes:string[]};
-export type SyntheticMember={id:string;nia:string;name:string;synthetic:true};
-export type References={sources:readonly SourceDefinition[];activityIds:readonly string[];programmeIds:readonly string[]};
+// Legacy consumer adapters; these contain no authored institutional records.
+import type {RecordDate,PublicationInput,PublicationRecord,HistoryEntry,SyntheticMember,References} from './domain/work-values.ts';
+import type {SourceUse,SourceDefinition} from './domain/activity-values.ts';
+import {workKinds} from './domain/work-values.ts';
+export type * from './domain/work-values.ts';
+export {workKinds} from './domain/work-values.ts';
 function ids(rows:readonly{id:string}[]){const found=new Set<string>();for(const r of rows){if(!/^[a-z][a-z0-9-]*$/.test(r.id)||found.has(r.id))throw Error('Invalid/duplicate ID');found.add(r.id);}}
 function iso(s:string){return /^\d{4}-\d{2}-\d{2}$/.test(s)&&Number.isFinite(Date.parse(s))&&new Date(s).toISOString().slice(0,10)===s;}
 export function validateDate(d:RecordDate){const s=d.precision==='year'?d.start+'-01-01':d.precision==='month'?d.start+'-01':d.start;if(!d.label.trim()||!iso(s)||(d.end&&(!iso(d.end)||d.start>d.end))||(d.precision==='day-range'&&!d.end))throw Error('Invalid date');}

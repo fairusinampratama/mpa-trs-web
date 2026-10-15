@@ -46,3 +46,7 @@ class PreviewBoundaryTests(unittest.TestCase):
     def test_rejects_sourcemap(self):
         (self.root/'assets/app-hash.js.map').write_text('{}')
         with self.assertRaises(ValueError): verify(self.root,SHA)
+
+    def test_rejects_test_only_canonical_fixtures(self):
+        (self.root/'assets/app-hash.js').write_text('const id="data-proof-te"')
+        with self.assertRaises(ValueError): verify(self.root,SHA)

@@ -6,6 +6,7 @@ import { ActivityMetadata, ActivityPreview, Breadcrumbs, MediaContext, Documenta
 import { Button } from './components/Button';
 
 const kindLabels = {
+  expedition: "Ekspedisi", "environmental-service": "Kegiatan lingkungan",
   'division-education': 'Pendidikan divisi', 'basic-education': 'Pendidikan dasar',
   'institutional-continuity': 'Tradisi organisasi', workshop: 'Lokakarya',
 };

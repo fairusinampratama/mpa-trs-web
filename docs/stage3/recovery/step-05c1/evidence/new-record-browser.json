@@ -1,0 +1,191 @@
+{
+  "base": "http://127.0.0.1:4184/mpa-trs-web/",
+  "browser": "153.0.8010.0",
+  "metrics": [
+    {
+      "name": "te10",
+      "route": "/expedition/te10",
+      "width": 1366,
+      "title": "Pulau Siberut",
+      "source": "48635ba"
+    },
+    {
+      "name": "pd28",
+      "route": "/activity/gh28",
+      "width": 1366,
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII",
+      "source": "48635ba"
+    },
+    {
+      "name": "uncertain-place",
+      "route": "/activity/orad27",
+      "width": 1366,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "magazine",
+      "route": "/publication/summit-attack-vol4",
+      "width": 1366,
+      "title": "Summit Attack Vol. 4",
+      "source": "48635ba"
+    },
+    {
+      "name": "srde",
+      "route": "/activity/srde27",
+      "width": 1366,
+      "title": "Sekolah Riset dan Ekspedisi XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "te10",
+      "route": "/expedition/te10",
+      "width": 1024,
+      "title": "Pulau Siberut",
+      "source": "48635ba"
+    },
+    {
+      "name": "pd28",
+      "route": "/activity/gh28",
+      "width": 1024,
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII",
+      "source": "48635ba"
+    },
+    {
+      "name": "uncertain-place",
+      "route": "/activity/orad27",
+      "width": 1024,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "magazine",
+      "route": "/publication/summit-attack-vol4",
+      "width": 1024,
+      "title": "Summit Attack Vol. 4",
+      "source": "48635ba"
+    },
+    {
+      "name": "srde",
+      "route": "/activity/srde27",
+      "width": 1024,
+      "title": "Sekolah Riset dan Ekspedisi XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "te10",
+      "route": "/expedition/te10",
+      "width": 768,
+      "title": "Pulau Siberut",
+      "source": "48635ba"
+    },
+    {
+      "name": "pd28",
+      "route": "/activity/gh28",
+      "width": 768,
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII",
+      "source": "48635ba"
+    },
+    {
+      "name": "uncertain-place",
+      "route": "/activity/orad27",
+      "width": 768,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "magazine",
+      "route": "/publication/summit-attack-vol4",
+      "width": 768,
+      "title": "Summit Attack Vol. 4",
+      "source": "48635ba"
+    },
+    {
+      "name": "srde",
+      "route": "/activity/srde27",
+      "width": 768,
+      "title": "Sekolah Riset dan Ekspedisi XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "te10",
+      "route": "/expedition/te10",
+      "width": 390,
+      "title": "Pulau Siberut",
+      "source": "48635ba"
+    },
+    {
+      "name": "pd28",
+      "route": "/activity/gh28",
+      "width": 390,
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII",
+      "source": "48635ba"
+    },
+    {
+      "name": "uncertain-place",
+      "route": "/activity/orad27",
+      "width": 390,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "magazine",
+      "route": "/publication/summit-attack-vol4",
+      "width": 390,
+      "title": "Summit Attack Vol. 4",
+      "source": "48635ba"
+    },
+    {
+      "name": "srde",
+      "route": "/activity/srde27",
+      "width": 390,
+      "title": "Sekolah Riset dan Ekspedisi XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "te10",
+      "route": "/expedition/te10",
+      "width": 320,
+      "title": "Pulau Siberut",
+      "source": "48635ba"
+    },
+    {
+      "name": "pd28",
+      "route": "/activity/gh28",
+      "width": 320,
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII",
+      "source": "48635ba"
+    },
+    {
+      "name": "uncertain-place",
+      "route": "/activity/orad27",
+      "width": 320,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVII",
+      "source": "48635ba"
+    },
+    {
+      "name": "magazine",
+      "route": "/publication/summit-attack-vol4",
+      "width": 320,
+      "title": "Summit Attack Vol. 4",
+      "source": "48635ba"
+    },
+    {
+      "name": "srde",
+      "route": "/activity/srde27",
+      "width": 320,
+      "title": "Sekolah Riset dan Ekspedisi XXVII",
+      "source": "48635ba"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "checks": [
+    "25 new-record layouts and direct reloads",
+    "TE10 catalogue/detail/return",
+    "new RC26 division/cohort discovery",
+    "new periodical filter/detail",
+    "unresolved location omitted",
+    "no fake body/gallery/download"
+  ]
+}

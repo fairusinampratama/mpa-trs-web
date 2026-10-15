@@ -39,6 +39,8 @@ def verify(directory, commit):
         text = data.decode('utf-8')
         if '/mpa-trs-preview/' in text:
             raise ValueError('Obsolete preview base in ' + relative)
+        if re.search(r'data-proof-(?:te|pd|work|history|member)|contract-activity|restricted-work-proof|pd-no-cohort-proof', text):
+            raise ValueError('Test-only record in public payload')
         if PRIVATE.search(text):
             raise ValueError('Private-content pattern in ' + relative)
         files[relative] = data

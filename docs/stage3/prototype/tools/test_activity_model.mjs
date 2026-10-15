@@ -4,10 +4,10 @@ import {activityInputs,activityReferences,activityRecords,pdRecords,archivalActi
 import {prepareActivityRecords,filterPDRecords,cohortOptions,readPDFilters,pdQuery} from '../src/activity-model.ts';
 import {addedActivityInputs} from './activity-test-fixtures.ts';
 
-test('all six verified PDs retain identities and five fields',()=>{
- assert.deepEqual(new Set(pdRecords.map(r=>r.id)),new Set(['gh26','gh29','rc29','orad29','lh29','caving29']));
+test('expanded PD sample retains original identities and five fields',()=>{
+ assert.equal(pdRecords.length,18);for(const id of ['gh26','gh29','rc29','orad29','lh29','caving29'])assert(pdRecords.some(r=>r.id===id));
  for(const d of activityReferences.divisions)assert(filterPDRecords(activityRecords,{division:d.id,cohort:'all'}).length>0);
- assert.deepEqual(cohortOptions(pdRecords),['XXIX','XXVI']);
+ assert.deepEqual(cohortOptions(pdRecords),['XXIX','XXVI','XXVII','XXVIII']);
 });
 test('added records drive catalogue cohorts, selection and generic canonical URLs',()=>{
  const rows=prepareActivityRecords([...activityInputs,...addedActivityInputs],activityReferences);
@@ -24,7 +24,7 @@ test('independent records have no fabricated programme and source states stay in
 test('supported/invalid deep-link filters normalize and round trip',()=>{
  const f=readPDFilters(new URLSearchParams('division=RC&cohort=XXIX'),pdRecords,activityReferences.divisions);assert.deepEqual(f,{division:'RC',cohort:'XXIX'});assert.equal(pdQuery(f),'?division=RC&cohort=XXIX');
  assert.deepEqual(readPDFilters(new URLSearchParams('division=unknown&cohort=unknown'),pdRecords,activityReferences.divisions),{division:'all',cohort:'all'});
- assert.equal(filterPDRecords(activityRecords,{division:'RC',cohort:'XXVI'}).length,0);
+ assert.equal(filterPDRecords(activityRecords,{division:'RC',cohort:'XXVI'}).length,1);
 });
 test('invalid identity and dangling relationships are rejected',()=>{
  const make=()=>structuredClone(addedActivityInputs[0]);

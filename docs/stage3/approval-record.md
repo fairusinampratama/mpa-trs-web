@@ -50,3 +50,8 @@ Owner accepts the expedition/catalogue/publication journey and authorizes PD/fiv
 ## 15 October2026 — Step5B-2 accepted; Step5B-3 authorized
 
 Owner accepts PD/five fields/activity records/generic renderer/filtering. Authorizes only structured publications/knowledge and article/resource/announcement experiences, Tentang, sourced Jejak and minimal synthetic NIA/name list; tests, existing Pages publishing and review records. No restricted originals/full manuscript/HOLD imagery/real member data; no schema/API/backend, Step5C/6/Stage4, production changes or PR13 merge. Stop for Step5B-3 owner acceptance.
+
+
+## 15 October2026 — Step5B-3 accepted; Step5C-1 authorized
+
+Owner accepts all principal supporting public experiences as the structural implementation baseline. Authorizes only institutional-model audit/consolidation, one canonical typed contract, bounded real-source population, integrity/date/uncertainty/publication validation, data-only proofs, backend-readiness proposal and necessary compatibility work. Existing Pages may publish safe data changes through its unchanged workflow. Preserve all accepted UX/routes/design tokens. No comprehensive consumer migration (Step5C-2), Step6, Stage4, database/API/Filament/authentication, real members, restricted originals/HOLD imagery, production modifications or PR13 merge. End with populated contract owner review; acceptance is not inferred from passing tests.
