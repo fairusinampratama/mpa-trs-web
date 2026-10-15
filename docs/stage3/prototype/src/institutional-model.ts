@@ -1,0 +1,33 @@
+import type {SourceDefinition,SourceUse} from './activity-model.ts';
+export type RecordDate={label:string;precision:'day'|'day-range'|'month'|'year';start:string;end?:string};
+export type Projection={verification:'source-checked'|'prior-review'|'synthetic';readiness:'review-draft';website:'prototype'};
+export type WorkKind='article'|'resource'|'context'|'announcement';
+export const workKinds:Record<WorkKind,string>={article:'Artikel',resource:'Materi belajar',context:'Catatan sumber',announcement:'Pengumuman'};
+export type PublicationInput={
+ id:string;title:string;kind:WorkKind;typeLabel?:string;summary:string;intro?:string;language?:string;
+ contributors?:{name:string;role:'Penulis'|'Kontributor'}[];when?:RecordDate;
+ relatedActivityIds?:string[];relatedProgrammeIds?:string[];sourceUses:SourceUse[];evidence:string[];editorial:Projection;
+ originalState:'published-as-exported'|'identified-resource'|'source-context'|'synthetic-example';
+ availability:{state:'metadata-only'|'restricted'|'summary-only'|'demonstration';title:string;explanation:string};
+ sections?:{id:string;label?:string;title:string;paragraphs:string[]}[];
+ resource?:{format:string;pages?:number;bytes?:number;topics?:string[]};
+ announcement?:{audience?:string;effective?:RecordDate;expiresOn?:string};uncertainties?:string[];
+};
+export type PublicationRecord=PublicationInput&{type:string;date?:string;author?:string;source:string;related?:string;href:string};
+export type HistoryEntry={id:string;title:string;when:RecordDate;kind:'founding'|'education'|'knowledge'|'continuity';summary:string;sourceUses:SourceUse[];relatedActivityIds?:string[];relatedPublicationIds?:string[];relatedProgrammeIds?:string[];uncertainties:string[];editorial:Projection;periodLabel?:string};
+export type InformationBlock={id:string;title:string;paragraphs:string[];sourceUses:SourceUse[]};
+export type InstitutionalInformation={name:string;shortName:string;affiliation:string;intro:string;motto:string;blocks:InformationBlock[];identityNotes:string[]};
+export type SyntheticMember={id:string;nia:string;name:string;synthetic:true};
+export type References={sources:readonly SourceDefinition[];activityIds:readonly string[];programmeIds:readonly string[]};
+function ids(rows:readonly{id:string}[]){const found=new Set<string>();for(const r of rows){if(!/^[a-z][a-z0-9-]*$/.test(r.id)||found.has(r.id))throw Error('Invalid/duplicate ID');found.add(r.id);}}
+function iso(s:string){return /^\d{4}-\d{2}-\d{2}$/.test(s)&&Number.isFinite(Date.parse(s))&&new Date(s).toISOString().slice(0,10)===s;}
+export function validateDate(d:RecordDate){const s=d.precision==='year'?d.start+'-01-01':d.precision==='month'?d.start+'-01':d.start;if(!d.label.trim()||!iso(s)||(d.end&&(!iso(d.end)||d.start>d.end))||(d.precision==='day-range'&&!d.end))throw Error('Invalid date');}
+function sources(uses:readonly SourceUse[],refs:References){if(!uses.length||uses.some(u=>!u.locator.trim()||!refs.sources.some(s=>s.id===u.sourceId)))throw Error('Missing/unknown source');}
+function relations(r:{relatedActivityIds?:string[];relatedProgrammeIds?:string[]},refs:References){if(r.relatedActivityIds?.some(id=>!refs.activityIds.includes(id))||r.relatedProgrammeIds?.some(id=>!refs.programmeIds.includes(id)))throw Error('Unknown activity/programme');}
+export function projectPublications(rows:readonly PublicationInput[],refs:readonly SourceDefinition[]):PublicationRecord[]{return rows.map(r=>({...r,type:r.typeLabel??workKinds[r.kind],date:r.when?.label,author:r.contributors?.filter(c=>c.role==='Penulis').map(c=>c.name).join(', ')||undefined,source:r.sourceUses.map(u=>refs.find(s=>s.id===u.sourceId)?.label??u.sourceId).join(' + '),related:r.relatedActivityIds?.[0],href:`#/publication/${r.id}`}));}
+export function validatePublications(rows:readonly PublicationInput[],refs:References){ids(rows);for(const r of rows){if(!r.title.trim()||!r.summary.trim()||!workKinds[r.kind]||!r.availability.explanation.trim()||!r.evidence.length)throw Error('Missing work identity/context');sources(r.sourceUses,refs);relations(r,refs);if(r.when)validateDate(r.when);ids(r.sections??[]);if(r.editorial.verification==='synthetic'&&r.originalState!=='synthetic-example')throw Error('Synthetic work must remain an example');if(r.kind==='announcement'&&!r.announcement)throw Error('Missing announcement context');if(r.announcement&&r.kind!=='announcement')throw Error('Announcement on another kind');if(r.announcement?.effective)validateDate(r.announcement.effective);if(r.announcement?.expiresOn&&!iso(r.announcement.expiresOn))throw Error('Invalid expiry');}}
+export function validateHistory(rows:readonly HistoryEntry[],refs:References,works:readonly string[]){ids(rows);for(const r of rows){validateDate(r.when);sources(r.sourceUses,refs);relations(r,refs);if(!r.title.trim()||!r.summary.trim()||r.relatedPublicationIds?.some(id=>!works.includes(id)))throw Error('Invalid history/work');}}
+export function chronologicalHistory(rows:readonly HistoryEntry[]){return [...rows].sort((a,b)=>a.when.start.localeCompare(b.when.start)||a.id.localeCompare(b.id));}
+export function validateSyntheticMembers(rows:readonly SyntheticMember[]){ids(rows);const nias=new Set<string>();for(const r of rows){if(r.synthetic!==true||!/^DEMO\.[A-Z0-9-]+\.TRS$/.test(r.nia)||!r.name.trim()||nias.has(r.nia)||Object.keys(r).some(k=>!['id','nia','name','synthetic'].includes(k)))throw Error('Synthetic NIA/name only');nias.add(r.nia);}}
+export function searchMembers(rows:readonly SyntheticMember[],query:string){const q=query.trim().toLocaleLowerCase('id');return rows.filter(r=>`${r.nia} ${r.name}`.toLocaleLowerCase('id').includes(q));}
+export function selectWorks(rows:readonly PublicationRecord[],kind:string,query:string,knowledge=false){const q=query.trim().toLocaleLowerCase('id');return rows.filter(r=>r.editorial.verification!=='synthetic'&&(!knowledge||r.kind==='resource'||r.kind==='context')&&(kind==='all'||r.kind===kind)&&`${r.title} ${r.summary} ${r.author??''}`.toLocaleLowerCase('id').includes(q));}

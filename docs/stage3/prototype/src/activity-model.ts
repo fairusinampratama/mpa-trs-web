@@ -28,7 +28,7 @@ export type ActivityInput = {
 export type ActivityRecord = ActivityInput & ActivityFixture;
 export type DivisionDefinition = { id: DivisionId; name: string; alias?: string; description: string };
 export type ProgrammeDefinition = { id: string; name: string; href: string; description: string };
-export type SourceDefinition = { id: string; label: string; kind: 'report' | 'reviewed-photographs' | 'synthetic' };
+export type SourceDefinition = { id: string; label: string; kind: 'report' | 'reviewed-photographs' | 'synthetic' | 'charter' | 'article' | 'teaching' | 'documentary-reference' };
 export type ActivityMedia = { id: string; activityId: string; role: 'gh' | 'rc' | 'kawi' | 'batafia'; title: string; context: string; clearance: 'hold' | 'cleared'; creatorVerified: boolean };
 export type ActivityReferences = { programmes: ProgrammeDefinition[]; divisions: DivisionDefinition[]; sources: SourceDefinition[]; media: ActivityMedia[]; publicationIds: string[] };
 

@@ -1,3 +1,6 @@
+import {publicationInputs} from './institutional-data.ts';
+import {projectPublications,validatePublications} from './institutional-model.ts';
+import {sourceDefinitions} from './source-registry.ts';
 import { prepareActivityRecords, type ActivityInput, type ActivityFixture, type ActivityReferences, type ActivityMedia, type DivisionDefinition, type ProgrammeDefinition, type SourceDefinition } from './activity-model.ts';
 
 // Curated public projections only. Private source URLs/rosters/financial/medical
@@ -6,13 +9,9 @@ export const expeditionRecords: ActivityFixture[] = [
   {id:'te11',title:'Bukit Raya: lintas sungai, hutan hujan, dan catatan lapangan',program:'Tursina Explore',edition:'11',summary:'Ekspedisi 20 November-6 Desember 2024: perjalanan lintas moda menuju Rantau Malam, pendakian ke Puncak Kakam, serta kerja dokumentasi lingkungan dan sosial budaya.',state:'historical',location:'TN Bukit Baka Bukit Raya · Kalimantan',date:'20 November-6 Desember 2024',depth:'rich',evidenceLabel:'Draft LPJ TE11, bagian 1-4',href:'#/expedition/te11'},
   {id:'te12',title:'Trunyan',program:'Tursina Explore',edition:'12',summary:'LPJ Pengurus 2025 mencatat eksplorasi sosial budaya di Desa Trunyan. Cerita dan hasil lapangannya belum cukup terverifikasi untuk uraian panjang.',state:'historical',location:'Desa Trunyan · Bangli · Bali',date:'26 September-5 Oktober 2025',depth:'basic',evidenceLabel:'LPJ Pengurus 2025',href:'#/expedition/te12'},
 ];
-export const publicWorks = [
-  {id:'sacred-gatekeeper',type:'Artikel',title:'The Sacred Gatekeeper',author:'Fairus In’am Pratama',summary:'Tulisan terkait pengalaman TE11. Metadata karya ditampilkan; isi budaya dan izin publikasinya masih memerlukan review.',date:'21 September 2025',source:'Metadata artikel terverifikasi',related:'te11'},
-  {id:'carbon-debt',type:'Catatan rencana',title:'Catatan karbon dalam rencana TE11',summary:'Draft LPJ membahas niat carbon offsetting. Ini bukan bukti netralitas karbon atau karya final yang telah terverifikasi.',date:'Tanggal karya belum diverifikasi',source:'Rencana dalam Draft LPJ TE11',related:'te11'},
-  {id:'design-school',type:'Materi belajar',title:'TRS — Sekolah Desain Grafis',summary:'Materi pengantar tentang konteks, identitas visual, serta proses sebelum, selama, dan sesudah produksi desain.',date:'Tanggal kegiatan belum ditetapkan',source:'Materi teridentifikasi',related:undefined},
-  {id:'announcement-demo',type:'Pengumuman',title:'Informasi penerimaan anggota',summary:'Contoh sintetis pengumuman independen. Jadwal dan kanal pendaftaran aktual belum dikonfirmasi.',date:'Contoh saja',source:'Contoh sintetis',related:undefined},
-];
-export const syntheticMembers = [{nia:'DEMO.001.TRS',name:'Anggota Contoh Satu'},{nia:'DEMO.002.TRS',name:'Anggota Contoh Dua'},{nia:'DEMO.003.TRS',name:'Anggota Contoh Tiga'}];
+export {syntheticMembers} from './institutional-data.ts';
+export const publicWorks=projectPublications(publicationInputs,sourceDefinitions);
+
 
 export const programmeDefinitions: ProgrammeDefinition[] = [
   {
@@ -59,33 +58,7 @@ export const divisionDefinitions: DivisionDefinition[] = [
   }
 ];
 
-export const activitySources: SourceDefinition[] = [
-  {
-    "id": "lpj-2025",
-    "label": "LPJ Pengurus 2025",
-    "kind": "report"
-  },
-  {
-    "id": "lpj-2023-24",
-    "label": "LPJ Pengurus 2023–2024",
-    "kind": "report"
-  },
-  {
-    "id": "humed-gh29",
-    "label": "Arsip HUMED / GH XXIX",
-    "kind": "reviewed-photographs"
-  },
-  {
-    "id": "humed-rc29",
-    "label": "Arsip HUMED / RC XXIX",
-    "kind": "reviewed-photographs"
-  },
-  {
-    "id": "synthetic-fixture",
-    "label": "Contoh sintetis",
-    "kind": "synthetic"
-  }
-];
+export const activitySources=sourceDefinitions;
 
 export const activityMedia: ActivityMedia[] = [
   {
@@ -571,3 +544,5 @@ export const activityRecords = prepareActivityRecords(activityInputs, activityRe
 export const pdRecords = activityRecords.filter(r => r.programId === "pd");
 export const archivalActivities = activityRecords.filter(r => !r.programId && r.editorial.verification !== "synthetic");
 export const standalone = activityRecords.find(r => r.id === "workshop-demo")!;
+
+validatePublications(publicWorks,{sources:sourceDefinitions,activityIds:[...expeditionRecords,...activityRecords].map(r=>r.id),programmeIds:programmeDefinitions.map(r=>r.id)});

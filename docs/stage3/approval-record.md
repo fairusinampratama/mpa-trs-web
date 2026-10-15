@@ -45,3 +45,8 @@ Owner accepts Step5A hierarchy, visual structure, typography/tokens, component a
 ## 15 October 2026 — Step5B-1 accepted; Step5B-2 authorized
 
 Owner accepts the expedition/catalogue/publication journey and authorizes PD/five divisional fields, independent activity experiences and data-driven record rendering only. New records must appear through shared catalogue/filter/detail code; candidate data-contract findings are not final schema approval. Source-backed optional rich/sparse content, no real member/private-original/HOLD-media publication, native Pages only. No Step5B-3/5C/6, Stage4, main merge, backend or production changes. Stop for owner review.
+
+
+## 15 October2026 — Step5B-2 accepted; Step5B-3 authorized
+
+Owner accepts PD/five fields/activity records/generic renderer/filtering. Authorizes only structured publications/knowledge and article/resource/announcement experiences, Tentang, sourced Jejak and minimal synthetic NIA/name list; tests, existing Pages publishing and review records. No restricted originals/full manuscript/HOLD imagery/real member data; no schema/API/backend, Step5C/6/Stage4, production changes or PR13 merge. Stop for Step5B-3 owner acceptance.

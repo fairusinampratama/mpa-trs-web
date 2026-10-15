@@ -1,8 +1,8 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { Button } from './components/Button';
-import { publicWorks, syntheticMembers } from './content';
-import { TECatalogue, ExpeditionDetail, TE11Publication } from './ExpeditionExperience';
+import { TECatalogue, ExpeditionDetail } from './ExpeditionExperience';
 import { PDCatalogue, ActivitiesCatalogue, ActivityDetail } from './ActivityExperience';
+import {WorksCatalogue,PublicationDetail,InstitutionalAbout,InstitutionalHistory,SyntheticMembers} from './InstitutionalExperience';
 import { Homepage } from './Homepage';
 import { InstitutionalHeader, InstitutionalFooter, DevelopmentReviewShell } from './components/InstitutionalShell';
 import { ArchiveHome } from './ArchiveDesigns';
@@ -12,20 +12,6 @@ type NavChoice = 'grouped' | 'direct';
 function PageTitle({eyebrow,title,description}:{eyebrow:string;title:string;description?:string}) {
   return <header className="page-container pb-8 pt-12 md:pt-16"><p className="eyebrow text-muted">{eyebrow}</p><h1 className="site-title mt-4 text-display">{title}</h1>{description&&<p className="reading-copy mt-6 text-lg">{description}</p>}</header>;
 }
-
-function PublicationList({teOnly=false,knowledgeOnly=false}:{teOnly?:boolean;knowledgeOnly?:boolean}) {
-  const works=publicWorks.filter(w=>(!teOnly||w.related==='te11')&&(!knowledgeOnly||w.type==='Materi belajar'));
-  return <div className="divide-y divide-line border-y border-line">{works.map(w=><article key={w.id} className="grid gap-3 py-6 md:grid-cols-[9rem_1fr_auto]"><p className="eyebrow text-muted">{w.type}</p><div><h3 className="card-heading font-editorial text-2xl"><a href={`#/publication/${w.id}`} className="block hover:underline">{w.title}</a></h3><p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{w.summary}</p><p className="mt-3 text-xs text-muted">{w.date} · {w.source}</p></div><a href={`#/publication/${w.id}`} className="site-nav-link">Buka catatan <span aria-hidden="true">↗</span></a></article>)}</div>;
-}
-
-function Members() {
-  const [query,setQuery]=useState('');const matches=syntheticMembers.filter(a=>`${a.nia} ${a.name}`.toLowerCase().includes(query.toLowerCase()));
-  return <><PageTitle eyebrow="Buku Induk / contoh katalog" title="Nama dalam kebersamaan." description="Contoh katalog publik yang sederhana: NIA dan nama. Semua baris di halaman ini sintetis; tidak ada data anggota asli."/><section className="page-container pb-12"><label className="block max-w-lg text-sm font-semibold">Cari NIA atau nama<input className="field mt-2" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Misalnya DEMO.001"/></label><div className="mt-8 overflow-x-auto"><table className="w-full text-left"><thead><tr className="border-b border-line"><th className="py-4 pr-6">NIA sintetis</th><th className="py-4">Nama sintetis</th></tr></thead><tbody>{matches.map(a=><tr key={a.nia} className="border-b border-line"><td className="py-4 pr-6 text-sm">{a.nia}</td><td className="py-4 text-sm">{a.name}</td></tr>)}</tbody></table></div>{matches.length===0&&<p role="status" className="py-6 text-muted">Tidak ada contoh yang sesuai.</p>}<p className="reading-copy mt-6 text-sm">Publikasi data asli memiliki pemeriksaan dan izin terpisah. Tidak ada profil, kontak, status anggota, atau impor Buku Induk pada prototipe ini.</p></section></>;
-}
-
-function Jejak() {return <><PageTitle eyebrow="Jejak Tursina" title="Sebuah kisah yang diteruskan." description="Sejarah institusi tidak berhenti pada daftar kepengurusan. Ia terlihat pada tradisi, cara belajar, ekspedisi, dan karya yang tetap berguna."/><section className="page-container grid gap-10 pb-12 md:grid-cols-2"><div><p className="eyebrow text-muted">20 Desember 1995</p><h2 className="section-title mt-3">Awal yang tercatat.</h2><p className="reading-copy mt-4">Tanggal berdiri ini tercantum dalam AD Tursina. Kronologi lengkap dan dokumen pendirian sezaman belum dihimpun dalam prototipe.</p></div><div><h2 className="section-title">Benang yang menghubungkan.</h2><ul className="mt-6 divide-y divide-line"><li className="py-4"><a className="site-nav-link" href="#/program/pd">Pendidikan dan pengalaman lapangan →</a></li><li className="py-4"><a className="site-nav-link" href="#/program/te">Perjalanan Tursina Explore →</a></li><li className="py-4"><a className="site-nav-link" href="#/knowledge">Karya yang dapat dipelajari kembali →</a></li></ul></div><div className="editorial-note md:col-span-2"><h2 className="font-semibold">Sejarah sedang dirawat.</h2><p className="mt-3 text-sm text-muted">Kawi tercatat sebagai napak tilas pendiri dan tradisi peralihan anggota. Dies Maulidiyah menghubungkan peringatan, keagamaan, dan pertemuan lintas generasi. Kisah rinci diperkaya bertahap dari arsip institusi.</p></div></section></>;}
-
-function About(){return <><PageTitle eyebrow="Tentang MAPALA Tursina" title="Alam, ilmu, dan kekeluargaan." description="Mahasiswa Pencinta Alam Tursina merupakan UKM di UIN Maulana Malik Ibrahim Malang. Identitas tertulisnya memadukan dimensi ilmiah, sosial, olahraga, rekreasi, dan kekeluargaan."/><section className="page-container pb-12"><h2 className="section-title">Lima ruang pembelajaran.</h2><div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{['Gunung Hutan','Panjat Tebing','Susur Gua','Olahraga Arus Deras','Lingkungan Hidup'].map(d=><div className="panel" key={d}><h3 className="font-editorial text-2xl">{d}</h3><a className="site-nav-link mt-3" href="#/program/pd">Cari contoh pendidikan →</a></div>)}</div><div className="editorial-note mt-8"><h2 className="font-semibold">Ingin mengenal atau bergabung?</h2><p className="mt-3 text-sm text-muted">Jadwal, pengurus, dan kanal pendaftaran terkini perlu dikonfirmasi. Contoh pengumuman tidak menjadi informasi pendaftaran yang berlaku.</p><a className="site-nav-link mt-3" href="#/publication/announcement-demo">Lihat pola pengumuman →</a></div></section></>;}
 
 function Submission() {
   const [stage,setStage]=useState(0);const [title,setTitle]=useState('Catatan tambahan perjalanan TE11');const [summary,setSummary]=useState('Contoh sintetis informasi baru untuk editor.');const [canonical,setCanonical]=useState('');const [facts,setFacts]=useState(false);const [rights,setRights]=useState(false);const [message,setMessage]=useState('');
@@ -41,25 +27,23 @@ export function SitePrototype({route: routeValue}:{route:string}) {
   const [direction,setDirection]=useState<Direction>('fieldnotes');const [navigation,setNavigation]=useState<NavChoice>('grouped');
   useEffect(()=>{document.querySelectorAll('details.site-menu').forEach(d=>d.removeAttribute('open'));window.scrollTo(0,0);},[route]);
   const parts=route.split('/').filter(Boolean);
-  const work=publicWorks.find(w=>w.id===parts[1]);
   let page;
   if(route==='/review'||route==='/')page=<Homepage/>;
   else if(route==='/legacy')page=<ArchiveHome direction={direction}/>;
   else if(route==='/program/te')page=<TECatalogue/>;
   else if(parts[0]==='expedition')page=<ExpeditionDetail id={parts[1]}/>;
   else if(route==='/program/pd')page=<PDCatalogue params={params}/>;
-  else if(route==='/members')page=<Members/>;
-  else if(route==='/jejak')page=<Jejak/>;
-  else if(route==='/about')page=<About/>;
+  else if(route==='/members')page=<SyntheticMembers/>;
+  else if(route==='/jejak')page=<InstitutionalHistory/>;
+  else if(route==='/about')page=<InstitutionalAbout/>;
   else if(route==='/submission')page=<Submission/>;
-  else if(route==='/publications'||route==='/knowledge')page=<><PageTitle eyebrow="Karya & pengetahuan" title={route==='/knowledge'?'Belajar dari karya.':'Dari meja redaksi.'} description="Karya dapat berdiri sendiri atau terkait dengan kegiatan. Penanggalan karya tidak mengubah tanggal ekspedisi."/><section className="page-container pb-12"><PublicationList knowledgeOnly={route==='/knowledge'}/></section></>;
-  else if(route==='/publication/sacred-gatekeeper')page=<TE11Publication/>;
-  else if(parts[0]==='publication'&&work)page=<><PageTitle eyebrow={`${work.type} / catatan karya`} title={work.title} description={work.summary}/><section className="page-container pb-12"><p className="text-sm text-muted">{work.date} · {work.source}</p><div className="editorial-note mt-8"><h2 className="font-semibold">Isi atau unduhan belum ditampilkan.</h2><p className="reading-copy mt-3 text-sm">Metadata memungkinkan karya ditemukan. Isi asli, kredit, dan hak publikasi tetap memerlukan review tersendiri.</p></div>{work.related&&<a className="site-nav-link mt-6" href={`#/expedition/${work.related}`}>Terkait Tursina Explore #11 →</a>}<a className="site-nav-link mt-6" href="#/publications">← Kembali ke publikasi</a></section></>;
+  else if(route==='/publications'||route==='/knowledge')page=<WorksCatalogue key={route} knowledge={route==='/knowledge'}/>;
+  else if(parts[0]==='publication')page=<PublicationDetail key={parts[1]} id={parts[1]}/>;
   else if(route==='/activities')page=<ActivitiesCatalogue/>;
   else if(parts[0]==='activity')page=<ActivityDetail id={parts[1]} params={params}/>;
   else page=<Missing/>;
 
-  const foundationPage=route==='/program/pd'||route==='/activities'||parts[0]==='activity'||route==='/'||route==='/review'||route==='/program/te'||parts[0]==='expedition'||route==='/publication/sacred-gatekeeper';
+  const foundationPage=['/publications','/knowledge','/about','/jejak','/members'].includes(route)||parts[0]==='publication'||route==='/program/pd'||route==='/activities'||parts[0]==='activity'||route==='/'||route==='/review'||route==='/program/te'||parts[0]==='expedition'||route==='/publication/sacred-gatekeeper';
   const reviewing=route==='/review'||route==='/legacy';
   return <div className="ds-site">
     <a href="#public-content" className="ds-skip" onClick={event=>{event.preventDefault();document.getElementById('public-content')?.focus();}}>Langsung ke isi website</a>
