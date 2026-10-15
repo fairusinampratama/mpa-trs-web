@@ -1,4 +1,8 @@
-import type { InstitutionalRegistry, Activity } from "./contract.ts";
+import type {
+  InstitutionalRegistry,
+  Activity,
+  DatedClaim,
+} from "./contract.ts";
 import type {
   ActivityInput,
   ActivityRecord,
@@ -17,6 +21,11 @@ import {
   resolvePublicMedia,
   historicalOrder,
 } from "./validate.ts";
+// Legacy expiry accepts an exact day only; partial/approximate values stay canonical.
+function exactExpiryDate(claim?: DatedClaim) {
+  const value = claim && selectedDate(claim);
+  return value?.precision === "day" ? value.start : undefined;
+}
 // Allowlisted editorial preview projection. Originals/manuscripts and private custody are not inputs.
 function activityFields(a: Activity): ActivityInput {
   return {
@@ -139,9 +148,7 @@ export function projectPreview(input: InstitutionalRegistry) {
           effective: w.announcement.effective
             ? selectedDate(w.announcement.effective)
             : undefined,
-          expiresOn: w.announcement.expires
-            ? selectedDate(w.announcement.expires)?.start
-            : undefined,
+          expiresOn: exactExpiryDate(w.announcement.expires),
         }
       : undefined,
     uncertainties: w.uncertainties,

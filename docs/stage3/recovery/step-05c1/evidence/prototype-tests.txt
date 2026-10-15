@@ -16,6 +16,6 @@ test_rejects_test_only_canonical_fixtures (test_verify_preview.PreviewBoundaryTe
 test_rejects_wrong_version (test_verify_preview.PreviewBoundaryTests.test_rejects_wrong_version) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.728s
+Ran 16 tests in 0.853s
 
 OK

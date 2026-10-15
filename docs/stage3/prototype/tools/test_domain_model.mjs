@@ -436,3 +436,64 @@ test("23 documented standards cannot be reclassified as technical achievement", 
   r.activities.find((a) => a.id === "gh29").learning.basis = "achievement";
   assert.throws(() => validateRegistry(r), /Learning standard/);
 });
+
+test("24 announcement expiry does not fabricate precision in legacy adapters", () => {
+  const r = copy();
+  const expiry = {
+    presentation: { label: "2025 (synthetic)", assertionId: "a" },
+    assertions: [
+      {
+        id: "a",
+        role: "publication",
+        value: { precision: "year", start: "2025" },
+        sourceUses: uses,
+      },
+    ],
+    reconciliation: "single-source",
+  };
+  r.works.push({
+    ...work("expiry-test-work"),
+    kind: "announcement",
+    announcement: { audience: "isolated test", expires: expiry },
+  });
+  assert.equal(
+    projectPreview(r).publicWorks.at(-1).announcement.expiresOn,
+    undefined,
+  );
+  expiry.assertions[0].value = { precision: "month", start: "2025-12" };
+  assert.equal(
+    projectPreview(r).publicWorks.at(-1).announcement.expiresOn,
+    undefined,
+  );
+  expiry.assertions[0].value = { precision: "day", start: "2025-12-31" };
+  assert.equal(
+    projectPreview(r).publicWorks.at(-1).announcement.expiresOn,
+    "2025-12-31",
+  );
+  expiry.assertions[0].value.approximate = true;
+  assert.equal(
+    projectPreview(r).publicWorks.at(-1).announcement.expiresOn,
+    undefined,
+  );
+});
+
+test("25 changed plans remain distinct from conflicting actual execution assertions", () => {
+  for (const id of ["te11", "batafia28", "batafia29"]) {
+    const a = base.activities.find((a) => a.id === id);
+    assert(a.dates.assertions.some((d) => d.role === "planned"));
+    assert.equal(
+      a.dates.assertions.find((d) => d.id === a.dates.presentation.assertionId)
+        .role,
+      "execution",
+    );
+    assert.equal(a.state, "historical");
+  }
+  assert.equal(
+    base.activities.find((a) => a.id === "batafia28").dates.reconciliation,
+    "single-source",
+  );
+  assert.equal(
+    base.activities.find((a) => a.id === "te11").dates.reconciliation,
+    "unresolved",
+  );
+});

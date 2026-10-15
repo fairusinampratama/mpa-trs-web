@@ -6,7 +6,7 @@
 
 - [Populated ledger](evidence/record-ledger.md): every activity, work and history entry, with source use and verification.
 - [Machine-readable dataset and quality report](evidence/dataset-report.json): date assertions, location uncertainty, contextual relations, restricted originals and media-use states.
-- [Before/after audit](audit.md), [contract](contract.md), [population assessment](population.md), [database handoff and ER diagram](database-handoff.md), [verification and integration boundary](verification.md).
+- [Before/after audit](audit.md), [contract](contract.md), [population assessment](population.md), [database handoff and ER diagram](database-handoff.md), [verification and integration boundary](verification.md), [deployment evidence](deployment.md).
 
 ## Scope and results
 

@@ -1155,6 +1155,21 @@
               "locator": "PDF fisik 85 / cetak 79"
             }
           ]
+        },
+        {
+          "id": "earlier-plan",
+          "role": "planned",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-12-24",
+            "end": "2024-01-14"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 62 / rencana pada periode 2023–2024, tidak terlaksana"
+            }
+          ]
         }
       ],
       "reconciliation": "unresolved",
@@ -2414,6 +2429,21 @@
               "locator": "PDF fisik 56–57"
             }
           ]
+        },
+        {
+          "id": "earlier-plan",
+          "role": "planned",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-11-30",
+            "end": "2023-12-03"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 57 / evaluasi rencana awal"
+            }
+          ]
         }
       ],
       "reconciliation": "single-source",
@@ -2922,6 +2952,21 @@
             {
               "sourceId": "lpj-2024-25",
               "locator": "PDF fisik 80–82 / cetak 74–76"
+            }
+          ]
+        },
+        {
+          "id": "earlier-plan",
+          "role": "planned",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-10-04",
+            "end": "2024-10-06"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 82 / evaluasi perubahan tanggal lapangan"
             }
           ]
         }

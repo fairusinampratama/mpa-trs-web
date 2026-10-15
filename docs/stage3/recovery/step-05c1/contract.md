@@ -41,3 +41,11 @@ A media usage resolves only when creator rights, privacy, credit, institutional 
 ## Validation and API limits
 
 Global ID uniqueness, per-programme edition-label uniqueness, duplicate edge tuples, all cross-references, source uses, date selections and media contexts are checked. Private locator/credential patterns and forbidden personal/original fields fail before export. This is controlled, typed source authoring, not a secure arbitrary-JSON upload API or exhaustive sensitive-text classifier. Future backend validation, authorization, restricted custody and published snapshots still require Stage4 design and testing.
+
+## Public-source limitation and correction custody
+
+This frontend registry, its source history and its bundled metadata are public-safe by construction and review. Withholding/withdrawal removes a record from rendered projections and derived indexes; it does **not** make prior public Git copies or bundled source metadata private. Never stage confidential withheld drafts or originals here. Restricted content belongs in future separately controlled backend custody; only its approved metadata/availability may enter this preview. Text-pattern tests are guardrails, not automated determination of privacy or copyright.
+
+Announcement expiry is projected into the legacy exact-day field only when the selected assertion is an exact non-approximate day. Year/month/range/unknown values retain their original canonical precision and do not acquire an invented expiration day.
+
+Real planned/actual examples: TE11 retains its unexecuted24December2023–14January2024 plan beside actual2024 assertions; BATAFIA28 retains its30November–3December plan beside1–3December execution; BATAFIA29 retains4–6October beside11–13October execution. Different planned and executed dates are not automatically conflicting assertions about the same fact. TE11's6/7December actual end remains an unresolved conflict.
