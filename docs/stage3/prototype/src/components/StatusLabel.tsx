@@ -1,4 +1,5 @@
-export type ActivityState = 'planned' | 'ongoing' | 'historical' | 'unknown';
+import type { ActivityState } from '../activity-model';
+export type { ActivityState } from '../activity-model';
 const labels: Record<ActivityState, string> = { planned: 'Direncanakan', ongoing: 'Berlangsung', historical: 'Catatan historis', unknown: 'Status belum diketahui' };
 const tones: Record<ActivityState, string> = { planned: 'bg-river/10 text-river', ongoing: 'bg-leaf/40 text-forest', historical: 'bg-paper text-muted', unknown: 'bg-paper text-muted' };
 

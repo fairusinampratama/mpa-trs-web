@@ -43,3 +43,7 @@ No current/latest TE fact established. No current recruitment/governance/contact
 - TE12 retains the established LPJ Pengurus 2025 basic record: 26 September–5 October 2025, Desa Trunyan / Bangli / Bali and social-cultural exploration. No new outcome, participant or itinerary is inferred.
 - Province and 6/7 December conflicts remain visible. No latest/current expedition, carbon-neutrality, completed-film, approved-report or complete-catalogue claim is made.
 - Private media candidates 01, 04 and 03 support the team opening, forest passage and vegetation detail. All remain HOLD. Exact source locators and the image-bearing comparison are outside the public repository.
+
+## Step5B-2 source recheck — 15 October2026
+
+The original LPJ Pengurus2025 was reread at physical78–80,91–97; LPJ2023–2024 at physical51–54. GH XXVI date precision is now19–26 August2023 (physical52), replacing the previous month-only projection. Other PD/BATAFIA/Kawi dates and canonical IDs are unchanged. Learning scope is a paraphrase of historical standards, not completion or certification. Source uses/optional chapters/material notes are structured in content.ts; original locators/rosters/financial/member/ceremony details stay private. GH XXIX regency, BATAFIA forum dates and Kawi's no-report description remain explicit. New test-only synthetic record additions demonstrate reuse without entering public catalogues. Media07/10/13/16 remains HOLD; no original report or photographic publication is inferred from this implementation.

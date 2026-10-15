@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
 import type { ActivityFixture } from './ActivityCard';
 
-export type MediaRole = 'identity' | 'expedition' | 'gh' | 'rc' | 'history' | 'emblem' | 'expedition-trail' | 'expedition-ecology';
+export type MediaRole = 'identity' | 'expedition' | 'gh' | 'rc' | 'history' | 'emblem' | 'expedition-trail' | 'expedition-ecology' | 'kawi' | 'batafia';
 export type ReviewMedia = Partial<Record<MediaRole, { src: string; width: number; height: number; alt: string; caption: string; credit?: string }>>;
 // Public entry supplies no held assets. A separate private review entry may provide
 // media; that entry and its bytes never belong to the public build root.

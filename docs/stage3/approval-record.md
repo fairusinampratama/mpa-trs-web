@@ -40,3 +40,8 @@ Owner explicitly approves Step 4 structure, component architecture, typography, 
 ## Step5A acceptance and Step5B-1 authorization —15 October2026
 
 Owner accepts Step5A hierarchy, visual structure, typography/tokens, component architecture and responsive approach as the foundation, with further refinement allowed after supporting experiences. Authorizes only TE catalogue→TE11→related publication→canonical return, bounded reuse/extensions, tests, safe Pages deployment, private comparisons and records. No new IA or broad redesign. Step5B-2/5B-3/5C/6, Stage4 backend, PR13 merge, production actions and HOLD-photo publication remain unauthorized. Stop after Step5B-1 for owner acceptance.
+
+
+## 15 October 2026 — Step5B-1 accepted; Step5B-2 authorized
+
+Owner accepts the expedition/catalogue/publication journey and authorizes PD/five divisional fields, independent activity experiences and data-driven record rendering only. New records must appear through shared catalogue/filter/detail code; candidate data-contract findings are not final schema approval. Source-backed optional rich/sparse content, no real member/private-original/HOLD-media publication, native Pages only. No Step5B-3/5C/6, Stage4, main merge, backend or production changes. Stop for owner review.

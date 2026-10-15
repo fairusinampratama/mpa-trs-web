@@ -1,6 +1,7 @@
-import { StatusLabel, type ActivityState } from './StatusLabel';
+import { StatusLabel } from './StatusLabel';
 
-export type ActivityFixture = { id: string; title: string; program?: string; summary: string; state: ActivityState; location?: string; date?: string; depth: 'basic' | 'rich'; evidenceLabel?: string; href?: string; edition?: string; division?: string; cohort?: string };
+import type { ActivityFixture } from '../activity-model';
+export type { ActivityFixture } from '../activity-model';
 
 export function ActivityCard({ activity }: { activity: ActivityFixture }) {
   const href = activity.href ?? `#/ui-lab/record/${activity.id}`;

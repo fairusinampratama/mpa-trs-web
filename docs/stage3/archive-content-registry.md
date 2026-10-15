@@ -27,3 +27,7 @@ Status: Stage 3 working registry, 14 October 2026. This file records claims safe
 ## Step 5B-1 editorial projection — 15 October 2026
 
 The TE catalogue distinguishes the rich TE11 record from sparse TE12. TE11's six public journey stages and source/conflict disclosures were rechecked against the report itself (§§1.1,2.2,3.1–3.2,4.1). The Sacred Gatekeeper's original export confirms Fairus In’am Pratama as its byline; its publication date remains 21 September 2025. The publication route remains independent and links back to TE11. Full text and all archival photographs remain withheld pending their own publication review. No canonical IDs or recorded dates changed. See recovery/step-05b1/ for implementation evidence.
+
+## Step5B-2 projection — 15 October2026
+
+The six existing PDs and independent Kawi/BATAFIA now share typed optional record-driven detail rendering. GH XXVI's exact19–26 August2023 range is verified from original LPJ2023–2024 physical52. LPJ2025 physical78–80 and91–97 were reread for standards, field execution and independent activity context; learning scope is not an achievement claim. No records, technical outcomes, private originals, real member data or current announcements are fabricated. See recovery/step-05b2/source-and-data-findings.md. TE and publication data remain in their accepted existing representations pending a later cross-site data-contract checkpoint.

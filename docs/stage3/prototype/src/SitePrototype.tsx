@@ -1,12 +1,11 @@
 import { useEffect, useState, type FormEvent } from 'react';
-import { ActivityCard } from './components/ActivityCard';
 import { Button } from './components/Button';
-import { StatusLabel } from './components/StatusLabel';
-import { archivalActivities, pdRecords, publicWorks, standalone, syntheticMembers } from './content';
+import { publicWorks, syntheticMembers } from './content';
 import { TECatalogue, ExpeditionDetail, TE11Publication } from './ExpeditionExperience';
+import { PDCatalogue, ActivitiesCatalogue, ActivityDetail } from './ActivityExperience';
 import { Homepage } from './Homepage';
 import { InstitutionalHeader, InstitutionalFooter, DevelopmentReviewShell } from './components/InstitutionalShell';
-import { ArchiveHome, ArchivePDBrowse, ArchivePDDetail } from './ArchiveDesigns';
+import { ArchiveHome } from './ArchiveDesigns';
 
 type Direction = 'fieldnotes' | 'signal';
 type NavChoice = 'grouped' | 'direct';
@@ -17,12 +16,6 @@ function PageTitle({eyebrow,title,description}:{eyebrow:string;title:string;desc
 function PublicationList({teOnly=false,knowledgeOnly=false}:{teOnly?:boolean;knowledgeOnly?:boolean}) {
   const works=publicWorks.filter(w=>(!teOnly||w.related==='te11')&&(!knowledgeOnly||w.type==='Materi belajar'));
   return <div className="divide-y divide-line border-y border-line">{works.map(w=><article key={w.id} className="grid gap-3 py-6 md:grid-cols-[9rem_1fr_auto]"><p className="eyebrow text-muted">{w.type}</p><div><h3 className="card-heading font-editorial text-2xl"><a href={`#/publication/${w.id}`} className="block hover:underline">{w.title}</a></h3><p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{w.summary}</p><p className="mt-3 text-xs text-muted">{w.date} · {w.source}</p></div><a href={`#/publication/${w.id}`} className="site-nav-link">Buka catatan <span aria-hidden="true">↗</span></a></article>)}</div>;
-}
-
-function PDBrowse() {
-  const [division,setDivision]=useState('all');const [cohort,setCohort]=useState('all');
-  const records=pdRecords.filter(a=>(division==='all'||a.division===division)&&(cohort==='all'||a.cohort===cohort));
-  return <><PageTitle eyebrow="Program / pendidikan" title="Pemantapan Divisi" description="Belajar melalui persiapan dan pengalaman lapangan. Cari catatan yang sesuai dengan divisi dan angkatan, tanpa mencampur keluaran kegiatan yang berbeda."/><section className="page-container pb-12"><div className="flex flex-wrap gap-5"><label className="text-sm font-semibold">Divisi<select className="field mt-2" aria-label="Filter divisi" value={division} onChange={e=>setDivision(e.target.value)}><option value="all">Semua divisi</option><option value="GH">Gunung Hutan</option><option value="RC">Panjat Tebing</option></select></label><label className="text-sm font-semibold">Angkatan<select className="field mt-2" aria-label="Filter angkatan" value={cohort} onChange={e=>setCohort(e.target.value)}><option value="all">Semua angkatan</option><option value="XXVI">XXVI</option><option value="XXVII">XXVII</option></select></label></div><div className="mt-8 grid gap-6 md:grid-cols-2">{records.map(a=><ActivityCard key={a.id} activity={a}/>)}</div>{records.length===0&&<div role="status" className="editorial-note mt-8"><h2 className="font-semibold">Belum ada catatan pada contoh ini.</h2><p className="mt-3 text-sm text-muted">Ini batas isi prototipe, bukan bukti kegiatan tidak pernah ada.</p><div className="mt-4"><Button variant="secondary" onClick={()=>{setCohort('all');setDivision('all');}}>Reset filter</Button></div></div>}</section></>;
 }
 
 function Members() {
@@ -42,18 +35,19 @@ function Submission() {
 
 function Missing(){return <><PageTitle eyebrow="Navigasi" title="Catatan belum tersedia."/><div className="page-container pb-12"><a className="button button-secondary" href="#/review">Kembali ke Beranda</a></div></>;}
 
-export function SitePrototype({route}:{route:string}) {
+export function SitePrototype({route: routeValue}:{route:string}) {
+  const [route, query = ""] = routeValue.split("?");
+  const params = new URLSearchParams(query);
   const [direction,setDirection]=useState<Direction>('fieldnotes');const [navigation,setNavigation]=useState<NavChoice>('grouped');
   useEffect(()=>{document.querySelectorAll('details.site-menu').forEach(d=>d.removeAttribute('open'));window.scrollTo(0,0);},[route]);
   const parts=route.split('/').filter(Boolean);
-  const activity=[...pdRecords,...archivalActivities,standalone].find(a=>a.id===parts[1]);
   const work=publicWorks.find(w=>w.id===parts[1]);
   let page;
   if(route==='/review'||route==='/')page=<Homepage/>;
   else if(route==='/legacy')page=<ArchiveHome direction={direction}/>;
   else if(route==='/program/te')page=<TECatalogue/>;
   else if(parts[0]==='expedition')page=<ExpeditionDetail id={parts[1]}/>;
-  else if(route==='/program/pd')page=<ArchivePDBrowse direction={direction}/>;
+  else if(route==='/program/pd')page=<PDCatalogue params={params}/>;
   else if(route==='/members')page=<Members/>;
   else if(route==='/jejak')page=<Jejak/>;
   else if(route==='/about')page=<About/>;
@@ -61,12 +55,11 @@ export function SitePrototype({route}:{route:string}) {
   else if(route==='/publications'||route==='/knowledge')page=<><PageTitle eyebrow="Karya & pengetahuan" title={route==='/knowledge'?'Belajar dari karya.':'Dari meja redaksi.'} description="Karya dapat berdiri sendiri atau terkait dengan kegiatan. Penanggalan karya tidak mengubah tanggal ekspedisi."/><section className="page-container pb-12"><PublicationList knowledgeOnly={route==='/knowledge'}/></section></>;
   else if(route==='/publication/sacred-gatekeeper')page=<TE11Publication/>;
   else if(parts[0]==='publication'&&work)page=<><PageTitle eyebrow={`${work.type} / catatan karya`} title={work.title} description={work.summary}/><section className="page-container pb-12"><p className="text-sm text-muted">{work.date} · {work.source}</p><div className="editorial-note mt-8"><h2 className="font-semibold">Isi atau unduhan belum ditampilkan.</h2><p className="reading-copy mt-3 text-sm">Metadata memungkinkan karya ditemukan. Isi asli, kredit, dan hak publikasi tetap memerlukan review tersendiri.</p></div>{work.related&&<a className="site-nav-link mt-6" href={`#/expedition/${work.related}`}>Terkait Tursina Explore #11 →</a>}<a className="site-nav-link mt-6" href="#/publications">← Kembali ke publikasi</a></section></>;
-  else if(route==='/activities')page=<><PageTitle eyebrow="Kegiatan" title="Kerja bersama, dalam banyak bentuk." description="Catatan Kawi dan BATAFIA bersumber dari LPJ 2025. Kegiatan mandiri tidak memerlukan program induk."/><section className="page-container grid gap-6 pb-12 md:grid-cols-2">{archivalActivities.map(a=><ActivityCard key={a.id} activity={a}/>)}<ActivityCard activity={standalone}/><div className="editorial-note self-start"><h2 className="font-semibold">Jelajahi juga</h2><a className="site-nav-link mt-3 block" href="#/program/te">Tursina Explore →</a><a className="site-nav-link mt-3 block" href="#/program/pd">Pemantapan Divisi →</a></div></section></>;
-  else if(parts[0]==='activity'&&activity&&activity.program==='Pemantapan Divisi')page=<ArchivePDDetail id={activity.id} direction={direction}/>;
-  else if(parts[0]==='activity'&&activity)page=<><PageTitle eyebrow={`${activity.program??'Kegiatan mandiri'} / ${activity.evidenceLabel}`} title={activity.title} description={activity.summary}/><section className="page-container pb-12"><StatusLabel state={activity.state}/><p className="mt-5 text-sm text-muted">{[activity.location,activity.date].filter(Boolean).join(' · ')}</p><div className="editorial-note mt-8"><h2 className="font-semibold">Catatan dasar tetap berguna.</h2><p className="reading-copy mt-3 text-sm">Tujuan teknis, rute, hasil, dan karya tidak ditambahkan ketika sumbernya belum memadai. Tidak ada laporan kosong atau hasil rekaan.</p></div><a className="site-nav-link mt-5" href={activity.program?'#/program/pd':'#/activities'}>← Kembali ke daftar</a></section></>;
+  else if(route==='/activities')page=<ActivitiesCatalogue/>;
+  else if(parts[0]==='activity')page=<ActivityDetail id={parts[1]} params={params}/>;
   else page=<Missing/>;
 
-  const foundationPage=route==='/'||route==='/review'||route==='/program/te'||parts[0]==='expedition'||route==='/publication/sacred-gatekeeper';
+  const foundationPage=route==='/program/pd'||route==='/activities'||parts[0]==='activity'||route==='/'||route==='/review'||route==='/program/te'||parts[0]==='expedition'||route==='/publication/sacred-gatekeeper';
   const reviewing=route==='/review'||route==='/legacy';
   return <div className="ds-site">
     <a href="#public-content" className="ds-skip" onClick={event=>{event.preventDefault();document.getElementById('public-content')?.focus();}}>Langsung ke isi website</a>
