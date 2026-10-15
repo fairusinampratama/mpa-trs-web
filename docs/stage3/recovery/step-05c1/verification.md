@@ -22,3 +22,9 @@ Step5C-2 remains separately gated: replace remaining first-relation/display-only
 ## Owner decisions and outstanding content
 
 No new architecture approval is needed to finish this checkpoint. Owner review should assess whether this contract and representative population are an acceptable basis for separately authorizing5C-2. Specific later decisions: how to present unreconciled ORAD/LH27 location associations; who validates conflicting dates/source masters; final published-snapshot/revision responsibilities; actual creator/privacy/credit/use clearance for shortlisted photos; real-member disclosure remains wholly unauthorized. No current prototype depends on those assets or decisions being cleared.
+
+## Final release supplement
+
+Final release and hosted run evidence are in [deployment.md](deployment.md). Local full regression JSON files were refreshed against final source `f37bff3`;25 cloud viewport checks were also repeated against that exact release. Detailed data-only proofs and selected text-only screenshots retain their original prepublication marker and are labeled historical evidence, not proof of a different served source.
+
+Automatic approval review rejected uploading the TE10 screenshot, citing unestablished image publication safety. That JPEG was omitted rather than retried through another channel. The PD28 and magazine screenshots contain public-safe rendered text, not archival photography. Live TE10 remains directly inspectable. This omission does not block the data-contract or browser review.

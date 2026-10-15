@@ -1285,7 +1285,7 @@
   "errors": [],
   "failures": [],
   "checks": [
-    "55 layouts: two catalogues and nine activity records at five widths",
+    "160 layouts: two catalogues and thirty activity records at five widths",
     "all five division filters and cohort intersections",
     "empty/reset/keyboard focus",
     "URL filter state, detail return, direct refresh and invalid facet normalization",
@@ -1293,5 +1293,6 @@
     "sparse records omit empty sections",
     "no fabricated independent programme parent",
     "no public photographs or review controls"
-  ]
+  ],
+  "testedSourceCommit": "f37bff3b769e98f0490ed157c10fbbf000bf7a79"
 }

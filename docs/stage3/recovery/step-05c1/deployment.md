@@ -12,3 +12,14 @@ Initial source: `b81f61bdb3e18f5f441fbb1ff28561cede8e3295`, tree `dfea6d3ea23ea4
 A bounded follow-up tightens partial announcement-expiry conversion and retains three previously sourced plan ranges separately from execution assertions. It changes no displayed dates or layouts. Final source/version evidence is appended after its deployment is independently verified. Documentation-only evidence heads are distinguished from the served source.
 
 Normal rollback: revert the preview source commit on this branch, push, let the unchanged Pages pipeline rebuild and verify version.json. No force-push, main merge or production rollback.
+
+## Final served revision
+
+- Source: `f37bff3b769e98f0490ed157c10fbbf000bf7a79`; tree `6b540d9178d374678ddf24b8b076bc7af480fb4f`.
+- [Pages38703362154](https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38703362154) succeeded: build116316651973, deploy116316768837, HTTPS verify116316850029.
+- [Foundation CI38703369303](https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38703369303) succeeded.
+- [Final HTTPS integrity](evidence/final-live-integrity.json): all7 served files match the exact final build; version.json contains the full final SHA; TLS validation retained.
+- [Final cloud-browser verification](evidence/final-live-browser.json): GH28,TE10,RC26 and magazine show `f37bff3`;25 live CSS-width measurements repeated with no overflow. Accepted local homepage, TE20-layout, activity160-layout and institutional60-layout suites all repeated successfully on this exact final build. Their regression JSON files now identify the final source.
+- Node domain suite25/25 passes; original activity6/6 and institutional7/7 pass through16 prototype Python checks. Existing59 mocked foundation tests and hosted CI pass. Source changes do not alter displayed dates, accepted layouts or tokens.
+
+Both source pushes demonstrate the unchanged automatic preview pipeline. Later documentation-only evidence commits do not redeploy; distinguish branch head from the served revision above.

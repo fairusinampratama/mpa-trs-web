@@ -10,7 +10,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te11",
@@ -21,7 +21,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te12",
@@ -32,7 +32,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/publication/sacred-gatekeeper",
@@ -43,7 +43,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/program/te",
@@ -54,7 +54,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te11",
@@ -65,7 +65,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te12",
@@ -76,7 +76,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/publication/sacred-gatekeeper",
@@ -87,7 +87,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/program/te",
@@ -98,7 +98,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te11",
@@ -109,7 +109,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te12",
@@ -120,7 +120,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/publication/sacred-gatekeeper",
@@ -131,7 +131,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/program/te",
@@ -142,7 +142,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te11",
@@ -153,7 +153,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te12",
@@ -164,7 +164,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/publication/sacred-gatekeeper",
@@ -175,7 +175,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/program/te",
@@ -186,7 +186,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te11",
@@ -197,7 +197,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/expedition/te12",
@@ -208,7 +208,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     },
     {
       "route": "/publication/sacred-gatekeeper",
@@ -219,7 +219,7 @@
       "images": 0,
       "reviewControls": false,
       "headingFont": "\"Source Serif 4\", Georgia, serif",
-      "source": "48635ba"
+      "source": "f37bff3"
     }
   ],
   "errors": [],
@@ -234,5 +234,6 @@
     "visible keyboard focus",
     "responsive review four destinations",
     "no public photographs or review controls"
-  ]
+  ],
+  "testedSourceCommit": "f37bff3b769e98f0490ed157c10fbbf000bf7a79"
 }

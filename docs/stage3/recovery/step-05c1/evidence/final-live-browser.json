@@ -1,0 +1,54 @@
+{
+  "method": "Actual published HTTPS UI in cloud Chrome; no TLS bypass. Native responsive-review controls and read-only DOM measurement.",
+  "sourceCommit": "f37bff3b769e98f0490ed157c10fbbf000bf7a79",
+  "confirmedNewRecords": [
+    {
+      "path": "#/activity/gh28",
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII",
+      "source": "f37bff3"
+    },
+    {
+      "path": "#/expedition/te10",
+      "title": "Pulau Siberut",
+      "source": "f37bff3",
+      "photos": 0,
+      "downloads": 0
+    },
+    {
+      "path": "#/activity/rc26",
+      "title": "Pemantapan Divisi Panjat Tebing XXVI",
+      "source": "f37bff3",
+      "photos": 0,
+      "downloads": 0
+    },
+    {
+      "path": "#/publication/summit-attack-vol4",
+      "title": "Summit Attack Vol. 4",
+      "source": "f37bff3",
+      "photos": 0,
+      "downloads": 0
+    }
+  ],
+  "responsive": {
+    "count": 25,
+    "pages": [
+      "Tursina Explore",
+      "TE11 / Bukit Raya",
+      "Pemantapan Divisi",
+      "Publications",
+      "Jejak"
+    ],
+    "requestedAndObservedInnerWidths": [
+      1366,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "allNoOverflow": true,
+    "allSources": "f37bff3",
+    "scrollbarWidth": 15,
+    "method": "For each frame, document scrollWidth equals clientWidth; innerWidth equals requested width. CSS reflow only, not physical-device or touch testing."
+  },
+  "earlierCompleteJourneys": "initial-live-browser.json records catalogue/detail/refresh/return, TE11/article, facets, history and synthetic member interactions on the first release. Final direct pages and viewport checks repeat on final source; local full regressions repeat on the same final build."
+}
