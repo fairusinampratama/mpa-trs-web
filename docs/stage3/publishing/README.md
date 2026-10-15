@@ -48,3 +48,7 @@ Step5B-1 source `72e90d75d234dc634fd43a513666b2c1f3b20bc6` serves the TE catalog
 ## Latest verified increment — Step5B-2,15 October2026
 
 Step5B-1 is now owner-accepted. Step5B-2 source `162364b80d771fc5df5026ceb0727f62bc4a36f5` serves data-driven PD discovery/six records and independent BATAFIA/Kawi experiences. [Pages38675527214](https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38675527214) and source CI38675532458 succeeded. [Current deployment evidence](../recovery/step-05b2/deployment.md) includes live browser checks and exact-byte integrity. Active native Pages method/workflow is unchanged; no HOLD media published. Documentation-only evidence heads do not redeploy. Step5B-2 awaits owner acceptance; later steps remain separately gated.
+
+## Latest supporting-page increment — Step5B-3,15 October2026
+
+Owner accepted Step5B-2. Source `3af160ee3ebfd215d03475c7cba1d7f712ed8663` now serves publications/knowledge, generic limited work/resource detail, Tentang, sourced Jejak and synthetic-only NIA/name catalogue. [Pages38694883788](https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38694883788) and source CI38694885079 passed. See [current evidence](../recovery/step-05b3/deployment.md). Active native Pages method/workflow and artifact boundary are unchanged. No held media, original manuscript/report or real member records published. Documentation-only evidence heads do not redeploy. Step5B-3 awaits owner acceptance; Step5C-1 and later work require separate authorization.
