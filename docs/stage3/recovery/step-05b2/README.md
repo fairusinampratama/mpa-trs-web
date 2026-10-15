@@ -37,3 +37,7 @@ The existing Pages Python test discovery now invokes six Node record-contract te
 Reviewed assets07(GH),10(RC),13(Kawi) and16(BATAFIA) remain HOLD. Public output has no photos/emblem: GH/RC use compact factual media context; optional Kawi/BATAFIA media omit cleanly. Private same-App review uses the actual derivatives, native uncropped frames and explicit unknown-credit captions. Exact source locators, permission notes and image-bearing artifacts stay outside GitHub. Creator/licence/credit, recognizable-person/privacy basis and final asset/use approval remain unresolved; general owner institutional authority is settled.
 
 Stop after Step5B-2 owner review. Full publications/knowledge migration and the later cross-site data-contract/content-population checkpoint require separate authorization. Production, workflows, hosting, secrets, main and PR13 merge remain untouched.
+
+## Delivered preview
+
+Source `162364b80d771fc5df5026ceb0727f62bc4a36f5` is live. Pages38675527214 and source CI38675532458 succeeded. [Deployment, browser evidence and review links](deployment.md) distinguish served source from any later documentation-only head. Awaiting owner Step5B-2 acceptance; no later step is underway.

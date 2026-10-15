@@ -44,3 +44,7 @@ Artifact policy adds only2 SHA-256-approved WOFF2 builds; unknown binaries/photo
 ## Latest verified supporting journey — 15 October 2026
 
 Step5B-1 source `72e90d75d234dc634fd43a513666b2c1f3b20bc6` serves the TE catalogue, rich TE11/sparse TE12 and connected article metadata experience. [Pages run38671019984](https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38671019984) and source CI38671024594 succeeded. The active publishing method and workflow are unchanged. See ../recovery/step-05b1/deployment.md for exact HTTPS-byte, browser and responsive evidence. All photographic assets and article manuscript remain withheld; a private owner packet shows intended photo rendering. A documentation-only evidence head can follow the served SHA. Step5B-1 awaits owner acceptance; no later migration is authorized.
+
+## Latest verified increment — Step5B-2,15 October2026
+
+Step5B-1 is now owner-accepted. Step5B-2 source `162364b80d771fc5df5026ceb0727f62bc4a36f5` serves data-driven PD discovery/six records and independent BATAFIA/Kawi experiences. [Pages38675527214](https://github.com/fairusinampratama/mpa-trs-web/actions/runs/38675527214) and source CI38675532458 succeeded. [Current deployment evidence](../recovery/step-05b2/deployment.md) includes live browser checks and exact-byte integrity. Active native Pages method/workflow is unchanged; no HOLD media published. Documentation-only evidence heads do not redeploy. Step5B-2 awaits owner acceptance; later steps remain separately gated.
