@@ -229,13 +229,13 @@
     "no enlarged image mounted before open",
     "existing responsive derivatives only",
     "native modal focus containment",
+    "rapid close/reopen remains open",
     "Enter/Escape/close control/focus return",
     "background scroll lock and original position",
     "stable viewport width",
     "full frame ratio/alt/caption/credit",
     "forced colors/reduced motion/text-spacing",
     "no viewer on activity/TE/lab",
-    "failed enlarged request preserves credit, close and focus return",
-    "rapid close/reopen remains open"
+    "failed enlarged request preserves credit, close and focus return"
   ]
 }

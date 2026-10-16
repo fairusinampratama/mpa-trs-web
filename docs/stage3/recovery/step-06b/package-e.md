@@ -27,4 +27,4 @@ These are actual Chromium153 CSS-viewport tests, not physical-device/touch or sc
 
 ## Release and owner gate
 
-Native Pages release/source and actual hosted opening/closing will be recorded in package-e-deployment.md. Stop after owner PackageE/final Stage3 review. No Stage4, production deployment or PR13 merge is authorized.
+Final application1761fc492dffaad56c215d64c405083f6bbe0cb8 is deployed and independently verified; see [release evidence](package-e-deployment.md). Stop after owner PackageE/final Stage3 review. No Stage4, production deployment or PR13 merge is authorized.
