@@ -79,3 +79,7 @@ Owner accepts deployed application874c16cfc4980ad7546ecea6ef65114c4d741a76 and a
 ## 16 October2026 — Step6B bounded refinement authorization
 
 Owner explicitly accepted Step6A findings UX01–12 and authorized Packages A–D for targeted implementation, tests and existing native Pages deployment. Documented-date descending is selected; footer Kegiatan must target general activities; material uncertainty remains. PackageE is a private current/enlargement/stacked comparison only, requiring separate exact viewing/use approval before public implementation. Kawi opening and public media scope remain unchanged; no automatic Stage4/production/PR13 merge. Step6B implementation acceptance remains pending owner review.
+
+## 16 October2026 — PackageE AlternativeA approved
+
+Owner accepted deployed Step6B Packages A–D and explicitly authorized optional enlarged native-dialog viewing for existing GH andRC photographs from their two homepage field-education contexts. Reuse approved derivatives; keep complete frames, alt, captions and exact HUMED credit. No activity-detail treatment, extra photograph/context/use/derivative/crop is approved. Existing media rights/publication rules stand; no general clearance reopening. Implement/test/native Pages deploy only this package; preserve draft PR13 and stop for final Stage3 acceptance. No Stage4/backend/production/merge authorization.

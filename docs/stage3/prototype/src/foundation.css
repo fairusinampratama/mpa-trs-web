@@ -299,3 +299,18 @@ button,a,input,select,textarea {transition:background-color 140ms,color 140ms,bo
 .ds-activity-metadata {font-size:15px;line-height:23px;}
 .ds-history-text {border-top:2px solid var(--ds-primary);padding-top:var(--ds-space-24);}
 @media(min-width:768px){.ds-related-groups{grid-template-columns:repeat(2,minmax(0,1fr));}}
+
+/* Approved PackageE: same full frame, homepage field contexts only. */
+.ds-enlarge-control {display:flex;align-items:center;justify-content:space-between;gap:var(--ds-space-8);width:100%;min-height:44px;margin-top:var(--ds-space-12);padding:var(--ds-space-8);border:1px solid currentColor;background:transparent;color:inherit;font:600 15px/22px var(--font-sans);text-align:left;cursor:pointer;}
+.ds-enlarge-control:hover {text-decoration:underline;text-underline-offset:4px;}
+.ds-photo-dialog {box-sizing:border-box;margin:auto;padding:var(--ds-space-24);width:fit-content;max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;background:var(--ds-page);color:var(--ds-ink);border:1px solid var(--ds-control-border);}
+.ds-photo-dialog::backdrop {background:rgb(0 0 0 / .75);}
+.ds-photo-toolbar {display:flex;align-items:start;justify-content:space-between;gap:var(--ds-space-16);margin-bottom:var(--ds-space-16);}
+.ds-photo-toolbar .ds-content-title {font-size:24px;line-height:30px;max-width:22ch;}
+.ds-photo-toolbar .button {flex-shrink:0;}
+.ds-photo-dialog .ds-photo-fullframe {width:auto;max-width:100%;margin:0;}
+.ds-photo-dialog .ds-photo-fullframe img {display:block;width:auto;height:auto;max-width:100%;max-height:58dvh;object-fit:contain;margin-inline:auto;}
+.ds-photo-dialog .ds-caption {color:var(--ds-muted);max-width:65ch;}
+.ds-photo-dialog :focus-visible {outline-color:var(--ds-focus);}
+@media(max-width:600px){.ds-photo-dialog{padding:var(--ds-space-16);}.ds-photo-toolbar{flex-wrap:wrap;}.ds-photo-toolbar .ds-content-title{font-size:22px;line-height:28px;}.ds-photo-dialog .ds-photo-fullframe img{max-height:52dvh;}}
+@media(forced-colors:active){.ds-photo-dialog{border-color:CanvasText;}.ds-photo-dialog::backdrop{background:Canvas;opacity:.85;}}

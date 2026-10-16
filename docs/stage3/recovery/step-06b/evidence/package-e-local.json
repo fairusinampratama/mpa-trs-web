@@ -1,0 +1,240 @@
+{
+  "status": "PASS",
+  "browser": "153.0.8010.0",
+  "rows": [
+    {
+      "width": 1366,
+      "role": "Gunung Hutan",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-gh-map-480.webp",
+        "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "natural": [
+          400,
+          710
+        ],
+        "rendered": [
+          275.453125,
+          489.515625
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 1366,
+      "role": "Panjat Tebing",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-rc-team-640.webp",
+        "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "natural": [
+          530,
+          706
+        ],
+        "rendered": [
+          367.265625,
+          489.515625
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 1024,
+      "role": "Gunung Hutan",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-gh-map-480.webp",
+        "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "natural": [
+          400,
+          710
+        ],
+        "rendered": [
+          275.453125,
+          489.515625
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 1024,
+      "role": "Panjat Tebing",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-rc-team-640.webp",
+        "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "natural": [
+          530,
+          706
+        ],
+        "rendered": [
+          367.265625,
+          489.515625
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 768,
+      "role": "Gunung Hutan",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-gh-map-480.webp",
+        "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "natural": [
+          400,
+          710
+        ],
+        "rendered": [
+          275.453125,
+          489.515625
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 768,
+      "role": "Panjat Tebing",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-rc-team-640.webp",
+        "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "natural": [
+          530,
+          706
+        ],
+        "rendered": [
+          367.265625,
+          489.515625
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 390,
+      "role": "Gunung Hutan",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-gh-map-480.webp",
+        "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "natural": [
+          326,
+          579
+        ],
+        "rendered": [
+          246.953125,
+          438.875
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 390,
+      "role": "Panjat Tebing",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-rc-team-640.webp",
+        "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "natural": [
+          326,
+          434
+        ],
+        "rendered": [
+          323.984375,
+          431.828125
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 320,
+      "role": "Gunung Hutan",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-gh-map-480.webp",
+        "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "natural": [
+          256,
+          454
+        ],
+        "rendered": [
+          246.953125,
+          438.875
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    },
+    {
+      "width": 320,
+      "role": "Panjat Tebing",
+      "image": {
+        "src": "http://127.0.0.1:4196/mpa-trs-web/media/pd-rc-team-320.webp",
+        "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "natural": [
+          256,
+          341
+        ],
+        "rendered": [
+          253.984375,
+          338.921875
+        ],
+        "fit": "contain"
+      },
+      "scrollRestored": true,
+      "focusRestored": true,
+      "nativeFocusContainment": true,
+      "captionAndCredit": true,
+      "unchangedViewport": true
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "two exact homepage contexts only",
+    "no enlarged image mounted before open",
+    "existing responsive derivatives only",
+    "native modal focus containment",
+    "Enter/Escape/close control/focus return",
+    "background scroll lock and original position",
+    "stable viewport width",
+    "full frame ratio/alt/caption/credit",
+    "forced colors/reduced motion/text-spacing",
+    "no viewer on activity/TE/lab",
+    "failed enlarged request preserves credit, close and focus return"
+  ]
+}

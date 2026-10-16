@@ -1,7 +1,8 @@
+import {homeEnlargementAuthorized} from '../domain/media';
 import {RecordDate} from './RecordDate';
 import {activityDisplayTitle,workDiscovery} from '../domain/read';
 import {useContentReadModel} from '../ContentReadModel';
-import { createContext, useContext, useState, type ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, useRef, useId, type ReactNode } from 'react';
 import type { ActivityFixture } from './ActivityCard';
 import { canonicalRegistry } from '../domain/index.ts';
 import { resolvePublicMedia } from '../domain/validate.ts';
@@ -42,11 +43,37 @@ export function SectionHeading({ label, title, description }: { label: string; t
 export function MediaCaption({ children, credit }: { children: ReactNode; credit?: string }) {
   return <figcaption className="ds-caption">{children}{credit && <span className="ds-credit">{credit}</span>}</figcaption>;
 }
-export function DocumentaryMedia({ role, recordId, placement, eager = false, fallbackTitle, fallback, children, omitWhenUnavailable = false }: { role: MediaRole; recordId?: string; placement?: MediaPlacement; eager?: boolean; fallbackTitle: string; fallback: string; children?: ReactNode; omitWhenUnavailable?: boolean }) {
+type DocumentaryAsset = NonNullable<ReturnType<typeof useDocumentaryAsset>>;
+function HomePhotoEnlargement({asset,role}:{asset:DocumentaryAsset;role:MediaRole}) {
+ const [open,setOpen]=useState(false),[failed,setFailed]=useState(false);
+ const modal=useRef<HTMLDialogElement>(null),trigger=useRef<HTMLButtonElement>(null);
+ const closeControl=useRef<HTMLButtonElement>(null);
+ const titleId=useId();const title=role==='gh'?'Praktik navigasi darat':'Kerja tim di tebing';
+ useEffect(()=>{
+  if(!open)return;
+  const dialog=modal.current!,root=document.documentElement;
+  const previous={overflow:root.style.overflow,gutter:root.style.scrollbarGutter,scrollY:window.scrollY};
+  // Reserve the existing scrollbar gutter before locking background scrolling.
+  if(window.innerWidth>root.clientWidth)root.style.scrollbarGutter='stable';
+  root.style.overflow='hidden';dialog.showModal();
+  window.scrollTo({top:previous.scrollY,behavior:'instant'});
+  return()=>{
+   dialog.close();root.style.overflow=previous.overflow;root.style.scrollbarGutter=previous.gutter;
+   window.scrollTo({top:previous.scrollY,behavior:'instant'});
+   if(trigger.current?.isConnected)trigger.current.focus({preventScroll:true});
+  };
+ },[open]);
+ return <><button type="button" className="ds-enlarge-control" ref={trigger} aria-haspopup="dialog" onClick={()=>{setFailed(false);setOpen(true);}}>Perbesar foto {role==='gh'?'Gunung Hutan':'Panjat Tebing'}<span aria-hidden="true"> ↗</span></button>
+  <dialog className="ds-photo-dialog" ref={modal} aria-labelledby={titleId} onCancel={e=>{e.preventDefault();setOpen(false);}} onClose={()=>setOpen(false)} onKeyDown={e=>{if(e.key==='Tab'&&!e.ctrlKey&&!e.altKey&&!e.metaKey){e.preventDefault();closeControl.current?.focus();}}}>
+   {open&&<><header className="ds-photo-toolbar"><h2 id={titleId} className="ds-content-title">{title}</h2><button autoFocus ref={closeControl} className="button button-secondary" type="button" onClick={()=>setOpen(false)}>Tutup foto</button></header>
+   <figure className="ds-photo-fullframe">{failed?<p role="status">Foto tidak termuat. Tutup dan buka kembali untuk mencoba lagi.</p>:<img src={asset.src} srcSet={asset.srcSet} sizes={role==='gh'?'(max-width:600px) calc(100vw - 64px), 400px':'(max-width:600px) calc(100vw - 64px), 530px'} width={asset.width} height={asset.height} alt={asset.alt} decoding="async" onError={()=>setFailed(true)}/>}<MediaCaption credit={asset.credit}>{asset.caption}</MediaCaption></figure></>}
+  </dialog></>;
+}
+export function DocumentaryMedia({ role, recordId, placement, eager = false, fallbackTitle, fallback, children, omitWhenUnavailable = false, enlargement = false }: { role: MediaRole; recordId?: string; placement?: MediaPlacement; eager?: boolean; fallbackTitle: string; fallback: string; children?: ReactNode; omitWhenUnavailable?: boolean; enlargement?: boolean }) {
   const asset = useDocumentaryAsset(role, recordId, placement); const [failedSource, setFailedSource] = useState<string>();
   const failed = !!asset && failedSource === asset.src;
   if ((!asset || failed) && omitWhenUnavailable) return null;
-  return asset && !failed ? <figure className={`ds-media ds-media-${role}`} data-media-asset={asset.assetId} data-media-use={asset.useId}><img src={asset.src} srcSet={asset.srcSet} sizes={asset.sizes} width={asset.width} height={asset.height} alt={asset.alt} loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : 'auto'} decoding={eager ? 'sync' : 'async'} onError={() => setFailedSource(asset.src)}/><MediaCaption credit={asset.credit}>{asset.caption}</MediaCaption></figure> : <aside className={`ds-media-fallback ds-fallback-${role}`}><p className="ds-label">{failed ? 'Dokumentasi tidak termuat' : 'Catatan dokumentasi'}</p><p className="ds-content-title">{fallbackTitle}</p><p>{fallback}</p>{children}<p className="ds-caption">{failed ? 'Keterangan tetap tersedia; muat ulang untuk mencoba kembali.' : 'Foto arsip menunggu kelengkapan izin dan kredit publikasi.'}</p></aside>;
+  return asset && !failed ? <figure className={`ds-media ds-media-${role}`} data-media-asset={asset.assetId} data-media-use={asset.useId}><img src={asset.src} srcSet={asset.srcSet} sizes={asset.sizes} width={asset.width} height={asset.height} alt={asset.alt} loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : 'auto'} decoding={eager ? 'sync' : 'async'} onError={() => setFailedSource(asset.src)}/><MediaCaption credit={asset.credit}>{asset.caption}</MediaCaption>{enlargement&&homeEnlargementAuthorized({...asset,role,recordId,placement})&&<HomePhotoEnlargement asset={asset} role={role}/>}</figure> : <aside className={`ds-media-fallback ds-fallback-${role}`}><p className="ds-label">{failed ? 'Dokumentasi tidak termuat' : 'Catatan dokumentasi'}</p><p className="ds-content-title">{fallbackTitle}</p><p>{fallback}</p>{children}<p className="ds-caption">{failed ? 'Keterangan tetap tersedia; muat ulang untuk mencoba kembali.' : 'Foto arsip menunggu kelengkapan izin dan kredit publikasi.'}</p></aside>;
 }
 export function ProgrammeEntry({ index, title, description, href, action }: { index: string; title: string; description: string; href: string; action: string }) {
   return <article className="ds-programme"><span className="ds-label ds-index" aria-hidden="true">{index}</span><div><h3 className="ds-content-title"><a href={href}>{title}</a></h3><p>{description}</p><TextLink href={href}>{action}</TextLink></div></article>;

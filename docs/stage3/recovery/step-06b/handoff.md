@@ -1,3 +1,5 @@
+> Update16October2026: the owner accepted A–D and explicitly approved AlternativeA for the two homepage field contexts. The private-comparison decision discussion below is historical. See package-e.md and package-e-deployment.md for the implemented continuation. No additional image/context or Stage4 approval is implied.
+
 # Owner review and remaining decisions
 
 Recommend reviewing the deployed A–D corrections as the bounded Step6B implementation, not declaring final institution-wide acceptance automatically. Step6B owner acceptance, PackageE media treatment and Stage4/backend authorization are separate decisions.

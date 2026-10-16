@@ -17,6 +17,6 @@ export function integrationFixture(base:InstitutionalRegistry,withdraw=false){
  const h=r.history.find(h=>h.id==='data-proof-history')!;
  r.history.push({...structuredClone(h),id:'integration-undated',title:'INTEGRATION Undated',dates:{presentation:{label:'Waktu belum diketahui'},assertions:[],reconciliation:'unknown'}});
  r.history.push({...structuredClone(h),id:'integration-approx',title:'INTEGRATION Approximate',dates:{presentation:{label:'2002',assertionId:'approx'},assertions:[{id:'approx',role:'milestone',value:{precision:'year',start:'2002',approximate:true},sourceUses:sources}],reconciliation:'single-source'}});
- if(withdraw){r.works.find(w=>w.id==='integration-multi')!.publication.website='withdrawn';r.works.find(w=>w.id==='sacred-gatekeeper')!.publication.website='withdrawn';r.mediaUses.find(u=>u.placement==='home-opening')!.clearance='withdrawn';}
+ if(withdraw){r.works.find(w=>w.id==='integration-multi')!.publication.website='withdrawn';r.works.find(w=>w.id==='sacred-gatekeeper')!.publication.website='withdrawn';r.mediaUses.find(u=>u.placement==='home-opening')!.clearance='withdrawn';r.mediaUses.find(u=>u.placement==='home-education-gh')!.clearance='withdrawn';}
  return r;
 }
