@@ -203,7 +203,7 @@ export const institutionalContent = {
     {
       "id": "gh29",
       "title": "Pemantapan Divisi Gunung Hutan XXIX",
-      "summary": "Praktik lapangan Gunung Hutan di Gunung Lawu. Arsip foto memperlihatkan kerja peta-kompas, pengamatan medan, dan dokumentasi puncak.",
+      "summary": "Pendidikan Gunung Hutan XXIX di Gunung Lawu, dengan praktik membaca peta, menggunakan kompas, dan mengamati medan.",
       "kind": "division-education",
       "depth": "rich",
       "state": "historical",
@@ -236,7 +236,7 @@ export const institutionalContent = {
           "title": "Dari persiapan menuju spesialisasi.",
           "paragraphs": [
             "LPJ mencatat rangkaian pematerian dan latihan, presentasi proposal, serta simulasi sebelum pelaksanaan spesialisasi. Setelah kegiatan, presentasi laporan menjadi bagian dari rangkaian pendidikan.",
-            "Catatan Gunung Hutan XXIX ditempatkan dalam rangkaian tersebut. Arsip foto memberi contoh konkret kerja peta-kompas dan pengamatan medan; foto tidak membuktikan seluruh standar telah dipenuhi."
+            "Praktik membaca peta dan menggunakan kompas memperlihatkan bagian dari pembelajaran navigasi darat. Ruang belajar divisi dijelaskan di bawah sebagai sasaran pendidikan, bukan daftar pencapaian peserta."
           ],
           "sourceIds": [
             "lpj-2025",
@@ -333,7 +333,7 @@ export const institutionalContent = {
     {
       "id": "rc29",
       "title": "Pemantapan Divisi Panjat Tebing XXIX",
-      "summary": "Spesialisasi Panjat Tebing di Tebing Siung. Catatan program memuat pemanjatan, instalasi, pemetaan jalur, rescue group, dan konteks sosial setempat sebagai sasaran pembelajaran.",
+      "summary": "Pendidikan Panjat Tebing XXIX di Tebing Siung, dengan dokumentasi pemanjatan dan kerja tim di dasar tebing.",
       "kind": "division-education",
       "depth": "rich",
       "state": "historical",
@@ -366,7 +366,7 @@ export const institutionalContent = {
           "title": "Belajar di tebing sebagai kerja tim.",
           "paragraphs": [
             "Pelaksanaan Panjat Tebing XXIX tercatat di Tebing Siung. Seperti rangkaian PD lainnya dalam LPJ, persiapan mencakup latihan, presentasi proposal dan simulasi, lalu diikuti presentasi laporan.",
-            "Arsip dokumentasi memperlihatkan pemanjatan dan kerja tim di dasar tebing. Catatan ini tidak menambahkan grade jalur, klaim keselamatan, keberhasilan rescue, atau sertifikasi yang belum dibuktikan oleh laporan rinci."
+            "Pemanjatan dan kerja tim di dasar tebing menjadi bagian yang terlihat dalam dokumentasi. Ruang belajar di bawah menjelaskan sasaran pendidikan; tingkat jalur, hasil rescue dan sertifikasi tidak disimpulkan dari foto."
           ],
           "sourceIds": [
             "lpj-2025",
@@ -676,7 +676,7 @@ export const institutionalContent = {
     {
       "id": "kawi29",
       "title": "Gunung Kawi XXIX",
-      "summary": "Napak tilas dan rangkaian peralihan keanggotaan di Pegunungan Kawi. LPJ menyatakan pendakian tanpa pelaporan; uraian hasil tidak direka.",
+      "summary": "Napak tilas dan rangkaian peralihan keanggotaan di Pegunungan Kawi.",
       "kind": "institutional-continuity",
       "depth": "basic",
       "state": "historical",
@@ -767,7 +767,7 @@ export const institutionalContent = {
     {
       "id": "batafia30",
       "title": "BATAFIA XXX — diklat lapang",
-      "summary": "Pendidikan dasar di Pegunungan Kawi. LPJ mencatat pemendekan rute dari 18 km menjadi 16 km. Tanggal forum terpisah belum direkonsiliasi.",
+      "summary": "Pendidikan dasar melalui forum dan praktik lapangan di Pegunungan Kawi. Tanggal yang ditampilkan merujuk kegiatan lapangan; tanggal forum belum dipastikan.",
       "kind": "basic-education",
       "depth": "basic",
       "state": "historical",
@@ -792,7 +792,7 @@ export const institutionalContent = {
           "title": "Pendidikan dasar melalui forum dan lapangan.",
           "paragraphs": [
             "LPJ menggambarkan BATAFIA XXX sebagai pendidikan dasar dengan bentuk forum dan kegiatan lapangan. Tanggal di atas hanya mewakili pelaksanaan lapangan yang tercatat di Pegunungan Kawi.",
-            "Evaluasi laporan mencatat penyesuaian panjang rute dari 18 km menjadi 16 km. Informasi ini dipertahankan sebagai hal yang dilaporkan, tanpa menambahkan klaim pencapaian teknis atau jadwal penerimaan anggota yang berlaku saat ini."
+            "Dalam evaluasi kegiatan, panjang rute dilaporkan berubah dari 18 km menjadi 16 km."
           ],
           "sourceIds": [
             "lpj-2025"

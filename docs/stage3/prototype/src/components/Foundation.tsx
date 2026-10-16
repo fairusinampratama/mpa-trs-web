@@ -1,4 +1,6 @@
 import {RecordDate} from './RecordDate';
+import {activityDisplayTitle,workDiscovery} from '../domain/read';
+import {useContentReadModel} from '../ContentReadModel';
 import { createContext, useContext, useState, type ReactNode } from 'react';
 import type { ActivityFixture } from './ActivityCard';
 import { canonicalRegistry } from '../domain/index.ts';
@@ -53,10 +55,11 @@ export function ActivityMetadata({ activity, inline = false }: { activity: Activ
   return <div className={`ds-activity-metadata${inline ? ' ds-metadata-inline' : ''}`}><p><RecordDate id={activity.id} fallback={activity.date}/></p><p className="ds-label">{activity.state === 'historical' ? 'Historis' : activity.state === 'planned' ? 'Direncanakan' : activity.state === 'ongoing' ? 'Berlangsung' : 'Status belum diketahui'}</p></div>;
 }
 export function ActivityPreview({ activity, title, summary }: { activity: ActivityFixture; title?: string; summary?: string }) {
-  return <article className="ds-activity"><ActivityMetadata activity={activity}/><h3 className="ds-activity-title"><a href={activity.href}>{title || activity.title}</a></h3>{activity.location && <p className="ds-place">{activity.location}</p>}<p>{summary || activity.summary}</p></article>;
+  return <article className="ds-activity"><ActivityMetadata activity={activity}/><h3 className="ds-activity-title"><a href={activity.href} aria-label={title || activity.title}>{title || activityDisplayTitle(activity)}</a></h3>{activity.location && <p className="ds-place">{activity.location}</p>}<p>{summary || activity.summary}</p></article>;
 }
 export function PublicationPreview({ title, type, date, summary, href, action, related }: { title: string; type: string; date?: string; summary: string; href: string; action: string; related?: string }) {
-  return <article className="ds-publication"><p className="ds-label">{type}{related ? ` / ${related}` : ' / Mandiri'}</p><h3 className="ds-content-title"><a href={href}>{title}</a></h3>{date && <p className="ds-metadata">{date}</p>}<p>{summary}</p><TextLink href={href}>{action}</TextLink></article>;
+  const {registry}=useContentReadModel();const record=registry.works.find(w=>href.split('?')[0]===`#/publication/${w.id}`);const availability=record?workDiscovery(record):undefined;
+  return <article className="ds-publication"><p className="ds-label">{type}{related ? ` / ${related}` : ' / Mandiri'}</p><h3 className="ds-content-title"><a href={href}>{title}</a></h3>{date && <p className="ds-metadata">{date}</p>}<p>{summary}</p>{availability&&<p className="ds-caption">{availability.cue}</p>}<TextLink href={href}>{availability?.action??action}</TextLink></article>;
 }
 
 export function EvidenceDisclosure({ summary = 'Sumber dan batas catatan', children }: { summary?: string; children: ReactNode }) {

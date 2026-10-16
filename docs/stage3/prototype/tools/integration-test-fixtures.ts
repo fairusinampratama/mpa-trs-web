@@ -6,6 +6,7 @@ export function integrationFixture(base:InstitutionalRegistry,withdraw=false){
  r.activities.push({...structuredClone(a),id:'integration-independent',title:'INTEGRATION Independent',programId:undefined,divisionIds:undefined,cohortIds:undefined,kind:'workshop'});
  const w=r.works.find(w=>w.id==='data-proof-work')!;
  r.works.push({...structuredClone(w),id:'integration-multi',title:'INTEGRATION Multi Activity'});
+ r.works.push({...structuredClone(w),id:'integration-readable-example',title:'INTEGRATION Readable Example',kind:'article',originalState:'synthetic-example',editorial:{...w.editorial,verification:'synthetic'},availability:{state:'demonstration',title:'Contoh artikel sintetis',explanation:'Isi uji sintetis dapat dibaca; bukan karya institusi.'},sections:[{id:'sample',title:'Contoh isi',paragraphs:['INTEGRATION synthetic readable body; no historical claim.']}]});
  const sources=w.sourceUses;
  for(const [id,kind,fromId,toId,role] of [
  ['integration-edge-a','work-activity','integration-multi','data-proof-pd','documents'],

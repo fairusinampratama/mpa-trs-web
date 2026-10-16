@@ -32,3 +32,19 @@ export function historyGroups<T extends {id:string;when?:{start:string}}>(r:Inst
  const start=(row:T)=>{const h=r.history.find(h=>h.id===row.id);return h?dateView(h.dates).start:row.when?.start;};
  return {dated:rows.filter(row=>start(row)).sort((a,b)=>start(a)!.localeCompare(start(b)!)||a.id.localeCompare(b.id)),undated:rows.filter(row=>!start(row))};
 }
+
+export function workDiscovery(work: {kind:string;availability:{state:string};editorial:{verification:string};sections?:{paragraphs:string[]}[]}){
+ if(work.editorial.verification==='synthetic'||work.availability.state==='demonstration')return {action:work.kind==='article'&&work.sections?.some(s=>s.paragraphs.some(p=>p.trim()))?'Baca contoh artikel':'Lihat contoh',cue:'Contoh sintetis · bukan publikasi institusi'};
+ if(work.availability.state==='restricted')return {action:'Lihat catatan karya',cue:'Identitas karya tersedia · naskah belum terbuka'};
+ if(work.availability.state==='metadata-only')return {action:'Lihat catatan karya',cue:work.kind==='resource'?'Informasi materi tersedia · berkas belum terbuka':'Identitas karya tersedia · isi belum terbuka'};
+ return {action:'Lihat ringkasan sumber',cue:'Ringkasan konteks · bukan naskah asli'};
+}
+// Sort documented ISO precision strings descending without adding days. Within
+// a year/month, less precise assertions follow exact ones; ID breaks exact ties.
+export function documentedDateGroups<T extends {id:string}>(r:InstitutionalRegistry,rows:readonly T[]){
+ const claim=(row:T)=>r.activities.find(a=>a.id===row.id)?.dates;
+ const selected=(row:T)=>{const d=claim(row);return d?.assertions.find(a=>a.id===d.presentation.assertionId)?.value;};
+ const key=(row:T)=>{const v=selected(row);return v&&v.precision!=='unknown'?v.start:undefined;};
+ return {dated:rows.filter(row=>key(row)).sort((a,b)=>key(b)!.localeCompare(key(a)!)||a.id.localeCompare(b.id)),undated:rows.filter(row=>!key(row)).sort((a,b)=>a.id.localeCompare(b.id))};
+}
+export function activityDisplayTitle(record:{title:string;programId?:string}){return record.programId==='pd'?record.title.replace(/^Pemantapan Divisi\s+/,''):record.title;}

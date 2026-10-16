@@ -1,0 +1,11 @@
+# Owner review and remaining decisions
+
+Recommend reviewing the deployed A–D corrections as the bounded Step6B implementation, not declaring final institution-wide acceptance automatically. Step6B owner acceptance, PackageE media treatment and Stage4/backend authorization are separate decisions.
+
+PackageE: a private native-dialog same-image enlargement and a private stacked narrow-layout specimen have been rendered beside the current pair at390/320. They use GH/RC existing approved photographs and derivatives, unchanged full frames, captions and exact HUMED credit. Both remain outside the public application/build. Owner must explicitly approve the selected viewing treatment and contexts before any deployment; no new use is inferred from existing asset access. Recommend evaluating A first: retain the paired documentary overview and offer optional closer inspection, accepting the extra action and dialog maintenance. B provides immediate larger subjects but appreciably lengthens the education band. The review packet reports actual dimensions/height and keyboard tests. Only homepage field-band proposals were rendered; extending treatment to activity details requires explicit bounded follow-up and testing.
+
+UX10 Kawi hero replacement remains unproven/deferred; UX11 no global compression; UX12 current contacts/recruitment remain an editorial responsibility. Fuller historical evidence, restricted originals, unconfirmed emblem master, actual assistive-technology/native zoom and participant evaluation remain legitimate follow-ups. No fictional current institution information added.
+
+Shared display adapters remain projections, not authored competing data. Role-aware relationships, historical uncertainty, synthetic-only members and exact media placement checks remain authoritative. Future readable manuscripts need explicit original/content publication authorization in the domain model. No SQL/API/auth/admin changes are included.
+
+Rollback: normally revert the Step6B application commit on the prototype branch and push; the existing Pages workflow rebuilds that source. Never force-push or touch production/main. Draft PR13 must remain unmerged. Stop for owner review; no automatic next milestone.
