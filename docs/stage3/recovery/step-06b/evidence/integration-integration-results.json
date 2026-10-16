@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "method": "Actual React App with one canonical registry prop; isolated test entry and data-only additions/withdrawals; test media middleware uses existing approved derivatives",
+  "results": [
+    {
+      "width": 1366,
+      "tenRecordScenarios": true,
+      "searchContext": true,
+      "directReload": true,
+      "backForward": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1024,
+      "tenRecordScenarios": true,
+      "searchContext": true,
+      "directReload": true,
+      "backForward": true,
+      "noOverflow": true
+    },
+    {
+      "width": 768,
+      "tenRecordScenarios": true,
+      "searchContext": true,
+      "directReload": true,
+      "backForward": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "tenRecordScenarios": true,
+      "searchContext": true,
+      "directReload": true,
+      "backForward": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "tenRecordScenarios": true,
+      "searchContext": true,
+      "directReload": true,
+      "backForward": true,
+      "noOverflow": true
+    }
+  ],
+  "errors": []
+}

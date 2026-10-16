@@ -1,0 +1,259 @@
+[
+  {
+    "id": "UX-01",
+    "severity": "P1",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Reading promise exceeds available content",
+    "page_component": "Publications / PublicationPreview / desktop1363 and390; default + TE11 related works",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publications",
+    "viewport_state": "Publications / PublicationPreview / desktop1363 and390; default + TE11 related works",
+    "evidence": [
+      "publications-desktop-first.jpg",
+      "article-desktop-first.jpg",
+      "te11-related-desktop.jpg"
+    ],
+    "observed_problem": "Buka artikel leads to metadata/editorial context with the full manuscript withheld. TE11 related works use large equivalent entries for articles, planning context and a documentary reference whose original is unavailable. Catalogue introduction explains limitations, but individual destination promises remain ambiguous.",
+    "user_impact": "A reader seeking knowledge can follow several attractive links without finding a readable work. This is a discovery/expectation issue, not authorization to release originals.",
+    "proposed_correction": "Derive a short visible availability label from the existing availability contract at preview and related-link level; label metadata-only destinations Lihat catatan karya. Reserve Baca artikel for an actually readable approved body. Preserve independent work identities and all canonical links.",
+    "expected_benefit": "Visitors know what they will receive before navigating.",
+    "regression_tradeoff": "Do not collapse editorial readiness, source verification and original availability into a single badge; avoid status clutter.",
+    "owner_approval": "Step6B approval for shared labels/presentation; full-manuscript clearance remains separate.",
+    "success_criteria": "Every restricted/metadata-only preview identifies that state before click; available-body and metadata-only synthetic fixtures get different truthful actions; TE11/article return still works."
+  },
+  {
+    "id": "UX-02",
+    "severity": "P1",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Audit language competes with the public story",
+    "page_component": "Homepage ActivitySelection and GH/RC/BATAFIA detail; desktop1363/390",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "viewport_state": "Homepage ActivitySelection and GH/RC/BATAFIA detail; desktop1363/390",
+    "evidence": [
+      "home-desktop-full.jpg",
+      "gh-media-desktop.jpg",
+      "batafia-desktop-first.jpg",
+      "rc-documentary-desktop.jpg"
+    ],
+    "observed_problem": "Home activity summaries foreground LPJ status, route-length revisions and unresolved forum dates. GH regency uncertainty receives a large callout before its learning narrative. Documentary prose repeatedly says what a photo or report does not prove. All may be accurate, but their hierarchy emphasizes the research process.",
+    "user_impact": "Unfamiliar visitors receive limitations before understanding the activity or why it matters; the institution can read like an unfinished evidence audit.",
+    "proposed_correction": "Keep material uncertainty visibly concise beside the relevant fact. Move methodological detail to existing evidence disclosure. Use a short visitor-facing purpose/context summary for each preview, preserving underlying sourced facts and source access.",
+    "expected_benefit": "A readable institutional story with accountable evidence rather than administrative prose as the main voice.",
+    "regression_tradeoff": "Do not hide contested facts, invent outcomes or change canonical assertions. Copy review is needed; blanket removal of cautions would be wrong.",
+    "owner_approval": "Owner editorial approval of proposed copy and Step6B implementation.",
+    "success_criteria": "Homepage summaries explain activity/context in1–2 sentences; significant date/location conflicts stay visible; complete original caveats remain one disclosure away; no factual or rights change."
+  },
+  {
+    "id": "UX-03",
+    "severity": "P2",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Expanded catalogues need a declared ordering and shorter scan units",
+    "page_component": "ActivityPreview / PD results /1363 and390; unfiltered",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd",
+    "viewport_state": "ActivityPreview / PD results /1363 and390; unfiltered",
+    "evidence": [
+      "pd-results-desktop.jpg",
+      "pd-results-390.jpg",
+      "settled-responsive-audit.json"
+    ],
+    "observed_problem": "PD first rows jump from2023 to2025, then back to2023/2024. Full programme titles, long report-oriented summaries and12px dates make many entries look alike. Four-column text is crowded, but measured bounds are separate: no overlap or horizontal-overflow failure was confirmed.",
+    "user_impact": "A member/alumnus must read repeated words and infer list order to locate a precedent.",
+    "proposed_correction": "Choose a documented default order (recommend documented date descending, unknown dates separate; alternatively explicit division/cohort groups). Within PD shorten display titles to field+cohort while preserving full detail identity/accessibility. Keep place and concise summary together; increase date prominence using existing text roles.",
+    "expected_benefit": "Faster comparison without removing sparse records or imposing cohort as universal parent.",
+    "regression_tradeoff": "Sorting by uncertain dates must use canonical precision; do not invent dates or imply recency coverage. Avoid a new filter engine.",
+    "owner_approval": "Owner chooses ordering; Step6B approves shared row refinements.",
+    "success_criteria": "18PD records remain discoverable; order is explained and deterministic; long-title fixtures wrap at320/390/768/1024/1366; no cell collision, loss of canonical name, empty narrative or broken filter return."
+  },
+  {
+    "id": "UX-04",
+    "severity": "P2",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Important field subjects are small in mobile photo pair",
+    "page_component": "EducationOverview / DocumentaryMedia /390 and320",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "viewport_state": "EducationOverview / DocumentaryMedia /390 and320",
+    "evidence": [
+      "home-390-education.png",
+      "rc-documentary-desktop.jpg"
+    ],
+    "observed_problem": "At390 frame width, GH renders about136×242CSSpx and RC about182×242. Full frames preserve map and ground team, but individual climbers are tiny; long adjacent captions consume substantial vertical space. Detail RC is300×400 on desktop, more legible but still not a close study.",
+    "user_impact": "Authentic education risks becoming atmospheric illustration rather than an immediately legible action.",
+    "proposed_correction": "Keep full framing and credit. Prototype a keyboard-accessible enlarge-current-image view using the already approved derivative, or a bounded stacked-mobile treatment; compare actual subject visibility and page length before choosing.",
+    "expected_benefit": "The actual map practice and teamwork become inspectable without factual image edits.",
+    "regression_tradeoff": "Stacking greatly increases page length; cropping could remove the ground team. A viewer adds focus/close/return semantics and may require use confirmation.",
+    "owner_approval": "Owner approves viewing treatment and confirms exact contextual permission before any enlargement/crop/new placement; no new asset presumed cleared.",
+    "success_criteria": "Subject is inspectable at390/320; exact credit remains adjacent; Escape/focus return/no scroll trap if viewer chosen; no unapproved use or new derivative; existing loading behavior preserved."
+  },
+  {
+    "id": "UX-05",
+    "severity": "P2",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Jejak is chronological but too close to an activity digest",
+    "page_component": "InstitutionalHistory /1363 and390; full text and first screen",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/jejak",
+    "viewport_state": "InstitutionalHistory /1363 and390; full text and first screen",
+    "evidence": [
+      "history-desktop-first.jpg",
+      "history-390-harness.jpg",
+      "page-inventory.json"
+    ],
+    "observed_problem": "Eight selected milestones are responsibly sourced and gaps are stated. Most recent entries summarize activities/works; repeated per-entry disclosures and similar row anatomy make institutional change and knowledge transmission less salient.1995→2022 is a genuine large evidence gap.",
+    "user_impact": "An alumnus can trace events, but may not understand the institutional continuity connecting them.",
+    "proposed_correction": "Add concise sourced thematic framing around existing entries (formation; documented education and accumulated work), and distinguish institutional milestones from activity examples visually. Keep all entries, their dates, links and gap statement.",
+    "expected_benefit": "History reads as institutional interpretation supported by activities, not a second activity index.",
+    "regression_tradeoff": "Do not invent intermediate periods, leadership changes, annual continuity or ceremony details; insufficient evidence remains a content responsibility.",
+    "owner_approval": "Owner approves editorial framing; additional historical claims need separate evidence.",
+    "success_criteria": "A newcomer can distinguish founding/history from activity chronology; gap remains explicit; sourced links/anchor focus/order and unknown-date grouping survive."
+  },
+  {
+    "id": "UX-06",
+    "severity": "P2",
+    "classification": "confirmed defect",
+    "confidence": "high",
+    "title": "Footer Kegiatan link unexpectedly narrows to TE",
+    "page_component": "InstitutionalFooter / all public pages; desktop and390",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "viewport_state": "InstitutionalFooter / all public pages; desktop and390",
+    "evidence": [
+      "footer-destination.json"
+    ],
+    "observed_problem": "The generic footer label Kegiatan links to #/program/te. Clicking it from PD opens Tursina Explore, while the main general activity destination is #/activities.",
+    "user_impact": "A visitor using the footer loses the broader activities context and can reasonably assume other activities are absent.",
+    "proposed_correction": "Either route generic Kegiatan to the general catalogue or relabel it Tursina Explore and expose the broader route clearly.",
+    "expected_benefit": "Consistent label–destination meaning.",
+    "regression_tradeoff": "Preserve direct TE access and programme-first discovery; this is a link-label correction, not a new IA.",
+    "owner_approval": "Step6B approval; no architectural decision needed.",
+    "success_criteria": "Footer label matches destination at every route and viewport; keyboard activation opens the expected h1."
+  },
+  {
+    "id": "UX-07",
+    "severity": "P2",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Related-record links lack useful grouping and concise explanations",
+    "page_component": "RelatedRecords / TE11 and GH29 /1363 and390",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/expedition/te11",
+    "viewport_state": "RelatedRecords / TE11 and GH29 /1363 and390",
+    "evidence": [
+      "te11-related-desktop.jpg",
+      "page-inventory.json"
+    ],
+    "observed_problem": "Role labels are accurate but repeated; Catatan yang terhubung / Telusuri hubungan catatan describes the registry rather than a reader goal. Four work entries plus history use similar large hierarchy. Long titles and availability caveats make this section a substantial second catalogue.",
+    "user_impact": "Visitors must decode relationship language and scan several equally emphasized destinations after an already long story.",
+    "proposed_correction": "Group by meaningful reader purpose: Karya terkait, Kegiatan terkait, Dalam Jejak Tursina. Use concise human role descriptions and contextual availability cues. Keep every valid edge reachable; distinguish shared departure from same activity and standards from achievement.",
+    "expected_benefit": "Retains reciprocal discovery while reducing cognitive and vertical load.",
+    "regression_tradeoff": "Do not replace sourced relations with unsourced recommendations or discard additional activities from a multi-linked work.",
+    "owner_approval": "Step6B approval of shared hierarchy/labels.",
+    "success_criteria": "Multi-activity and withdrawal fixtures pass; all valid related targets remain reachable; related section scans by content type/purpose rather than repeated graph labels; no fake parent."
+  },
+  {
+    "id": "UX-08",
+    "severity": "P2",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Jejak homepage fallback repeats itself instead of adding context",
+    "page_component": "InstitutionalHistoryPreview / desktop full and390",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "viewport_state": "InstitutionalHistoryPreview / desktop full and390",
+    "evidence": [
+      "home-desktop-full.jpg",
+      "home-390-full-stitched.png"
+    ],
+    "observed_problem": "The text-only Jejak plate repeats kebersamaan/kegiatan/pendidikan/tradisi already in the adjacent preview, then displays a photo-permission message. The missing photograph is correctly withheld but the replacement does little independent communication.",
+    "user_impact": "The homepage ends with an internal editorial condition and redundant copy rather than a clear institutional-history reason to continue.",
+    "proposed_correction": "Replace duplicate fallback prose with a compact sourced founding/context treatment and one explicit history action; omit optional media-panel structure when no cleared image exists.",
+    "expected_benefit": "Stronger closing rhythm without adding a photograph or claiming complete history.",
+    "regression_tradeoff": "Avoid increasing founding-date repetition across sections; no requirement to clear asset14 just to fill a panel.",
+    "owner_approval": "Step6B composition/copy approval within existing section sequence.",
+    "success_criteria": "No HOLD image; no large empty panel; Jejak purpose and date remain understandable; mobile section is shorter and has one clear next step."
+  },
+  {
+    "id": "UX-09",
+    "severity": "P2",
+    "classification": "strong expert finding",
+    "confidence": "high",
+    "title": "Programme explanation precedes a lengthy route to filters",
+    "page_component": "PD introduction / fields /390 default",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd",
+    "viewport_state": "PD introduction / fields /390 default",
+    "evidence": [
+      "pd-390-harness.jpg",
+      "pd-results-390.jpg"
+    ],
+    "observed_problem": "The first filter begins about2169CSSpx down the390 document; catalogue height is8362px. The existing Lihat catatan kegiatan shortcut correctly jumps to results and preserves educational explanations.",
+    "user_impact": "A returning member who misses the text shortcut scrolls through five field descriptions before finding the record tool.",
+    "proposed_correction": "Preserve introduction/fields and make the existing jump action more scannable, with a compact catalogue/field switch anchor near the page title. Do not duplicate all filters or add sticky UI by default.",
+    "expected_benefit": "First-time education and repeat retrieval can coexist.",
+    "regression_tradeoff": "Not a blocked journey: shortcut already works. Sticky controls could consume scarce mobile height.",
+    "owner_approval": "Step6B small navigation emphasis approval.",
+    "success_criteria": "Results reachable in one obvious action from first screen; reset/status/focus and combined facets stay correct; all five field explanations remain available."
+  },
+  {
+    "id": "UX-10",
+    "severity": "P3",
+    "classification": "design hypothesis",
+    "confidence": "medium",
+    "title": "Opening communicates fellowship better than field practice",
+    "page_component": "IdentityOpening /1363,390,320",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "viewport_state": "IdentityOpening /1363,390,320",
+    "evidence": [
+      "home-desktop-first.jpg",
+      "home-390-first.png",
+      "reference-contact.jpg"
+    ],
+    "observed_problem": "Kawi group image authentically shows collective and campus context; ceiling occupies much of its upper area. The first-screen explanation carries outdoor purpose, while the strongest action photographs arrive later. This is not proof that the approved hero is ineffective.",
+    "user_impact": "Possible opportunity for a more immediate link between the collective and what members learn.",
+    "proposed_correction": "Keep current opening as baseline. Compare one private, bounded alternate image treatment using existing authentic material and the same copy/actions; judge people visibility, purpose and mobile fold. Prefer a small contextual education cue before an untested hero swap.",
+    "expected_benefit": "An evidence-based decision about identity emphasis.",
+    "regression_tradeoff": "TE11 hero could over-identify the institution with one expedition; GH portrait cannot simply fill a landscape slot. New placement/crop approval may be required even for an already cleared asset.",
+    "owner_approval": "Separate owner choice to test an alternate opening/use; no automatic replacement.",
+    "success_criteria": "Both options preserve identity/affiliation/purpose/actions before oversized media; owner compares at1366/390/320; no participant preference claimed without testing."
+  },
+  {
+    "id": "UX-11",
+    "severity": "P3",
+    "classification": "personal aesthetic option",
+    "confidence": "medium",
+    "title": "Homepage transitions can be slightly tighter",
+    "page_component": "Homepage section rhythm /1363 full and390",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "viewport_state": "Homepage section rhythm /1363 full and390",
+    "evidence": [
+      "home-desktop-full.jpg",
+      "home-390-full-stitched.png"
+    ],
+    "observed_problem": "Open programme rows, a photographic feature, green education band and dated ledger are meaningfully different. Some repeated large title/deck/section gaps lengthen an already6735px mobile page, but length alone does not establish poor usability.",
+    "user_impact": "Potentially slower traversal to publications/history; early programme links already mitigate this.",
+    "proposed_correction": "After higher-impact changes, test a modest reduction of redundant internal gaps using existing spacing steps, not a new layout language.",
+    "expected_benefit": "More intentional pacing without losing editorial calm.",
+    "regression_tradeoff": "Over-compression harms reading and field-media emphasis. Avoid a global spacing reduction before inspecting all pages.",
+    "owner_approval": "Owner preference after targeted comparison, not a launch blocker.",
+    "success_criteria": "Section sequence and distinct grammar remain; no clipped text; first-screen clarity unchanged; compare full pages rather than just reduced pixel height."
+  },
+  {
+    "id": "UX-12",
+    "severity": "P2",
+    "classification": "future content responsibility",
+    "confidence": "medium",
+    "title": "Institutional continuity has no verified current-facing layer yet",
+    "page_component": "Homepage / About / public dataset",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "viewport_state": "Homepage / About / public dataset",
+    "evidence": [
+      "home-desktop-full.jpg",
+      "about-desktop-first.jpg"
+    ],
+    "observed_problem": "Historical content is explicitly labelled. There is no verified2026 current activity, recruitment path or public institutional contact in the approved dataset. This is a content/authority gap, not a missing backend or licence to invent a current feed.",
+    "user_impact": "Prospective participants learn what Tursina does but cannot use this prototype to establish current participation arrangements.",
+    "proposed_correction": "Keep archive wording honest. Ask the owner later for one verified current institutional orientation/contact or approved current notice, through normal editorial review. No broad archive project or fabricated recruitment CTA.",
+    "expected_benefit": "A future living-institution layer grounded in current facts.",
+    "regression_tradeoff": "Requires current content authorization, maintenance ownership and freshness; outside read-only audit and not necessary to complete its frontend plan.",
+    "owner_approval": "Separate item-specific content decision; no current details requested as a blocker to Step6B.",
+    "success_criteria": "When supplied, current info has source/date/authority and explicit review responsibility; historical records remain historical."
+  }
+]

@@ -1,0 +1,937 @@
+{
+  "refinement": {
+    "status": "PASS",
+    "base": "http://127.0.0.1:4193/mpa-trs-web/",
+    "browser": "153.0.8010.0",
+    "results": [
+      {
+        "width": 1366,
+        "jumpBottom": 552.5,
+        "history": 8,
+        "textSpacing": {
+          "/": true,
+          "/program/pd": true,
+          "/publication/sacred-gatekeeper": true,
+          "/jejak": true,
+          "/members": true
+        },
+        "forcedColors": true,
+        "reducedMotion": true,
+        "focus": {
+          "style": "solid",
+          "width": "3px",
+          "height": 48
+        },
+        "footerKeyboard": true,
+        "relatedGrouping": true,
+        "publicationExpectations": true
+      },
+      {
+        "width": 1024,
+        "jumpBottom": 532.5,
+        "history": 8,
+        "textSpacing": {
+          "/": true,
+          "/program/pd": true,
+          "/publication/sacred-gatekeeper": true,
+          "/jejak": true,
+          "/members": true
+        },
+        "forcedColors": true,
+        "reducedMotion": true,
+        "focus": {
+          "style": "solid",
+          "width": "3px",
+          "height": 48
+        },
+        "footerKeyboard": true,
+        "relatedGrouping": true,
+        "publicationExpectations": true
+      },
+      {
+        "width": 768,
+        "jumpBottom": 481.90625,
+        "history": 8,
+        "textSpacing": {
+          "/": true,
+          "/program/pd": true,
+          "/publication/sacred-gatekeeper": true,
+          "/jejak": true,
+          "/members": true
+        },
+        "forcedColors": true,
+        "reducedMotion": true,
+        "focus": {
+          "style": "solid",
+          "width": "3px",
+          "height": 48
+        },
+        "footerKeyboard": true,
+        "relatedGrouping": true,
+        "publicationExpectations": true
+      },
+      {
+        "width": 390,
+        "jumpBottom": 581.90625,
+        "history": 8,
+        "textSpacing": {
+          "/": true,
+          "/program/pd": true,
+          "/publication/sacred-gatekeeper": true,
+          "/jejak": true,
+          "/members": true
+        },
+        "forcedColors": true,
+        "reducedMotion": true,
+        "focus": {
+          "style": "solid",
+          "width": "3px",
+          "height": 48
+        },
+        "footerKeyboard": true,
+        "relatedGrouping": true,
+        "publicationExpectations": true
+      },
+      {
+        "width": 320,
+        "jumpBottom": 662.1875,
+        "history": 8,
+        "textSpacing": {
+          "/": true,
+          "/program/pd": true,
+          "/publication/sacred-gatekeeper": true,
+          "/jejak": true,
+          "/members": true
+        },
+        "forcedColors": true,
+        "reducedMotion": true,
+        "focus": {
+          "style": "solid",
+          "width": "3px",
+          "height": 48
+        },
+        "footerKeyboard": true,
+        "relatedGrouping": true,
+        "publicationExpectations": true
+      }
+    ],
+    "errors": [],
+    "failed": [],
+    "limitations": [
+      "CSS viewport tests, not physical devices or screen reader",
+      "No supported successful native browser200% zoom control; narrow reflow and text-spacing measured separately"
+    ]
+  },
+  "renderMatrix": [
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 4694,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "before",
+      "route": "/expedition/te11",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 6450,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "before",
+      "route": "/program/pd",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 5077,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/activity/gh29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 4115,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/rc29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 3772,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/batafia30",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 1855,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/publications",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 3308,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 1676,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/jejak",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 4582,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4835,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "before",
+      "route": "/expedition/te11",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 6662,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "before",
+      "route": "/program/pd",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 6037,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/activity/gh29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4313,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/rc29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 3970,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/batafia30",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1897,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/publications",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 3408,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1764,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/jejak",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4672,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 5739,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "before",
+      "route": "/expedition/te11",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 6102,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "before",
+      "route": "/program/pd",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 6258,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/activity/gh29",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3861,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/rc29",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3550,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/batafia30",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1718,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/publications",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3128,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1867,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/jejak",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 4274,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6606,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "before",
+      "route": "/expedition/te11",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 7972,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "before",
+      "route": "/program/pd",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 8248,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/activity/gh29",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 5343,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/rc29",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4975,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/batafia30",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2416,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/publications",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4678,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2280,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/jejak",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6056,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 6971,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "before",
+      "route": "/expedition/te11",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 8868,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "before",
+      "route": "/program/pd",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 8951,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/activity/gh29",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 5945,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/rc29",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 5449,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/activity/batafia30",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2664,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "before",
+      "route": "/publications",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 5019,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2525,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "before",
+      "route": "/jejak",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 6568,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 4597,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "after",
+      "route": "/expedition/te11",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 6139,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "after",
+      "route": "/program/pd",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 4874,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/activity/gh29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 3855,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/rc29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 3613,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/batafia30",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 1737,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/publications",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 3279,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 1676,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/jejak",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 4760,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4932,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "after",
+      "route": "/expedition/te11",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 6245,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "after",
+      "route": "/program/pd",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 7427,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/activity/gh29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4289,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/rc29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4044,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/batafia30",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1726,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/publications",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 3379,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 1764,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/jejak",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "height": 4875,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 5655,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "after",
+      "route": "/expedition/te11",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 5627,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "after",
+      "route": "/program/pd",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 6370,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/activity/gh29",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3630,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/rc29",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3413,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/batafia30",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1560,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/publications",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 3078,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 1867,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/jejak",
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 4639,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6470,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "after",
+      "route": "/expedition/te11",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6997,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "after",
+      "route": "/program/pd",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 8145,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/activity/gh29",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4921,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/rc29",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4656,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/batafia30",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2199,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/publications",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4678,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2280,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/jejak",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6506,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 6837,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "imagesLoaded": 4
+    },
+    {
+      "stage": "after",
+      "route": "/expedition/te11",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 7832,
+      "title": "Bukit Raya",
+      "imagesLoaded": 2
+    },
+    {
+      "stage": "after",
+      "route": "/program/pd",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 8751,
+      "title": "Pemantapan Divisi",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/activity/gh29",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 5481,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/rc29",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 5037,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/activity/batafia30",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2412,
+      "title": "BATAFIA XXX — diklat lapang",
+      "imagesLoaded": 1
+    },
+    {
+      "stage": "after",
+      "route": "/publications",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 5014,
+      "title": "Pengalaman menjadi bacaan.",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/publication/sacred-gatekeeper",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 2525,
+      "title": "The Sacred Gatekeeper",
+      "imagesLoaded": 0
+    },
+    {
+      "stage": "after",
+      "route": "/jejak",
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 7068,
+      "title": "Pengalaman yang diteruskan.",
+      "imagesLoaded": 0
+    }
+  ]
+}
