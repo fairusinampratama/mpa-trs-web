@@ -64,7 +64,7 @@ function HomePhotoEnlargement({asset,role}:{asset:DocumentaryAsset;role:MediaRol
   };
  },[open]);
  return <><button type="button" className="ds-enlarge-control" ref={trigger} aria-haspopup="dialog" onClick={()=>{setFailed(false);setOpen(true);}}>Perbesar foto {role==='gh'?'Gunung Hutan':'Panjat Tebing'}<span aria-hidden="true"> ↗</span></button>
-  <dialog className="ds-photo-dialog" ref={modal} aria-labelledby={titleId} onCancel={e=>{e.preventDefault();setOpen(false);}} onClose={()=>setOpen(false)} onKeyDown={e=>{if(e.key==='Tab'&&!e.ctrlKey&&!e.altKey&&!e.metaKey){e.preventDefault();closeControl.current?.focus();}}}>
+  <dialog className="ds-photo-dialog" ref={modal} aria-labelledby={titleId} onCancel={e=>{e.preventDefault();setOpen(false);}} onKeyDown={e=>{if(e.key==='Tab'&&!e.ctrlKey&&!e.altKey&&!e.metaKey){e.preventDefault();closeControl.current?.focus();}}}>
    {open&&<><header className="ds-photo-toolbar"><h2 id={titleId} className="ds-content-title">{title}</h2><button autoFocus ref={closeControl} className="button button-secondary" type="button" onClick={()=>setOpen(false)}>Tutup foto</button></header>
    <figure className="ds-photo-fullframe">{failed?<p role="status">Foto tidak termuat. Tutup dan buka kembali untuk mencoba lagi.</p>:<img src={asset.src} srcSet={asset.srcSet} sizes={role==='gh'?'(max-width:600px) calc(100vw - 64px), 400px':'(max-width:600px) calc(100vw - 64px), 530px'} width={asset.width} height={asset.height} alt={asset.alt} decoding="async" onError={()=>setFailed(true)}/>}<MediaCaption credit={asset.credit}>{asset.caption}</MediaCaption></figure></>}
   </dialog></>;

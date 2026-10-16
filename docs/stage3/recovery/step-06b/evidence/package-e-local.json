@@ -235,6 +235,7 @@
     "full frame ratio/alt/caption/credit",
     "forced colors/reduced motion/text-spacing",
     "no viewer on activity/TE/lab",
-    "failed enlarged request preserves credit, close and focus return"
+    "failed enlarged request preserves credit, close and focus return",
+    "rapid close/reopen remains open"
   ]
 }
