@@ -32,7 +32,7 @@ export function useDocumentaryAsset(role: MediaRole, recordId?: string, placemen
     alt: media.alt, caption: media.caption, credit: media.credit, assetId: media.id, useId: media.useId };
 }
 export function TextLink({ href, children, inverse = false }: { href: string; children: ReactNode; inverse?: boolean }) {
-  return <a className={`ds-link${inverse ? ' ds-inverse' : ''}`} href={href}><span>{children}</span><span aria-hidden="true">→</span></a>;
+  return <a className={`ds-link${inverse ? ' ds-inverse' : ''}`} href={href}><span>{children}</span></a>;
 }
 export function ActionLink({ href, children, secondary = false }: { href: string; children: ReactNode; secondary?: boolean }) {
   return <a href={href} className={`button button-${secondary ? 'secondary' : 'primary'}`}>{children}</a>;
