@@ -43,3 +43,7 @@ No stock photography or invented official logo is used in this first laboratory.
 Typographic covers use 16:9 on rich catalogue cards and a deliberately taller featured home cover. They are labelled as typographic, not photographs. Actual eventual photograph crops retain their separate source/rights review and 4:3/16:9 rules. Sparse basic records omit covers entirely; no forced empty media section.
 
 Card/publication title anchors use block hit areas so multiline text remains reliably clickable. Public skip link added. Review controls are development chrome, not proposed production navigation. Directions remain **pending owner selection**. Rights-held media positions deliberately display their state, so approval of a composition does not authorize the associated photograph.
+
+## Tailwind-only implementation — 20 October 2026
+
+The owner-authorized migration supersedes earlier CSS conventions. Use native Tailwind utilities and shared React components. Only the Tailwind import, theme tokens and local font declarations remain in CSS. Existing 1080px navigation and 1200px wide-layout thresholds are centralized as `nav` and `wide` breakpoints alongside the defaults. See [migration notes](prototype/TAILWIND.md).

@@ -1,7 +1,84 @@
-@import 'tailwindcss';
-@import './legacy-styles.css';
-@import './foundation.css';
-@import './expedition.css';
-@import './activity.css';
+@import "tailwindcss";
 
-@import './institutional.css';
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("./fonts/source-sans-3-latin.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("./fonts/source-serif-4-latin.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-leaf: #eaede5;
+  --text-display: clamp(2.25rem, 5vw, 4.5rem);
+  --text-display--line-height: 1.06;
+  --text-heading: clamp(1.8rem, 3vw, 2.7rem);
+  --text-heading--line-height: 1.15;
+  --container-page: 76rem;
+  --text-edition: clamp(7rem, 14vw, 12rem);
+  --text-edition--line-height: 0.9;
+  --color-page: #f6f4ee;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eaede5;
+  --color-ink: #20352c;
+  --color-muted: #536358;
+  --color-primary: #214a39;
+  --color-primary-hover: #173b2b;
+  --color-primary-active: #102d21;
+  --color-blue: #244c67;
+  --color-gold: #ab7d27;
+  --color-border: #ccd3c8;
+  --color-control-border: #758575;
+  --color-focus: #244c67;
+  --color-success: #276249;
+  --color-success-bg: #e7f1e8;
+  --color-warning: #80551b;
+  --color-warning-bg: #fbf0d8;
+  --color-error: #a43432;
+  --color-error-bg: #fbeae7;
+  --color-info: #244c67;
+  --color-info-bg: #e6edf3;
+  --color-disabled-ink: #536358;
+  --color-disabled-bg: #e2e7dd;
+  --color-inverse: #f6f4ee;
+  --color-focus-inverse: #f6f4ee;
+  --color-paper: #f6f4ee;
+  --color-forest: #214a39;
+  --color-line: #ccd3c8;
+  --color-river: #244c67;
+  --color-danger: #a43432;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+  --font-editorial: "Source Serif 4", Georgia, serif;
+  --radius-control: 2px;
+  --radius-card: 2px;
+  --container-institution: 1206px;
+  --breakpoint-nav: 67.5rem;
+  --breakpoint-wide: 75rem;
+  --font-review: "Segoe UI", Arial, sans-serif;
+  --color-review-page: #e8eae5;
+  --color-review-ink: #20372e;
+  --color-review-surface: #fffef9;
+  --color-review-border: #d6ddd2;
+  --color-review-primary: #234838;
+  --color-review-frame: #f5f3ec;
+  --color-atlas-paper: #f0f3ee;
+  --color-atlas-surface: #fcfdf8;
+  --color-atlas-ink: #173542;
+  --color-atlas-muted: #52676c;
+  --color-atlas-line: #cbd7d3;
+  --color-atlas-forest: #173f50;
+  --color-atlas-leaf: #d7e9ab;
+  --color-atlas-gold: #c3a356;
+  --color-atlas-river: #397557;
+  --shadow-navigation: 0 12px 28px rgb(32 53 44 / 0.12);
+  --shadow-review: 0 4px 24px #20372e22;
+  --shadow-media-plate: inset 0 0 0 1px
+    color-mix(in srgb, var(--color-leaf) 35%, transparent);
+}

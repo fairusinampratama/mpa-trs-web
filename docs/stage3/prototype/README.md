@@ -2,6 +2,10 @@
 
 Isolated frontend: React 19.3.0, TypeScript 7.0.2, Vite 8.3.4 and Tailwind CSS 4.3.3. Locked dependencies; no Laravel backend or hosting dependency. Source branch: `stage3/interactive-prototype` in the existing public repository. Native GitHub Pages deployment from this branch is authorized; merge to `main` and production deployment are not.
 
+## Tailwind-only migration — 20 October 2026
+
+The prototype now uses Tailwind utilities throughout. The sole stylesheet contains only the Tailwind import, theme tokens and local fonts. Custom CSS and inline styling are prohibited and checked during every build. See [migration notes](TAILWIND.md). The owner authorized committing and pushing this migration to the Stage 3 prototype branch on 20 October 2026; this does not authorize a merge or production change.
+
 ## Resume
 
 Read root AGENTS.md and `docs/stage3/approval-record.md`, `design-system.md`, `checkpoint-01.md`. From this directory: `npm ci`, `npm run build`, `npm run dev`. Do not use the production application's package manifest.

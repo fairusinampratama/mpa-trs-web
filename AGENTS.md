@@ -1,5 +1,16 @@
 # MPA-TRS operating rules
 
+## Tailwind-only prototype styling — 19 October 2026
+
+Owner authorized a complete local styling migration of `docs/stage3/prototype/` while preserving the current design, routes, media scope and behavior. This supersedes earlier styling implementation conventions for this refactor.
+
+- Use Tailwind utilities in JSX/HTML and shared React components. No authored CSS rules/selectors, CSS modules, `@apply`, inline `style` attributes, CSS-in-JS or JavaScript style mutation.
+- The sole stylesheet is `src/theme.css`: Tailwind import, centralized `@theme` tokens and local `@font-face` declarations only.
+- Tailwind responsive/state/child variants are allowed. Semantic `data-ui` slots identify shared component parts and test targets; they must not acquire standalone CSS rules.
+- Preserve the existing local navbar refinements, accessibility, responsive layouts, documentary media restrictions and prototype-only data.
+- Owner authorized committing and pushing this refactor to `stage3/interactive-prototype` on 20 October 2026. Do not merge or change production without separate approval.
+
+
 ## Stage 3 approved scope — 13 October 2026
 
 Owner approved A2 v1.0, Stage 3 Plan v2 and Technical Delivery Amendment T1 on 13 October 2026. Read `docs/stage3/approval-record.md`, `docs/stage3/design-system.md`, `docs/stage3/checkpoint-01.md` and `docs/stage3/prototype/README.md` for current frontend work. These narrowly supersede historical no-Stage-2/framework-change statements below for the isolated Stage 3 prototype only; production restrictions remain.

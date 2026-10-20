@@ -68,7 +68,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
         .waitFor();
       assert(p.url().endsWith("/expedition/data-proof-te"));
       assert.equal(
-        await p.locator("main figure,.te-journey,.ds-publications").count(),
+        await p.locator("main figure,[data-ui~=te-journey],[data-ui~=publications]").count(),
         0,
       );
       await p.reload();
@@ -93,7 +93,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
       assert.equal(
         await p
           .locator(
-            "main figure,.activity-chapter,.activity-learning,.ds-publications",
+            "main figure,[data-ui~=activity-chapter],[data-ui~=activity-learning],[data-ui~=publications]",
           )
           .count(),
         0,
@@ -115,7 +115,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || "playwright");
       assert.equal(
         await p
           .locator(
-            ".work-related-activity,main a[download],main img,.te-story-section",
+            "[data-ui~=work-related-activity],main a[download],main img,[data-ui~=te-story-section]",
           )
           .count(),
         0,
