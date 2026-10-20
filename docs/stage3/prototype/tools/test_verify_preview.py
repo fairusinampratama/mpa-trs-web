@@ -101,3 +101,19 @@ class PreviewBoundaryTests(unittest.TestCase):
     def test_private_qa_marker_rejected(self):
         (self.root/'assets/app-hash.js').write_text('PRIVATE QA CREDIT')
         with self.assertRaises(ValueError): verify(self.root,SHA,{})
+
+    def test_accepts_exact_owner_supplied_logo(self):
+        data = (Path(__file__).parent.parent/'src/assets/tursina-logo.png').read_bytes()
+        (self.root/'assets/tursina-logo-test.png').write_bytes(data)
+        self.assertEqual(len(verify(self.root,SHA)),6)
+
+    def test_rejects_substituted_logo(self):
+        data = bytearray((Path(__file__).parent.parent/'src/assets/tursina-logo.png').read_bytes())
+        data[-1] ^= 1
+        (self.root/'assets/tursina-logo-test.png').write_bytes(data)
+        with self.assertRaisesRegex(ValueError,'identity asset'): verify(self.root,SHA)
+
+    def test_rejects_unlisted_png_even_with_logo_bytes(self):
+        data = (Path(__file__).parent.parent/'src/assets/tursina-logo.png').read_bytes()
+        (self.root/'assets/other-logo.png').write_bytes(data)
+        with self.assertRaisesRegex(ValueError,'Unexpected public file'): verify(self.root,SHA)

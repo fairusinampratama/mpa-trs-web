@@ -65,3 +65,11 @@ The issue was repeated across the homepage rather than isolated to one section: 
 ### Review gate
 
 Review the complete homepage flow, not only its first screen. Decide whether the new editorial rhythm is accepted, needs a targeted adjustment, or should be reverted before supporting-page restyling begins.
+
+## Pages release repair — 20 October 2026
+
+Owner requested repair and cloud-browser verification after the two local-refinement commits. The builds succeeded, but Pages runs 39142729880 and 39345117530 rejected the newly supplied header PNG as an unexpected public artifact; nothing was uploaded or deployed.
+
+The artifact validator now accepts only the `assets/tursina-logo-<build hash>.png` naming pattern with the exact supplied PNG signature, 669449-byte length and SHA-256 `c6a56d43ea40d0372ad0128752a132d489383b0fa734c6722ab52acc060e6eca`. No general image allowance, photography permission, workflow or application design changes. Tests accept the exact logo and reject a byte-substituted logo and an unlisted PNG even containing the same bytes.
+
+Validation before publication: locked dependency install, all 33 Python contract/policy/boundary tests, Tailwind-only policy, TypeScript/Vite build and the real 26-file compiled artifact passed. The existing local Chromium executable crashed at startup (SIGSEGV) for the homepage and enlargement browser suites; those suites did not run, and no passing result is claimed. Hosted cloud Chrome verification follows the successful Pages deployment. Vite retains its existing bundle-size advisory; the unchanged logo is approximately 669 kB.

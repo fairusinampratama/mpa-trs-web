@@ -10,6 +10,9 @@ from functools import lru_cache
 
 REQUIRED = {'index.html', 'responsive-review.html', 'version.json', '.nojekyll'}
 ASSET = re.compile(r'assets/[A-Za-z0-9_-]+\.(?:js|css)')
+IDENTITY = re.compile(r'assets/tursina-logo-[A-Za-z0-9_-]+\.png')
+# Owner-supplied header rendering; exact bytes only, not a general PNG permission.
+APPROVED_IDENTITY_SHA256 = 'c6a56d43ea40d0372ad0128752a132d489383b0fa734c6722ab52acc060e6eca'
 FONT = re.compile(r'assets/source-(?:sans-3|serif-4)-latin-[A-Za-z0-9_-]+\.woff2')
 # Only the two exact approved official font builds, never arbitrary binary/media.
 APPROVED_FONT_SHA256 = {
@@ -59,11 +62,16 @@ def verify(directory, commit, media_manifest=None):
         if path.is_dir():
             continue
         relative = path.relative_to(root).as_posix()
-        if relative not in REQUIRED and not ASSET.fullmatch(relative) and not FONT.fullmatch(relative) and relative not in media:
+        if relative not in REQUIRED and not ASSET.fullmatch(relative) and not FONT.fullmatch(relative) and not IDENTITY.fullmatch(relative) and relative not in media:
             raise ValueError('Unexpected public file: ' + relative)
         data = path.read_bytes()
         if len(data) > 2_000_000:
             raise ValueError('Oversize public file')
+        if IDENTITY.fullmatch(relative):
+            if len(data) != 669449 or data[:8] != b'\x89PNG\r\n\x1a\n' or hashlib.sha256(data).hexdigest() != APPROVED_IDENTITY_SHA256:
+                raise ValueError('Unapproved identity asset: ' + relative)
+            files[relative] = data
+            continue
         if relative in media:
             expected = media[relative]
             if not re.fullmatch(r'media/[a-z0-9-]+\.webp', relative) or len(data) != expected['bytes'] or hashlib.sha256(data).hexdigest() != expected['sha256']:
