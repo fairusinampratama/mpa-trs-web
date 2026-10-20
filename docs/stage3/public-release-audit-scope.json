@@ -1,0 +1,1512 @@
+{
+  "date": "2026-10-14",
+  "main": "ed13b2197d7908e93776cf66dce7eeb8b4b2df1f",
+  "stage3": "56d915acc7042533b59ac40b3487e4fbee4608fe",
+  "reachable_commits": 45,
+  "unique_text_blobs": 213,
+  "unique_image_blobs": 5,
+  "truncated_trees": 0,
+  "regex_hits": [
+    {
+      "path": "docs/stage3/prototype/src/Lab.tsx",
+      "blob": "44ad983b0e27b0e79fd1cc534f56ca7967f2f173",
+      "line": 8,
+      "rule": "quoted_assignment"
+    },
+    {
+      "path": "docs/stage3/prototype/src/main.tsx",
+      "blob": "2d827fb3ac515f5d7a633184bf8b7fac6f407ee7",
+      "line": 10,
+      "rule": "quoted_assignment"
+    },
+    {
+      "path": "prototype/src/main.tsx",
+      "blob": "b00e3905b4aa0d7de1a62df9932fd022316af983",
+      "line": 10,
+      "rule": "quoted_assignment"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "0695a2b90768c78242f1722abeaf6797d2724837",
+      "tree": "82894280c40ec3c7e4278d2a5a4418b832276325"
+    },
+    {
+      "sha": "7b765181538a4f65e7d5ced2d77bd0fc56ddfb65",
+      "tree": "d3fafbd20011811e758bb710c939fe2d0beab247"
+    },
+    {
+      "sha": "d7ac8b0d44dae9a0e7a9e04b3822a7097e5b76bf",
+      "tree": "d3fafbd20011811e758bb710c939fe2d0beab247"
+    },
+    {
+      "sha": "1c6bf4fee8d0e2d5c5cbf0346eff6be936793a24",
+      "tree": "9b02723671911d929f00ece7200f92f178504083"
+    },
+    {
+      "sha": "f980c20ecc521e5cd824e456691e0c1cefe209b2",
+      "tree": "4cb01472b127feca070c28230f8c69084ce72c6e"
+    },
+    {
+      "sha": "a66c89f8d24132d4cd454bd82cf65bcb507e1bc6",
+      "tree": "4cb01472b127feca070c28230f8c69084ce72c6e"
+    },
+    {
+      "sha": "9520781a3ec02dc352db5cd002e323b9c26307c9",
+      "tree": "b7c984de569dc989d9ea2eeb3748cc33e544bf42"
+    },
+    {
+      "sha": "936546a8069bea821100f055721ff4ed9d8e8215",
+      "tree": "a5a2ba00413a65b73a61f68f56ddd8da2ffa5ef7"
+    },
+    {
+      "sha": "11d1862dbfe827377f9119465da2966f392d2bc1",
+      "tree": "94ce8c736f13535773b74fe3910ddb213a5691ff"
+    },
+    {
+      "sha": "1fbfe75f7eee49ad75fdc152bdabd8e61c54a9a5",
+      "tree": "8fa21c0d6774c816bb8a8f026db0680a7b6f39ab"
+    },
+    {
+      "sha": "bbde57b9f4bc38eef8d2c7633a2953f3b872bb66",
+      "tree": "94ce8c736f13535773b74fe3910ddb213a5691ff"
+    },
+    {
+      "sha": "e0e90a505de39c5c3d82b8ac5d58ceb1161f6b61",
+      "tree": "d1bf488f069cb81d2ee0cdcba4c63181997db9b1"
+    },
+    {
+      "sha": "f54c09b836fd59865e56ba9fb562d31a7290d524",
+      "tree": "786b6de7bd2f7e62ab26ab5118e6c275aa3710f7"
+    },
+    {
+      "sha": "e197e2b401b80b60a8de2bcbf91063b364cddab6",
+      "tree": "8fa21c0d6774c816bb8a8f026db0680a7b6f39ab"
+    },
+    {
+      "sha": "fcef4f76f77e30d383bd59c33af84292392d550f",
+      "tree": "2545a1d81db8213ede765833b23ab8c8488095c7"
+    },
+    {
+      "sha": "53c10728e7042b88b5ada047ad2d71e78eb46540",
+      "tree": "82894280c40ec3c7e4278d2a5a4418b832276325"
+    },
+    {
+      "sha": "ed13b2197d7908e93776cf66dce7eeb8b4b2df1f",
+      "tree": "b9fbf08a5b063dad82e6f76d17313de06c7b64aa"
+    },
+    {
+      "sha": "888339f48c778b1892532f7a14b346bcca40e00d",
+      "tree": "b9fbf08a5b063dad82e6f76d17313de06c7b64aa"
+    },
+    {
+      "sha": "dccfb96e270955bae6b247f306085425f36d98d3",
+      "tree": "d61c1e2cb07085ec0ae1c0bd905e55e40d1c72f3"
+    },
+    {
+      "sha": "527f51686a86ce5e6ce2ca474ed444c922113777",
+      "tree": "d61c1e2cb07085ec0ae1c0bd905e55e40d1c72f3"
+    },
+    {
+      "sha": "64132b6dba80c5b1522b9262f00524ccde181ed9",
+      "tree": "f0b64985f9c98e622407cc861a47e2e9e3a4870d"
+    },
+    {
+      "sha": "028c4b15b86243835ae2d7894427587cca835323",
+      "tree": "f0b64985f9c98e622407cc861a47e2e9e3a4870d"
+    },
+    {
+      "sha": "7bc714cc0ac0de59e4b0e6f7cf900dcb334c1d86",
+      "tree": "a18ca44944d42e071db638b8e2620f46e943cc43"
+    },
+    {
+      "sha": "623bb0a024c3a72454a1f9edaa935c0b1c0e095c",
+      "tree": "b6201f318459dded293f348be560c3291ec586ff"
+    },
+    {
+      "sha": "21347df82a8a455834588371cedf9d1b5c9a51d9",
+      "tree": "2d596feefeefb1d6ef5d8dfbd3c18821cb012d56"
+    },
+    {
+      "sha": "51ed3fdfdc1001073dbd7ea085049acbe461ddbd",
+      "tree": "095c9e40e249871d2bd788e9c8d4908ec7a7400d"
+    },
+    {
+      "sha": "0a42a88e244686e109ef1617e12baeff4b428532",
+      "tree": "a5a2ba00413a65b73a61f68f56ddd8da2ffa5ef7"
+    },
+    {
+      "sha": "826ba21e327047006ff93abe0c73a37e0ca364fd",
+      "tree": "dc79fc86cb15c7bf7465487aa7c766e5a3d2b05c"
+    },
+    {
+      "sha": "b76876e6ca5944feb2365d0347798004f658962d",
+      "tree": "d63015ff74a96c7225197d032e0a152c29d8c05c"
+    },
+    {
+      "sha": "1e06f4c25b20befcfd0694753899534605409441",
+      "tree": "43dd242114cfb0d491f7c542c1afc4857b8bf2a2"
+    },
+    {
+      "sha": "1777e1de1e2986b8c6a149aaef39bdca1f424313",
+      "tree": "4c50cd4d7e46d074558bc29cdea608dc68199da0"
+    },
+    {
+      "sha": "c235f71cd69ac7f86e3c20eaadc0797811e481f4",
+      "tree": "e5c6399e2b02dc40578bbde3aa85bcd4543dab88"
+    },
+    {
+      "sha": "75fa1a9cf5c191bbe8a5e3f67183c3e9ab4ef6c0",
+      "tree": "2b4f93b0b365507189ef957f3f89cc3a23991ecf"
+    },
+    {
+      "sha": "25c6dfa3ca2de8a293331b54b0d40faf709ad3a6",
+      "tree": "620dda3a157050ee4757d1854f8ab5c0094dbde7"
+    },
+    {
+      "sha": "a4373e3d301bae86bd8b7f30d4756d2d055ed96e",
+      "tree": "013b617bc982f33c5954cb658cf8e1d6a13f0c7b"
+    },
+    {
+      "sha": "dc5d54bbf02634b8ff8aaff8b9b9be31d4013257",
+      "tree": "1b0e67c25eaafacf5d0b9ac72654d9df58eebb7b"
+    },
+    {
+      "sha": "56d915acc7042533b59ac40b3487e4fbee4608fe",
+      "tree": "0bdaba1438881c35c3fee54921401839c30f1833"
+    },
+    {
+      "sha": "c76f6af67b594c7c18638e6cd57969c0d88925a9",
+      "tree": "0d08693bf5b063d56941deecff9643628e8a8069"
+    },
+    {
+      "sha": "1aae1992d0e429b36799af445645beb41c1471c9",
+      "tree": "d9ae5521b64209351de8b8b508c095e62f862b22"
+    },
+    {
+      "sha": "fa7c698c61c96eaec4886d2d8448cd123ea43bd8",
+      "tree": "be0b3154c06edf2e6ada4e4c8978c7e1ac48961a"
+    },
+    {
+      "sha": "508b332096ad04e122b85f635e222ac29f033626",
+      "tree": "e60b5ec420cd663be817ce45bd97d90dd668778c"
+    },
+    {
+      "sha": "48ede58237394bfc42c2cbc124713073acdb4698",
+      "tree": "1a89aa3ef09d064237d9e18ca9ebdf7b0bc77034"
+    },
+    {
+      "sha": "d8ca501a1c475ff4432560520d746624d554f2f9",
+      "tree": "0bdaba1438881c35c3fee54921401839c30f1833"
+    },
+    {
+      "sha": "6950babb782b3bba473822c4c9703a1c2c9059fe",
+      "tree": "013b617bc982f33c5954cb658cf8e1d6a13f0c7b"
+    },
+    {
+      "sha": "36e378496778b2926153d353979d9134592108c5",
+      "tree": "43dd242114cfb0d491f7c542c1afc4857b8bf2a2"
+    }
+  ],
+  "blobs": [
+    {
+      "sha": "b01751c9cbc750b10582ed7dacc84daf3e5f4d19",
+      "paths": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    {
+      "sha": "ebd3c0834dcd90d1e52c93f95ed35f6e7e577408",
+      "paths": [
+        ".github/workflows/package-release.yml"
+      ]
+    },
+    {
+      "sha": "01f4e3dee68f913cfff02688b96277b6d4c1f139",
+      "paths": [
+        ".gitignore"
+      ]
+    },
+    {
+      "sha": "c0984f766f653297e8c269a15671a7d5eb9e46e8",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "7aad0311d49f9f99a1ed493588cb4cfb3f6b56ba",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "sha": "5a628145e60b11a1e1b040760880ee04958b1a43",
+      "paths": [
+        "deployment-probe/.htaccess"
+      ]
+    },
+    {
+      "sha": "f34c52206a13ecc69b475fb919f8d1dc6b548e2d",
+      "paths": [
+        "deployment-probe/index.html"
+      ]
+    },
+    {
+      "sha": "af8ecfcbf89e8d0a66294b9092cc91e5db51e0d4",
+      "paths": [
+        "deployment-probe/probe.css"
+      ]
+    },
+    {
+      "sha": "1f53798bb4fe33c86020be7f10c44f29486fd190",
+      "paths": [
+        "deployment-probe/robots.txt"
+      ]
+    },
+    {
+      "sha": "aea6ae67ccfacf8ba6330e7fd687397f723bbe81",
+      "paths": [
+        "docs/infrastructure/deployment.md"
+      ]
+    },
+    {
+      "sha": "26fde5d43a873d3bbf80bed2d99104dd28f6d32b",
+      "paths": [
+        "docs/infrastructure/hosting-baseline.md"
+      ]
+    },
+    {
+      "sha": "9e822e599a4a5331ff411c7740ce94d7c1070515",
+      "paths": [
+        "docs/infrastructure/phase3-implementation.md"
+      ]
+    },
+    {
+      "sha": "103a80e625b690eaee55dfec6c1eea4726618e88",
+      "paths": [
+        "docs/infrastructure/recovery.md"
+      ]
+    },
+    {
+      "sha": "2f44f9ad89760358f9589cc63064da6d22715478",
+      "paths": [
+        "scripts/deployment/release.py"
+      ]
+    },
+    {
+      "sha": "9388b26b81dd871b984d8acc3b39986934a6da15",
+      "paths": [
+        "tests/deployment/test_release.py"
+      ]
+    },
+    {
+      "sha": "49fe81da4385988fee37403be77a7ebf54ddc5c8",
+      "paths": [
+        "docs/infrastructure/phase3-implementation.md"
+      ]
+    },
+    {
+      "sha": "21f84be8a1dbb5ef4f1d69553c13e79b3715edb3",
+      "paths": [
+        "docs/infrastructure/phase3-implementation.md"
+      ]
+    },
+    {
+      "sha": "36f4f004fd1658b247d49007a15644430846608a",
+      "paths": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    {
+      "sha": "69493b6ffbe39687179fab0be931dfe7aea54626",
+      "paths": [
+        ".github/workflows/package-release.yml"
+      ]
+    },
+    {
+      "sha": "0484fe14e9d2cb4300ac393e5a5eed7496bfcc17",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "6c6bd30a03dad2872e2c53f38655de60c27a1f0f",
+      "paths": [
+        "docs/infrastructure/deployment.md"
+      ]
+    },
+    {
+      "sha": "778655aa6bdd7c2e8a9e17b30205a0573fca6b5b",
+      "paths": [
+        "docs/infrastructure/phase3-implementation.md"
+      ]
+    },
+    {
+      "sha": "71398a27c985dae9216c21cec19d6c8d15776561",
+      "paths": [
+        "docs/infrastructure/recovery.md"
+      ]
+    },
+    {
+      "sha": "40f7a1e29836d57d394cef5416dea49ccd332c08",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "sha": "dd13362a695586eac88125b66690fb8e5c4057e8",
+      "paths": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    {
+      "sha": "deaba7dda6dcf8bec5087af0c8bf6aa63efe86fe",
+      "paths": [
+        ".github/workflows/ftps-discovery.yml"
+      ]
+    },
+    {
+      "sha": "4c04165d6d0b48c964f1fe4e500708a38f5efb29",
+      "paths": [
+        ".github/workflows/ftps-private-probe.yml"
+      ]
+    },
+    {
+      "sha": "f3bb36b25c353ec81c2fa056980deaf85184dd0f",
+      "paths": [
+        ".github/workflows/package-application.yml"
+      ]
+    },
+    {
+      "sha": "1dd22599b4570368168d46f9b5cfea4e63da5100",
+      "paths": [
+        ".github/workflows/package-release.yml"
+      ]
+    },
+    {
+      "sha": "ae3e12dcfe817f30cea5c3e207247efba04c6bdd",
+      "paths": [
+        ".gitignore"
+      ]
+    },
+    {
+      "sha": "42b8f7fb2b911ca73f25aa287df8edb46ed9f385",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "357b365ce667f8c37fb8c22e7e2b816f058db5ea",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "sha": "caf00e9504ca988af0ce1d629e5b52b20fea3ef4",
+      "paths": [
+        "application/.editorconfig"
+      ]
+    },
+    {
+      "sha": "a2b242370d5364fffb1c269eac10a394fa41910a",
+      "paths": [
+        "application/.env.example"
+      ]
+    },
+    {
+      "sha": "9d777ca7714f4bbcbb7c7477a407489ed6fc1391",
+      "paths": [
+        "application/.gitattributes"
+      ]
+    },
+    {
+      "sha": "8b76ec078716d9022f2fdeaf906707845b070a88",
+      "paths": [
+        "application/.gitignore"
+      ]
+    },
+    {
+      "sha": "19b25b5fe566916562e49627b665520e67a2ad6e",
+      "paths": [
+        "application/app/Http/Controllers/Controller.php"
+      ]
+    },
+    {
+      "sha": "0489ce75e6159e8eb223b76c859c094d70be0a99",
+      "paths": [
+        "application/app/Models/User.php"
+      ]
+    },
+    {
+      "sha": "4e533760e7917b59bd112bd4a3cba690eb82034b",
+      "paths": [
+        "application/app/Providers/AppServiceProvider.php"
+      ]
+    },
+    {
+      "sha": "17abf908f1f97fe117b1d6f88fdc056cd1a5518e",
+      "paths": [
+        "application/artisan"
+      ]
+    },
+    {
+      "sha": "720b1ef2a0d1c3da37a547c0ed6026c837e8d0fd",
+      "paths": [
+        "application/bootstrap/app.php"
+      ]
+    },
+    {
+      "sha": "a5baada18fdb3c2afbb657ced40871aebb0758fd",
+      "paths": [
+        "application/bootstrap/cache/.gitignore",
+        "application/storage/app/private/.gitignore",
+        "application/storage/app/public/.gitignore",
+        "application/storage/framework/cache/data/.gitignore",
+        "application/storage/framework/sessions/.gitignore",
+        "application/storage/framework/testing/.gitignore",
+        "application/storage/framework/views/.gitignore",
+        "application/storage/logs/.gitignore"
+      ]
+    },
+    {
+      "sha": "e9cb9fa3d20e57de058fa699a5a08b9cc8718ad1",
+      "paths": [
+        "application/bootstrap/providers.php"
+      ]
+    },
+    {
+      "sha": "f193016b77bb09a1891dc9650bb1c4f7604174ce",
+      "paths": [
+        "application/composer.json"
+      ]
+    },
+    {
+      "sha": "2051415a534cdcb90984152e9b525e06f3f28f44",
+      "paths": [
+        "application/composer.lock"
+      ]
+    },
+    {
+      "sha": "549a4531e209dcd47a5b2d250efff73273d82c9d",
+      "paths": [
+        "application/config/app.php"
+      ]
+    },
+    {
+      "sha": "6d3ed66aaa33f4f7b52ce9dbb6f011ccaee50dc0",
+      "paths": [
+        "application/config/auth.php"
+      ]
+    },
+    {
+      "sha": "6b1adec2e9a8ed89b15e72a63c8dcee1ba986d15",
+      "paths": [
+        "application/config/cache.php"
+      ]
+    },
+    {
+      "sha": "a27c44b80e32b151757a8019ece34fd3b8868679",
+      "paths": [
+        "application/config/database.php"
+      ]
+    },
+    {
+      "sha": "7b4a9620cad5322e25e4d965219ee8ce14d06244",
+      "paths": [
+        "application/config/deployment.php"
+      ]
+    },
+    {
+      "sha": "5253e33569888c03e7a2abb26b3281d2bea489e4",
+      "paths": [
+        "application/config/filesystems.php"
+      ]
+    },
+    {
+      "sha": "9337423c12fbd10756d9f7730100cf54c0ca9776",
+      "paths": [
+        "application/config/logging.php"
+      ]
+    },
+    {
+      "sha": "cff9c6481e00d452fbd3daba8c8b9bf85de16475",
+      "paths": [
+        "application/config/mail.php"
+      ]
+    },
+    {
+      "sha": "23420864cb04bc9cedcab03296d392f16b72ae4f",
+      "paths": [
+        "application/config/queue.php"
+      ]
+    },
+    {
+      "sha": "0c19888a1b3316dd3a45798cbba4eb74bf987f58",
+      "paths": [
+        "application/config/services.php"
+      ]
+    },
+    {
+      "sha": "3a86adca7648a46694fccc4e1c45e63b79b48301",
+      "paths": [
+        "application/config/session.php"
+      ]
+    },
+    {
+      "sha": "2d12f636197b92bb8db00efda16f3db7246aff4d",
+      "paths": [
+        "application/package-lock.json"
+      ]
+    },
+    {
+      "sha": "f26c15afc4e15794c204d5f5a8c121530ee16fbe",
+      "paths": [
+        "application/package.json"
+      ]
+    },
+    {
+      "sha": "32d4acdbe51989df1afd4785dd8525d15b94af5d",
+      "paths": [
+        "application/phpunit.xml"
+      ]
+    },
+    {
+      "sha": "6702336a3a3b0e014620e75d22b5c937de2f2ebd",
+      "paths": [
+        "application/public/.htaccess"
+      ]
+    },
+    {
+      "sha": "b932fca8205d9a3a9c130309ef34f824e00a9550",
+      "paths": [
+        "application/public/index.php"
+      ]
+    },
+    {
+      "sha": "4738d6a9400db1f4ae921c822c53166bbe24bd59",
+      "paths": [
+        "application/public/robots.txt"
+      ]
+    },
+    {
+      "sha": "72b6d1b1364541a4239091ea3b6179943355ca12",
+      "paths": [
+        "application/resources/css/app.css"
+      ]
+    },
+    {
+      "sha": "77a9916b8390b7d5a5a9a38d18247c56331e1218",
+      "paths": [
+        "application/resources/js/app.js"
+      ]
+    },
+    {
+      "sha": "a05a5963dcd8caf28dd8d077a207d205c5413e9b",
+      "paths": [
+        "application/resources/views/welcome.blade.php"
+      ]
+    },
+    {
+      "sha": "8074813496547e0c4bd55fd28a2a6bf3d5dfcd4a",
+      "paths": [
+        "application/routes/console.php"
+      ]
+    },
+    {
+      "sha": "daacfd16b521e8917d7d01c8b4e99fdd43fb1f9f",
+      "paths": [
+        "application/routes/web.php"
+      ]
+    },
+    {
+      "sha": "56faaeab8bd2c10b8326f080a39ddcaa08bb6742",
+      "paths": [
+        "application/storage/app/.gitignore"
+      ]
+    },
+    {
+      "sha": "299eeadbe8ec1ab3a416fa2d09dbb260ad65730b",
+      "paths": [
+        "application/storage/framework/.gitignore"
+      ]
+    },
+    {
+      "sha": "9190bc2c2a80ab31b9bd5f33fe6ed0a132ce4fb9",
+      "paths": [
+        "application/storage/framework/cache/.gitignore"
+      ]
+    },
+    {
+      "sha": "9af565f25cd3752ecf3590675d8e300086121d40",
+      "paths": [
+        "application/tests/Feature/ExampleTest.php"
+      ]
+    },
+    {
+      "sha": "f86717f948372593338687c450b373ca43488318",
+      "paths": [
+        "application/tests/TestCase.php"
+      ]
+    },
+    {
+      "sha": "706215e8d1feebf425d9f41d1f09e9bf9cab2a61",
+      "paths": [
+        "application/vite.config.js"
+      ]
+    },
+    {
+      "sha": "2a79312aa57d9e1032602527b60a4c7a435ee724",
+      "paths": [
+        "deployment-probe/.htaccess"
+      ]
+    },
+    {
+      "sha": "5a694aeddac74b5525137d30b0b33cf8303d362c",
+      "paths": [
+        "deployment-probe/index.html"
+      ]
+    },
+    {
+      "sha": "1b70d9a8182d3fc93595891b3b9ddd7442924413",
+      "paths": [
+        "deployment-probe/probe.css"
+      ]
+    },
+    {
+      "sha": "6ffbc308f73e8f30d660a4ef89c4099d05fb4fbf",
+      "paths": [
+        "deployment-probe/robots.txt"
+      ]
+    },
+    {
+      "sha": "37742e3b3da797eb18cdb52b74afed1b7a8d0afc",
+      "paths": [
+        "docs/infrastructure/deployment.md"
+      ]
+    },
+    {
+      "sha": "f6884770550736f246ea4382bbd1acac7e256d7c",
+      "paths": [
+        "docs/infrastructure/ftps-private-probe-evidence.json"
+      ]
+    },
+    {
+      "sha": "cea5087a4307c731c0e0d4f24514725c81de816a",
+      "paths": [
+        "docs/infrastructure/ftps.md"
+      ]
+    },
+    {
+      "sha": "74d61ce85d12d6acefebf5754f1929e637ec04fa",
+      "paths": [
+        "docs/infrastructure/hosting-baseline.md"
+      ]
+    },
+    {
+      "sha": "a31a749b04eaa23af43d14d45994d1714bed2ffe",
+      "paths": [
+        "docs/infrastructure/phase3-implementation.md"
+      ]
+    },
+    {
+      "sha": "bb987cbe49686611c98691a386d592208d55af07",
+      "paths": [
+        "docs/infrastructure/recovery.md"
+      ]
+    },
+    {
+      "sha": "7e9f846a3abaafdda0230e78ac4216d585bb719b",
+      "paths": [
+        "docs/infrastructure/stage1-implementation.md"
+      ]
+    },
+    {
+      "sha": "ee48d70aa78d45ac0ea8021c5690b090bcb014dc",
+      "paths": [
+        "scripts/deployment/application_release.py"
+      ]
+    },
+    {
+      "sha": "a794524495b7d5b6fad68fd588b0a01b0bdb7c74",
+      "paths": [
+        "scripts/deployment/fetch_application_artifact.py"
+      ]
+    },
+    {
+      "sha": "70c084acc46cc07f6ccecc4d83b8980c0252cf55",
+      "paths": [
+        "scripts/deployment/ftps_transport.py"
+      ]
+    },
+    {
+      "sha": "7ab70670595206c097f2ed885e4dec99ba5cee71",
+      "paths": [
+        "scripts/deployment/main-entry.php"
+      ]
+    },
+    {
+      "sha": "1be6111b4a1ec234941f9e4ecbaf6d44e20bef86",
+      "paths": [
+        "scripts/deployment/main-routing.fragment"
+      ]
+    },
+    {
+      "sha": "9380f135c0c4dae1f143abe04cac071d6e7e5705",
+      "paths": [
+        "scripts/deployment/rehearse_application.py"
+      ]
+    },
+    {
+      "sha": "53826cc267e70a463c1382a77adf40804408fbe9",
+      "paths": [
+        "scripts/deployment/release.py"
+      ]
+    },
+    {
+      "sha": "c77665f87982b3f758beb4e106b575b74803dad5",
+      "paths": [
+        "tests/deployment/test_application_release.py"
+      ]
+    },
+    {
+      "sha": "6a16c979aff0044dd6ba3606409299b61e829fc7",
+      "paths": [
+        "tests/deployment/test_ftps.py"
+      ]
+    },
+    {
+      "sha": "d954623f59f297c4bb7cebf678778fac48930c64",
+      "paths": [
+        "tests/deployment/test_release.py"
+      ]
+    },
+    {
+      "sha": "a58a258a7e0fe9b253b3588706f148ab4c2094bb",
+      "paths": [
+        "docs/infrastructure/ftps.md"
+      ]
+    },
+    {
+      "sha": "5213a760af074fbce1f6ed2ab1b2a5f4e171b789",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "f3665abd14b7a717b05e4e3e7c6f3942252599d9",
+      "paths": [
+        "docs/infrastructure/ftps.md"
+      ]
+    },
+    {
+      "sha": "d93e4a112b7bdc4ae701f473b9fed7f599fee6e3",
+      "paths": [
+        "docs/infrastructure/ftps.md"
+      ]
+    },
+    {
+      "sha": "baea23c769caa280e85dcbbf7c4a51f5fe896aba",
+      "paths": [
+        ".github/workflows/package-application.yml"
+      ]
+    },
+    {
+      "sha": "1e70548968e9f18db6d21a061faebe806f9aa739",
+      "paths": [
+        "docs/infrastructure/stage1-implementation.md"
+      ]
+    },
+    {
+      "sha": "bfdac8879aec3bb3ed3ce433a2f7af0ea192ed7c",
+      "paths": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    {
+      "sha": "5a89901d76daad3a3bb372d62dbc5ddd679f9d3b",
+      "paths": [
+        ".github/workflows/ftps-release-rehearsal.yml"
+      ]
+    },
+    {
+      "sha": "1cc1e1d60b8ea453ee9b53458d84b2488c1c5351",
+      "paths": [
+        ".github/workflows/package-application.yml"
+      ]
+    },
+    {
+      "sha": "4ea9850d4d457991b37e8ca346719259fe1aff1e",
+      "paths": [
+        ".github/workflows/supervised-release.yml"
+      ]
+    },
+    {
+      "sha": "e8c0121eefacf5d0e86b7ced49517e780c7f667e",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "2692635256b1183a64f34fe0cbbb7ae45bad9d0d",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "sha": "9d51bdb8f144f590165aa8e64cc03ad32a711167",
+      "paths": [
+        "docs/infrastructure/deployment.md"
+      ]
+    },
+    {
+      "sha": "914b0db715e4c01911885140af4b7946fc174fac",
+      "paths": [
+        "docs/infrastructure/ftps.md"
+      ]
+    },
+    {
+      "sha": "5c0a5ca979ee6277fdd520a148c5687852733bf1",
+      "paths": [
+        "docs/infrastructure/private-full-parallel-evidence.json"
+      ]
+    },
+    {
+      "sha": "6aa1126d0468ff76b896304db54e044c8573f4d7",
+      "paths": [
+        "docs/infrastructure/private-parallel-sample-evidence.json"
+      ]
+    },
+    {
+      "sha": "256ebb73d41969771bdd85a1ff1dc5ba72eb7e00",
+      "paths": [
+        "docs/infrastructure/private-parallel-sample.md"
+      ]
+    },
+    {
+      "sha": "b722679f2675677f90729bc6378d531702f6f9ab",
+      "paths": [
+        "docs/infrastructure/private-release-rehearsal-evidence.json"
+      ]
+    },
+    {
+      "sha": "79ba034ab5d8df782f551577184f5fbaa28115c6",
+      "paths": [
+        "docs/infrastructure/recovery.md"
+      ]
+    },
+    {
+      "sha": "03ccecb8760c505b58390caab123761dd2e4ec74",
+      "paths": [
+        "docs/infrastructure/release-activation.md"
+      ]
+    },
+    {
+      "sha": "bfbefd23383fec20c63946d0dce4dec022b04ca7",
+      "paths": [
+        "docs/infrastructure/stage1-implementation.md"
+      ]
+    },
+    {
+      "sha": "72af1b11dae5d04093d9410c884e8521909f5a16",
+      "paths": [
+        "docs/infrastructure/stage1-live-deployment-evidence.json"
+      ]
+    },
+    {
+      "sha": "7f87bffcc453d0f6fbbdf9c86d17a724384cab51",
+      "paths": [
+        "docs/infrastructure/stage1-live-deployment.md"
+      ]
+    },
+    {
+      "sha": "4e6a99fefc10c617ad49f19c25bb8e5a68efff1c",
+      "paths": [
+        "docs/infrastructure/supervised-zip-ci-evidence.json"
+      ]
+    },
+    {
+      "sha": "dff317b67be64f5f94a1970c84eb923cc3693611",
+      "paths": [
+        "docs/infrastructure/supervised-zip-deployment.md"
+      ]
+    },
+    {
+      "sha": "3091f4e439bc6ec0e54a4f183ca9fd7bf93feba4",
+      "paths": [
+        "scripts/deployment/application_release.py"
+      ]
+    },
+    {
+      "sha": "ec62f72f73478eaa2752e7875c72828f055b2fa3",
+      "paths": [
+        "scripts/deployment/assets.htaccess"
+      ]
+    },
+    {
+      "sha": "a985a76019ec424b203f135562465fab7ab913ca",
+      "paths": [
+        "scripts/deployment/ftps_release_rehearsal.py"
+      ]
+    },
+    {
+      "sha": "6974f0862005c684a498c733f3dfeb96c2143038",
+      "paths": [
+        "scripts/deployment/main-entry.php"
+      ]
+    },
+    {
+      "sha": "a0d1671e19a38db36ca6030d56fafb4eb2e236cd",
+      "paths": [
+        "scripts/deployment/rehearse_application.py"
+      ]
+    },
+    {
+      "sha": "b455fe66b9aa538901066328a49f56b974aaab5a",
+      "paths": [
+        "scripts/deployment/rehearse_pair.py"
+      ]
+    },
+    {
+      "sha": "c2cb67babf83161e5d5559d6431b93568971f25f",
+      "paths": [
+        "scripts/deployment/supervised_zip.py"
+      ]
+    },
+    {
+      "sha": "be59bc259f2764dedc2d6274efdb567bd7e821f0",
+      "paths": [
+        "scripts/deployment/verify_live.py"
+      ]
+    },
+    {
+      "sha": "0afbd587fbc62ccd91f8141a7cf86f6476760f86",
+      "paths": [
+        "tests/deployment/test_release_transport.py"
+      ]
+    },
+    {
+      "sha": "d1489b671dd1573a67b0770e034461acfb925759",
+      "paths": [
+        "tests/deployment/test_supervised_zip.py"
+      ]
+    },
+    {
+      "sha": "a0046479cbc64200e95ab57fabf8eea495aa42bc",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "360b7fdbcd82d0199ae0e8db361536e246a10256",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "sha": "5596ac7b48f1f83e7c5346b20a92baa519e1323c",
+      "paths": [
+        "docs/infrastructure/deployment.md"
+      ]
+    },
+    {
+      "sha": "cb2797d5a085e12bced328664a727f6a204435ea",
+      "paths": [
+        "docs/infrastructure/stage1-implementation.md"
+      ]
+    },
+    {
+      "sha": "74b25c606797b60c2101bacf6af0b8bef47da1f6",
+      "paths": [
+        "docs/infrastructure/supervised-zip-deployment.md"
+      ]
+    },
+    {
+      "sha": "9817c47b01213801659da1249756b20215fc48bc",
+      "paths": [
+        "docs/infrastructure/supervised-zip-deployment.md"
+      ]
+    },
+    {
+      "sha": "07ba4cfb3e82e62b5839679e12d1ae33c0233f21",
+      "paths": [
+        "scripts/deployment/supervised_zip.py"
+      ]
+    },
+    {
+      "sha": "a6e18f7b66e9e1d29468ec0ea21da0f76540d1b0",
+      "paths": [
+        "tests/deployment/test_supervised_zip.py"
+      ]
+    },
+    {
+      "sha": "912a8da119649888200b9fcb54243c05811ae732",
+      "paths": [
+        "docs/infrastructure/supervised-zip-deployment.md"
+      ]
+    },
+    {
+      "sha": "6e0cc0a1d4f544ed7d6a7c79714bcf190f7ad3ce",
+      "paths": [
+        "docs/infrastructure/supervised-zip-deployment.md"
+      ]
+    },
+    {
+      "sha": "7b413d70717e5431da4e5051cf7d60427aef06f5",
+      "paths": [
+        "scripts/deployment/rehearse_application.py"
+      ]
+    },
+    {
+      "sha": "b1057811baae84f46e545866955156533db65fb1",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "c42c9637a15a3cd81e55b6fe4492738ba1d29234",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "sha": "7cbf9cd7b402a3581213a0e6a0ff283202a98cd6",
+      "paths": [
+        "docs/infrastructure/release-activation.md"
+      ]
+    },
+    {
+      "sha": "4174e3453613efddb7a78ef400714e0cba350680",
+      "paths": [
+        "docs/infrastructure/stage1-implementation.md"
+      ]
+    },
+    {
+      "sha": "37b7ebeb08016f183ec48186f983dfd9b2d99fb6",
+      "paths": [
+        "scripts/deployment/main-entry.php"
+      ]
+    },
+    {
+      "sha": "21f7fcc5733ea0ef8c6eacde5a3874d8aaf0cb90",
+      "paths": [
+        "scripts/deployment/rehearse_application.py"
+      ]
+    },
+    {
+      "sha": "3a0ca7f9f3135a5899d47dc03b6ee03c5cbb44b9",
+      "paths": [
+        "docs/infrastructure/release-activation.md"
+      ]
+    },
+    {
+      "sha": "7c7f94f9228374b64c1737b9885b31ac3082d0c1",
+      "paths": [
+        ".github/workflows/ftps-release-rehearsal.yml"
+      ]
+    },
+    {
+      "sha": "d8f51157e38481c7856b6a19cc14a4f07824235d",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "4e2dcba0ed63fc672b58515756c5ea86103d319b",
+      "paths": [
+        "docs/infrastructure/stage1-implementation.md"
+      ]
+    },
+    {
+      "sha": "8fc093dd4ac3dc9628dec0a726f3cc838709446a",
+      "paths": [
+        "scripts/deployment/ftps_full_parallel_rehearsal.py"
+      ]
+    },
+    {
+      "sha": "ff45a1b4acef2abee311a76addad4236d3d20477",
+      "paths": [
+        "scripts/deployment/ftps_parallel_sample.py"
+      ]
+    },
+    {
+      "sha": "98066c01f2f27f13b0ff26b84e596d6f4a6bdaa2",
+      "paths": [
+        "tests/deployment/test_full_parallel_rehearsal.py"
+      ]
+    },
+    {
+      "sha": "d23be42135529d87537e514abe1c99ac6912f433",
+      "paths": [
+        "tests/deployment/test_parallel_sample.py"
+      ]
+    },
+    {
+      "sha": "c1d8b40b3adb9f8ccd282c9c9f4f923c54f66858",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "3edd5cb26dc816ae04f3b5ac812084e39af79c90",
+      "paths": [
+        "docs/infrastructure/private-parallel-sample.md"
+      ]
+    },
+    {
+      "sha": "1ed08f3a39a4d9b01fdae1d8840e0f3cffcd9a69",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "2702b30980121c16687b65ac832782812058bc47",
+      "paths": [
+        "docs/infrastructure/private-parallel-sample.md"
+      ]
+    },
+    {
+      "sha": "363e5c4da232da220689e4795727c5741895e89b",
+      "paths": [
+        "docs/infrastructure/private-parallel-sample.md"
+      ]
+    },
+    {
+      "sha": "54812bfbc3af5b873bb0d3a4a4d90798ab2a36c0",
+      "paths": [
+        ".github/workflows/ftps-release-rehearsal.yml"
+      ]
+    },
+    {
+      "sha": "e85cdcd82fb14fd4236990b63bbee979310e8091",
+      "paths": [
+        "docs/infrastructure/private-parallel-sample.md"
+      ]
+    },
+    {
+      "sha": "7190e360bc2dbc1a9345637dff8f4e482e39b802",
+      "paths": [
+        ".github/workflows/production-release.yml"
+      ]
+    },
+    {
+      "sha": "a97d357ecb9bca937a42b140f4775151f8bfe10f",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "51796b8b5a2282f3b64b10117f302dc361e2c0ce",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "sha": "fc126f9463d7b9f0d3a89aef83d3a7156d0d4a84",
+      "paths": [
+        "docs/infrastructure/private-release-rehearsal-evidence.json"
+      ]
+    },
+    {
+      "sha": "55632f66a5fd0596bebaf7ab3fcb0853bddeca5f",
+      "paths": [
+        "docs/infrastructure/production-delivery.md"
+      ]
+    },
+    {
+      "sha": "f2fdb420775f7ef9a07a121169e07b1fd648dee3",
+      "paths": [
+        "scripts/deployment/assets.htaccess"
+      ]
+    },
+    {
+      "sha": "aa65f77022d2f4cdcbbec3edef00b55d4c48c237",
+      "paths": [
+        "scripts/deployment/main-entry.php"
+      ]
+    },
+    {
+      "sha": "9359a6eb58393e89298a22289bbe935f4573506d",
+      "paths": [
+        "scripts/deployment/production_delivery.py"
+      ]
+    },
+    {
+      "sha": "824897721458499fe2f2e2a2c5a6013fa5d3f35a",
+      "paths": [
+        "scripts/deployment/rehearse_application.py"
+      ]
+    },
+    {
+      "sha": "99f1a6b45b2363c9659ca69b1b15ef6031129ef8",
+      "paths": [
+        "scripts/deployment/verify_live.py"
+      ]
+    },
+    {
+      "sha": "1842f8fca57a225bf727d56e1f57e0d5dd086f41",
+      "paths": [
+        "tests/deployment/test_live_verification.py"
+      ]
+    },
+    {
+      "sha": "de3f26ab2d7e916ec7af5c5792672678bf21e900",
+      "paths": [
+        "tests/deployment/test_production_delivery.py"
+      ]
+    },
+    {
+      "sha": "5daec9cd13e440426385dbd718463a222ecb91ef",
+      "paths": [
+        "docs/infrastructure/production-delivery.md"
+      ]
+    },
+    {
+      "sha": "f1bc46becb936daf1b094f786e51fc554b5a7f35",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "2cb74528ef2b74d6041fe9d021514c98585ac8fd",
+      "paths": [
+        "docs/stage3/approval-record.md"
+      ]
+    },
+    {
+      "sha": "f7349b43fe8690253668d22ccacdc322be8817a0",
+      "paths": [
+        "docs/stage3/checkpoint-01.md"
+      ]
+    },
+    {
+      "sha": "c61e52c453d30509a31d4db3fa148246abda05fa",
+      "paths": [
+        "docs/stage3/checkpoint-02.md"
+      ]
+    },
+    {
+      "sha": "8ad23f38352d41b3f4002bc1042e6593d074c51b",
+      "paths": [
+        "docs/stage3/design-system.md"
+      ]
+    },
+    {
+      "sha": "5cd9b842305f792b2b1ce7d530b48377ea5cd550",
+      "paths": [
+        "docs/stage3/fixture-ledger.md"
+      ]
+    },
+    {
+      "sha": "c3335bd0076bf43fd0e55751f6e1cb24ba4a9fb1",
+      "paths": [
+        "docs/stage3/navigation-comparison.md"
+      ]
+    },
+    {
+      "sha": "7b6c8ac81d41a0a3f3de1b78b5ba0c34df56b6eb",
+      "paths": [
+        "docs/stage3/prototype/.gitignore",
+        "prototype/.gitignore"
+      ]
+    },
+    {
+      "sha": "e5adea4842102637c7ee78b6e6e2a6b95867b234",
+      "paths": [
+        "docs/stage3/prototype/README.md"
+      ]
+    },
+    {
+      "sha": "7307eef96bd287cc3e3c795433c1adedd4a65452",
+      "paths": [
+        "docs/stage3/prototype/index.html",
+        "prototype/index.html"
+      ]
+    },
+    {
+      "sha": "c072ecdee528124cc66c7d998f86a6cbbf9f66d3",
+      "paths": [
+        "docs/stage3/prototype/package-lock.json",
+        "prototype/package-lock.json"
+      ]
+    },
+    {
+      "sha": "c123eb860c62e770f3cd0fe66dd6bfb97a8c3e45",
+      "paths": [
+        "docs/stage3/prototype/package.json",
+        "prototype/package.json"
+      ]
+    },
+    {
+      "sha": "664c300b02dace75ae01fe1989d20f02bfd53669",
+      "paths": [
+        "docs/stage3/prototype/responsive-review.html"
+      ]
+    },
+    {
+      "sha": "44ad983b0e27b0e79fd1cc534f56ca7967f2f173",
+      "paths": [
+        "docs/stage3/prototype/src/Lab.tsx"
+      ]
+    },
+    {
+      "sha": "49099e905f3d960c4a789ac431e201a9593d6121",
+      "paths": [
+        "docs/stage3/prototype/src/SitePrototype.tsx"
+      ]
+    },
+    {
+      "sha": "8f939b6c94479350b77bab196e92147a35bbe5b0",
+      "paths": [
+        "docs/stage3/prototype/src/components/ActivityCard.tsx"
+      ]
+    },
+    {
+      "sha": "ef2108dde5845116ae7ad2b7e6cb8abd21e87e1a",
+      "paths": [
+        "docs/stage3/prototype/src/components/Button.tsx",
+        "prototype/src/components/Button.tsx"
+      ]
+    },
+    {
+      "sha": "0e5addf2faf723dea7ed6b1b35354dce19ba0d5b",
+      "paths": [
+        "docs/stage3/prototype/src/components/StatusLabel.tsx",
+        "prototype/src/components/StatusLabel.tsx"
+      ]
+    },
+    {
+      "sha": "81e9c8f36ae18c8b7cce0456068d8852e4bd66bd",
+      "paths": [
+        "docs/stage3/prototype/src/content.ts"
+      ]
+    },
+    {
+      "sha": "92938f79a13a26600babfad901ce5ae739d9d71d",
+      "paths": [
+        "docs/stage3/prototype/src/fixtures.ts",
+        "prototype/src/fixtures.ts"
+      ]
+    },
+    {
+      "sha": "e647aa93fc697b0c3b67eabd787e93dc750b8e37",
+      "paths": [
+        "docs/stage3/prototype/src/main.tsx"
+      ]
+    },
+    {
+      "sha": "5d663f8e75b549277338beeabf8661a4eb8e56db",
+      "paths": [
+        "docs/stage3/prototype/src/theme.css"
+      ]
+    },
+    {
+      "sha": "a63ff9f0a8cf39aad78a680beb98506f35ff15e5",
+      "paths": [
+        "docs/stage3/prototype/tsconfig.json",
+        "prototype/tsconfig.json"
+      ]
+    },
+    {
+      "sha": "ca6f42cb23ee60e126bf1602df83f372302a0e92",
+      "paths": [
+        "docs/stage3/prototype/vite.config.ts",
+        "prototype/vite.config.ts"
+      ]
+    },
+    {
+      "sha": "b6f81d034efebd7c41b3bf0470826eb00e9dc2ba",
+      "paths": [
+        "docs/stage3/technical-delivery-amendment-t1.md"
+      ]
+    },
+    {
+      "sha": "eaf1470c030ba7b7d2f8bc216bac26949442ba17",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "173357c95cf4d6c54a1bf83f888baf8691b7a85a",
+      "paths": [
+        "docs/stage3/checkpoint-02.md"
+      ]
+    },
+    {
+      "sha": "45e742835e9e1bb6d16692ce8dc4b483b606e9dc",
+      "paths": [
+        "docs/stage3/design-system.md"
+      ]
+    },
+    {
+      "sha": "fc8361d6a0f0d5681fb50c8b354ce654d8563f1b",
+      "paths": [
+        "docs/stage3/prototype/README.md",
+        "prototype/README.md"
+      ]
+    },
+    {
+      "sha": "8ca53859bc841fb9450e0e36d8cb55ded8f4d4ff",
+      "paths": [
+        "docs/stage3/prototype/responsive-review.html",
+        "prototype/responsive-review.html"
+      ]
+    },
+    {
+      "sha": "342a3fcda2907ee80762613a5d9e729949e8d031",
+      "paths": [
+        "docs/stage3/prototype/src/components/ActivityCard.tsx",
+        "prototype/src/components/ActivityCard.tsx"
+      ]
+    },
+    {
+      "sha": "2d827fb3ac515f5d7a633184bf8b7fac6f407ee7",
+      "paths": [
+        "docs/stage3/prototype/src/main.tsx",
+        "prototype/src/main.tsx"
+      ]
+    },
+    {
+      "sha": "dc5a3b3cbdf06c625aed5609414c9e367af9aca1",
+      "paths": [
+        "docs/stage3/prototype/src/theme.css",
+        "prototype/src/theme.css"
+      ]
+    },
+    {
+      "sha": "0dc4ac4774f43510eaca2872a285e019ff1b723d",
+      "paths": [
+        "docs/stage3/checkpoint-01.md"
+      ]
+    },
+    {
+      "sha": "4a398fa16b130568a9a92f5118d278fa94b4e7bf",
+      "paths": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "sha": "6175314e62c982f1f5fe19fd97812d4a1b7445ab",
+      "paths": [
+        "docs/stage3/approval-record.md"
+      ]
+    },
+    {
+      "sha": "ec74a412f8b30fb301ca05444fc9406bea761cb7",
+      "paths": [
+        "docs/stage3/checkpoint-01.md"
+      ]
+    },
+    {
+      "sha": "653fa58fc6152ae94eab56f57087e07d987881bd",
+      "paths": [
+        "docs/stage3/design-system.md"
+      ]
+    },
+    {
+      "sha": "b00e3905b4aa0d7de1a62df9932fd022316af983",
+      "paths": [
+        "prototype/src/main.tsx"
+      ]
+    }
+  ]
+}

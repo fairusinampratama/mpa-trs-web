@@ -1,0 +1,35 @@
+{
+  "wrapperSha256": "90e07c8818d6897fb11589429e60a7e983892e850994f00ca8712055a2e8e731",
+  "files": [
+    "assets/main-DeLOJGZN.css",
+    "assets/main-D3XUmlQ7.js",
+    "responsive-review.html",
+    "index.html",
+    "version.json"
+  ],
+  "links": [],
+  "source": "e312befbdc1723ca03ad7e9df774c811544039c7",
+  "matchesLocal": true,
+  "inventory": {
+    "assets/main-DeLOJGZN.css": {
+      "bytes": 25043,
+      "sha256": "dbc86b2adfbbcac30da0d42dac38e4d60c4a6d57472e0b4a9fbe80e8663802f4"
+    },
+    "assets/main-D3XUmlQ7.js": {
+      "bytes": 272371,
+      "sha256": "06e8a64bfedecabb06723c3ed71a3f6646c3425b900c8341bb559ef6044d216a"
+    },
+    "responsive-review.html": {
+      "bytes": 2577,
+      "sha256": "db9e8d9edb317d8c263972b43421ebf973a451f970515a4a96a1a08f16d48651"
+    },
+    "index.html": {
+      "bytes": 613,
+      "sha256": "f0c3d53ed5f61a44e7573b71d4b18958d849d720b4ceb31eb2f5353d955ca9fd"
+    },
+    "version.json": {
+      "bytes": 100,
+      "sha256": "7558b7da109648630eff8aac7abcce16ed12986ae6acc3d7069a3ee8b193ffe8"
+    }
+  }
+}

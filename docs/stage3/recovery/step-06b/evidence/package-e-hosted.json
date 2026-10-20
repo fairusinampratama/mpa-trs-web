@@ -1,0 +1,282 @@
+{
+  "earlyLoadingSamples": [
+    {
+      "width": 1366,
+      "subject": "Gunung Hutan",
+      "before": {
+        "body": 1351,
+        "source": "1761fc4",
+        "y": 2014
+      },
+      "opened": {
+        "body": 1351,
+        "caption": "Peserta membaca peta dan menggunakan kompas di lapangan terbuka.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": false,
+        "focus": "Tutup foto",
+        "image": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "y": 2014
+      },
+      "closed": {
+        "body": 1351,
+        "focus": "Perbesar foto Gunung Hutan ↗",
+        "overflow": "",
+        "y": 2014
+      }
+    },
+    {
+      "width": 1366,
+      "subject": "Panjat Tebing",
+      "before": {
+        "body": 1351,
+        "source": "1761fc4",
+        "y": 1974
+      },
+      "opened": {
+        "body": 1351,
+        "caption": "Pemanjat berada di dinding batu sementara tim berjaga di bawah.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": false,
+        "focus": "Tutup foto",
+        "image": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "y": 1974
+      },
+      "closed": {
+        "body": 1351,
+        "focus": "Perbesar foto Panjat Tebing ↗",
+        "overflow": "",
+        "y": 1974
+      }
+    }
+  ],
+  "settled": [
+    {
+      "width": 1024,
+      "subject": "Gunung Hutan",
+      "before": {
+        "body": 1009,
+        "source": "1761fc4",
+        "y": 1906
+      },
+      "opened": {
+        "body": 1009,
+        "caption": "Peserta membaca peta dan menggunakan kompas di lapangan terbuka.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "y": 1906
+      },
+      "closed": {
+        "body": 1009,
+        "focus": "Perbesar foto Gunung Hutan ↗",
+        "overflow": "",
+        "y": 1906
+      }
+    },
+    {
+      "width": 1024,
+      "subject": "Panjat Tebing",
+      "before": {
+        "body": 1009,
+        "source": "1761fc4",
+        "y": 1857
+      },
+      "opened": {
+        "body": 1009,
+        "caption": "Pemanjat berada di dinding batu sementara tim berjaga di bawah.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "y": 1857
+      },
+      "closed": {
+        "body": 1009,
+        "focus": "Perbesar foto Panjat Tebing ↗",
+        "overflow": "",
+        "y": 1857
+      }
+    },
+    {
+      "width": 768,
+      "subject": "Gunung Hutan",
+      "before": {
+        "body": 753,
+        "source": "1761fc4",
+        "y": 2657
+      },
+      "opened": {
+        "body": 753,
+        "caption": "Peserta membaca peta dan menggunakan kompas di lapangan terbuka.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "y": 2657
+      },
+      "closed": {
+        "body": 753,
+        "focus": "Perbesar foto Gunung Hutan ↗",
+        "overflow": "",
+        "y": 2657
+      }
+    },
+    {
+      "width": 768,
+      "subject": "Panjat Tebing",
+      "before": {
+        "body": 753,
+        "source": "1761fc4",
+        "y": 2617
+      },
+      "opened": {
+        "body": 753,
+        "caption": "Pemanjat berada di dinding batu sementara tim berjaga di bawah.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "y": 2617
+      },
+      "closed": {
+        "body": 753,
+        "focus": "Perbesar foto Panjat Tebing ↗",
+        "overflow": "",
+        "y": 2617
+      }
+    },
+    {
+      "width": 390,
+      "subject": "Gunung Hutan",
+      "before": {
+        "body": 375,
+        "source": "1761fc4",
+        "y": 2782
+      },
+      "opened": {
+        "body": 375,
+        "caption": "Peserta membaca peta dan menggunakan kompas di lapangan terbuka.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "y": 2782
+      },
+      "closed": {
+        "body": 375,
+        "focus": "Perbesar foto Gunung Hutan ↗",
+        "overflow": "",
+        "y": 2782
+      }
+    },
+    {
+      "width": 390,
+      "subject": "Panjat Tebing",
+      "before": {
+        "body": 375,
+        "source": "1761fc4",
+        "y": 2742
+      },
+      "opened": {
+        "body": 375,
+        "caption": "Pemanjat berada di dinding batu sementara tim berjaga di bawah.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "y": 2742
+      },
+      "closed": {
+        "body": 375,
+        "focus": "Perbesar foto Panjat Tebing ↗",
+        "overflow": "",
+        "y": 2742
+      }
+    },
+    {
+      "width": 320,
+      "subject": "Gunung Hutan",
+      "before": {
+        "body": 305,
+        "source": "1761fc4",
+        "y": 2940
+      },
+      "opened": {
+        "body": 305,
+        "caption": "Peserta membaca peta dan menggunakan kompas di lapangan terbuka.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "y": 2940
+      },
+      "closed": {
+        "body": 305,
+        "focus": "Perbesar foto Gunung Hutan ↗",
+        "overflow": "",
+        "y": 2940
+      }
+    },
+    {
+      "width": 320,
+      "subject": "Panjat Tebing",
+      "before": {
+        "body": 305,
+        "source": "1761fc4",
+        "y": 2851
+      },
+      "opened": {
+        "body": 305,
+        "caption": "Pemanjat berada di dinding batu sementara tim berjaga di bawah.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "y": 2851
+      },
+      "closed": {
+        "body": 305,
+        "focus": "Perbesar foto Panjat Tebing ↗",
+        "overflow": "",
+        "y": 2851
+      }
+    },
+    {
+      "width": 1366,
+      "subject": "Gunung Hutan",
+      "before": {
+        "body": 1351,
+        "source": "1761fc4",
+        "y": 2014
+      },
+      "opened": {
+        "body": 1351,
+        "caption": "Peserta membaca peta dan menggunakan kompas di lapangan terbuka.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+        "y": 2014
+      },
+      "closed": {
+        "body": 1351,
+        "focus": "Perbesar foto Gunung Hutan ↗",
+        "overflow": "",
+        "y": 2014
+      }
+    },
+    {
+      "width": 1366,
+      "subject": "Panjat Tebing",
+      "before": {
+        "body": 1351,
+        "source": "1761fc4",
+        "y": 1974
+      },
+      "opened": {
+        "body": 1351,
+        "caption": "Pemanjat berada di dinding batu sementara tim berjaga di bawah.Foto: Dokumentasi HUMED MAPALA Tursina",
+        "complete": true,
+        "focus": "Tutup foto",
+        "image": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+        "y": 1974
+      },
+      "closed": {
+        "body": 1351,
+        "focus": "Perbesar foto Panjat Tebing ↗",
+        "overflow": "",
+        "y": 1974
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source": "1761fc492dffaad56c215d64c405083f6bbe0cb8",
+  "artifacts": [
+    {
+      "filename": "MPA-TRS_PackageE_Browser_Evidence.zip",
+      "bytes": 2987948,
+      "sha256": "d3299724851f9a02498e2246b625d14cd49e585d3aac6974140666dfddf2835b",
+      "visibility": "private owner review; outside repository/Pages"
+    },
+    {
+      "filename": "MPA-TRS_PackageE_Live_RC.jpg",
+      "bytes": 305480,
+      "sha256": "9b59395fcbff865006419b2cdd5d1c13c8407159564b766a02646a559bbbd9a2",
+      "visibility": "private owner review; outside repository/Pages"
+    },
+    {
+      "filename": "MPA-TRS_PackageE_Before_After.png",
+      "bytes": 1335987,
+      "sha256": "355bf8f14e6c1987f63066061ad5f980fafa5fc9d4f64a9fd353f01420dc023e",
+      "visibility": "private owner review; outside repository/Pages"
+    }
+  ]
+}

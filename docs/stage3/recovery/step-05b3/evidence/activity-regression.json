@@ -1,0 +1,457 @@
+{
+  "browser": "153.0.8010.0",
+  "metrics": [
+    {
+      "route": "/program/pd",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi"
+    },
+    {
+      "route": "/activities",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Kerja bersama, dalam banyak bentuk."
+    },
+    {
+      "route": "/activity/gh26",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXVI"
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX"
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX"
+    },
+    {
+      "route": "/activity/orad29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXIX"
+    },
+    {
+      "route": "/activity/lh29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Lingkungan Hidup XXIX"
+    },
+    {
+      "route": "/activity/caving29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Susur Gua XXIX"
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Gunung Kawi XXIX"
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "BATAFIA XXX — diklat lapang"
+    },
+    {
+      "route": "/activity/workshop-demo",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Lokakarya dokumentasi kegiatan"
+    },
+    {
+      "route": "/program/pd",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi"
+    },
+    {
+      "route": "/activities",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Kerja bersama, dalam banyak bentuk."
+    },
+    {
+      "route": "/activity/gh26",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXVI"
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX"
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX"
+    },
+    {
+      "route": "/activity/orad29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXIX"
+    },
+    {
+      "route": "/activity/lh29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Lingkungan Hidup XXIX"
+    },
+    {
+      "route": "/activity/caving29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Susur Gua XXIX"
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Gunung Kawi XXIX"
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "BATAFIA XXX — diklat lapang"
+    },
+    {
+      "route": "/activity/workshop-demo",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Lokakarya dokumentasi kegiatan"
+    },
+    {
+      "route": "/program/pd",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi"
+    },
+    {
+      "route": "/activities",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Kerja bersama, dalam banyak bentuk."
+    },
+    {
+      "route": "/activity/gh26",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXVI"
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX"
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX"
+    },
+    {
+      "route": "/activity/orad29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXIX"
+    },
+    {
+      "route": "/activity/lh29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Lingkungan Hidup XXIX"
+    },
+    {
+      "route": "/activity/caving29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Susur Gua XXIX"
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Gunung Kawi XXIX"
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "BATAFIA XXX — diklat lapang"
+    },
+    {
+      "route": "/activity/workshop-demo",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Lokakarya dokumentasi kegiatan"
+    },
+    {
+      "route": "/program/pd",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi"
+    },
+    {
+      "route": "/activities",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Kerja bersama, dalam banyak bentuk."
+    },
+    {
+      "route": "/activity/gh26",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXVI"
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX"
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX"
+    },
+    {
+      "route": "/activity/orad29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXIX"
+    },
+    {
+      "route": "/activity/lh29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Lingkungan Hidup XXIX"
+    },
+    {
+      "route": "/activity/caving29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Susur Gua XXIX"
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Gunung Kawi XXIX"
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "BATAFIA XXX — diklat lapang"
+    },
+    {
+      "route": "/activity/workshop-demo",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Lokakarya dokumentasi kegiatan"
+    },
+    {
+      "route": "/program/pd",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi"
+    },
+    {
+      "route": "/activities",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Kerja bersama, dalam banyak bentuk."
+    },
+    {
+      "route": "/activity/gh26",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXVI"
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Gunung Hutan XXIX"
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Panjat Tebing XXIX"
+    },
+    {
+      "route": "/activity/orad29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXIX"
+    },
+    {
+      "route": "/activity/lh29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Lingkungan Hidup XXIX"
+    },
+    {
+      "route": "/activity/caving29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Pemantapan Divisi Susur Gua XXIX"
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Gunung Kawi XXIX"
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "BATAFIA XXX — diklat lapang"
+    },
+    {
+      "route": "/activity/workshop-demo",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": 0,
+      "reviewControls": false,
+      "title": "Lokakarya dokumentasi kegiatan"
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "checks": [
+    "55 layouts: two catalogues and nine activity records at five widths",
+    "all five division filters and cohort intersections",
+    "empty/reset/keyboard focus",
+    "URL filter state, detail return, direct refresh and invalid facet normalization",
+    "five PD journeys and five BATAFIA/Kawi journeys",
+    "sparse records omit empty sections",
+    "no fabricated independent programme parent",
+    "no public photographs or review controls"
+  ]
+}

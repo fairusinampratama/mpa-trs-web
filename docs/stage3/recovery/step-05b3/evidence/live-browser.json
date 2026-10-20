@@ -1,0 +1,530 @@
+{
+  "source": "3af160ee3ebfd215d03475c7cba1d7f712ed8663",
+  "checks": [
+    {
+      "check": "catalogue filter",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publications",
+      "status": "1 karya untuk “gatekeeper”"
+    },
+    {
+      "check": "restricted article",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/sacred-gatekeeper",
+      "availability": "KETERSEDIAAN KARYA\n\nNaskah lengkap belum ditampilkan.\n\nKredit, hak publikasi, serta konteks dan ketepatan uraian budaya masih ditinjau. Metadata karya tetap dapat dibaca dan ditelusuri kembali ke ekspedisinya."
+    },
+    {
+      "check": "knowledge subset",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/knowledge",
+      "works": 3
+    },
+    {
+      "check": "independent resource",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/design-school",
+      "availability": "KETERSEDIAAN KARYA\n\nMateri asli belum tersedia untuk dibaca atau diunduh.\n\nIdentitas dan topik materi berasal dari pemeriksaan terdahulu. Kredit, izin reproduksi dan sumber asli perlu diperiksa kembali sebelum berkas publik disediakan."
+    },
+    {
+      "check": "institutional introduction",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/about",
+      "affiliation": "UIN Maulana Malik Ibrahim Malang"
+    },
+    {
+      "check": "history journey",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/jejak",
+      "entries": 5
+    },
+    {
+      "check": "history to canonical expedition",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/expedition/te11"
+    },
+    {
+      "check": "synthetic NIA search",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/members",
+      "status": "1 contoh ditemukan"
+    }
+  ],
+  "viewports": [
+    {
+      "route": "publications",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "Pengalaman menjadi bacaan."
+    },
+    {
+      "route": "publications",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "Pengalaman menjadi bacaan."
+    },
+    {
+      "route": "publications",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "Pengalaman menjadi bacaan."
+    },
+    {
+      "route": "publications",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "Pengalaman menjadi bacaan."
+    },
+    {
+      "route": "publications",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "Pengalaman menjadi bacaan."
+    },
+    {
+      "route": "knowledge",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "Belajar dari karya."
+    },
+    {
+      "route": "knowledge",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "Belajar dari karya."
+    },
+    {
+      "route": "knowledge",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "Belajar dari karya."
+    },
+    {
+      "route": "knowledge",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "Belajar dari karya."
+    },
+    {
+      "route": "knowledge",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "Belajar dari karya."
+    },
+    {
+      "route": "publication/design-school",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "TRS — Sekolah Desain Grafis"
+    },
+    {
+      "route": "publication/design-school",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "TRS — Sekolah Desain Grafis"
+    },
+    {
+      "route": "publication/design-school",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "TRS — Sekolah Desain Grafis"
+    },
+    {
+      "route": "publication/design-school",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "TRS — Sekolah Desain Grafis"
+    },
+    {
+      "route": "publication/design-school",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "TRS — Sekolah Desain Grafis"
+    },
+    {
+      "route": "publication/sacred-gatekeeper",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "The Sacred Gatekeeper"
+    },
+    {
+      "route": "publication/sacred-gatekeeper",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "The Sacred Gatekeeper"
+    },
+    {
+      "route": "publication/sacred-gatekeeper",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "The Sacred Gatekeeper"
+    },
+    {
+      "route": "publication/sacred-gatekeeper",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "The Sacred Gatekeeper"
+    },
+    {
+      "route": "publication/sacred-gatekeeper",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "The Sacred Gatekeeper"
+    },
+    {
+      "route": "publication/summit-without-carbon-debt",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo"
+    },
+    {
+      "route": "publication/summit-without-carbon-debt",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo"
+    },
+    {
+      "route": "publication/summit-without-carbon-debt",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo"
+    },
+    {
+      "route": "publication/summit-without-carbon-debt",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo"
+    },
+    {
+      "route": "publication/summit-without-carbon-debt",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo"
+    },
+    {
+      "route": "publication/te11-documentary-reference",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "Video Dokumenter — lampiran TE11"
+    },
+    {
+      "route": "publication/te11-documentary-reference",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "Video Dokumenter — lampiran TE11"
+    },
+    {
+      "route": "publication/te11-documentary-reference",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "Video Dokumenter — lampiran TE11"
+    },
+    {
+      "route": "publication/te11-documentary-reference",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "Video Dokumenter — lampiran TE11"
+    },
+    {
+      "route": "publication/te11-documentary-reference",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "Video Dokumenter — lampiran TE11"
+    },
+    {
+      "route": "about",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "Mahasiswa Pencinta Alam Tursina"
+    },
+    {
+      "route": "about",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "Mahasiswa Pencinta Alam Tursina"
+    },
+    {
+      "route": "about",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "Mahasiswa Pencinta Alam Tursina"
+    },
+    {
+      "route": "about",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "Mahasiswa Pencinta Alam Tursina"
+    },
+    {
+      "route": "about",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "Mahasiswa Pencinta Alam Tursina"
+    },
+    {
+      "route": "jejak",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "Pengalaman yang diteruskan."
+    },
+    {
+      "route": "jejak",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "Pengalaman yang diteruskan."
+    },
+    {
+      "route": "jejak",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "Pengalaman yang diteruskan."
+    },
+    {
+      "route": "jejak",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "Pengalaman yang diteruskan."
+    },
+    {
+      "route": "jejak",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "Pengalaman yang diteruskan."
+    },
+    {
+      "route": "members",
+      "requestedWidth": 1366,
+      "clientWidth": 1351,
+      "photos": 0,
+      "scrollWidth": 1351,
+      "source": "3af160e",
+      "title": "Nama dalam kebersamaan."
+    },
+    {
+      "route": "members",
+      "requestedWidth": 1024,
+      "clientWidth": 1009,
+      "photos": 0,
+      "scrollWidth": 1009,
+      "source": "3af160e",
+      "title": "Nama dalam kebersamaan."
+    },
+    {
+      "route": "members",
+      "requestedWidth": 768,
+      "clientWidth": 753,
+      "photos": 0,
+      "scrollWidth": 753,
+      "source": "3af160e",
+      "title": "Nama dalam kebersamaan."
+    },
+    {
+      "route": "members",
+      "requestedWidth": 390,
+      "clientWidth": 375,
+      "photos": 0,
+      "scrollWidth": 375,
+      "source": "3af160e",
+      "title": "Nama dalam kebersamaan."
+    },
+    {
+      "route": "members",
+      "requestedWidth": 320,
+      "clientWidth": 305,
+      "photos": 0,
+      "scrollWidth": 305,
+      "source": "3af160e",
+      "title": "Nama dalam kebersamaan."
+    }
+  ],
+  "routes": [
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publications",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Pengalaman menjadi bacaan."
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/knowledge",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Belajar dari karya."
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/sacred-gatekeeper",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "The Sacred Gatekeeper"
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/design-school",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "TRS — Sekolah Desain Grafis"
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/carbon-debt",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Catatan karbon dalam rencana TE11"
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/summit-without-carbon-debt",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo"
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/te11-documentary-reference",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Video Dokumenter — lampiran TE11"
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/announcement-demo",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Informasi penerimaan anggota"
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/about",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Mahasiswa Pencinta Alam Tursina"
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/jejak",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Pengalaman yang diteruskan."
+    },
+    {
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/members",
+      "photos": 0,
+      "privateLinks": 0,
+      "source": "3af160e",
+      "title": "Nama dalam kebersamaan."
+    }
+  ]
+}
