@@ -1,5 +1,4 @@
 import { buttonClasses } from "./Button";
-import { homeEnlargementAuthorized } from "../domain/media";
 import { RecordDate } from "./RecordDate";
 import { activityDisplayTitle, workDiscovery } from "../domain/read";
 import { useContentReadModel } from "../ContentReadModel";
@@ -7,9 +6,6 @@ import {
   createContext,
   useContext,
   useState,
-  useEffect,
-  useRef,
-  useId,
   type ReactNode,
 } from "react";
 import type { ActivityFixture } from "./ActivityCard";
@@ -90,18 +86,32 @@ export function TextLink({
   href,
   children,
   inverse = false,
+  variant = "default",
+  ariaLabel,
 }: {
   href: string;
   children: ReactNode;
   inverse?: boolean;
+  variant?: "default" | "quiet";
+  ariaLabel?: string;
 }) {
+  const quiet = variant === "quiet";
   return (
     <a
-      className={` flex items-center justify-start gap-4 min-h-11 font-semibold text-[17px] leading-[24px] font-sans text-primary no-underline w-fit max-w-full [&:hover>span:first-child]:underline [&:hover>span:first-child]:underline-offset-4 ${inverse ? "" : ""}  `}
+      className={`group flex min-h-11 w-fit max-w-full items-center justify-start font-sans text-[17px] leading-[24px] font-semibold no-underline focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-focus ${quiet ? "gap-2 text-blue transition-colors duration-150 hover:text-primary active:text-primary-active" : "gap-4 text-primary [&:hover>span:first-child]:underline [&:hover>span:first-child]:underline-offset-4"}`}
       href={href}
-      data-ui={`link${inverse ? " inverse" : ""}`}
+      aria-label={ariaLabel}
+      data-ui={`link${inverse ? " inverse" : ""}${quiet ? " quiet" : ""}`}
     >
       <span className="min-w-0">{children}</span>
+      {quiet && (
+        <span
+          className="transition-transform duration-150 group-hover:translate-x-1"
+          aria-hidden="true"
+        >
+          →
+        </span>
+      )}
     </a>
   );
 }
@@ -182,139 +192,6 @@ export function MediaCaption({
     </figcaption>
   );
 }
-type DocumentaryAsset = NonNullable<ReturnType<typeof useDocumentaryAsset>>;
-function HomePhotoEnlargement({
-  asset,
-  role,
-}: {
-  asset: DocumentaryAsset;
-  role: MediaRole;
-}) {
-  const [open, setOpen] = useState(false),
-    [failed, setFailed] = useState(false);
-  const modal = useRef<HTMLDialogElement>(null),
-    trigger = useRef<HTMLButtonElement>(null);
-  const closeControl = useRef<HTMLButtonElement>(null);
-  const titleId = useId();
-  const title =
-    role === "gh" ? "Praktik navigasi darat" : "Kerja tim di tebing";
-  useEffect(() => {
-    if (!open) return;
-    const dialog = modal.current!,
-      root = document.documentElement;
-    const previous = {
-      overflow: root.classList.contains("overflow-hidden"),
-      gutter: root.classList.contains("[scrollbar-gutter:stable]"),
-      scrollY: window.scrollY,
-    };
-    // Reserve the existing scrollbar gutter before locking background scrolling.
-    if (window.innerWidth > root.clientWidth)
-      root.classList.add("[scrollbar-gutter:stable]");
-    root.classList.add("overflow-hidden");
-    dialog.showModal();
-    window.scrollTo({
-      top: previous.scrollY,
-      behavior: "instant",
-    });
-    return () => {
-      dialog.close();
-      root.classList.toggle("overflow-hidden", previous.overflow);
-      root.classList.toggle("[scrollbar-gutter:stable]", previous.gutter);
-      window.scrollTo({
-        top: previous.scrollY,
-        behavior: "instant",
-      });
-      if (trigger.current?.isConnected)
-        trigger.current.focus({
-          preventScroll: true,
-        });
-    };
-  }, [open]);
-  return (
-    <>
-      <button
-        type="button"
-        className="flex items-center justify-between gap-2 w-full min-h-11 mt-3 p-2 border border-current bg-transparent text-inherit font-semibold text-[15px] leading-[22px] font-sans text-left cursor-pointer hover:underline hover:underline-offset-4"
-        ref={trigger}
-        aria-haspopup="dialog"
-        onClick={() => {
-          setFailed(false);
-          setOpen(true);
-        }}
-        data-ui="enlarge-control"
-      >
-        Perbesar foto {role === "gh" ? "Gunung Hutan" : "Panjat Tebing"}
-        <span aria-hidden="true"> ↗</span>
-      </button>
-      <dialog
-        className="box-border m-auto p-6 w-fit max-w-[calc(100vw_-_32px)] max-h-[calc(100dvh_-_32px)] overflow-auto overscroll-contain bg-page text-ink border border-control-border backdrop:bg-black/75 [&_[data-ui~=photo-fullframe]]:w-auto [&_[data-ui~=photo-fullframe]]:max-w-full [&_[data-ui~=photo-fullframe]]:m-0 [&_[data-ui~=photo-fullframe]_img]:block [&_[data-ui~=photo-fullframe]_img]:w-auto [&_[data-ui~=photo-fullframe]_img]:h-auto [&_[data-ui~=photo-fullframe]_img]:max-w-full [&_[data-ui~=photo-fullframe]_img]:max-h-[58dvh] [&_[data-ui~=photo-fullframe]_img]:object-contain [&_[data-ui~=photo-fullframe]_img]:mx-auto [&_[data-ui~=caption]]:text-muted [&_[data-ui~=caption]]:max-w-[65ch] [&_:focus-visible]:outline-focus max-[601px]:p-4 max-[601px]:[&_[data-ui~=photo-fullframe]_img]:max-h-[52dvh] forced-colors:border-[CanvasText] forced-colors:backdrop:bg-[Canvas] forced-colors:backdrop:opacity-85"
-        ref={modal}
-        aria-labelledby={titleId}
-        onCancel={(e) => {
-          e.preventDefault();
-          setOpen(false);
-        }}
-        onKeyDown={(e) => {
-          if (e.key === "Tab" && !e.ctrlKey && !e.altKey && !e.metaKey) {
-            e.preventDefault();
-            closeControl.current?.focus();
-          }
-        }}
-        data-ui="photo-dialog"
-      >
-        {open && (
-          <>
-            <header
-              className="flex items-start justify-between gap-4 mb-4 [&_[data-ui~=content-title]]:text-[24px] [&_[data-ui~=content-title]]:leading-[30px] [&_[data-ui~=content-title]]:max-w-[22ch] [&_[data-ui~=button]]:shrink-0 max-[601px]:flex-wrap max-[601px]:[&_[data-ui~=content-title]]:text-[22px] max-[601px]:[&_[data-ui~=content-title]]:leading-[28px]"
-              data-ui="photo-toolbar"
-            >
-              <h2
-                id={titleId}
-                className="font-semibold text-[26px] leading-[32px] font-editorial [&_a:hover]:underline [&_a:hover]:underline-offset-4 [&_a]:block [&_a]:min-h-11 [&_a]:text-inherit lg:text-[30px] lg:leading-[36px] lg:font-semibold"
-                data-ui="content-title"
-              >
-                {title}
-              </h2>
-              <button
-                autoFocus
-                ref={closeControl}
-                className="inline-flex items-center rounded-control border px-5 py-2.5 transition-colors min-h-11.5 rounded-control text-[17px] leading-[24px] font-semibold pt-2.5 pr-4 pb-2.5 pl-4 gap-2 justify-start disabled:opacity-100 disabled:text-disabled-ink disabled:bg-disabled-bg disabled:border-disabled-bg disabled:cursor-not-allowed hover:border-forest bg-page border-control-border text-primary [&:hover:not(:disabled)]:bg-surface-muted [&:active:not(:disabled)]:border-primary"
-                type="button"
-                onClick={() => setOpen(false)}
-                data-ui="button button-secondary"
-              >
-                Tutup foto
-              </button>
-            </header>
-            <figure className="" data-ui="photo-fullframe">
-              {failed ? (
-                <p role="status">
-                  Foto tidak termuat. Tutup dan buka kembali untuk mencoba lagi.
-                </p>
-              ) : (
-                <img
-                  src={asset.src}
-                  srcSet={asset.srcSet}
-                  sizes={
-                    role === "gh"
-                      ? "(max-width:600px) calc(100vw - 64px), 400px"
-                      : "(max-width:600px) calc(100vw - 64px), 530px"
-                  }
-                  width={asset.width}
-                  height={asset.height}
-                  alt={asset.alt}
-                  decoding="async"
-                  onError={() => setFailed(true)}
-                />
-              )}
-              <MediaCaption credit={asset.credit}>{asset.caption}</MediaCaption>
-            </figure>
-          </>
-        )}
-      </dialog>
-    </>
-  );
-}
 export function DocumentaryMedia({
   role,
   recordId,
@@ -324,7 +201,7 @@ export function DocumentaryMedia({
   fallback,
   children,
   omitWhenUnavailable = false,
-  enlargement = false,
+  frame = "natural",
 }: {
   role: MediaRole;
   recordId?: string;
@@ -334,7 +211,7 @@ export function DocumentaryMedia({
   fallback: string;
   children?: ReactNode;
   omitWhenUnavailable?: boolean;
-  enlargement?: boolean;
+  frame?: "natural" | "portrait";
 }) {
   const asset = useDocumentaryAsset(role, recordId, placement);
   const [failedSource, setFailedSource] = useState<string>();
@@ -343,7 +220,7 @@ export function DocumentaryMedia({
   return asset && !failed ? (
     <figure
       data-media-role={role}
-      className="[&_img]:block [&_img]:w-full [&_img]:h-auto [&_img]:object-contain [&_[data-ui~=caption]]:mt-3"
+      className={`[&_img]:block [&_img]:w-full [&_[data-ui~=caption]]:mt-3 ${frame === "portrait" ? "[&_img]:aspect-[4/5] [&_img]:object-cover [&_img]:object-center" : "[&_img]:h-auto [&_img]:object-contain"}`}
       data-media-asset={asset.assetId}
       data-media-use={asset.useId}
       data-ui="media"
@@ -361,13 +238,6 @@ export function DocumentaryMedia({
         onError={() => setFailedSource(asset.src)}
       />
       <MediaCaption credit={asset.credit}>{asset.caption}</MediaCaption>
-      {enlargement &&
-        homeEnlargementAuthorized({
-          ...asset,
-          role,
-          recordId,
-          placement,
-        }) && <HomePhotoEnlargement asset={asset} role={role} />}
     </figure>
   ) : (
     <aside
@@ -403,25 +273,62 @@ export function ProgrammeEntry({
   description,
   href,
   action,
+  variant = "index",
 }: {
-  index: string;
+  index?: string;
   title: string;
   description: string;
   href: string;
   action: string;
+  variant?: "index" | "card";
 }) {
+  if (variant === "card") {
+    return (
+      <article className="h-full" data-ui="programme">
+        <a
+          className="group flex h-full flex-col border border-border bg-page p-6 text-inherit no-underline transition-[background-color,border-color,transform] duration-150 hover:border-primary hover:bg-surface-muted active:translate-y-px focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-focus lg:p-7"
+          href={href}
+        >
+          <h3
+            className="font-editorial text-[26px] leading-[32px] font-semibold lg:text-[30px] lg:leading-[36px]"
+            data-ui="content-title"
+          >
+            {title}
+          </h3>
+          <p className="mt-3 text-[17px] leading-[25px] lg:text-[18px] lg:leading-[26px]">
+            {description}
+          </p>
+          <span
+            className="mt-auto flex min-h-11 items-center gap-2 pt-5 font-sans text-[16px] leading-[22px] font-semibold text-primary"
+            data-ui="action"
+          >
+            <span>{action}</span>
+            <span
+              className="transition-transform duration-150 group-hover:translate-x-1"
+              aria-hidden="true"
+            >
+              →
+            </span>
+          </span>
+        </a>
+      </article>
+    );
+  }
+
   return (
     <article
       className="border-t-2 border-t-primary grid grid-cols-[24px_minmax(0,1fr)] gap-3.5 pt-4 [&_p]:mt-2.5 [&_p]:text-[17px] [&_p]:leading-[25px] [&_[data-ui~=link]]:mt-4 lg:block lg:[&_[data-ui~=content-title]]:mt-6 lg:[&_p]:text-[18px] lg:[&_p]:leading-[26px] lg:[&_p]:mt-3.5 lg:[&_[data-ui~=link]]:mt-6"
       data-ui="programme"
     >
-      <span
-        className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-muted"
-        aria-hidden="true"
-        data-ui="label index"
-      >
-        {index}
-      </span>
+      {index && (
+        <span
+          className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-muted"
+          aria-hidden="true"
+          data-ui="label index"
+        >
+          {index}
+        </span>
+      )}
       <div>
         <h3
           className="font-semibold text-[26px] leading-[32px] font-editorial [&_a:hover]:underline [&_a:hover]:underline-offset-4 [&_a]:block [&_a]:min-h-11 [&_a]:text-inherit lg:text-[30px] lg:leading-[36px] lg:font-semibold"
@@ -469,11 +376,58 @@ export function ActivityPreview({
   activity,
   title,
   summary,
+  variant = "default",
 }: {
   activity: ActivityFixture;
   title?: string;
   summary?: string;
+  variant?: "default" | "archive";
 }) {
+  const displayTitle = title || activityDisplayTitle(activity);
+  if (variant === "archive")
+    return (
+      <article
+        className="grid gap-3 border-t border-t-border py-6 text-[17px] leading-[25px] md:grid-cols-[180px_minmax(0,1fr)] md:gap-8 lg:py-7"
+        data-activity-id={activity.id}
+        data-ui="activity activity-archive"
+      >
+        <div
+          className="font-sans text-[15px] leading-[23px] text-blue md:pt-1"
+          data-ui="activity-metadata"
+        >
+          <RecordDate id={activity.id} fallback={activity.date} />
+        </div>
+        <div data-ui="activity-content">
+          <h3
+            className="font-sans text-[23px] leading-[29px] font-semibold lg:text-[25px] lg:leading-[32px]"
+            data-ui="activity-title"
+          >
+            <a
+              className="block w-fit max-w-full no-underline focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-focus hover:text-primary active:text-primary-active"
+              href={activity.href}
+              aria-label={title || activity.title}
+            >
+              {displayTitle}
+            </a>
+          </h3>
+          {activity.location && (
+            <p className="mt-1 text-[16px] leading-[23px] text-muted" data-ui="place">
+              {activity.location}
+            </p>
+          )}
+          <p className="mt-3 max-w-[65ch]">{summary || activity.summary}</p>
+          <div className="mt-3">
+            <TextLink
+              href={activity.href || `#/activity/${activity.id}`}
+              variant="quiet"
+              ariaLabel={`Baca catatan ${displayTitle}`}
+            >
+              Baca catatan
+            </TextLink>
+          </div>
+        </div>
+      </article>
+    );
   return (
     <article
       className="border-t border-t-border py-6 grid gap-2 text-[17px] leading-[25px] lg:grid-cols-[160px_minmax(0,1.35fr)_minmax(0,.85fr)_minmax(0,1.2fr)] lg:gap-6 lg:min-h-27 lg:[&_[data-ui~=place]]:text-[18px] lg:[&_[data-ui~=place]]:leading-[26px] lg:max-[1200px]:grid-cols-[174px_minmax(0,1fr)] lg:max-[1200px]:[&_[data-ui~=place]]:col-[2] lg:max-[1200px]:[&>p:last-child]:col-[2]"
@@ -485,7 +439,7 @@ export function ActivityPreview({
         data-ui="activity-title"
       >
         <a href={activity.href} aria-label={title || activity.title}>
-          {title || activityDisplayTitle(activity)}
+          {displayTitle}
         </a>
       </h3>
       {activity.location && (
@@ -505,6 +459,10 @@ export function PublicationPreview({
   href,
   action,
   related,
+  variant = "default",
+  byline,
+  detail,
+  availabilityText,
 }: {
   title: string;
   type: string;
@@ -513,12 +471,58 @@ export function PublicationPreview({
   href: string;
   action: string;
   related?: string;
+  variant?: "default" | "editorial";
+  byline?: string;
+  detail?: string;
+  availabilityText?: string;
 }) {
   const { registry } = useContentReadModel();
   const record = registry.works.find(
     (w) => href.split("?")[0] === `#/publication/${w.id}`,
   );
   const availability = record ? workDiscovery(record) : undefined;
+  if (variant === "editorial")
+    return (
+      <article
+        className="flex h-full flex-col border-t-2 border-t-blue pt-5 pb-1 [&>[data-ui~=content-title]]:mt-3 [&>[data-ui~=metadata]]:mt-4 [&>[data-ui~=summary]]:mt-4 [&>[data-ui~=availability]]:mt-5 [&>[data-ui~=link]]:mt-6"
+        data-ui="publication publication-editorial"
+      >
+        <p
+          className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue"
+          data-ui="label"
+        >
+          {type}
+          {related ? ` / ${related}` : " / Mandiri"}
+        </p>
+        <h3
+          className="font-semibold text-[26px] leading-[32px] font-editorial text-primary lg:text-[30px] lg:leading-[36px]"
+          data-ui="content-title"
+        >
+          {title}
+        </h3>
+        {(byline || date || detail) && (
+          <p className="text-[15px] leading-[22px] text-muted" data-ui="metadata">
+            {[byline, date, detail].filter(Boolean).join(" · ")}
+          </p>
+        )}
+        <p data-ui="summary">{summary}</p>
+        <p
+          className="border-l-2 border-l-border pl-3 text-[14px] leading-[20px] text-muted"
+          data-ui="availability"
+        >
+          {availabilityText ?? availability?.cue}
+        </p>
+        <div className="mt-auto">
+          <TextLink
+            href={href}
+            variant="quiet"
+            ariaLabel={`${action}: ${title}`}
+          >
+            {action}
+          </TextLink>
+        </div>
+      </article>
+    );
   return (
     <article
       className="border-t-2 border-t-blue pt-4 [&>[data-ui~=content-title]]:mt-3 [&>[data-ui~=metadata]]:mt-3 [&>p:not(:first-child)]:mt-3 [&>[data-ui~=link]]:mt-6"

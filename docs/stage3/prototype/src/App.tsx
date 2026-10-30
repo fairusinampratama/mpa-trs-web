@@ -33,9 +33,11 @@ export function App({ reviewMedia = {}, activities, institution, registry = cano
     const record = path.startsWith('/activity/') ? (activities ?? view.activityRecords).find(r => r.id === path.split('/')[2]) : undefined;
     const work=path.startsWith('/publication/')?activeInstitution.works.find(w=>w.id===path.split('/')[2]):undefined;
     const expedition=path.startsWith('/expedition/')?view.expeditionRecords.find(a=>a.id===path.split('/')[2]):undefined;
-    const title=record?.title??work?.title??expedition?.title??titles[path];
+    const editionId=path.startsWith('/expedition/')?path.split('/')[2]:undefined;
+    const edition=editionId?registry.editions.find(e=>e.programmeId==='te'&&`te${e.label}`===editionId):undefined;
+    const title=record?.title??work?.title??expedition?.title??(edition?`TE${edition.label} — Catatan belum tersedia`:undefined)??titles[path];
     document.title = title ? `${title} — MAPALA Tursina` : path.startsWith('/ui-lab') ? 'Tursina — Laboratorium Antarmuka' : 'MAPALA Tursina — Prototipe Stage 3';
-  }, [path, activities, institution, view]);
+  }, [path, activities, institution, registry, view]);
   return <ContentReadContext.Provider value={{registry,view}}><ActivityContentProvider records={activities??view.activityRecords}>
     <InstitutionalContentProvider records={activeInstitution}><CanonicalMediaContext.Provider value={mediaRegistry}><MediaContext.Provider value={reviewMedia}>
       {path.startsWith('/ui-lab') ? <Lab /> : <SitePrototype route={route} />}

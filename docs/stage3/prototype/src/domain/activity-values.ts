@@ -79,6 +79,7 @@ export type DivisionDefinition = {
   name: string;
   alias?: string;
   description: string;
+  aboutSummary?: string;
 };
 export type ProgrammeDefinition = {
   id: string;

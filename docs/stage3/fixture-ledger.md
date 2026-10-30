@@ -34,7 +34,7 @@ Accessible Drive files are references, not publication authorization. No unresol
 
 ## Coverage and unknowns
 
-No current/latest TE fact established. No current recruitment/governance/contact fact established. No completed-film verification. No real-data disclosure authorization. TE11 province wording, BATAFIA forum date and Gunung Lawu regency remain unresolved. Institutional roles/channel still need designation before go-live. Source-verified text summaries are review drafts, not approved institutional public copy.
+The owner confirms that the Tursina Explore sequence contains thirteen editions; TE13 date, place, execution details and public documentation remain unestablished. No current recruitment/governance/contact fact established. No completed-film verification. No real-data disclosure authorization. TE11 province wording, BATAFIA forum date and Gunung Lawu regency remain unresolved. Institutional roles/channel still need designation before go-live. Source-verified text summaries are review drafts, not approved institutional public copy.
 
 ## Step 5B-1 recheck — 15 October 2026
 

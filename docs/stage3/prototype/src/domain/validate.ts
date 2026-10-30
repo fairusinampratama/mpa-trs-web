@@ -350,7 +350,43 @@ export function validateRegistry(r: InstitutionalRegistry) {
   }
   for (const h of r.history)
     for (const p of h.relatedProgrammeIds ?? []) reference("programmes", p);
-  for (const block of r.information.blocks) sources(block.sourceUses);
+  demand(
+    r.information.name.trim() &&
+      r.information.shortName.trim() &&
+      r.information.affiliation.trim() &&
+      r.information.intro.trim() &&
+      r.information.motto.trim(),
+    "Missing institutional identity",
+  );
+  unique(r.information.facts, "institutional fact");
+  unique(r.information.principles, "institutional principle");
+  unique(r.information.learning.stages, "institutional learning stage");
+  for (const fact of r.information.facts) {
+    demand(fact.label.trim() && fact.value.trim(), "Missing institutional fact");
+    sources(fact.sourceUses);
+  }
+  for (const principle of r.information.principles) {
+    demand(
+      principle.title.trim() && principle.summary.trim(),
+      "Missing institutional principle",
+    );
+    sources(principle.sourceUses);
+  }
+  demand(
+    r.information.learning.title.trim() &&
+      r.information.learning.summary.trim() &&
+      r.information.learning.stages.length,
+    "Missing institutional learning sequence",
+  );
+  for (const stage of r.information.learning.stages)
+    demand(stage.title.trim() && stage.summary.trim(), "Missing learning stage");
+  sources(r.information.learning.sourceUses);
+  demand(
+    r.information.continuity.title.trim() &&
+      r.information.continuity.summary.trim(),
+    "Missing institutional continuity",
+  );
+  sources(r.information.continuity.sourceUses);
   const edgeKeys = new Set<string>();
   for (const e of r.relations) {
     const kinds: Record<Relationship["kind"], [string, string]> = {

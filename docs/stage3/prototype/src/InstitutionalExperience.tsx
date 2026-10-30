@@ -14,6 +14,7 @@ import {
   type HistoryEntry,
 } from "./institutional-model";
 import {
+  ActionLink,
   Breadcrumbs,
   EvidenceDisclosure,
   ProgrammeEntry,
@@ -953,172 +954,243 @@ export function InstitutionalHistory({
 }
 export function InstitutionalAbout() {
   const {
-    view: { divisions: divisionDefinitions, sources: sourceDefinitions },
+    view: { divisions: divisionDefinitions },
   } = useContentReadModel();
   const { information: i } = useInstitutionalRecords();
   return (
-    <div
-      className="wrap-break-word [&_[data-ui~=activity-page-head]>[data-ui~=link]]:mt-6 [&_[data-ui~=activity-page-head]>[data-ui~=link]]:max-w-[38em]"
-      data-ui="institution-experience"
-    >
+    <div className="wrap-break-word" data-ui="institution-experience about-page">
       <header
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pt-4 pb-10 [&>[data-ui~=display]]:mt-3 [&>[data-ui~=metadata-inline]]:mt-6 [&>[data-ui~=link]]:mt-6 [&>[data-ui~=link]]:max-w-[38em] lg:pt-6 lg:pb-14"
-        data-ui="container activity-page-head"
+        className="mx-auto w-[calc(100%_-_32px)] max-w-institution pt-4 pb-12 md:w-[calc(100%_-_48px)] lg:pt-6 lg:pb-16"
+        data-ui="container about-opening"
       >
-        <Breadcrumbs
-          items={[
-            {
-              label: "Beranda",
-              href: "#/",
-            },
-            {
-              label: "Tentang MAPALA Tursina",
-            },
-          ]}
-        />
         <p
-          className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue"
+          className="font-sans text-[12px]/[18px] font-semibold tracking-[.02em] text-blue uppercase"
           data-ui="label"
         >
-          Tentang {i.shortName}
+          Tentang Tursina
         </p>
         <h1
-          className="font-semibold text-[36px] leading-[38.9px] font-editorial max-[360px]:text-[32px] max-[360px]:leading-[34.6px] lg:text-[56px] lg:leading-[60.5px] lg:[&>span]:block"
+          className="mt-3 max-w-[13ch] font-editorial text-[42px]/[44px] font-semibold tracking-[-0.02em] max-[360px]:text-[38px]/[40px] lg:text-[64px]/[66px]"
           data-ui="display"
         >
-          {i.name}
+          {i.shortName}
         </h1>
         <p
-          className="mt-4 font-semibold text-[19px] leading-[28px] font-sans text-blue"
-          data-ui="institution-affiliation"
+          className="mt-4 font-sans text-[18px]/[26px] font-semibold text-blue lg:text-[20px]/[28px]"
+          data-ui="institution-name"
         >
-          {i.affiliation}
+          {i.name}
         </p>
         <p
-          className="text-[17px] leading-[25px] lg:text-[20px] lg:leading-[29px] max-w-[66ch] mt-6"
-          data-ui="intro activity-deck"
+          className="mt-6 max-w-[68ch] text-[18px]/[27px] lg:text-[21px]/[31px]"
+          data-ui="intro about-deck"
         >
           {i.intro}
         </p>
+        <dl
+          className="mt-7 grid grid-cols-2 border-y border-border sm:grid-cols-3 sm:divide-x sm:divide-border"
+          data-ui="about-facts"
+        >
+          {i.facts.map((fact) => (
+            <div
+              className={`py-3 sm:border-t-0 sm:px-5 sm:first:pl-0 sm:last:pr-0 ${fact.id === "affiliation" ? "order-last col-span-2 border-t border-border sm:order-none sm:col-span-1" : "border-t-0"}`}
+              key={fact.id}
+              data-ui="about-fact"
+            >
+              <dt className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted uppercase">
+                {fact.label}
+              </dt>
+              <dd className="mt-1 font-editorial text-[20px]/[27px] font-semibold">
+                {fact.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
         <div
-          className="flex flex-wrap gap-y-4 gap-x-10 mt-6"
+          className="mt-7 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-5"
           data-ui="institution-opening-actions"
         >
-          <TextLink href="#/program/pd">
-            Kenali pendidikan dan kegiatan
+          <ActionLink href="#/activities">Jelajahi kegiatan</ActionLink>
+          <TextLink href="#/jejak" variant="quiet">
+            Telusuri Jejak Tursina
           </TextLink>
-          <TextLink href="#/jejak">Telusuri Jejak Tursina</TextLink>
         </div>
       </header>
-      <section
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22 grid gap-10 [&>section>[data-ui~=caption]]:mt-6 [&>section>[data-ui~=caption]]:max-w-[70ch] lg:gap-14 lg:[&>section]:grid lg:[&>section]:grid-cols-[minmax(0,360fr)_minmax(0,720fr)] lg:[&>section]:gap-y-0 lg:[&>section]:gap-x-18 lg:[&_[data-ui~=reading]]:mt-0 lg:[&>section>[data-ui~=caption]]:col-[2]"
-        data-ui="container section institution-about-blocks"
-      >
-        {i.blocks.map((b) => (
-          <section key={b.id}>
-            <h2
-              className="font-semibold text-[30px] leading-[35px] font-editorial lg:text-[40px] lg:leading-[46px] lg:font-semibold"
-              data-ui="section-title"
-            >
-              {b.title}
-            </h2>
-            <div
-              className="max-w-[66ch] font-normal text-[18px] leading-[28px] font-editorial mt-6 [&_p+p]:mt-6 lg:text-[20px] lg:leading-[31px]"
-              data-ui="reading"
-            >
-              {b.paragraphs.map((p) => (
-                <p key={p}>{p}</p>
-              ))}
-            </div>
-            <p
-              className="text-[14px] leading-[20px] text-muted"
-              data-ui="caption"
-            >
-              {b.sourceUses
-                .map(
-                  (u) =>
-                    `${sourceDefinitions.find((s) => s.id === u.sourceId)?.label} / ${u.locator}`,
-                )
-                .join("; ")}
-            </p>
-          </section>
-        ))}
-      </section>
-      <section className="bg-surface-muted" data-ui="institution-field-band">
+      <section className="bg-surface-muted" data-ui="about-principles">
         <div
-          className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22"
+          className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-10 md:w-[calc(100%_-_48px)] lg:py-18"
           data-ui="container section"
         >
           <SectionHeading
-            label="Pendidikan lapangan"
-            title="Lima bidang, berbagai ruang belajar."
-            description="Contoh kegiatan menunjukkan ruang belajar, bukan klaim pencapaian setiap peserta."
+            label="Landasan Tursina"
+            title="Belajar bersama, bergerak dengan pengetahuan."
+            description="Asas, tujuan dan karakter organisasi memberi arah bagi pendidikan, kegiatan lapangan dan pengabdian."
           />
           <div
-            className="grid gap-8 [&>div]:border-t-2 [&>div]:border-t-primary [&>div]:pt-4 [&_p]:mt-4 [&_[data-ui~=link]]:mt-4 md:grid-cols-2 lg:grid-cols-3"
-            data-ui="institution-fields"
+            className="grid gap-5 md:grid-cols-3 md:gap-6 lg:gap-10"
+            data-ui="about-principle-grid"
           >
-            {divisionDefinitions.map((d) => (
-              <div key={d.id}>
-                <h3
-                  className="font-semibold text-[26px] leading-[32px] font-editorial [&_a:hover]:underline [&_a:hover]:underline-offset-4 [&_a]:block [&_a]:min-h-11 [&_a]:text-inherit lg:text-[30px] lg:leading-[36px] lg:font-semibold"
-                  data-ui="content-title"
-                >
-                  {d.name}
-                </h3>
-                <p>{d.description}</p>
-                <TextLink href={`#/program/pd?division=${d.id}`}>
-                  Lihat catatan {d.name}
-                </TextLink>
-              </div>
+            {i.principles.map((principle, index) => (
+              <article
+                className="grid grid-cols-[34px_minmax(0,1fr)] gap-3 border-t-2 border-primary pt-3 md:block md:pt-4"
+                key={principle.id}
+                data-ui="about-principle"
+              >
+                <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted">
+                  {String(index + 1).padStart(2, "0")}
+                </p>
+                <div>
+                  <h3 className="font-editorial text-[24px]/[30px] font-semibold md:mt-3 lg:text-[30px]/[36px]">
+                    {principle.title}
+                  </h3>
+                  <p className="mt-2 text-[16px]/[24px] lg:mt-3 lg:text-[18px]/[27px]">
+                    {principle.summary}
+                  </p>
+                </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
       <section
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22 [&_[data-ui~=evidence]]:mt-10"
-        data-ui="container section institution-purpose"
+        className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-10 md:w-[calc(100%_-_48px)] lg:py-18"
+        data-ui="container section about-learning"
       >
-        <p
-          className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue"
-          data-ui="label"
-        >
-          Motto dalam ART Pasal 3
-        </p>
-        <p
-          className="font-semibold text-[30px] leading-[35px] font-editorial lg:text-[40px] lg:leading-[46px] lg:font-semibold max-w-[26ch] mt-4 mb-10"
-          data-ui="section-title institution-motto"
-        >
-          {i.motto}
-        </p>
+        <SectionHeading
+          label="Cara belajar"
+          title={i.learning.title}
+          description={i.learning.summary}
+        />
         <div
-          className="grid gap-8 md:grid-cols-2"
-          data-ui="activity-programmes"
+          className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-4 lg:gap-6"
+          data-ui="about-learning-stages"
         >
-          <ProgrammeEntry
-            index="01"
-            title="Program, edisi dan kegiatan"
-            description="Pendidikan divisi, perjalanan Tursina Explore dan kegiatan mandiri."
-            href="#/activities"
-            action="Jelajahi kegiatan"
-          />
-          <ProgrammeEntry
-            index="02"
-            title="Karya yang berdiri sendiri"
-            description="Artikel, materi belajar dan catatan sumber."
-            href="#/publications"
-            action="Buka karya dan pengetahuan"
-          />
-        </div>
-        <EvidenceDisclosure summary="Identitas dan batas informasi">
-          {i.identityNotes.map((p) => (
-            <p key={p}>{p}</p>
+          {i.learning.stages.map((stage, index) => (
+            <article
+              className="border-t border-border pt-3 sm:block"
+              key={stage.id}
+              data-ui="about-learning-stage"
+            >
+              <p
+                className="font-editorial text-[25px]/[30px] font-semibold text-gold"
+                aria-hidden="true"
+              >
+                {String(index + 1).padStart(2, "0")}
+              </p>
+              <div className="mt-3">
+                <h3 className="font-editorial text-[20px]/[25px] font-semibold sm:text-[22px]/[28px]">
+                  {stage.title}
+                </h3>
+                <p className="mt-2 text-[15px]/[22px] text-muted sm:text-[16px]/[24px]">
+                  {stage.summary}
+                </p>
+              </div>
+            </article>
           ))}
-          <p>
-            Jadwal penerimaan, kepengurusan, kontak dan kanal pendaftaran
-            terkini belum dikonfirmasi; tidak disimpulkan dari dokumen historis.
+        </div>
+      </section>
+      <section className="bg-surface-muted" data-ui="institution-field-band">
+        <div
+          className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-10 md:w-[calc(100%_-_48px)] lg:py-18"
+          data-ui="container section"
+        >
+          <SectionHeading
+            label="Pendidikan lapangan"
+            title="Lima bidang praktik."
+            description="Bidang-bidang ini membantu mengarahkan pembelajaran anggota pada medan, keterampilan dan tanggung jawab yang berbeda."
+          />
+          <div
+            className="grid grid-cols-2 gap-x-4 gap-y-6 sm:gap-x-6 lg:grid-cols-5"
+            data-ui="institution-fields"
+          >
+            {divisionDefinitions.map((division, index) => (
+              <article
+                key={division.id}
+                data-ui="institution-field"
+              >
+                <a
+                  className="group flex h-full flex-col border-t-2 border-primary bg-transparent p-3 text-inherit no-underline transition-[background-color,border-color,transform] duration-150 hover:border-primary-hover hover:bg-page active:translate-y-px focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-focus"
+                  href={`#/program/pd?division=${division.id}`}
+                >
+                  <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted">
+                    {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <h3 className="mt-1 flex min-h-11 items-center font-editorial text-[20px]/[25px] font-semibold sm:text-[22px]/[28px]">
+                    {division.name}
+                  </h3>
+                  <p className="mt-2 text-[14px]/[20px] text-muted sm:text-[15px]/[22px]">
+                    {division.aboutSummary ?? division.description}
+                  </p>
+                  <span className="mt-auto flex min-h-11 items-center gap-2 pt-3 font-sans text-[14px]/[20px] font-semibold text-primary">
+                    <span>Jelajahi bidang</span>
+                    <span
+                      className="transition-transform duration-150 group-hover:translate-x-1"
+                      aria-hidden="true"
+                    >
+                      →
+                    </span>
+                  </span>
+                </a>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8">
+            <TextLink href="#/program/pd" variant="quiet">
+              Jelajahi Pemantapan Divisi
+            </TextLink>
+          </div>
+        </div>
+      </section>
+      <section
+        className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-10 md:w-[calc(100%_-_48px)] lg:py-18"
+        data-ui="container section about-continuity"
+      >
+        <div
+          className="grid gap-8 lg:grid-cols-[minmax(0,280px)_minmax(0,1fr)] lg:gap-16"
+          data-ui="about-continuity-layout"
+        >
+          <p
+            className="font-editorial text-[68px]/[64px] font-semibold tracking-[-0.04em] text-primary lg:text-[92px]/[86px]"
+            aria-hidden="true"
+          >
+            1995
           </p>
-        </EvidenceDisclosure>
+          <div>
+            <p
+              className="font-sans text-[12px]/[18px] font-semibold tracking-[.02em] text-blue uppercase"
+              data-ui="label"
+            >
+              Jejak Tursina
+            </p>
+            <h2
+              className="mt-3 max-w-[22ch] font-editorial text-[30px]/[35px] font-semibold lg:text-[40px]/[46px]"
+              data-ui="section-title"
+            >
+              {i.continuity.title}
+            </h2>
+            <p className="mt-4 max-w-[66ch] text-[18px]/[28px]">
+              {i.continuity.summary}
+            </p>
+            <div className="mt-5">
+              <TextLink href="#/jejak" variant="quiet">
+                Telusuri Jejak Tursina
+              </TextLink>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="border-t border-border bg-page"
+        data-ui="about-motto"
+      >
+        <div className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-12 md:w-[calc(100%_-_48px)] lg:py-16">
+          <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-blue uppercase">
+            Motto Tursina
+          </p>
+          <blockquote className="mt-4 max-w-[28ch] font-editorial text-[30px]/[37px] font-semibold lg:text-[44px]/[51px]">
+            “{i.motto}”
+          </blockquote>
+        </div>
       </section>
     </div>
   );

@@ -89,11 +89,22 @@ export type HistoryEntry = {
   editorial: Projection;
   periodLabel?: string;
 };
-export type InformationBlock = {
+export type InstitutionalFact = {
+  id: string;
+  label: string;
+  value: string;
+  sourceUses: SourceUse[];
+};
+export type InstitutionalPrinciple = {
   id: string;
   title: string;
-  paragraphs: string[];
+  summary: string;
   sourceUses: SourceUse[];
+};
+export type InstitutionalLearningStage = {
+  id: string;
+  title: string;
+  summary: string;
 };
 export type InstitutionalInformation = {
   name: string;
@@ -101,7 +112,19 @@ export type InstitutionalInformation = {
   affiliation: string;
   intro: string;
   motto: string;
-  blocks: InformationBlock[];
+  facts: InstitutionalFact[];
+  principles: InstitutionalPrinciple[];
+  learning: {
+    title: string;
+    summary: string;
+    stages: InstitutionalLearningStage[];
+    sourceUses: SourceUse[];
+  };
+  continuity: {
+    title: string;
+    summary: string;
+    sourceUses: SourceUse[];
+  };
   identityNotes: string[];
 };
 export type SyntheticMember = {

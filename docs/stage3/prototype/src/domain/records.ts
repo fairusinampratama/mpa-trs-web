@@ -1,7 +1,7 @@
 import type {InstitutionalRegistry} from './contract.ts';
 // Canonical public-safe editorial records. No private originals or custody locators.
 export const institutionalContent = {
-  "version": "5c2a.2",
+  "version": "5c2a.3",
   "programmes": [
     {
       "id": "pd",
@@ -20,29 +20,34 @@ export const institutionalContent = {
     {
       "id": "GH",
       "name": "Gunung Hutan",
-      "description": "Navigasi darat, manajemen perjalanan, dan pembelajaran di medan gunung serta hutan."
+      "description": "Navigasi darat, manajemen perjalanan, dan pembelajaran di medan gunung serta hutan.",
+      "aboutSummary": "Navigasi dan perjalanan di medan gunung serta hutan."
     },
     {
       "id": "RC",
       "name": "Panjat Tebing",
       "alias": "Rock Climbing",
-      "description": "Pemanjatan, instalasi, pemetaan jalur, dan kerja tim di tebing."
+      "description": "Pemanjatan, instalasi, pemetaan jalur, dan kerja tim di tebing.",
+      "aboutSummary": "Pemanjatan dan kerja tim di tebing."
     },
     {
       "id": "ORAD",
       "name": "Olahraga Arus Deras",
-      "description": "Pengarungan, pembacaan sungai, teknik dayungan, dan pengenalan medan air."
+      "description": "Pengarungan, pembacaan sungai, teknik dayungan, dan pengenalan medan air.",
+      "aboutSummary": "Pengarungan dan pembacaan medan air."
     },
     {
       "id": "LH",
       "name": "Lingkungan Hidup",
-      "description": "Pengamatan flora atau fauna, kondisi kawasan, dan penyajian hasil pengamatan."
+      "description": "Pengamatan flora atau fauna, kondisi kawasan, dan penyajian hasil pengamatan.",
+      "aboutSummary": "Pengamatan lingkungan dan kondisi kawasan."
     },
     {
       "id": "CAVING",
       "name": "Susur Gua",
       "alias": "Caving",
-      "description": "Penelusuran dan pemetaan gua serta pengenalan instalasi dan kerja tim."
+      "description": "Penelusuran dan pemetaan gua serta pengenalan instalasi dan kerja tim.",
+      "aboutSummary": "Penelusuran, instalasi dan pemetaan gua."
     }
   ],
   "cohorts": [
@@ -101,6 +106,51 @@ export const institutionalContent = {
   ],
   "editions": [
     {
+      "id": "te1-edition",
+      "programmeId": "te",
+      "label": "1"
+    },
+    {
+      "id": "te2-edition",
+      "programmeId": "te",
+      "label": "2"
+    },
+    {
+      "id": "te3-edition",
+      "programmeId": "te",
+      "label": "3"
+    },
+    {
+      "id": "te4-edition",
+      "programmeId": "te",
+      "label": "4"
+    },
+    {
+      "id": "te5-edition",
+      "programmeId": "te",
+      "label": "5"
+    },
+    {
+      "id": "te6-edition",
+      "programmeId": "te",
+      "label": "6"
+    },
+    {
+      "id": "te7-edition",
+      "programmeId": "te",
+      "label": "7"
+    },
+    {
+      "id": "te8-edition",
+      "programmeId": "te",
+      "label": "8"
+    },
+    {
+      "id": "te9-edition",
+      "programmeId": "te",
+      "label": "9"
+    },
+    {
       "id": "te10-edition",
       "programmeId": "te",
       "label": "10"
@@ -114,6 +164,11 @@ export const institutionalContent = {
       "id": "te12-edition",
       "programmeId": "te",
       "label": "12"
+    },
+    {
+      "id": "te13-edition",
+      "programmeId": "te",
+      "label": "13"
     }
   ],
   "activities": [
@@ -4104,30 +4159,59 @@ export const institutionalContent = {
     "name": "Mahasiswa Pencinta Alam Tursina",
     "shortName": "MAPALA Tursina",
     "affiliation": "UIN Maulana Malik Ibrahim Malang",
-    "intro": "Mahasiswa Pencinta Alam Tursina adalah unit kegiatan mahasiswa di UIN Maulana Malik Ibrahim Malang. Pendidikan lapangan, ekspedisi, kegiatan ilmiah dan pengabdian menjadi ruang belajar serta penerapan pengetahuan bersama.",
+    "intro": "Unit kegiatan mahasiswa di UIN Maulana Malik Ibrahim Malang ini dibentuk pada 20 Desember 1995. Ruang kegiatannya mencakup pendidikan lapangan, ekspedisi, kegiatan ilmiah, pelestarian lingkungan dan pengabdian dengan asas kekeluargaan.",
     "motto": "Dari alam aku ada, aku ada untuk alam",
-    "blocks": [
+    "facts": [
       {
-        "id": "character",
-        "title": "Ilmu, alam dan kekeluargaan.",
-        "paragraphs": [
-          "Anggaran Dasar menyebut asas kekeluargaan dan sifat ilmiah, sosial, olahraga serta rekreasi. Dokumen juga menyatakan organisasi terlepas dari politik praktis.",
-          "Karakter itu memberi konteks bagi kegiatan pencintaalaman, pelestarian lingkungan, pengabdian dan penerapan berbagai disiplin ilmu. Ini penjelasan dokumen, bukan daftar capaian yang diklaim sudah terpenuhi."
-        ],
+        "id": "formed",
+        "label": "Dibentuk",
+        "value": "20 Desember 1995",
         "sourceUses": [
           {
             "sourceId": "ad-art-2025",
-            "locator": "AD Pasal 6–10; ART Pasal 4"
+            "locator": "AD Pasal 3"
           }
         ]
       },
       {
-        "id": "education",
-        "title": "Pengetahuan yang dipraktikkan.",
-        "paragraphs": [
-          "Misi dalam AD memadukan kegiatan ilmiah, keterampilan, ketahanan fisik dan mental, serta pelestarian alam dan lingkungan. Tujuannya menghubungkan kemampuan teoritis dan praktis dengan kehidupan bermasyarakat.",
-          "Catatan PD menunjukkan pematerian, latihan, proposal, simulasi, spesialisasi dan presentasi laporan. Standar historis tidak otomatis menjadi kurikulum yang berlaku sekarang."
-        ],
+        "id": "affiliation",
+        "label": "Bernaung di",
+        "value": "UIN Maulana Malik Ibrahim Malang",
+        "sourceUses": [
+          {
+            "sourceId": "ad-art-2025",
+            "locator": "AD Pasal 1–3"
+          }
+        ]
+      },
+      {
+        "id": "fields",
+        "label": "Pendidikan",
+        "value": "Lima bidang praktik",
+        "sourceUses": [
+          {
+            "sourceId": "lpj-2025",
+            "locator": "PD XXIX / physical 91–93"
+          }
+        ]
+      }
+    ],
+    "principles": [
+      {
+        "id": "kinship",
+        "title": "Kekeluargaan",
+        "summary": "Kebersamaan menjadi dasar dalam belajar dan berkegiatan.",
+        "sourceUses": [
+          {
+            "sourceId": "ad-art-2025",
+            "locator": "AD Pasal 6–8"
+          }
+        ]
+      },
+      {
+        "id": "knowledge-practice",
+        "title": "Ilmu dan praktik",
+        "summary": "Pengetahuan, keterampilan, serta ketahanan fisik dan mental dipertemukan di lapangan.",
         "sourceUses": [
           {
             "sourceId": "ad-art-2025",
@@ -4140,27 +4224,71 @@ export const institutionalContent = {
         ]
       },
       {
-        "id": "continuity",
-        "title": "Pengalaman diteruskan melalui catatan.",
-        "paragraphs": [
-          "AD mencatat pembentukan Tursina pada 20 Desember 1995. Arsip pendidikan, ekspedisi dan karya memberi beberapa titik untuk memahami kelanjutannya.",
-          "Website menghubungkan program, kegiatan, karya dan sejarah tanpa menjadikan angkatan atau kepengurusan satu-satunya cara menelusuri organisasi."
-        ],
+        "id": "nature-society",
+        "title": "Alam dan masyarakat",
+        "summary": "Pelestarian lingkungan dan pengabdian memberi arah bagi kegiatan pencintaalaman.",
         "sourceUses": [
           {
             "sourceId": "ad-art-2025",
-            "locator": "AD Pasal 3"
-          },
-          {
-            "sourceId": "lpj-2025",
-            "locator": "PD dan Pendakian Kawi XXIX"
+            "locator": "AD Pasal 9–10"
           }
         ]
       }
     ],
+    "learning": {
+      "title": "Dari pengetahuan menuju pengalaman lapangan.",
+      "summary": "Catatan pendidikan yang tersedia memperlihatkan proses belajar dari pembekalan hingga dokumentasi hasil.",
+      "stages": [
+        {
+          "id": "briefing",
+          "title": "Pematerian",
+          "summary": "Dasar pengetahuan sebelum latihan dan lapangan."
+        },
+        {
+          "id": "practice",
+          "title": "Latihan dan simulasi",
+          "summary": "Keterampilan diuji melalui latihan dan simulasi."
+        },
+        {
+          "id": "fieldwork",
+          "title": "Praktik lapangan",
+          "summary": "Pengetahuan diterapkan dalam kegiatan lapangan."
+        },
+        {
+          "id": "documentation",
+          "title": "Laporan dan berbagi pengetahuan",
+          "summary": "Pengalaman ditinjau, dipresentasikan dan dicatat."
+        }
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "ad-art-2025",
+          "locator": "AD Pasal 9–10"
+        },
+        {
+          "sourceId": "lpj-2025",
+          "locator": "PD XXIX / physical 91–93"
+        }
+      ]
+    },
+    "continuity": {
+      "title": "Pengalaman yang diteruskan.",
+      "summary": "Catatan pendidikan, ekspedisi, kegiatan organisasi dan karya memberi beberapa titik untuk memahami perjalanan Tursina lintas periode. Jejak yang tersedia merupakan pilihan arsip, bukan kronologi tahunan yang lengkap.",
+      "sourceUses": [
+        {
+          "sourceId": "ad-art-2025",
+          "locator": "AD Pasal 3"
+        },
+        {
+          "sourceId": "lpj-2025",
+          "locator": "PD dan Pendakian Kawi XXIX"
+        }
+      ]
+    },
     "identityNotes": [
       "Nama, kedudukan, asas, sifat dan tujuan diringkas dari AD/ART 2025 yang tersedia. Halaman tidak menetapkan kepengurusan atau operasi terkini.",
-      "ART menjelaskan simbol warna dan lambang, bukan nilai warna digital. Master emblem dan aplikasi logo universitas belum dikonfirmasi; nama institusi tetap terbaca sebagai teks."
+      "Urutan pendidikan diringkas dari catatan yang tersedia dan tidak ditetapkan sebagai kurikulum yang berlaku saat ini.",
+      "Aset logo Tursina yang digunakan pada prototipe telah disetujui pemilik; aplikasi logo universitas belum dikonfirmasi sehingga afiliasi tetap ditampilkan sebagai teks."
     ]
   },
   "sources": [

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Button } from "./Button";
 import tursinaLogo from "../assets/tursina-logo.png";
 export type NavChoice = "grouped" | "direct";
 type Destination = {
@@ -96,7 +95,7 @@ const direct: Destination[] = [
   },
 ];
 const navItem =
-  "flex min-h-11 items-center gap-2 text-ink hover:bg-surface-muted hover:text-primary aria-[current=page]:text-primary aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-6";
+  "flex min-h-11 items-center gap-2 text-ink hover:text-primary active:text-primary-active aria-[current=page]:text-primary aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-6";
 function Navigation({
   items,
   route,
@@ -110,10 +109,25 @@ function Navigation({
 }) {
   const [open, setOpen] = useState<string>();
   const refs = useRef<Record<string, HTMLButtonElement | null>>({});
+  const navigationRef = useRef<HTMLElement>(null);
   useEffect(() => setOpen(undefined), [route]);
-  const itemClasses = `${navItem} ${mobile ? "w-full justify-between px-2 aria-[current=page]:bg-surface-muted" : "whitespace-nowrap"}`;
+  useEffect(() => {
+    if (!open) return;
+    const closeOnPointerDown = (event: PointerEvent) => {
+      if (
+        event.target instanceof Node &&
+        !navigationRef.current?.contains(event.target)
+      ) {
+        setOpen(undefined);
+      }
+    };
+    document.addEventListener("pointerdown", closeOnPointerDown);
+    return () => document.removeEventListener("pointerdown", closeOnPointerDown);
+  }, [open]);
+  const itemClasses = `${navItem} ${mobile ? "w-full justify-between px-2 hover:bg-surface-muted active:bg-leaf aria-[current=page]:bg-surface-muted" : "whitespace-nowrap"}`;
   return (
     <nav
+      ref={navigationRef}
       aria-label={mobile ? "Navigasi mobile" : "Navigasi publik"}
       data-ui={mobile ? "navigation mobile-navigation" : "navigation"}
       className={`text-base/[25px] font-semibold ${mobile ? "flex flex-col gap-1" : "flex items-center gap-4 wide:gap-6"}`}
@@ -144,23 +158,28 @@ function Navigation({
               onClick={() =>
                 setOpen(open === item.label ? undefined : item.label)
               }
-              className={`${itemClasses} border-0 bg-transparent text-left`}
+              className={`${itemClasses} group border-0 bg-transparent text-left aria-expanded:text-primary`}
               data-ui="nav-trigger"
             >
-              {item.label}
+              <span>{item.label}</span>
+              <span
+                className="size-1.5 shrink-0 rotate-45 border-r-2 border-b-2 border-current transition-transform duration-[140ms] group-aria-expanded:-rotate-135"
+                aria-hidden="true"
+                data-ui="nav-chevron"
+              />
             </button>
             <div
               id={`${mobile ? "mobile" : "desktop"}-group-${i}`}
               hidden={open !== item.label}
               data-ui="nav-children"
-              className={`z-10 border border-control-border border-t-2 border-t-primary bg-surface p-2 ${mobile ? "ml-4" : "absolute top-[calc(100%+8px)] right-0 min-w-60 max-w-80 shadow-navigation"}`}
+              className={`z-10 rounded-control border border-border bg-surface p-1.5 ${mobile ? "ml-4" : "absolute top-[calc(100%+6px)] left-0 min-w-60 max-w-80 shadow-navigation"}`}
             >
               {item.children.map((child) => (
                 <a
                   key={child.label}
                   href={child.href}
                   aria-current={child.href === `#${route}` ? "page" : undefined}
-                  className="flex min-h-11 items-center p-2 whitespace-normal hover:bg-page hover:text-primary aria-[current=page]:text-primary aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-6"
+                  className="flex min-h-11 items-center px-3 py-2 whitespace-normal hover:bg-surface-muted hover:text-primary active:bg-leaf active:text-primary-active aria-[current=page]:bg-surface-muted aria-[current=page]:text-primary aria-[current=page]:underline aria-[current=page]:decoration-2 aria-[current=page]:underline-offset-6"
                   onClick={() => {
                     setOpen(undefined);
                     onNavigate();
@@ -195,18 +214,34 @@ export function InstitutionalHeader({
 }) {
   const [menu, setMenu] = useState(false);
   const trigger = useRef<HTMLButtonElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
   useEffect(() => setMenu(false), [route]);
   useEffect(() => {
-    const query = matchMedia("(min-width:1080px)");
+    const query = matchMedia("(min-width:960px)");
     const close = () => setMenu(false);
     query.addEventListener("change", close);
     return () => query.removeEventListener("change", close);
   }, []);
+  useEffect(() => {
+    if (!menu) return;
+    const closeOnPointerDown = (event: PointerEvent) => {
+      if (
+        event.target instanceof Node &&
+        !headerRef.current?.contains(event.target)
+      ) {
+        setMenu(false);
+      }
+    };
+    document.addEventListener("pointerdown", closeOnPointerDown);
+    return () => document.removeEventListener("pointerdown", closeOnPointerDown);
+  }, [menu]);
   const close = () => setMenu(false);
   const items = navigation === "direct" ? direct : grouped;
   return (
     <header
-      className="border-b border-border bg-surface"
+      id="page-top"
+      ref={headerRef}
+      className="relative z-20 border-b border-border bg-surface"
       data-ui="header"
       onKeyDown={(e) => {
         if (e.key === "Escape" && menu) {
@@ -247,7 +282,7 @@ export function InstitutionalHeader({
         </div>
         <button
           type="button"
-          className="flex size-11 shrink-0 items-center justify-center gap-2 rounded-control border border-control-border bg-page p-2 text-[15px]/[22px] font-semibold text-primary hover:border-forest hover:bg-surface-muted nav:hidden"
+          className="flex size-11 shrink-0 items-center justify-center rounded-control border border-transparent bg-transparent text-primary hover:bg-surface-muted active:bg-leaf aria-expanded:bg-surface-muted nav:hidden"
           data-ui="menu-toggle"
           aria-label={menu ? "Tutup menu" : "Buka menu"}
           aria-expanded={menu}
@@ -256,38 +291,26 @@ export function InstitutionalHeader({
           onClick={() => setMenu(!menu)}
         >
           <span
-            className="relative inline-block h-4 w-5 shrink-0"
+            className="relative inline-block h-5 w-6 shrink-0"
             aria-hidden="true"
             data-ui="menu-icon"
           >
             <span
-              className={`absolute left-0 h-0.5 w-5 bg-current transition-[transform,top] duration-[140ms] ${menu ? "top-1.75 rotate-45" : "top-0"}`}
+              className={`absolute left-0 h-0.5 w-6 bg-current transition-[transform,top] duration-[140ms] ${menu ? "top-2.25 rotate-45" : "top-1"}`}
             />
             <span
-              className={`absolute top-1.75 left-0 h-0.5 w-5 bg-current ${menu ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`absolute left-0 h-0.5 w-5 bg-current transition-[transform,top] duration-[140ms] ${menu ? "top-1.75 -rotate-45" : "top-3.5"}`}
+              className={`absolute left-0 h-0.5 w-6 bg-current transition-[transform,top] duration-[140ms] ${menu ? "top-2.25 -rotate-45" : "top-3.5"}`}
             />
           </span>
         </button>
       </div>
       <div
-        className="mx-auto w-[calc(100%-32px)] max-w-institution border-t border-border py-4 md:w-[calc(100%-48px)] nav:hidden"
+        className="absolute top-full left-0 z-20 w-full border-t border-border bg-surface px-4 py-4 shadow-navigation md:right-6 md:left-auto md:w-80 md:border md:border-border md:px-3 md:py-3 nav:hidden"
         id="institutional-mobile-nav"
         hidden={!menu}
-        data-ui="container mobile-panel"
+        data-ui="mobile-panel"
       >
         <Navigation items={items} route={route} onNavigate={close} mobile />
-        <Button
-          variant="quiet"
-          onClick={() => {
-            close();
-            trigger.current?.focus();
-          }}
-        >
-          Tutup menu
-        </Button>
       </div>
     </header>
   );
@@ -295,53 +318,142 @@ export function InstitutionalHeader({
 export function InstitutionalFooter() {
   return (
     <footer
-      className="[&_:focus-visible]:outline-focus-inverse bg-primary text-inverse py-10 [&_nav]:flex [&_nav]:flex-wrap [&_nav]:gap-y-2 [&_nav]:gap-x-6 [&_a]:min-h-11 [&_a]:flex [&_a]:items-center [&_a]:text-inverse [&_a:hover]:underline md:[&_nav]:flex-col md:[&_nav]:gap-0 lg:py-14"
+      className="bg-primary text-inverse [&_:focus-visible]:outline-focus-inverse [&_a]:text-inverse"
       data-ui="footer"
     >
       <div
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] grid gap-6 md:grid-cols-[2fr_1fr_1fr]"
-        data-ui="container footer-grid"
+        className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-8 md:w-[calc(100%_-_48px)] lg:py-10"
+        data-ui="container footer-public"
       >
-        <div>
-          <p
-            className="font-semibold text-[28px] leading-[34px] font-editorial [&+p]:mt-4"
-            data-ui="footer-name"
+        <div className="flex justify-end border-b border-inverse/30 pb-4">
+          <button
+            type="button"
+            className="flex min-h-11 items-center gap-2 border-0 bg-transparent px-1 text-base font-semibold text-inverse underline decoration-transparent underline-offset-4 hover:decoration-current active:text-inverse/80"
+            onClick={() => window.scrollTo({ top: 0 })}
+            data-ui="footer-back-to-top"
           >
-            MAPALA Tursina
-          </p>
-          <p>
-            Mahasiswa Pencinta Alam Tursina
-            <br />
-            UIN Maulana Malik Ibrahim Malang
-          </p>
-          <p
-            className="font-normal text-[18px] leading-[26px] font-editorial mt-6!"
-            data-ui="motto"
-          >
-            Dari alam aku ada, aku ada untuk alam
-          </p>
+            Kembali ke atas
+            <span aria-hidden="true">↑</span>
+          </button>
         </div>
-        <nav aria-label="Navigasi footer">
-          <a href="#/about">Tentang</a>
-          <a href="#/activities">Kegiatan</a>
-          <a href="#/publications">Karya & Pengetahuan</a>
-        </nav>
-        <nav aria-label="Institusi dan sejarah">
-          <a href="#/jejak">Jejak Tursina</a>
-          <a href="#/members">Buku Induk</a>
-        </nav>
+        <div
+          className="grid gap-9 pt-8 sm:grid-cols-2 md:grid-cols-[minmax(0,2fr)_1fr_1fr] md:gap-8"
+          data-ui="footer-grid"
+        >
+          <div className="sm:col-span-2 md:col-span-1" data-ui="footer-identity">
+            <div className="flex items-center gap-4">
+              <img
+                className="h-15 w-16 shrink-0 object-contain"
+                src={tursinaLogo}
+                width={64}
+                height={60}
+                alt=""
+              />
+              <div>
+                <p
+                  className="font-editorial text-[26px]/8 font-semibold tracking-[-0.01em]"
+                  data-ui="footer-name"
+                >
+                  MAPALA Tursina
+                </p>
+                <p className="mt-1 text-sm/[20px] text-inverse/80">
+                  Mahasiswa Pencinta Alam
+                </p>
+              </div>
+            </div>
+            <p className="mt-5 max-w-md text-base/[24px] text-inverse/85">
+              Unit kegiatan mahasiswa di bawah naungan{" "}
+              <a
+                className="font-semibold underline decoration-inverse/50 underline-offset-4 hover:decoration-current"
+                href="https://uin-malang.ac.id/"
+              >
+                UIN Maulana Malik Ibrahim Malang
+              </a>
+              .
+            </p>
+            <p
+              className="mt-5 font-editorial text-[18px]/[26px] font-normal"
+              data-ui="motto"
+            >
+              Dari alam aku ada, aku ada untuk alam
+            </p>
+          </div>
+          <nav aria-labelledby="footer-explore-title">
+            <h2
+              className="text-sm/[20px] font-semibold tracking-[0.04em] text-inverse/70 uppercase"
+              id="footer-explore-title"
+            >
+              Jelajahi
+            </h2>
+            <div className="mt-2 flex flex-col" data-ui="footer-links">
+              <a
+                className="flex min-h-11 items-center hover:underline hover:underline-offset-4"
+                href="#/activities"
+              >
+                Kegiatan
+              </a>
+              <a
+                className="flex min-h-11 items-center hover:underline hover:underline-offset-4"
+                href="#/program/te"
+              >
+                Tursina Explore
+              </a>
+              <a
+                className="flex min-h-11 items-center hover:underline hover:underline-offset-4"
+                href="#/publications"
+              >
+                Karya &amp; Pengetahuan
+              </a>
+            </div>
+          </nav>
+          <nav aria-labelledby="footer-institution-title">
+            <h2
+              className="text-sm/[20px] font-semibold tracking-[0.04em] text-inverse/70 uppercase"
+              id="footer-institution-title"
+            >
+              Institusi
+            </h2>
+            <div className="mt-2 flex flex-col" data-ui="footer-links">
+              <a
+                className="flex min-h-11 items-center hover:underline hover:underline-offset-4"
+                href="#/about"
+              >
+                Tentang Tursina
+              </a>
+              <a
+                className="flex min-h-11 items-center hover:underline hover:underline-offset-4"
+                href="#/jejak"
+              >
+                Jejak Tursina
+              </a>
+              <a
+                className="flex min-h-11 items-center hover:underline hover:underline-offset-4"
+                href="#/members"
+              >
+                Buku Induk
+              </a>
+            </div>
+          </nav>
+        </div>
       </div>
-      <div
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] text-[14px] leading-[20px] mt-8 border-t border-t-inverse pt-4 [&_a]:underline md:flex md:justify-between md:items-center md:gap-6"
-        data-ui="container preview-note"
-      >
-        <p>
-          Prototipe Stage 3 · bukan website resmi · versi{" "}
-          <span data-source-version>
-            {import.meta.env.VITE_SOURCE_COMMIT?.slice(0, 7) || "lokal"}
-          </span>
-        </p>
-        <a href="#/review">Lingkungan review pengembangan</a>
+      <div className="bg-primary-active" data-ui="prototype-status">
+        <div
+          className="mx-auto grid w-[calc(100%_-_32px)] max-w-institution gap-2 py-4 text-[14px]/[20px] text-inverse/75 md:w-[calc(100%_-_48px)] md:grid-cols-[1fr_auto] md:items-center md:gap-6"
+          data-ui="container preview-note"
+        >
+          <p>
+            Prototipe Stage 3 · bukan website resmi · versi{" "}
+            <span data-source-version>
+              {import.meta.env.VITE_SOURCE_COMMIT?.slice(0, 7) || "lokal"}
+            </span>
+          </p>
+          <a
+            className="flex min-h-11 items-center font-semibold underline decoration-inverse/50 underline-offset-4 hover:decoration-current"
+            href="#/review"
+          >
+            Lingkungan review pengembangan
+          </a>
+        </div>
       </div>
     </footer>
   );

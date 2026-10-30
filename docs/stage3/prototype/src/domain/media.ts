@@ -18,11 +18,3 @@ export function publicMediaManifest(registry: InstitutionalRegistry) {
   }
   return manifest;
 }
-
-// Owner decision16Oct2026: optional enlargement only in these existing homepage
-// contexts. This grants no new publication/use/derivative permission; callers
-// must first resolve a currently publishable canonical asset for that placement.
-export function homeEnlargementAuthorized(context:{assetId?:string;useId?:string;recordId?:string;placement?:string;role:string}) {
- return context.role==='gh'&&context.assetId==='pd-gh-map'&&context.useId==='pd-gh-home-education'&&context.recordId==='gh29'&&context.placement==='home-education-gh'
-  || context.role==='rc'&&context.assetId==='pd-rc-team'&&context.useId==='pd-rc-home-education'&&context.recordId==='rc29'&&context.placement==='home-education-rc';
-}

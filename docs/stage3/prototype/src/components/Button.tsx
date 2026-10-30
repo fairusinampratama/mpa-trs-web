@@ -25,7 +25,7 @@ export function buttonClasses(
           "border-transparent bg-transparent text-primary hover:bg-surface-muted",
       }[variant]
     : tones[variant];
-  return `inline-flex min-h-11.5 items-center justify-start gap-2 rounded-control border px-4 py-2.5 text-[17px]/6 font-semibold transition-colors duration-[140ms] disabled:cursor-not-allowed disabled:border-disabled-bg disabled:bg-disabled-bg disabled:text-disabled-ink disabled:opacity-100 ${tone}`;
+  return `inline-flex min-h-11.5 items-center justify-start gap-2 rounded-control border px-4 py-2.5 text-[17px]/6 font-semibold transition-colors duration-[140ms] motion-reduce:transition-none disabled:cursor-not-allowed disabled:border-disabled-bg disabled:bg-disabled-bg disabled:text-disabled-ink disabled:opacity-100 ${tone}`;
 }
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & {

@@ -7,6 +7,8 @@ import {
   ActivityPreview,
   PublicationPreview,
   DocumentaryMedia,
+  SectionHeading,
+  TextLink,
 } from "./components/Foundation";
 import { pdRecords, publicWorks } from "./content";
 import { activities } from "./fixtures";
@@ -51,6 +53,75 @@ const colors = [
     swatch: "bg-page",
   },
 ];
+function SyntheticExpeditionSpecimen() {
+  const journey = [
+    ["Hari 01", "Persiapan dan keberangkatan", "Tim contoh meninjau perlengkapan, pembagian peran, dan rencana perjalanan."],
+    ["Hari 02", "Perjalanan menuju wilayah kegiatan", "Perpindahan moda dan perubahan kondisi medan dicatat sebagai latihan dokumentasi."],
+    ["Hari 03", "Praktik lapangan", "Pengamatan lingkungan dan percakapan sosial budaya disimulasikan tanpa merujuk lokasi nyata."],
+    ["Hari 04", "Evaluasi dan kepulangan", "Catatan, foto contoh, dan hasil latihan dihimpun untuk evaluasi editorial."],
+  ];
+  return (
+    <article className="bg-page py-10 text-ink" data-ui="synthetic-expedition-specimen">
+      <header className="mx-auto w-[calc(100%_-_32px)] max-w-institution md:w-[calc(100%_-_48px)]">
+        <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-blue uppercase">
+          Contoh sintetis · bukan ekspedisi nyata
+        </p>
+        <h1 className="mt-3 max-w-[16ch] font-editorial text-[42px]/[44px] font-semibold lg:text-[64px]/[66px]">
+          Ekspedisi contoh untuk pengujian tata letak
+        </h1>
+        <p className="mt-6 max-w-[66ch] text-[18px]/[27px] lg:text-[21px]/[31px]">
+          Fixture ini menguji halaman ekspedisi kaya tanpa menempelkan tempat,
+          tanggal, perjalanan, atau hasil rekaan pada TE1–TE13.
+        </p>
+        <dl className="mt-7 grid grid-cols-2 border-y border-border sm:grid-cols-3 sm:divide-x sm:divide-border">
+          {[["Tanggal", "Simulasi 4 hari"], ["Tempat", "Lokasi sintetis"], ["Status", "Contoh UI"]].map(([label,value], index) => (
+            <div className={`${index === 2 ? "col-span-2 border-t border-border sm:col-span-1 sm:border-t-0" : ""} py-3 sm:px-5 sm:first:pl-0 sm:last:pr-0`} key={label}>
+              <dt className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted uppercase">{label}</dt>
+              <dd className="mt-1 font-editorial text-[20px]/[27px] font-semibold">{value}</dd>
+            </div>
+          ))}
+        </dl>
+      </header>
+      <div className="mx-auto mt-10 w-[calc(100%_-_32px)] max-w-institution md:w-[calc(100%_-_48px)]">
+        <div className="grid min-h-72 place-items-center border-2 border-dashed border-border bg-surface-muted p-8 text-center">
+          <div>
+            <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-blue uppercase">Media sintetis</p>
+            <p className="mt-3 max-w-[42ch] font-editorial text-[24px]/[31px] font-semibold">Area dokumenter untuk menguji proporsi, caption, dan alur baca.</p>
+          </div>
+        </div>
+      </div>
+      <section className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-12 md:w-[calc(100%_-_48px)] lg:py-18">
+        <SectionHeading label="Rangkaian perjalanan" title="Empat tahap dokumentasi contoh." description="Semua isi pada bagian ini sengaja sintetis dan hanya menguji struktur halaman." />
+        <ol className="list-none border-t border-border p-0">
+          {journey.map(([date,title,body], index) => (
+            <li className="grid grid-cols-[32px_minmax(0,1fr)] gap-4 border-b border-border py-6" key={title}>
+              <span className="font-sans text-[12px]/[18px] font-semibold text-blue">{String(index + 1).padStart(2,"0")}</span>
+              <div>
+                <p className="text-[14px]/[20px] text-muted">{date}</p>
+                <h2 className="mt-1 font-editorial text-[24px]/[30px] font-semibold">{title}</h2>
+                <p className="mt-3 max-w-[66ch] text-[17px]/[25px]">{body}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+      <section className="bg-surface-muted py-12 lg:py-18">
+        <div className="mx-auto w-[calc(100%_-_32px)] max-w-institution md:w-[calc(100%_-_48px)]">
+          <SectionHeading label="Hasil contoh" title="Dokumentasi, evaluasi, dan karya turunan." description="Struktur ini hanya muncul pada catatan nyata ketika arsip mendukungnya." />
+          <div className="grid gap-6 md:grid-cols-3">
+            {[["Dokumentasi","Contoh susunan foto dan caption."],["Evaluasi","Contoh ringkasan pelajaran lapangan."],["Karya terkait","Contoh hubungan ke catatan pengetahuan."]].map(([title,body]) => (
+              <article className="border-t-2 border-primary pt-4" key={title}>
+                <h3 className="font-editorial text-[24px]/[30px] font-semibold">{title}</h3>
+                <p className="mt-3 text-[16px]/[24px] text-muted">{body}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8"><TextLink href="#/ui-lab" variant="quiet">Kembali ke laboratorium</TextLink></div>
+        </div>
+      </section>
+    </article>
+  );
+}
 export function Lab() {
   const [route, setRoute] = useState(location.hash.slice(1) || "/ui-lab");
   const [active, setActive] = useState("foundation");
@@ -69,6 +140,7 @@ export function Lab() {
   const record = route.startsWith("/ui-lab/record/")
     ? activities.find((a) => a.id === route.split("/").pop())
     : undefined;
+  const syntheticExpedition = route === "/ui-lab/expedition/synthetic";
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setFeedback(
@@ -139,7 +211,7 @@ export function Lab() {
           >
             <a
               className="inline-flex min-h-11 items-center border-b-2 border-transparent text-sm text-muted hover:text-forest [&[aria-current=page]]:border-forest [&[aria-current=page]]:font-semibold [&[aria-current=page]]:text-forest"
-              aria-current={record ? undefined : "page"}
+              aria-current={route === "/ui-lab" ? "page" : undefined}
               href="#/ui-lab"
               data-ui="lab-link"
             >
@@ -151,6 +223,14 @@ export function Lab() {
               data-ui="lab-link"
             >
               Contoh catatan
+            </a>
+            <a
+              className="inline-flex min-h-11 items-center border-b-2 border-transparent text-sm text-muted hover:text-forest [&[aria-current=page]]:border-forest [&[aria-current=page]]:font-semibold [&[aria-current=page]]:text-forest"
+              aria-current={syntheticExpedition ? "page" : undefined}
+              href="#/ui-lab/expedition/synthetic"
+              data-ui="lab-link"
+            >
+              Contoh ekspedisi
             </a>
             <span className="rounded-control border border-line px-3 py-2 text-xs text-muted">
               Draft desain · 0.1
@@ -188,10 +268,18 @@ export function Lab() {
             >
               Contoh catatan
             </a>
+            <a
+              className="inline-flex min-h-11 items-center border-b-2 border-transparent text-sm text-muted hover:text-forest"
+              href="#/ui-lab/expedition/synthetic"
+              data-ui="lab-link"
+            >
+              Contoh ekspedisi
+            </a>
           </nav>
         )}
       </header>
       <main id="main-content" tabIndex={-1}>
+        {syntheticExpedition && <SyntheticExpeditionSpecimen />}
         {!record && route === "/ui-lab" && (
           <section
             className="bg-page text-ink font-sans text-[17px] leading-[25px] py-10 [&>[data-ui~=container]]:grid [&>[data-ui~=container]]:gap-8"
@@ -318,7 +406,7 @@ export function Lab() {
               </div>
             </div>
           </div>
-        ) : route !== "/ui-lab" ? (
+        ) : route !== "/ui-lab" && !syntheticExpedition ? (
           <div
             className="mx-auto w-full max-w-page px-5 sm:px-8 py-16"
             data-ui="page-container"
@@ -334,7 +422,7 @@ export function Lab() {
               Kembali ke laboratorium
             </a>
           </div>
-        ) : (
+        ) : route === "/ui-lab" ? (
           <>
             <section
               className="mx-auto w-full max-w-page px-5 sm:px-8 grid gap-8 py-12 md:grid-cols-[1.7fr_1fr] md:py-16"
@@ -712,7 +800,7 @@ export function Lab() {
               {feedback}
             </div>
           </>
-        )}
+        ) : null}
       </main>
       <footer className="border-t border-line">
         <div

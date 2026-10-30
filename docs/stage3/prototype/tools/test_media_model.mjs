@@ -59,20 +59,3 @@ test('invalid dimensions/hash/path, duplicate widths and ambiguous placements fa
     const r=fixture();mutate(r);assert.throws(()=>validateRegistry(r));
   }
 });
-
-test('homepage enlargement scope is exact and never grants new media publication',async()=>{
- const {homeEnlargementAuthorized}=await import('../src/domain/media.ts');
- const {resolvePublicMedia}=await import('../src/domain/validate.ts');
- const {canonicalRegistry}=await import('../src/domain/index.ts');
- for(const [recordId,placement,role] of [['gh29','home-education-gh','gh'],['rc29','home-education-rc','rc']]){
-  const asset=resolvePublicMedia(canonicalRegistry,recordId,placement)[0];
-  const context={assetId:asset.id,useId:asset.useId,recordId,placement,role};
-  assert(homeEnlargementAuthorized(context));
-  assert(!homeEnlargementAuthorized({...context,placement:'activity-documentary'}));
-  assert(!homeEnlargementAuthorized({...context,recordId:'te11'}));
-  assert(!homeEnlargementAuthorized({...context,useId:'another-use'}));
-  const held=structuredClone(canonicalRegistry);held.mediaUses.find(u=>u.id===asset.useId).clearance='withdrawn';
-  assert.equal(resolvePublicMedia(held,recordId,placement).length,0);
- }
- assert(!homeEnlargementAuthorized({assetId:'kawi-collective',useId:'kawi-home-opening',recordId:'kawi29',placement:'home-opening',role:'kawi'}));
-});

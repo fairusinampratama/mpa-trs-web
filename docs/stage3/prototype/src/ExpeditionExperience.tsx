@@ -8,12 +8,9 @@ import { type ReactNode } from "react";
 import type { ActivityFixture } from "./components/ActivityCard";
 import { canonicalRegistry } from "./domain/index.ts";
 import {
-  ActionLink,
   ActivityMetadata,
-  ActivityPreview,
   Breadcrumbs,
   DocumentaryMedia,
-  EvidenceDisclosure,
   SectionHeading,
   TextLink,
 } from "./components/Foundation";
@@ -86,170 +83,183 @@ function StorySection({
   );
 }
 export function TECatalogue() {
-  const { view } = useContentReadModel();
-  const { expeditionRecords, publicWorks } = view;
-  const te11 = expeditionRecords.find((r) => r.id === "te11");
-  const article = publicWorks.find((w) => w.id === "sacred-gatekeeper");
+  const { registry, view } = useContentReadModel();
+  const { expeditionRecords } = view;
+  const editions = registry.editions
+    .filter((edition) => edition.programmeId === "te")
+    .sort((a, b) => {
+      const left = Number(a.label);
+      const right = Number(b.label);
+      if (Number.isFinite(left) && Number.isFinite(right)) return right - left;
+      if (Number.isFinite(left)) return -1;
+      if (Number.isFinite(right)) return 1;
+      return a.label.localeCompare(b.label);
+    });
+  const numberedEditions = editions.filter((edition) =>
+    Number.isFinite(Number(edition.label)),
+  );
+  const recordByEdition = new Map(
+    expeditionRecords.map((record) => [record.edition, record]),
+  );
   return (
-    <div className="wrap-break-word" data-ui="te-experience">
+    <div className="wrap-break-word" data-ui="te-experience te-catalogue">
       <header
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pt-4 pb-10 [&>[data-ui~=display]]:mt-3 lg:pt-6 lg:pb-14"
+        className="mx-auto w-[calc(100%_-_32px)] max-w-institution pt-4 pb-12 md:w-[calc(100%_-_48px)] lg:pt-6 lg:pb-16"
         data-ui="container te-programme-head"
       >
-        <EditionBreadcrumbs />
         <p
-          className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue"
+          className="font-sans text-[12px]/[18px] font-semibold tracking-[.02em] text-blue uppercase"
           data-ui="label"
         >
-          Program / ekspedisi
+          Program ekspedisi
         </p>
         <h1
-          className="font-semibold text-[36px] leading-[38.9px] font-editorial max-[360px]:text-[32px] max-[360px]:leading-[34.6px] lg:text-[56px] lg:leading-[60.5px] lg:[&>span]:block"
+          className="mt-3 font-editorial text-[42px]/[44px] font-semibold tracking-[-0.02em] max-[360px]:text-[38px]/[40px] lg:text-[64px]/[66px]"
           data-ui="display"
         >
           Tursina Explore
         </h1>
-        <div
-          className="grid gap-4 mt-6 md:grid-cols-[1.1fr_1fr] md:gap-10 lg:grid-cols-[650fr_508fr] lg:gap-12"
-          data-ui="te-programme-intro"
+        <p
+          className="mt-6 max-w-[68ch] text-[18px]/[27px] lg:text-[21px]/[31px]"
+          data-ui="intro"
         >
-          <p
-            className="text-[17px] leading-[25px] lg:text-[20px] lg:leading-[29px]"
-            data-ui="intro"
-          >
-            Ekspedisi MAPALA Tursina yang mempertemukan olahraga alam bebas,
-            lingkungan hidup, dan pengalaman sosial budaya.
-          </p>
-          <p
-            className="text-[17px] leading-[25px] lg:text-[19px] lg:leading-[28px]"
-            data-ui="body"
-          >
-            Setiap edisi memiliki tempat, perjalanan, dokumentasi, dan karya
-            sendiri. Jelajahi catatan yang tersedia, dari cerita yang utuh
-            hingga rekaman yang masih singkat.
+          Ekspedisi MAPALA Tursina yang mempertemukan perjalanan alam bebas,
+          lingkungan hidup, dan pengalaman sosial budaya dalam edisi yang
+          terus bertambah.
+        </p>
+        <dl
+          className="mt-8 grid grid-cols-2 border-y border-border sm:grid-cols-3 sm:divide-x sm:divide-border"
+          data-ui="te-archive-facts"
+        >
+          <div className="py-3 sm:px-5 sm:first:pl-0">
+            <dt className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted uppercase">
+              Rangkaian
+            </dt>
+            <dd className="mt-1 font-editorial text-[22px]/[28px] font-semibold">
+              {editions.length} edisi
+            </dd>
+          </div>
+          <div className="py-3 sm:px-5">
+            <dt className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted uppercase">
+              Catatan publik
+            </dt>
+            <dd className="mt-1 font-editorial text-[22px]/[28px] font-semibold">
+              {expeditionRecords.length} tersedia
+            </dd>
+          </div>
+          <div className="col-span-2 border-t border-border py-3 sm:col-span-1 sm:border-t-0 sm:px-5 sm:last:pr-0">
+            <dt className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted uppercase">
+              Urutan arsip
+            </dt>
+            <dd className="mt-1 font-editorial text-[22px]/[28px] font-semibold">
+              TE{numberedEditions[0]?.label}–TE{numberedEditions.at(-1)?.label}
+            </dd>
+          </div>
+        </dl>
+      </header>
+      <section
+        className="bg-surface-muted py-12 lg:py-18"
+        data-ui="section te-edition-archive"
+      >
+        <div
+          className="mx-auto w-[calc(100%_-_32px)] max-w-institution md:w-[calc(100%_-_48px)]"
+          data-ui="container"
+        >
+          <SectionHeading
+            label="Arsip per edisi"
+            title={`${editions.length} edisi, satu rangkaian perjalanan.`}
+            description="Catatan dibuka sesuai dokumentasi yang tersedia. Edisi tanpa catatan publik tetap ditampilkan tanpa mengarang tempat, tanggal, atau hasil."
+          />
+          <ol className="list-none border-t border-border p-0" data-ui="te-edition-list">
+            {editions.map((edition) => {
+              const record = recordByEdition.get(edition.label);
+              const availability = record
+                ? record.depth === "rich"
+                  ? "Catatan lengkap"
+                  : "Catatan ringkas"
+                : "Catatan belum tersedia";
+              const content = (
+                <>
+                  <div className="flex items-baseline gap-2 lg:block">
+                    <span className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-muted uppercase">
+                      Edisi
+                    </span>
+                    <strong className="font-editorial text-[30px]/[34px] font-semibold text-primary lg:text-[36px]/[40px]">
+                      {edition.label.padStart(2, "0")}
+                    </strong>
+                  </div>
+                  <div className="min-w-0">
+                    <h2 className="font-editorial text-[24px]/[30px] font-semibold lg:text-[28px]/[34px]">
+                      {record ? record.title : `Tursina Explore #${edition.label}`}
+                    </h2>
+                    {record ? (
+                      <p className="mt-2 text-[15px]/[22px] text-muted lg:text-[16px]/[23px]">
+                        {[record.date, record.location].filter(Boolean).join(" · ")}
+                      </p>
+                    ) : (
+                      <p className="mt-2 text-[15px]/[22px] text-muted">
+                        Identitas edisi tercatat; rincian publik belum tersedia.
+                      </p>
+                    )}
+                  </div>
+                  <div className="flex min-h-11 items-center justify-between gap-3 lg:justify-end">
+                    <span className={`font-sans text-[14px]/[20px] font-semibold ${record ? "text-primary" : "text-muted"}`}>
+                      {availability}
+                    </span>
+                    {record && (
+                      <span
+                        className="transition-transform duration-150 group-hover:translate-x-1"
+                        aria-hidden="true"
+                      >
+                        →
+                      </span>
+                    )}
+                  </div>
+                </>
+              );
+              return (
+                <li className="border-b border-border" key={edition.id} data-ui="te-edition-row">
+                  {record ? (
+                    <a
+                      className="group grid gap-3 bg-transparent px-3 py-5 text-inherit no-underline transition-[background-color,transform] duration-150 hover:bg-page active:translate-y-px focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-focus lg:grid-cols-[92px_minmax(0,1fr)_190px] lg:items-center lg:gap-8 lg:px-4 lg:py-6"
+                      href={record.href}
+                      data-ui="te-edition-link"
+                    >
+                      {content}
+                    </a>
+                  ) : (
+                    <div
+                      className="grid gap-3 px-3 py-5 lg:grid-cols-[92px_minmax(0,1fr)_190px] lg:items-center lg:gap-8 lg:px-4 lg:py-6"
+                      data-ui="te-edition-unavailable"
+                    >
+                      {content}
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+          <p className="mt-6 max-w-[68ch] text-[15px]/[23px] text-muted">
+            Jumlah edisi mengikuti konfirmasi pemilik. Kedalaman setiap halaman
+            mengikuti arsip yang telah diperiksa dan aman ditampilkan.
           </p>
         </div>
-        <p
-          className="border-t border-t-border mt-8 pt-4 font-normal text-[16px] leading-[23px] font-sans text-muted"
-          data-ui="te-archive-note"
-        >
-          Edisi berikut merupakan arsip historis. Informasi edisi terkini belum
-          dikonfirmasi.
-        </p>
-      </header>
-      {te11 && (
-        <section
-          className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22"
-          data-ui="container section"
-        >
-          <p
-            className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue mb-4"
-            data-ui="label te-edition-label"
-          >
-            Catatan pilihan / edisi 11
-          </p>
-          <div
-            className="grid gap-6 [&>div]:order-1 [&>[data-ui~=media]]:order-2 [&>[data-ui~=media-fallback]]:order-2 [&>div>p]:mt-4 [&_[data-ui~=metadata-inline]]:mt-4 [&>div>[data-ui~=button]]:mt-6 [&>div>[data-ui~=link]]:mt-3 [&>div>[data-ui~=link]]:text-blue [&_[data-ui~=section-title]_a]:block [&_[data-ui~=section-title]_a]:min-h-11 [&_[data-ui~=section-title]_a:hover]:underline [&_[data-ui~=section-title]_a:hover]:underline-offset-4 md:[&>div]:order-0 md:[&>[data-ui~=media]]:order-0 md:[&>[data-ui~=media-fallback]]:order-0 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-8 lg:grid-cols-[minmax(0,650fr)_minmax(0,508fr)] lg:gap-12"
-            data-ui="te-edition-feature"
-          >
-            <DocumentaryMedia
-              role="expedition"
-              recordId="te11"
-              placement="te-catalogue-feature"
-              fallbackTitle="Dokumentasi TE11"
-              fallback="Arsip ekspedisi mencatat perjalanan lintas moda menuju Bukit Raya pada 2024."
-            />
-            <div>
-              <h2
-                className="font-semibold text-[30px] leading-[35px] font-editorial lg:text-[40px] lg:leading-[46px] lg:font-semibold"
-                data-ui="section-title"
-              >
-                <a href="#/expedition/te11">Bukit Raya</a>
-              </h2>
-              <ActivityMetadata activity={te11} inline />
-              <p
-                className="text-[16px] leading-[23px] text-muted"
-                data-ui="metadata"
-              >
-                {te11.location}
-              </p>
-              <p
-                className="text-[17px] leading-[25px] lg:text-[19px] lg:leading-[28px]"
-                data-ui="body"
-              >
-                Perjalanan lintas sungai, hutan hujan, dan catatan lapangan.
-                Kenali rangkaian ekspedisi serta karya yang terhubung dengannya.
-              </p>
-              <ActionLink href="#/expedition/te11">
-                Baca ekspedisi TE11
-              </ActionLink>
-              {article && (
-                <TextLink href={article.href}>
-                  Catatan karya terkait: {article.title}
-                </TextLink>
-              )}
-            </div>
-          </div>
-        </section>
-      )}
-      <section
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22"
-        data-ui="container section"
-      >
-        <SectionHeading
-          label="Edisi terdokumentasi lainnya"
-          title="Edisi lain dalam arsip."
-          description="Kedalaman halaman mengikuti bukti yang tersedia, tanpa mengisi bagian yang belum diketahui."
-        />
-        {expeditionRecords
-          .filter((r) => r.id !== te11?.id)
-          .map((r) => (
-            <ActivityPreview
-              key={r.id}
-              activity={r}
-              title={`Tursina Explore #${r.edition} — ${r.title}`}
-            />
-          ))}
-      </section>
-      <section
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22"
-        data-ui="container section"
-      >
-        <EvidenceDisclosure summary="Tentang sumber katalog ini">
-          <p>
-            Pengertian program dan TE11 diringkas dari Draft LPJ Tursina Explore
-            #11. Identitas, tanggal, lokasi, dan tujuan sosial budaya TE12
-            bersumber dari LPJ Pengurus 2025.
-          </p>
-          <p>
-            Siberut / TE10 bersumber dari LPJ Pengurus 2022–2023. Ini bukan
-            daftar lengkap semua edisi atau penetapan ekspedisi terbaru. Status
-            kegiatan, kelengkapan laporan, dan publikasi karya diperlakukan
-            terpisah.
-          </p>
-        </EvidenceDisclosure>
       </section>
     </div>
   );
 }
+
 export function ExpeditionDetail({ id }: { id: string }) {
   const { registry, view } = useContentReadModel();
   const record = view.expeditionRecords.find((a) => a.id === id);
-  if (!record)
-    return (
-      <div
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pt-4 pb-10 [&>[data-ui~=display]]:mt-3 [&_[data-ui~=metadata-inline]]:mt-6 [&>p[data-ui~=metadata]]:mt-2 lg:pt-6 lg:pb-14"
-        data-ui="container te-record-head"
-      >
-        <h1
-          className="font-semibold text-[36px] leading-[38.9px] font-editorial max-[360px]:text-[32px] max-[360px]:leading-[34.6px] lg:text-[56px] lg:leading-[60.5px] lg:[&>span]:block"
-          data-ui="display"
-        >
-          Catatan belum tersedia.
-        </h1>
-        <TextLink href="#/program/te">Kembali ke Tursina Explore</TextLink>
-      </div>
+  if (!record) {
+    const edition = registry.editions.find(
+      (candidate) =>
+        candidate.programmeId === "te" &&
+        `te${candidate.label}` === id.toLowerCase(),
     );
+    return <UnavailableExpedition edition={edition?.label} />;
+  }
   const narrative = registry.activities.find(
     (a) => a.id === id && a.publication.website === "preview",
   )?.narrative;
@@ -310,7 +320,7 @@ export function ExpeditionDetail({ id }: { id: string }) {
         data-ui="container te-story-layout"
       >
         <aside
-          className="border-t-2 border-t-primary pt-4 self-start [&_nav]:mt-3 [&_nav]:grid [&_button]:text-left [&_button]:w-full [&_button]:border-0 [&_button]:border-b [&_button]:border-b-border [&_button]:bg-transparent [&_button]:py-2 [&_button:hover]:underline [&_button:hover]:underline-offset-4 md:[&_nav]:grid-cols-[1fr_1fr] md:[&_nav]:gap-x-6 lg:sticky lg:top-6 lg:[&_nav]:grid lg:[&_nav]:grid-cols-[1fr] lg:[&_button]:text-[16px] lg:[&_button]:leading-[23px]"
+          className="border-t-2 border-t-primary pt-4 self-start [&_nav]:mt-3 [&_nav]:grid md:[&_nav]:grid-cols-[1fr_1fr] md:[&_nav]:gap-x-6 lg:sticky lg:top-6 lg:[&_nav]:grid lg:[&_nav]:grid-cols-[1fr]"
           data-ui="te-story-index"
         >
           <p
@@ -328,7 +338,7 @@ export function ExpeditionDetail({ id }: { id: string }) {
               [`${record.id}-sources`, "Sumber & ketidakpastian"],
             ].map(([target, label]) => (
               <button
-                className="flex items-center justify-start gap-4 min-h-11 font-semibold text-[17px] leading-[24px] font-sans text-primary no-underline w-fit max-w-full [&>span:last-child]:shrink-0 [&:hover>span:first-child]:underline [&:hover>span:first-child]:underline-offset-4"
+                className="group flex min-h-11 w-full items-center justify-between gap-4 border-0 border-b border-border bg-transparent px-2 py-2 text-left font-sans text-[16px]/[23px] font-semibold text-primary transition-colors duration-150 hover:bg-surface-muted active:bg-leaf focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-focus"
                 type="button"
                 key={target}
                 onClick={() => {
@@ -343,7 +353,12 @@ export function ExpeditionDetail({ id }: { id: string }) {
                 data-ui="link"
               >
                 {label}
-                <span aria-hidden="true">↓</span>
+                <span
+                  className="shrink-0 transition-transform duration-150 group-hover:translate-y-0.5"
+                  aria-hidden="true"
+                >
+                  ↓
+                </span>
               </button>
             ))}
           </nav>
@@ -470,17 +485,69 @@ export function ExpeditionDetail({ id }: { id: string }) {
               </p>
             ))}
           </div>
-          <EvidenceDisclosure>
+          <div className="border-t-2 border-primary pt-4" data-ui="te-source-boundary">
+            <h3
+              className="font-editorial text-[26px]/[32px] font-semibold lg:text-[30px]/[36px]"
+              data-ui="content-title"
+            >
+              Batas catatan
+            </h3>
             {narrative.evidence.map((p) => (
-              <p key={p}>{p}</p>
+              <p
+                className="mt-4 text-[17px]/[25px] lg:text-[19px]/[28px]"
+                key={p}
+              >
+                {p}
+              </p>
             ))}
             <DateEvidence id={record.id} />
-          </EvidenceDisclosure>
+          </div>
         </div>
-        <TextLink href="#/program/te">
+        <TextLink href="#/program/te" variant="quiet">
           Kembali ke semua edisi Tursina Explore
         </TextLink>
       </section>
+    </article>
+  );
+}
+function UnavailableExpedition({ edition }: { edition?: string }) {
+  const title = edition ? `Tursina Explore #${edition}` : "Catatan belum tersedia";
+  return (
+    <article className="wrap-break-word" data-ui="te-experience te-unavailable">
+      <header
+        className="mx-auto w-[calc(100%_-_32px)] max-w-institution pt-4 pb-12 md:w-[calc(100%_-_48px)] lg:pt-6 lg:pb-16"
+        data-ui="container te-record-head"
+      >
+        <EditionBreadcrumbs current={edition ? `TE${edition}` : "Catatan"} />
+        <p
+          className="font-sans text-[12px]/[18px] font-semibold tracking-[.02em] text-blue uppercase"
+          data-ui="label"
+        >
+          {edition ? `Tursina Explore / edisi ${edition}` : "Tursina Explore"}
+        </p>
+        <h1
+          className="mt-3 max-w-[18ch] font-editorial text-[42px]/[44px] font-semibold tracking-[-0.02em] max-[360px]:text-[38px]/[40px] lg:text-[64px]/[66px]"
+          data-ui="display"
+        >
+          {title}
+        </h1>
+        <p
+          className="mt-6 max-w-[60ch] text-[18px]/[27px] lg:text-[21px]/[31px]"
+          data-ui="intro"
+        >
+          Identitas edisi ini tercatat dalam rangkaian Tursina Explore. Tempat,
+          tanggal, perjalanan, dan hasilnya belum tersedia sebagai catatan
+          publik yang dapat ditampilkan.
+        </p>
+        <p className="mt-6 border-y border-border py-4 font-sans text-[15px]/[22px] font-semibold text-muted">
+          Catatan belum tersedia
+        </p>
+        <div className="mt-6">
+          <TextLink href="#/program/te" variant="quiet">
+            Kembali ke arsip Tursina Explore
+          </TextLink>
+        </div>
+      </header>
     </article>
   );
 }
@@ -516,7 +583,7 @@ function SparseExpedition({ record }: { record: ActivityFixture }) {
         </p>
       </header>
       <div
-        className="w-[calc(100%_-_32px)] mx-auto md:w-[calc(100%_-_48px)] max-w-225 pb-14 [&>[data-ui~=evidence]]:mt-8 [&>[data-ui~=link]]:mt-8 lg:pb-22"
+        className="w-[calc(100%_-_32px)] mx-auto md:w-[calc(100%_-_48px)] max-w-225 pb-14 [&>[data-ui~=link]]:mt-8 lg:pb-22"
         data-ui="container te-sparse-body"
       >
         <StorySection title="Catatan dasar dari arsip.">
@@ -527,14 +594,17 @@ function SparseExpedition({ record }: { record: ActivityFixture }) {
             memadai.
           </p>
         </StorySection>
-        <EvidenceDisclosure>
+        <div className="mt-8 border-t-2 border-primary pt-4" data-ui="te-source-boundary">
+          <h2 className="font-editorial text-[24px]/[30px] font-semibold">
+            Batas catatan
+          </h2>
           <DateEvidence id={record.id} />
-          <p>
+          <p className="mt-3 text-[16px]/[24px] text-muted">
             Dasar catatan: {record.evidenceLabel}. Keterbatasan isi di sini
             bukan bukti tidak ada kegiatan atau karya.
           </p>
-        </EvidenceDisclosure>
-        <TextLink href="#/program/te">
+        </div>
+        <TextLink href="#/program/te" variant="quiet">
           Kembali ke semua edisi Tursina Explore
         </TextLink>
       </div>

@@ -503,3 +503,39 @@ test("25 changed plans remain distinct from conflicting actual execution asserti
     "unresolved",
   );
 });
+
+test("26 institutional information separates public explanation from source detail", () => {
+  const information = base.information;
+  assert.equal(information.facts.length, 3);
+  assert.equal(information.facts[0].value, "20 Desember 1995");
+  assert.equal(information.principles.length, 3);
+  assert.equal(information.learning.stages.length, 4);
+  assert.equal(information.continuity.title, "Pengalaman yang diteruskan.");
+  assert(information.identityNotes.every((note) => note.trim()));
+  const r = copy();
+  r.information.learning.sourceUses = [];
+  assert.throws(() => validateRegistry(r), /Missing evidence/);
+});
+
+test("27 Tursina Explore keeps thirteen edition identities separate from public records", () => {
+  const editions = base.editions
+    .filter((edition) => edition.programmeId === "te")
+    .map((edition) => Number(edition.label))
+    .sort((a, b) => a - b);
+  assert.deepEqual(editions, Array.from({ length: 13 }, (_, index) => index + 1));
+  const preview = projectPreview(base);
+  assert.deepEqual(
+    preview.expeditionRecords.map((record) => record.edition).sort(),
+    ["10", "11", "12"],
+  );
+  assert.equal(
+    base.editions.filter(
+      (edition) =>
+        edition.programmeId === "te" &&
+        !preview.expeditionRecords.some(
+          (record) => record.edition === edition.label,
+        ),
+    ).length,
+    10,
+  );
+});
