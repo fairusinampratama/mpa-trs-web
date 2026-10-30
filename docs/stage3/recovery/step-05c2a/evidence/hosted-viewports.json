@@ -1,0 +1,707 @@
+{
+  "sourceCommit": "b2fb34ff300fb41692dd2fe927b7688281ce24b5",
+  "method": "Cloud Chrome; existing hosted responsive-review iframe; CSS viewport widths, not physical devices",
+  "status": "PASS layout/use-count/exact-credit; immediate lazy-loading samples are not load-failure assertions",
+  "rows": [
+    {
+      "requestedWidth": 390,
+      "page": "Website",
+      "heading": "Mahasiswa Pencinta Alam Tursina",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-360.webp",
+          "use": "kawi-home-opening"
+        },
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-home-feature"
+        },
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/pd-gh-map-480.webp",
+          "use": "pd-gh-home-education"
+        },
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-home-education"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "requestedWidth": 390,
+      "page": "Tursina Explore",
+      "heading": "Tursina Explore",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-catalogue-feature"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "requestedWidth": 390,
+      "page": "TE11 / Bukit Raya",
+      "heading": "Bukit Raya",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/te11-documentary-480.webp",
+          "use": "te11-documentary-usage"
+        },
+        {
+          "asset": "te11-ecology",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-ecology-usage"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "requestedWidth": 390,
+      "page": "PD Gunung Hutan XXIX",
+      "heading": "Pemantapan Divisi Gunung Hutan XXIX",
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-map-usage"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "requestedWidth": 390,
+      "page": "PD Panjat Tebing XXIX",
+      "heading": "Pemantapan Divisi Panjat Tebing XXIX",
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-team-usage"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "requestedWidth": 390,
+      "page": "Gunung Kawi XXIX",
+      "heading": "Gunung Kawi XXIX",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-360.webp",
+          "use": "kawi-collective-usage"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "requestedWidth": 390,
+      "page": "BATAFIA XXX",
+      "heading": "BATAFIA XXX \u2014 diklat lapang",
+      "images": [
+        {
+          "asset": "batafia-field",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "batafia-field-usage"
+        }
+      ],
+      "scrollWidth": 375,
+      "width": 375
+    },
+    {
+      "requestedWidth": 320,
+      "page": "Website",
+      "heading": "Mahasiswa Pencinta Alam Tursina",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-360.webp",
+          "use": "kawi-home-opening"
+        },
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-home-feature"
+        },
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-home-education"
+        },
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-home-education"
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 305
+    },
+    {
+      "requestedWidth": 320,
+      "page": "Tursina Explore",
+      "heading": "Tursina Explore",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-catalogue-feature"
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 305
+    },
+    {
+      "requestedWidth": 320,
+      "page": "TE11 / Bukit Raya",
+      "heading": "Bukit Raya",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/te11-documentary-480.webp",
+          "use": "te11-documentary-usage"
+        },
+        {
+          "asset": "te11-ecology",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-ecology-usage"
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 305
+    },
+    {
+      "requestedWidth": 320,
+      "page": "PD Gunung Hutan XXIX",
+      "heading": "Pemantapan Divisi Gunung Hutan XXIX",
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-map-usage"
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 305
+    },
+    {
+      "requestedWidth": 320,
+      "page": "PD Panjat Tebing XXIX",
+      "heading": "Pemantapan Divisi Panjat Tebing XXIX",
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-team-usage"
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 305
+    },
+    {
+      "requestedWidth": 320,
+      "page": "Gunung Kawi XXIX",
+      "heading": "Gunung Kawi XXIX",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-360.webp",
+          "use": "kawi-collective-usage"
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 305
+    },
+    {
+      "requestedWidth": 320,
+      "page": "BATAFIA XXX",
+      "heading": "BATAFIA XXX \u2014 diklat lapang",
+      "images": [
+        {
+          "asset": "batafia-field",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "batafia-field-usage"
+        }
+      ],
+      "scrollWidth": 305,
+      "width": 305
+    },
+    {
+      "requestedWidth": 768,
+      "page": "Website",
+      "heading": "Mahasiswa Pencinta Alam Tursina",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-720.webp",
+          "use": "kawi-home-opening"
+        },
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-home-feature"
+        },
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-home-education"
+        },
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-home-education"
+        }
+      ],
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "requestedWidth": 768,
+      "page": "Tursina Explore",
+      "heading": "Tursina Explore",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-catalogue-feature"
+        }
+      ],
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "requestedWidth": 768,
+      "page": "TE11 / Bukit Raya",
+      "heading": "Bukit Raya",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/te11-documentary-960.webp",
+          "use": "te11-documentary-usage"
+        },
+        {
+          "asset": "te11-ecology",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-ecology-usage"
+        }
+      ],
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "requestedWidth": 768,
+      "page": "PD Gunung Hutan XXIX",
+      "heading": "Pemantapan Divisi Gunung Hutan XXIX",
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-map-usage"
+        }
+      ],
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "requestedWidth": 768,
+      "page": "PD Panjat Tebing XXIX",
+      "heading": "Pemantapan Divisi Panjat Tebing XXIX",
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-team-usage"
+        }
+      ],
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "requestedWidth": 768,
+      "page": "Gunung Kawi XXIX",
+      "heading": "Gunung Kawi XXIX",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "kawi-collective-usage"
+        }
+      ],
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "requestedWidth": 768,
+      "page": "BATAFIA XXX",
+      "heading": "BATAFIA XXX \u2014 diklat lapang",
+      "images": [
+        {
+          "asset": "batafia-field",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "batafia-field-usage"
+        }
+      ],
+      "scrollWidth": 753,
+      "width": 753
+    },
+    {
+      "requestedWidth": 1024,
+      "page": "Website",
+      "heading": "Mahasiswa Pencinta Alam Tursina",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-720.webp",
+          "use": "kawi-home-opening"
+        },
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-home-feature"
+        },
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-home-education"
+        },
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/pd-rc-team-320.webp",
+          "use": "pd-rc-home-education"
+        }
+      ],
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "requestedWidth": 1024,
+      "page": "Tursina Explore",
+      "heading": "Tursina Explore",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-catalogue-feature"
+        }
+      ],
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "requestedWidth": 1024,
+      "page": "TE11 / Bukit Raya",
+      "heading": "Bukit Raya",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/te11-documentary-960.webp",
+          "use": "te11-documentary-usage"
+        },
+        {
+          "asset": "te11-ecology",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-ecology-usage"
+        }
+      ],
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "requestedWidth": 1024,
+      "page": "PD Gunung Hutan XXIX",
+      "heading": "Pemantapan Divisi Gunung Hutan XXIX",
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-map-usage"
+        }
+      ],
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "requestedWidth": 1024,
+      "page": "PD Panjat Tebing XXIX",
+      "heading": "Pemantapan Divisi Panjat Tebing XXIX",
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-team-usage"
+        }
+      ],
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "requestedWidth": 1024,
+      "page": "Gunung Kawi XXIX",
+      "heading": "Gunung Kawi XXIX",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "kawi-collective-usage"
+        }
+      ],
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "requestedWidth": 1024,
+      "page": "BATAFIA XXX",
+      "heading": "BATAFIA XXX \u2014 diklat lapang",
+      "images": [
+        {
+          "asset": "batafia-field",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "batafia-field-usage"
+        }
+      ],
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    {
+      "requestedWidth": 1366,
+      "page": "Website",
+      "heading": "Mahasiswa Pencinta Alam Tursina",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-720.webp",
+          "use": "kawi-home-opening"
+        },
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/te11-documentary-960.webp",
+          "use": "te11-home-feature"
+        },
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-home-education"
+        },
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-home-education"
+        }
+      ],
+      "scrollWidth": 1351,
+      "width": 1351
+    },
+    {
+      "requestedWidth": 1366,
+      "page": "Tursina Explore",
+      "heading": "Tursina Explore",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/te11-documentary-960.webp",
+          "use": "te11-catalogue-feature"
+        }
+      ],
+      "scrollWidth": 1351,
+      "width": 1351
+    },
+    {
+      "requestedWidth": 1366,
+      "page": "TE11 / Bukit Raya",
+      "heading": "Bukit Raya",
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/te11-documentary-960.webp",
+          "use": "te11-documentary-usage"
+        },
+        {
+          "asset": "te11-ecology",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "te11-ecology-usage"
+        }
+      ],
+      "scrollWidth": 1351,
+      "width": 1351
+    },
+    {
+      "requestedWidth": 1366,
+      "page": "PD Gunung Hutan XXIX",
+      "heading": "Pemantapan Divisi Gunung Hutan XXIX",
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-gh-map-usage"
+        }
+      ],
+      "scrollWidth": 1351,
+      "width": 1351
+    },
+    {
+      "requestedWidth": 1366,
+      "page": "PD Panjat Tebing XXIX",
+      "heading": "Pemantapan Divisi Panjat Tebing XXIX",
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "pd-rc-team-usage"
+        }
+      ],
+      "scrollWidth": 1351,
+      "width": 1351
+    },
+    {
+      "requestedWidth": 1366,
+      "page": "Gunung Kawi XXIX",
+      "heading": "Gunung Kawi XXIX",
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": true,
+          "src": "https://fairusinampratama.github.io/mpa-trs-web/media/kawi-collective-720.webp",
+          "use": "kawi-collective-usage"
+        }
+      ],
+      "scrollWidth": 1351,
+      "width": 1351
+    },
+    {
+      "requestedWidth": 1366,
+      "page": "BATAFIA XXX",
+      "heading": "BATAFIA XXX \u2014 diklat lapang",
+      "images": [
+        {
+          "asset": "batafia-field",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "loaded": false,
+          "src": "",
+          "use": "batafia-field-usage"
+        }
+      ],
+      "scrollWidth": 1351,
+      "width": 1351
+    }
+  ]
+}

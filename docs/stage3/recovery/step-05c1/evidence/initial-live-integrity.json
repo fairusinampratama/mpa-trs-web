@@ -1,0 +1,56 @@
+{
+  "base": "https://fairusinampratama.github.io/mpa-trs-web/",
+  "sourceCommit": "b81f61bdb3e18f5f441fbb1ff28561cede8e3295",
+  "tlsValidation": true,
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 613,
+      "sha256": "4066519e9af738fc25421179d29f8c2ed8a2e9ccdf8578a4c25aa80f6624baa8",
+      "matchesLocal": true
+    },
+    {
+      "path": "version.json",
+      "status": 200,
+      "bytes": 100,
+      "sha256": "7762572c5e45243647c2ad0b649bb3b18ae327085cc21b4f6ce1faa34939c3fd",
+      "matchesLocal": true
+    },
+    {
+      "path": "responsive-review.html",
+      "status": 200,
+      "bytes": 3882,
+      "sha256": "49291c44d379b978aec278bfbb58ad0b1723052f887d55cb5562036fa3ecfa20",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/source-sans-3-latin-Bo_j9asI.woff2",
+      "status": 200,
+      "bytes": 28872,
+      "sha256": "19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/main-svEhZjcJ.css",
+      "status": 200,
+      "bytes": 83156,
+      "sha256": "5cb32245c88a001ea716fd311e5d5020eb925bd8bbd963fa27c8c21529626175",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/main-DHqk2Kpe.js",
+      "status": 200,
+      "bytes": 415379,
+      "sha256": "a89ae0ee196c49d14eefcc7c259917ef9456985ce72c12e2c440f54e33319a55",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/source-serif-4-latin-DMe4EKeb.woff2",
+      "status": 200,
+      "bytes": 50936,
+      "sha256": "382475f38242c52d42a3e5ff8dc69b5d73f10d0d21e4550b5fe232984688779a",
+      "matchesLocal": true
+    }
+  ]
+}

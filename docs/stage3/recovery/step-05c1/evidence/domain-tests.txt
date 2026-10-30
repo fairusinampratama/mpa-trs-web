@@ -1,0 +1,33 @@
+✔ 01 new TE edition uses data and existing generic detail projection (7.669934ms)
+✔ 02 new PD classifies and projects without compulsory cohort (3.098141ms)
+✔ 03 independent activity has no invented parent, date or media (2.988746ms)
+✔ 04 several independent works may document one activity (2.761753ms)
+✔ 05 one work relates to several activities, reverse indexes derived (4.65642ms)
+✔ 06 independent publication has no fabricated activity (2.899801ms)
+✔ 07 restricted metadata contains no original manuscript or fake download (4.445577ms)
+✔ 08 sparse has no fake narrative/gallery/publication sections (2.611416ms)
+✔ 09 sourced history additions sort by date, unknown dates last (4.609314ms)
+✔ 10 unknown, month, year, approximate, conflicting and impossible dates (0.731415ms)
+✔ 11 duplicate and invalid canonical identities, including cross-domain, fail (5.280759ms)
+✔ 12 broken source/classification/relation/media/selected-date references fail (12.616092ms)
+✔ 13 synthetic members isolated, real/private records rejected (9.843593ms)
+✔ 14 HOLD media cannot be cleared by relations, metadata or incomplete approval (3.892762ms)
+✔ 15 no competing relationship/date/media ownership remains (1.442029ms)
+✔ 16 same expedition survives cross-period non-execution and later completion (0.186562ms)
+✔ 17 ambiguous places and incomplete regency are not auto-corrected (1.438553ms)
+✔ 18 private locator injection fails before compatibility export (2.716774ms)
+✔ 19 rich TE11 story retained in data, not expedition-specific JSX (0.149586ms)
+✔ 20 withdrawal removes record and related indexes without deleting identity or source (1.874012ms)
+✔ 21 magazine identity is distinct from educational resource and no PDF is invented (1.743184ms)
+✔ 22 a synthetic-only source cannot be relabeled verified institutional history (1.97911ms)
+✔ 23 documented standards cannot be reclassified as technical achievement (1.612487ms)
+✔ 24 announcement expiry does not fabricate precision in legacy adapters (5.851727ms)
+✔ 25 changed plans remain distinct from conflicting actual execution assertions (0.223648ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 263.675207

@@ -1,5 +1,31 @@
 # MPA-TRS operating rules
 
+## Tailwind-only prototype styling — 19 October 2026
+
+Owner authorized a complete local styling migration of `docs/stage3/prototype/` while preserving the current design, routes, media scope and behavior. This supersedes earlier styling implementation conventions for this refactor.
+
+- Use Tailwind utilities in JSX/HTML and shared React components. No authored CSS rules/selectors, CSS modules, `@apply`, inline `style` attributes, CSS-in-JS or JavaScript style mutation.
+- The sole stylesheet is `src/theme.css`: Tailwind import, centralized `@theme` tokens and local `@font-face` declarations only.
+- Tailwind responsive/state/child variants are allowed. Semantic `data-ui` slots identify shared component parts and test targets; they must not acquire standalone CSS rules.
+- Preserve the existing local navbar refinements, accessibility, responsive layouts, documentary media restrictions and prototype-only data.
+- Owner authorized committing and pushing this refactor to `stage3/interactive-prototype` on 20 October 2026. Do not merge or change production without separate approval.
+
+
+## Stage 3 approved scope — 13 October 2026
+
+Owner approved A2 v1.0, Stage 3 Plan v2 and Technical Delivery Amendment T1 on 13 October 2026. Read `docs/stage3/approval-record.md`, `docs/stage3/design-system.md`, `docs/stage3/checkpoint-01.md` and `docs/stage3/prototype/README.md` for current frontend work. These narrowly supersede historical no-Stage-2/framework-change statements below for the isolated Stage 3 prototype only; production restrictions remain.
+
+Latest owner instruction (16 October2026): Packages A–D accepted. Execute Step6B PackageE ONLY: owner-approved optional native-dialog enlargement of existing GH/RC photographs from the homepage field-education contexts, using existing approved derivatives/full frames/alt/caption/exact HUMED credit. Preserve paired layout. No activity-detail viewer, other images, new uses/derivatives/crops, Stage4, production actions or PR13 merge. Test/deploy through existing Pages and stop for final Stage3 owner review. Read docs/stage3/recovery/step-06b/package-e.md.
+
+- Work on `stage3/interactive-prototype`; standalone React/TypeScript/Vite/Tailwind 4 in `docs/stage3/prototype/`; records in `docs/stage3/`. Commits/pushes/draft PR are authorized. Main merges and Stage 4 require separate approval.
+- Preserve `application/`, production workflows/scripts, Rumahweb/SLiMS/E-Letter and databases. No hosting, permanent preview or paid resource changes. No production deployment.
+- Reuse matching components and centralized tokens. Equivalent buttons/cards share styling. New tokens/layout variants require a documented reason. Inspect all affected pages after shared changes.
+- UI laboratory shares component source with page examples. Fixtures are source-verified or clearly synthetic; no real Buku Induk data, private originals or unresolved-rights images in source/public bundles.
+- Preserve P1–P7 and owner review checkpoints. Verify real browser rendering/interactions, report exact viewport method and limitations. Do not equate build success with browser validation.
+- First technical loop precedes full website development; owner visual-direction selection precedes whole-site refinement. Map remains deferred. Backend/CRUD/auth/Filament/editorial persistence remain simulated only.
+
+## Preserved Stage 1 operating rules
+
 Read docs/infrastructure/stage1-live-deployment.md first, then supervised-zip-deployment.md, stage1-implementation.md, recovery.md and hosting-baseline.md. Historical Phase 3/static-probe and FTPS evidence must be preserved. Current objective is Stage 1: real Laravel 12 at https://mapalatursina.my.id plus verified live update/rollback and unaffected SLiMS/E-Letter. The main domain now runs Laravel 12.69.3; live A → B → A passed on 10 October 2026. Active SHA is 623bb0a024c3a72454a1f9edaa935c0b1c0e095c. Final handover/mobile verification and this evidence PR review remain outstanding; do not claim every requested check passed.
 
 - Use a focused feature branch → PR → actual CI → explicit approval before merge. Branch protection is not enforced; typed workflow acknowledgement is an operator convention, not security-enforced review. GitHub remains source of truth.
@@ -19,3 +45,8 @@ Read docs/infrastructure/stage1-live-deployment.md first, then supervised-zip-de
 - Retiring temporary probe credentials/resources needs separate approval. Additional paid infrastructure cost is zero; no paid Actions overage is authorized.
 
 - Read stage1-live-deployment-evidence.json for exact live runs/digests and original routing backup. A/B artifacts expire 24 October 2026; current Actions rollback depends on source artifact availability. Do not claim post-expiry automated rollback or mobile rendering is verified. Never merge this evidence PR without separate approval.
+
+
+## Native GitHub Pages — authorized 14 October 2026
+
+Owner explicitly authorized existing repository public visibility and native GitHub Pages, superseding the historical unactivated OptionB recommendation. Read `docs/stage3/publishing/README.md`, approval record and checkpoint04 for active method. Work stays on `stage3/interactive-prototype`, with Pages build root `docs/stage3/prototype/` and `.github/workflows/stage3-pages.yml`. Only validated compiled dist is a website artifact; source docs/history are public by owner authorization. No second repository/PAT/license/main merge/production hosting or backend changes. Preserve all seven Stage1 workflow blobs. `github-pages` environment allows exact prototype branch only and has no secrets. Source updates automatically publish from branch/path-limited push; no fork/PR privileged trigger. Historical cross-repo publisher is disabled and its template must never be activated. `#/ui-lab` and built responsive-review.html are supported static entries. Step4 visual baseline is owner-approved; navigation comparison remains in the separate review environment. Step5A is accepted as the foundation; Step5B-1 is accepted; Step5B-2 is accepted; Step5B-3 requires owner review.

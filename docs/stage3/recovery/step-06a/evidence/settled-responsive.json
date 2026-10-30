@@ -1,0 +1,407 @@
+[
+  {
+    "width": 1366,
+    "id": "home",
+    "client": 1351,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 4693,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110382319#/"
+  },
+  {
+    "width": 1366,
+    "id": "te",
+    "client": 1351,
+    "h1": "Tursina Explore",
+    "height": 2109,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110382489#/program/te"
+  },
+  {
+    "width": 1366,
+    "id": "te11",
+    "client": 1351,
+    "h1": "Bukit Raya",
+    "height": 6450,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110382657#/expedition/te11"
+  },
+  {
+    "width": 1366,
+    "id": "pd",
+    "client": 1351,
+    "h1": "Pemantapan Divisi",
+    "height": 5077,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110382830#/program/pd"
+  },
+  {
+    "width": 1366,
+    "id": "rc",
+    "client": 1351,
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "height": 3772,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110382996#/activity/rc29"
+  },
+  {
+    "width": 1366,
+    "id": "publications",
+    "client": 1351,
+    "h1": "Pengalaman menjadi bacaan.",
+    "height": 3308,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110383163#/publications"
+  },
+  {
+    "width": 1366,
+    "id": "about",
+    "client": 1351,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 3199,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110383357#/about"
+  },
+  {
+    "width": 1366,
+    "id": "history",
+    "client": 1351,
+    "h1": "Pengalaman yang diteruskan.",
+    "height": 4582,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110383524#/jejak"
+  },
+  {
+    "width": 1366,
+    "id": "members",
+    "client": 1351,
+    "h1": "Nama dalam kebersamaan.",
+    "height": 1434,
+    "scroll": 1351,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110383700#/members"
+  },
+  {
+    "width": 1024,
+    "id": "home",
+    "client": 1009,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 4830,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110384383#/"
+  },
+  {
+    "width": 1024,
+    "id": "te",
+    "client": 1009,
+    "h1": "Tursina Explore",
+    "height": 2200,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110384549#/program/te"
+  },
+  {
+    "width": 1024,
+    "id": "te11",
+    "client": 1009,
+    "h1": "Bukit Raya",
+    "height": 6690,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110384714#/expedition/te11"
+  },
+  {
+    "width": 1024,
+    "id": "pd",
+    "client": 1009,
+    "h1": "Pemantapan Divisi",
+    "height": 6037,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110384880#/program/pd"
+  },
+  {
+    "width": 1024,
+    "id": "rc",
+    "client": 1009,
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "height": 3970,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110385044#/activity/rc29"
+  },
+  {
+    "width": 1024,
+    "id": "publications",
+    "client": 1009,
+    "h1": "Pengalaman menjadi bacaan.",
+    "height": 3408,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110385220#/publications"
+  },
+  {
+    "width": 1024,
+    "id": "about",
+    "client": 1009,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 3255,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110385385#/about"
+  },
+  {
+    "width": 1024,
+    "id": "history",
+    "client": 1009,
+    "h1": "Pengalaman yang diteruskan.",
+    "height": 4672,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110385559#/jejak"
+  },
+  {
+    "width": 1024,
+    "id": "members",
+    "client": 1009,
+    "h1": "Nama dalam kebersamaan.",
+    "height": 1414,
+    "scroll": 1009,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110385717#/members"
+  },
+  {
+    "width": 768,
+    "id": "home",
+    "client": 753,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 5775,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110386423#/"
+  },
+  {
+    "width": 768,
+    "id": "te",
+    "client": 753,
+    "h1": "Tursina Explore",
+    "height": 2050,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110386594#/program/te"
+  },
+  {
+    "width": 768,
+    "id": "te11",
+    "client": 753,
+    "h1": "Bukit Raya",
+    "height": 6140,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110386757#/expedition/te11"
+  },
+  {
+    "width": 768,
+    "id": "pd",
+    "client": 753,
+    "h1": "Pemantapan Divisi",
+    "height": 6284,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110386945#/program/pd"
+  },
+  {
+    "width": 768,
+    "id": "rc",
+    "client": 753,
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "height": 3603,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110387102#/activity/rc29"
+  },
+  {
+    "width": 768,
+    "id": "publications",
+    "client": 753,
+    "h1": "Pengalaman menjadi bacaan.",
+    "height": 3211,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110387272#/publications"
+  },
+  {
+    "width": 768,
+    "id": "about",
+    "client": 753,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 3247,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110387458#/about"
+  },
+  {
+    "width": 768,
+    "id": "history",
+    "client": 753,
+    "h1": "Pengalaman yang diteruskan.",
+    "height": 4300,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110387626#/jejak"
+  },
+  {
+    "width": 768,
+    "id": "members",
+    "client": 753,
+    "h1": "Nama dalam kebersamaan.",
+    "height": 1322,
+    "scroll": 753,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110387790#/members"
+  },
+  {
+    "width": 390,
+    "id": "home",
+    "client": 375,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 6735,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110388452#/"
+  },
+  {
+    "width": 390,
+    "id": "te",
+    "client": 375,
+    "h1": "Tursina Explore",
+    "height": 2772,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110388610#/program/te"
+  },
+  {
+    "width": 390,
+    "id": "te11",
+    "client": 375,
+    "h1": "Bukit Raya",
+    "height": 8010,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110388776#/expedition/te11"
+  },
+  {
+    "width": 390,
+    "id": "pd",
+    "client": 375,
+    "h1": "Pemantapan Divisi",
+    "height": 8362,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110388949#/program/pd"
+  },
+  {
+    "width": 390,
+    "id": "rc",
+    "client": 375,
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "height": 5121,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110389131#/activity/rc29"
+  },
+  {
+    "width": 390,
+    "id": "publications",
+    "client": 375,
+    "h1": "Pengalaman menjadi bacaan.",
+    "height": 4723,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110389311#/publications"
+  },
+  {
+    "width": 390,
+    "id": "about",
+    "client": 375,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 4754,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110389487#/about"
+  },
+  {
+    "width": 390,
+    "id": "history",
+    "client": 375,
+    "h1": "Pengalaman yang diteruskan.",
+    "height": 6085,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110389662#/jejak"
+  },
+  {
+    "width": 390,
+    "id": "members",
+    "client": 375,
+    "h1": "Nama dalam kebersamaan.",
+    "height": 1516,
+    "scroll": 375,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110389848#/members"
+  },
+  {
+    "width": 320,
+    "id": "home",
+    "client": 305,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 7170,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110390505#/"
+  },
+  {
+    "width": 320,
+    "id": "te",
+    "client": 305,
+    "h1": "Tursina Explore",
+    "height": 3050,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110390712#/program/te"
+  },
+  {
+    "width": 320,
+    "id": "te11",
+    "client": 305,
+    "h1": "Bukit Raya",
+    "height": 9041,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110390904#/expedition/te11"
+  },
+  {
+    "width": 320,
+    "id": "pd",
+    "client": 305,
+    "h1": "Pemantapan Divisi",
+    "height": 9199,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110391072#/program/pd"
+  },
+  {
+    "width": 320,
+    "id": "rc",
+    "client": 305,
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "height": 5589,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110391231#/activity/rc29"
+  },
+  {
+    "width": 320,
+    "id": "publications",
+    "client": 305,
+    "h1": "Pengalaman menjadi bacaan.",
+    "height": 5114,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110391397#/publications"
+  },
+  {
+    "width": 320,
+    "id": "about",
+    "client": 305,
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "height": 5364,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110391560#/about"
+  },
+  {
+    "width": 320,
+    "id": "history",
+    "client": 305,
+    "h1": "Pengalaman yang diteruskan.",
+    "height": 6665,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110391726#/jejak"
+  },
+  {
+    "width": 320,
+    "id": "members",
+    "client": 305,
+    "h1": "Nama dalam kebersamaan.",
+    "height": 1680,
+    "scroll": 305,
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792110391904#/members"
+  }
+]

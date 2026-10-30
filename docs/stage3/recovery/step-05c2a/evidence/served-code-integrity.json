@@ -1,0 +1,49 @@
+{
+  "sourceCommit": "829596aa47b476d0f6bf14a20de1b2cc99a47f4b",
+  "tlsValidation": true,
+  "photographsPublished": 0,
+  "files": [
+    {
+      "path": "assets/main-BgENVXlP.js",
+      "bytes": 427295,
+      "sha256": "1a1a4c98a65360a348bb047543fc8495dcb5225f8c4aa8c1d2e6edf863489e6f",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/main-CBNxAIeZ.css",
+      "bytes": 83428,
+      "sha256": "6b1cf43ae51f9ab69efe459cb790c8c70dad500d78e6325fb9e4a95c4222a2ba",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/source-sans-3-latin-Bo_j9asI.woff2",
+      "bytes": 28872,
+      "sha256": "19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/source-serif-4-latin-DMe4EKeb.woff2",
+      "bytes": 50936,
+      "sha256": "382475f38242c52d42a3e5ff8dc69b5d73f10d0d21e4550b5fe232984688779a",
+      "matchesLocal": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 613,
+      "sha256": "176fec892db5f99a649a557d16e7827e2d571d082263335581e492ad6f513c64",
+      "matchesLocal": true
+    },
+    {
+      "path": "responsive-review.html",
+      "bytes": 3882,
+      "sha256": "49291c44d379b978aec278bfbb58ad0b1723052f887d55cb5562036fa3ecfa20",
+      "matchesLocal": true
+    },
+    {
+      "path": "version.json",
+      "bytes": 100,
+      "sha256": "6f2a7632d85a093231e3602965127320147155c02abe8f6d650380f76e69bf1d",
+      "matchesLocal": true
+    }
+  ]
+}

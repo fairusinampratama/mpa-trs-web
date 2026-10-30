@@ -1,0 +1,33 @@
+{
+  "method": "Existing App and activity page renderer; append three typed records through in-memory context only. No record-specific JSX or production entry change.",
+  "results": [
+    {
+      "width": 1366,
+      "addedPD": true,
+      "newCohortOption": true,
+      "pdWithoutCohort": true,
+      "independentWithoutParent": true,
+      "directReload": true,
+      "emptySections": false
+    },
+    {
+      "width": 390,
+      "addedPD": true,
+      "newCohortOption": true,
+      "pdWithoutCohort": true,
+      "independentWithoutParent": true,
+      "directReload": true,
+      "emptySections": false
+    },
+    {
+      "width": 320,
+      "addedPD": true,
+      "newCohortOption": true,
+      "pdWithoutCohort": true,
+      "independentWithoutParent": true,
+      "directReload": true,
+      "emptySections": false
+    }
+  ],
+  "errors": []
+}
