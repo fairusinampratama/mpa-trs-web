@@ -20,6 +20,9 @@ export type MediaRole =
   | "expedition"
   | "gh"
   | "rc"
+  | "orad"
+  | "lh"
+  | "caving"
   | "history"
   | "emblem"
   | "expedition-trail"
@@ -40,6 +43,7 @@ export type ReviewMedia = Partial<
       sizes?: string;
       assetId?: string;
       useId?: string;
+      presentation?: "documentary" | "prototype-placeholder";
     }
   >
 >;
@@ -80,6 +84,7 @@ export function useDocumentaryAsset(
     credit: media.credit,
     assetId: media.id,
     useId: media.useId,
+    presentation: media.presentation,
   };
 }
 export function TextLink({
@@ -202,6 +207,7 @@ export function DocumentaryMedia({
   children,
   omitWhenUnavailable = false,
   frame = "natural",
+  compact = false,
 }: {
   role: MediaRole;
   recordId?: string;
@@ -211,7 +217,8 @@ export function DocumentaryMedia({
   fallback: string;
   children?: ReactNode;
   omitWhenUnavailable?: boolean;
-  frame?: "natural" | "portrait";
+  frame?: "natural" | "portrait" | "landscape";
+  compact?: boolean;
 }) {
   const asset = useDocumentaryAsset(role, recordId, placement);
   const [failedSource, setFailedSource] = useState<string>();
@@ -220,23 +227,30 @@ export function DocumentaryMedia({
   return asset && !failed ? (
     <figure
       data-media-role={role}
-      className={`[&_img]:block [&_img]:w-full [&_[data-ui~=caption]]:mt-3 ${frame === "portrait" ? "[&_img]:aspect-[4/5] [&_img]:object-cover [&_img]:object-center" : "[&_img]:h-auto [&_img]:object-contain"}`}
+      className={`[&_img]:block [&_img]:w-full ${compact ? "[&_[data-ui~=caption]]:mt-2 [&_[data-ui~=caption]]:text-[12px]/[17px]" : "[&_[data-ui~=caption]]:mt-3"} ${frame === "portrait" ? "[&_img]:aspect-[4/5] [&_img]:object-cover [&_img]:object-center" : frame === "landscape" ? "[&_img]:aspect-video [&_img]:object-cover [&_img]:object-center" : "[&_img]:h-auto [&_img]:object-contain"}`}
       data-media-asset={asset.assetId}
       data-media-use={asset.useId}
       data-ui="media"
     >
-      <img
-        src={asset.src}
-        srcSet={asset.srcSet}
-        sizes={asset.sizes}
-        width={asset.width}
-        height={asset.height}
-        alt={asset.alt}
-        loading={eager ? "eager" : "lazy"}
-        fetchPriority={eager ? "high" : "auto"}
-        decoding={eager ? "sync" : "async"}
-        onError={() => setFailedSource(asset.src)}
-      />
+      <div className="relative overflow-hidden bg-surface-muted">
+        <img
+          src={asset.src}
+          srcSet={asset.srcSet}
+          sizes={asset.sizes}
+          width={asset.width}
+          height={asset.height}
+          alt={asset.alt}
+          loading={eager ? "eager" : "lazy"}
+          fetchPriority={eager ? "high" : "auto"}
+          decoding={eager ? "sync" : "async"}
+          onError={() => setFailedSource(asset.src)}
+        />
+        {asset.presentation === "prototype-placeholder" && (
+          <span className={`absolute bg-primary font-sans font-semibold tracking-[.04em] text-page uppercase ${compact ? "top-2 left-2 px-2 py-1 text-[10px]/[14px]" : "top-3 left-3 px-3 py-1.5 text-[11px]/[16px]"}`}>
+            Visual prototipe
+          </span>
+        )}
+      </div>
       <MediaCaption credit={asset.credit}>{asset.caption}</MediaCaption>
     </figure>
   ) : (

@@ -20,11 +20,11 @@ class PreviewBoundaryTests(unittest.TestCase):
     def test_all_canonical_approved_derivatives_match_source_bytes(self):
         import shutil
         manifest = approved_media()
-        self.assertEqual(len(manifest),17)
+        self.assertEqual(len(manifest),34)
         for relative in manifest:
             target=self.root/relative;target.parent.mkdir(parents=True,exist_ok=True)
             shutil.copyfile(Path(__file__).parent.parent/'src'/relative,target)
-        self.assertEqual(len(canonical_verify(self.root,SHA)),22)
+        self.assertEqual(len(canonical_verify(self.root,SHA)),39)
     def test_rejects_private_document(self):
         (self.root/'recovery.md').write_text('private')
         with self.assertRaises(ValueError): verify(self.root,SHA)

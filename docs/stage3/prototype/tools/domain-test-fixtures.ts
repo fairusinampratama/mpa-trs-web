@@ -51,6 +51,8 @@ export function withDomainProof(
     id: "data-proof-edition",
     programmeId: "te",
     label: "DEMO",
+    title: "Synthetic contract edition",
+    sourceUses,
   });
   r.activities.push(a);
   r.activities.push({

@@ -1,13 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {activityInputs,activityReferences,activityRecords,pdRecords,archivalActivities} from '../src/content.ts';
-import {prepareActivityRecords,filterPDRecords,cohortOptions,readPDFilters,pdQuery} from '../src/activity-model.ts';
+import {prepareActivityRecords,filterPDRecords,cohortOptions,pdCohortGroups,readPDFilters,pdQuery} from '../src/activity-model.ts';
 import {addedActivityInputs} from './activity-test-fixtures.ts';
 
 test('expanded PD sample retains original identities and five fields',()=>{
  assert.equal(pdRecords.length,18);for(const id of ['gh26','gh29','rc29','orad29','lh29','caving29'])assert(pdRecords.some(r=>r.id===id));
  for(const d of activityReferences.divisions)assert(filterPDRecords(activityRecords,{division:d.id,cohort:'all'}).length>0);
- assert.deepEqual(cohortOptions(pdRecords),['XXIX','XXVI','XXVII','XXVIII']);
+ assert.deepEqual(cohortOptions(pdRecords),['XXVI','XXVII','XXVIII','XXIX']);
+ const groups=pdCohortGroups(pdRecords,activityReferences.divisions);assert.deepEqual(groups.map(g=>[g.cohort,g.records.length]),[['XXIX',5],['XXVIII',4],['XXVII',5],['XXVI',4]]);
+ assert.deepEqual(groups[0].records.map(r=>r.divisionIds[0]),['GH','RC','ORAD','LH','CAVING']);
 });
 test('added records drive catalogue cohorts, selection and generic canonical URLs',()=>{
  const rows=prepareActivityRecords([...activityInputs,...addedActivityInputs],activityReferences);

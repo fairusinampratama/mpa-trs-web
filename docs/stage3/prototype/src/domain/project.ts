@@ -82,7 +82,11 @@ export function projectPreview(input: InstitutionalRegistry) {
     .map((a) => ({
       ...activityFields(a),
       mediaIds: r.mediaUses
-        .filter((u) => u.recordId === a.id)
+        .filter(
+          (u) =>
+            u.recordId === a.id &&
+            (!u.placement || u.placement === "activity-documentary"),
+        )
         .map((u) => u.assetId),
       relatedActivityIds: r.relations
         .filter((e) => e.kind === "activity-activity" && e.fromId === a.id)

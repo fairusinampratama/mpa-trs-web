@@ -108,67 +108,111 @@ export const institutionalContent = {
     {
       "id": "te1-edition",
       "programmeId": "te",
-      "label": "1"
+      "label": "1",
+      "title": "Suku Sasak Lombok",
+      "year": "2011",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE1" }]
     },
     {
       "id": "te2-edition",
       "programmeId": "te",
-      "label": "2"
+      "label": "2",
+      "title": "Taman Nasional Ujung Kulon",
+      "year": "2012",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE2" }]
     },
     {
       "id": "te3-edition",
       "programmeId": "te",
-      "label": "3"
+      "label": "3",
+      "title": "Suku Anak Dalam Jambi",
+      "year": "2013",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE3" }]
     },
     {
       "id": "te4-edition",
       "programmeId": "te",
-      "label": "4"
+      "label": "4",
+      "title": "Suku Osing Banyuwangi",
+      "year": "2014",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE4" }]
     },
     {
       "id": "te5-edition",
       "programmeId": "te",
-      "label": "5"
+      "label": "5",
+      "title": "Suku Baduy Banten",
+      "year": "2015",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE5" }]
     },
     {
       "id": "te6-edition",
       "programmeId": "te",
-      "label": "6"
+      "label": "6",
+      "title": "Suku Dayak Pitap Kalimantan",
+      "year": "2016",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE6" }]
     },
     {
       "id": "te7-edition",
       "programmeId": "te",
-      "label": "7"
+      "label": "7",
+      "title": "Suku Abui Alor NTT",
+      "year": "2017",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE7" }]
     },
     {
       "id": "te8-edition",
       "programmeId": "te",
-      "label": "8"
+      "label": "8",
+      "title": "Suku Huahulu Maluku",
+      "year": "2019",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE8" }]
     },
     {
       "id": "te9-edition",
       "programmeId": "te",
-      "label": "9"
+      "label": "9",
+      "title": "Suku Modo Pulau Komodo NTT",
+      "year": "2021",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE9" }]
     },
     {
       "id": "te10-edition",
       "programmeId": "te",
-      "label": "10"
+      "label": "10",
+      "title": "Suku Mentawai Sumatra",
+      "year": "2022",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "TE10" }]
     },
     {
       "id": "te11-edition",
       "programmeId": "te",
-      "label": "11"
+      "label": "11",
+      "title": "Bukit Raya",
+      "year": "2024",
+      "sourceUses": [
+        { "sourceId": "owner-te-chronology", "locator": "Owner-supplied TE11 identity" },
+        { "sourceId": "te11-report", "locator": "§2.2 / execution year" }
+      ]
     },
     {
       "id": "te12-edition",
       "programmeId": "te",
-      "label": "12"
+      "label": "12",
+      "title": "Terunyan",
+      "year": "2025",
+      "sourceUses": [
+        { "sourceId": "owner-te-chronology", "locator": "Owner-supplied TE12 identity" },
+        { "sourceId": "lpj-2025", "locator": "Tursina Explore #12 / execution year" }
+      ]
     },
     {
       "id": "te13-edition",
       "programmeId": "te",
-      "label": "13"
+      "label": "13",
+      "title": "Suku Kajang Ammatoa",
+      "sourceUses": [{ "sourceId": "owner-te-chronology", "locator": "Owner-supplied TE13 identity; year not supplied" }]
     }
   ],
   "activities": [
@@ -961,6 +1005,540 @@ export const institutionalContent = {
       }
     },
     {
+      "id": "te1",
+      "title": "Suku Sasak Lombok",
+      "summary": "Tursina Explore #1 berfokus pada Suku Sasak di Lombok.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te1-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE1 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2011",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2011"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE1 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te2",
+      "title": "Taman Nasional Ujung Kulon",
+      "summary": "Tursina Explore #2 berfokus pada kawasan Taman Nasional Ujung Kulon.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te2-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE2 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2012",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2012"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE2 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te3",
+      "title": "Suku Anak Dalam Jambi",
+      "summary": "Tursina Explore #3 berfokus pada Suku Anak Dalam di Jambi.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te3-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE3 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2013",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2013"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE3 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te4",
+      "title": "Suku Osing Banyuwangi",
+      "summary": "Tursina Explore #4 berfokus pada Suku Osing di Banyuwangi.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te4-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE4 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2014",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2014"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE4 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te5",
+      "title": "Suku Baduy Banten",
+      "summary": "Tursina Explore #5 berfokus pada Suku Baduy di Banten.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te5-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE5 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2015",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2015"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE5 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te6",
+      "title": "Suku Dayak Pitap Kalimantan",
+      "summary": "Tursina Explore #6 berfokus pada Suku Dayak Pitap di Kalimantan.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te6-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE6 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2016",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2016"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE6 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te7",
+      "title": "Suku Abui Alor NTT",
+      "summary": "Tursina Explore #7 berfokus pada Suku Abui di Alor, Nusa Tenggara Timur.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te7-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE7 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2017",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2017"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE7 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te8",
+      "title": "Suku Huahulu Maluku",
+      "summary": "Tursina Explore #8 berfokus pada Suku Huahulu di Maluku.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te8-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE8 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2019",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2019"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE8 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te9",
+      "title": "Suku Modo Pulau Komodo NTT",
+      "summary": "Tursina Explore #9 berfokus pada Suku Modo di Pulau Komodo, Nusa Tenggara Timur.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te9-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE9 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "2021",
+          "assertionId": "primary"
+        },
+        "assertions": [
+          {
+            "id": "primary",
+            "role": "execution",
+            "value": {
+              "precision": "year",
+              "start": "2021"
+            },
+            "sourceUses": [
+              {
+                "sourceId": "owner-te-chronology",
+                "locator": "TE9 year"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
+      "id": "te13",
+      "title": "Suku Kajang Ammatoa",
+      "summary": "Tursina Explore #13 berfokus pada Suku Kajang Ammatoa.",
+      "state": "historical",
+      "depth": "basic",
+      "kind": "expedition",
+      "programId": "te",
+      "editionId": "te13-edition",
+      "sourceUses": [
+        {
+          "sourceId": "owner-te-chronology",
+          "locator": "TE13 edition identity"
+        }
+      ],
+      "editorial": {
+        "verification": "source-checked",
+        "readiness": "review-draft",
+        "website": "prototype"
+      },
+      "dates": {
+        "presentation": {
+          "label": "Tahun belum tercatat"
+        },
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "places": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "publication": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      }
+    },
+    {
       "id": "te11",
       "title": "Bukit Raya: lintas sungai, hutan hujan, dan catatan lapangan",
       "summary": "Ekspedisi 20 November-6 Desember 2024: perjalanan lintas moda menuju Rantau Malam, pendakian ke Puncak Kakam, serta kerja dokumentasi lingkungan dan sosial budaya.",
@@ -1094,6 +1672,23 @@ export const institutionalContent = {
         "displayTitle": "Bukit Raya",
         "deck": "Perjalanan lintas moda, hutan hujan, dan pengalaman lapangan yang dirawat menjadi catatan bersama.",
         "precisionNote": "Wilayah ditulis Kalimantan karena penamaan provinsi belum selaras dalam sumber. Rentang di atas mengikuti tanggal utama laporan.",
+        "facts": [
+          {
+            "label": "Durasi",
+            "value": "17 hari",
+            "sourceUses": [{ "sourceId": "te11-report", "locator": "§2.2 / pelaksanaan" }]
+          },
+          {
+            "label": "Tujuan",
+            "value": "Bukit Raya",
+            "sourceUses": [{ "sourceId": "te11-report", "locator": "§2.2 / tempat" }]
+          },
+          {
+            "label": "Rute",
+            "value": "Darat · laut · sungai · jalur hutan",
+            "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }]
+          }
+        ],
         "context": {
           "title": "Perjalanan dimulai sebelum jalur pendakian.",
           "paragraphs": [
@@ -1110,205 +1705,62 @@ export const institutionalContent = {
         "journeyTitle": "Darat, laut, sungai, lalu jalur hutan.",
         "journey": [
           {
-            "title": "Dari Malang ke Tanjung Perak",
-            "body": "Persiapan akhir dan upacara pemberangkatan mendahului perjalanan menuju pelabuhan di Surabaya.",
-            "sourceUses": [
-              {
-                "sourceId": "te11-report",
-                "locator": "§3.1–3.2"
-              }
-            ],
+            "title": "Dari Malang menuju Kalimantan",
+            "body": "Persiapan akhir dan upacara pemberangkatan mengawali perjalanan menuju Tanjung Perak. Dari Surabaya, KM Bukit Raya membawa tim menyeberangi Laut Jawa menuju Pontianak sambil menyiapkan dokumentasi ekspedisi.",
+            "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }],
             "dates": {
-              "presentation": {
-                "label": "20–21 November 2024",
-                "assertionId": "reported"
-              },
-              "assertions": [
-                {
-                  "id": "reported",
-                  "role": "execution",
-                  "value": {
-                    "precision": "day-range",
-                    "start": "2024-11-20",
-                    "end": "2024-11-21"
-                  },
-                  "sourceUses": [
-                    {
-                      "sourceId": "te11-report",
-                      "locator": "§3.1–3.2"
-                    }
-                  ]
-                }
-              ],
-              "reconciliation": "single-source"
-            }
-          },
-          {
-            "title": "Menyeberangi Laut Jawa",
-            "body": "KM Bukit Raya membawa tim dari Surabaya menuju Pontianak. Waktu di kapal juga dipakai untuk menyiapkan dokumentasi ekspedisi.",
-            "sourceUses": [
-              {
-                "sourceId": "te11-report",
-                "locator": "§3.1–3.2"
-              }
-            ],
-            "dates": {
-              "presentation": {
-                "label": "21–23 November 2024",
-                "assertionId": "reported"
-              },
-              "assertions": [
-                {
-                  "id": "reported",
-                  "role": "execution",
-                  "value": {
-                    "precision": "day-range",
-                    "start": "2024-11-21",
-                    "end": "2024-11-23"
-                  },
-                  "sourceUses": [
-                    {
-                      "sourceId": "te11-report",
-                      "locator": "§3.1–3.2"
-                    }
-                  ]
-                }
-              ],
+              "presentation": { "label": "20–23 November 2024", "assertionId": "reported" },
+              "assertions": [{
+                "id": "reported",
+                "role": "execution",
+                "value": { "precision": "day-range", "start": "2024-11-20", "end": "2024-11-23" },
+                "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }]
+              }],
               "reconciliation": "single-source"
             }
           },
           {
             "title": "Darat dan sungai menuju Rantau Malam",
-            "body": "Perjalanan berlanjut melalui Nanga Pinoh, Serawai, dan Jelundung. Moda darat, speedboat, dan klotok menghubungkan rangkaian perjalanan.",
-            "sourceUses": [
-              {
-                "sourceId": "te11-report",
-                "locator": "§3.1–3.2"
-              }
-            ],
+            "body": "Perjalanan berlanjut melalui Nanga Pinoh, Serawai, dan Jelundung. Moda darat, speedboat, dan klotok menghubungkan tim dengan Rantau Malam sebelum memasuki jalur hutan.",
+            "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }],
             "dates": {
-              "presentation": {
-                "label": "25–26 November 2024",
-                "assertionId": "reported"
-              },
-              "assertions": [
-                {
-                  "id": "reported",
-                  "role": "execution",
-                  "value": {
-                    "precision": "day-range",
-                    "start": "2024-11-25",
-                    "end": "2024-11-26"
-                  },
-                  "sourceUses": [
-                    {
-                      "sourceId": "te11-report",
-                      "locator": "§3.1–3.2"
-                    }
-                  ]
-                }
-              ],
+              "presentation": { "label": "25–26 November 2024", "assertionId": "reported" },
+              "assertions": [{
+                "id": "reported",
+                "role": "execution",
+                "value": { "precision": "day-range", "start": "2024-11-25", "end": "2024-11-26" },
+                "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }]
+              }],
               "reconciliation": "single-source"
             }
           },
           {
-            "title": "Menjalani jalur Bukit Raya",
-            "body": "Laporan mencatat pendakian selama empat hari empat malam, dengan Puncak Kakam dicapai pada 29 November sekitar pukul 13.50.",
-            "sourceUses": [
-              {
-                "sourceId": "te11-report",
-                "locator": "§3.1–3.2"
-              }
-            ],
+            "title": "Empat hari di jalur Bukit Raya",
+            "body": "Laporan mencatat perjalanan di jalur selama empat hari empat malam. Puncak Kakam dicapai pada 29 November sekitar pukul 13.50 sebelum tim kembali menuju Rantau Malam.",
+            "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }],
             "dates": {
-              "presentation": {
-                "label": "27–30 November 2024",
-                "assertionId": "reported"
-              },
-              "assertions": [
-                {
-                  "id": "reported",
-                  "role": "execution",
-                  "value": {
-                    "precision": "day-range",
-                    "start": "2024-11-27",
-                    "end": "2024-11-30"
-                  },
-                  "sourceUses": [
-                    {
-                      "sourceId": "te11-report",
-                      "locator": "§3.1–3.2"
-                    }
-                  ]
-                }
-              ],
+              "presentation": { "label": "27–30 November 2024", "assertionId": "reported" },
+              "assertions": [{
+                "id": "reported",
+                "role": "execution",
+                "value": { "precision": "day-range", "start": "2024-11-27", "end": "2024-11-30" },
+                "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }]
+              }],
               "reconciliation": "single-source"
             }
           },
           {
-            "title": "Kembali ke Rantau Malam",
-            "body": "Waktu setelah pendakian dimanfaatkan untuk pengumpulan data dan interaksi di desa sebelum perjalanan pulang.",
-            "sourceUses": [
-              {
-                "sourceId": "te11-report",
-                "locator": "§3.1–3.2"
-              }
-            ],
+            "title": "Dari Rantau Malam menuju rumah",
+            "body": "Setelah pendakian, tim mengumpulkan data dan berinteraksi di desa. Perubahan jadwal kapal kemudian membawa perjalanan pulang melalui Semarang dan dilanjutkan dengan kereta menuju Malang.",
+            "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }],
             "dates": {
-              "presentation": {
-                "label": "1–2 Desember 2024",
-                "assertionId": "reported"
-              },
-              "assertions": [
-                {
-                  "id": "reported",
-                  "role": "execution",
-                  "value": {
-                    "precision": "day-range",
-                    "start": "2024-12-01",
-                    "end": "2024-12-02"
-                  },
-                  "sourceUses": [
-                    {
-                      "sourceId": "te11-report",
-                      "locator": "§3.1–3.2"
-                    }
-                  ]
-                }
-              ],
-              "reconciliation": "single-source"
-            }
-          },
-          {
-            "title": "Pulang melalui rute yang disesuaikan",
-            "body": "Jadwal kapal mengubah rute pulang melalui Semarang dan dilanjutkan dengan kereta ke Malang. Rincian hari akhir berbeda antarbagian laporan.",
-            "sourceUses": [
-              {
-                "sourceId": "te11-report",
-                "locator": "§3.1–3.2"
-              }
-            ],
-            "dates": {
-              "presentation": {
-                "label": "Desember 2024",
-                "assertionId": "reported"
-              },
-              "assertions": [
-                {
-                  "id": "reported",
-                  "role": "execution",
-                  "value": {
-                    "precision": "month",
-                    "start": "2024-12"
-                  },
-                  "sourceUses": [
-                    {
-                      "sourceId": "te11-report",
-                      "locator": "§3.1–3.2"
-                    }
-                  ]
-                }
-              ],
+              "presentation": { "label": "1–7 Desember 2024", "assertionId": "reported" },
+              "assertions": [{
+                "id": "reported",
+                "role": "execution",
+                "value": { "precision": "day-range", "start": "2024-12-01", "end": "2024-12-07" },
+                "sourceUses": [{ "sourceId": "te11-report", "locator": "§3.1–3.2" }]
+              }],
               "reconciliation": "single-source"
             }
           }
@@ -1361,7 +1813,7 @@ export const institutionalContent = {
     },
     {
       "id": "te12",
-      "title": "Trunyan",
+      "title": "Terunyan",
       "summary": "LPJ Pengurus 2025 mencatat eksplorasi sosial budaya di Desa Trunyan. Cerita dan hasil lapangannya belum cukup terverifikasi untuk uraian panjang.",
       "state": "historical",
       "depth": "basic",
@@ -4333,6 +4785,14 @@ export const institutionalContent = {
       "acceptance": "not-applicable"
     },
     {
+      "id": "owner-te-chronology",
+      "label": "Kronologi Tursina Explore dari pemilik",
+      "kind": "owner-supplied-chronology",
+      "custody": "restricted-original",
+      "originalAccess": "examined",
+      "acceptance": "not-applicable"
+    },
+    {
       "id": "ad-art-2025",
       "label": "AD/ART MAPALA Tursina 2025",
       "kind": "charter",
@@ -4592,6 +5052,392 @@ export const institutionalContent = {
       "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     },
     {
+      "id": "te1-prototype-visual",
+      "title": "Visual prototipe TE1",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE1; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE1; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te1-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #1; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #1; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te1-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 24790,
+          "sha256": "25d017a2198a0bdef1a8a56fef34cc39bff8d4498f4a55b41b3c573633a2d1b6"
+        }
+      ],
+      "publicPath": "/media/te1-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te2-prototype-visual",
+      "title": "Visual prototipe TE2",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE2; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE2; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te2-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #2; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #2; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te2-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 23700,
+          "sha256": "a89f272fbc5496e22790aa177e0c00b4fde12eacda9cbd357b4e64705c253a10"
+        }
+      ],
+      "publicPath": "/media/te2-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te3-prototype-visual",
+      "title": "Visual prototipe TE3",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE3; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE3; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te3-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #3; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #3; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te3-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 41232,
+          "sha256": "3bd362088a35fd24670038de87b23788b5f706bad6b332fd4c43cb718594415f"
+        }
+      ],
+      "publicPath": "/media/te3-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te4-prototype-visual",
+      "title": "Visual prototipe TE4",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE4; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE4; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te4-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #4; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #4; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te4-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 22392,
+          "sha256": "47c75a29988e8773b2d82aece6ff81728bd62dc53dbec1ccdf97198bce02aa74"
+        }
+      ],
+      "publicPath": "/media/te4-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te5-prototype-visual",
+      "title": "Visual prototipe TE5",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE5; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE5; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te5-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #5; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #5; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te5-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 31468,
+          "sha256": "1c7136b7cd6e7adf2647a99f357d4a115575374d7faad1ea42d8b95f640df213"
+        }
+      ],
+      "publicPath": "/media/te5-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te6-prototype-visual",
+      "title": "Visual prototipe TE6",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE6; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE6; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te6-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #6; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #6; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te6-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 34682,
+          "sha256": "326b49141087af0313f1f8168d5284f3c44f12744edca5d3a22e3220f41c2d1d"
+        }
+      ],
+      "publicPath": "/media/te6-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te7-prototype-visual",
+      "title": "Visual prototipe TE7",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE7; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE7; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te7-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #7; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #7; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te7-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 25934,
+          "sha256": "8f73c63991691f63bc899d28b060692d8bc4a4314d44653ebeaf54bef3d5617d"
+        }
+      ],
+      "publicPath": "/media/te7-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te8-prototype-visual",
+      "title": "Visual prototipe TE8",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE8; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE8; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te8-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #8; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #8; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te8-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 29898,
+          "sha256": "4d33ddfe4659fb8a5c866d728bd02c94aa1f0706eca98c246e55a624e07de824"
+        }
+      ],
+      "publicPath": "/media/te8-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te9-prototype-visual",
+      "title": "Visual prototipe TE9",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE9; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE9; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te9-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #9; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #9; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te9-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 21274,
+          "sha256": "637b1b8fe5abbb3adc87065bdf43484e7b8837fa016de43e2a0cb793a4762cc2"
+        }
+      ],
+      "publicPath": "/media/te9-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te13-prototype-visual",
+      "title": "Visual prototipe TE13",
+      "context": "Visual sintetis untuk menguji komposisi showcase TE13; bukan bukti tempat, suasana, komunitas, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual for TE13; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-showcase-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-te13-2026-10-31",
+      "alt": "Visual sintetis prototipe untuk Tursina Explore #13; bukan dokumentasi kegiatan.",
+      "caption": "Gambar sementara untuk simulasi Tursina Explore #13; bukan dokumentasi kegiatan.",
+      "derivatives": [
+        {
+          "path": "/media/te13-prototype-720.webp",
+          "width": 720,
+          "height": 405,
+          "bytes": 26048,
+          "sha256": "ddeefd6757fa3200ad3e78c4a0f6c3a14022287f5ec6a9c30b53e84cb6bb583b"
+        }
+      ],
+      "publicPath": "/media/te13-prototype-720.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te12-prototype-visual",
+      "title": "Visual prototipe TE12",
+      "context": "Visual sintetis untuk menguji komposisi arsip TE12; bukan bukti tempat, suasana, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-placeholder-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-2026-10-31",
+      "alt": "Visual sintetis prototipe berupa danau berkabut dengan lereng hijau; bukan dokumentasi TE12.",
+      "caption": "Gambar sementara untuk simulasi tata letak; bukan dokumentasi TE12.",
+      "derivatives": [
+        {
+          "path": "/media/te12-prototype-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 26354,
+          "sha256": "0e6ef1856dc2fea998374638721c82453a7974f39712b4452ed7a5a40561d1b1"
+        },
+        {
+          "path": "/media/te12-prototype-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 85844,
+          "sha256": "4f6be16cd0b9534aeffb4b6b50020c21f9a5d4cb0f7745ac178d5b5e9f0bee12"
+        }
+      ],
+      "publicPath": "/media/te12-prototype-960.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
+      "id": "te10-prototype-visual",
+      "title": "Visual prototipe TE10",
+      "context": "Visual sintetis untuk menguji komposisi arsip TE10; bukan bukti tempat, suasana, atau pelaksanaan kegiatan.",
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "presentation": "prototype-placeholder",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Generated prototype visual; owner-authorized 31 October 2026"
+        }
+      ],
+      "permissionEvidence": "owner-prototype-placeholder-authorization-2026-10-31",
+      "privacyEvidence": "generated-landscape-no-people-2026-10-31",
+      "alt": "Visual sintetis prototipe berupa hutan hujan dan sungai; bukan dokumentasi TE10.",
+      "caption": "Gambar sementara untuk simulasi tata letak; bukan dokumentasi TE10.",
+      "derivatives": [
+        {
+          "path": "/media/te10-prototype-480.webp",
+          "width": 480,
+          "height": 270,
+          "bytes": 38880,
+          "sha256": "abdc8cc0a41cef0c3179ee4e72131970d9da8b28b723df4b77bd259cfc32d155"
+        },
+        {
+          "path": "/media/te10-prototype-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 140260,
+          "sha256": "8034dc204e62fd11c2abd14ecc59137022cd751835218c34208a67b51351ad6a"
+        }
+      ],
+      "publicPath": "/media/te10-prototype-960.webp",
+      "creditText": "Visual sintetis prototipe · bukan dokumentasi kegiatan",
+      "creditEvidence": "generated-for-stage3-prototype-2026-10-31"
+    },
+    {
       "id": "te11-documentary",
       "title": "Dokumentasi ekspedisi TE11",
       "context": "Arsip foto ditinjau privat; penggunaan tertentu disetujui; kredit publikasi telah dikonfirmasi pemilik proyek.",
@@ -4679,8 +5525,141 @@ export const institutionalContent = {
       "creditText": "Foto: Dokumentasi HUMED MAPALA Tursina",
       "creditEvidence": "owner-exact-shared-credit-2026-10-15"
     }
+    ,{
+      "id": "orad29-prototype-visual",
+      "title": "Visual prototipe lingkungan arus deras",
+      "context": "Visual sintetis untuk menilai komposisi kartu ORAD XXIX; tidak menggambarkan lokasi atau pelaksanaan kegiatan.",
+      "sourceUses": [{ "sourceId": "synthetic-fixture", "locator": "Owner-authorized PD catalogue prototype visual / 2026-10-31" }],
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "permissionEvidence": "owner-pd-catalogue-authorization-2026-10-31",
+      "privacyEvidence": "synthetic-no-people-2026-10-31",
+      "creditEvidence": "synthetic-generation-record-2026-10-31",
+      "alt": "Visual sintetis sungai berarus di antara bebatuan dan vegetasi tropis.",
+      "caption": "Visual prototipe lingkungan arus deras; bukan dokumentasi ORAD XXIX.",
+      "presentation": "prototype-placeholder",
+      "derivatives": [{
+        "path": "/media/orad29-prototype-540.webp",
+        "width": 540,
+        "height": 675,
+        "bytes": 41046,
+        "sha256": "679693ff7edbbf0510b8c3d8d97b443a3279ba1e60fd4d42968fe30130c767c3"
+      }],
+      "publicPath": "/media/orad29-prototype-540.webp",
+      "creditText": "Visual prototipe sintetis · bukan dokumentasi",
+    },
+    {
+      "id": "lh29-prototype-visual",
+      "title": "Visual prototipe lingkungan pengamatan ekologi",
+      "context": "Visual sintetis untuk menilai komposisi kartu LH XXIX; tidak menggambarkan lokasi atau pelaksanaan kegiatan.",
+      "sourceUses": [{ "sourceId": "synthetic-fixture", "locator": "Owner-authorized PD catalogue prototype visual / 2026-10-31" }],
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "permissionEvidence": "owner-pd-catalogue-authorization-2026-10-31",
+      "privacyEvidence": "synthetic-no-people-2026-10-31",
+      "creditEvidence": "synthetic-generation-record-2026-10-31",
+      "alt": "Visual sintetis vegetasi lembap, lumut, dan paku-pakuan di pembukaan hutan.",
+      "caption": "Visual prototipe lingkungan pengamatan; bukan dokumentasi LH XXIX.",
+      "presentation": "prototype-placeholder",
+      "derivatives": [{
+        "path": "/media/lh29-prototype-540.webp",
+        "width": 540,
+        "height": 675,
+        "bytes": 55536,
+        "sha256": "00eef6bfcab5c60a1c8294813c8db037a41edf06464ed14cdc0a46ed3f569654"
+      }],
+      "publicPath": "/media/lh29-prototype-540.webp",
+      "creditText": "Visual prototipe sintetis · bukan dokumentasi",
+    },
+    {
+      "id": "caving29-prototype-visual",
+      "title": "Visual prototipe lingkungan gua",
+      "context": "Visual sintetis untuk menilai komposisi kartu Caving XXIX; tidak menggambarkan lokasi atau pelaksanaan kegiatan.",
+      "sourceUses": [{ "sourceId": "synthetic-fixture", "locator": "Owner-authorized PD catalogue prototype visual / 2026-10-31" }],
+      "rights": "permission-verified",
+      "privacy": "cleared",
+      "credit": "verified",
+      "permissionEvidence": "owner-pd-catalogue-authorization-2026-10-31",
+      "privacyEvidence": "synthetic-no-people-2026-10-31",
+      "creditEvidence": "synthetic-generation-record-2026-10-31",
+      "alt": "Visual sintetis mulut gua batu kapur dengan batu lembap dan vegetasi tropis.",
+      "caption": "Visual prototipe lingkungan gua; bukan dokumentasi Susur Gua XXIX.",
+      "presentation": "prototype-placeholder",
+      "derivatives": [{
+        "path": "/media/caving29-prototype-540.webp",
+        "width": 540,
+        "height": 675,
+        "bytes": 48376,
+        "sha256": "2488616b28586f17b677a106887ba88ecd8c59b9d8d5ea17d8c12a656ba7224f"
+      }],
+      "publicPath": "/media/caving29-prototype-540.webp",
+      "creditText": "Visual prototipe sintetis · bukan dokumentasi",
+    }
   ],
   "mediaUses": [
+    {
+      "id": "pd-gh-catalogue-feature",
+      "assetId": "pd-gh-map",
+      "recordId": "gh29",
+      "role": "gh",
+      "placement": "pd-catalogue-feature",
+      "approval": { "decisionId": "C2A-26-PDGH", "recordedOn": "2026-10-31", "evidence": "owner-pd-catalogue-authorization-2026-10-31" },
+      "sizes": "(min-width: 1024px) 560px, (min-width: 768px) calc(50vw - 40px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-rc-catalogue-feature",
+      "assetId": "pd-rc-team",
+      "recordId": "rc29",
+      "role": "rc",
+      "placement": "pd-catalogue-feature",
+      "approval": { "decisionId": "C2A-26-PDRC", "recordedOn": "2026-10-31", "evidence": "owner-pd-catalogue-authorization-2026-10-31" },
+      "sizes": "(min-width: 1024px) 560px, (min-width: 768px) calc(50vw - 40px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-orad-catalogue-prototype",
+      "assetId": "orad29-prototype-visual",
+      "recordId": "orad29",
+      "role": "orad",
+      "placement": "pd-catalogue-feature",
+      "approval": { "decisionId": "C2A-26-PDORAD", "recordedOn": "2026-10-31", "evidence": "owner-pd-catalogue-authorization-2026-10-31" },
+      "sizes": "(min-width: 1024px) 360px, (min-width: 768px) calc(50vw - 40px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-lh-catalogue-prototype",
+      "assetId": "lh29-prototype-visual",
+      "recordId": "lh29",
+      "role": "lh",
+      "placement": "pd-catalogue-feature",
+      "approval": { "decisionId": "C2A-26-PDLH", "recordedOn": "2026-10-31", "evidence": "owner-pd-catalogue-authorization-2026-10-31" },
+      "sizes": "(min-width: 1024px) 360px, (min-width: 768px) calc(50vw - 40px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "pd-caving-catalogue-prototype",
+      "assetId": "caving29-prototype-visual",
+      "recordId": "caving29",
+      "role": "caving",
+      "placement": "pd-catalogue-feature",
+      "approval": { "decisionId": "C2A-26-PDCAV", "recordedOn": "2026-10-31", "evidence": "owner-pd-catalogue-authorization-2026-10-31" },
+      "sizes": "(min-width: 1024px) 360px, (min-width: 768px) calc(50vw - 40px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+
     {
       "id": "kawi-collective-usage",
       "assetId": "kawi-collective",
@@ -4709,6 +5688,390 @@ export const institutionalContent = {
         "evidence": "owner-photo-permission-2026-10-15"
       },
       "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te1-catalogue-prototype",
+      "assetId": "te1-prototype-visual",
+      "recordId": "te1",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-16-TE1VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te1-detail-prototype",
+      "assetId": "te1-prototype-visual",
+      "recordId": "te1",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-16-TE1VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te2-catalogue-prototype",
+      "assetId": "te2-prototype-visual",
+      "recordId": "te2",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-17-TE2VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te2-detail-prototype",
+      "assetId": "te2-prototype-visual",
+      "recordId": "te2",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-17-TE2VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te3-catalogue-prototype",
+      "assetId": "te3-prototype-visual",
+      "recordId": "te3",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-18-TE3VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te3-detail-prototype",
+      "assetId": "te3-prototype-visual",
+      "recordId": "te3",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-18-TE3VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te4-catalogue-prototype",
+      "assetId": "te4-prototype-visual",
+      "recordId": "te4",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-19-TE4VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te4-detail-prototype",
+      "assetId": "te4-prototype-visual",
+      "recordId": "te4",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-19-TE4VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te5-catalogue-prototype",
+      "assetId": "te5-prototype-visual",
+      "recordId": "te5",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-20-TE5VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te5-detail-prototype",
+      "assetId": "te5-prototype-visual",
+      "recordId": "te5",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-20-TE5VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te6-catalogue-prototype",
+      "assetId": "te6-prototype-visual",
+      "recordId": "te6",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-21-TE6VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te6-detail-prototype",
+      "assetId": "te6-prototype-visual",
+      "recordId": "te6",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-21-TE6VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te7-catalogue-prototype",
+      "assetId": "te7-prototype-visual",
+      "recordId": "te7",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-22-TE7VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te7-detail-prototype",
+      "assetId": "te7-prototype-visual",
+      "recordId": "te7",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-22-TE7VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te8-catalogue-prototype",
+      "assetId": "te8-prototype-visual",
+      "recordId": "te8",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-23-TE8VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te8-detail-prototype",
+      "assetId": "te8-prototype-visual",
+      "recordId": "te8",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-23-TE8VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te9-catalogue-prototype",
+      "assetId": "te9-prototype-visual",
+      "recordId": "te9",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-24-TE9VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te9-detail-prototype",
+      "assetId": "te9-prototype-visual",
+      "recordId": "te9",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-24-TE9VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te13-catalogue-prototype",
+      "assetId": "te13-prototype-visual",
+      "recordId": "te13",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-25-TE13VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, (min-width: 768px) calc(50vw - 48px), calc(100vw - 56px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te13-detail-prototype",
+      "assetId": "te13-prototype-visual",
+      "recordId": "te13",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-25-TE13VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-showcase-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te12-catalogue-prototype",
+      "assetId": "te12-prototype-visual",
+      "recordId": "te12",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-14-TE12VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-placeholder-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1254px) 430px, (min-width: 1024px) calc((100vw - 120px) * 0.42), (min-width: 768px) calc(100vw - 80px), calc(100vw - 64px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te12-detail-prototype",
+      "assetId": "te12-prototype-visual",
+      "recordId": "te12",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-14-TE12VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-placeholder-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te10-catalogue-prototype",
+      "assetId": "te10-prototype-visual",
+      "recordId": "te10",
+      "role": "expedition",
+      "placement": "te-catalogue-feature",
+      "approval": {
+        "decisionId": "C2A-15-TE10VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-placeholder-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1254px) 430px, (min-width: 1024px) calc((100vw - 120px) * 0.42), (min-width: 768px) calc(100vw - 80px), calc(100vw - 64px)",
+      "institutionalUse": "approved",
+      "clearance": "cleared",
+      "purpose": "public-website"
+    },
+    {
+      "id": "te10-detail-prototype",
+      "assetId": "te10-prototype-visual",
+      "recordId": "te10",
+      "role": "expedition",
+      "placement": "expedition-lead",
+      "approval": {
+        "decisionId": "C2A-15-TE10VIS",
+        "recordedOn": "2026-10-31",
+        "evidence": "owner-prototype-placeholder-authorization-2026-10-31"
+      },
+      "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
       "institutionalUse": "approved",
       "clearance": "cleared",
       "purpose": "public-website"

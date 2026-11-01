@@ -1,11 +1,12 @@
 import { useContentReadModel } from "./ContentReadModel";
-import { documentedDateGroups } from "./domain/read";
-import { RelatedRecords, DateEvidence } from "./components/RecordContext";
+import { activityDisplayTitle, documentedDateGroups } from "./domain/read";
+import { RelatedRecords, DateEvidence, RecordDate } from "./components/RecordContext";
 import { useContext, useEffect } from "react";
 import { useActivityRecords } from "./ActivityContent";
 import {
   cohortOptions,
   filterPDRecords,
+  pdCohortGroups,
   pdQuery,
   readPDFilters,
   type ActivityFilters,
@@ -22,6 +23,7 @@ import {
   ProgrammeEntry,
   SectionHeading,
   TextLink,
+  type MediaRole,
 } from "./components/Foundation";
 import { resolvePublicMedia } from "./domain/validate.ts";
 import { Button } from "./components/Button";
@@ -50,340 +52,211 @@ function setPDFilters(filters: ActivityFilters, focusResults = false) {
     });
   }
 }
+const pdMediaRoles: Record<string, MediaRole> = {
+  GH: "gh",
+  RC: "rc",
+  ORAD: "orad",
+  LH: "lh",
+  CAVING: "caving",
+};
+
+function PDFeatureCard({
+  record,
+  divisionName,
+  filters,
+  large,
+}: {
+  record: ActivityRecord;
+  divisionName: string;
+  filters: ActivityFilters;
+  large: boolean;
+}) {
+  const role = pdMediaRoles[record.divisionIds?.[0] ?? ""];
+  return (
+    <article className={`min-w-0 bg-page ${large ? "lg:col-span-3" : "lg:col-span-2"}`} data-ui="pd-feature-card">
+      <a
+        className="group grid h-full grid-cols-[112px_minmax(0,1fr)] items-start gap-4 p-3 text-inherit no-underline transition-colors duration-150 hover:bg-surface-muted active:bg-leaf focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-focus [&_[data-ui~=caption]]:hidden md:flex md:flex-col md:gap-0 md:p-4 md:[&_[data-ui~=caption]]:block"
+        href={`${record.href}${pdQuery(filters)}`}
+        aria-label={record.title}
+      >
+        {role && (
+          <DocumentaryMedia
+            role={role}
+            recordId={record.id}
+            placement="pd-catalogue-feature"
+            eager={large}
+            fallbackTitle={activityDisplayTitle(record)}
+            fallback="Visual kegiatan belum tersedia."
+            frame="portrait"
+            compact
+          />
+        )}
+        <div className="flex min-w-0 flex-1 flex-col pb-1 md:px-2 md:pt-5 md:pb-2">
+          <div className="flex items-baseline justify-between gap-4 border-b border-primary/20 pb-3">
+            <p className="font-sans text-[11px]/[17px] font-semibold tracking-[.04em] text-blue uppercase">{divisionName}</p>
+            <p className="font-sans text-[12px]/[18px] font-semibold text-muted">Angkatan {record.cohort}</p>
+          </div>
+          <h3 className={`mt-3 font-editorial text-[22px]/[27px] font-semibold md:mt-5 ${large ? "md:text-[32px]/[37px] lg:text-[38px]/[43px]" : "md:text-[27px]/[33px]"}`}>
+            {record.location ?? activityDisplayTitle(record)}
+          </h3>
+          <p className="mt-3 font-sans text-[13px]/[20px] text-muted"><RecordDate id={record.id} fallback={record.date} /></p>
+          <p className="mt-4 hidden text-[16px]/[24px] md:block">{record.summary}</p>
+          <span className="mt-auto flex min-h-11 items-center gap-2 pt-3 font-sans text-[13px]/[19px] font-semibold text-muted transition-colors group-hover:text-primary md:pt-6 md:text-[14px]/[20px]">
+            Baca catatan <span className="transition-transform duration-150 group-hover:translate-x-1" aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+    </article>
+  );
+}
+
+function PDArchiveCard({
+  record,
+  divisionName,
+  filters,
+}: {
+  record: ActivityRecord;
+  divisionName: string;
+  filters: ActivityFilters;
+}) {
+  return (
+    <article className="min-w-0 bg-page" data-ui="pd-archive-card">
+      <a
+        className="group flex h-full flex-col p-5 text-inherit no-underline transition-colors duration-150 hover:bg-surface-muted active:bg-leaf focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-focus sm:min-h-64 lg:p-6"
+        href={`${record.href}${pdQuery(filters)}`}
+        aria-label={record.title}
+      >
+        <p className="font-sans text-[11px]/[17px] font-semibold tracking-[.04em] text-blue uppercase">{divisionName}</p>
+        <h3 className="mt-4 font-editorial text-[26px]/[32px] font-semibold">{record.location ?? activityDisplayTitle(record)}</h3>
+        <p className="mt-3 font-sans text-[13px]/[20px] text-muted"><RecordDate id={record.id} fallback={record.date} /></p>
+        <p className="mt-4 hidden text-[16px]/[24px] sm:block">{record.summary}</p>
+        <span className="mt-auto flex min-h-11 items-center gap-2 pt-3 font-sans text-[14px]/[20px] font-semibold text-muted transition-colors group-hover:text-primary sm:pt-6">
+          Baca catatan <span className="transition-transform duration-150 group-hover:translate-x-1" aria-hidden="true">→</span>
+        </span>
+      </a>
+    </article>
+  );
+}
+
 export function PDCatalogue({ params }: { params: URLSearchParams }) {
   const {
     registry,
     view: { divisions: divisionDefinitions, programmes: programmeDefinitions },
   } = useContentReadModel();
-  const records = useActivityRecords().filter((r) => r.programId === "pd");
+  const records = useActivityRecords().filter((record) => record.programId === "pd");
   const filters = readPDFilters(params, records, divisionDefinitions);
   const matched = filterPDRecords(records, filters);
-  const ordered = documentedDateGroups(registry, matched);
-  const shown = [...ordered.dated, ...ordered.undated];
-  const cohorts = cohortOptions(records);
-  const updateFilters = (patch: Partial<ActivityFilters>, focus = false) => {
-    const current = readPDFilters(
-      new URLSearchParams(location.hash.split("?")[1] ?? ""),
-      records,
-      divisionDefinitions,
-    );
-    setPDFilters(
-      {
-        ...current,
-        ...patch,
-      },
-      focus,
-    );
-  };
-  const label = divisionDefinitions.find(
-    (d) => d.id === filters.division,
-  )?.name;
-  const programme = programmeDefinitions.find((p) => p.id === "pd")!;
-  // Invalid/outdated deep-link facets normalize to supported values. URL, controls
-  // and result projection have one source of truth; no remembered hidden filter.
+  const allGroups = pdCohortGroups(records, divisionDefinitions);
+  const matchedGroups = pdCohortGroups(matched, divisionDefinitions);
+  const isDefault = filters.division === "all" && filters.cohort === "all";
+  const feature = isDefault ? allGroups[0] : undefined;
+  const archiveGroups = isDefault ? allGroups.slice(1) : matchedGroups;
+  const programme = programmeDefinitions.find((candidate) => candidate.id === "pd")!;
+  const selectedDivision = divisionDefinitions.find((division) => division.id === filters.division);
+  const divisionName = (record: ActivityRecord) =>
+    divisionDefinitions.find((division) => record.divisionIds?.includes(division.id))?.name ?? "Pemantapan Divisi";
+
   useEffect(() => {
     const canonical = `#/program/pd${pdQuery(filters)}`;
     const incoming = `#/program/pd${params.size ? "?" + params.toString() : ""}`;
-    if (location.hash === incoming && incoming !== canonical)
-      location.replace(canonical);
+    if (location.hash === incoming && incoming !== canonical) location.replace(canonical);
   }, [filters.division, filters.cohort, params.toString()]);
+
   return (
-    <div className="wrap-break-word" data-ui="activity-experience">
-      <header
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pt-4 pb-10 [&>[data-ui~=display]]:mt-3 [&>[data-ui~=metadata-inline]]:mt-6 [&>[data-ui~=link]]:mt-6 [&>[data-ui~=link]]:max-w-[38em] lg:pt-6 lg:pb-14"
-        data-ui="container activity-page-head"
-      >
-        <Breadcrumbs
-          items={[
-            {
-              label: "Beranda",
-              href: "#/",
-            },
-            {
-              label: programme.name,
-            },
-          ]}
-        />
-        <p
-          className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue"
-          data-ui="label"
-        >
-          Program / pendidikan anggota
+    <div className="wrap-break-word" data-ui="activity-experience pd-catalogue">
+      <header className="mx-auto w-[calc(100%_-_32px)] max-w-institution pt-8 pb-12 md:w-[calc(100%_-_48px)] lg:pt-14 lg:pb-18" data-ui="container activity-page-head">
+        <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-blue uppercase" data-ui="label">Program pendidikan anggota</p>
+        <h1 className="mt-4 max-w-[15ch] font-editorial text-[44px]/[46px] font-semibold tracking-[-.02em] max-[360px]:text-[39px]/[42px] lg:text-[68px]/[70px]" data-ui="display">{programme.name}</h1>
+        <p className="mt-6 max-w-[58ch] text-[19px]/[29px] lg:text-[22px]/[33px]" data-ui="intro activity-deck">
+          Pemantapan Divisi adalah pendidikan lanjutan anggota dalam lima bidang. Setiap angkatan mengembangkan pengetahuan melalui persiapan, praktik lapangan, dan catatan bersama.
         </p>
-        <h1
-          className="font-semibold text-[36px] leading-[38.9px] font-editorial max-[360px]:text-[32px] max-[360px]:leading-[34.6px] lg:text-[56px] lg:leading-[60.5px] lg:[&>span]:block"
-          data-ui="display"
-        >
-          {programme.name}
-        </h1>
-        <p
-          className="text-[17px] leading-[25px] lg:text-[20px] lg:leading-[29px] max-w-[66ch] mt-6"
-          data-ui="intro activity-deck"
-        >
-          {programme.description} Latihan, persiapan, spesialisasi lapangan, dan
-          presentasi laporan menjadi bagian dari proses belajar.
-        </p>
-        <p
-          className="text-[17px] leading-[25px] lg:text-[19px] lg:leading-[28px] max-w-[70ch] mt-4"
-          data-ui="body activity-support"
-        >
-          Lima bidang memiliki ruang belajar yang berbeda. Catatan kegiatan
-          dapat ditelusuri menurut bidang dan angkatan yang memang tercatat,
-          tanpa menjadikan angkatan sebagai syarat setiap kegiatan.
-        </p>
-        <button
-          type="button"
-          className="inline-flex items-center rounded-control px-5 py-2.5 transition-colors min-h-11.5 rounded-control text-[17px] leading-[24px] font-semibold pt-2.5 pr-4 pb-2.5 pl-4 gap-2 justify-start disabled:opacity-100 disabled:text-disabled-ink disabled:bg-disabled-bg disabled:border-disabled-bg disabled:cursor-not-allowed hover:border-forest border-control-border text-primary [&:hover:not(:disabled)]:bg-surface-muted [&:active:not(:disabled)]:border-primary mt-6 max-w-[38em] w-full text-left bg-transparent border-0 hover:underline hover:underline-offset-4 [&[data-ui~=button]]:w-fit [&[data-ui~=button]]:flex [&[data-ui~=button]]:gap-4 [&[data-ui~=button]]:bg-page [&[data-ui~=button]]:border [&[data-ui~=button]]:border-control-border [&[data-ui~=button]]:no-underline"
-          onClick={() => {
-            const results = document.getElementById("pd-results");
-            results?.scrollIntoView({
-              block: "start",
-            });
-            results?.focus({
-              preventScroll: true,
-            });
-          }}
-          data-ui="button button-secondary activity-jump"
-        >
-          Langsung ke kegiatan & filter<span aria-hidden="true">↓</span>
-        </button>
       </header>
-      <section
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22"
-        aria-labelledby="pd-fields"
-        data-ui="container section"
-      >
-        <p
-          className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue"
-          data-ui="label"
-        >
-          Lima bidang pendidikan
-        </p>
-        <h2
-          className="font-semibold text-[30px] leading-[35px] font-editorial lg:text-[40px] lg:leading-[46px] lg:font-semibold"
-          id="pd-fields"
-          data-ui="section-title"
-        >
-          Pilih ruang belajarnya.
-        </h2>
-        <p
-          className="text-[16px] leading-[23px] text-muted max-w-[70ch] mt-4"
-          data-ui="metadata activity-support"
-        >
-          Gambaran bidang merujuk dokumen 2025; bukan pernyataan bahwa seluruh
-          standar atau hasil teknis telah terpenuhi.
-        </p>
-        <div
-          className="grid gap-6 mt-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-y-10 lg:gap-x-8"
-          data-ui="activity-divisions"
-        >
-          {divisionDefinitions.map((division, i) => (
-            <article
-              className="border-t-2 border-t-primary pt-4 flex flex-col [&>[data-ui~=content-title]]:mt-4 [&>p]:mt-3 [&>[data-ui~=link]]:mt-auto [&>[data-ui~=link]]:pt-4 [&>[data-ui~=link]]:pb-0 [&>[data-ui~=link]]:border-0 [&>[data-ui~=link]]:bg-transparent [&>[data-ui~=link]]:text-left [&>[data-ui~=link]]:min-h-15 [&>[data-ui~=link]:hover]:underline [&>[data-ui~=link]:hover]:underline-offset-4 [&_[aria-pressed=true]]:underline [&_[aria-pressed=true]]:underline-offset-4"
-              key={division.id}
-              data-ui="activity-division"
-            >
-              <span
-                className="font-semibold text-[12px] leading-[18px] font-sans uppercase tracking-[.02em] text-blue"
-                aria-hidden="true"
-                data-ui="label"
-              >
-                0{i + 1} / {division.id}
-              </span>
-              <h3
-                className="font-semibold text-[26px] leading-[32px] font-editorial [&_a:hover]:underline [&_a:hover]:underline-offset-4 [&_a]:block [&_a]:min-h-11 [&_a]:text-inherit lg:text-[30px] lg:leading-[36px] lg:font-semibold"
-                data-ui="content-title"
-              >
-                {division.name}
-              </h3>
-              {division.alias && (
-                <p
-                  className="text-[16px] leading-[23px] text-muted"
-                  data-ui="metadata"
-                >
-                  {division.alias}
-                </p>
-              )}
-              <p>{division.description}</p>
-              <button
-                type="button"
-                className="flex items-center justify-start gap-4 min-h-11 font-semibold text-[17px] leading-[24px] font-sans text-primary no-underline w-fit max-w-full [&>span:last-child]:shrink-0 [&:hover>span:first-child]:underline [&:hover>span:first-child]:underline-offset-4"
-                aria-pressed={filters.division === division.id}
-                onClick={() =>
-                  updateFilters(
-                    {
-                      division: division.id,
-                    },
-                    true,
-                  )
-                }
-                data-ui="link"
-              >
-                Lihat {division.name}
-                <span aria-hidden="true">↓</span>
-              </button>
-            </article>
-          ))}
-        </div>
-      </section>
-      <section
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22"
-        aria-labelledby="pd-results"
-        data-ui="container section"
-      >
-        <h2
-          className="scroll-mt-6 font-semibold text-[30px] leading-[35px] font-editorial lg:text-[40px] lg:leading-[46px] lg:font-semibold"
-          id="pd-results"
-          tabIndex={-1}
-          data-ui="section-title"
-        >
-          Catatan Pemantapan Divisi
-        </h2>
-        <div
-          className="flex items-end flex-wrap gap-6 mt-6 [&_label]:block [&_label]:font-semibold [&_label]:min-w-0 [&_label]:w-full [&_[data-ui~=field]]:mt-2 [&_[data-ui~=field]]:w-full [&_[data-ui~=field]]:font-normal [&>[data-ui~=button]]:mb-0.25 md:[&_label]:w-60"
-          data-ui="activity-filters"
-        >
-          <label>
-            Divisi
-            <select
-              className="w-full rounded-control border bg-surface px-3 py-2 text-base min-h-12 border-control-border rounded-control"
-              aria-label="Filter divisi"
-              value={filters.division}
-              onChange={(e) =>
-                updateFilters({
-                  division: e.target.value,
-                })
-              }
-              data-ui="field"
-            >
-              <option value="all">Semua divisi</option>
-              {divisionDefinitions.map((d) => (
-                <option value={d.id} key={d.id}>
-                  {d.name}
-                </option>
+
+      {feature && (
+        <section className="bg-surface-muted py-12 lg:py-18" aria-labelledby="pd-feature-title" data-ui="section pd-feature">
+          <div className="mx-auto w-[calc(100%_-_32px)] max-w-institution md:w-[calc(100%_-_48px)]" data-ui="container">
+            <div className="mb-7 border-b border-primary/25 pb-5 lg:mb-8">
+              <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-blue uppercase">Angkatan {feature.cohort}</p>
+              <h2 className="mt-3 max-w-[19ch] font-editorial text-[34px]/[39px] font-semibold lg:text-[46px]/[51px]" id="pd-feature-title">Lima bidang, lima pengalaman lapangan.</h2>
+            </div>
+            <div className="grid gap-px bg-primary/20 md:grid-cols-2 lg:grid-cols-6" data-ui="pd-feature-grid">
+              {feature.records.map((record, index) => (
+                <PDFeatureCard key={record.id} record={record} divisionName={divisionName(record)} filters={filters} large={index < 2} />
               ))}
-            </select>
-          </label>
-          <label>
-            Angkatan
-            <select
-              className="w-full rounded-control border bg-surface px-3 py-2 text-base min-h-12 border-control-border rounded-control"
-              aria-label="Filter angkatan"
-              value={filters.cohort}
-              onChange={(e) =>
-                updateFilters({
-                  cohort: e.target.value,
-                })
-              }
-              data-ui="field"
-            >
-              <option value="all">Semua angkatan</option>
-              {cohorts.map((c) => (
-                <option value={c} key={c}>
-                  {c}
-                </option>
-              ))}
-              {records.some((r) => !r.cohortIds?.length) && (
-                <option value="none">Tanpa angkatan tercatat</option>
-              )}
-            </select>
-          </label>
-          <Button
-            variant="secondary"
-            onClick={() =>
-              setPDFilters({
-                division: "all",
-                cohort: "all",
-              })
-            }
-            disabled={filters.division === "all" && filters.cohort === "all"}
-          >
-            Reset filter
-          </Button>
-        </div>
-        <p
-          role="status"
-          aria-live="polite"
-          className="font-normal text-[16px] leading-[23px] font-sans text-muted my-6"
-          data-ui="activity-result-status"
-        >
-          {shown.length} catatan{label ? ` / ${label}` : " / semua divisi"}
-          {filters.cohort !== "all"
-            ? ` / ${filters.cohort === "none" ? "tanpa angkatan tercatat" : filters.cohort}`
-            : ""}
-        </p>
-        <p className="text-[14px] leading-[20px] text-muted" data-ui="caption">
-          Terbaru menurut tanggal yang terdokumentasi. Tanggal perkiraan tetap
-          ditandai; catatan tanpa tanggal dipisahkan.
-        </p>
-        {shown.length ? (
-          <div data-activity-results>
-            {ordered.dated.map((record) => (
-              <ActivityPreview
-                key={record.id}
-                activity={{
-                  ...record,
-                  href: `${record.href}${pdQuery(filters)}`,
-                }}
-              />
-            ))}
-            {!!ordered.undated.length && (
-              <h3
-                className="font-semibold text-[26px] leading-[32px] font-editorial [&_a:hover]:underline [&_a:hover]:underline-offset-4 [&_a]:block [&_a]:min-h-11 [&_a]:text-inherit lg:text-[30px] lg:leading-[36px] lg:font-semibold"
-                data-ui="content-title"
+            </div>
+            <p className="mt-6 max-w-[72ch] font-sans text-[13px]/[20px] text-muted">Visual berlabel “Visual prototipe” merupakan gambar sintetis sementara untuk menilai susunan katalog dan bukan dokumentasi kegiatan.</p>
+          </div>
+        </section>
+      )}
+
+      <section className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-14 md:w-[calc(100%_-_48px)] lg:py-22" aria-labelledby="pd-fields" data-ui="container section pd-divisions">
+        <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-blue uppercase">Lima bidang pendidikan</p>
+        <h2 className="mt-3 max-w-[20ch] font-editorial text-[34px]/[39px] font-semibold lg:text-[46px]/[51px]" id="pd-fields">Ruang belajar yang berbeda.</h2>
+        <div className="mt-8 grid gap-px bg-primary/20 md:grid-cols-2 lg:grid-cols-5" data-ui="activity-divisions">
+          {divisionDefinitions.map((division, index) => {
+            const selected = filters.division === division.id;
+            return (
+              <a
+                className={`group flex flex-col p-5 text-inherit no-underline transition-colors duration-150 focus-visible:outline-3 focus-visible:outline-offset-[-3px] focus-visible:outline-focus lg:min-h-72 lg:p-6 ${selected ? "bg-leaf" : "bg-page hover:bg-surface-muted active:bg-leaf"}`}
+                href={`#/program/pd${pdQuery({ ...filters, division: division.id })}`}
+                aria-current={selected ? "page" : undefined}
+                key={division.id}
+                data-ui="activity-division"
               >
-                Waktu belum diketahui
-              </h3>
-            )}
-            {ordered.undated.map((record) => (
-              <ActivityPreview
-                key={record.id}
-                activity={{
-                  ...record,
-                  href: `${record.href}${pdQuery(filters)}`,
-                }}
-              />
-            ))}
-          </div>
-        ) : (
-          <div
-            className="border-t border-t-border py-6 [&>p]:max-w-[60ch] [&>p]:mt-4"
-            data-ui="activity-empty"
-          >
-            <h3
-              className="font-semibold text-[26px] leading-[32px] font-editorial [&_a:hover]:underline [&_a:hover]:underline-offset-4 [&_a]:block [&_a]:min-h-11 [&_a]:text-inherit lg:text-[30px] lg:leading-[36px] lg:font-semibold"
-              data-ui="content-title"
-            >
-              Belum ada catatan yang sesuai.
-            </h3>
-            <p>
-              Ini batas isi katalog yang tersedia, bukan bukti kegiatan tidak
-              pernah berlangsung. Ubah pilihan atau gunakan Reset filter.
-            </p>
-          </div>
+                <span className="font-sans text-[11px]/[17px] font-semibold tracking-[.04em] text-blue uppercase">{String(index + 1).padStart(2, "0")} · {division.id}</span>
+                <h3 className="mt-5 font-editorial text-[26px]/[32px] font-semibold">{division.name}</h3>
+                {division.alias && <p className="mt-1 font-sans text-[13px]/[19px] text-muted">{division.alias}</p>}
+                <p className="mt-4 text-[16px]/[24px]">{division.description}</p>
+                <span className="mt-auto flex min-h-11 items-center gap-2 pt-6 font-sans text-[14px]/[20px] font-semibold text-muted transition-colors group-hover:text-primary">Jelajahi <span className="transition-transform duration-150 group-hover:translate-x-1" aria-hidden="true">→</span></span>
+              </a>
+            );
+          })}
+        </div>
+        {filters.division !== "all" && (
+          <div className="mt-6"><TextLink href={`#/program/pd${pdQuery({ ...filters, division: "all" })}`} variant="quiet">Tampilkan semua divisi</TextLink></div>
         )}
       </section>
-      <section
-        className="w-[calc(100%_-_32px)] max-w-institution mx-auto md:w-[calc(100%_-_48px)] pb-14 lg:pb-22"
-        data-ui="container section"
-      >
-        <EvidenceDisclosure summary="Tentang program dan isi katalog">
-          <p>
-            Tujuan dan rangkaian pendidikan bersumber dari LPJ Pengurus
-            2023–2024 dan 2025. Lima bidang dan ruang belajarnya diringkas dari
-            standar pendidikan dalam dokumen 2025.
-          </p>
-          <p>
-            Daftar ini memuat kegiatan historis yang terdokumentasi.
-            Pelaksanaan, kelengkapan laporan, dan izin publikasi media ditinjau
-            secara terpisah. Angkatan merupakan hubungan kontekstual; bukan
-            induk wajib semua kegiatan.
-          </p>
+
+      <section className="bg-surface-muted py-14 lg:py-22" aria-labelledby="pd-results" data-ui="section pd-archive">
+        <div className="mx-auto w-[calc(100%_-_32px)] max-w-institution md:w-[calc(100%_-_48px)]" data-ui="container">
+          <div className="flex flex-wrap items-end justify-between gap-6 border-b border-primary/25 pb-5">
+            <div>
+              <p className="font-sans text-[12px]/[18px] font-semibold tracking-[.04em] text-blue uppercase">{isDefault ? "Arsip lintas angkatan" : selectedDivision ? `Divisi ${selectedDivision.name}` : `Angkatan ${filters.cohort}`}</p>
+              <h2 className="mt-3 max-w-[20ch] font-editorial text-[34px]/[39px] font-semibold lg:text-[46px]/[51px]" id="pd-results" tabIndex={-1}>{isDefault ? "Angkatan sebelumnya." : selectedDivision ? `${selectedDivision.name} lintas angkatan.` : `Catatan Angkatan ${filters.cohort}.`}</h2>
+            </div>
+            {!isDefault && <TextLink href="#/program/pd" variant="quiet">Tampilkan semua catatan</TextLink>}
+          </div>
+          <p className="sr-only" role="status" aria-live="polite">{matched.length} catatan Pemantapan Divisi ditampilkan.</p>
+          {archiveGroups.length ? archiveGroups.map((group) => (
+            <section className="pt-10 lg:pt-14" key={group.cohort} data-ui="pd-cohort-group" data-cohort={group.cohort}>
+              <div className="mb-5 flex items-baseline justify-between gap-4">
+                <h3 className="font-editorial text-[27px]/[33px] font-semibold lg:text-[32px]/[38px]">Angkatan {group.cohort}</h3>
+                {filters.cohort === "all" && <a className="font-sans text-[13px]/[19px] font-semibold text-muted no-underline hover:text-primary focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-focus" href={`#/program/pd${pdQuery({ ...filters, cohort: group.cohort })}`}>Lihat angkatan →</a>}
+              </div>
+              <div className="grid gap-px bg-primary/20 md:grid-cols-2 lg:grid-cols-3" data-ui="pd-cohort-grid">
+                {group.records.map((record) => <PDArchiveCard key={record.id} record={record} divisionName={divisionName(record)} filters={filters} />)}
+              </div>
+            </section>
+          )) : (
+            <div className="py-10">
+              <h3 className="font-editorial text-[27px]/[33px] font-semibold">Belum ada catatan yang sesuai.</h3>
+              <p className="mt-4 max-w-[60ch] text-[17px]/[26px]">Batas isi katalog ini tidak menetapkan bahwa kegiatan tidak pernah berlangsung.</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section className="mx-auto w-[calc(100%_-_32px)] max-w-institution py-12 md:w-[calc(100%_-_48px)] lg:py-18" data-ui="container section pd-source-note">
+        <EvidenceDisclosure summary="Catatan sumber">
+          <p>Tujuan dan rangkaian pendidikan bersumber dari LPJ Pengurus 2023–2024 dan 2025. Lima bidang dan ruang belajarnya diringkas dari standar pendidikan dalam dokumen 2025.</p>
+          <p>Daftar ini memuat kegiatan historis yang terdokumentasi. Hubungan angkatan bersifat kontekstual, dan kombinasi yang tidak muncul bukan bukti bahwa kegiatan tidak pernah berlangsung.</p>
+          <p>Standar teknis merupakan rujukan pendidikan dan tidak dipakai sebagai klaim pencapaian peserta.</p>
         </EvidenceDisclosure>
       </section>
     </div>
   );
 }
+
 export function ActivitiesCatalogue({
   params = new URLSearchParams(),
 }: {

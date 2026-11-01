@@ -105,6 +105,7 @@ export function placementRoleMatches(use:MediaUse){
  const roles:Record<MediaPlacement,MediaUse['role'][]>={
   'home-opening':['kawi'],'home-expedition':['expedition'],'te-catalogue-feature':['expedition'],
   'expedition-lead':['expedition'],'expedition-ecology':['expedition-ecology'],
+  'pd-catalogue-feature':['gh','rc','orad','lh','caving'],
   'home-education-gh':['gh'],'home-education-rc':['rc'],'activity-documentary':['gh','rc','kawi','batafia'],
  };
  return !!use.placement&&!!roles[use.placement]?.includes(use.role);
@@ -142,7 +143,8 @@ export function resolvePublicMedia(r: InstitutionalRegistry, recordId: string, p
       const a = r.media.find((a) => a.id === u.assetId);
       return a && mediaPublishable(a, u)
         ? [{ id: a.id, useId: u.id, placement: u.placement!, role: u.role, path: a.publicPath!, title: a.title,
-            alt: a.alt!, caption: a.caption!, credit: a.creditText!, derivatives: a.derivatives!, sizes: u.sizes }]
+            alt: a.alt!, caption: a.caption!, credit: a.creditText!, presentation: a.presentation ?? "documentary",
+            derivatives: a.derivatives!, sizes: u.sizes }]
         : [];
     });
 }
@@ -324,11 +326,23 @@ export function validateRegistry(r: InstitutionalRegistry) {
         "Unexpected documentary narrative",
       );
       sources(a.narrative.context.sourceUses);
+      for (const fact of a.narrative.facts ?? []) {
+        demand(
+          fact.label.trim() && fact.value.trim(),
+          "Missing expedition fact",
+        );
+        sources(fact.sourceUses);
+      }
       for (const x of [...a.narrative.journey, ...a.narrative.notes])
         sources(x.sourceUses);
       for (const leg of a.narrative.journey)
         validateDatedClaim(leg.dates, sources);
     }
+  }
+  for (const edition of r.editions) {
+    demand(!!edition.title.trim(), "Missing edition title");
+    demand(!edition.year || /^\d{4}$/.test(edition.year), "Invalid edition year");
+    sources(edition.sourceUses);
   }
   for (const w of r.works) {
     demand(
@@ -421,6 +435,11 @@ export function validateRegistry(r: InstitutionalRegistry) {
   }
   for (const m of r.media) {
     sources(m.sourceUses);
+    if (m.presentation === "prototype-placeholder") {
+      demand(m.sourceUses.some((use) => use.sourceId === "synthetic-fixture"), "Prototype visual requires synthetic provenance");
+      demand(/bukan dokumentasi/i.test(m.caption ?? ""), "Prototype visual requires visible disclosure");
+      demand(/visual sintetis|visual prototipe/i.test(m.creditText ?? ""), "Prototype visual requires synthetic credit");
+    }
     if (m.publicPath)
       demand(
         /^\/media\/[a-z0-9-]+\.(webp|avif|jpg)$/.test(m.publicPath),
@@ -446,7 +465,7 @@ export function validateRegistry(r: InstitutionalRegistry) {
     const a = r.media.find((a) => a.id === use.assetId)!;
     if (use.approval) demand(realDay(use.approval.recordedOn) && !!use.approval.evidence.trim() && /^C2A-\d{2}-[A-Z0-9]+$/.test(use.approval.decisionId), "Invalid media approval evidence");
     if (use.placement) {
-      demand(["home-opening", "home-expedition", "te-catalogue-feature", "expedition-lead", "expedition-ecology", "home-education-gh", "home-education-rc", "activity-documentary"].includes(use.placement), "Unknown media placement");
+      demand(["home-opening", "home-expedition", "te-catalogue-feature", "expedition-lead", "expedition-ecology", "pd-catalogue-feature", "home-education-gh", "home-education-rc", "activity-documentary"].includes(use.placement), "Unknown media placement");
       const key = use.recordId + ":" + use.placement;
       demand(!placements.has(key), "Ambiguous media placement"); placements.add(key);
     }

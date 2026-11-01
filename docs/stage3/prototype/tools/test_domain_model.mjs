@@ -94,7 +94,13 @@ test("01 new TE edition uses data and existing generic detail projection", () =>
   a.programId = "te";
   a.editionId = "contract-edition";
   r.activities.push(a);
-  r.editions.push({ id: "contract-edition", programmeId: "te", label: "DEMO" });
+  r.editions.push({
+    id: "contract-edition",
+    programmeId: "te",
+    label: "DEMO",
+    title: "Synthetic contract edition",
+    sourceUses: [{ sourceId: "synthetic-fixture", locator: "contract test" }],
+  });
   const p = projectPreview(r);
   const e = p.expeditionRecords.find((e) => e.id === a.id);
   assert.equal(e.href, "#/expedition/te-contract");
@@ -274,7 +280,13 @@ test("11 duplicate and invalid canonical identities, including cross-domain, fai
     (r) => r.works.push({ ...work(), id: "te11" }),
     (r) => r.sources.push(structuredClone(r.sources[0])),
     (r) =>
-      r.editions.push({ id: "new-edition", programmeId: "te", label: "11" }),
+      r.editions.push({
+        id: "new-edition",
+        programmeId: "te",
+        label: "11",
+        title: "Duplicate edition",
+        sourceUses: [{ sourceId: "synthetic-fixture", locator: "duplicate test" }],
+      }),
   ]) {
     const r = copy();
     mutate(r);
@@ -398,10 +410,11 @@ test("18 private locator injection fails before compatibility export", () => {
 });
 test("19 rich TE11 story retained in data, not expedition-specific JSX", () => {
   const a = base.activities.find((a) => a.id === "te11");
-  assert.equal(a.narrative.journey.length, 6);
+  assert.equal(a.narrative.journey.length, 4);
+  assert.equal(a.narrative.facts.length, 3);
   assert.equal(a.narrative.notes.length, 2);
   assert.equal(a.narrative.context.paragraphs.length, 2);
-  assert.equal(a.narrative.journey[3].title, "Menjalani jalur Bukit Raya");
+  assert.equal(a.narrative.journey[2].title, "Empat hari di jalur Bukit Raya");
 });
 
 test("20 withdrawal removes record and related indexes without deleting identity or source", () => {
@@ -517,7 +530,7 @@ test("26 institutional information separates public explanation from source deta
   assert.throws(() => validateRegistry(r), /Missing evidence/);
 });
 
-test("27 Tursina Explore keeps thirteen edition identities separate from public records", () => {
+test("27 Tursina Explore exposes all thirteen edition identities as showcase records", () => {
   const editions = base.editions
     .filter((edition) => edition.programmeId === "te")
     .map((edition) => Number(edition.label))
@@ -525,17 +538,8 @@ test("27 Tursina Explore keeps thirteen edition identities separate from public 
   assert.deepEqual(editions, Array.from({ length: 13 }, (_, index) => index + 1));
   const preview = projectPreview(base);
   assert.deepEqual(
-    preview.expeditionRecords.map((record) => record.edition).sort(),
-    ["10", "11", "12"],
+    preview.expeditionRecords.map((record) => Number(record.edition)).sort((a, b) => a - b),
+    Array.from({ length: 13 }, (_, index) => index + 1),
   );
-  assert.equal(
-    base.editions.filter(
-      (edition) =>
-        edition.programmeId === "te" &&
-        !preview.expeditionRecords.some(
-          (record) => record.edition === edition.label,
-        ),
-    ).length,
-    10,
-  );
+  assert(preview.expeditionRecords.every((record) => record.href === `#/expedition/${record.id}`));
 });

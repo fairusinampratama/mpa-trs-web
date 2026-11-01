@@ -28,8 +28,42 @@ export function prepareActivityRecords(inputs: readonly ActivityInput[], refs: A
   }));
 }
 export type ActivityFilters = { division: string; cohort: string };
+function romanNumber(value: string): number {
+  const digits: Record<string, number> = { I: 1, V: 5, X: 10, L: 50, C: 100 };
+  return [...value.toUpperCase()].reduceRight(
+    (total, character, index, characters) =>
+      total +
+      ((digits[character] ?? 0) < (digits[characters[index + 1]] ?? 0)
+        ? -(digits[character] ?? 0)
+        : (digits[character] ?? 0)),
+    0,
+  );
+}
 export function cohortOptions(records: readonly ActivityRecord[]): string[] {
-  return [...new Set(records.flatMap(r => r.cohortIds ?? []))].sort();
+  return [...new Set(records.flatMap(r => r.cohortIds ?? []))].sort(
+    (left, right) => romanNumber(left) - romanNumber(right) || left.localeCompare(right),
+  );
+}
+export function pdCohortGroups(
+  records: readonly ActivityRecord[],
+  divisions: readonly DivisionDefinition[],
+) {
+  const divisionOrder = new Map<string, number>(
+    divisions.map((division, index) => [division.id, index]),
+  );
+  return [...cohortOptions(records)]
+    .reverse()
+    .map((cohort) => ({
+      cohort,
+      records: records
+        .filter((record) => record.programId === "pd" && record.cohortIds?.includes(cohort))
+        .sort(
+          (left, right) =>
+            (divisionOrder.get(left.divisionIds?.[0] ?? "") ?? divisions.length) -
+              (divisionOrder.get(right.divisionIds?.[0] ?? "") ?? divisions.length) ||
+            left.id.localeCompare(right.id),
+        ),
+    }));
 }
 export function readPDFilters(params: URLSearchParams, records: readonly ActivityRecord[], divisions: readonly DivisionDefinition[]): ActivityFilters {
   const division = params.get('division') ?? 'all', cohort = params.get('cohort') ?? 'all';

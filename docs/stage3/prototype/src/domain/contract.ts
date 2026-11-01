@@ -51,6 +51,11 @@ export type ExpeditionNarrative = {
   displayTitle: string;
   deck: string;
   precisionNote?: string;
+  facts?: {
+    label: string;
+    value: string;
+    sourceUses: EvidenceUse[];
+  }[];
   context: NarrativeSection;
   journeyTitle: string;
   journey: {
@@ -148,6 +153,7 @@ export type MediaDerivative = {
 export type MediaPlacement =
   | "home-opening" | "home-expedition" | "te-catalogue-feature"
   | "expedition-lead" | "expedition-ecology"
+  | "pd-catalogue-feature"
   | "home-education-gh" | "home-education-rc" | "activity-documentary";
 export type MediaAsset = {
   sourceUses: EvidenceUse[];
@@ -163,6 +169,7 @@ export type MediaAsset = {
   creditText?: string;
   alt?: string;
   caption?: string;
+  presentation?: "documentary" | "prototype-placeholder";
   derivatives?: MediaDerivative[];
   publicPath?: string;
 };
@@ -170,7 +177,7 @@ export type MediaUse = {
   id: string;
   assetId: string;
   recordId: string;
-  role: "gh" | "rc" | "kawi" | "batafia" | "expedition" | "expedition-ecology";
+  role: "gh" | "rc" | "orad" | "lh" | "caving" | "kawi" | "batafia" | "expedition" | "expedition-ecology";
   placement?: MediaPlacement;
   approval?: { decisionId: string; recordedOn: string; evidence: string };
   sizes?: string;
@@ -184,7 +191,14 @@ export type InstitutionalRegistry = {
   divisions: DivisionDefinition[];
   cohorts: { id: string; label: string }[];
   periods: { id: string; label: string; sourceUses: EvidenceUse[] }[];
-  editions: { id: string; programmeId: string; label: string }[];
+  editions: {
+    id: string;
+    programmeId: string;
+    label: string;
+    title: string;
+    year?: string;
+    sourceUses: EvidenceUse[];
+  }[];
   activities: Activity[];
   works: Work[];
   history: History[];

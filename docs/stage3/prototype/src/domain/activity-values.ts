@@ -97,7 +97,8 @@ export type SourceDefinition = {
     | "charter"
     | "article"
     | "teaching"
-    | "documentary-reference";
+    | "documentary-reference"
+    | "owner-supplied-chronology";
 };
 export type ActivityMedia = {
   id: string;
