@@ -1,0 +1,20 @@
+# Existing-model audit and consolidation
+
+Baseline inspected: `48635bae94fc05429314684d039b2ee16e48c5c1`; served app before this work `3af160ee3ebfd215d03475c7cba1d7f712ed8663`. PR13 draft/unmerged. Current owner instruction supersedes AGENTS' earlier Step5B-3 scope narrowly for this milestone.
+
+| Actual baseline | Consequence | Implemented reconciliation |
+| --- | --- | --- |
+| content.ts authored two flat expedition fixtures plus nine activity inputs; institutional-data.ts independently authored works/history/institutional text. | TE used display strings while PD used typed date objects; no single registry validation. | One authored registry, typed by domain/contract.ts. Old filenames contain projections only. |
+| ExpeditionExperience.tsx exported six hardcoded te11Journey rows and embedded context, notes and date/province disclosures. Detail dispatched on `record.id !== 'te11'`. | Adding an equally rich expedition required editing a record-specific component. | Data-owned optional expedition narrative; renderer dispatches on available narrative. Dates in journey use the common claim type. All six rows and accepted narrative retained. |
+| TE catalogue explicitly rendered TE12 as its only other edition. | A data-only third edition could remain undiscoverable. | Remaining editions render from the registry; real TE10 proves the existing catalogue and generic detail path. TE11 remains a deliberate homepage/catalogue editorial feature. |
+| Activity.relatedPublicationIds and Work.relatedActivityIds were separate authoring possibilities. ActivityMedia.activityId imposed one record owner. | Contradictory reverse relationships; media reuse could require copied assets. | One sourced, role-aware relation collection derives both directions. Media asset identity is separate from contextual usage/approval. No canonical relation lists/media IDs remain on activities or works. |
+| RecordDate, activity.when, TE.date string and chronology labels differed. Unknowns omitted; dates could not represent competing assertions. | False precision or destructive reconciliation risk. | Shared date values/assertions, public selection, reconciliation and unknown/approximate handling. Legacy precision views derive only from selected non-approximate assertions. |
+| Source-registry was already centralized, but source status and per-claim attribution were limited. | Reading an LPJ could be confused with ratification or original-work publication. | Sources distinguish original access, custody and unestablished report acceptance. Source uses can identify claims; no private original locator is admitted. |
+| Media hold + creatorVerified was too coarse. | An institution's authority could be mistaken for all necessary rights. | Creator rights, privacy, credit, contextual institutional use and final clearance are distinct; all five contextual asset references remain HOLD. |
+| Work/history/member additions already used shared renderers and injected isolated fixtures. | Valuable behavior worth preserving. | Existing components/routes and isolated fixtures retained. Magazine evidence adds a justified periodical kind instead of pretending every work is a teaching deck. |
+
+## Remaining presentation ownership — deliberate Step5C-2 boundary
+
+Homepage editorial selections, programme explanatory copy, menu labels, fallback copy and selected feature titles still belong to the accepted compositions. They are not competing authored activity records. Some homepage/legacy views use first-relationship/display compatibility fields. Full role-aware rendering, undated-history presentation and cross-site relationship context belong to Step5C-2. Context providers still accept older projected test inputs; they are not extra canonical stores or external ingestion endpoints.
+
+The contract does not import React, legacy adapter modules, Laravel or storage libraries. Shared value vocabulary files retain legacy view types for compatibility; those types are not authored records and must not be mistaken for final persistence entities.

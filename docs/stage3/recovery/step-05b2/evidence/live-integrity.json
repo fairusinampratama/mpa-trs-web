@@ -1,0 +1,48 @@
+{
+  "sourceCommit": "162364b80d771fc5df5026ceb0727f62bc4a36f5",
+  "tlsValidation": true,
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 613,
+      "sha256": "34c6483c5c873198588d8a5adf897857a776fa90647932fd46d9c9ed8574da98"
+    },
+    {
+      "path": "responsive-review.html",
+      "status": 200,
+      "bytes": 3399,
+      "sha256": "315f17e66bfc95f2ede349d640ac6d39a9bd32767b9045608e73781e85986381"
+    },
+    {
+      "path": "version.json",
+      "status": 200,
+      "bytes": 100,
+      "sha256": "dfe1031b81d54e48cf9aa87b6456d5e8f51bb7b89c2a8e15874e61eb233f3dfe"
+    },
+    {
+      "path": "assets/source-sans-3-latin-Bo_j9asI.woff2",
+      "status": 200,
+      "bytes": 28872,
+      "sha256": "19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5"
+    },
+    {
+      "path": "assets/source-serif-4-latin-DMe4EKeb.woff2",
+      "status": 200,
+      "bytes": 50936,
+      "sha256": "382475f38242c52d42a3e5ff8dc69b5d73f10d0d21e4550b5fe232984688779a"
+    },
+    {
+      "path": "assets/main-Be-UCPlX.css",
+      "status": 200,
+      "bytes": 79600,
+      "sha256": "d74438562b34d02c78fe997d25c19c283f1a37ff5e8cd0d26f746fccd3989d1a"
+    },
+    {
+      "path": "assets/main-CeMr5hX2.js",
+      "status": 200,
+      "bytes": 319765,
+      "sha256": "258754a0e14460d23669425374eef655a9fa361d027539c9b309ef1076f6ab0d"
+    }
+  ]
+}

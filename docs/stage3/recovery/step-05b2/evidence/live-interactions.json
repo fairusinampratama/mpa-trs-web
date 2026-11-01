@@ -1,0 +1,39 @@
+{
+  "filters": [
+    {
+      "division": "GH",
+      "status": "2 catatan / Gunung Hutan",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd?division=GH"
+    },
+    {
+      "division": "RC",
+      "status": "1 catatan / Panjat Tebing",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd?division=RC"
+    },
+    {
+      "division": "ORAD",
+      "status": "1 catatan / Olahraga Arus Deras",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd?division=ORAD"
+    },
+    {
+      "division": "LH",
+      "status": "1 catatan / Lingkungan Hidup",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd?division=LH"
+    },
+    {
+      "division": "CAVING",
+      "status": "1 catatan / Susur Gua",
+      "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd?division=CAVING"
+    }
+  ],
+  "siteErrors": [],
+  "checks": [
+    "homepage to PD",
+    "five live division facets",
+    "cohort intersection and empty/reset",
+    "filtered detail refresh and return",
+    "homepage to independent activities / BATAFIA / Kawi / return",
+    "390px frame menu/Escape and keyboard jump/reset"
+  ],
+  "source": "162364b80d771fc5df5026ceb0727f62bc4a36f5"
+}

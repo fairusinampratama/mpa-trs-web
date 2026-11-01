@@ -1,0 +1,542 @@
+[
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132037650#/",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Tursina Explore",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132037742#/program/te",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Bukit Raya",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132037928#/expedition/te11",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132038016#/program/pd",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Gunung Hutan XXIX",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132038172#/activity/gh29",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132038375#/activity/rc29",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "BATAFIA XXX — diklat lapang",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132038527#/activity/batafia30",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman menjadi bacaan.",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132038700#/publications",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "The Sacred Gatekeeper",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132038848#/publication/sacred-gatekeeper",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman yang diteruskan.",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132039021#/jejak",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132039177#/about",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1351,
+    "fontStatus": "loaded",
+    "h1": "Nama dalam kebersamaan.",
+    "scrollWidth": 1351,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132039330#/members",
+    "frameWidth": 1366
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132039844#/",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Tursina Explore",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132039994#/program/te",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Bukit Raya",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132040179#/expedition/te11",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132040368#/program/pd",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Gunung Hutan XXIX",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132040520#/activity/gh29",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132040713#/activity/rc29",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "BATAFIA XXX — diklat lapang",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132040866#/activity/batafia30",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman menjadi bacaan.",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132041012#/publications",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "The Sacred Gatekeeper",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132041166#/publication/sacred-gatekeeper",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman yang diteruskan.",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132041344#/jejak",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132041496#/about",
+    "frameWidth": 1024
+  },
+  {
+    "client": 1009,
+    "fontStatus": "loaded",
+    "h1": "Nama dalam kebersamaan.",
+    "scrollWidth": 1009,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132041650#/members",
+    "frameWidth": 1024
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132042743#/",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Tursina Explore",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132042893#/program/te",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Bukit Raya",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132043083#/expedition/te11",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132043275#/program/pd",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Gunung Hutan XXIX",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132043432#/activity/gh29",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132043618#/activity/rc29",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "BATAFIA XXX — diklat lapang",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132043764#/activity/batafia30",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman menjadi bacaan.",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132043917#/publications",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "The Sacred Gatekeeper",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132044064#/publication/sacred-gatekeeper",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman yang diteruskan.",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132044248#/jejak",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132044395#/about",
+    "frameWidth": 768
+  },
+  {
+    "client": 753,
+    "fontStatus": "loaded",
+    "h1": "Nama dalam kebersamaan.",
+    "scrollWidth": 753,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132044544#/members",
+    "frameWidth": 768
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132045787#/",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Tursina Explore",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132045932#/program/te",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Bukit Raya",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132046127#/expedition/te11",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132046311#/program/pd",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Gunung Hutan XXIX",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132046460#/activity/gh29",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132046625#/activity/rc29",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "BATAFIA XXX — diklat lapang",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132046775#/activity/batafia30",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman menjadi bacaan.",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132046935#/publications",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "The Sacred Gatekeeper",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132047076#/publication/sacred-gatekeeper",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman yang diteruskan.",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132047255#/jejak",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132047406#/about",
+    "frameWidth": 390
+  },
+  {
+    "client": 375,
+    "fontStatus": "loaded",
+    "h1": "Nama dalam kebersamaan.",
+    "scrollWidth": 375,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132047555#/members",
+    "frameWidth": 390
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132048840#/",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Tursina Explore",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132048985#/program/te",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Bukit Raya",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132049162#/expedition/te11",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132049350#/program/pd",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132049350#/program/pd",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Pemantapan Divisi Panjat Tebing XXIX",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132049556#/activity/rc29",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "BATAFIA XXX — diklat lapang",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132049713#/activity/batafia30",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman menjadi bacaan.",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132049868#/publications",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "The Sacred Gatekeeper",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132050022#/publication/sacred-gatekeeper",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Pengalaman yang diteruskan.",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132050103#/jejak",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Mahasiswa Pencinta Alam Tursina",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132050259#/about",
+    "frameWidth": 320
+  },
+  {
+    "client": 305,
+    "fontStatus": "loaded",
+    "h1": "Nama dalam kebersamaan.",
+    "scrollWidth": 305,
+    "source": "bd5caca",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/?review=1792132050410#/members",
+    "frameWidth": 320
+  }
+]

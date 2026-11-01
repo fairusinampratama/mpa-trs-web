@@ -1,0 +1,88 @@
+{
+  "method": "Actual cloud Chrome on published HTTPS site; semantic controls and read-only DOM measurements. Not a local proxy or reconstructed UI.",
+  "sourceCommit": "b81f61bdb3e18f5f441fbb1ff28561cede8e3295",
+  "base": "https://fairusinampratama.github.io/mpa-trs-web/",
+  "checks": [
+    {
+      "journey": "periodical filter/detail",
+      "path": "#/publication/summit-attack-vol4",
+      "availability": "metadata-only",
+      "downloads": 0
+    },
+    {
+      "journey": "TE catalogue/new TE10/detail/refresh/return",
+      "path": "#/expedition/te10",
+      "title": "Pulau Siberut",
+      "fakeNarrativeSections": 0
+    },
+    {
+      "journey": "preserved TE11/article return",
+      "path": "#/expedition/te11",
+      "journeyLegs": 6,
+      "relatedWorks": 4
+    },
+    {
+      "journey": "new RC26 filters/detail/return",
+      "path": "#/activity/rc26?division=RC&cohort=XXVI",
+      "sparseSections": 0
+    },
+    {
+      "journey": "ORAD27 unresolved location",
+      "path": "#/activity/orad27?division=ORAD&cohort=XXVII",
+      "publicPlaceFields": 0
+    },
+    {
+      "journey": "new GH28 direct route",
+      "path": "#/activity/gh28",
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII"
+    },
+    {
+      "journey": "source-backed history",
+      "path": "#/jejak",
+      "orderedIds": [
+        "founding-1995",
+        "environment-2022",
+        "siberut-2022",
+        "magazine-2023",
+        "field-education-2023",
+        "expedition-knowledge-2024",
+        "division-education-2025",
+        "kawi-continuity-2025"
+      ]
+    },
+    {
+      "journey": "synthetic member search",
+      "path": "#/members",
+      "matchedRows": 1,
+      "columns": 2,
+      "keyboardResetRows": 3
+    }
+  ],
+  "viewports": {
+    "count": 25,
+    "pages": [
+      "Tursina Explore",
+      "TE11 / Bukit Raya",
+      "Pemantapan Divisi",
+      "Publications",
+      "Jejak"
+    ],
+    "requestedWidths": [
+      1366,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "allSourceLabels": "b81f61b",
+    "allNoHorizontalOverflow": true,
+    "observedScrollbarWidth": 15,
+    "allPhotoCounts": 0
+  },
+  "limits": [
+    "CSS iframe widths, not physical touch devices",
+    "Scratch headless HTTPS failed on proxy certificate trust; no TLS bypass used. Live UI checks performed in cloud Chrome instead.",
+    "Retrieved cloud console errors were extension metadata errors; local browser suites have application-error and failed-request listeners."
+  ],
+  "screenshotPublication": "Automatic approval review rejected the TE10 screenshot upload because publication safety could not be established; it was omitted. Two other public-safe screenshots remain in this checkpoint."
+}

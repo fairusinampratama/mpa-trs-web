@@ -1,0 +1,36 @@
+{
+  "applicationSource": "bd5caca0650cbbba9bdd87970e62f0743b0b9d6c",
+  "artifacts": [
+    {
+      "filename": "MPA-TRS_Step6B_Before_After.png",
+      "bytes": 308878,
+      "sha256": "56eca69470e889e333af171cd9042757bd7304e08b4c32723a3d9ff0d306c6c2",
+      "visibility": "private owner review; not in repository/Pages"
+    },
+    {
+      "filename": "MPA-TRS_Step6B_Live_Expedition.jpg",
+      "bytes": 111500,
+      "sha256": "0886b3a7e74f9e0f0105c6b41130a619771cb828b7ec1fcdff7246217b342dd7",
+      "visibility": "private owner review; not in repository/Pages"
+    },
+    {
+      "filename": "MPA-TRS_Step6B_Photo_Options.png",
+      "bytes": 1796248,
+      "sha256": "6acdd590b1fb5255cd262ef375e12074e1d5c6aab820a20a80d5f02576340f97",
+      "visibility": "private owner review; not in repository/Pages"
+    },
+    {
+      "filename": "MPA-TRS_Step6B_Review_2026-10-16.pdf",
+      "bytes": 4567516,
+      "sha256": "38772fd8ab4f60ad8e82cbf0d8f232bc495cad57522ce18a45c9d05a19386964",
+      "visibility": "private owner review; not in repository/Pages"
+    },
+    {
+      "filename": "MPA-TRS_Step6B_Zoomable_Gallery.zip",
+      "bytes": 23040176,
+      "sha256": "aa60a459ccbefa9c24f37133f40897d63083cd705c9392004d6ee0fbcdc03477",
+      "visibility": "private owner review; not in repository/Pages"
+    }
+  ],
+  "method": "Actual rendered screenshots,25-page PDF and full-resolution zoomable gallery. Image-bearing artifacts remain outside Git."
+}

@@ -1,0 +1,33 @@
+{
+  "method": "Same App with four in-memory typed additions only: two works, one history entry and one member. No new record-specific component or public-entry change.",
+  "results": [
+    {
+      "width": 1366,
+      "independentWorkFromData": true,
+      "metadataOnly": true,
+      "restrictedWithoutBody": true,
+      "historyDataOnly": true,
+      "chronologicalPlacement": true,
+      "syntheticMemberAdded": true
+    },
+    {
+      "width": 390,
+      "independentWorkFromData": true,
+      "metadataOnly": true,
+      "restrictedWithoutBody": true,
+      "historyDataOnly": true,
+      "chronologicalPlacement": true,
+      "syntheticMemberAdded": true
+    },
+    {
+      "width": 320,
+      "independentWorkFromData": true,
+      "metadataOnly": true,
+      "restrictedWithoutBody": true,
+      "historyDataOnly": true,
+      "chronologicalPlacement": true,
+      "syntheticMemberAdded": true
+    }
+  ],
+  "errors": []
+}

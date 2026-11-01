@@ -1,0 +1,1311 @@
+{
+  "status": "PASS",
+  "publicCandidate": true,
+  "creditApproved": true,
+  "browser": "153.0.8010.0",
+  "metrics": [
+    {
+      "route": "/",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-home-opening",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-720.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 576,
+          "h": 432,
+          "naturalWidth": 576,
+          "naturalHeight": 432,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-documentary",
+          "use": "te11-home-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 650,
+          "h": 366,
+          "naturalWidth": 650,
+          "naturalHeight": 366,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-240.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 225,
+          "h": 400,
+          "naturalWidth": 224,
+          "naturalHeight": 400,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 1200px) 225px, (max-width: 359px) 113px, 137px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 300,
+          "h": 400,
+          "naturalWidth": 299,
+          "naturalHeight": 400,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 1200px) 300px, (max-width: 359px) 150px, 182px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "actionBottom": -797.5,
+      "bytes": 298378
+    },
+    {
+      "route": "/program/te",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-catalogue-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 650,
+          "h": 366,
+          "naturalWidth": 650,
+          "naturalHeight": 366,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 298378
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-documentary-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 960,
+          "h": 541,
+          "naturalWidth": 960,
+          "naturalHeight": 541,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-ecology",
+          "use": "te11-ecology-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-ecology-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Tumbuhan berkantung di antara daun dan vegetasi lantai hutan dalam dokumentasi TE11.",
+          "w": 914,
+          "h": 515,
+          "naturalWidth": 913,
+          "naturalHeight": 515,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-ecology-480.webp 480w, /mpa-trs-web/media/te11-ecology-960.webp 960w, /mpa-trs-web/media/te11-ecology-1280.webp 1280w",
+          "sizes": "(min-width: 1254px) 914px, (min-width: 1024px) calc(100vw - 340px), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 277722
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-map-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 300,
+          "h": 533,
+          "naturalWidth": 300,
+          "naturalHeight": 533,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 361058
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-team-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 300,
+          "h": 400,
+          "naturalWidth": 299,
+          "naturalHeight": 400,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 133248
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-collective-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-720.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 436,
+          "h": 327,
+          "naturalWidth": 437,
+          "naturalHeight": 327,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 103208
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "images": [
+        {
+          "asset": "batafia-field",
+          "use": "batafia-field-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/batafia-field-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok peserta berponco membawa perlengkapan di jalur berkabut dalam dokumentasi BATAFIA XXX.",
+          "w": 436,
+          "h": 245,
+          "naturalWidth": 437,
+          "naturalHeight": 245,
+          "widthAttr": "960",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/batafia-field-480.webp 480w, /mpa-trs-web/media/batafia-field-960.webp 960w, /mpa-trs-web/media/batafia-field-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 73284
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-home-opening",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-720.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 478,
+          "h": 359,
+          "naturalWidth": 478,
+          "naturalHeight": 358,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-documentary",
+          "use": "te11-home-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 521,
+          "h": 294,
+          "naturalWidth": 520,
+          "naturalHeight": 293,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-240.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 208,
+          "h": 370,
+          "naturalWidth": 137,
+          "naturalHeight": 243,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 1200px) 225px, (max-width: 359px) 113px, 137px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 277,
+          "h": 370,
+          "naturalWidth": 182,
+          "naturalHeight": 242,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 1200px) 300px, (max-width: 359px) 150px, 182px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "actionBottom": -712.5,
+      "bytes": 298378
+    },
+    {
+      "route": "/program/te",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-catalogue-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 521,
+          "h": 294,
+          "naturalWidth": 520,
+          "naturalHeight": 293,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 298378
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-documentary-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 960,
+          "h": 541,
+          "naturalWidth": 960,
+          "naturalHeight": 541,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-ecology",
+          "use": "te11-ecology-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-ecology-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Tumbuhan berkantung di antara daun dan vegetasi lantai hutan dalam dokumentasi TE11.",
+          "w": 684,
+          "h": 385,
+          "naturalWidth": 684,
+          "naturalHeight": 385,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-ecology-480.webp 480w, /mpa-trs-web/media/te11-ecology-960.webp 960w, /mpa-trs-web/media/te11-ecology-1280.webp 1280w",
+          "sizes": "(min-width: 1254px) 914px, (min-width: 1024px) calc(100vw - 340px), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 277722
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-map-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 300,
+          "h": 533,
+          "naturalWidth": 300,
+          "naturalHeight": 533,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 256594
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-team-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 300,
+          "h": 400,
+          "naturalWidth": 299,
+          "naturalHeight": 400,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 133248
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-collective-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-360.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 348,
+          "h": 261,
+          "naturalWidth": 347,
+          "naturalHeight": 260,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 69198
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "images": [
+        {
+          "asset": "batafia-field",
+          "use": "batafia-field-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/batafia-field-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok peserta berponco membawa perlengkapan di jalur berkabut dalam dokumentasi BATAFIA XXX.",
+          "w": 348,
+          "h": 196,
+          "naturalWidth": 347,
+          "naturalHeight": 195,
+          "widthAttr": "960",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/batafia-field-480.webp 480w, /mpa-trs-web/media/batafia-field-960.webp 960w, /mpa-trs-web/media/batafia-field-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 39274
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-home-opening",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-720.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 720,
+          "h": 540,
+          "naturalWidth": 720,
+          "naturalHeight": 540,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-documentary",
+          "use": "te11-home-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 720,
+          "h": 406,
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-240.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 136,
+          "h": 242,
+          "naturalWidth": 137,
+          "naturalHeight": 243,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 1200px) 225px, (max-width: 359px) 113px, 137px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 182,
+          "h": 242,
+          "naturalWidth": 182,
+          "naturalHeight": 242,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 1200px) 300px, (max-width: 359px) 150px, 182px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "actionBottom": -1969.09375,
+      "bytes": 298378
+    },
+    {
+      "route": "/program/te",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-catalogue-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 344,
+          "h": 194,
+          "naturalWidth": 344,
+          "naturalHeight": 193,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 298378
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-documentary-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-960.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 720,
+          "h": 406,
+          "naturalWidth": 736,
+          "naturalHeight": 414,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-ecology",
+          "use": "te11-ecology-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-ecology-960.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Tumbuhan berkantung di antara daun dan vegetasi lantai hutan dalam dokumentasi TE11.",
+          "w": 720,
+          "h": 406,
+          "naturalWidth": 720,
+          "naturalHeight": 405,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-ecology-480.webp 480w, /mpa-trs-web/media/te11-ecology-960.webp 960w, /mpa-trs-web/media/te11-ecology-1280.webp 1280w",
+          "sizes": "(min-width: 1254px) 914px, (min-width: 1024px) calc(100vw - 340px), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 322112
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-map-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 262,
+          "h": 465,
+          "naturalWidth": 300,
+          "naturalHeight": 533,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 361058
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-team-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 262,
+          "h": 349,
+          "naturalWidth": 299,
+          "naturalHeight": 400,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 133248
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-collective-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-360.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 262,
+          "h": 196,
+          "naturalWidth": 261,
+          "naturalHeight": 196,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 69198
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 768,
+      "scrollWidth": 768,
+      "images": [
+        {
+          "asset": "batafia-field",
+          "use": "batafia-field-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/batafia-field-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok peserta berponco membawa perlengkapan di jalur berkabut dalam dokumentasi BATAFIA XXX.",
+          "w": 262,
+          "h": 147,
+          "naturalWidth": 261,
+          "naturalHeight": 147,
+          "widthAttr": "960",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/batafia-field-480.webp 480w, /mpa-trs-web/media/batafia-field-960.webp 960w, /mpa-trs-web/media/batafia-field-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 39274
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-home-opening",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-360.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 358,
+          "h": 269,
+          "naturalWidth": 358,
+          "naturalHeight": 268,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-documentary",
+          "use": "te11-home-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 358,
+          "h": 201,
+          "naturalWidth": 358,
+          "naturalHeight": 201,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-240.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 136,
+          "h": 242,
+          "naturalWidth": 137,
+          "naturalHeight": 243,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 1200px) 225px, (max-width: 359px) 113px, 137px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 182,
+          "h": 242,
+          "naturalWidth": 182,
+          "naturalHeight": 242,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 1200px) 300px, (max-width: 359px) 150px, 182px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "actionBottom": -1909.1875,
+      "bytes": 135500
+    },
+    {
+      "route": "/program/te",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-catalogue-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 358,
+          "h": 201,
+          "naturalWidth": 358,
+          "naturalHeight": 201,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 135500
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-documentary-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-480.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 358,
+          "h": 201,
+          "naturalWidth": 358,
+          "naturalHeight": 201,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-ecology",
+          "use": "te11-ecology-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-ecology-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Tumbuhan berkantung di antara daun dan vegetasi lantai hutan dalam dokumentasi TE11.",
+          "w": 358,
+          "h": 201,
+          "naturalWidth": 358,
+          "naturalHeight": 201,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-ecology-480.webp 480w, /mpa-trs-web/media/te11-ecology-960.webp 960w, /mpa-trs-web/media/te11-ecology-1280.webp 1280w",
+          "sizes": "(min-width: 1254px) 914px, (min-width: 1024px) calc(100vw - 340px), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 82566
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-map-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 300,
+          "h": 533,
+          "naturalWidth": 358,
+          "naturalHeight": 636,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 127726
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-team-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-640.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 300,
+          "h": 400,
+          "naturalWidth": 358,
+          "naturalHeight": 477,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 287320
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-collective-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-360.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 358,
+          "h": 269,
+          "naturalWidth": 358,
+          "naturalHeight": 268,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 223270
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "asset": "batafia-field",
+          "use": "batafia-field-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/batafia-field-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok peserta berponco membawa perlengkapan di jalur berkabut dalam dokumentasi BATAFIA XXX.",
+          "w": 358,
+          "h": 201,
+          "naturalWidth": 358,
+          "naturalHeight": 201,
+          "widthAttr": "960",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/batafia-field-480.webp 480w, /mpa-trs-web/media/batafia-field-960.webp 960w, /mpa-trs-web/media/batafia-field-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 39274
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-home-opening",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-360.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 288,
+          "h": 216,
+          "naturalWidth": 288,
+          "naturalHeight": 216,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 576px, (min-width: 1200px) calc((100vw - 136px) / 1.94), (min-width: 1024px) calc((100vw - 96px) / 1.94), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-documentary",
+          "use": "te11-home-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 288,
+          "h": 162,
+          "naturalWidth": 288,
+          "naturalHeight": 162,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-240.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 113,
+          "h": 200,
+          "naturalWidth": 113,
+          "naturalHeight": 201,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 1200px) 225px, (max-width: 359px) 113px, 137px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-home-education",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 150,
+          "h": 200,
+          "naturalWidth": 149,
+          "naturalHeight": 200,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 1200px) 300px, (max-width: 359px) 150px, 182px",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "actionBottom": -1971.21875,
+      "bytes": 135500
+    },
+    {
+      "route": "/program/te",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-catalogue-feature",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 288,
+          "h": 162,
+          "naturalWidth": 288,
+          "naturalHeight": 162,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 650px, (min-width: 1024px) calc((100vw - 96px) * 0.561312), (min-width: 768px) calc((100vw - 80px) / 2), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 135500
+    },
+    {
+      "route": "/expedition/te11",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": [
+        {
+          "asset": "te11-documentary",
+          "use": "te11-documentary-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-documentary-480.webp",
+          "loading": "eager",
+          "priority": "high",
+          "alt": "Empat peserta TE11 bersama spanduk ekspedisi dan bendera di kawasan puncak.",
+          "w": 288,
+          "h": 162,
+          "naturalWidth": 288,
+          "naturalHeight": 162,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-documentary-480.webp 480w, /mpa-trs-web/media/te11-documentary-960.webp 960w, /mpa-trs-web/media/te11-documentary-1440.webp 1440w",
+          "sizes": "(min-width: 1024px) 960px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        },
+        {
+          "asset": "te11-ecology",
+          "use": "te11-ecology-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/te11-ecology-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Tumbuhan berkantung di antara daun dan vegetasi lantai hutan dalam dokumentasi TE11.",
+          "w": 288,
+          "h": 162,
+          "naturalWidth": 288,
+          "naturalHeight": 162,
+          "widthAttr": "960",
+          "heightAttr": "541",
+          "srcset": "/mpa-trs-web/media/te11-ecology-480.webp 480w, /mpa-trs-web/media/te11-ecology-960.webp 960w, /mpa-trs-web/media/te11-ecology-1280.webp 1280w",
+          "sizes": "(min-width: 1254px) 914px, (min-width: 1024px) calc(100vw - 340px), (min-width: 768px) calc(100vw - 48px), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 82566
+    },
+    {
+      "route": "/activity/gh29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": [
+        {
+          "asset": "pd-gh-map",
+          "use": "pd-gh-map-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-gh-map-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Peserta membungkuk membaca peta di tanah dengan kompas, sementara rekan berada di latar.",
+          "w": 288,
+          "h": 512,
+          "naturalWidth": 288,
+          "naturalHeight": 511,
+          "widthAttr": "480",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-gh-map-240.webp 240w, /mpa-trs-web/media/pd-gh-map-480.webp 480w, /mpa-trs-web/media/pd-gh-map-720.webp 720w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 127726
+    },
+    {
+      "route": "/activity/rc29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": [
+        {
+          "asset": "pd-rc-team",
+          "use": "pd-rc-team-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/pd-rc-team-320.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Dua pemanjat berada di dinding batu dengan tali dan tim di dasar tebing.",
+          "w": 288,
+          "h": 384,
+          "naturalWidth": 288,
+          "naturalHeight": 384,
+          "widthAttr": "640",
+          "heightAttr": "853",
+          "srcset": "/mpa-trs-web/media/pd-rc-team-320.webp 320w, /mpa-trs-web/media/pd-rc-team-640.webp 640w",
+          "sizes": "(min-width: 768px) 300px, calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 133248
+    },
+    {
+      "route": "/activity/kawi29",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": [
+        {
+          "asset": "kawi-collective",
+          "use": "kawi-collective-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/kawi-collective-360.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok Tursina berfoto bersama di area kampus dalam dokumentasi Kawi XXIX.",
+          "w": 288,
+          "h": 216,
+          "naturalWidth": 288,
+          "naturalHeight": 216,
+          "widthAttr": "720",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/kawi-collective-360.webp 360w, /mpa-trs-web/media/kawi-collective-720.webp 720w, /mpa-trs-web/media/kawi-collective-1200.webp 1200w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 69198
+    },
+    {
+      "route": "/activity/batafia30",
+      "width": 320,
+      "scrollWidth": 320,
+      "images": [
+        {
+          "asset": "batafia-field",
+          "use": "batafia-field-usage",
+          "src": "http://127.0.0.1:4181/mpa-trs-web/media/batafia-field-480.webp",
+          "loading": "lazy",
+          "priority": "auto",
+          "alt": "Kelompok peserta berponco membawa perlengkapan di jalur berkabut dalam dokumentasi BATAFIA XXX.",
+          "w": 288,
+          "h": 162,
+          "naturalWidth": 288,
+          "naturalHeight": 162,
+          "widthAttr": "960",
+          "heightAttr": "540",
+          "srcset": "/mpa-trs-web/media/batafia-field-480.webp 480w, /mpa-trs-web/media/batafia-field-960.webp 960w, /mpa-trs-web/media/batafia-field-1440.webp 1440w",
+          "sizes": "(min-width: 1254px) 437px, (min-width: 1024px) calc((100vw - 120px) / 2.6), (min-width: 768px) calc((100vw - 88px) / 2.6), calc(100vw - 32px)",
+          "credit": "Foto: Dokumentasi HUMED MAPALA Tursina",
+          "fit": "contain"
+        }
+      ],
+      "bytes": 39274
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "navigationAborts": [],
+  "layoutReservation": {
+    "before": {
+      "x": 16,
+      "y": 501.8125,
+      "width": 358,
+      "height": 268.5
+    },
+    "after": {
+      "x": 16,
+      "y": 501.8125,
+      "width": 358,
+      "height": 268.5
+    }
+  },
+  "checks": [
+    "35 actual-photo layouts, seven routes at five CSS widths",
+    "11 exact use IDs",
+    "30 unauthorized sparse/history/lab checks",
+    "full frame contain crops and responsive srcset",
+    "literal mobile identity/actions before media",
+    "hero eager/high priority; secondary lazy",
+    "image intrinsic sizing preserved before/after load",
+    "failed-image fallback at 320",
+    "direct refresh"
+  ]
+}

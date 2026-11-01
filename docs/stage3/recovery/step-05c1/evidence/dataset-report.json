@@ -1,0 +1,4006 @@
+{
+  "contractVersion": "5c1.1",
+  "counts": {
+    "activities": 33,
+    "genuineActivities": 32,
+    "expeditions": 3,
+    "pd": 18,
+    "works": 7,
+    "genuineWorkRecords": 6,
+    "history": 8,
+    "syntheticMembers": 3,
+    "relations": 20,
+    "sources": 16,
+    "publicMedia": 0
+  },
+  "quality": [
+    {
+      "level": "gap",
+      "recordId": "gh29",
+      "field": "place",
+      "message": "Location is incomplete, unknown or disputed."
+    },
+    {
+      "level": "gap",
+      "recordId": "workshop-demo",
+      "field": "dates",
+      "message": "No verified date; no precision inferred."
+    },
+    {
+      "level": "gap",
+      "recordId": "workshop-demo",
+      "field": "place",
+      "message": "Location is incomplete, unknown or disputed."
+    },
+    {
+      "level": "conflict",
+      "recordId": "te11",
+      "field": "dates",
+      "message": "Assertions preserved; public date is provisional."
+    },
+    {
+      "level": "conflict",
+      "recordId": "te11",
+      "field": "place",
+      "message": "Location is incomplete, unknown or disputed."
+    },
+    {
+      "level": "conflict",
+      "recordId": "orad27",
+      "field": "place",
+      "message": "Location is incomplete, unknown or disputed."
+    },
+    {
+      "level": "conflict",
+      "recordId": "lh27",
+      "field": "place",
+      "message": "Location is incomplete, unknown or disputed."
+    },
+    {
+      "level": "restriction",
+      "recordId": "sacred-gatekeeper",
+      "field": "original",
+      "message": "Kredit, hak publikasi, serta konteks dan ketepatan uraian budaya masih ditinjau. Metadata karya tetap dapat dibaca dan ditelusuri kembali ke ekspedisinya."
+    },
+    {
+      "level": "gap",
+      "recordId": "carbon-debt",
+      "field": "dates",
+      "message": "No verified date; no precision inferred."
+    },
+    {
+      "level": "gap",
+      "recordId": "design-school",
+      "field": "dates",
+      "message": "No verified date; no precision inferred."
+    },
+    {
+      "level": "restriction",
+      "recordId": "design-school",
+      "field": "original",
+      "message": "Identitas dan topik materi berasal dari pemeriksaan terdahulu. Kredit, izin reproduksi dan sumber asli perlu diperiksa kembali sebelum berkas publik disediakan."
+    },
+    {
+      "level": "gap",
+      "recordId": "announcement-demo",
+      "field": "dates",
+      "message": "No verified date; no precision inferred."
+    },
+    {
+      "level": "restriction",
+      "recordId": "summit-without-carbon-debt",
+      "field": "original",
+      "message": "Isi artikel, gambar dan angka emisi tidak direproduksi. Judul adalah atribusi pada karya, bukan pengesahan bahwa ekspedisi netral karbon."
+    },
+    {
+      "level": "gap",
+      "recordId": "te11-documentary-reference",
+      "field": "dates",
+      "message": "No verified date; no precision inferred."
+    },
+    {
+      "level": "restriction",
+      "recordId": "summit-attack-vol4",
+      "field": "original",
+      "message": "Sumber adalah laporan pengurus, bukan salinan majalah. Judul, tanggal peluncuran dan konteks diperiksa; format, jumlah halaman, kredit serta izin unduh belum diverifikasi."
+    },
+    {
+      "level": "gap",
+      "recordId": "gh26",
+      "field": "uncertainty",
+      "message": "Batas catatan yang tersedia: Tanggal dan tempat bersumber dari ringkasan LPJ pengurus. Rute, hasil teknis, dan pengesahan laporan divisi tidak disimpulkan dari ringkasan ini."
+    },
+    {
+      "level": "gap",
+      "recordId": "gh29",
+      "field": "uncertainty",
+      "message": "Wilayah yang belum lengkap: Baris tempat dalam laporan berhenti setelah “Kabupaten”. Halaman mempertahankan Gunung Lawu tanpa menambahkan nama kabupaten dari dugaan."
+    },
+    {
+      "level": "gap",
+      "recordId": "kawi29",
+      "field": "uncertainty",
+      "message": "Konteks kelembagaan, bukan kisah ritual: Bentuk kegiatan dalam LPJ disebut pendakian tanpa pelaporan. Detail upacara, identitas peserta, dan hasil rinci tidak direproduksi. Hubungan ke PD XXIX adalah konteks pendidikan yang disebut dalam laporan, bukan pencocokan peserta."
+    },
+    {
+      "level": "gap",
+      "recordId": "batafia30",
+      "field": "uncertainty",
+      "message": "Tanggal forum belum selaras: Baris forum dalam sumber mengulang penamaan September pada rangkaian tanggal yang belum direkonsiliasi. Tanggal forum tidak ditampilkan sebagai kepastian dan tidak diubah menjadi Oktober dari dugaan."
+    },
+    {
+      "level": "gap",
+      "recordId": "te10",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "orad26",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "rc26",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "caving26",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "caving26",
+      "field": "uncertainty",
+      "message": "Ejaan nama gua belum direkonsiliasi: Ringkasan XXVI menulis Lowo Penggar, sedangkan XXVII menulis Lowo Tenggar. Nama tidak digabung atau dikoreksi tanpa laporan rinci."
+    },
+    {
+      "level": "gap",
+      "recordId": "gh27",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "orad27",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "orad27",
+      "field": "uncertainty",
+      "message": "Lokasi perlu pemeriksaan silang: Baris tempat sumber memasangkan Olahraga Arus Deras dengan Taman Nasional Baluran · Situbondo. Penamaan dipertahankan sebagai pernyataan sumber; lokasi publik belum ditetapkan dan tidak ditukar berdasarkan dugaan."
+    },
+    {
+      "level": "gap",
+      "recordId": "lh27",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "lh27",
+      "field": "uncertainty",
+      "message": "Lokasi perlu pemeriksaan silang: Baris tempat sumber memasangkan Lingkungan Hidup dengan Sungai Glenmor · Banyuwangi. Penamaan dipertahankan sebagai pernyataan sumber; lokasi publik belum ditetapkan dan tidak ditukar berdasarkan dugaan."
+    },
+    {
+      "level": "gap",
+      "recordId": "rc27",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "caving27",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "caving27",
+      "field": "uncertainty",
+      "message": "Ejaan nama gua belum direkonsiliasi: Ringkasan XXVI menulis Lowo Penggar, sedangkan XXVII menulis Lowo Tenggar. Nama tidak digabung atau dikoreksi tanpa laporan rinci."
+    },
+    {
+      "level": "gap",
+      "recordId": "gh28",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "gh28",
+      "field": "uncertainty",
+      "message": "Status dokumen: Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan."
+    },
+    {
+      "level": "gap",
+      "recordId": "rc28",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "rc28",
+      "field": "uncertainty",
+      "message": "Status dokumen: Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan."
+    },
+    {
+      "level": "gap",
+      "recordId": "orad28",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "orad28",
+      "field": "uncertainty",
+      "message": "Status dokumen: Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan."
+    },
+    {
+      "level": "gap",
+      "recordId": "lh28",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "lh28",
+      "field": "uncertainty",
+      "message": "Status dokumen: Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan."
+    },
+    {
+      "level": "gap",
+      "recordId": "batafia27",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "batafia28",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "batafia28",
+      "field": "uncertainty",
+      "message": "Penyebutan angkatan dalam paragraf penutup: Judul dan sasaran sumber menyebut XXVIII, tetapi paragraf Keterangan mengulang XXVII. Identitas mengikuti judul dan sasaran; ketidakselarasan tidak disembunyikan."
+    },
+    {
+      "level": "gap",
+      "recordId": "kawi26",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "srde27",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "organization-school26",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "organization-school28",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "organization-school28",
+      "field": "uncertainty",
+      "message": "Status dokumen: Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan."
+    },
+    {
+      "level": "gap",
+      "recordId": "earth-day-2022",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "tree-movement-2023",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "batafia29",
+      "field": "uncertainty",
+      "message": "Batas ringkasan sumber: Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis."
+    },
+    {
+      "level": "gap",
+      "recordId": "batafia29",
+      "field": "uncertainty",
+      "message": "Status dokumen: Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan."
+    },
+    {
+      "level": "gap",
+      "recordId": "carbon-debt",
+      "field": "uncertainty",
+      "message": "Tanggal catatan belum diverifikasi. Tidak ada klaim kuantitatif karbon yang disahkan di sini."
+    },
+    {
+      "level": "gap",
+      "recordId": "design-school",
+      "field": "uncertainty",
+      "message": "Tanggal PDF tidak dianggap tanggal kegiatan. Penulis, kontributor, tanggal kegiatan dan izin unduh belum diverifikasi."
+    },
+    {
+      "level": "gap",
+      "recordId": "design-school",
+      "field": "uncertainty",
+      "message": "Sumber asli tidak ditemukan kembali melalui koleksi Drive yang tersedia pada pemeriksaan ini."
+    },
+    {
+      "level": "gap",
+      "recordId": "summit-without-carbon-debt",
+      "field": "uncertainty",
+      "message": "Reproduksi naskah, gambar, kredit dan verifikasi klaim kuantitatif masih terbuka."
+    },
+    {
+      "level": "gap",
+      "recordId": "te11-documentary-reference",
+      "field": "uncertainty",
+      "message": "Judul film, pembuat, durasi, tanggal rilis, tujuan QR, isi dan izin penayangan belum ditetapkan."
+    },
+    {
+      "level": "gap",
+      "recordId": "summit-attack-vol4",
+      "field": "uncertainty",
+      "message": "Isi, kredit pencipta, format berkas dan izin reproduksi masih perlu diperiksa."
+    },
+    {
+      "level": "gap",
+      "recordId": "founding-1995",
+      "field": "uncertainty",
+      "message": "Sumber adalah AD yang tersedia, bukan rekonstruksi lengkap kejadian tahun 1995."
+    },
+    {
+      "level": "gap",
+      "recordId": "field-education-2023",
+      "field": "uncertainty",
+      "message": "Laporan spesialisasi lengkap belum menjadi sumber cerita rinci."
+    },
+    {
+      "level": "gap",
+      "recordId": "expedition-knowledge-2024",
+      "field": "uncertainty",
+      "message": "Perbedaan provinsi dan tanggal akhir rinci dipertahankan pada TE11. Bukan klaim edisi pertama atau terbaru."
+    },
+    {
+      "level": "gap",
+      "recordId": "division-education-2025",
+      "field": "uncertainty",
+      "message": "Rentang merangkum lima kegiatan, bukan tanggal acara induk baru."
+    },
+    {
+      "level": "gap",
+      "recordId": "kawi-continuity-2025",
+      "field": "uncertainty",
+      "message": "Laporan menyebut pendakian tanpa pelaporan. Makna upacara dan riwayat pribadi tidak direkonstruksi dari foto."
+    },
+    {
+      "level": "gap",
+      "recordId": "environment-2022",
+      "field": "uncertainty",
+      "message": "Entri terpilih dari sumber yang tersedia; bukan kronologi tahunan lengkap."
+    },
+    {
+      "level": "gap",
+      "recordId": "siberut-2022",
+      "field": "uncertainty",
+      "message": "Entri terpilih dari sumber yang tersedia; bukan kronologi tahunan lengkap."
+    },
+    {
+      "level": "gap",
+      "recordId": "magazine-2023",
+      "field": "uncertainty",
+      "message": "Entri terpilih dari sumber yang tersedia; bukan kronologi tahunan lengkap."
+    },
+    {
+      "level": "conflict",
+      "recordId": "batafia30",
+      "field": "forum",
+      "message": "Penamaan September dalam rangkaian forum belum direkonsiliasi; tidak diganti menjadi Oktober."
+    },
+    {
+      "level": "restriction",
+      "recordId": "gh29",
+      "field": "media",
+      "message": "pd-gh-map: rights/privacy/credit/use not cleared."
+    },
+    {
+      "level": "restriction",
+      "recordId": "rc29",
+      "field": "media",
+      "message": "pd-rc-team: rights/privacy/credit/use not cleared."
+    },
+    {
+      "level": "restriction",
+      "recordId": "kawi29",
+      "field": "media",
+      "message": "kawi-collective: rights/privacy/credit/use not cleared."
+    },
+    {
+      "level": "restriction",
+      "recordId": "batafia30",
+      "field": "media",
+      "message": "batafia-field: rights/privacy/credit/use not cleared."
+    },
+    {
+      "level": "restriction",
+      "recordId": "te11",
+      "field": "media",
+      "message": "te11-documentary: rights/privacy/credit/use not cleared."
+    }
+  ],
+  "records": [
+    {
+      "id": "gh26",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Gunung Hutan XXVI",
+      "classification": "division-education",
+      "date": {
+        "label": "19–26 Agustus 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-08-19",
+            "end": "2023-08-26"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "Pemantapan Divisi XXVI, PDF fisik hlm.52–53"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gunung Slamet",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gunung Slamet",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "Pemantapan Divisi XXVI, PDF fisik hlm.52–53"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "GH"
+      ],
+      "cohorts": [
+        "XXVI"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "Pemantapan Divisi XXVI, PDF fisik hlm.52–53"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas catatan yang tersedia",
+          "explanation": "Tanggal dan tempat bersumber dari ringkasan LPJ pengurus. Rute, hasil teknis, dan pengesahan laporan divisi tidak disimpulkan dari ringkasan ini.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "gh29",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Gunung Hutan XXIX",
+      "classification": "division-education",
+      "date": {
+        "label": "1-8 Agustus 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-08-01",
+            "end": "2025-08-08"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78 / cetak 72"
+            },
+            {
+              "sourceId": "humed-gh29",
+              "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gunung Lawu",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gunung Lawu",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78 / cetak 72"
+              },
+              {
+                "sourceId": "humed-gh29",
+                "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "incomplete"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "GH"
+      ],
+      "cohorts": [
+        "XXIX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78 / cetak 72"
+        },
+        {
+          "sourceId": "humed-gh29",
+          "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Wilayah yang belum lengkap",
+          "explanation": "Baris tempat dalam laporan berhenti setelah “Kabupaten”. Halaman mempertahankan Gunung Lawu tanpa menambahkan nama kabupaten dari dugaan.",
+          "sourceIds": [
+            "lpj-2025"
+          ]
+        }
+      ],
+      "mediaUses": [
+        {
+          "id": "pd-gh-map-usage",
+          "assetId": "pd-gh-map",
+          "recordId": "gh29",
+          "role": "gh",
+          "institutionalUse": "pending",
+          "clearance": "hold",
+          "purpose": "public-website"
+        }
+      ]
+    },
+    {
+      "id": "rc29",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Panjat Tebing XXIX",
+      "classification": "division-education",
+      "date": {
+        "label": "8-15 Agustus 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-08-08",
+            "end": "2025-08-15"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78–79 / cetak 72–73"
+            },
+            {
+              "sourceId": "humed-rc29",
+              "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Tebing Siung · Gunung Kidul",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Tebing Siung · Gunung Kidul",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78–79 / cetak 72–73"
+              },
+              {
+                "sourceId": "humed-rc29",
+                "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "RC"
+      ],
+      "cohorts": [
+        "XXIX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78–79 / cetak 72–73"
+        },
+        {
+          "sourceId": "humed-rc29",
+          "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "mediaUses": [
+        {
+          "id": "pd-rc-team-usage",
+          "assetId": "pd-rc-team",
+          "recordId": "rc29",
+          "role": "rc",
+          "institutionalUse": "pending",
+          "clearance": "hold",
+          "purpose": "public-website"
+        }
+      ]
+    },
+    {
+      "id": "orad29",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXIX",
+      "classification": "division-education",
+      "date": {
+        "label": "31 Juli-9 Agustus 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-07-31",
+            "end": "2025-08-09"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Sungai Progo · Magelang",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Sungai Progo · Magelang",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "ORAD"
+      ],
+      "cohorts": [
+        "XXIX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "mediaUses": []
+    },
+    {
+      "id": "lh29",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Lingkungan Hidup XXIX",
+      "classification": "division-education",
+      "date": {
+        "label": "3-8 Agustus 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-08-03",
+            "end": "2025-08-08"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Plunyon Kalikuning · Sleman",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Plunyon Kalikuning · Sleman",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "LH"
+      ],
+      "cohorts": [
+        "XXIX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "mediaUses": []
+    },
+    {
+      "id": "caving29",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Susur Gua XXIX",
+      "classification": "division-education",
+      "date": {
+        "label": "14-20 Agustus 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-08-14",
+            "end": "2025-08-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gua Temanten & Gua Nguwik · Purworejo",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gua Temanten & Gua Nguwik · Purworejo",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "CAVING"
+      ],
+      "cohorts": [
+        "XXIX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pemantapan Divisi XXIX, halaman fisik 92–93 / cetak 86–87"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "mediaUses": []
+    },
+    {
+      "id": "kawi29",
+      "domain": "activity",
+      "title": "Gunung Kawi XXIX",
+      "classification": "institutional-continuity",
+      "date": {
+        "label": "21–23 November 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-11-21",
+            "end": "2025-11-23"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "Pendakian Kawi Angkatan XXIX, halaman fisik 96–97 / cetak 90–91"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Pegunungan Kawi",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Pegunungan Kawi",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "Pendakian Kawi Angkatan XXIX, halaman fisik 96–97 / cetak 90–91"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXIX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pendakian Kawi Angkatan XXIX, halaman fisik 96–97 / cetak 90–91"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Konteks kelembagaan, bukan kisah ritual",
+          "explanation": "Bentuk kegiatan dalam LPJ disebut pendakian tanpa pelaporan. Detail upacara, identitas peserta, dan hasil rinci tidak direproduksi. Hubungan ke PD XXIX adalah konteks pendidikan yang disebut dalam laporan, bukan pencocokan peserta.",
+          "sourceIds": [
+            "lpj-2025"
+          ]
+        }
+      ],
+      "mediaUses": [
+        {
+          "id": "kawi-collective-usage",
+          "assetId": "kawi-collective",
+          "recordId": "kawi29",
+          "role": "kawi",
+          "institutionalUse": "pending",
+          "clearance": "hold",
+          "purpose": "public-website"
+        }
+      ]
+    },
+    {
+      "id": "batafia30",
+      "domain": "activity",
+      "title": "BATAFIA XXX — diklat lapang",
+      "classification": "basic-education",
+      "date": {
+        "label": "24–26 Oktober 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-10-24",
+            "end": "2025-10-26"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "BATAFIA XXX, halaman fisik 94–96 / cetak 88–90"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Pegunungan Kawi",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Pegunungan Kawi",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "BATAFIA XXX, halaman fisik 94–96 / cetak 88–90"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "BATAFIA XXX, halaman fisik 94–96 / cetak 88–90"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Tanggal forum belum selaras",
+          "explanation": "Baris forum dalam sumber mengulang penamaan September pada rangkaian tanggal yang belum direkonsiliasi. Tanggal forum tidak ditampilkan sebagai kepastian dan tidak diubah menjadi Oktober dari dugaan.",
+          "sourceIds": [
+            "lpj-2025"
+          ]
+        }
+      ],
+      "mediaUses": [
+        {
+          "id": "batafia-field-usage",
+          "assetId": "batafia-field",
+          "recordId": "batafia30",
+          "role": "batafia",
+          "institutionalUse": "pending",
+          "clearance": "hold",
+          "purpose": "public-website"
+        }
+      ]
+    },
+    {
+      "id": "workshop-demo",
+      "domain": "activity",
+      "title": "Lokakarya dokumentasi kegiatan",
+      "classification": "workshop",
+      "date": {
+        "label": "Tanggal belum terverifikasi"
+      },
+      "assertions": [],
+      "reconciliation": "unknown",
+      "place": {
+        "assertions": [],
+        "reconciliation": "unknown"
+      },
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "Fixture prototipe; bukan kegiatan atau jadwal institusi"
+        }
+      ],
+      "verification": "synthetic",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "mediaUses": []
+    },
+    {
+      "id": "te11",
+      "domain": "activity",
+      "title": "Bukit Raya: lintas sungai, hutan hujan, dan catatan lapangan",
+      "classification": "expedition",
+      "date": {
+        "label": "20 November-6 Desember 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-11-20",
+            "end": "2024-12-06"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "te11-report",
+              "locator": "§§1–4"
+            }
+          ]
+        },
+        {
+          "id": "chronology-end",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-11-20",
+            "end": "2024-12-07"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "te11-report",
+              "locator": "§3.1 kronologi kepulangan"
+            },
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 85 / cetak 79"
+            }
+          ]
+        },
+        {
+          "id": "earlier-plan",
+          "role": "planned",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-12-24",
+            "end": "2024-01-14"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 62 / rencana pada periode 2023–2024, tidak terlaksana"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "unresolved",
+      "place": {
+        "presentation": "TN Bukit Baka Bukit Raya · Kalimantan",
+        "reconciliation": "unresolved",
+        "assertions": [
+          {
+            "id": "west",
+            "label": "Kalimantan Barat",
+            "sourceUses": [
+              {
+                "sourceId": "te11-report",
+                "locator": "sampul / kesimpulan"
+              },
+              {
+                "sourceId": "lpj-2024-25",
+                "locator": "PDF fisik 85"
+              }
+            ]
+          },
+          {
+            "id": "central",
+            "label": "Kalimantan Tengah",
+            "sourceUses": [
+              {
+                "sourceId": "te11-report",
+                "locator": "§2.2 pelaksanaan"
+              }
+            ]
+          }
+        ]
+      },
+      "programmeId": "te",
+      "editionId": "te11-edition",
+      "sourceUses": [
+        {
+          "sourceId": "te11-report",
+          "locator": "§§1–4"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "mediaUses": [
+        {
+          "id": "te11-documentary-usage",
+          "assetId": "te11-documentary",
+          "recordId": "te11",
+          "role": "expedition",
+          "institutionalUse": "pending",
+          "clearance": "hold",
+          "purpose": "public-website"
+        }
+      ]
+    },
+    {
+      "id": "te12",
+      "domain": "activity",
+      "title": "Trunyan",
+      "classification": "expedition",
+      "date": {
+        "label": "26 September-5 Oktober 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-09-26",
+            "end": "2025-10-05"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "Tursina Explore #12"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Desa Trunyan · Bangli · Bali",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Desa Trunyan · Bangli · Bali",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2025",
+                "locator": "Tursina Explore #12"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "te",
+      "editionId": "te12-edition",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Tursina Explore #12"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "mediaUses": []
+    },
+    {
+      "id": "te10",
+      "domain": "activity",
+      "title": "Pulau Siberut",
+      "classification": "expedition",
+      "date": {
+        "label": "20 Desember 2022 – 4 Januari 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2022-12-20",
+            "end": "2023-01-04"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2022-23",
+              "locator": "DOCX fisik 61"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Pulau Siberut · Siberut Barat · Kepulauan Mentawai",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Pulau Siberut · Siberut Barat · Kepulauan Mentawai",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2022-23",
+                "locator": "DOCX fisik 61"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "te",
+      "editionId": "te10-edition",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 61"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2022-23"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "orad26",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVI",
+      "classification": "division-education",
+      "date": {
+        "label": "19 Agustus 2023 – 26 Agustus 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-08-19",
+            "end": "2023-08-26"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 51–53"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Sungai Serayu · Jawa Tengah",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Sungai Serayu · Jawa Tengah",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 51–53"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "ORAD"
+      ],
+      "cohorts": [
+        "XXVI"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 51–53"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "rc26",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Panjat Tebing XXVI",
+      "classification": "division-education",
+      "date": {
+        "label": "15 Januari 2024 – 20 Januari 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-01-15",
+            "end": "2024-01-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 51–53"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Tebing Pegat · Jawa Timur",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Tebing Pegat · Jawa Timur",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 51–53"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "RC"
+      ],
+      "cohorts": [
+        "XXVI"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 51–53"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "caving26",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Susur Gua XXVI",
+      "classification": "division-education",
+      "date": {
+        "label": "24 Januari 2024 – 30 Januari 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-01-24",
+            "end": "2024-01-30"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 51–53"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gua Tledek, Gua Manten dan Gua Lowo Penggar · Jawa Timur",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gua Tledek, Gua Manten dan Gua Lowo Penggar · Jawa Timur",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 51–53"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "CAVING"
+      ],
+      "cohorts": [
+        "XXVI"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 51–53"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        },
+        {
+          "title": "Ejaan nama gua belum direkonsiliasi",
+          "explanation": "Ringkasan XXVI menulis Lowo Penggar, sedangkan XXVII menulis Lowo Tenggar. Nama tidak digabung atau dikoreksi tanpa laporan rinci.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "gh27",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Gunung Hutan XXVII",
+      "classification": "division-education",
+      "date": {
+        "label": "17 Januari 2024 – 25 Januari 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-01-17",
+            "end": "2024-01-25"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 57–59"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gunung Merbabu via Suwanting · Magelang",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gunung Merbabu via Suwanting · Magelang",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 57–59"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "GH"
+      ],
+      "cohorts": [
+        "XXVII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 57–59"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "orad27",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVII",
+      "classification": "division-education",
+      "date": {
+        "label": "15 Januari 2024 – 20 Januari 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-01-15",
+            "end": "2024-01-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 57–59"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "reconciliation": "unresolved",
+        "assertions": [
+          {
+            "id": "as-written",
+            "label": "Taman Nasional Baluran · Situbondo",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 57–59"
+              }
+            ]
+          }
+        ]
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "ORAD"
+      ],
+      "cohorts": [
+        "XXVII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 57–59"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        },
+        {
+          "title": "Lokasi perlu pemeriksaan silang",
+          "explanation": "Baris tempat sumber memasangkan Olahraga Arus Deras dengan Taman Nasional Baluran · Situbondo. Penamaan dipertahankan sebagai pernyataan sumber; lokasi publik belum ditetapkan dan tidak ditukar berdasarkan dugaan.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "lh27",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Lingkungan Hidup XXVII",
+      "classification": "division-education",
+      "date": {
+        "label": "15 Januari 2024 – 20 Januari 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-01-15",
+            "end": "2024-01-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 57–59"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "reconciliation": "unresolved",
+        "assertions": [
+          {
+            "id": "as-written",
+            "label": "Sungai Glenmor · Banyuwangi",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 57–59"
+              }
+            ]
+          }
+        ]
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "LH"
+      ],
+      "cohorts": [
+        "XXVII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 57–59"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        },
+        {
+          "title": "Lokasi perlu pemeriksaan silang",
+          "explanation": "Baris tempat sumber memasangkan Lingkungan Hidup dengan Sungai Glenmor · Banyuwangi. Penamaan dipertahankan sebagai pernyataan sumber; lokasi publik belum ditetapkan dan tidak ditukar berdasarkan dugaan.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "rc27",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Panjat Tebing XXVII",
+      "classification": "division-education",
+      "date": {
+        "label": "15 Januari 2024 – 20 Januari 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-01-15",
+            "end": "2024-01-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 57–59"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Tebing Pegat · Tulungagung",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Tebing Pegat · Tulungagung",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 57–59"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "RC"
+      ],
+      "cohorts": [
+        "XXVII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 57–59"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "caving27",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Susur Gua XXVII",
+      "classification": "division-education",
+      "date": {
+        "label": "24 Januari 2024 – 30 Januari 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-01-24",
+            "end": "2024-01-30"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 57–59"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gua Tledek, Gua Lowo Tenggar dan Gua Manten · Tulungagung",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gua Tledek, Gua Lowo Tenggar dan Gua Manten · Tulungagung",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 57–59"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "CAVING"
+      ],
+      "cohorts": [
+        "XXVII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 57–59"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        },
+        {
+          "title": "Ejaan nama gua belum direkonsiliasi",
+          "explanation": "Ringkasan XXVI menulis Lowo Penggar, sedangkan XXVII menulis Lowo Tenggar. Nama tidak digabung atau dikoreksi tanpa laporan rinci.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "gh28",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Gunung Hutan XXVIII",
+      "classification": "division-education",
+      "date": {
+        "label": "23 November 2024 – 1 Desember 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-11-23",
+            "end": "2024-12-01"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 78–80 / cetak 72–74"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gunung Gede Pangrango · Cianjur",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gunung Gede Pangrango · Cianjur",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2024-25",
+                "locator": "PDF fisik 78–80 / cetak 72–74"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "GH"
+      ],
+      "cohorts": [
+        "XXVIII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2024-25",
+          "locator": "PDF fisik 78–80 / cetak 72–74"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        },
+        {
+          "title": "Status dokumen",
+          "explanation": "Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "rc28",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Panjat Tebing XXVIII",
+      "classification": "division-education",
+      "date": {
+        "label": "23 November 2024 – 1 Desember 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-11-23",
+            "end": "2024-12-01"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 78–80 / cetak 72–74"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Tebing Citatah 125 · Bandung Barat",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Tebing Citatah 125 · Bandung Barat",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2024-25",
+                "locator": "PDF fisik 78–80 / cetak 72–74"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "RC"
+      ],
+      "cohorts": [
+        "XXVIII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2024-25",
+          "locator": "PDF fisik 78–80 / cetak 72–74"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        },
+        {
+          "title": "Status dokumen",
+          "explanation": "Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "orad28",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Olahraga Arus Deras XXVIII",
+      "classification": "division-education",
+      "date": {
+        "label": "23 November 2024 – 28 November 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-11-23",
+            "end": "2024-11-28"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 78–80 / cetak 72–74"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Sungai Cilutung · Majalengka",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Sungai Cilutung · Majalengka",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2024-25",
+                "locator": "PDF fisik 78–80 / cetak 72–74"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "ORAD"
+      ],
+      "cohorts": [
+        "XXVIII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2024-25",
+          "locator": "PDF fisik 78–80 / cetak 72–74"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        },
+        {
+          "title": "Status dokumen",
+          "explanation": "Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "lh28",
+      "domain": "activity",
+      "title": "Pemantapan Divisi Lingkungan Hidup XXVIII",
+      "classification": "division-education",
+      "date": {
+        "label": "28 November 2024 – 4 Desember 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-11-28",
+            "end": "2024-12-04"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 78–80 / cetak 72–74"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Cagar Alam Pangandaran · Pangandaran",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Cagar Alam Pangandaran · Pangandaran",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2024-25",
+                "locator": "PDF fisik 78–80 / cetak 72–74"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "programmeId": "pd",
+      "divisions": [
+        "LH"
+      ],
+      "cohorts": [
+        "XXVIII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2024-25",
+          "locator": "PDF fisik 78–80 / cetak 72–74"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        },
+        {
+          "title": "Status dokumen",
+          "explanation": "Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "batafia27",
+      "domain": "activity",
+      "title": "BATAFIA XXVII — diklat lapang",
+      "classification": "basic-education",
+      "date": {
+        "label": "1 Juli 2023 – 4 Juli 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-07-01",
+            "end": "2023-07-04"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 50–51"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Pegunungan Kawi · Gading Kulon · Dau",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Pegunungan Kawi · Gading Kulon · Dau",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 50–51"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXVII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 50–51"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "batafia28",
+      "domain": "activity",
+      "title": "BATAFIA XXVIII — diklat lapang",
+      "classification": "basic-education",
+      "date": {
+        "label": "1 Desember 2023 – 3 Desember 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-12-01",
+            "end": "2023-12-03"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 56–57"
+            }
+          ]
+        },
+        {
+          "id": "earlier-plan",
+          "role": "planned",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-11-30",
+            "end": "2023-12-03"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 57 / evaluasi rencana awal"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Pegunungan Kawi · Gading Kulon · Dau",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Pegunungan Kawi · Gading Kulon · Dau",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 56–57"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXVIII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 56–57"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        },
+        {
+          "title": "Penyebutan angkatan dalam paragraf penutup",
+          "explanation": "Judul dan sasaran sumber menyebut XXVIII, tetapi paragraf Keterangan mengulang XXVII. Identitas mengikuti judul dan sasaran; ketidakselarasan tidak disembunyikan.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "kawi26",
+      "domain": "activity",
+      "title": "Gunung Kawi XXVI",
+      "classification": "institutional-continuity",
+      "date": {
+        "label": "15 September 2023 – 17 September 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-09-15",
+            "end": "2023-09-17"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 53–54"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Pegunungan Kawi",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Pegunungan Kawi",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 53–54"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXVI"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 53–54"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "srde27",
+      "domain": "activity",
+      "title": "Sekolah Riset dan Ekspedisi XXVII",
+      "classification": "workshop",
+      "date": {
+        "label": "9 September 2023 – 10 September 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-09-09",
+            "end": "2023-09-10"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 54–55"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Sekretariat MAPALA Tursina",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Sekretariat MAPALA Tursina",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 54–55"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXVII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 54–55"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "organization-school26",
+      "domain": "activity",
+      "title": "Sekolah Organisasi XXVI",
+      "classification": "workshop",
+      "date": {
+        "label": "22 Maret 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day",
+            "start": "2023-03-22"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "PDF fisik 59–60"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Sekretariat MAPALA Tursina",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Sekretariat MAPALA Tursina",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2023-24",
+                "locator": "PDF fisik 59–60"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXVI"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 59–60"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2023-24"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "organization-school28",
+      "domain": "activity",
+      "title": "Sekolah Organisasi XXVIII",
+      "classification": "workshop",
+      "date": {
+        "label": "10 Maret 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day",
+            "start": "2024-03-10"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 82–84 / cetak 76–78"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Gedung B Ruang 220 · UIN Malang",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Gedung B Ruang 220 · UIN Malang",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2024-25",
+                "locator": "PDF fisik 82–84 / cetak 76–78"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXVIII"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2024-25",
+          "locator": "PDF fisik 82–84 / cetak 76–78"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        },
+        {
+          "title": "Status dokumen",
+          "explanation": "Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "earth-day-2022",
+      "domain": "activity",
+      "title": "Hari Bumi 2022",
+      "classification": "environmental-service",
+      "date": {
+        "label": "23 April 2022 – 24 April 2022",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2022-04-23",
+            "end": "2022-04-24"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2022-23",
+              "locator": "DOCX fisik 60–61"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Aula Gedung C dan tembok belakang UIN Malang",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Aula Gedung C dan tembok belakang UIN Malang",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2022-23",
+                "locator": "DOCX fisik 60–61"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 60–61"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2022-23"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "tree-movement-2023",
+      "domain": "activity",
+      "title": "Hari Gerakan Satu Juta Pohon",
+      "classification": "environmental-service",
+      "date": {
+        "label": "13 Januari 2023 – 15 Januari 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-01-13",
+            "end": "2023-01-15"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2022-23",
+              "locator": "DOCX fisik 61"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Bumi Perkemahan Parang Tejo",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Bumi Perkemahan Parang Tejo",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2022-23",
+                "locator": "DOCX fisik 61"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 61"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2022-23"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "batafia29",
+      "domain": "activity",
+      "title": "BATAFIA XXIX — diklat lapang",
+      "classification": "basic-education",
+      "date": {
+        "label": "11 Oktober 2024 – 13 Oktober 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "execution",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-10-11",
+            "end": "2024-10-13"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 80–82 / cetak 74–76"
+            }
+          ]
+        },
+        {
+          "id": "earlier-plan",
+          "role": "planned",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-10-04",
+            "end": "2024-10-06"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2024-25",
+              "locator": "PDF fisik 82 / evaluasi perubahan tanggal lapangan"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "place": {
+        "presentation": "Pegunungan Kawi · Gading Kulon · Dau",
+        "assertions": [
+          {
+            "id": "reported",
+            "label": "Pegunungan Kawi · Gading Kulon · Dau",
+            "sourceUses": [
+              {
+                "sourceId": "lpj-2024-25",
+                "locator": "PDF fisik 80–82 / cetak 74–76"
+              }
+            ]
+          }
+        ],
+        "reconciliation": "single-source"
+      },
+      "cohorts": [
+        "XXIX"
+      ],
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2024-25",
+          "locator": "PDF fisik 80–82 / cetak 74–76"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        {
+          "title": "Batas ringkasan sumber",
+          "explanation": "Metadata dan konteks diringkas dari laporan pengurus. Tidak memuat daftar peserta, penilaian individu, keuangan, atau klaim pencapaian teknis.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        },
+        {
+          "title": "Status dokumen",
+          "explanation": "Sumber berlabel draft; pembacaan isi tidak menetapkan pengesahan laporan.",
+          "sourceIds": [
+            "lpj-2024-25"
+          ]
+        }
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "sacred-gatekeeper",
+      "domain": "work",
+      "title": "The Sacred Gatekeeper",
+      "classification": "article",
+      "date": {
+        "label": "21 September 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "publication",
+          "value": {
+            "precision": "day",
+            "start": "2025-09-21"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "sacred-export",
+              "locator": "halaman 1"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "sacred-export",
+          "locator": "halaman 1"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "originalAvailability": {
+        "state": "restricted",
+        "title": "Naskah lengkap belum ditampilkan.",
+        "explanation": "Kredit, hak publikasi, serta konteks dan ketepatan uraian budaya masih ditinjau. Metadata karya tetap dapat dibaca dan ditelusuri kembali ke ekspedisinya."
+      },
+      "mediaUses": []
+    },
+    {
+      "id": "carbon-debt",
+      "domain": "work",
+      "title": "Catatan karbon dalam rencana TE11",
+      "classification": "context",
+      "date": {
+        "label": "Tanggal belum terverifikasi"
+      },
+      "assertions": [],
+      "reconciliation": "unknown",
+      "sourceUses": [
+        {
+          "sourceId": "te11-report",
+          "locator": "rencana dan evaluasi"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Tanggal catatan belum diverifikasi. Tidak ada klaim kuantitatif karbon yang disahkan di sini."
+      ],
+      "originalAvailability": {
+        "state": "summary-only",
+        "title": "Catatan rencana, bukan hasil penelitian.",
+        "explanation": "Ringkasan konteks sumber, bukan naskah penelitian final atau audit karbon."
+      },
+      "mediaUses": []
+    },
+    {
+      "id": "design-school",
+      "domain": "work",
+      "title": "TRS — Sekolah Desain Grafis",
+      "classification": "resource",
+      "date": {
+        "label": "Tanggal belum terverifikasi"
+      },
+      "assertions": [],
+      "reconciliation": "unknown",
+      "sourceUses": [
+        {
+          "sourceId": "design-deck",
+          "locator": "halaman 4, 7 dan 9 / penelitian R4"
+        }
+      ],
+      "verification": "prior-review",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Tanggal PDF tidak dianggap tanggal kegiatan. Penulis, kontributor, tanggal kegiatan dan izin unduh belum diverifikasi.",
+        "Sumber asli tidak ditemukan kembali melalui koleksi Drive yang tersedia pada pemeriksaan ini."
+      ],
+      "originalAvailability": {
+        "state": "metadata-only",
+        "title": "Materi asli belum tersedia untuk dibaca atau diunduh.",
+        "explanation": "Identitas dan topik materi berasal dari pemeriksaan terdahulu. Kredit, izin reproduksi dan sumber asli perlu diperiksa kembali sebelum berkas publik disediakan."
+      },
+      "mediaUses": []
+    },
+    {
+      "id": "announcement-demo",
+      "domain": "work",
+      "title": "Informasi penerimaan anggota",
+      "classification": "announcement",
+      "date": {
+        "label": "Tanggal belum terverifikasi"
+      },
+      "assertions": [],
+      "reconciliation": "unknown",
+      "sourceUses": [
+        {
+          "sourceId": "synthetic-fixture",
+          "locator": "fixture pengumuman"
+        }
+      ],
+      "verification": "synthetic",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [],
+      "originalAvailability": {
+        "state": "demonstration",
+        "title": "Contoh antarmuka, bukan pengumuman yang berlaku.",
+        "explanation": "Tidak ada jadwal, kontak, pendaftaran atau perekrutan nyata pada contoh ini."
+      },
+      "mediaUses": []
+    },
+    {
+      "id": "summit-without-carbon-debt",
+      "domain": "work",
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo",
+      "classification": "article",
+      "date": {
+        "label": "21 September 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "publication",
+          "value": {
+            "precision": "day",
+            "start": "2025-09-21"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "carbon-export",
+              "locator": "halaman 1–3"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "carbon-export",
+          "locator": "halaman 1–3"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Reproduksi naskah, gambar, kredit dan verifikasi klaim kuantitatif masih terbuka."
+      ],
+      "originalAvailability": {
+        "state": "restricted",
+        "title": "Metadata tersedia; naskah dan klaim masih ditinjau.",
+        "explanation": "Isi artikel, gambar dan angka emisi tidak direproduksi. Judul adalah atribusi pada karya, bukan pengesahan bahwa ekspedisi netral karbon."
+      },
+      "mediaUses": []
+    },
+    {
+      "id": "te11-documentary-reference",
+      "domain": "work",
+      "title": "Video Dokumenter — lampiran TE11",
+      "classification": "context",
+      "date": {
+        "label": "Tanggal belum terverifikasi"
+      },
+      "assertions": [],
+      "reconciliation": "unknown",
+      "sourceUses": [
+        {
+          "sourceId": "te11-video-appendix",
+          "locator": "teks lampiran: thumbnail / kode QR tautan"
+        },
+        {
+          "sourceId": "te11-report",
+          "locator": "evaluasi dokumentasi"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Judul film, pembuat, durasi, tanggal rilis, tujuan QR, isi dan izin penayangan belum ditetapkan."
+      ],
+      "originalAvailability": {
+        "state": "summary-only",
+        "title": "Referensi dokumentasi; tidak ada video publik.",
+        "explanation": "Tujuan tautan, isi, kredit dan hak penayangan belum diverifikasi. Tidak ada pemutar, QR atau tautan dokumen privat."
+      },
+      "mediaUses": []
+    },
+    {
+      "id": "summit-attack-vol4",
+      "domain": "work",
+      "title": "Summit Attack Vol. 4",
+      "classification": "periodical",
+      "date": {
+        "label": "24 Januari 2023 (peluncuran dilaporkan)",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "release-reported",
+          "value": {
+            "precision": "day",
+            "start": "2023-01-24"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2022-23",
+              "locator": "DOCX fisik 60 / Bidang Humas dan Media: Summit Attack"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 60 / Bidang Humas dan Media: Summit Attack"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Isi, kredit pencipta, format berkas dan izin reproduksi masih perlu diperiksa."
+      ],
+      "originalAvailability": {
+        "state": "metadata-only",
+        "title": "Identitas majalah tersedia; berkas belum ditampilkan.",
+        "explanation": "Sumber adalah laporan pengurus, bukan salinan majalah. Judul, tanggal peluncuran dan konteks diperiksa; format, jumlah halaman, kredit serta izin unduh belum diverifikasi."
+      },
+      "mediaUses": []
+    },
+    {
+      "id": "founding-1995",
+      "domain": "history",
+      "title": "Pembentukan MAPALA Tursina",
+      "classification": "founding",
+      "date": {
+        "label": "20 Desember 1995",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day",
+            "start": "1995-12-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "ad-art-2025",
+              "locator": "AD Pasal 3 / physical 2"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "ad-art-2025",
+          "locator": "AD Pasal 3 / physical 2"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Sumber adalah AD yang tersedia, bukan rekonstruksi lengkap kejadian tahun 1995."
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "field-education-2023",
+      "domain": "history",
+      "title": "Jejak pendidikan Gunung Hutan",
+      "classification": "education",
+      "date": {
+        "label": "19–26 Agustus 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day-range",
+            "start": "2023-08-19",
+            "end": "2023-08-26"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2023-24",
+              "locator": "physical 52–53 / Pemantapan Divisi"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "physical 52–53 / Pemantapan Divisi"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Laporan spesialisasi lengkap belum menjadi sumber cerita rinci."
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "expedition-knowledge-2024",
+      "domain": "history",
+      "title": "Perjalanan yang meninggalkan catatan",
+      "classification": "knowledge",
+      "date": {
+        "label": "20 November–6 Desember 2024",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day-range",
+            "start": "2024-11-20",
+            "end": "2024-12-06"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "te11-report",
+              "locator": "implementasi dan evaluasi"
+            },
+            {
+              "sourceId": "sacred-export",
+              "locator": "halaman 1"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "te11-report",
+          "locator": "implementasi dan evaluasi"
+        },
+        {
+          "sourceId": "sacred-export",
+          "locator": "halaman 1"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Perbedaan provinsi dan tanggal akhir rinci dipertahankan pada TE11. Bukan klaim edisi pertama atau terbaru."
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "division-education-2025",
+      "domain": "history",
+      "title": "Lima medan pembelajaran terdokumentasi",
+      "classification": "education",
+      "date": {
+        "label": "Juli–Agustus 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-07-31",
+            "end": "2025-08-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "physical 91–93 / PD XXIX"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 91–93 / PD XXIX"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Rentang merangkum lima kegiatan, bukan tanggal acara induk baru."
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "kawi-continuity-2025",
+      "domain": "history",
+      "title": "Kawi dan kesinambungan organisasi",
+      "classification": "continuity",
+      "date": {
+        "label": "21–23 November 2025",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day-range",
+            "start": "2025-11-21",
+            "end": "2025-11-23"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2025",
+              "locator": "physical 96–97 / Pendakian Kawi XXIX"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 96–97 / Pendakian Kawi XXIX"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Laporan menyebut pendakian tanpa pelaporan. Makna upacara dan riwayat pribadi tidak direkonstruksi dari foto."
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "environment-2022",
+      "domain": "history",
+      "title": "Jejak kepedulian lingkungan",
+      "classification": "education",
+      "date": {
+        "label": "23 April 2022",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day",
+            "start": "2022-04-23"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2022-23",
+              "locator": "DOCX fisik 60–61"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 60–61"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Entri terpilih dari sumber yang tersedia; bukan kronologi tahunan lengkap."
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "siberut-2022",
+      "domain": "history",
+      "title": "Eksplorasi budaya dan lingkungan di Siberut",
+      "classification": "knowledge",
+      "date": {
+        "label": "20 Desember 2022",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day",
+            "start": "2022-12-20"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2022-23",
+              "locator": "DOCX fisik 61"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 61"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Entri terpilih dari sumber yang tersedia; bukan kronologi tahunan lengkap."
+      ],
+      "mediaUses": []
+    },
+    {
+      "id": "magazine-2023",
+      "domain": "history",
+      "title": "Pengetahuan diteruskan melalui majalah",
+      "classification": "knowledge",
+      "date": {
+        "label": "24 Januari 2023",
+        "assertionId": "primary"
+      },
+      "assertions": [
+        {
+          "id": "primary",
+          "role": "milestone",
+          "value": {
+            "precision": "day",
+            "start": "2023-01-24"
+          },
+          "sourceUses": [
+            {
+              "sourceId": "lpj-2022-23",
+              "locator": "DOCX fisik 60"
+            }
+          ]
+        }
+      ],
+      "reconciliation": "single-source",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 60"
+        }
+      ],
+      "verification": "source-checked",
+      "editorialReadiness": "review-draft",
+      "publicationScope": {
+        "institutionalAuthority": "owner-designated",
+        "scope": "prototype-metadata-and-editorial-summary",
+        "approval": "prototype-scope-authorized",
+        "website": "preview",
+        "originalReproduction": "not-authorized"
+      },
+      "uncertainties": [
+        "Entri terpilih dari sumber yang tersedia; bukan kronologi tahunan lengkap."
+      ],
+      "mediaUses": []
+    }
+  ],
+  "relationships": [
+    {
+      "id": "activity-kawi29-gh29",
+      "kind": "activity-activity",
+      "fromId": "kawi29",
+      "toId": "gh29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pendakian Kawi Angkatan XXIX, halaman fisik 96–97 / cetak 90–91"
+        }
+      ]
+    },
+    {
+      "id": "activity-kawi29-rc29",
+      "kind": "activity-activity",
+      "fromId": "kawi29",
+      "toId": "rc29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "Pendakian Kawi Angkatan XXIX, halaman fisik 96–97 / cetak 90–91"
+        }
+      ]
+    },
+    {
+      "id": "rc26-shared-departure",
+      "kind": "activity-activity",
+      "fromId": "rc26",
+      "toId": "rc27",
+      "role": "shared-departure",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 53"
+        }
+      ]
+    },
+    {
+      "id": "caving26-shared-departure",
+      "kind": "activity-activity",
+      "fromId": "caving26",
+      "toId": "caving27",
+      "role": "shared-departure",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "PDF fisik 53"
+        }
+      ]
+    },
+    {
+      "id": "work-sacred-gatekeeper-te11",
+      "kind": "work-activity",
+      "fromId": "sacred-gatekeeper",
+      "toId": "te11",
+      "role": "discusses",
+      "sourceUses": [
+        {
+          "sourceId": "sacred-export",
+          "locator": "halaman 1"
+        }
+      ]
+    },
+    {
+      "id": "work-carbon-debt-te11",
+      "kind": "work-activity",
+      "fromId": "carbon-debt",
+      "toId": "te11",
+      "role": "discusses",
+      "sourceUses": [
+        {
+          "sourceId": "te11-report",
+          "locator": "rencana dan evaluasi"
+        }
+      ]
+    },
+    {
+      "id": "work-summit-without-carbon-debt-te11",
+      "kind": "work-activity",
+      "fromId": "summit-without-carbon-debt",
+      "toId": "te11",
+      "role": "discusses",
+      "sourceUses": [
+        {
+          "sourceId": "carbon-export",
+          "locator": "halaman 1–3"
+        }
+      ]
+    },
+    {
+      "id": "work-te11-documentary-reference-te11",
+      "kind": "work-activity",
+      "fromId": "te11-documentary-reference",
+      "toId": "te11",
+      "role": "discusses",
+      "sourceUses": [
+        {
+          "sourceId": "te11-video-appendix",
+          "locator": "teks lampiran: thumbnail / kode QR tautan"
+        },
+        {
+          "sourceId": "te11-report",
+          "locator": "evaluasi dokumentasi"
+        }
+      ]
+    },
+    {
+      "id": "history-field-education-2023-gh26",
+      "kind": "history-activity",
+      "fromId": "field-education-2023",
+      "toId": "gh26",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2023-24",
+          "locator": "physical 52–53 / Pemantapan Divisi"
+        }
+      ]
+    },
+    {
+      "id": "history-expedition-knowledge-2024-te11",
+      "kind": "history-activity",
+      "fromId": "expedition-knowledge-2024",
+      "toId": "te11",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "te11-report",
+          "locator": "implementasi dan evaluasi"
+        },
+        {
+          "sourceId": "sacred-export",
+          "locator": "halaman 1"
+        }
+      ]
+    },
+    {
+      "id": "history-expedition-knowledge-2024-sacred-gatekeeper",
+      "kind": "history-work",
+      "fromId": "expedition-knowledge-2024",
+      "toId": "sacred-gatekeeper",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "te11-report",
+          "locator": "implementasi dan evaluasi"
+        },
+        {
+          "sourceId": "sacred-export",
+          "locator": "halaman 1"
+        }
+      ]
+    },
+    {
+      "id": "history-division-education-2025-gh29",
+      "kind": "history-activity",
+      "fromId": "division-education-2025",
+      "toId": "gh29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 91–93 / PD XXIX"
+        }
+      ]
+    },
+    {
+      "id": "history-division-education-2025-rc29",
+      "kind": "history-activity",
+      "fromId": "division-education-2025",
+      "toId": "rc29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 91–93 / PD XXIX"
+        }
+      ]
+    },
+    {
+      "id": "history-division-education-2025-orad29",
+      "kind": "history-activity",
+      "fromId": "division-education-2025",
+      "toId": "orad29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 91–93 / PD XXIX"
+        }
+      ]
+    },
+    {
+      "id": "history-division-education-2025-lh29",
+      "kind": "history-activity",
+      "fromId": "division-education-2025",
+      "toId": "lh29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 91–93 / PD XXIX"
+        }
+      ]
+    },
+    {
+      "id": "history-division-education-2025-caving29",
+      "kind": "history-activity",
+      "fromId": "division-education-2025",
+      "toId": "caving29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 91–93 / PD XXIX"
+        }
+      ]
+    },
+    {
+      "id": "history-kawi-continuity-2025-kawi29",
+      "kind": "history-activity",
+      "fromId": "kawi-continuity-2025",
+      "toId": "kawi29",
+      "role": "context",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2025",
+          "locator": "physical 96–97 / Pendakian Kawi XXIX"
+        }
+      ]
+    },
+    {
+      "id": "environment-2022-activity",
+      "kind": "history-activity",
+      "fromId": "environment-2022",
+      "toId": "earth-day-2022",
+      "role": "documents",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 60–61"
+        }
+      ]
+    },
+    {
+      "id": "siberut-2022-activity",
+      "kind": "history-activity",
+      "fromId": "siberut-2022",
+      "toId": "te10",
+      "role": "documents",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 61"
+        }
+      ]
+    },
+    {
+      "id": "magazine-2023-work",
+      "kind": "history-work",
+      "fromId": "magazine-2023",
+      "toId": "summit-attack-vol4",
+      "role": "documents",
+      "sourceUses": [
+        {
+          "sourceId": "lpj-2022-23",
+          "locator": "DOCX fisik 60"
+        }
+      ]
+    }
+  ],
+  "examples": {
+    "te11Works": [
+      "sacred-gatekeeper",
+      "carbon-debt",
+      "summit-without-carbon-debt",
+      "te11-documentary-reference"
+    ],
+    "te11PeriodAssertions": [
+      {
+        "periodId": "period-2023-24",
+        "state": "not-executed-in-period",
+        "sourceUses": [
+          {
+            "sourceId": "lpj-2023-24",
+            "locator": "PDF fisik 62 / Program Kerja Tidak Terlaksana"
+          }
+        ]
+      },
+      {
+        "periodId": "period-2024-25",
+        "state": "execution-reported",
+        "sourceUses": [
+          {
+            "sourceId": "lpj-2024-25",
+            "locator": "PDF fisik 85–86"
+          }
+        ]
+      }
+    ]
+  }
+}

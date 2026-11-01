@@ -1,0 +1,619 @@
+{
+  "browser": "153.0.8010.0",
+  "metrics": [
+    {
+      "route": "/publications",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Pengalaman menjadi bacaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/knowledge",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Belajar dari karya.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "The Sacred Gatekeeper",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/design-school",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "TRS — Sekolah Desain Grafis",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/carbon-debt",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Catatan karbon dalam rencana TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-without-carbon-debt",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-attack-vol4",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Summit Attack Vol. 4",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/te11-documentary-reference",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Video Dokumenter — lampiran TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/announcement-demo",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Informasi penerimaan anggota",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/about",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/jejak",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Pengalaman yang diteruskan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/members",
+      "width": 1366,
+      "scrollWidth": 1366,
+      "title": "Nama dalam kebersamaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publications",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Pengalaman menjadi bacaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/knowledge",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Belajar dari karya.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "The Sacred Gatekeeper",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/design-school",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "TRS — Sekolah Desain Grafis",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/carbon-debt",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Catatan karbon dalam rencana TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-without-carbon-debt",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-attack-vol4",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Summit Attack Vol. 4",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/te11-documentary-reference",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Video Dokumenter — lampiran TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/announcement-demo",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Informasi penerimaan anggota",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/about",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/jejak",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Pengalaman yang diteruskan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/members",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "title": "Nama dalam kebersamaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publications",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Pengalaman menjadi bacaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/knowledge",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Belajar dari karya.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "The Sacred Gatekeeper",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/design-school",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "TRS — Sekolah Desain Grafis",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/carbon-debt",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Catatan karbon dalam rencana TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-without-carbon-debt",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-attack-vol4",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Summit Attack Vol. 4",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/te11-documentary-reference",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Video Dokumenter — lampiran TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/announcement-demo",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Informasi penerimaan anggota",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/jejak",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Pengalaman yang diteruskan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/members",
+      "width": 768,
+      "scrollWidth": 768,
+      "title": "Nama dalam kebersamaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publications",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Pengalaman menjadi bacaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/knowledge",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Belajar dari karya.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "The Sacred Gatekeeper",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/design-school",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "TRS — Sekolah Desain Grafis",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/carbon-debt",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Catatan karbon dalam rencana TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-without-carbon-debt",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-attack-vol4",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Summit Attack Vol. 4",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/te11-documentary-reference",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Video Dokumenter — lampiran TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/announcement-demo",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Informasi penerimaan anggota",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/jejak",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Pengalaman yang diteruskan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/members",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Nama dalam kebersamaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publications",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Pengalaman menjadi bacaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/knowledge",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Belajar dari karya.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/sacred-gatekeeper",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "The Sacred Gatekeeper",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/design-school",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "TRS — Sekolah Desain Grafis",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/carbon-debt",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Catatan karbon dalam rencana TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-without-carbon-debt",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "To the Summit, Without a Carbon Debt: The Story of a Carbon-Neutral Climb in Borneo",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/summit-attack-vol4",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Summit Attack Vol. 4",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/te11-documentary-reference",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Video Dokumenter — lampiran TE11",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/publication/announcement-demo",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Informasi penerimaan anggota",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Mahasiswa Pencinta Alam Tursina",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/jejak",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Pengalaman yang diteruskan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    },
+    {
+      "route": "/members",
+      "width": 320,
+      "scrollWidth": 320,
+      "title": "Nama dalam kebersamaan.",
+      "headings": 1,
+      "photos": 0,
+      "downloads": 0,
+      "source": "733c96c"
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "checks": [
+    "60 layouts and direct/refreshed routes",
+    "type/search/empty/keyboard reset, separated synthetic announcement",
+    "TE11/article canonical round trip",
+    "independent restricted resource, no fake download",
+    "about/five fields/history/TE11 journey",
+    "source gaps and chronology",
+    "synthetic NIA/name search/reset",
+    "native disclosure Enter/Space",
+    "responsive harness",
+    "test-only records absent from bundle"
+  ]
+}

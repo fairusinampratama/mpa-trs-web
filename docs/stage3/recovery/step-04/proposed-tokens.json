@@ -1,0 +1,202 @@
+{
+  "status": "proposed-owner-review",
+  "date": "2026-10-14",
+  "color": {
+    "page": "#F6F4EE",
+    "surface": "#FFFFFF",
+    "surface-muted": "#EAEDE5",
+    "ink": "#20352C",
+    "muted": "#536358",
+    "primary": "#214A39",
+    "primary-hover": "#173B2B",
+    "primary-active": "#102D21",
+    "blue": "#244C67",
+    "gold": "#AB7D27",
+    "border": "#CCD3C8",
+    "control-border": "#758575",
+    "focus": "#244C67",
+    "success": "#276249",
+    "success-bg": "#E7F1E8",
+    "warning": "#80551B",
+    "warning-bg": "#FBF0D8",
+    "error": "#A43432",
+    "error-bg": "#FBEAE7",
+    "info": "#244C67",
+    "info-bg": "#E6EDF3",
+    "disabled-ink": "#536358",
+    "disabled-bg": "#E2E7DD",
+    "inverse": "#F6F4EE",
+    "focus-inverse": "#F6F4EE"
+  },
+  "type": {
+    "display": {
+      "family": "Source Serif 4",
+      "weight": 600,
+      "desktop": [
+        56,
+        60.5
+      ],
+      "mobile390": [
+        36,
+        38.9
+      ],
+      "mobile320": [
+        32,
+        34.6
+      ]
+    },
+    "section": {
+      "family": "Source Serif 4",
+      "weight": 600,
+      "desktop": [
+        40,
+        46
+      ],
+      "mobile": [
+        30,
+        35
+      ]
+    },
+    "content": {
+      "family": "Source Serif 4",
+      "weight": 600,
+      "desktop": [
+        30,
+        36
+      ],
+      "mobile": [
+        26,
+        32
+      ]
+    },
+    "activity-title": {
+      "family": "Source Sans 3",
+      "weight": 600,
+      "desktop": [
+        24,
+        31
+      ],
+      "mobile": [
+        23,
+        29
+      ]
+    },
+    "body": {
+      "family": "Source Sans 3",
+      "weight": 400,
+      "desktop": [
+        19,
+        28
+      ],
+      "mobile": [
+        17,
+        25
+      ]
+    },
+    "intro": {
+      "family": "Source Sans 3",
+      "weight": 400,
+      "desktop": [
+        20,
+        29
+      ],
+      "mobile": [
+        17,
+        25
+      ]
+    },
+    "action": {
+      "family": "Source Sans 3",
+      "weight": 600,
+      "all": [
+        17,
+        24
+      ]
+    },
+    "metadata": {
+      "family": "Source Sans 3",
+      "weight": 400,
+      "all": [
+        16,
+        23
+      ]
+    },
+    "label": {
+      "family": "Source Sans 3",
+      "weight": 600,
+      "all": [
+        12,
+        18
+      ]
+    },
+    "caption": {
+      "family": "Source Sans 3",
+      "weight": 400,
+      "all": [
+        14,
+        20
+      ]
+    },
+    "reading": {
+      "family": "Source Serif 4",
+      "weight": 400,
+      "desktop": [
+        20,
+        31
+      ],
+      "mobile": [
+        18,
+        28
+      ]
+    }
+  },
+  "space": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    40,
+    56,
+    72,
+    88
+  ],
+  "layout": {
+    "container-max": 1206,
+    "gutters-mobile": 16,
+    "gutters-tablet": 24,
+    "desktop-gutters-at1366": 80,
+    "grid-gap": 24,
+    "reading-measure-ch": [
+      62,
+      70
+    ],
+    "breakpoints": [
+      768,
+      1024
+    ],
+    "section-desktop": 88,
+    "section-mobile": 56
+  },
+  "shape": {
+    "control-radius": 2,
+    "focus-radius": 4,
+    "media-radius": 0,
+    "border": 1,
+    "focus-ring": 3,
+    "focus-gap": 2,
+    "button-height": 46,
+    "input-height": 48,
+    "minimum-target": 44,
+    "default-shadow": "none"
+  },
+  "motion": {
+    "color-border-duration-ms": [
+      120,
+      160
+    ],
+    "reduced-motion": "remove nonessential transitions",
+    "image-animation": "none"
+  }
+}

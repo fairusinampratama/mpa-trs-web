@@ -1,0 +1,247 @@
+[
+  {
+    "clientWidth": 1351,
+    "page": "pd",
+    "requested": 1366,
+    "scrollWidth": 1351,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1009,
+    "page": "pd",
+    "requested": 1024,
+    "scrollWidth": 1009,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 753,
+    "page": "pd",
+    "requested": 768,
+    "scrollWidth": 753,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 375,
+    "page": "pd",
+    "requested": 390,
+    "scrollWidth": 375,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 305,
+    "page": "pd",
+    "requested": 320,
+    "scrollWidth": 305,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1351,
+    "page": "gh29",
+    "requested": 1366,
+    "scrollWidth": 1351,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1009,
+    "page": "gh29",
+    "requested": 1024,
+    "scrollWidth": 1009,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 753,
+    "page": "gh29",
+    "requested": 768,
+    "scrollWidth": 753,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 375,
+    "page": "gh29",
+    "requested": 390,
+    "scrollWidth": 375,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 305,
+    "page": "gh29",
+    "requested": 320,
+    "scrollWidth": 305,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1351,
+    "page": "rc29",
+    "requested": 1366,
+    "scrollWidth": 1351,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1009,
+    "page": "rc29",
+    "requested": 1024,
+    "scrollWidth": 1009,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 753,
+    "page": "rc29",
+    "requested": 768,
+    "scrollWidth": 753,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 375,
+    "page": "rc29",
+    "requested": 390,
+    "scrollWidth": 375,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 305,
+    "page": "rc29",
+    "requested": 320,
+    "scrollWidth": 305,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1351,
+    "page": "lh29",
+    "requested": 1366,
+    "scrollWidth": 1351,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1009,
+    "page": "lh29",
+    "requested": 1024,
+    "scrollWidth": 1009,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 753,
+    "page": "lh29",
+    "requested": 768,
+    "scrollWidth": 753,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 375,
+    "page": "lh29",
+    "requested": 390,
+    "scrollWidth": 375,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 305,
+    "page": "lh29",
+    "requested": 320,
+    "scrollWidth": 305,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1351,
+    "page": "activities",
+    "requested": 1366,
+    "scrollWidth": 1351,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1009,
+    "page": "activities",
+    "requested": 1024,
+    "scrollWidth": 1009,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 753,
+    "page": "activities",
+    "requested": 768,
+    "scrollWidth": 753,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 375,
+    "page": "activities",
+    "requested": 390,
+    "scrollWidth": 375,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 305,
+    "page": "activities",
+    "requested": 320,
+    "scrollWidth": 305,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1351,
+    "page": "batafia30",
+    "requested": 1366,
+    "scrollWidth": 1351,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1009,
+    "page": "batafia30",
+    "requested": 1024,
+    "scrollWidth": 1009,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 753,
+    "page": "batafia30",
+    "requested": 768,
+    "scrollWidth": 753,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 375,
+    "page": "batafia30",
+    "requested": 390,
+    "scrollWidth": 375,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 305,
+    "page": "batafia30",
+    "requested": 320,
+    "scrollWidth": 305,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1351,
+    "page": "kawi29",
+    "requested": 1366,
+    "scrollWidth": 1351,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 1009,
+    "page": "kawi29",
+    "requested": 1024,
+    "scrollWidth": 1009,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 753,
+    "page": "kawi29",
+    "requested": 768,
+    "scrollWidth": 753,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 375,
+    "page": "kawi29",
+    "requested": 390,
+    "scrollWidth": 375,
+    "source": "162364b"
+  },
+  {
+    "clientWidth": 305,
+    "page": "kawi29",
+    "requested": 320,
+    "scrollWidth": 305,
+    "source": "162364b"
+  }
+]

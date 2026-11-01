@@ -1,0 +1,170 @@
+[
+  {
+    "route": "/",
+    "title": "Mahasiswa\nPencinta Alam\nTursina",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/program/pd",
+    "title": "Pemantapan Divisi",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/gh26",
+    "title": "Pemantapan Divisi Gunung Hutan XXVI",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/gh26",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/gh29",
+    "title": "Pemantapan Divisi Gunung Hutan XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/gh29",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/rc29",
+    "title": "Pemantapan Divisi Panjat Tebing XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/rc29",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/orad29",
+    "title": "Pemantapan Divisi Olahraga Arus Deras XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/orad29",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/lh29",
+    "title": "Pemantapan Divisi Lingkungan Hidup XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/lh29",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/caving29",
+    "title": "Pemantapan Divisi Susur Gua XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/caving29",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activities",
+    "title": "Kerja bersama, dalam banyak bentuk.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activities",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/kawi29",
+    "title": "Gunung Kawi XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/kawi29",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/batafia30",
+    "title": "BATAFIA XXX — diklat lapang",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/batafia30",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/workshop-demo",
+    "title": "Lokakarya dokumentasi kegiatan",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/workshop-demo",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/expedition/te11",
+    "title": "Bukit Raya",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/expedition/te11",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/publication/sacred-gatekeeper",
+    "title": "The Sacred Gatekeeper",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/sacred-gatekeeper",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/publications",
+    "title": "Dari meja redaksi.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publications",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/knowledge",
+    "title": "Belajar dari karya.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/knowledge",
+    "images": 0,
+    "scrollWidth": 1363,
+    "width": 1363
+  },
+  {
+    "route": "/about",
+    "title": "Alam, ilmu, dan kekeluargaan.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/about",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/jejak",
+    "title": "Sebuah kisah yang diteruskan.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/jejak",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/members",
+    "title": "Nama dalam kebersamaan.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/members",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/submission",
+    "title": "Informasi kecil, catatan yang utuh.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/submission",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/ui-lab",
+    "title": "Jejak yang dijaga.\nPengetahuan yang hidup.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/ui-lab",
+    "images": 0,
+    "scrollWidth": 1348,
+    "width": 1348
+  }
+]

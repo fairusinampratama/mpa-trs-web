@@ -1,0 +1,9 @@
+{
+  "source": "874c16cfc4980ad7546ecea6ef65114c4d741a76",
+  "label": "Kegiatan",
+  "navigation": "Navigasi footer",
+  "href": "#/program/te",
+  "observed_after_click_h1": "Tursina Explore",
+  "expected_general_catalogue": "#/activities",
+  "classification": "confirmed label/destination mismatch; not inaccessible route"
+}

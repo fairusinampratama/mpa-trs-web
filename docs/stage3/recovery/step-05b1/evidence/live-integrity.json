@@ -1,0 +1,49 @@
+{
+  "source_commit": "72e90d75d234dc634fd43a513666b2c1f3b20bc6",
+  "tls_certificate_validation": true,
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 613,
+      "sha256": "6cf0d314b1f511a54452529cef80440903a6d57104801e2b06ed3aaee8b9e545"
+    },
+    {
+      "path": "responsive-review.html",
+      "status": 200,
+      "bytes": 2972,
+      "sha256": "b1deda846e579f76983f4fb3031c25c03ddb3609bb02fa8d5b7fb884b7780323"
+    },
+    {
+      "path": "version.json",
+      "status": 200,
+      "bytes": 100,
+      "sha256": "0401f96053d42fe5f3e0a9ac1d1c47ed663e1f3450cfe116ee80ee08e51dd835"
+    },
+    {
+      "path": "assets/source-sans-3-latin-Bo_j9asI.woff2",
+      "status": 200,
+      "bytes": 28872,
+      "sha256": "19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5"
+    },
+    {
+      "path": "assets/main-NIWziX9O.css",
+      "status": 200,
+      "bytes": 75158,
+      "sha256": "85bdcee88e197c1fd7f0745183ffeff5ac40a3e7456f5a3a460494febfb86269"
+    },
+    {
+      "path": "assets/source-serif-4-latin-DMe4EKeb.woff2",
+      "status": 200,
+      "bytes": 50936,
+      "sha256": "382475f38242c52d42a3e5ff8dc69b5d73f10d0d21e4550b5fe232984688779a"
+    },
+    {
+      "path": "assets/main-D3MOndSB.js",
+      "status": 200,
+      "bytes": 302937,
+      "sha256": "dfb4cb073ef93b5aa953b3e7672300cf1459c9643f36f845b673e22fe41249aa"
+    }
+  ],
+  "nojekyll": "artifact-only marker, not an HTTP entry"
+}

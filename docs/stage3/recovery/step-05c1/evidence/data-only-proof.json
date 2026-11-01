@@ -1,0 +1,31 @@
+{
+  "method": "Temporary test entry outside public build adds only typed canonical records, validates/projectPreview, then loads unchanged App. No record-specific page components or external data endpoint.",
+  "browser": "153.0.8010.0",
+  "results": [
+    {
+      "width": 1366,
+      "newEditionCatalogueDetailRefresh": true,
+      "pdWithoutCohort": true,
+      "restrictedIndependentWork": true,
+      "historyOrderedFromYear": true,
+      "syntheticMemberAddition": true
+    },
+    {
+      "width": 390,
+      "newEditionCatalogueDetailRefresh": true,
+      "pdWithoutCohort": true,
+      "restrictedIndependentWork": true,
+      "historyOrderedFromYear": true,
+      "syntheticMemberAddition": true
+    },
+    {
+      "width": 320,
+      "newEditionCatalogueDetailRefresh": true,
+      "pdWithoutCohort": true,
+      "restrictedIndependentWork": true,
+      "historyOrderedFromYear": true,
+      "syntheticMemberAddition": true
+    }
+  ],
+  "errors": []
+}

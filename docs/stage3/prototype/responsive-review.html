@@ -1,0 +1,142 @@
+<!doctype html>
+<html
+  lang="id"
+  class="[&_*:focus-visible]:outline-3 [&_*:focus-visible]:outline-solid [&_*:focus-visible]:outline-focus [&_*:focus-visible]:outline-offset-4"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Tursina — Pemeriksaan viewport mobile</title>
+    <link rel="stylesheet" href="/src/theme.css" />
+  </head>
+  <body class="m-0 bg-review-page text-review-ink font-review text-base">
+    <header class="p-5 bg-review-surface border-b border-review-border">
+      <h1 class="text-lg mb-2">Pemeriksaan viewport · Tursina prototype</h1>
+      <p class="text-sm m-0">
+        Dokumen di dalam frame memiliki viewport tersendiri. Ini menguji reflow
+        CSS, bukan emulasi perangkat sentuh.
+      </p>
+      <nav
+        class="flex gap-3 flex-wrap mt-4 items-center"
+        aria-label="Pilihan lebar viewport"
+      >
+        <button
+          class="min-h-11 border border-review-border rounded bg-review-surface px-4 inline-flex items-center text-review-ink cursor-pointer aria-pressed:bg-review-primary aria-pressed:text-review-surface"
+          type="button"
+          data-width="320"
+          aria-pressed="false"
+        >
+          320px
+        </button>
+        <button
+          class="min-h-11 border border-review-border rounded bg-review-surface px-4 inline-flex items-center text-review-ink cursor-pointer aria-pressed:bg-review-primary aria-pressed:text-review-surface"
+          type="button"
+          data-width="390"
+          aria-pressed="true"
+        >
+          390px
+        </button>
+        <button
+          class="min-h-11 border border-review-border rounded bg-review-surface px-4 inline-flex items-center text-review-ink cursor-pointer aria-pressed:bg-review-primary aria-pressed:text-review-surface"
+          type="button"
+          data-width="768"
+          aria-pressed="false"
+        >
+          768px
+        </button>
+        <button
+          class="min-h-11 border border-review-border rounded bg-review-surface px-4 inline-flex items-center text-review-ink cursor-pointer aria-pressed:bg-review-primary aria-pressed:text-review-surface"
+          type="button"
+          data-width="1024"
+          aria-pressed="false"
+        >
+          1024px
+        </button>
+        <button
+          class="min-h-11 border border-review-border rounded bg-review-surface px-4 inline-flex items-center text-review-ink cursor-pointer aria-pressed:bg-review-primary aria-pressed:text-review-surface"
+          type="button"
+          data-width="1366"
+          aria-pressed="false"
+        >
+          1366px
+        </button>
+        <label
+          >Halaman
+          <select id="review-page">
+            <option value="./#/">Website</option>
+            <option value="./#/program/te">Tursina Explore</option>
+            <option value="./#/expedition/te11">TE11 / Bukit Raya</option>
+            <option value="./#/expedition/te12">TE12 / Trunyan</option>
+            <option value="./#/expedition/te13">TE13 / belum tersedia</option>
+            <option value="./#/ui-lab/expedition/synthetic">
+              Ekspedisi sintetis / UI lab
+            </option>
+            <option value="./#/publication/sacred-gatekeeper">
+              Artikel TE11
+            </option>
+            <option value="./#/program/pd">Pemantapan Divisi</option>
+            <option value="./#/activity/gh29">PD Gunung Hutan XXIX</option>
+            <option value="./#/activity/rc29">PD Panjat Tebing XXIX</option>
+            <option value="./#/activity/lh29">PD Lingkungan Hidup XXIX</option>
+            <option value="./#/activities">Kegiatan lainnya</option>
+            <option value="./#/activity/batafia30">BATAFIA XXX</option>
+            <option value="./#/activity/kawi29">Gunung Kawi XXIX</option>
+            <option value="./#/ui-lab">UI laboratory</option>
+            <option value="./#/publications">Publications</option>
+            <option value="./#/knowledge">Knowledge</option>
+            <option value="./#/publication/design-school">
+              Learning resource
+            </option>
+            <option value="./#/publication/summit-without-carbon-debt">
+              Restricted article
+            </option>
+            <option value="./#/publication/te11-documentary-reference">
+              Documentary source context
+            </option>
+            <option value="./#/about">Tentang</option>
+            <option value="./#/jejak">Jejak</option>
+            <option value="./#/members">Buku Induk</option>
+          </select></label
+        >
+        <a
+          class="min-h-11 border border-review-border rounded bg-review-surface px-4 inline-flex items-center text-review-ink"
+          href="./#/"
+          >Kembali ke desktop</a
+        >
+      </nav>
+    </header>
+    <main class="p-6 overflow-auto">
+      <iframe
+        class="block w-[390px] data-[width=320]:w-80 data-[width=768]:w-192 data-[width=1024]:w-256 data-[width=1366]:w-[1366px] h-[844px] max-w-none border-0 bg-review-frame mx-auto shadow-review"
+        id="review-frame"
+        title="Tursina prototype — viewport mobile"
+        src="about:blank"
+      ></iframe>
+    </main>
+    <script>
+      const frame = document.getElementById("review-frame");
+      function openPreview(value) {
+        const target = new URL(value, location.href);
+        target.searchParams.set("review", Date.now().toString());
+        frame.src = target.href;
+      }
+      openPreview("./#/");
+      document
+        .getElementById("review-page")
+        .addEventListener("change", (event) => {
+          openPreview(event.target.value);
+        });
+      document.querySelectorAll("[data-width]").forEach((button) =>
+        button.addEventListener("click", () => {
+          frame.dataset.width = button.dataset.width;
+          document
+            .querySelectorAll("[data-width]")
+            .forEach((item) =>
+              item.setAttribute("aria-pressed", String(item === button)),
+            );
+        }),
+      );
+    </script>
+  </body>
+</html>

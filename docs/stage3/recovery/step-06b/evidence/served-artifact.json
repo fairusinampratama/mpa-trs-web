@@ -1,0 +1,150 @@
+{
+  "source": "bd5caca0650cbbba9bdd87970e62f0743b0b9d6c",
+  "base": "https://fairusinampratama.github.io/mpa-trs-web/",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 613,
+      "sha256": "3df47d514bd0e41d792dfaa28c83f1ff7fde3772e9b44b94f7953144ae835be6",
+      "status": 200
+    },
+    {
+      "path": "version.json",
+      "bytes": 100,
+      "sha256": "cc5c417d2ec41a8a250339f4b64422a837639786b8ecfbaba696d016f4e10dc3",
+      "status": 200
+    },
+    {
+      "path": "responsive-review.html",
+      "bytes": 3882,
+      "sha256": "49291c44d379b978aec278bfbb58ad0b1723052f887d55cb5562036fa3ecfa20",
+      "status": 200
+    },
+    {
+      "path": "assets/main-HmHp7qRV.js",
+      "bytes": 437047,
+      "sha256": "654d6a85a9b90dbcf27996df66ce7465367a1b43a098befe44a598b7d21af730",
+      "status": 200
+    },
+    {
+      "path": "assets/source-sans-3-latin-Bo_j9asI.woff2",
+      "bytes": 28872,
+      "sha256": "19143dca075972bc84e3fd9eab7416dd40cc565dccb2435a044bdfabe060c7d5",
+      "status": 200
+    },
+    {
+      "path": "assets/main-C1zIcayo.css",
+      "bytes": 84767,
+      "sha256": "c4c55eeb63ecff9a7344b4028e1c473fa5a3567f1c28ffbcd656dbefa4bfb59a",
+      "status": 200
+    },
+    {
+      "path": "assets/source-serif-4-latin-DMe4EKeb.woff2",
+      "bytes": 50936,
+      "sha256": "382475f38242c52d42a3e5ff8dc69b5d73f10d0d21e4550b5fe232984688779a",
+      "status": 200
+    },
+    {
+      "path": "media/batafia-field-960.webp",
+      "bytes": 56032,
+      "sha256": "b769c1e03f1818667a5df837ba2b6ffd4884792ea0ad174f507ee739d7ca5437",
+      "status": 200
+    },
+    {
+      "path": "media/kawi-collective-720.webp",
+      "bytes": 53296,
+      "sha256": "b6b25c4c4dcd0d0252d02cd0276ed9c78fa0037dbc1523c790b6b014a7b143b4",
+      "status": 200
+    },
+    {
+      "path": "media/pd-gh-map-480.webp",
+      "bytes": 83336,
+      "sha256": "5929631200faa9dd01c293f0e3e50de4520c1949cedd2ccdf267d7d1a5f8e826",
+      "status": 200
+    },
+    {
+      "path": "media/kawi-collective-360.webp",
+      "bytes": 19286,
+      "sha256": "9aba072c493b38955c2d5157c199d514b14ce198d3b1d86634edab68e81a2716",
+      "status": 200
+    },
+    {
+      "path": "media/pd-rc-team-320.webp",
+      "bytes": 49912,
+      "sha256": "010ecf90742ea6f14fd5bffc421d967b933a8bfcf516d37f58d9de0253282d42",
+      "status": 200
+    },
+    {
+      "path": "media/te11-ecology-960.webp",
+      "bytes": 104464,
+      "sha256": "167aa6bbd4a8a7059d1aa0ea00e4ef41383899b5091a72e2ca4b4fe24487ad19",
+      "status": 200
+    },
+    {
+      "path": "media/te11-documentary-480.webp",
+      "bytes": 44390,
+      "sha256": "3bc6ce1b62ccb7a0b532cc7e9b4efcafe6baa4b8b5db5f07ecb85d7312ada016",
+      "status": 200
+    },
+    {
+      "path": "media/te11-documentary-960.webp",
+      "bytes": 173258,
+      "sha256": "36ba9de44d01c0ddc705805b6f94144f262843fde50696063432b0c293480fe4",
+      "status": 200
+    },
+    {
+      "path": "media/batafia-field-1440.webp",
+      "bytes": 98414,
+      "sha256": "fe4d0ff1da657db0a431c18d04d36ea25fbf1df9331a1a51c08887f371d50b4d",
+      "status": 200
+    },
+    {
+      "path": "media/pd-rc-team-640.webp",
+      "bytes": 203984,
+      "sha256": "8b9d21ac68667db26b58be67ca219b31809ebf7ad7607a09541e367b2f5d4b6e",
+      "status": 200
+    },
+    {
+      "path": "media/te11-documentary-1440.webp",
+      "bytes": 379118,
+      "sha256": "658c8377cf8f5587c09ce54b5608fb021e157f9a01a168884c9d2be3956fb30f",
+      "status": 200
+    },
+    {
+      "path": "media/te11-ecology-480.webp",
+      "bytes": 38176,
+      "sha256": "c50c84c556130f8cd9d896567169438980ae2020ff03fca303f2875419d09232",
+      "status": 200
+    },
+    {
+      "path": "media/pd-gh-map-720.webp",
+      "bytes": 177630,
+      "sha256": "0f94439c57af00882bf57febb8321930837b4516f981ee420fbd8ed408b68882",
+      "status": 200
+    },
+    {
+      "path": "media/te11-ecology-1280.webp",
+      "bytes": 151184,
+      "sha256": "c7eee43c035f88d7ce82bbc67b432064684e1b799f253888a349abf396db164b",
+      "status": 200
+    },
+    {
+      "path": "media/batafia-field-480.webp",
+      "bytes": 19988,
+      "sha256": "268cdf84d2e2557cad53299f7ca30540c8e1499c2adb192b9af108a7e5f5ae67",
+      "status": 200
+    },
+    {
+      "path": "media/kawi-collective-1200.webp",
+      "bytes": 103960,
+      "sha256": "2fc7f882b2a34d6e49ac7a8910184834810fd79f9ff61b93171e8623ed91d949",
+      "status": 200
+    },
+    {
+      "path": "media/pd-gh-map-240.webp",
+      "bytes": 21912,
+      "sha256": "434b6bf6803dfc2b1f6e180780d7b2b806d30c09c5e6291c6f282c8709cd0e33",
+      "status": 200
+    }
+  ]
+}

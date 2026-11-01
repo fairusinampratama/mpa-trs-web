@@ -1,0 +1,32 @@
+[
+  {
+    "width": 1366,
+    "baseline_commit": "adedc7d0c974a854c99982bc5de7cce0450255c0",
+    "same_size": true,
+    "pixel_difference_bbox": null
+  },
+  {
+    "width": 1024,
+    "baseline_commit": "adedc7d0c974a854c99982bc5de7cce0450255c0",
+    "same_size": true,
+    "pixel_difference_bbox": null
+  },
+  {
+    "width": 768,
+    "baseline_commit": "adedc7d0c974a854c99982bc5de7cce0450255c0",
+    "same_size": true,
+    "pixel_difference_bbox": null
+  },
+  {
+    "width": 390,
+    "baseline_commit": "adedc7d0c974a854c99982bc5de7cce0450255c0",
+    "same_size": true,
+    "pixel_difference_bbox": null
+  },
+  {
+    "width": 320,
+    "baseline_commit": "adedc7d0c974a854c99982bc5de7cce0450255c0",
+    "same_size": true,
+    "pixel_difference_bbox": null
+  }
+]

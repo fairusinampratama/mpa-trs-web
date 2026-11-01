@@ -1,0 +1,50 @@
+[
+  {
+    "id": "UX-01",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-02",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-03",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-04",
+    "status": "Alternative A deployed and verified for homepage GH/RC only; awaiting final owner implementation acceptance"
+  },
+  {
+    "id": "UX-05",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-06",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-07",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-08",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-09",
+    "status": "implemented; awaiting owner review"
+  },
+  {
+    "id": "UX-10",
+    "status": "retained Kawi opening; unproven replacement hypothesis deferred"
+  },
+  {
+    "id": "UX-11",
+    "status": "no global spacing change; optional preference deferred"
+  },
+  {
+    "id": "UX-12",
+    "status": "future verified current-facing editorial content; no fabricated notices"
+  }
+]

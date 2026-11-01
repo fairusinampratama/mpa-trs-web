@@ -1,0 +1,107 @@
+[
+  {
+    "route": "/",
+    "title": "Mahasiswa\nPencinta Alam\nTursina",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/program/te",
+    "title": "Tursina Explore",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/te",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/expedition/te11",
+    "title": "Bukit Raya",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/expedition/te11",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/expedition/te12",
+    "title": "Trunyan",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/expedition/te12",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/publication/sacred-gatekeeper",
+    "title": "The Sacred Gatekeeper",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/sacred-gatekeeper",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/program/pd",
+    "title": "Pemantapan Divisi",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/program/pd",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/gh29",
+    "title": "Gunung Hutan XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/gh29",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activity/rc29",
+    "title": "Panjat Tebing XXIX",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activity/rc29",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/activities",
+    "title": "Kerja bersama, dalam banyak bentuk.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/activities",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/publication/design-school",
+    "title": "TRS — Sekolah Desain Grafis",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/design-school",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/publication/carbon-debt",
+    "title": "Catatan karbon dalam rencana TE11",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/publication/carbon-debt",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/jejak",
+    "title": "Sebuah kisah yang diteruskan.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/jejak",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/members",
+    "title": "Nama dalam kebersamaan.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/members",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/submission",
+    "title": "Informasi kecil, catatan yang utuh.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/submission",
+    "scrollWidth": 1348,
+    "width": 1348
+  },
+  {
+    "route": "/ui-lab",
+    "title": "Jejak yang dijaga.\nPengetahuan yang hidup.",
+    "url": "https://fairusinampratama.github.io/mpa-trs-web/#/ui-lab",
+    "scrollWidth": 1348,
+    "width": 1348
+  }
+]

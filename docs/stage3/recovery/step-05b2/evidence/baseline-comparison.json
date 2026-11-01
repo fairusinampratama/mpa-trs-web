@@ -1,0 +1,52 @@
+[
+  {
+    "page": "homepage",
+    "width": 1366,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "homepage",
+    "width": 1024,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "homepage",
+    "width": 768,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "homepage",
+    "width": 390,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "homepage",
+    "width": 320,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "te11",
+    "width": 1366,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "te11",
+    "width": 1024,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "te11",
+    "width": 768,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "te11",
+    "width": 390,
+    "pixel_difference_bbox": null
+  },
+  {
+    "page": "te11",
+    "width": 320,
+    "pixel_difference_bbox": null
+  }
+]

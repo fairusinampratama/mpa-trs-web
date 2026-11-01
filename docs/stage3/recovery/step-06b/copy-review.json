@@ -1,0 +1,109 @@
+[
+  {
+    "id": "rc29",
+    "field": "summary",
+    "before": "Spesialisasi Panjat Tebing di Tebing Siung. Catatan program memuat pemanjatan, instalasi, pemetaan jalur, rescue group, dan konteks sosial setempat sebagai sasaran pembelajaran.",
+    "after": "Pendidikan Panjat Tebing XXIX di Tebing Siung, dengan dokumentasi pemanjatan dan kerja tim di dasar tebing.",
+    "sources": [
+      {
+        "sourceId": "lpj-2025",
+        "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78–79 / cetak 72–73"
+      },
+      {
+        "sourceId": "humed-rc29",
+        "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+      }
+    ],
+    "assessment": "Existing sourced facts reordered/shortened; no new historical assertion. Detail source/context and material uncertainties retained."
+  },
+  {
+    "id": "batafia30",
+    "field": "summary",
+    "before": "Pendidikan dasar di Pegunungan Kawi. LPJ mencatat pemendekan rute dari 18 km menjadi 16 km. Tanggal forum terpisah belum direkonsiliasi.",
+    "after": "Pendidikan dasar melalui forum dan praktik lapangan di Pegunungan Kawi. Tanggal yang ditampilkan merujuk kegiatan lapangan; tanggal forum belum dipastikan.",
+    "sources": [
+      {
+        "sourceId": "lpj-2025",
+        "locator": "BATAFIA XXX, halaman fisik 94–96 / cetak 88–90"
+      }
+    ],
+    "assessment": "Existing sourced facts reordered/shortened; no new historical assertion. Detail source/context and material uncertainties retained."
+  },
+  {
+    "id": "kawi29",
+    "field": "summary",
+    "before": "Napak tilas dan rangkaian peralihan keanggotaan di Pegunungan Kawi. LPJ menyatakan pendakian tanpa pelaporan; uraian hasil tidak direka.",
+    "after": "Napak tilas dan rangkaian peralihan keanggotaan di Pegunungan Kawi.",
+    "sources": [
+      {
+        "sourceId": "lpj-2025",
+        "locator": "Pendakian Kawi Angkatan XXIX, halaman fisik 96–97 / cetak 90–91"
+      }
+    ],
+    "assessment": "Existing sourced facts reordered/shortened; no new historical assertion. Detail source/context and material uncertainties retained."
+  },
+  {
+    "id": "gh29",
+    "field": "summary",
+    "before": "Praktik lapangan Gunung Hutan di Gunung Lawu. Arsip foto memperlihatkan kerja peta-kompas, pengamatan medan, dan dokumentasi puncak.",
+    "after": "Pendidikan Gunung Hutan XXIX di Gunung Lawu, dengan praktik membaca peta, menggunakan kompas, dan mengamati medan.",
+    "sources": [
+      {
+        "sourceId": "lpj-2025",
+        "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78 / cetak 72"
+      },
+      {
+        "sourceId": "humed-gh29",
+        "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+      }
+    ],
+    "assessment": "Existing sourced facts reordered/shortened; no new historical assertion. Detail source/context and material uncertainties retained."
+  },
+  {
+    "id": "gh29",
+    "field": "chapter paragraph",
+    "before": "Catatan Gunung Hutan XXIX ditempatkan dalam rangkaian tersebut. Arsip foto memberi contoh konkret kerja peta-kompas dan pengamatan medan; foto tidak membuktikan seluruh standar telah dipenuhi.",
+    "after": "Praktik membaca peta dan menggunakan kompas memperlihatkan bagian dari pembelajaran navigasi darat. Ruang belajar divisi dijelaskan di bawah sebagai sasaran pendidikan, bukan daftar pencapaian peserta.",
+    "sources": [
+      {
+        "sourceId": "lpj-2025",
+        "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78 / cetak 72"
+      },
+      {
+        "sourceId": "humed-gh29",
+        "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+      }
+    ],
+    "assessment": "Source-preserving editorial simplification. Learning basis remains documented-standard-not-achievement."
+  },
+  {
+    "id": "rc29",
+    "field": "chapter paragraph",
+    "before": "Arsip dokumentasi memperlihatkan pemanjatan dan kerja tim di dasar tebing. Catatan ini tidak menambahkan grade jalur, klaim keselamatan, keberhasilan rescue, atau sertifikasi yang belum dibuktikan oleh laporan rinci.",
+    "after": "Pemanjatan dan kerja tim di dasar tebing menjadi bagian yang terlihat dalam dokumentasi. Ruang belajar di bawah menjelaskan sasaran pendidikan; tingkat jalur, hasil rescue dan sertifikasi tidak disimpulkan dari foto.",
+    "sources": [
+      {
+        "sourceId": "lpj-2025",
+        "locator": "Pemantapan Divisi XXIX, halaman fisik 91–93 / cetak 85–87; standar hlm.78–79 / cetak 72–73"
+      },
+      {
+        "sourceId": "humed-rc29",
+        "locator": "Foto terpilih ditinjau pada Step2; lokasi sumber dan izin berada dalam register privat"
+      }
+    ],
+    "assessment": "Source-preserving editorial simplification. Learning basis remains documented-standard-not-achievement."
+  },
+  {
+    "id": "batafia30",
+    "field": "chapter paragraph",
+    "before": "Evaluasi laporan mencatat penyesuaian panjang rute dari 18 km menjadi 16 km. Informasi ini dipertahankan sebagai hal yang dilaporkan, tanpa menambahkan klaim pencapaian teknis atau jadwal penerimaan anggota yang berlaku saat ini.",
+    "after": "Dalam evaluasi kegiatan, panjang rute dilaporkan berubah dari 18 km menjadi 16 km.",
+    "sources": [
+      {
+        "sourceId": "lpj-2025",
+        "locator": "BATAFIA XXX, halaman fisik 94–96 / cetak 88–90"
+      }
+    ],
+    "assessment": "Source-preserving editorial simplification. Learning basis remains documented-standard-not-achievement."
+  }
+]

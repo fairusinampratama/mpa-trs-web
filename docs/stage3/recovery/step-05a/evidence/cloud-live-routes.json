@@ -1,0 +1,92 @@
+[
+  {
+    "route": "/program/te",
+    "title": "Tursina Explore",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/expedition/te11",
+    "title": "Bukit Raya:\nsebuah perjalanan\nyang berubah di jalan.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/program/pd",
+    "title": "Pemantapan Divisi",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/activity/gh29",
+    "title": "Gunung Hutan XXIX",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/activity/rc29",
+    "title": "Panjat Tebing XXIX",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/activity/batafia30",
+    "title": "BATAFIA XXX — diklat lapang",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/activity/kawi29",
+    "title": "Gunung Kawi XXIX",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/activities",
+    "title": "Kerja bersama, dalam banyak bentuk.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/publications",
+    "title": "Dari meja redaksi.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/knowledge",
+    "title": "Belajar dari karya.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/publication/sacred-gatekeeper",
+    "title": "The Sacred Gatekeeper",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/jejak",
+    "title": "Sebuah kisah yang diteruskan.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/members",
+    "title": "Nama dalam kebersamaan.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/about",
+    "title": "Alam, ilmu, dan kekeluargaan.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/submission",
+    "title": "Informasi kecil, catatan yang utuh.",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/ui-lab",
+    "title": "Jejak yang dijaga.\nPengetahuan yang hidup.",
+    "source": "shared build; UI lab"
+  },
+  {
+    "route": "/review",
+    "title": "Mahasiswa\nPencinta Alam\nTursina",
+    "source": "ec722f3"
+  },
+  {
+    "route": "/legacy",
+    "title": "Catatan dari\njalur yang nyata.",
+    "source": "ec722f3"
+  }
+]
